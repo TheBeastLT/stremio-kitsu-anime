@@ -1,0 +1,16 @@
+version: '3'
+services:
+  database:
+    build: ./database
+    volumes:
+    - db-data:/var/lib/postgresql/data
+    ports:
+    - 5432:5432
+    environment:
+      POSTGRES_USER: kitsu
+      POSTGRES_PASSWORD: p4ssword
+      POSTGRES_DB: kitsu
+
+volumes:
+  db-data:
+    driver: local
