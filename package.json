@@ -1,25 +1,14 @@
 {
   "name": "stremio-kitsu-anime",
   "version": "0.0.1",
-  "main": "index.js",
-  "engines": {
-    "npm": "6.x",
-    "node": "10.x"
-  },
   "scripts": {
-    "start": "node server.js"
+    "start": "node ./index.local.js",
+    "deploy": "now && now alias"
   },
   "author": "TheBeastLT <pauliox@beyond.lt>",
   "license": "MIT",
   "dependencies": {
-    "bottleneck": "^2.16.2",
-    "cache-manager": "^2.9.0",
-    "cache-manager-mongodb": "^0.2.1",
-    "imdb": "^1.1.0",
-    "lodash": "^4.17.11",
-    "name-to-imdb": "^2.3.0",
     "needle": "^2.2.4",
-    "parse-torrent-title": "git://github.com/TheBeastLT/parse-torrent-title.git#master",
     "stremio-addon-sdk": "^1.2.0"
   }
 }

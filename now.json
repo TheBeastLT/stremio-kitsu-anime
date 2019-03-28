@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "anime-kitsu",
+  "alias": "anime-kitsu",
+  "builds": [
+    { "src": "**/*.js", "use": "@now/node" },
+    { "src": "static/**/*.json", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "serverless.js" }
+  ]
+}
