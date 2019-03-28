@@ -5,12 +5,15 @@ const { cacheWrapCatalog, cacheWrapMeta } = require('./lib/cache');
 const { toStremioMeta } = require('./lib/metadata');
 
 const MAX_SIZE = 20;
+const CACHE_MAX_AGE = process.env.CACHE_MAX_AGE || 4 * 60 *60;
 
 const manifest = {
-	id: 'community.kitsu.anime',
+	id: 'community.anime.kitsu',
 	version: '0.0.1',
-	name: 'Kitsu Anime',
-	description: 'Anime catalogs from Kitsu.io',
+	name: 'Anime Kitsu',
+	description: 'Unofficial Kitsu.io anime catalog addon',
+	logo: 'https://i.imgur.com/ANMG9VF.png',
+	background: 'https://i.imgur.com/ym4n96o.png',
 	resources: ['catalog', 'meta'],
 	types: ['movie', 'series'],
 	catalogs: [
@@ -46,7 +49,6 @@ const manifest = {
 const builder = new addonBuilder(manifest);
 
 builder.defineCatalogHandler((args) => {
-	console.log(args);
 	const skip = args.extra && args.extra.skip || 0;
 	const page = skip / MAX_SIZE;
 	const id = `${args.id}|${args.extra && args.extra.genre || 'All'}|${page}`;
@@ -56,9 +58,13 @@ builder.defineCatalogHandler((args) => {
 	query['page[limit]'] = MAX_SIZE;
 	query['page[offset]'] = skip;
 	query['filter[subtype]'] = 'TV,OVA,ONA,movie,special';
+
 	if (args.extra && args.extra.search) {
+		// no need to cache search results
 		query['filter[text]'] = args.extra.search;
+		return _getCatalogEntries(url, query);
 	}
+
 	if (args.extra && args.extra.genre) {
 		query['filter[genres]'] = args.extra.genre;
 	}
@@ -72,19 +78,7 @@ builder.defineCatalogHandler((args) => {
 		query['limit'] = '50';
 	}
 
-	return cacheWrapCatalog(id, () => _getPagedContent(url, query)
-			.then((response) => response.data.map((result) => toStremioMeta(result, response.included)))
-			.then((metas) => metas
-					.filter((meta) => meta.type && meta.type !== 'other')
-					.map((meta) => ({
-						id: meta.id,
-						type: meta.type,
-						name: meta.name,
-						description: meta.description,
-						genres: meta.genres,
-						poster: meta.poster,
-					})))
-			.then((metas) => ({ metas: metas })))
+	return cacheWrapCatalog(id, () => _getCatalogEntries(url, query))
 });
 
 builder.defineMetaHandler((args) => {
@@ -97,12 +91,29 @@ builder.defineMetaHandler((args) => {
 	const query = {};
 	query['include'] = 'genres,episodes';
 
-	return cacheWrapMeta(id, () =>_getPagedContent(`https://kitsu.io/api/edge/anime/${id}`, query)
+	return cacheWrapMeta(id, () =>_getContent(`https://kitsu.io/api/edge/anime/${id}`, query)
 			.then((response) => toStremioMeta(response.data, response.included))
-			.then((meta) => ({ meta: meta })))
+			.then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE })))
 });
 
-async function _getPagedContent(url, queryParams) {
+async function _getCatalogEntries(url, queryParams) {
+	return _getContent(url, queryParams)
+			.then((response) => response.data.map((result) => toStremioMeta(result, response.included)))
+			.then((metas) => metas
+			.map((meta) => ({
+				id: meta.id,
+				type: meta.type,
+				name: meta.name,
+				description: meta.description,
+        releaseInfo: meta.releaseInfo,
+        imdbRating: meta.imdbRating,
+				genres: meta.genres,
+				poster: meta.poster,
+			})))
+			.then((metas) => ({ metas: metas, cacheMaxAge: CACHE_MAX_AGE }))
+}
+
+async function _getContent(url, queryParams) {
 	return needle('get', url, queryParams, { headers: { accept: 'application/vnd.api+json'} })
 			.then((response) => {
 				if (response.statusCode === 200 && response.body) {
