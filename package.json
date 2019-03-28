@@ -20,9 +20,6 @@
     "name-to-imdb": "^2.3.0",
     "needle": "^2.2.4",
     "parse-torrent-title": "git://github.com/TheBeastLT/parse-torrent-title.git#master",
-    "pg": "^7.8.2",
-    "pg-hstore": "^2.3.2",
-    "sequelize": "^4.43.0",
     "stremio-addon-sdk": "^1.2.0"
   }
 }
