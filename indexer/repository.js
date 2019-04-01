@@ -24,21 +24,21 @@ function createIndices() {
                     type: { type: 'text' },
                     animeType: { type: 'text' },
                     name: { type: 'text' },
-                    slug: { type: 'text', enabled: false },
+                    slug: { enabled: false },
                     aliases: { type: 'text' },
                     genres: { type: 'text' },
-                    poster: { type: 'text', enabled: false },
-                    background: { type: 'text', enabled: false },
-                    logo: { type: 'text', enabled: false },
-                    description: { type: 'text', enabled: false },
-                    releaseInfo: { type: 'text', enabled: false },
-                    year: { type: 'text', enabled: false },
+                    poster: { enabled: false },
+                    background: { enabled: false },
+                    logo: { enabled: false },
+                    description: { enabled: false },
+                    releaseInfo: { enabled: false },
+                    year: { enabled: false },
                     imdbRating: { type: 'float' },
                     userCount: { type: 'integer' },
                     status: { type: 'text' },
-                    runtime: { type: 'text', enabled: false },
-                    trailers: { type: 'object', enabled: false },
-                    videos: { type: 'object', enabled: false }
+                    runtime: { enabled: false },
+                    trailers: { enabled: false },
+                    videos: { enabled: false }
                   }
                 }
               }
@@ -49,3 +49,4 @@ function createIndices() {
   });
 }
 
+module.exports = { createIndices, client };

@@ -8,8 +8,12 @@
   "author": "TheBeastLT <pauliox@beyond.lt>",
   "license": "MIT",
   "dependencies": {
+    "cache-manager": "^2.9.0",
+    "cache-manager-mongodb": "^0.2.1",
     "elasticsearch": "^15.4.1",
+    "express": "^4.16.4",
     "needle": "^2.2.4",
-    "stremio-addon-sdk": "^1.2.0"
+    "stremio-addon-sdk": "^1.2.0",
+    "url-exists": "^1.0.3"
   }
 }
