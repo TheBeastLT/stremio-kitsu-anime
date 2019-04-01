@@ -1,6 +1,10 @@
 {
   "name": "stremio-kitsu-anime",
   "version": "0.0.1",
+  "engines": {
+    "npm": "6.x",
+    "node": "10.x"
+  },
   "scripts": {
     "start": "node ./index.local.js",
     "deploy": "now && now alias"
@@ -8,6 +12,7 @@
   "author": "TheBeastLT <pauliox@beyond.lt>",
   "license": "MIT",
   "dependencies": {
+    "elasticsearch": "^15.4.1",
     "needle": "^2.2.4",
     "stremio-addon-sdk": "^1.2.0"
   }
