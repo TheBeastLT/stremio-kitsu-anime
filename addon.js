@@ -2,6 +2,7 @@ const needle = require('needle');
 const { addonBuilder } = require('stremio-addon-sdk');
 const genres = require('./static/data/genres');
 const { toStremioMeta } = require('./lib/metadata');
+const { cacheWrapMeta, cacheWrapCatalog } = require('./lib/cache');
 
 const MAX_SIZE = 20;
 const CACHE_MAX_AGE = process.env.CACHE_MAX_AGE || 4 * 60 *60;
@@ -77,7 +78,7 @@ builder.defineCatalogHandler((args) => {
 		query['limit'] = '50';
 	}
 
-	return _getCatalogEntries(url, query);
+	return cacheWrapCatalog(id, () => _getCatalogEntries(url, query));
 });
 
 builder.defineMetaHandler((args) => {
@@ -90,9 +91,9 @@ builder.defineMetaHandler((args) => {
 	const query = {};
 	query['include'] = 'genres,episodes';
 
-	return _getContent(`https://kitsu.io/api/edge/anime/${id}`, query)
+	return cacheWrapMeta(id, () =>_getContent(`https://kitsu.io/api/edge/anime/${id}`, query)
 			.then((response) => toStremioMeta(response.data, response.included))
-			.then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE }));
+			.then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE })));
 });
 
 async function _getCatalogEntries(url, queryParams) {

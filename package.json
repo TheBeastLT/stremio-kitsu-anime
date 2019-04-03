@@ -8,6 +8,8 @@
   "author": "TheBeastLT <pauliox@beyond.lt>",
   "license": "MIT",
   "dependencies": {
+    "cache-manager": "^2.9.0",
+    "cache-manager-mongodb": "^0.2.1",
     "needle": "^2.2.4",
     "stremio-addon-sdk": "^1.2.0"
   }
