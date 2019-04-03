@@ -1,10 +1,6 @@
 {
   "name": "stremio-kitsu-anime",
   "version": "0.0.1",
-  "engines": {
-    "npm": "6.x",
-    "node": "10.x"
-  },
   "scripts": {
     "start": "node ./index.local.js",
     "deploy": "now && now alias"

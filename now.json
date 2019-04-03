@@ -1,12 +1,15 @@
 {
   "version": 2,
   "name": "anime-kitsu",
-  "alias": "anime-kitsu",
+  "alias": ["anime-kitsu", "anime-kitsu.stremio.ga"],
   "builds": [
     { "src": "**/*.js", "use": "@now/node" },
     { "src": "static/**/*.json", "use": "@now/node" }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "serverless.js" }
-  ]
+  ],
+  "env": {
+    "MONGODB_URI": "@mongodb-uri"
+  }
 }
