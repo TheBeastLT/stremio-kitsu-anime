@@ -1,7 +1,6 @@
 {
   "version": 2,
-  "name": "anime-kitsu",
-  "alias": ["anime-kitsu", "anime-kitsu.stremio.ga"],
+  "name": "stremio-anime-kitsu",
   "builds": [
     { "src": "**/*.js", "use": "@now/node" },
     { "src": "static/**/*.json", "use": "@now/node" }
