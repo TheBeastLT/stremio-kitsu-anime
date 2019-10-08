@@ -1,8 +1,9 @@
 const needle = require('needle');
 const { addonBuilder } = require('stremio-addon-sdk');
 const genres = require('./static/data/genres');
-const { toStremioMeta } = require('./lib/metadata');
+const { toStremioMeta, mergeMetadatas } = require('./lib/metadata');
 const { cacheWrapMeta, cacheWrapCatalog } = require('./lib/cache');
+const imdbMappping = require('./static/data/imdb_mapping');
 
 const MAX_SIZE = 20;
 const CACHE_MAX_AGE = process.env.CACHE_MAX_AGE || 4 * 60 *60;
@@ -87,13 +88,19 @@ builder.defineMetaHandler((args) => {
 		return Promise.reject(new Error('invalid id'));
 	}
 
-	const id = parseInt(args.id.match(/\d+$/)[0]);
+	const id = args.id.match(/\d+$/)[0];
 	const query = {};
 	query['include'] = 'genres,episodes';
 
-	return cacheWrapMeta(id, () =>_getContent(`https://kitsu.io/api/edge/anime/${id}`, query)
+	return _getContent(`https://kitsu.io/api/edge/anime/${id}`, query)
 			.then((response) => toStremioMeta(response.data, response.included))
-			.then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE })));
+			.then((meta) => Promise.all(Object.entries(imdbMappping)
+					.filter(([kitsuId, info]) => info.imdb_id === meta.imdb_id && kitsuId !== id)
+					.map(([kitsuId, info]) => _getContent(`https://kitsu.io/api/edge/anime/${kitsuId}`, query)
+					.then((response) => toStremioMeta(response.data, response.included))))
+					.then((metas) => [meta].concat(metas)))
+			.then((metas) => metas.length > 1 ? mergeMetadatas(metas, id) : metas[0])
+			.then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE }));
 });
 
 async function _getCatalogEntries(url, queryParams) {
