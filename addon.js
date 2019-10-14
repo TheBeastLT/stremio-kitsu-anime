@@ -5,7 +5,7 @@ const { toStremioMeta } = require('./lib/metadata');
 const { cacheWrapMeta, cacheWrapCatalog } = require('./lib/cache');
 
 const MAX_SIZE = 20;
-const CACHE_MAX_AGE = process.env.CACHE_MAX_AGE || 4 * 60 *60;
+const CACHE_MAX_AGE = process.env.CACHE_MAX_AGE || 7 * 24 * 60; // 7 days
 
 const manifest = {
 	id: 'community.anime.kitsu',
@@ -50,8 +50,7 @@ const builder = new addonBuilder(manifest);
 
 builder.defineCatalogHandler((args) => {
 	const skip = args.extra && args.extra.skip || 0;
-	const page = skip / MAX_SIZE;
-	const id = `${args.id}|${args.extra && args.extra.genre || 'All'}|${page}`;
+	const id = `${args.id}|${args.extra && args.extra.genre || 'All'}|${skip}`;
 	const url = args.id === 'kitsu-anime-trending' ? 'https://kitsu.io/api/edge/trending/anime' : 'https://kitsu.io/api/edge/anime';
 	const query = {};
 	query['include'] = 'genres';
@@ -78,11 +77,10 @@ builder.defineCatalogHandler((args) => {
 		query['limit'] = '50';
 	}
 
-	return cacheWrapCatalog(id, () => _getCatalogEntries(url, query));
+	return cacheWrapCatalog(id, () => _getExtendedCatalogEntries(url, query));
 });
 
 builder.defineMetaHandler((args) => {
-	console.log(args);
 	if (!args.id.match(/^kitsu:\d+$/)) {
 		return Promise.reject(new Error('invalid id'));
 	}
@@ -95,6 +93,17 @@ builder.defineMetaHandler((args) => {
 			.then((response) => toStremioMeta(response.data, response.included))
 			.then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE })));
 });
+
+async function _getExtendedCatalogEntries(url, queryParams, extendTo = 100) {
+	const nextOffset = queryParams['page[offset]'] + MAX_SIZE;
+	const nextQueryParams = { ...queryParams, 'page[offset]': nextOffset };
+	return _getCatalogEntries(url, queryParams)
+			.then((entries) => nextOffset < extendTo
+				? _getExtendedCatalogEntries(url, nextQueryParams, extendTo)
+								.then((nextEntries) => entries.metas.concat(nextEntries.metas))
+				: entries.metas)
+			.then((metas) => ({ metas: metas, cacheMaxAge: CACHE_MAX_AGE }))
+}
 
 async function _getCatalogEntries(url, queryParams) {
 	return _getContent(url, queryParams)
