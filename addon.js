@@ -1,11 +1,12 @@
 const needle = require('needle');
 const { addonBuilder } = require('stremio-addon-sdk');
 const genres = require('./static/data/genres');
-const { toStremioEntryMeta, toStremioCatalogMeta } = require('./lib/metadata');
+const { enrichKitsuMetadata, enrichImdbMetadata } = require('./lib/metadataEnrich');
 const { cacheWrapMeta, cacheWrapCatalog } = require('./lib/cache');
 const kitsu = require('./lib/kitsu_api');
+const cinemeta = require('./lib/cinemeta_api');
 
-const CACHE_MAX_AGE = process.env.CACHE_MAX_AGE || 7 * 24 * 60; // 7 days
+const CACHE_MAX_AGE = process.env.CACHE_MAX_AGE || 3 * 24 * 60; // 7 days
 
 const manifest = {
 	id: 'community.anime.kitsu',
@@ -75,13 +76,22 @@ builder.defineCatalogHandler((args) => {
 });
 
 builder.defineMetaHandler((args) => {
-	if (!args.id.match(/^kitsu:\d+$/)) {
-		return Promise.reject(new Error('invalid id'));
-	}
-	const id = parseInt(args.id.match(/\d+$/)[0]);
+	if (args.id.match(/^kitsu:\d+$/)) {
+		const id = parseInt(args.id.replace('kitsu:', ''));
 
-	return cacheWrapMeta(id, () => kitsu.animeData(id)
-			.then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE })));
+		return cacheWrapMeta(id, () => kitsu.animeData(id)
+				.then((metadata) => enrichKitsuMetadata(metadata, cinemeta.getCinemetaMetadata))
+				.then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE })));
+	}
+	if (args.id.match(/^tt\d+$/)) {
+		const id = args.id;
+
+		return cacheWrapMeta(id, () => cinemeta.getCinemetaMetadata(id, args.type)
+				.then((metadata) => enrichImdbMetadata(metadata, kitsu.animeData))
+				.then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE })));
+	}
+
+	return Promise.reject(new Error('invalid id'));
 });
 
 module.exports = builder.getInterface();
