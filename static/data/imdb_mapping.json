@@ -12389,6 +12389,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "41290": {
+    "imdb_id": "tt6460600",
+    "title": "BanG Dream!",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "41303": {
   },
   "41312": {
@@ -12771,6 +12777,12 @@
     "fromSeason": 1,
     "fromEpisode": 12
   },
+  "42059": {
+    "imdb_id": "tt3398540",
+    "title": "Haikyuu!!",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "42060": {
     "imdb_id": "tt9826344",
     "title": "Why the Hell are You Here, Teacher!?",
@@ -13080,6 +13092,12 @@
   "41073": {
     "imdb_id": "tt10317978",
     "title": "Mob Psycho 100 REIGEN - The Miracle Psychic that Nobody Knows"
+  },
+  "42410": {
+    "imdb_id": "tt9193770",
+    "title": "Isekai Quartet",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "42416": {
     "imdb_id": "tt11010142",
