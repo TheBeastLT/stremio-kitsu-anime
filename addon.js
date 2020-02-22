@@ -1,7 +1,7 @@
 const needle = require('needle');
 const { addonBuilder } = require('stremio-addon-sdk');
 const genres = require('./static/data/genres');
-const { enrichKitsuMetadata, enrichImdbMetadata } = require('./lib/metadataEnrich');
+const { enrichKitsuMetadata, enrichImdbMetadata, hasImdbMapping } = require('./lib/metadataEnrich');
 const { cacheWrapMeta, cacheWrapCatalog } = require('./lib/cache');
 const kitsu = require('./lib/kitsu_api');
 const cinemeta = require('./lib/cinemeta_api');
@@ -85,6 +85,10 @@ builder.defineMetaHandler((args) => {
 	}
 	if (args.id.match(/^tt\d+$/)) {
 		const id = args.id;
+
+		if (!hasImdbMapping(id)) {
+			return Promise.reject(`No imdb mapping for: ${id}`);
+		}
 
 		return cacheWrapMeta(id, () => cinemeta.getCinemetaMetadata(id, args.type)
 				.then((metadata) => enrichImdbMetadata(metadata, kitsu.animeData))
