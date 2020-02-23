@@ -2478,9 +2478,9 @@
     "title": "Gunparade Orchestra"
   },
   "761": {
-    "imdb_id": "tt0765441",
-    "title": "Digimon Savers",
-    "fromSeason": 1,
+    "imdb_id": "tt0210418",
+    "title": "Digimon: Digital Monsters",
+    "fromSeason": 5,
     "fromEpisode": 1
   },
   "762": {
@@ -6836,7 +6836,7 @@
   "7733": {
     "imdb_id": "tt1929675",
     "title": "Infinite Stratos",
-    "fromSeason": 1,
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "7744": {
@@ -8030,6 +8030,18 @@
   "8718": {
     "imdb_id": "tt5098548",
     "title": "One Piece '3D2Y': Âsu no shi o koete! Rufi nakamatachi no chikai"
+  },
+  "2788": {
+    "imdb_id": "tt1210339",
+    "title": "Junjou Romantica",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3802": {
+    "imdb_id": "tt1210339",
+    "title": "Junjou Romantica",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "8728": {
     "imdb_id": "tt1210339",
