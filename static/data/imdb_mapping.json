@@ -221,7 +221,7 @@
     "imdb_id": "tt0451991",
     "title": "Full Metal Panic! The Second Raid"
   },
-  "905":  {
+  "905": {
     "imdb_id": "tt1091866",
     "title": "A Relatively Leisurely Day in the Life of a Fleet Captain"
   },
@@ -8601,7 +8601,6 @@
     "imdb_id": "tt6479836",
     "title": "Ongaku shoujo"
   },
-
   "10453": {
     "imdb_id": "tt5324094",
     "title": "Dance with Devils"
@@ -8652,7 +8651,6 @@
   },
   "10672": {
   },
-
   "10706": {
     "imdb_id": "tt5194246",
     "title": "Beautiful Bones: Sakurako's Investigation"
@@ -9874,7 +9872,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-
   "11850": {
   },
   "11857": {
@@ -13197,6 +13194,18 @@
     "imdb_id": "tt7745956",
     "title": "She-Ra and the Princesses of Power",
     "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "42356": {
+    "imdb_id": "tt9883676",
+    "title": "We Never Learn: Bokuben",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42414": {
+    "imdb_id": "tt9883676",
+    "title": "We Never Learn: Bokuben",
+    "fromSeason": 2,
     "fromEpisode": 1
   }
 }
