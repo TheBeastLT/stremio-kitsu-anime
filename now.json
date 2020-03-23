@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "stremio-anime-kitsu",
   "builds": [
     { "src": "**/*.js", "use": "@now/node" },
     { "src": "static/**/*.json", "use": "@now/node" }

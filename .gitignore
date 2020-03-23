@@ -2,3 +2,5 @@
 node_modules
 **/*.sql
 **/*.env
+
+.now
