@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "**/*.js", "use": "@now/node" },
-    { "src": "static/**/*.json", "use": "@now/node" }
-  ],
   "routes": [
-    { "src": "/(.*)", "dest": "serverless.js" }
+    {
+      "src": "/(.*)",
+      "status": 404
+    }
   ],
-  "env": {
-    "MONGODB_URI": "@mongodb-uri"
+  "github": {
+    "silent": true
   }
 }
