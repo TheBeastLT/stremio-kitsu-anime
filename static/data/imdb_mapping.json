@@ -245,6 +245,18 @@
     "imdb_id": "tt0159172",
     "title": "Mobile Suit Gundam"
   },
+  "975": {
+    "imdb_id": "tt0159509",
+    "title": "Mobile Suit Gundam I"
+  },
+  "976": {
+    "imdb_id": "tt0159510",
+    "title": "Mobile Suit Gundam II: Soldiers of Sorrow"
+  },
+  "977": {
+    "imdb_id": "tt0159511",
+    "title": "Mobile Suit Gundam III: Encounters in Space"
+  },
   "60": {
     "imdb_id": "tt0159569",
     "title": "Mobile Suit Gundam: The 08th MS Team"
@@ -264,6 +276,18 @@
   "64": {
     "imdb_id": "tt0159186",
     "title": "Mobile Suit Zeta Gundam"
+  },
+  "1772": {
+    "imdb_id": "tt0435202",
+    "title": "Mobile Suit Z Gundam: A New Translation - Heirs to the Stars"
+  },
+  "1773": {
+    "imdb_id": "tt0468812",
+    "title": "Mobile Suit Z Gundam 2: A New Translation - Lovers"
+  },
+  "1774": {
+    "imdb_id": "tt0488584",
+    "title": "Mobile Suit Z Gundam 3: A New Translation - Love Is the Pulse of the Stars"
   },
   "65": {
     "imdb_id": "tt0159184",
@@ -304,6 +328,14 @@
   "74": {
     "imdb_id": "tt0189318",
     "title": "Turn-A Gundam"
+  },
+  "3381": {
+    "imdb_id": "tt4130762",
+    "title": "Turn A Gundam: Earth Light"
+  },
+  "3382": {
+    "imdb_id": "tt4130788",
+    "title": "Turn A Gundam: Movie II: Moonlight Butterfly"
   },
   "75": {
     "imdb_id": "tt0159182",
@@ -2417,10 +2449,6 @@
     "imdb_id": "tt0807834",
     "title": "Rec"
   },
-  "646": {
-    "imdb_id": "tt0994706",
-    "title": "Zoids Genesis"
-  },
   "647": {
     "imdb_id": "tt0294180",
     "title": "High School! Kimengumi"
@@ -2449,6 +2477,10 @@
     "imdb_id": "tt0388473",
     "title": "Tokyo Godfathers"
   },
+  "646": {
+    "imdb_id": "tt0994706",
+    "title": "Zoids Genesis"
+  },
   "685": {
     "imdb_id": "tt0367443",
     "title": "Zoids: Chaotic Century"
@@ -2456,6 +2488,10 @@
   "686": {
     "imdb_id": "tt0214354",
     "title": "Zoids"
+  },
+  "1566": {
+    "imdb_id": "tt0398617",
+    "title": "Zoids Fuzors"
   },
   "692": {
     "imdb_id": "tt1183586",
@@ -2731,6 +2767,16 @@
     "imdb_id": "tt0091211",
     "title": "Fist of the North Star",
     "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "1212": {
+    "imdb_id": "tt0142371",
+    "title": "Fist of the North Star"
+  },
+  "1210": {
+    "imdb_id": "tt0884847",
+    "title": "Fist of the Blue Sky",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "861": {
@@ -3136,6 +3182,26 @@
   "1211": {
     "imdb_id": "tt0367037",
     "title": "New Fist of the North Star"
+  },
+  "1593": {
+    "imdb_id": "tt0456980",
+    "title": "Fist of the North Star: New Saviour Legend"
+  },
+  "2735": {
+    "imdb_id": "tt0456982",
+    "title": "Fist of the North Star: The Legend of Yuria"
+  },
+  "1969": {
+    "imdb_id": "tt1135522",
+    "title": "Shin kyûseishu densetsu Hokuto no Ken: Raô den - Gekitô no shô"
+  },
+  "3552": {
+    "imdb_id": "tt0456981",
+    "title": "Shin Kyûseishu densetsu Hokuto no Ken - Toki den"
+  },
+  "4038": {
+    "imdb_id": "tt0456978",
+    "title": "Shin Kyûseishu densetsu Hokuto no Ken - Kenshirô den"
   },
   "1219": {
     "imdb_id": "tt0990372",
@@ -5096,6 +5162,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "4662": {
+    "imdb_id": "tt1515976",
+    "title": "11 Eyes",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5102": {
+    "imdb_id": "tt1515976",
+    "title": "11 Eyes",
+    "fromSeason": 1,
+    "fromEpisode": 13
+  },
   "4477": {
     "imdb_id": "tt1440068",
     "title": "Tokyo Magnitude 8.0"
@@ -6763,10 +6841,22 @@
     "imdb_id": "tt3037954",
     "title": "Leviathan: The Last Defense"
   },
-  "7646": {
+  "6064": {
     "imdb_id": "tt4563516",
     "title": "DD Fist of the North Star",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7646": {
+    "imdb_id": "tt4563516",
+    "title": "DD Fist of the North Star",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "11080": {
+    "imdb_id": "tt4563516",
+    "title": "DD Fist of the North Star",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "7653": {
@@ -7481,12 +7571,31 @@
     "imdb_id": "tt3358426",
     "title": "Nobunaga the Fool"
   },
+  "7927": {
+    "imdb_id": "tt1695360",
+    "title": "The Legend of Korra",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7938": {
+    "imdb_id": "tt1695360",
+    "title": "The Legend of Korra",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "8077": {
     "imdb_id": "tt1695360",
     "title": "The Legend of Korra",
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "8706": {
+    "imdb_id": "tt1695360",
+    "title": "The Legend of Korra",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "11566": {},
   "8082": {
     "imdb_id": "tt3399620",
     "title": "World Conquest Zvezda Plot",
@@ -8001,7 +8110,6 @@
     "fromSeason": 3,
     "fromEpisode": 13
   },
-
   "8575": {
     "imdb_id": "tt3985242",
     "title": "Orenchi no Furo Jijou",
@@ -8198,12 +8306,6 @@
     "imdb_id": "tt3909224",
     "title": "Nanatsu no taizai",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "8706": {
-    "imdb_id": "tt1695360",
-    "title": "The Legend of Korra",
-    "fromSeason": 4,
     "fromEpisode": 1
   },
   "8710": {
@@ -9120,12 +9222,6 @@
     "imdb_id": "tt5271506",
     "title": "Hundred"
   },
-  "11080": {
-    "imdb_id": "tt4563516",
-    "title": "DD Fist of the North Star",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "11107": {
     "imdb_id": "tt0417299",
     "title": "Avatar: The Last Airbender",
@@ -9148,6 +9244,24 @@
     "imdb_id": "tt5249462",
     "title": "Erased",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "11113": {
+    "imdb_id": "tt6348126",
+    "title": "Beyblade Burst",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "13510": {
+    "imdb_id": "tt6348126",
+    "title": "Beyblade Burst",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "41128": {
+    "imdb_id": "tt6348126",
+    "title": "Beyblade Burst",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "11115": {
@@ -11979,15 +12093,21 @@
   "13981": {
   },
   "13983": {
-    "imdb_id": "tt8390536",
-    "title": "Fist of the Blue Sky: Re: Genesis",
+    "imdb_id": "tt0884847",
+    "title": "Fist of the Blue Sky",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "41953": {
-    "imdb_id": "tt8390536",
-    "title": "Fist of the Blue Sky: Re: Genesis",
+    "imdb_id": "tt0884847",
+    "title": "Fist of the Blue Sky",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "3676": {
+    "imdb_id": "tt1308847",
+    "title": "Legends of the Dark King: A Fist of the North Star Story",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "13988": {
