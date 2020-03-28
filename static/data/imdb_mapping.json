@@ -31,10 +31,6 @@
     "imdb_id": "tt2074708",
     "title": "Hungry Heart: Wild Striker"
   },
-  "9": {
-    "imdb_id": "tt0389644",
-    "title": "Initial D: Fourth Stage"
-  },
   "10": {
     "imdb_id": "tt0434706",
     "title": "Monster"
@@ -680,15 +676,67 @@
   },
   "162": {
     "imdb_id": "tt0385426",
-    "title": "Initial D"
+    "title": "Initial D",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "163": {
     "imdb_id": "tt0247874",
-    "title": "Initial D: Second Stage"
+    "title": "Initial D: Second Stage",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "164": {
     "imdb_id": "tt0388130",
     "title": "Initial D: Third Stage"
+  },
+  "9": {
+    "imdb_id": "tt0389644",
+    "title": "Initial D: Fourth Stage",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7204": {
+    "imdb_id": "tt3385538",
+    "title": "Initial D: Fifth Stage",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8482": {
+    "imdb_id": "tt6322684",
+    "title": "Initial D: Final Stage",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "728": {
+    "imdb_id": "tt7941838",
+    "title": "Initial D: Battle Stage"
+  },
+  "3358": {
+    "imdb_id": "tt11294636",
+    "title": "Initial D: Battle Stage 2"
+  },
+  "729": {
+    "imdb_id": "tt0400537",
+    "title": "Initial D: Extra Stage",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3999": {
+    "imdb_id": "tt3382648",
+    "title": "Initial D: Extra Stage 2"
+  },
+  "7906": {
+    "imdb_id": "tt3971764",
+    "title": "New Initial D the Movie: Legend 1 - Awakening"
+  },
+  "10073": {
+    "imdb_id": "tt4971484",
+    "title": "New Initial D the Movie: Legend 2 - Racer"
+  },
+  "11053": {
+    "imdb_id": "tt5463088",
+    "title": "New Initial D the Movie: Legend 3 - Dream"
   },
   "165": {
     "imdb_id": "tt2404235",
@@ -2031,9 +2079,51 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "1053": {
+    "imdb_id": "tt0112166",
+    "title": "The Slayers",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "3421": {
+    "imdb_id": "tt0112166",
+    "title": "The Slayers",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "4002": {
+    "imdb_id": "tt0112166",
+    "title": "The Slayers",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
   "495": {
-    "imdb_id": "tt0161981",
+    "imdb_id": "tt0161978",
     "title": "Slayers the Motion Picture"
+  },
+  "767": {
+    "imdb_id": "tt0462717",
+    "title": "Slayers Premium"
+  },
+  "768": {
+    "imdb_id": "tt1796619",
+    "title": "Slayers Gorgeous"
+  },
+  "769": {
+    "imdb_id": "tt0161978",
+    "title": "Slayers Great"
+  },
+  "770": {
+    "imdb_id": "tt0161979",
+    "title": "Slayers Return"
+  },
+  "1051": {
+    "imdb_id": "tt0161980",
+    "title": "Slayers: The Book of Spells"
+  },
+  "1052": {
+    "imdb_id": "tt1067925",
+    "title": "Slayers: Excellent"
   },
   "496": {
     "imdb_id": "tt0272880",
@@ -2424,10 +2514,6 @@
   "727": {
     "imdb_id": "tt0096633",
     "title": "Legend of the Galactic Heroes"
-  },
-  "729": {
-    "imdb_id": "tt0400537",
-    "title": "Initial D: Extra Stage"
   },
   "732": {
     "imdb_id": "tt5925320",
@@ -3869,6 +3955,16 @@
     "imdb_id": "tt0808506",
     "title": "The Girl Who Leapt Through Time"
   },
+  "2032": {
+    "imdb_id": "tt0144719",
+    "title": "Karasu Tengu Kabuto",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3214": {
+    "imdb_id": "tt0104583",
+    "title": "Karasu tengu Kabuto: Ôgon no me no kemono"
+  },
   "2033": {
     "imdb_id": "tt0991060",
     "title": "Rakugo tennyo Oyui"
@@ -4114,6 +4210,16 @@
     "title": "Mobile Suit Gundam 00",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "3355": {
+    "imdb_id": "tt1134000",
+    "title": "Mobile Suit Gundam 00",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "4509": {
+    "imdb_id": "tt1726286",
+    "title": "Mobile Suit Gundam 00: A Wakening of the Trailblazer"
   },
   "2347": {
     "imdb_id": "tt0085092",
@@ -4759,7 +4865,19 @@
     "fromSeason": 10,
     "fromEpisode": 1
   },
+  "3505": {
+    "imdb_id": "tt1298820",
+    "title": "Clannad: After Story",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3438": {
+    "imdb_id": "tt1298820",
+    "title": "Clannad: After Story",
+    "fromSeason": 1,
+    "fromEpisode": 25
+  },
+  "4529": {
     "imdb_id": "tt1298820",
     "title": "Clannad: After Story",
     "fromSeason": 1,
@@ -4786,10 +4904,6 @@
   "3492": {
     "imdb_id": "tt1485763",
     "title": "One Piece: Strong World"
-  },
-  "3505": {
-    "imdb_id": "tt1118804",
-    "title": "Clannad"
   },
   "3514": {
     "imdb_id": "tt1445868",
@@ -5001,12 +5115,6 @@
     "title": "Baka and Test: Summon the Beasts",
     "fromSeason": 1,
     "fromEpisode": 1
-  },
-  "4529": {
-    "imdb_id": "tt1298820",
-    "title": "Clannad: After Story",
-    "fromSeason": 1,
-    "fromEpisode": 25
   },
   "4555": {
     "imdb_id": "tt1355642",
@@ -5639,7 +5747,17 @@
   },
   "6448": {
     "imdb_id": "tt2098220",
-    "title": "Hunter x Hunter"
+    "title": "Hunter x Hunter",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6930": {
+    "imdb_id": "tt2918988",
+    "title": "Hunter X Hunter: Phantom Rouge"
+  },
+  "7908": {
+    "imdb_id": "tt3198698",
+    "title": "Hunter x Hunter: The Last Mission"
   },
   "6462": {
     "imdb_id": "tt2176165",
@@ -6032,6 +6150,30 @@
     "title": "Psycho-Pass",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "7863": {
+    "imdb_id": "tt2379308",
+    "title": "Psycho-Pass",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "8574": {
+    "imdb_id": "tt2379308",
+    "title": "Psycho-Pass",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "41027": {
+    "imdb_id": "tt10443844",
+    "title": "Psycho-Pass: Sinners of the System Case 1 Crime and Punishment"
+  },
+  "41028": {
+    "imdb_id": "tt11078434",
+    "title": "Psycho-Pass: Sinners of the System Case 2 First Guardian"
+  },
+  "41029": {
+    "imdb_id": "tt11078522",
+    "title": "Psycho-Pass: Sinners of the System Case.3 - Onshuu no Kanata ni"
   },
   "7005": {
     "imdb_id": "tt2309408",
@@ -6971,12 +7113,6 @@
     "imdb_id": "tt4831682",
     "title": "Little Witch Academia: The Enchanted Parade"
   },
-  "7863": {
-    "imdb_id": "tt2379308",
-    "title": "Psycho-Pass",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "7864": {
     "imdb_id": "tt2575684",
     "title": "Date a Live",
@@ -7075,6 +7211,72 @@
     "imdb_id": "tt0343314",
     "title": "Teen Titans",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "11013": {
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "12629": {
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 4,
+    "fromEpisode": 0
+  },
+  "7929": {
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8278": {
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "11117": {
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "12279": {
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "13247": {
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "41937": {
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 6,
+    "fromEpisode": 1
+  },
+  "42425": {
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 7,
+    "fromEpisode": 1
+  },
+  "42599": {
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 8,
+    "fromEpisode": 1
+  },
+  "42600": {
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 9,
     "fromEpisode": 1
   },
   "7936": {
@@ -7523,12 +7725,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "8278": {
-    "imdb_id": "tt3066242",
-    "title": "RWBY",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "8282": {
   },
   "8283": {
@@ -7745,10 +7941,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "8482": {
-    "imdb_id": "tt6322684",
-    "title": "Initial D: Final Stage"
-  },
   "8498": {
     "imdb_id": "tt2575728",
     "title": "Ai Mai Mi",
@@ -7809,12 +8001,7 @@
     "fromSeason": 3,
     "fromEpisode": 13
   },
-  "8574": {
-    "imdb_id": "tt2379308",
-    "title": "Psycho-Pass",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
+
   "8575": {
     "imdb_id": "tt3985242",
     "title": "Orenchi no Furo Jijou",
@@ -8907,12 +9094,6 @@
   },
   "10978": {
   },
-  "11013": {
-    "imdb_id": "tt3066242",
-    "title": "RWBY",
-    "fromSeason": 0,
-    "fromEpisode": 1
-  },
   "11020": {
     "imdb_id": "tt5321096",
     "title": "Haruchika: Haruta & Chika"
@@ -8972,12 +9153,6 @@
   "11115": {
     "imdb_id": "tt9044620",
     "title": "Kuroko no Basket: Saikou no Present Desu"
-  },
-  "11117": {
-    "imdb_id": "tt3066242",
-    "title": "RWBY",
-    "fromSeason": 3,
-    "fromEpisode": 1
   },
   "11119": {
     "imdb_id": "tt1807824",
@@ -9890,6 +10065,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11961": {
+    "imdb_id": "tt7112162",
+    "title": "FLCL Alternative",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "13303": {
     "imdb_id": "tt6114698",
     "title": "Nobunaga No Shinobi",
@@ -10556,12 +10737,6 @@
   "12628": {
     "imdb_id": "tt7833606",
     "title": "Girls und Panzer das Finale: Part I"
-  },
-  "12629": {
-    "imdb_id": "tt3066242",
-    "title": "RWBY",
-    "fromSeason": 4,
-    "fromEpisode": 0
   },
   "12633": {
     "imdb_id": "tt3909224",
@@ -12588,12 +12763,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "41937": {
-    "imdb_id": "tt3066242",
-    "title": "RWBY",
-    "fromSeason": 6,
-    "fromEpisode": 1
-  },
   "41938": {
     "imdb_id": "tt9050410",
     "title": "My Sister, My Writer",
@@ -13205,6 +13374,24 @@
   "42040": {
     "imdb_id": "tt11147852",
     "title": "Dorohedoro",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42911": {
+    "imdb_id": "tt11587812",
+    "title": "Oda Cinnamon Nobunaga",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42552": {
+    "imdb_id": "tt11177400",
+    "title": "Smile at the Runway",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42470": {
+    "imdb_id": "tt11405408",
+    "title": "Asteroid in Love",
     "fromSeason": 1,
     "fromEpisode": 1
   }
