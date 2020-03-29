@@ -6235,11 +6235,17 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "8574": {
+  "42183": {
     "imdb_id": "tt2379308",
     "title": "Psycho-Pass",
-    "fromSeason": 2,
+    "fromSeason": 3,
     "fromEpisode": 1
+  },
+  "8574": {
+  },
+  "7986": {
+    "imdb_id": "tt4219130",
+    "title": "Psycho-Pass: The Movie"
   },
   "41027": {
     "imdb_id": "tt10443844",
@@ -6252,6 +6258,10 @@
   "41029": {
     "imdb_id": "tt11078522",
     "title": "Psycho-Pass: Sinners of the System Case.3 - Onshuu no Kanata ni"
+  },
+  "42936": {
+    "imdb_id": "tt11433874",
+    "title": "Psycho-Pass 3: First Inspector"
   },
   "7005": {
     "imdb_id": "tt2309408",
