@@ -910,7 +910,21 @@
   },
   "203": {
     "imdb_id": "tt0962740",
-    "title": "Hell Girl"
+    "title": "Hell Girl",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1434": {
+    "imdb_id": "tt0968237",
+    "title": "Hell Girl: Two Mirrors",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3210": {
+    "imdb_id": "tt1411813",
+    "title": "Hell Girl: Three Vessels",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "204": {
     "imdb_id": "tt0441824",
@@ -5601,7 +5615,9 @@
   },
   "5908": {
     "imdb_id": "tt1909586",
-    "title": "Sket Dance"
+    "title": "Sket Dance",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "5937": {
     "imdb_id": "tt1836435",
