@@ -3211,6 +3211,40 @@
     "imdb_id": "tt1324042",
     "title": "Phoenix"
   },
+  "1417": {
+    "imdb_id": "tt0111351",
+    "title": "You're Under Arrest!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1226": {
+    "imdb_id": "tt0111351",
+    "title": "You're Under Arrest!",
+    "fromSeason": 1,
+    "fromEpisode": 5
+  },
+  "1813": {
+    "imdb_id": "tt0111351",
+    "title": "You're Under Arrest!",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "2711": {
+    "imdb_id": "tt0111351",
+    "title": "You're Under Arrest!",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "1810": {
+    "imdb_id": "tt4164662",
+    "title": "You're Under Arrest: Mini Specials",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "1812": {
+    "imdb_id": "tt0377008",
+    "title": "You're Under Arrest: The Movie"
+  },
   "1228": {
     "imdb_id": "tt0488266",
     "title": "Guyver: The Bioboosted Armor"
