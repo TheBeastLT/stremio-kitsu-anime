@@ -3538,12 +3538,46 @@
     "title": "Sugar Sugar Rune"
   },
   "1483": {
-    "imdb_id": "tt0140644",
-    "title": "Uchû senkan Yamato"
+    "imdb_id": "tt0078692",
+    "title": "Star Blazers",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "1484": {
-    "imdb_id": "tt0140644",
-    "title": "Uchû senkan Yamato"
+    "imdb_id": "tt0078692",
+    "title": "Star Blazers",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "1485": {
+    "imdb_id": "tt0078692",
+    "title": "Star Blazers",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "645": {
+    "imdb_id": "tt0204704",
+    "title": "Space Battleship Yamato"
+  },
+  "2766": {
+    "imdb_id": "tt0316540",
+    "title": "Farewell to Space Battleship Yamato: Warriors of Love"
+  },
+  "2767": {
+    "imdb_id": "tt0140703",
+    "title": "Be Forever Yamato"
+  },
+  "2769": {
+    "imdb_id": "tt0140647",
+    "title": "Space Battleship Yamato: The New Voyage"
+  },
+  "2770": {
+    "imdb_id": "tt0140648",
+    "title": "Final Yamato"
+  },
+  "4878": {
+    "imdb_id": "tt1442543",
+    "title": "Space Battleship Yamato Resurrection"
   },
   "1486": {
     "imdb_id": "tt0981247",
