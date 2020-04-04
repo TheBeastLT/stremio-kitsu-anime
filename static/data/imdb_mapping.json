@@ -7055,10 +7055,22 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "6648": {
+    "imdb_id": "tt2404499",
+    "title": "Kingdom",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "7680": {
     "imdb_id": "tt2404499",
     "title": "Kingdom",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43037": {
+    "imdb_id": "tt2404499",
+    "title": "Kingdom",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "7681": {
@@ -10858,7 +10870,15 @@
   },
   "12534": {
     "imdb_id": "tt8372010",
-    "title": "Tsugumomo"
+    "title": "Tsugumomo",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42180": {
+    "imdb_id": "tt8372010",
+    "title": "Tsugumomo",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "12535": {
     "imdb_id": "tt7224994",
@@ -10911,6 +10931,16 @@
     "fromEpisode": 1
   },
   "12558": {
+    "imdb_id": "tt11834102",
+    "title": "IDOLiSH7",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42453": {
+    "imdb_id": "tt11834102",
+    "title": "IDOLiSH7",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "12561": {
     "imdb_id": "tt4584754",
@@ -13361,6 +13391,12 @@
     "imdb_id": "tt10427920",
     "title": "Are You Lost?"
   },
+  "42173": {
+    "imdb_id": "tt11988478",
+    "title": "Gleipnir",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42174": {
     "imdb_id": "tt10347516",
     "title": "Cop Craft",
@@ -13692,6 +13728,36 @@
   "43059": {
     "imdb_id": "tt11886172",
     "title": "The Eighth Son? That Can't Be Right!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42479": {
+    "imdb_id": "tt11754514",
+    "title": "Arte",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42850": {
+    "imdb_id": "tt11863226",
+    "title": "President, It's Time for Battle!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42954": {
+    "imdb_id": "tt11645760",
+    "title": "Digimon Adventure (2020)",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42966": {
+    "imdb_id": "tt10954084",
+    "title": "Sakura Wars: The Animation",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43063": {
+    "imdb_id": "tt10204658",
+    "title": "Yesterday o Utatte",
     "fromSeason": 1,
     "fromEpisode": 1
   }
