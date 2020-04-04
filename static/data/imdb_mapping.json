@@ -1900,11 +1900,27 @@
   },
   "442": {
     "imdb_id": "tt0249327",
-    "title": "Yu-Gi-Oh!"
+    "title": "Yu-Gi-Oh!",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "443": {
     "imdb_id": "tt0493334",
-    "title": "Yu-Gi-Oh! GX"
+    "title": "Yu-Gi-Oh! GX",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5995": {
+    "imdb_id": "tt2363624",
+    "title": "Yu-Gi-Oh! Zexal",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7263": {
+    "imdb_id": "tt2363624",
+    "title": "Yu-Gi-Oh! Zexal",
+    "fromSeason": 4,
+    "fromEpisode": 1
   },
   "444": {
     "imdb_id": "tt0872306",
@@ -5089,6 +5105,10 @@
     "title": "A Certain Magical Index",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "6583": {
+    "imdb_id": "tt3163844",
+    "title": "A Certain Magical Index: The Movie - The Miracle of Endymion"
   },
   "3732": {
     "imdb_id": "tt1260502",
