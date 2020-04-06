@@ -2,14 +2,14 @@
   "name": "stremio-kitsu-anime",
   "version": "0.0.1",
   "scripts": {
-    "start": "node ./index.local.js",
-    "deploy": "now && now alias"
+    "start": "node ./index.js"
   },
   "author": "TheBeastLT <pauliox@beyond.lt>",
   "license": "MIT",
   "dependencies": {
     "cache-manager": "^2.9.0",
     "cache-manager-mongodb": "^0.2.1",
+    "express": "^4.17.1",
     "parse-torrent-title": "git://github.com/TheBeastLT/parse-torrent-title.git#642913a7628857c5b75bd9942ba184f613118843",
     "jaro-winkler": "^0.2.8",
     "needle": "^2.2.4",
