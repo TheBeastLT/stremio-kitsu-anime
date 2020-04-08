@@ -12809,6 +12809,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42126": {
+    "imdb_id": "tt8400662",
+    "title": "Jashin-chan Dropkick",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "41174": {
     "imdb_id": "tt4869896",
     "title": "Overlord",
@@ -13183,6 +13189,12 @@
     "imdb_id": "tt9304350",
     "title": "Fruits Basket",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42554": {
+    "imdb_id": "tt9304350",
+    "title": "Fruits Basket",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "41999": {
@@ -13758,6 +13770,30 @@
   "43063": {
     "imdb_id": "tt10204658",
     "title": "Yesterday o Utatte",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42296": {
+    "imdb_id": "tt12065758",
+    "title": "Houkago Teibou Nisshi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42892": {
+    "imdb_id": "tt11886236",
+    "title": "Princess Connect! Re: Dive",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42613": {
+    "imdb_id": "tt12100946",
+    "title": "Shadowverse",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43084": {
+    "imdb_id": "tt11688122",
+    "title": "Shironeko Project: Zero Chronicle",
     "fromSeason": 1,
     "fromEpisode": 1
   }
