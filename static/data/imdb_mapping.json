@@ -12248,6 +12248,8 @@
   },
   "13952": {
   },
+  "43109": {
+  },
   "13958": {
     "imdb_id": "tt7933666",
     "title": "Kokkoku"
@@ -12925,6 +12927,12 @@
     "imdb_id": "tt9522300",
     "title": "Kaguya-sama: Love Is War",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42632": {
+    "imdb_id": "tt9522300",
+    "title": "Kaguya-sama: Love Is War",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "41375": {
@@ -13795,6 +13803,24 @@
     "imdb_id": "tt11688122",
     "title": "Shironeko Project: Zero Chronicle",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42622": {
+    "imdb_id": "tt11714178",
+    "title": "Appare-Ranman! ",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42277": {
+    "imdb_id": "tt11822984",
+    "title": "My Next Life as a Villainess: All Routes Lead to Doom! ",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42921": {
+    "imdb_id": "tt4731072",
+    "title": "Food Wars: Shokugeki no Soma",
+    "fromSeason": 5,
     "fromEpisode": 1
   }
 }
