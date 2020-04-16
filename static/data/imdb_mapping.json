@@ -2099,11 +2099,287 @@
   },
   "486": {
     "imdb_id": "tt0176385",
-    "title": "Pokémon"
+    "title": "Pokémon",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1404": {
+    "imdb_id": "tt0176385",
+    "title": "Pokémon",
+    "fromSeason": 6,
+    "fromEpisode": 1
+  },
+  "1405": {
+    "imdb_id": "tt0176385",
+    "title": "Pokémon",
+    "fromSeason": 10,
+    "fromEpisode": 1
+  },
+  "5605": {
+    "imdb_id": "tt0176385",
+    "title": "Pokémon",
+    "fromSeason": 14,
+    "fromEpisode": 1
+  },
+  "7080": {
+    "imdb_id": "tt0176385",
+    "title": "Pokémon",
+    "fromSeason": 15,
+    "fromEpisode": 1
+  },
+  "7586": {
+    "imdb_id": "tt0176385",
+    "title": "Pokémon",
+    "fromSeason": 15,
+    "fromEpisode": 25
+  },
+  "7895": {
+    "imdb_id": "tt0176385",
+    "title": "Pokémon",
+    "fromSeason": 15,
+    "fromEpisode": 39
+  },
+  "7850": {
+    "imdb_id": "tt0176385",
+    "title": "Pokémon",
+    "fromSeason": 16,
+    "fromEpisode": 1
+  },
+  "11367": {
+    "imdb_id": "tt0176385",
+    "title": "Pokémon",
+    "fromSeason": 17,
+    "fromEpisode": 1
+  },
+  "12533": {
+    "imdb_id": "tt0176385",
+    "title": "Pokémon",
+    "fromSeason": 18,
+    "fromEpisode": 1
+  },
+  "42534": {
+    "imdb_id": "tt0176385",
+    "title": "Pokémon",
+    "fromSeason": 19,
+    "fromEpisode": 1
+  },
+  "5334": {
+    "imdb_id": "tt8393838",
+    "title": "Pokémon Ranger: Guardian Signs",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7922": {
+    "imdb_id": "tt3218680",
+    "title": "Pokémon Origins",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8425": {
+    "imdb_id": "tt3657074",
+    "title": "Pokémon: Mega Evolution",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "12531": {
+    "imdb_id": "tt6071336",
+    "title": "Pokémon Generations"
+  },
+  "42869": {
+    "imdb_id": "tt11547516",
+    "title": "Pokémon: Twilight Wings",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "487": {
     "imdb_id": "tt0190641",
     "title": "Pokémon: The First Movie"
+  },
+  "1001": {
+    "imdb_id": "tt0210234",
+    "title": "Pokémon the Movie 2000"
+  },
+  "1002": {
+    "imdb_id": "tt0235679",
+    "title": "Pokémon 3: The Movie"
+  },
+  "1003": {
+    "imdb_id": "tt0287635",
+    "title": "Pokémon 4Ever"
+  },
+  "1004": {
+    "imdb_id": "tt0347791",
+    "title": "Pokémon Heroes"
+  },
+  "1005": {
+    "imdb_id": "tt0420076",
+    "title": "Pokémon: Jirachi - Wish Maker"
+  },
+  "1006": {
+    "imdb_id": "tt0435286",
+    "title": "Pokémon the Movie: Destiny Deoxys"
+  },
+  "1367": {
+    "imdb_id": "tt3367860",
+    "title": "Pokemon: The Legend of Thunder"
+  },
+  "1368": {
+    "imdb_id": "tt0875609",
+    "title": "Pokémon: Lucario and the Mystery of Mew"
+  },
+  "1369": {
+    "imdb_id": "tt1371721",
+    "title": "The Mastermind of Mirage Pokémon"
+  },
+  "1534": {
+    "imdb_id": "tt0304564",
+    "title": "Pokémon: Mewtwo Returns"
+  },
+  "1992": {
+    "imdb_id": "tt1000095",
+    "title": "Pokémon Ranger and the Temple of the Sea"
+  },
+  "2597": {
+    "imdb_id": "tt1226251",
+    "title": "Pokémon: The Rise of Darkrai"
+  },
+  "3419": {
+    "imdb_id": "tt1160525",
+    "title": "Pokémon: Giratina and the Sky Warrior"
+  },
+  "3787": {
+    "imdb_id": "tt0235680",
+    "title": "Pikachu & Pichu"
+  },
+  "3788": {
+    "imdb_id": "tt0304562",
+    "title": "Pikachu's PikaBoo"
+  },
+  "3789": {
+    "imdb_id": "tt3427954",
+    "title": "Pokémon: Camp Pikachu"
+  },
+  "3846": {
+    "imdb_id": "tt1172967",
+    "title": "Pikachu's Island Adventure"
+  },
+  "4136": {
+    "imdb_id": "tt0210233",
+    "title": "Pikachu's Vacation"
+  },
+  "4137": {
+    "imdb_id": "tt0431991",
+    "title": "Pokémon: Gotta Dance!!"
+  },
+  "4301": {
+    "imdb_id": "tt3433662",
+    "title": "Pikachû no obake kânibaru"
+  },
+  "4302": {
+    "imdb_id": "tt3431452",
+    "title": "Pikachu's Summer Festival"
+  },
+  "4460": {
+    "imdb_id": "tt1468843",
+    "title": "Pokémon: Arceus and the Jewel of Life"
+  },
+  "4608": {
+    "imdb_id": "tt3457464",
+    "title": "Pikachû no kirakira daisôsaku!"
+  },
+  "5083": {
+    "imdb_id": "tt1690470",
+    "title": "Pokémon: Zoroark: Master of Illusions"
+  },
+  "5026": {
+    "imdb_id": "tt3449356",
+    "title": "Pikachû no tanken kurabu"
+  },
+  "5452": {
+    "imdb_id": "tt3453822",
+    "title": "Pikachu's Ice Adventure"
+  },
+  "5939": {
+    "imdb_id": "tt1739212",
+    "title": "Pokémon the Movie: White - Victini and Zekrom"
+  },
+  "6327": {
+    "imdb_id": "tt1961324",
+    "title": "Pokémon the Movie: Black-Victini and Reshiram"
+  },
+  "6404": {
+  },
+  "6405": {
+    "imdb_id": "tt3457326",
+    "title": "Pikachu's Winter Vacation 2001"
+  },
+  "6438": {
+    "imdb_id": "tt3435626",
+    "title": "Pikachu's Ocean Adventure"
+  },
+  "6441": {
+    "imdb_id": "tt3433608",
+    "title": "Pokémon 3D Adventure: Myu o Sagase!"
+  },
+  "6617": {
+    "imdb_id": "tt3486682",
+    "title": "Pikachu's Summer Bridge Story"
+  },
+  "6786": {
+    "imdb_id": "tt2549540",
+    "title": "Pokémon the Movie: Kyurem vs. the Sword of Justice"
+  },
+  "7032": {
+    "imdb_id": "tt3513820",
+    "title": "Meloetta's Moonlight Serenade"
+  },
+  "7488": {
+    "imdb_id": "tt3707958",
+    "title": "Pikachu to Eievui Friends"
+  },
+  "7489": {
+    "imdb_id": "tt3257582",
+    "title": "Pokémon the Movie: Genesect and the Legend Awakened"
+  },
+  "8149": {
+    "imdb_id": "tt3918368",
+    "title": "Pokémon the Movie: Diancie and the Cocoon of Destruction"
+  },
+  "8150": {
+    "imdb_id": "tt4422136",
+    "title": "Pikachu, What's This Key?"
+  },
+  "8947": {
+    "imdb_id": "tt7784582",
+    "title": "Diancie - Princess of the Diamond Domain"
+  },
+  "8903": {
+    "imdb_id": "tt4503906",
+    "title": "Pokémon the Movie: Hoopa and the Clash of Ages"
+  },
+  "10305": {
+    "imdb_id": "tt6018104",
+    "title": "Pikachu and the Pokémon Music Squad"
+  },
+  "11202": {
+    "imdb_id": "tt5889204",
+    "title": "Pokémon the Movie: Volcanion and the Mechanical Marvel"
+  },
+  "12941": {
+    "imdb_id": "tt6595896",
+    "title": "Pokémon the Movie: I Choose You!"
+  },
+  "41413": {
+    "imdb_id": "tt8108230",
+    "title": "Pokémon the Movie: The Power of Us"
+  },
+  "41871": {
+    "imdb_id": "tt8856470",
+    "title": "Pokémon: Mewtwo Strikes Back - Evolution"
+  },
+  "43025": {
+    "imdb_id": "tt11819890",
+    "title": "Pokémon the Movie: Coco"
   },
   "488": {
     "imdb_id": "tt0373605",
