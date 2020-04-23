@@ -13539,6 +13539,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42036": {
+    "imdb_id": "tt9466298",
+    "title": "Ghost in the Shell SAC_2045",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43142": {
+    "imdb_id": "tt9466298",
+    "title": "Ghost in the Shell SAC_2045",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "42042": {
     "imdb_id": "tt9567240",
     "title": "How Clumsy You Are, Miss Ueno."
