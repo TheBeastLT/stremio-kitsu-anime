@@ -5562,6 +5562,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "7366": {
+    "imdb_id": "tt1515996",
+    "title": "A Certain Scientific Railgun",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "41979": {
+    "imdb_id": "tt1515996",
+    "title": "A Certain Scientific Railgun",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "4525": {
     "imdb_id": "tt1587790",
     "title": "Kidô senshi Gandamu Yunikôn: Yunikôn no hi"
@@ -7022,12 +7034,6 @@
   "7359": {
     "imdb_id": "tt3104072",
     "title": "Tokyo Ravens"
-  },
-  "7366": {
-    "imdb_id": "tt1515996",
-    "title": "A Certain Scientific Railgun",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "7370": {
     "imdb_id": "tt3104236",
