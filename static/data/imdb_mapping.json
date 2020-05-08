@@ -5937,6 +5937,20 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6484": {
+    "imdb_id": "tt5858632",
+    "title": "Ao no ekusoshisuto: Kuro no iede"
+  },
+  "6580": {
+    "imdb_id": "tt3028018",
+    "title": "Blue Exorcist: The Movie"
+  },
+  "12275": {
+    "imdb_id": "tt5987956",
+    "title": "Blue Exorcist: Kyoto Saga",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "5947": {
   },
   "5950": {
@@ -11031,12 +11045,6 @@
     "fromEpisode": 1
   },
   "12274": {
-  },
-  "12275": {
-    "imdb_id": "tt5987956",
-    "title": "Blue Exorcist: Kyoto Saga",
-    "fromSeason": 1,
-    "fromEpisode": 1
   },
   "12292": {
     "imdb_id": "tt6475250",
