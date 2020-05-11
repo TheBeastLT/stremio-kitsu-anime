@@ -2391,15 +2391,33 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "490": {
-    "imdb_id": "tt0106417",
-    "title": "Sailor Moon R: The Movie: The Promise of the Rose"
+  "664": {
+    "imdb_id": "tt0103369",
+    "title": "Sailor Moon",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "491": {
     "imdb_id": "tt0103369",
     "title": "Sailor Moon",
     "fromSeason": 3,
     "fromEpisode": 1
+  },
+  "1115": {
+    "imdb_id": "tt0103369",
+    "title": "Sailor Moon",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "886": {
+    "imdb_id": "tt0103369",
+    "title": "Sailor Moon",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "490": {
+    "imdb_id": "tt0106417",
+    "title": "Sailor Moon R: The Movie: The Promise of the Rose"
   },
   "492": {
     "imdb_id": "tt0406463",
