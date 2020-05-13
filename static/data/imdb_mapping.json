@@ -9668,6 +9668,18 @@
     "imdb_id": "tt5271506",
     "title": "Hundred"
   },
+  "11031": {
+    "imdb_id": "tt9058134",
+    "title": "Kengan Ashura",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42501": {
+    "imdb_id": "tt9058134",
+    "title": "Kengan Ashura",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "11107": {
     "imdb_id": "tt0417299",
     "title": "Avatar: The Last Airbender",
