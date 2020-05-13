@@ -4385,6 +4385,12 @@
     "imdb_id": "tt0377231",
     "title": "Zambot 3"
   },
+  "1995": {
+    "imdb_id": "tt0434660",
+    "title": "Ayatsuri Sakon",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "2006": {
     "imdb_id": "tt1483553",
     "title": "Kishin Taisen Gigantic Formula"
