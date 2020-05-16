@@ -13993,12 +13993,6 @@
     "imdb_id": "tt11010142",
     "title": "Mob Psycho 100 II: The First Spirits and Such Company Trip ~A Journey that Mends the Heart and Heals the Soul~"
   },
-  "42417": {
-    "imdb_id": "tt7745956",
-    "title": "She-Ra and the Princesses of Power",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
   "42420": {
     "imdb_id": "tt10980934",
     "title": "Azur Lane"
@@ -14063,10 +14057,34 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "41994": {
+    "imdb_id": "tt7745956",
+    "title": "She-Ra and the Princesses of Power",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42133": {
+    "imdb_id": "tt7745956",
+    "title": "She-Ra and the Princesses of Power",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42417": {
+    "imdb_id": "tt7745956",
+    "title": "She-Ra and the Princesses of Power",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "42649": {
     "imdb_id": "tt7745956",
     "title": "She-Ra and the Princesses of Power",
     "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "43082": {
+    "imdb_id": "tt7745956",
+    "title": "She-Ra and the Princesses of Power",
+    "fromSeason": 5,
     "fromEpisode": 1
   },
   "42356": {
