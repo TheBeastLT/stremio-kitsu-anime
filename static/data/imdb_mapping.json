@@ -2951,9 +2951,17 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "13951": {
+    "imdb_id": "tt0219458",
+    "title": "Street Fighter: The Animated Series",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "776": {
     "imdb_id": "tt0144069",
-    "title": "Street Fighter II: V"
+    "title": "Street Fighter II: V",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "777": {
     "imdb_id": "tt0810705",
@@ -3086,6 +3094,18 @@
     "title": "Fist of the North Star",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "896": {
+    "imdb_id": "tt0117876",
+    "title": "Tenchi Forever!: The Movie"
+  },
+  "986": {
+    "imdb_id": "tt0152979",
+    "title": "Tenchi the Movie 2: The Daughter of Darkness"
+  },
+  "1025": {
+    "imdb_id": "tt0205451",
+    "title": "Tenchi Forever!: The Movie"
   },
   "1210": {
     "imdb_id": "tt0091211",
@@ -14106,6 +14126,12 @@
   "42479": {
     "imdb_id": "tt11754514",
     "title": "Arte",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42744": {
+    "imdb_id": "tt11595706",
+    "title": "Interspecies Reviewers",
     "fromSeason": 1,
     "fromEpisode": 1
   },
