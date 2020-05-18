@@ -5471,6 +5471,22 @@
     "fromSeason": 5,
     "fromEpisode": 1
   },
+  "2225": {
+    "imdb_id": "tt0235138",
+    "title": "Space Cobra",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "2226": {
+    "imdb_id": "tt0163494",
+    "title": "Space Adventure Cobra"
+  },
+  "3895": {
+    "imdb_id": "tt2454264",
+    "title": "Cobra the Animation",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3899": {
     "imdb_id": "tt1411815",
     "title": "One Outs"
