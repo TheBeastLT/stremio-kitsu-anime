@@ -3095,6 +3095,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "1210": {
+    "imdb_id": "tt0091211",
+    "title": "Fist of the North Star",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "896": {
     "imdb_id": "tt0117876",
     "title": "Tenchi Forever!: The Movie"
@@ -3107,20 +3113,26 @@
     "imdb_id": "tt0205451",
     "title": "Tenchi Forever!: The Movie"
   },
-  "1210": {
-    "imdb_id": "tt0091211",
-    "title": "Fist of the North Star",
-    "fromSeason": 4,
-    "fromEpisode": 1
-  },
   "1212": {
     "imdb_id": "tt0142371",
     "title": "Fist of the North Star"
   },
-  "1210": {
+  "1382": {
     "imdb_id": "tt0884847",
     "title": "Fist of the Blue Sky",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "13983": {
+    "imdb_id": "tt8390536",
+    "title": "Fist of the Blue Sky: Re: Genesis ",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41953": {
+    "imdb_id": "tt8390536",
+    "title": "Fist of the Blue Sky: Re: Genesis ",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "861": {
@@ -12665,18 +12677,6 @@
     "title": "Kokkoku"
   },
   "13981": {
-  },
-  "13983": {
-    "imdb_id": "tt0884847",
-    "title": "Fist of the Blue Sky",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "41953": {
-    "imdb_id": "tt0884847",
-    "title": "Fist of the Blue Sky",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "3676": {
     "imdb_id": "tt1308847",
