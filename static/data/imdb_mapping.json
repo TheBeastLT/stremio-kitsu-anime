@@ -3107,6 +3107,12 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "892": {
+    "imdb_id": "tt0098492",
+    "title": "Gunbuster",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "896": {
     "imdb_id": "tt0117876",
     "title": "Tenchi Forever!: The Movie"
@@ -3307,9 +3313,33 @@
     "imdb_id": "tt0425677",
     "title": "Gravion Zwei"
   },
+  "1032": {
+    "imdb_id": "tt0158591",
+    "title": "Dominion Tank Police",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "1033": {
     "imdb_id": "tt0158590",
-    "title": "New Dominion Tank Police"
+    "title": "New Dominion Tank Police",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1041": {
+    "imdb_id": "tt0331508",
+    "title": "Gundress"
+  },
+  "1145": {
+    "imdb_id": "tt0092664",
+    "title": "Black Magic M-66"
+  },
+  "1877": {
+    "imdb_id": "tt0316156",
+    "title": "Landlock"
+  },
+  "1975": {
+    "imdb_id": "tt11297340",
+    "title": "TANK S.W.A.T. 01"
   },
   "1037": {
     "imdb_id": "tt2321187",
