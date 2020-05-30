@@ -5497,7 +5497,19 @@
   },
   "3532": {
     "imdb_id": "tt1279024",
-    "title": "Toradora!"
+    "title": "Toradora!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4438": {
+    "imdb_id": "tt5203692",
+    "title": "Toradora SOS!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6536": {
+    "imdb_id": "tt5206584",
+    "title": "Toradora!: Bento no Gokui"
   },
   "3579": {
     "imdb_id": "tt0816407",
