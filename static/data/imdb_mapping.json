@@ -7003,6 +7003,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "8478": {
+    "imdb_id": "tt2703720",
+    "title": "My Teen Romantic Comedy SNAFU",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42194": {
+    "imdb_id": "tt2703720",
+    "title": "My Teen Romantic Comedy SNAFU",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "12045": {
+    "imdb_id": "tt2703720",
+    "title": "My Teen Romantic Comedy SNAFU",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
   "7172": {
   },
   "7173": {
@@ -8639,12 +8657,6 @@
   "8468": {
     "imdb_id": "tt3496018",
     "title": "Selector Infected WIXOSS",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  "8478": {
-    "imdb_id": "tt2703720",
-    "title": "My Teen Romantic Comedy SNAFU",
     "fromSeason": 2,
     "fromEpisode": 1
   },
@@ -11054,12 +11066,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "12045": {
-    "imdb_id": "tt2703720",
-    "title": "My Teen Romantic Comedy SNAFU",
-    "fromSeason": 0,
-    "fromEpisode": 2
-  },
   "12051": {
     "imdb_id": "tt5679720",
     "title": "Bungou Stray Dogs",
@@ -13217,6 +13223,12 @@
   },
   "41112": {
   },
+  "41115": {
+    "imdb_id": "tt12305568",
+    "title": "Lapis Re: LiGHTs",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "41118": {
     "imdb_id": "tt1305826",
     "title": "Adventure Time",
@@ -13787,7 +13799,15 @@
   },
   "42068": {
     "imdb_id": "tt9307686",
-    "title": "Fire Force"
+    "title": "Fire Force",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42909": {
+    "imdb_id": "tt9307686",
+    "title": "Fire Force",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "42070": {
     "imdb_id": "tt9828800",
@@ -14364,6 +14384,84 @@
   "42146": {
     "imdb_id": "tt11094154",
     "title": "A3! Season Spring & Summer",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42034": {
+    "imdb_id": "tt12675742",
+    "title": "Umayon",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42433": {
+    "imdb_id": "tt12443322",
+    "title": "Deca-Dence",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42563": {
+    "imdb_id": "tt12464204",
+    "title": "Peter Grill and the Philosopher's Time",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42650": {
+    "imdb_id": "tt11708996",
+    "title": "Healin' Good PreCure",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42657": {
+    "imdb_id": "tt12448470",
+    "title": "Dokyuu Hentai HxEros",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42724": {
+    "imdb_id": "tt12312004",
+    "title": "Monster Girl Doctor",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43005": {
+    "imdb_id": "tt12432936",
+    "title": "The Misfit of Demon King Academy",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43018": {
+    "imdb_id": "tt12227418",
+    "title": "The God of High School",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43028": {
+    "imdb_id": "tt11448214",
+    "title": "Rent-A-Girlfriend",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43094": {
+    "imdb_id": "tt12464182",
+    "title": "Uzaki-chan Wants to Hang Out!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43124": {
+    "imdb_id": "tt12350092",
+    "title": "Gibiate",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43240": {
+    "imdb_id": "tt12694572",
+    "title": "Koi to Producer: Evol x Love",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43236": {
+    "imdb_id": "tt12706364",
+    "title": "Ninja Collection",
     "fromSeason": 1,
     "fromEpisode": 1
   }
