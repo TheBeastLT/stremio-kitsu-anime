@@ -898,7 +898,15 @@
   },
   "4394": {
     "imdb_id": "tt1409055",
-    "title": "Dragon Ball Z Kai"
+    "title": "Dragon Ball Z Kai",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8351": {
+    "imdb_id": "tt1409055",
+    "title": "Dragon Ball Z Kai",
+    "fromSeason": 1,
+    "fromEpisode": 99
   },
   "201": {
     "imdb_id": "tt0480489",
