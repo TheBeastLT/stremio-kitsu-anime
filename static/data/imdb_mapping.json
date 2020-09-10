@@ -13973,7 +13973,15 @@
   },
   "42197": {
     "imdb_id": "tt10981954",
-    "title": "No Guns Life"
+    "title": "No Guns Life",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42880": {
+    "imdb_id": "tt10981954",
+    "title": "No Guns Life",
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   "42199": {
     "imdb_id": "tt8963328",
