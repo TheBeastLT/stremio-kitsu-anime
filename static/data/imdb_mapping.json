@@ -13341,6 +13341,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "41464": {
+    "imdb_id": "tt8019444",
+    "title": "Aggretsuko",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43407": {
+    "imdb_id": "tt8019444",
+    "title": "Aggretsuko",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "41209": {
     "imdb_id": "tt8993614",
     "title": "UzaMaid: Our Maid Is Way Too Annoying!",
@@ -13515,12 +13527,6 @@
     "imdb_id": "tt9054354",
     "title": "Zombieland Saga",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "41464": {
-    "imdb_id": "tt8019444",
-    "title": "Aggretsuko",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "41465": {
