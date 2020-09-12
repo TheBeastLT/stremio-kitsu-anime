@@ -1882,6 +1882,10 @@
     "imdb_id": "tt0110426",
     "title": "Macross Plus"
   },
+  "1089": {
+    "imdb_id": "tt2330912",
+    "title": "Macross Plus Movie Edition"
+  },
   "437": {
     "imdb_id": "tt6087358",
     "title": "Hotori: Tada Saiwai wo Koinegau"
@@ -2959,6 +2963,10 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "775": {
+    "imdb_id": "tt0452039",
+    "title": "Mind Game"
+  },
   "13951": {
     "imdb_id": "tt0219458",
     "title": "Street Fighter: The Animated Series",
@@ -3216,6 +3224,10 @@
   "917": {
     "imdb_id": "tt2336252",
     "title": "Psychic Force"
+  },
+  "919": {
+    "imdb_id": "tt0102587",
+    "title": "Only Yesterday"
   },
   "923": {
     "imdb_id": "tt0291350",
@@ -3671,15 +3683,33 @@
   },
   "1265": {
     "imdb_id": "tt0159175",
-    "title": "Lupin the 3rd"
+    "title": "Lupin the 3rd",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "1278": {
     "imdb_id": "tt0159192",
-    "title": "Lupin the 3rd: Part II"
+    "title": "Lupin the 3rd: Part II",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "1279": {
     "imdb_id": "tt0159176",
-    "title": "Lupin the 3rd: Part III "
+    "title": "Lupin the 3rd: Part III ",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "9958": {
+    "imdb_id": "tt4129452",
+    "title": "Lupin the 3rd: Part IV",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6910": {
+    "imdb_id": "tt2298919",
+    "title": "Lupin the Third: Mine Fujiko to iu onna",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "1283": {
     "imdb_id": "tt0079833",
@@ -5485,6 +5515,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "3458": {
+    "imdb_id": "tt1324968",
+    "title": "Michiko and Hatchin",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3470": {
     "imdb_id": "tt1703049",
     "title": "Trigun: Badlands Rumble"
@@ -5600,12 +5636,6 @@
   "3899": {
     "imdb_id": "tt1411815",
     "title": "One Outs"
-  },
-  "3910": {
-    "imdb_id": "tt1356878",
-    "title": "Hetalia: Axis Powers",
-    "fromSeason": 1,
-    "fromEpisode": 1
   },
   "3919": {
     "imdb_id": "tt1480925",
@@ -6156,6 +6186,10 @@
     "title": "Oreimo: My Little Sister Can't Be This Cute?",
     "fromSeason": 1,
     "fromEpisode": 13
+  },
+  "6000": {
+    "imdb_id": "tt1798188",
+    "title": "From Up on Poppy Hill"
   },
   "6001": {
     "imdb_id": "tt1738419",
@@ -8910,10 +8944,6 @@
     "imdb_id": "tt4054952",
     "title": "Fate/Stay Night: Heaven's Feel - I. Presage Flower"
   },
-  "8684": {
-    "imdb_id": "tt4307880",
-    "title": "Digimon Adventure Tri. 1: Reunion"
-  },
   "8697": {
     "imdb_id": "tt3950092",
     "title": "Wolf Girl and Black Prince",
@@ -9165,12 +9195,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "9958": {
-    "imdb_id": "tt4129452",
-    "title": "Lupin the 3rd: Part IV",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "9961": {
     "imdb_id": "tt4213580",
     "title": "Tsukimonogatari"
@@ -9309,6 +9333,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "3910": {
+    "imdb_id": "tt1356878",
+    "title": "Hetalia: Axis Powers",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "5351": {
     "imdb_id": "tt1356878",
     "title": "Hetalia: Axis Powers",
@@ -9326,6 +9356,10 @@
     "title": "Hetalia: Axis Powers",
     "fromSeason": 4,
     "fromEpisode": 1
+  },
+  "4946": {
+    "imdb_id": "tt2653882",
+    "title": "Hetalia: Axis Powers - Paint It, White!"
   },
   "10061": {
     "imdb_id": "tt2820466",
@@ -10507,6 +10541,10 @@
     "fromSeason": 0,
     "fromEpisode": 8
   },
+  "8684": {
+    "imdb_id": "tt4307880",
+    "title": "Digimon Adventure Tri. 1: Reunion"
+  },
   "11546": {
     "imdb_id": "tt5216534",
     "title": "Digimon Adventure Tri. 2: Decision"
@@ -11172,11 +11210,19 @@
     "imdb_id": "tt6425816",
     "title": "One Piece: Heart of Gold"
   },
+  "42061": {
+    "imdb_id": "tt9430698",
+    "title": "One Piece: Stampede"
+  },
   "12230": {
     "imdb_id": "tt7078180",
     "title": "Violet Evergarden",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "42340": {
+    "imdb_id": "tt10477558",
+    "title": "Violet Evergarden: Eternity and the Auto Memories Doll"
   },
   "12233": {
     "imdb_id": "tt7058854",
@@ -12872,6 +12918,10 @@
     "imdb_id": "tt7745068",
     "title": "My Hero Academia: Two Heroes"
   },
+  "42205": {
+    "imdb_id": "tt11107074",
+    "title": "My Hero Academia: Heroes Rising"
+  },
   "14090": {
     "imdb_id": "tt8948304",
     "title": "Yuuna and the Haunted Hot Springs",
@@ -14520,5 +14570,29 @@
   "42204": {
     "imdb_id": "tt11151982",
     "title": "Goblin Slayer: Goblin's Crown"
+  },
+  "42117": {
+    "imdb_id": "tt11328872",
+    "title": "In/Spectre",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42615": {
+    "imdb_id": "tt12031040",
+    "title": "Japan Sinks: 2020",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43062": {
+    "imdb_id": "tt12080774",
+    "title": "Bungou to Alchemist: Shinpan no Haguruma",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43115": {
+    "imdb_id": "tt12156162",
+    "title": "Zashiki-Warashi no Tatami-chan",
+    "fromSeason": 1,
+    "fromEpisode": 1
   }
 }
