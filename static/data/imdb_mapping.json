@@ -1077,13 +1077,31 @@
   "237": {},
   "238": {
     "imdb_id": "tt0481256",
-    "title": "Hajime no ippo",
+    "title": "Hajime no Ippo",
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "4016": {
+    "imdb_id": "tt0481256",
+    "title": "Hajime no Ippo",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "7855": {
+    "imdb_id": "tt0481256",
+    "title": "Hajime no Ippo",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "6660": {
+    "imdb_id": "tt0481256",
+    "title": "Hajime no Ippo",
+    "fromSeason": 1,
+    "fromEpisode": 76
+  },
   "239": {
     "imdb_id": "tt0805540",
-    "title": "Hajime no ippo - Champion road"
+    "title": "Hajime no Ippo - Champion road"
   },
   "240": {
     "imdb_id": "tt3354378",
@@ -5647,10 +5665,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "4016": {
-    "imdb_id": "tt1992744",
-    "title": "Hajime no Ippo: New Challenger"
-  },
   "4044": {
     "imdb_id": "tt1352421",
     "title": "Natsume yûjinchô",
@@ -6003,6 +6017,12 @@
     "imdb_id": "tt1685397",
     "title": "Amagami SS",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6478": {
+    "imdb_id": "tt1685397",
+    "title": "Amagami SS",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "5469": {
@@ -6632,12 +6652,6 @@
   "6646": {
     "imdb_id": "tt2496120",
     "title": "Space Battleship Yamato 2199"
-  },
-  "6660": {
-    "imdb_id": "tt0481256",
-    "title": "Hajime no ippo",
-    "fromSeason": 1,
-    "fromEpisode": 76
   },
   "6665": {
     "imdb_id": "tt2358913",
@@ -7834,10 +7848,6 @@
     "title": "Gundam Build Fighters",
     "fromSeason": 1,
     "fromEpisode": 1
-  },
-  "7855": {
-    "imdb_id": "tt3514596",
-    "title": "Hajime No Ippo: Rising"
   },
   "7860": {
     "imdb_id": "tt2909912",
