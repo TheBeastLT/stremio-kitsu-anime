@@ -1687,6 +1687,10 @@
     "imdb_id": "tt0101583",
     "title": "Ranma ½: The Movie, Big Trouble in Nekonron, China"
   },
+  "707": {
+    "imdb_id": "tt0104604",
+    "title": "Ranma ½: The Movie 2, Nihao My Concubine"
+  },
   "383": {
     "imdb_id": "tt0852880",
     "title": "Samurai Deeper Kyo"
@@ -3449,7 +3453,27 @@
   },
   "1075": {
     "imdb_id": "tt0978553",
-    "title": "The Familiar of Zero"
+    "title": "The Familiar of Zero",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1657": {
+    "imdb_id": "tt0978553",
+    "title": "The Familiar of Zero",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "3209": {
+    "imdb_id": "tt0978553",
+    "title": "The Familiar of Zero",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "6493": {
+    "imdb_id": "tt0978553",
+    "title": "The Familiar of Zero",
+    "fromSeason": 4,
+    "fromEpisode": 1
   },
   "1077": {
     "imdb_id": "tt0889540",
