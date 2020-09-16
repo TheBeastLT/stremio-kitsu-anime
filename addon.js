@@ -4,6 +4,7 @@ const { enrichKitsuMetadata, enrichImdbMetadata, hasImdbMapping } = require('./l
 const { cacheWrapMeta, cacheWrapCatalog } = require('./lib/cache');
 const kitsu = require('./lib/kitsu_api');
 const cinemeta = require('./lib/cinemeta_api');
+const opensubtitles = require('./lib/opensubtitles_addon')
 
 const CACHE_MAX_AGE = process.env.CACHE_MAX_AGE || 3 * 24 * 60; // 7 days
 
@@ -14,7 +15,7 @@ const manifest = {
   description: 'Unofficial Kitsu.io anime catalog addon',
   logo: 'https://i.imgur.com/ANMG9VF.png',
   background: 'https://i.imgur.com/ym4n96o.png',
-  resources: ['catalog', 'meta'],
+  resources: ['catalog', 'meta', 'subtitles'],
   types: ['movie', 'series'],
   catalogs: [
     {
@@ -78,9 +79,7 @@ builder.defineMetaHandler((args) => {
   if (args.id.match(/^kitsu:\d+$/)) {
     const id = parseInt(args.id.replace('kitsu:', ''));
 
-    return cacheWrapMeta(id, () => kitsu.animeData(id)
-        .then((metadata) => enrichKitsuMetadata(metadata, cinemeta.getCinemetaMetadata))
-        .then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE })));
+    return getKitsuIdMetadata(id);
   }
   if (args.id.match(/^tt\d+$/)) {
     const id = args.id;
@@ -89,12 +88,41 @@ builder.defineMetaHandler((args) => {
       return Promise.reject(`No imdb mapping for: ${id}`);
     }
 
-    return cacheWrapMeta(id, () => cinemeta.getCinemetaMetadata(id, args.type)
-        .then((metadata) => enrichImdbMetadata({ imdb_id: id, ...metadata }, kitsu.animeData))
-        .then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE })));
+    return getImdbIdMetadata(id);
   }
 
   return Promise.reject(new Error('invalid id'));
 });
+
+builder.defineSubtitlesHandler((args) => {
+  if (!args.id.match(/^kitsu:\d+:\d+$/)) {
+    return Promise.reject(new Error('Only Kitsu video id is supported for subtitles'));
+  }
+
+  const parts = args.id.split(':');
+  const kitsuId = parts[1];
+  const episode = parts[2] ? parseInt(parts[2], 10) : 1;
+
+  if (!hasImdbMapping(kitsuId)) {
+    return Promise.reject(`No imdb mapping for: ${kitsuId}`);
+  }
+
+  return getKitsuIdMetadata(kitsuId)
+      .then((metaResponse) => metaResponse.meta)
+      .then((metadata) => opensubtitles.getSubtitles(metadata, episode))
+      .then((subtitles) => ({ subtitles: subtitles, cacheMaxAge: CACHE_MAX_AGE }));
+});
+
+async function getKitsuIdMetadata(id) {
+  return cacheWrapMeta(id, () => kitsu.animeData(id)
+      .then((metadata) => enrichKitsuMetadata(metadata, cinemeta.getCinemetaMetadata))
+      .then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE })));
+}
+
+async function getImdbIdMetadata(id) {
+  return cacheWrapMeta(id, () => cinemeta.getCinemetaMetadata(id, args.type)
+      .then((metadata) => enrichImdbMetadata({ imdb_id: id, ...metadata }, kitsu.animeData))
+      .then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE })));
+}
 
 module.exports = builder.getInterface();
