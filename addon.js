@@ -9,7 +9,7 @@ const CACHE_MAX_AGE = process.env.CACHE_MAX_AGE || 3 * 24 * 60; // 7 days
 
 const manifest = {
   id: 'community.anime.kitsu',
-  version: '0.0.1',
+  version: '0.0.2',
   name: 'Anime Kitsu',
   description: 'Unofficial Kitsu.io anime catalog addon',
   logo: 'https://i.imgur.com/ANMG9VF.png',
