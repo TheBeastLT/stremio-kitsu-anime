@@ -1472,7 +1472,15 @@
   },
   "324": {
     "imdb_id": "tt0464769",
-    "title": "Bludgeoning Angel Dokuro-chan"
+    "title": "Bludgeoning Angel Dokuro-chan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1928": {
+    "imdb_id": "tt0464769",
+    "title": "Bludgeoning Angel Dokuro-chan",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "325": {
     "imdb_id": "tt1485728",
@@ -4245,6 +4253,10 @@
     "imdb_id": "tt0292846",
     "title": "The Legend of the 4 Kings"
   },
+  "1580": {
+    "imdb_id": "tt0086148",
+    "title": "Golgo 13: The Professional"
+  },
   "1582": {
     "imdb_id": "tt0103720",
     "title": "The Heroic Legend of Arislan"
@@ -4296,10 +4308,6 @@
   "1654": {
     "imdb_id": "tt2238049",
     "title": "Dokkoida!?"
-  },
-  "1657": {
-    "imdb_id": "tt1070744",
-    "title": "The Familiar of Zero: Knight of the Twin Moons "
   },
   "1658": {
     "imdb_id": "tt7741974",
@@ -4380,6 +4388,10 @@
   "1727": {
     "imdb_id": "tt2328145",
     "title": "Mobile Suit Gundam MS IGLOO: The Hidden One Year War"
+  },
+  "1744": {
+    "imdb_id": "tt0160521",
+    "title": "Megazone 23"
   },
   "1745": {
     "imdb_id": "tt0294147",
@@ -5497,12 +5509,6 @@
     "imdb_id": "tt1161659",
     "title": "Graveyard Kitaro"
   },
-  "3209": {
-    "imdb_id": "tt1258911",
-    "title": "The Familiar of Zero: Rondo of Princesses",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "3218": {
     "imdb_id": "tt1214373",
     "title": "Mischievous Kiss"
@@ -6540,10 +6546,6 @@
   "6489": {
     "imdb_id": "tt2198397",
     "title": "Black Rock Shooter"
-  },
-  "6493": {
-    "imdb_id": "tt3303944",
-    "title": "The Familiar of Zero F"
   },
   "6501": {
     "imdb_id": "tt0466352",
