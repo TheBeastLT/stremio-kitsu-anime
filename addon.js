@@ -90,7 +90,7 @@ builder.defineMetaHandler((args) => {
     }
 
     return cacheWrapMeta(id, () => cinemeta.getCinemetaMetadata(id, args.type)
-        .then((metadata) => enrichImdbMetadata({ imdb_id: id, ...metadata }, kitsu.animeData))
+        .then((metadata) => enrichImdbMetadata(metadata, kitsu.animeData))
         .then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE })));
   }
 
