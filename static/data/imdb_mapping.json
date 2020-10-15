@@ -4709,6 +4709,12 @@
     "imdb_id": "tt0338621",
     "title": "Kirby: Right Back at Ya!"
   },
+  "2168": {
+    "imdb_id": "tt0382477",
+    "title": "SD Gundam Force",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "2175": {
     "imdb_id": "tt0804905",
     "title": "Digimon: Revenge of Diaboromon"
@@ -7657,7 +7663,15 @@
   },
   "7681": {
     "imdb_id": "tt2959370",
-    "title": "Gatchaman Crowds"
+    "title": "Gatchaman Crowds",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8180": {
+    "imdb_id": "tt2959370",
+    "title": "Gatchaman Crowds",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "7693": {
   },
@@ -7736,6 +7750,12 @@
   "7712": {
     "imdb_id": "tt3114390",
     "title": "KILL La KILL",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7713": {
+    "imdb_id": "tt11724248",
+    "title": "Wish Upon the Pleiades",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -8433,10 +8453,6 @@
     "title": "Sword Art Online",
     "fromSeason": 2,
     "fromEpisode": 1
-  },
-  "8180": {
-    "imdb_id": "tt2959370",
-    "title": "Gatchaman Crowds"
   },
   "8184": {},
   "8192": {},
@@ -10224,6 +10240,24 @@
     "title": "The Legend of the Galactic Heroes: The New Thesis - Encounter",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "13825": {
+    "imdb_id": "tt7407236",
+    "title": "The Legend of the Galactic Heroes: The New Thesis - Encounter",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42352": {
+    "imdb_id": "tt7407236",
+    "title": "The Legend of the Galactic Heroes: The New Thesis - Encounter",
+    "fromSeason": 2,
+    "fromEpisode": 5
+  },
+  "42353": {
+    "imdb_id": "tt7407236",
+    "title": "The Legend of the Galactic Heroes: The New Thesis - Encounter",
+    "fromSeason": 2,
+    "fromEpisode": 9
   },
   "11332": {
     "imdb_id": "tt5826266",
@@ -12555,6 +12589,12 @@
     "imdb_id": "tt8116380",
     "title": "A.I.C.O. Incarnation"
   },
+  "13697": {
+    "imdb_id": "tt5066664",
+    "title": "Cannon Busters",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "13699": {
     "imdb_id": "tt7535706",
     "title": "Anime-Gataris"
@@ -12897,6 +12937,18 @@
   "13988": {
     "imdb_id": "tt8515016",
     "title": "Banana Fish"
+  },
+  "13984": {
+    "imdb_id": "tt8043492",
+    "title": "Forest of Piano",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41461": {
+    "imdb_id": "tt8043492",
+    "title": "Forest of Piano",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "13990": {
     "imdb_id": "tt8994044",
@@ -13533,6 +13585,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "41313": {
+    "imdb_id": "tt8755254",
+    "title": "Hangyakusei Million Arthur",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42039": {
+    "imdb_id": "tt8755254",
+    "title": "Hangyakusei Million Arthur",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "41315": {
     "imdb_id": "tt3111906",
     "title": "Yami shibai",
@@ -13877,6 +13941,18 @@
     "imdb_id": "tt9899068",
     "title": "3 Nen A Kumi: Ima kara Mina-san wa, Hitojichi Desu"
   },
+  "42015": {
+    "imdb_id": "tt9316078",
+    "title": "Hero Mask",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42510": {
+    "imdb_id": "tt9316078",
+    "title": "Hero Mask",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "42016": {
     "imdb_id": "tt9547400",
     "title": "Magia Record: Puella Magi Madoka Magica Side Story",
@@ -14117,10 +14193,22 @@
     "fromSeason": 1,
     "fromEpisode": 13
   },
+  "8158": {
+    "imdb_id": "tt8963328",
+    "title": "Hi Score Girl",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42199": {
     "imdb_id": "tt8963328",
     "title": "Hi Score Girl",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42201": {
+    "imdb_id": "tt11428586",
+    "title": "Somali and the Forest Spirit",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "42208": {
@@ -14129,11 +14217,21 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42209": {
+    "imdb_id": "tt11428620",
+    "title": "Number 24",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42213": {
     "imdb_id": "tt2250192",
     "title": "Sword Art Online",
     "fromSeason": 4,
     "fromEpisode": 1
+  },
+  "42941": {
+    "imdb_id": "tt11585560",
+    "title": "The Island of Giant Insects"
   },
   "42927": {
     "imdb_id": "tt2250192",
