@@ -8564,7 +8564,27 @@
   },
   "8271": {
     "imdb_id": "tt3741634",
-    "title": "Tokyo Ghoul"
+    "title": "Tokyo Ghoul",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "9135": {
+    "imdb_id": "tt3741634",
+    "title": "Tokyo Ghoul",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "13929": {
+    "imdb_id": "tt8213522",
+    "title": "Tokyo Ghoul: re",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "41359": {
+    "imdb_id": "tt8213522",
+    "title": "Tokyo Ghoul: re",
+    "fromSeason": 3,
+    "fromEpisode": 13
   },
   "8272": {
     "imdb_id": "tt7684436",
@@ -9175,10 +9195,6 @@
   "9130": {
     "imdb_id": "tt5240222",
     "title": "God Eater"
-  },
-  "9135": {
-    "imdb_id": "tt3741634",
-    "title": "Tokyo Ghoul"
   },
   "9136": {
     "imdb_id": "tt3544556",
@@ -12889,12 +12905,6 @@
     "fromEpisode": 1
   },
   "13908": {
-  },
-  "13929": {
-    "imdb_id": "tt8213522",
-    "title": "Tokyo Ghoul: re",
-    "fromSeason": 1,
-    "fromEpisode": 1
   },
   "13932": {
     "imdb_id": "tt7725942",
