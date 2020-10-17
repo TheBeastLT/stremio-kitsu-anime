@@ -10,7 +10,7 @@
     "cache-manager": "^2.9.0",
     "cache-manager-mongodb": "^0.2.1",
     "express": "^4.17.1",
-    "parse-torrent-title": "git://github.com/TheBeastLT/parse-torrent-title.git#642913a7628857c5b75bd9942ba184f613118843",
+    "parse-torrent-title": "git://github.com/TheBeastLT/parse-torrent-title.git#ed1772a7ad0014101d79dca7fa01269eb041a0b6",
     "jaro-winkler": "^0.2.8",
     "needle": "^2.2.4",
     "stremio-addon-sdk": "^1.4.0",
