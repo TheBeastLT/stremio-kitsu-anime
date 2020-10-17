@@ -10184,6 +10184,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "40566": {
+    "imdb_id": "tt6931266",
+    "title": "Dies Irae",
+    "fromSeason": 1,
+    "fromEpisode": 12
+  },
   "11213": {
     "imdb_id": "tt4864886",
     "title": "Gekijouban Selector Destructed WIXOSS"
@@ -13518,8 +13524,10 @@
     "title": "Dakaretai Otoko 1-i ni Odosarete Imasu."
   },
   "41155": {
-    "imdb_id": "tt7235270",
-    "title": "The Oscars"
+    "imdb_id": "tt7078180",
+    "title": "Violet Evergarden",
+    "fromSeason": 1,
+    "fromEpisode": 14
   },
   "41158": {
     "imdb_id": "tt6859260",
