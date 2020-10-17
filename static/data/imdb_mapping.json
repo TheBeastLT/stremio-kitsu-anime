@@ -12065,6 +12065,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "14172": {
+    "imdb_id": "tt7131720",
+    "title": "Kakegurui",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "13257": {
     "imdb_id": "tt7158574",
     "title": "Koi to uso",
@@ -12678,6 +12684,12 @@
     "title": "Angels of Death",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "41963": {
+    "imdb_id": "tt8670784",
+    "title": "Angels of Death",
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   "13717": {
     "imdb_id": "tt7814574",
@@ -13881,6 +13893,12 @@
     "imdb_id": "tt9584920",
     "title": "The Quintessential Quintuplets",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42324": {
+    "imdb_id": "tt9584920",
+    "title": "The Quintessential Quintuplets",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "41972": {
