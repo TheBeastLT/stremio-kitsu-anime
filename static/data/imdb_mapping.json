@@ -3593,9 +3593,17 @@
     "imdb_id": "tt0286648",
     "title": "Gestalt"
   },
+  "1162": {
+    "imdb_id": "tt0160423",
+    "title": "Patlabor: Early Days",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "1163": {
     "imdb_id": "tt0160424",
-    "title": "Patlabor: The New Files"
+    "title": "Patlabor: The New Files",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "1165": {
     "imdb_id": "tt0465316",
@@ -5846,6 +5854,12 @@
     "imdb_id": "tt1515996",
     "title": "A Certain Scientific Railgun",
     "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "4519": {
+    "imdb_id": "tt3029762",
+    "title": "Omamori Himari",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "4525": {
@@ -9531,6 +9545,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11376": {
+    "imdb_id": "tt4958580",
+    "title": "Gate",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "10095": {
     "imdb_id": "tt5821698",
     "title": "Rainy Cocoa",
@@ -10416,12 +10436,6 @@
   "11375": {
     "imdb_id": "tt5603356",
     "title": "Ace Attorney",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "11376": {
-    "imdb_id": "tt4958580",
-    "title": "Gate",
     "fromSeason": 1,
     "fromEpisode": 1
   },
