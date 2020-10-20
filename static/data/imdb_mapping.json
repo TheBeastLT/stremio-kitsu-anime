@@ -4539,7 +4539,15 @@
   },
   "1939": {
     "imdb_id": "tt1238937",
-    "title": "Blue Dragon"
+    "title": "Blue Dragon",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3517": {
+    "imdb_id": "tt1238937",
+    "title": "Blue Dragon",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "1945": {
     "imdb_id": "tt6010486",
@@ -10840,6 +10848,12 @@
     "imdb_id": "tt4731072",
     "title": "Food Wars: Shokugeki no Soma",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "11613": {
+    "imdb_id": "tt5483932",
+    "title": "Koyomimonogatari",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "11614": {
