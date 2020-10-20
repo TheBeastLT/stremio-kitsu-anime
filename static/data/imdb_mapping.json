@@ -1862,7 +1862,31 @@
   },
   "419": {
     "imdb_id": "tt0807832",
-    "title": "Mushi-Shi"
+    "title": "Mushi-Shi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8204": {
+    "imdb_id": "tt0807832",
+    "title": "Mushi-Shi",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "8581": {
+    "imdb_id": "tt0807832",
+    "title": "Mushi-Shi",
+    "fromSeason": 2,
+    "fromEpisode": 11
+  },
+  "8519": {
+    "imdb_id": "tt0807832",
+    "title": "Mushishi: Zoku-Sho",
+    "fromSeason": 2,
+    "fromEpisode": 11
+  },
+  "10084": {
+    "imdb_id": "tt5575408",
+    "title": "Mushi-Shi Zoku Shou: Suzu no Shizuku"
   },
   "420": {
     "imdb_id": "tt0444994",
@@ -8528,12 +8552,6 @@
     "fromSeason": 5,
     "fromEpisode": 1
   },
-  "8204": {
-    "imdb_id": "tt3443522",
-    "title": "Mushishi: Zoku-Sho",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "8246": {
     "imdb_id": "tt3615768",
     "title": "Blue Spring Ride",
@@ -8597,14 +8615,14 @@
     "fromEpisode": 1
   },
   "13929": {
-    "imdb_id": "tt8213522",
-    "title": "Tokyo Ghoul: re",
+    "imdb_id": "tt3741634",
+    "title": "Tokyo Ghoul",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "41359": {
-    "imdb_id": "tt8213522",
-    "title": "Tokyo Ghoul: re",
+    "imdb_id": "tt3741634",
+    "title": "Tokyo Ghoul",
     "fromSeason": 3,
     "fromEpisode": 13
   },
@@ -8848,12 +8866,6 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
-  "8519": {
-    "imdb_id": "tt3443522",
-    "title": "Mushishi: Zoku-Sho",
-    "fromSeason": 1,
-    "fromEpisode": 11
-  },
   "8521": {
     "imdb_id": "tt3646574",
     "title": "Shounen Hollywood",
@@ -8913,12 +8925,6 @@
     "title": "Chaika the Coffin Princess",
     "fromSeason": 2,
     "fromEpisode": 1
-  },
-  "8581": {
-    "imdb_id": "tt3443522",
-    "title": "Mushishi: Zoku-Sho",
-    "fromSeason": 1,
-    "fromEpisode": 13
   },
   "8607": {
     "imdb_id": "tt3989670",
@@ -9542,10 +9548,6 @@
     "title": "Gintama",
     "fromSeason": 7,
     "fromEpisode": 1
-  },
-  "10084": {
-    "imdb_id": "tt5575408",
-    "title": "Mushi-Shi Zoku Shou: Suzu no Shizuku"
   },
   "10085": {
     "imdb_id": "tt4958580",
