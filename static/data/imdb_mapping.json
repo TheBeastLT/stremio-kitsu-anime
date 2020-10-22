@@ -231,11 +231,33 @@
   },
   "56": {
     "imdb_id": "tt0808082",
-    "title": "Magical Girl Lyrical Nanoha"
+    "title": "Magical Girl Lyrical Nanoha",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "57": {
-    "imdb_id": "tt1159864",
-    "title": "Magical Girl Lyrical Nanoha A's"
+    "imdb_id": "tt0808082",
+    "title": "Magical Girl Lyrical Nanoha",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "1725": {
+    "imdb_id": "tt0808082",
+    "title": "Magical Girl Lyrical Nanoha",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "8687": {
+    "imdb_id": "tt0808082",
+    "title": "Magical Girl Lyrical Nanoha",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "12304": {
+    "imdb_id": "tt0808082",
+    "title": "Magical Girl Lyrical Nanoha",
+    "fromSeason": 5,
+    "fromEpisode": 1
   },
   "58": {
     "imdb_id": "tt0865827",
@@ -503,7 +525,15 @@
   },
   "113": {
     "imdb_id": "tt0476042",
-    "title": "Gunslinger Girl"
+    "title": "Gunslinger Girl",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "2874": {
+    "imdb_id": "tt0476042",
+    "title": "Gunslinger Girl",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "114": {
     "imdb_id": "tt0426711",
@@ -2573,29 +2603,53 @@
     "imdb_id": "tt0272880",
     "title": "Tekken: The Motion Picture"
   },
-  "497": {
-    "imdb_id": "tt0189305",
-    "title": "Tenchi Muyô!",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
   "498": {
     "imdb_id": "tt0189305",
     "title": "Tenchi Muyo!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "499": {
+  "1027": {
     "imdb_id": "tt0189305",
     "title": "Tenchi Muyo!",
     "fromSeason": 1,
-    "fromEpisode": 8
+    "fromEpisode": 7
+  },
+  "499": {
+    "imdb_id": "tt0189305",
+    "title": "Tenchi Muyo!",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "500": {
     "imdb_id": "tt0189305",
     "title": "Tenchi Muyo!",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "1028": {
+    "imdb_id": "tt0189305",
+    "title": "Tenchi Muyo!",
+    "fromSeason": 3,
+    "fromEpisode": 7
+  },
+  "11451": {
+    "imdb_id": "tt0189305",
+    "title": "Tenchi Muyo!",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "42491": {
+    "imdb_id": "tt0189305",
+    "title": "Tenchi Muyo!",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "8580": {
+    "imdb_id": "tt4046242",
+    "title": "Ai Tenchi Muyo!",
     "fromSeason": 1,
-    "fromEpisode": 14
+    "fromEpisode": 1
   },
   "501": {
     "imdb_id": "tt0216651",
@@ -3372,6 +3426,18 @@
   "983": {
     "imdb_id": "tt0347854",
     "title": "Samurai Girl: Real Bout High School"
+  },
+  "988": {
+    "imdb_id": "tt1634548",
+    "title": "Marriage of God & Soul Godannar!! ",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "989": {
+    "imdb_id": "tt1634548",
+    "title": "Marriage of God & Soul Godannar!! ",
+    "fromSeason": 1,
+    "fromEpisode": 14
   },
   "993": {
     "imdb_id": "tt0224528",
@@ -5341,10 +5407,6 @@
     "imdb_id": "tt1161671",
     "title": "They are my noble masters"
   },
-  "2874": {
-    "imdb_id": "tt0476042",
-    "title": "Gunslinger Girl"
-  },
   "2879": {
     "imdb_id": "tt2902582",
     "title": "Danganronpa: The Animation"
@@ -5742,6 +5804,18 @@
   "2226": {
     "imdb_id": "tt0163494",
     "title": "Space Adventure Cobra"
+  },
+  "3893": {
+    "imdb_id": "tt1346122",
+    "title": "Maria Holic",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5832": {
+    "imdb_id": "tt1346122",
+    "title": "Maria Holic",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "3895": {
     "imdb_id": "tt2454264",
@@ -6669,7 +6743,33 @@
   },
   "6587": {
     "imdb_id": "tt2230531",
-    "title": "Senki Zessho Symphogear"
+    "title": "Senki Zessho Symphogear",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7311": {
+    "imdb_id": "tt2230531",
+    "title": "Senki Zessho Symphogear",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "8136": {
+    "imdb_id": "tt2230531",
+    "title": "Senki Zessho Symphogear",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "11883": {
+    "imdb_id": "tt2230531",
+    "title": "Senki Zessho Symphogear",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "11884": {
+    "imdb_id": "tt2230531",
+    "title": "Senki Zessho Symphogear",
+    "fromSeason": 5,
+    "fromEpisode": 1
   },
   "6588": {
     "imdb_id": "tt2078523",
@@ -7363,10 +7463,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "7311": {
-    "imdb_id": "tt2230531",
-    "title": "Senki Zessho Symphogear"
-  },
   "7314": {
     "imdb_id": "tt2622982",
     "title": "The Devil Is a Part-Timer!"
@@ -8032,6 +8128,12 @@
   "7881": {
     "imdb_id": "tt3225270",
     "title": "Noragami",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "10800": {
+    "imdb_id": "tt3225270",
+    "title": "Noragami",
     "fromSeason": 2,
     "fromEpisode": 1
   },
@@ -8477,10 +8579,6 @@
   "8135": {
     "imdb_id": "tt3413018",
     "title": "Tamako rabu sutôrî"
-  },
-  "8136": {
-    "imdb_id": "tt2230531",
-    "title": "Senki Zessho Symphogear"
   },
   "8138": {
     "imdb_id": "tt3774756",
@@ -9109,12 +9207,6 @@
   "8673": {
     "imdb_id": "tt3646946",
     "title": "Attack on Titan: The Wings of Freedom"
-  },
-  "8674": {
-    "imdb_id": "tt2560140",
-    "title": "Attack on Titan",
-    "fromSeason": 0,
-    "fromEpisode": 5
   },
   "8675": {
     "imdb_id": "tt4054952",
@@ -9894,12 +9986,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "10800": {
-    "imdb_id": "tt3225270",
-    "title": "Noragami",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "10844": {
     "imdb_id": "tt4954596",
     "title": "Wakako-zake"
@@ -10274,12 +10360,6 @@
   "10154": {
     "imdb_id": "tt6035666",
     "title": "The Labyrinth of Grisaia: The Cocoon of Caprice 0"
-  },
-  "11243": {
-    "imdb_id": "tt3225270",
-    "title": "Noragami",
-    "fromSeason": 0,
-    "fromEpisode": 3
   },
   "11261": {
     "imdb_id": "tt5461834",
@@ -11100,10 +11180,6 @@
     "title": "Bungou Stray Dogs",
     "fromSeason": 2,
     "fromEpisode": 1
-  },
-  "11884": {
-    "imdb_id": "tt2230531",
-    "title": "Senki Zessho Symphogear"
   },
   "3179": {
     "imdb_id": "tt1300176",
@@ -12759,12 +12835,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "13718": {
-    "imdb_id": "tt2560140",
-    "title": "Attack on Titan",
-    "fromSeason": 0,
-    "fromEpisode": 7
-  },
   "13719": {
     "imdb_id": "tt7727278",
     "title": "Osake wa Fuufu ni Natte kara"
@@ -14379,7 +14449,15 @@
   },
   "42241": {
     "imdb_id": "tt10885406",
-    "title": "Ascendance of a Bookworm"
+    "title": "Ascendance of a Bookworm",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42838": {
+    "imdb_id": "tt10885406",
+    "title": "Ascendance of a Bookworm",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "42242": {
     "imdb_id": "tt12899130",
@@ -14695,7 +14773,7 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "42903": {
+  "42108": {
     "imdb_id": "tt9310328",
     "title": "Altered Carbon: Resleeved"
   },
