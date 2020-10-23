@@ -3191,6 +3191,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "1699": {
+    "imdb_id": "tt0845738",
+    "title": "When They Cry",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "3170": {
+    "imdb_id": "tt0845738",
+    "title": "When They Cry",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "832": {
     "imdb_id": "tt0813971",
     "title": "Witchblade"
@@ -4465,10 +4477,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "1699": {
-    "imdb_id": "tt1068433",
-    "title": "When They Cry: Kai"
-  },
   "1723": {
     "imdb_id": "tt3143922",
     "title": "Shonan Junai Gumi"
@@ -5584,10 +5592,6 @@
   "3159": {
     "imdb_id": "tt1169180",
     "title": "Kaiketsu zorori"
-  },
-  "3170": {
-    "imdb_id": "tt6061174",
-    "title": "When They Cry: Rei"
   },
   "3172": {
     "imdb_id": "tt1308086",
@@ -14229,6 +14233,12 @@
     "imdb_id": "tt9679542",
     "title": "Dr. Stone",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42867": {
+    "imdb_id": "tt9679542",
+    "title": "Dr. Stone",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "42082": {
