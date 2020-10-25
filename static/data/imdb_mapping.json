@@ -207,15 +207,21 @@
   },
   "51": {
     "imdb_id": "tt0328739",
-    "title": "Full Metal Panic!"
+    "title": "Full Metal Panic!",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "52": {
-    "imdb_id": "tt0472436",
-    "title": "Full Metal Panic? Fumoffu"
+    "imdb_id": "tt0328739",
+    "title": "Full Metal Panic!",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "53": {
-    "imdb_id": "tt0451991",
-    "title": "Full Metal Panic! The Second Raid"
+    "imdb_id": "tt0328739",
+    "title": "Full Metal Panic!",
+    "fromSeason": 3,
+    "fromEpisode": 1
   },
   "905": {
     "imdb_id": "tt1091866",
