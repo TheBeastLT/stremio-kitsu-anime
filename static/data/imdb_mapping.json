@@ -4691,6 +4691,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "3505": {
+    "imdb_id": "tt1118804",
+    "title": "Clannad: After Story",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "1991": {
     "imdb_id": "tt0377231",
     "title": "Zambot 3"
@@ -5674,24 +5680,6 @@
     "title": "Prince of Tennis: The National Tournament Finals",
     "fromSeason": 10,
     "fromEpisode": 1
-  },
-  "3505": {
-    "imdb_id": "tt1298820",
-    "title": "Clannad: After Story",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "3438": {
-    "imdb_id": "tt1298820",
-    "title": "Clannad: After Story",
-    "fromSeason": 1,
-    "fromEpisode": 25
-  },
-  "4529": {
-    "imdb_id": "tt1298820",
-    "title": "Clannad: After Story",
-    "fromSeason": 1,
-    "fromEpisode": 25
   },
   "3441": {
     "imdb_id": "tt1339238",
