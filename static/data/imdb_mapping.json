@@ -8463,7 +8463,15 @@
   },
   "8053": {
     "imdb_id": "tt3874528",
-    "title": "The Irregular at Magic High"
+    "title": "The Irregular at Magic High",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42608": {
+    "imdb_id": "tt3874528",
+    "title": "The Irregular at Magic High",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "8054": {
     "imdb_id": "tt5837794",
@@ -8546,6 +8554,18 @@
     "imdb_id": "tt3517010",
     "title": "Is the Order a Rabbit?",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "10346": {
+    "imdb_id": "tt3517010",
+    "title": "Is the Order a Rabbit?",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42365": {
+    "imdb_id": "tt3517010",
+    "title": "Is the Order a Rabbit?",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "8096": {
@@ -9796,12 +9816,6 @@
     "imdb_id": "tt5679248",
     "title": "Taboo-Tattoo"
   },
-  "10346": {
-    "imdb_id": "tt3517010",
-    "title": "Is the Order a Rabbit?",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "10347": {
     "imdb_id": "tt5443130",
     "title": "Haikyû!: Owari to hajimari"
@@ -10282,6 +10296,18 @@
     "imdb_id": "tt4838372",
     "title": "Osomatsu-san",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "13326": {
+    "imdb_id": "tt4838372",
+    "title": "Osomatsu-san",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43551": {
+    "imdb_id": "tt4838372",
+    "title": "Osomatsu-san",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "11179": {
@@ -11203,21 +11229,31 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "11887": {
+  "4540": {
     "imdb_id": "tt1300176",
     "title": "Strike Witches",
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "42074": {
+  "41934": {
     "imdb_id": "tt1300176",
     "title": "Strike Witches",
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "11887": {
+    "imdb_id": "tt6354120",
+    "title": "Brave Witches",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "5851": {
     "imdb_id": "tt2322603",
     "title": "Strike Witches the Movie"
+  },
+  "8658": {
+    "imdb_id": "tt5542418",
+    "title": "Strike Witches: Operation Victory Arrow"
   },
   "11889": {
     "imdb_id": "tt6597832",
@@ -11982,6 +12018,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13905": {
+    "imdb_id": "tt7797662",
+    "title": "One Room",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43556": {
+    "imdb_id": "tt7797662",
+    "title": "One Room",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "12759": {
     "imdb_id": "tt6754410",
     "title": "Room Mate",
@@ -12349,12 +12397,6 @@
     "title": "Pop Team Epic"
   },
   "13320": {
-  },
-  "13326": {
-    "imdb_id": "tt4838372",
-    "title": "Osomatsu-san",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "13327": {
   },
@@ -12765,6 +12807,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "41442": {
+    "imdb_id": "tt8225204",
+    "title": "Golden Kamuy",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42435": {
+    "imdb_id": "tt8225204",
+    "title": "Golden Kamuy",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "13690": {
     "imdb_id": "tt9135316",
     "title": "Senran Kagura Shinovi Master: Tokyo Yoma-hen"
@@ -13061,12 +13115,6 @@
     "fromEpisode": 1
   },
   "13901": {
-  },
-  "13905": {
-    "imdb_id": "tt7797662",
-    "title": "One Room",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "13908": {
   },
@@ -13911,12 +13959,6 @@
     "imdb_id": "tt7964088",
     "title": "School Babysitters",
     "fromSeason": 0,
-    "fromEpisode": 1
-  },
-  "41442": {
-    "imdb_id": "tt8225204",
-    "title": "Golden Kamuy",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "41451": {
@@ -14821,6 +14863,12 @@
     "imdb_id": "tt10954084",
     "title": "Sakura Wars: The Animation",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43061": {
+    "imdb_id": "tt2549176",
+    "title": "Cardfight!! Vanguard",
+    "fromSeason": 12,
     "fromEpisode": 1
   },
   "43063": {
