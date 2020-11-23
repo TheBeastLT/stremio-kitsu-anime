@@ -9,7 +9,7 @@ const CACHE_MAX_AGE = process.env.CACHE_MAX_AGE || 3 * 24 * 60; // 7 days
 
 const manifest = {
   id: 'community.anime.kitsu',
-  version: '0.0.2',
+  version: '0.0.3',
   name: 'Anime Kitsu',
   description: 'Unofficial Kitsu.io anime catalog addon',
   logo: 'https://i.imgur.com/ANMG9VF.png',
@@ -25,6 +25,13 @@ const manifest = {
       genres: Object.values(genres)
     },
     {
+      id: 'kitsu-anime-newest',
+      name: 'Kitsu Newest',
+      type: 'series',
+      extra: [{ name: 'genre' }],
+      genres: Object.values(genres)
+    },
+    {
       id: 'kitsu-anime-rating',
       name: 'Kitsu Highest Rated',
       type: 'series',
@@ -33,7 +40,7 @@ const manifest = {
     },
     {
       id: 'kitsu-anime-popular',
-      name: 'Kitsu Most popular',
+      name: 'Kitsu Most Popular',
       type: 'series',
       extra: [{ name: 'genre' }],
       genres: Object.values(genres)
@@ -49,6 +56,7 @@ const manifest = {
 const builder = new addonBuilder(manifest);
 const sortValue = {
   'kitsu-anime-list': 'createdAt',
+  'kitsu-anime-newest': '-createdAt',
   'kitsu-anime-rating': '-average_rating',
   'kitsu-anime-popular': '-user_count'
 };
