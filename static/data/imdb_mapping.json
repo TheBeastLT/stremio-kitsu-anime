@@ -223,6 +223,12 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "11460": {
+    "imdb_id": "tt0328739",
+    "title": "Full Metal Panic!",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "905": {
     "imdb_id": "tt1091866",
     "title": "A Relatively Leisurely Day in the Life of a Fleet Captain"
@@ -749,31 +755,33 @@
     "fromEpisode": 1
   },
   "163": {
-    "imdb_id": "tt0247874",
-    "title": "Initial D: Second Stage",
-    "fromSeason": 1,
+    "imdb_id": "tt0385426",
+    "title": "Initial D",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "164": {
-    "imdb_id": "tt0388130",
-    "title": "Initial D: Third Stage"
+    "imdb_id": "tt0385426",
+    "title": "Initial D",
+    "fromSeason": 3,
+    "fromEpisode": 1
   },
   "9": {
-    "imdb_id": "tt0389644",
-    "title": "Initial D: Fourth Stage",
-    "fromSeason": 1,
+    "imdb_id": "tt0385426",
+    "title": "Initial D",
+    "fromSeason": 4,
     "fromEpisode": 1
   },
   "7204": {
-    "imdb_id": "tt3385538",
-    "title": "Initial D: Fifth Stage",
-    "fromSeason": 1,
+    "imdb_id": "tt0385426",
+    "title": "Initial D",
+    "fromSeason": 5,
     "fromEpisode": 1
   },
   "8482": {
-    "imdb_id": "tt6322684",
-    "title": "Initial D: Final Stage",
-    "fromSeason": 1,
+    "imdb_id": "tt0385426",
+    "title": "Initial D",
+    "fromSeason": 6,
     "fromEpisode": 1
   },
   "728": {
@@ -1026,6 +1034,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "2275": {
+    "imdb_id": "tt0473578",
+    "title": "Genshiken",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7677": {
+    "imdb_id": "tt0473578",
+    "title": "Genshiken",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "216": {
     "imdb_id": "tt0807675",
     "title": "Girls Bravo",
@@ -1062,7 +1082,15 @@
   },
   "224": {
     "imdb_id": "tt0290223",
-    "title": "Inuyasha"
+    "title": "Inuyasha",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4726": {
+    "imdb_id": "tt0290223",
+    "title": "InuYasha: The Final Act",
+    "fromSeason": 8,
+    "fromEpisode": 1
   },
   "225": {
     "imdb_id": "tt0455295",
@@ -3278,8 +3306,8 @@
     "fromEpisode": 1
   },
   "892": {
-    "imdb_id": "tt0098492",
-    "title": "Gunbuster",
+    "imdb_id": "tt0856824",
+    "title": "Gunbuster 2: Diebuster",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -3462,6 +3490,10 @@
     "title": "Marriage of God & Soul Godannar!! ",
     "fromSeason": 1,
     "fromEpisode": 14
+  },
+  "992": {
+    "imdb_id": "tt0098692",
+    "title": "Wicked City"
   },
   "993": {
     "imdb_id": "tt0224528",
@@ -3776,6 +3808,10 @@
   "1203": {
     "imdb_id": "tt0101514",
     "title": "Bubblegum Crash"
+  },
+  "1204": {
+    "imdb_id": "tt0189238",
+    "title": "A.D. Police: To Protect and Serve"
   },
   "1205": {
     "imdb_id": "tt0376058",
@@ -6032,10 +6068,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "4726": {
-    "imdb_id": "tt1534184",
-    "title": "InuYasha: The Final Act"
-  },
   "4759": {
     "imdb_id": "tt1648133",
     "title": "XXXHOLiC: Rô"
@@ -7747,7 +7779,7 @@
     "imdb_id": "tt2051178",
     "title": "Fate/Zero",
     "fromSeason": 1,
-    "fromEpisode": 1
+    "fromEpisode": 14
   },
   "7660": {
     "imdb_id": "tt0940874",
@@ -7790,12 +7822,6 @@
   "7676": {
     "imdb_id": "tt2942188",
     "title": "Chronicles of the Going Home Club"
-  },
-  "7677": {
-    "imdb_id": "tt0473578",
-    "title": "Genshiken",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "7678": {
     "imdb_id": "tt3124820",
@@ -9254,6 +9280,14 @@
     "imdb_id": "tt4054952",
     "title": "Fate/Stay Night: Heaven's Feel - I. Presage Flower"
   },
+  "12007": {
+    "imdb_id": "tt8091892",
+    "title": "Fate/stay Night: Heaven's Feel - II. Lost Butterfly"
+  },
+  "12008": {
+    "imdb_id": "tt8092118",
+    "title": "Fate/Stay Night: Heaven's Feel - III. Spring Song"
+  },
   "8697": {
     "imdb_id": "tt3950092",
     "title": "Wolf Girl and Black Prince",
@@ -10264,6 +10298,10 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "11127": {
+    "imdb_id": "tt4717402",
+    "title": "Mutafukaz"
+  },
   "11133": {
     "imdb_id": "tt2758770",
     "title": "Star vs. the Forces of Evil",
@@ -10741,12 +10779,6 @@
     "imdb_id": "tt2359704",
     "title": "JoJo's Bizarre Adventure",
     "fromSeason": 3,
-    "fromEpisode": 1
-  },
-  "11460": {
-    "imdb_id": "tt7246908",
-    "title": "Full Metal Panic! Invisible Victory",
-    "fromSeason": 1,
     "fromEpisode": 1
   },
   "11466": {
@@ -11401,10 +11433,6 @@
     "title": "Mobile Suit Gundam: Iron-Blooded Orphans",
     "fromSeason": 1,
     "fromEpisode": 1
-  },
-  "12007": {
-    "imdb_id": "tt8091892",
-    "title": "Fate/stay night: Heaven's Feel II. Lost Butterfly"
   },
   "12009": {
     "imdb_id": "tt6350614",
@@ -13058,11 +13086,15 @@
   },
   "13850": {
     "imdb_id": "tt8100900",
-    "title": "Code Geass: Lelouch of the Rebellion Episode I"
+    "title": "Code Geass: Lelouch of the Rebellion I - Initiation"
+  },
+  "13851": {
+    "imdb_id": "tt9598270",
+    "title": "Code Geass: Lelouch of the Rebellion II - Transgression"
   },
   "13852": {
     "imdb_id": "tt9844256",
-    "title": "Code Geass: Lelouch of the Rebellion - Emperor"
+    "title": "Code Geass: Lelouch of the Rebellion III - Glorification"
   },
   "13880": {
     "imdb_id": "tt1308089",
@@ -13737,11 +13769,21 @@
     "fromSeason": 1,
     "fromEpisode": 14
   },
-  "41158": {
+  "12611": {
+    "imdb_id": "tt6859260",
+    "title": "The King's Avatar",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41358": {
     "imdb_id": "tt6859260",
     "title": "The King's Avatar",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  "42673": {
+    "imdb_id": "tt10736726",
+    "title": "The King's Avatar: For the Glory"
   },
   "41159": {
     "imdb_id": "tt2758770",
@@ -14239,6 +14281,10 @@
     "imdb_id": "tt9426210",
     "title": "Weathering with You"
   },
+  "42030": {
+    "imdb_id": "tt9418812",
+    "title": "Hello World"
+  },
   "42032": {
     "imdb_id": "tt9193770",
     "title": "Isekai Quartet",
@@ -14689,13 +14735,35 @@
   },
   "42423": {
     "imdb_id": "tt10882992",
-    "title": "Didn't I Say to Make My Abilities Average in the Next Life?! ",
+    "title": "Didn't I Say to Make My Abilities Average in the Next Life?!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "42429": {
     "imdb_id": "tt10635042",
     "title": "Sailor Moon Eternal"
+  },
+  "42434": {
+    "imdb_id": "tt12013558",
+    "title": "BNA",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42436": {
+    "imdb_id": "tt10954274",
+    "title": "ID:Invaded",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42438": {
+    "imdb_id": "tt11680468",
+    "title": "Great Pretender",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42445": {
+    "imdb_id": "tt10621032",
+    "title": "Lupin III: The First"
   },
   "42451": {
     "imdb_id": "tt10470356",
