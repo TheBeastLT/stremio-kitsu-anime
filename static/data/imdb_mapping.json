@@ -4501,7 +4501,27 @@
   },
   "1669": {
     "imdb_id": "tt0972656",
-    "title": "Hidamari Sketch"
+    "title": "Hidamari Sketch",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3137": {
+    "imdb_id": "tt0972656",
+    "title": "Hidamari Sketch",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "4856": {
+    "imdb_id": "tt0972656",
+    "title": "Hidamari Sketch",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "6480": {
+    "imdb_id": "tt0972656",
+    "title": "Hidamari Sketch",
+    "fromSeason": 4,
+    "fromEpisode": 1
   },
   "1670": {
     "imdb_id": "tt0189254",
@@ -6329,6 +6349,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "7710": {
+    "imdb_id": "tt1909463",
+    "title": "Freezing",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "5710": {
     "imdb_id": "tt2697872",
     "title": "Ground Control to Psychoelectric Girl",
@@ -6873,9 +6899,23 @@
     "imdb_id": "tt2180883",
     "title": "Daily Lives of High School Boys"
   },
+  "7762": {
+    "imdb_id": "tt1407599",
+    "title": "Queen's Blade: Wandering Warrior",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4642": {
+    "imdb_id": "tt1407599",
+    "title": "Queen's Blade: Wandering Warrior",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "6620": {
     "imdb_id": "tt1407599",
-    "title": "Queen's Blade: Wandering Warrior"
+    "title": "Queen's Blade: Wandering Warrior",
+    "fromSeason": 3,
+    "fromEpisode": 1
   },
   "6626": {
     "imdb_id": "tt2250034",
@@ -7467,6 +7507,28 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "7864": {
+    "imdb_id": "tt2575684",
+    "title": "Date a Live",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "14040": {
+    "imdb_id": "tt2575684",
+    "title": "Date a Live",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "43065": {
+    "imdb_id": "tt2575684",
+    "title": "Date a Live",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "8512": {
+    "imdb_id": "tt5331768",
+    "title": "Date a Live Movie: Mayuri Judgement"
+  },
   "7280": {
     "imdb_id": "tt2904656",
     "title": "Brothers Conflict",
@@ -7963,14 +8025,22 @@
     "imdb_id": "tt3105452",
     "title": "Golden Time"
   },
-  "7710": {
-    "imdb_id": "tt3246306",
-    "title": "Freezing Vibration"
-  },
   "7711": {
     "imdb_id": "tt3114358",
     "title": "Non Non Biyori",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8410": {
+    "imdb_id": "tt3114358",
+    "title": "Non Non Biyori",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42349": {
+    "imdb_id": "tt3114358",
+    "title": "Non Non Biyori",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "7712": {
@@ -8152,12 +8222,6 @@
   "7862": {
     "imdb_id": "tt4831682",
     "title": "Little Witch Academia: The Enchanted Parade"
-  },
-  "7864": {
-    "imdb_id": "tt2575684",
-    "title": "Date a Live",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "7870": {
     "imdb_id": "tt10342048",
@@ -9048,12 +9112,6 @@
     "imdb_id": "tt3957550",
     "title": "Garo the Animation",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "8410": {
-    "imdb_id": "tt3114358",
-    "title": "Non Non Biyori",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "8428": {
