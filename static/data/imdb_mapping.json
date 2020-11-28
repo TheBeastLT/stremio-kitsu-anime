@@ -1293,6 +1293,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "508": {
+    "imdb_id": "tt0981456",
+    "title": "Baki the Grappler",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "263": {
     "imdb_id": "tt0328733",
     "title": "Beyblade",
@@ -2716,12 +2722,6 @@
     "imdb_id": "tt4834194",
     "title": "Yu-Gi-Oh!"
   },
-  "508": {
-    "imdb_id": "tt0981456",
-    "title": "Baki the Grappler",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "509": {
     "imdb_id": "tt0210418",
     "title": "Digimon: Digital Monsters",
@@ -2860,6 +2860,10 @@
   "571": {
     "imdb_id": "tt0112105",
     "title": "Nurse Angel Ririka SOS"
+  },
+  "572": {
+    "imdb_id": "tt0107692",
+    "title": "Ninja Scroll"
   },
   "573": {
     "imdb_id": "tt0400690",
@@ -3175,6 +3179,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "1363": {
+    "imdb_id": "tt0962826",
+    "title": "Black Lagoon",
+    "fromSeason": 1,
+    "fromEpisode": 13
+  },
+  "3841": {
+    "imdb_id": "tt0962826",
+    "title": "Black Lagoon",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
   "790": {
     "imdb_id": "tt0143007",
     "title": "King of the Braves GaoGaiGar"
@@ -3407,6 +3423,10 @@
     "imdb_id": "tt2336252",
     "title": "Psychic Force"
   },
+  "918": {
+    "imdb_id": "tt0306474",
+    "title": "Princess Arete"
+  },
   "919": {
     "imdb_id": "tt0102587",
     "title": "Only Yesterday"
@@ -3470,6 +3490,22 @@
   "973": {
     "imdb_id": "tt0142183",
     "title": "Super Dimensional Fortress Macross"
+  },
+  "974": {
+    "imdb_id": "tt0087660",
+    "title": "Macross: Do You Remember Love?"
+  },
+  "980": {
+    "imdb_id": "tt0100339",
+    "title": "Patlabor: The Movie"
+  },
+  "981": {
+    "imdb_id": "tt0124770",
+    "title": "Patlabor 2: The Movie"
+  },
+  "1164": {
+    "imdb_id": "tt0318819",
+    "title": "WXIII: Patlabor the Movie 3"
   },
   "982": {
     "imdb_id": "tt0991059",
@@ -4030,12 +4066,6 @@
   "1362": {
     "imdb_id": "tt0250921",
     "title": "Silent Möbius"
-  },
-  "1363": {
-    "imdb_id": "tt0962826",
-    "title": "Black Lagoon",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "1373": {
     "imdb_id": "tt0497548",
@@ -5639,7 +5669,17 @@
   },
   "3113": {
     "imdb_id": "tt1216150",
-    "title": "Macross Frontier"
+    "title": "Macross Frontier",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4051": {
+    "imdb_id": "tt1548563",
+    "title": "Macross Frontier: The False Songstress"
+  },
+  "4903": {
+    "imdb_id": "tt1566528",
+    "title": "Macross Frontier: The Wings of Goodbye"
   },
   "3118": {
     "imdb_id": "tt1216133",
@@ -5757,7 +5797,15 @@
   },
   "3441": {
     "imdb_id": "tt1339238",
-    "title": "Sekirei"
+    "title": "Sekirei",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4029": {
+    "imdb_id": "tt1339238",
+    "title": "Sekirei",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "3453": {
     "imdb_id": "tt1352421",
@@ -5852,10 +5900,6 @@
     "title": "Black Butler",
     "fromSeason": 1,
     "fromEpisode": 1
-  },
-  "3841": {
-    "imdb_id": "tt1992386",
-    "title": "Black Lagoon: Roberta's Blood Trail"
   },
   "3871": {
     "imdb_id": "tt1278254",
@@ -6060,6 +6104,18 @@
     "imdb_id": "tt1636815",
     "title": "Detective Conan: The Lost Ship in the Sky"
   },
+  "4583": {
+    "imdb_id": "tt3443306",
+    "title": "The Qwaser of Stigmata",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6020": {
+    "imdb_id": "tt3443306",
+    "title": "The Qwaser of Stigmata",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "4597": {
   },
   "4604": {
@@ -6135,6 +6191,12 @@
   "4863": {
     "imdb_id": "tt1636694",
     "title": "Ichiban ushiro no daimaou"
+  },
+  "4900": {
+    "imdb_id": "tt1805647",
+    "title": "Aoi Bungaku Series",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "4938": {
     "imdb_id": "tt1572781",
@@ -6224,6 +6286,12 @@
   "5330": {
     "imdb_id": "tt1872328",
     "title": "Gosick"
+  },
+  "5331": {
+    "imdb_id": "tt2011519",
+    "title": "Hourou Musuko",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "5356": {
     "imdb_id": "tt5328606",
@@ -6939,7 +7007,15 @@
   },
   "6646": {
     "imdb_id": "tt2496120",
-    "title": "Space Battleship Yamato 2199"
+    "title": "Space Battleship Yamato 2199",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43641": {
+    "imdb_id": "tt2496120",
+    "title": "Space Battleship Yamato 2199",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "6665": {
     "imdb_id": "tt2358913",
@@ -8091,6 +8167,12 @@
     "imdb_id": "tt3196524",
     "title": "I Couldn't Become a Hero, So I Reluctantly Decided to Get a Job."
   },
+  "7726": {
+    "imdb_id": "tt0266171",
+    "title": "Outlaw Star",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "7728": {
     "imdb_id": "tt2716982",
     "title": "Nura: Rise of the Yokai Clan",
@@ -8276,8 +8358,8 @@
   "10052": {
     "imdb_id": "tt3621796",
     "title": "Fate/stay night: Unlimited Blade Works",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   "9718": {
     "imdb_id": "tt3621796",
@@ -9114,6 +9196,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "8416": {
+    "imdb_id": "tt3222236",
+    "title": "Star Blazers 2199: Odyssey of the Celestial Ark"
+  },
   "8428": {
     "imdb_id": "tt4014116",
     "title": "HisCoool! Seha Girls"
@@ -9559,6 +9645,10 @@
     "imdb_id": "tt4603222",
     "title": "Plastic Memories"
   },
+  "9721": {
+    "imdb_id": "tt4337072",
+    "title": "Ghost in the Shell: The New Movie"
+  },
   "9725": {
     "imdb_id": "tt1584000",
     "title": "Durarara!!",
@@ -9788,6 +9878,24 @@
     "title": "Himouto! Umaruchan",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "13489": {
+    "imdb_id": "tt5059866",
+    "title": "Himouto! Umaru-chan",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "11203": {
+    "imdb_id": "tt5059866",
+    "title": "Himouto! Umaru-chan",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "11079": {
+    "imdb_id": "tt5059866",
+    "title": "Himouto! Umaru-chan",
+    "fromSeason": 0,
+    "fromEpisode": 13
   },
   "10069": {
     "imdb_id": "tt5373222",
@@ -11707,6 +11815,10 @@
     "fromEpisode": 1
   },
   "12250": {
+    "imdb_id": "tt12882132",
+    "title": "Hitori No Shita - The Outcast",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "12260": {
     "imdb_id": "tt6104656",
@@ -11944,6 +12056,10 @@
     "fromSeason": 8,
     "fromEpisode": 1
   },
+  "12565": {
+    "imdb_id": "tt6096128",
+    "title": "Orange: Future"
+  },
   "12566": {
     "imdb_id": "tt4508902",
     "title": "One Punch Man: Wanpanman",
@@ -12131,6 +12247,10 @@
     "title": "One Room",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "12794": {
+    "imdb_id": "tt6317962",
+    "title": "Fireworks"
   },
   "13905": {
     "imdb_id": "tt7797662",
@@ -12655,12 +12775,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "13489": {
-    "imdb_id": "tt5059866",
-    "title": "Himouto! Umaru-chan",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "13502": {
     "imdb_id": "tt5857720",
     "title": "ReLIFE",
@@ -12798,6 +12912,14 @@
   "13602": {
     "imdb_id": "tt9116358",
     "title": "Promare"
+  },
+  "42588": {
+    "imdb_id": "tt11803654",
+    "title": "Promare: Lio-hen"
+  },
+  "42587": {
+    "imdb_id": "tt11803614",
+    "title": "Promare: Galo-hen"
   },
   "13609": {
     "imdb_id": "tt6765658",
@@ -13651,7 +13773,15 @@
   },
   "41036": {
     "imdb_id": "tt9005728",
-    "title": "Mo Dao Zu Shi"
+    "title": "Mo Dao Zu Shi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42163": {
+    "imdb_id": "tt9005728",
+    "title": "Mo Dao Zu Shi",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "41046": {
     "imdb_id": "tt7961060",
@@ -14509,7 +14639,15 @@
   },
   "42137": {
     "imdb_id": "tt10417572",
-    "title": "The Demon Girl Next Door"
+    "title": "The Demon Girl Next Door",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43547": {
+    "imdb_id": "tt10417572",
+    "title": "The Demon Girl Next Door",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "42144": {
     "imdb_id": "tt9836798",
@@ -14568,6 +14706,10 @@
     "title": "Love, Death & Robots",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "42195": {
+    "imdb_id": "tt11343974",
+    "title": "Fragtime"
   },
   "42197": {
     "imdb_id": "tt10981954",
@@ -14762,6 +14904,12 @@
   "42328": {
     "imdb_id": "tt10973152",
     "title": "Assassins Pride"
+  },
+  "42343": {
+    "imdb_id": "tt10320398",
+    "title": "Eizouken ni wa Te wo Dasu na! ",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "42344": {
     "imdb_id": "tt10974256",
@@ -15083,6 +15231,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42638": {
+    "imdb_id": "tt12331304",
+    "title": "Our Last Crusade or the Rise of a New World",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42146": {
     "imdb_id": "tt11094154",
     "title": "A3! Season Spring & Summer",
@@ -15195,15 +15349,87 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42625": {
+    "imdb_id": "tt12407004",
+    "title": "Assault Lily: Bouquet",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42865": {
+    "imdb_id": "tt13375866",
+    "title": "Heaven Official's Blessing",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42872": {
+    "imdb_id": "tt12792684",
+    "title": "Love Live! Nijigasaki High School Idol Club",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42935": {
+    "imdb_id": "tt12367868",
+    "title": "Higurashi: When They Cry - New",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43019": {
+    "imdb_id": "tt12885610",
+    "title": "Noblesse",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43029": {
+    "imdb_id": "tt12373592",
+    "title": "Warlords of Sigrdrifa",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43034": {
+    "imdb_id": "tt12311976",
+    "title": "TONIKAWA: Over the Moon for You",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43062": {
     "imdb_id": "tt12080774",
     "title": "Bungou to Alchemist: Shinpan no Haguruma",
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43067": {
+    "imdb_id": "tt12331342",
+    "title": "Akudama Drive",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43115": {
     "imdb_id": "tt12156162",
     "title": "Zashiki-Warashi no Tatami-chan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43180": {
+    "imdb_id": "tt12287748",
+    "title": "Yashahime: Princess Half-Demon",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43214": {
+    "imdb_id": "tt12415504",
+    "title": "Kuma Kuma Kuma Bear",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43367": {
+    "imdb_id": "tt12706854",
+    "title": "I'm Standing on a Million Lives",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43553": {
+    "imdb_id": "tt12584900",
+    "title": "Rail Romanesque",
     "fromSeason": 1,
     "fromEpisode": 1
   }
