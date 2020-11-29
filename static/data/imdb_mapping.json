@@ -1723,8 +1723,10 @@
     "fromEpisode": 1
   },
   "365": {
-    "imdb_id": "tt5175246",
-    "title": "Banner of the Stars III"
+    "imdb_id": "tt0387776",
+    "title": "Banner of the Stars",
+    "fromSeason": 3,
+    "fromEpisode": 1
   },
   "366": {},
   "367": {
@@ -1887,6 +1889,14 @@
   "405": {
     "imdb_id": "tt0476680",
     "title": "Naruto the Movie: Ninja Clash in the Land of Snow"
+  },
+  "833": {
+    "imdb_id": "tt0791188",
+    "title": "Naruto the Movie 2: Legend of the Stone of Gelel"
+  },
+  "1941": {
+    "imdb_id": "tt1071815",
+    "title": "Naruto the Movie 3: Guardians of the Crescent Moon Kingdom"
   },
   "406": {
     "imdb_id": "tt0983133",
@@ -3127,6 +3137,12 @@
     "imdb_id": "tt0989781",
     "title": "Makai senki disgaea"
   },
+  "763": {
+    "imdb_id": "tt0488477",
+    "title": "XXXHOLiC",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "771": {
     "imdb_id": "tt0106769",
     "title": "Dragon Half"
@@ -3771,6 +3787,12 @@
     "imdb_id": "tt0100099",
     "title": "Devil Hunter Yohko"
   },
+  "1156": {
+    "imdb_id": "tt0285368",
+    "title": "Ghost Stories",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "1157": {
     "imdb_id": "tt0286648",
     "title": "Gestalt"
@@ -4379,7 +4401,21 @@
   },
   "1525": {
     "imdb_id": "tt0928099",
-    "title": "Nodame kantâbire"
+    "title": "Nodame kantâbire",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3632": {
+    "imdb_id": "tt0928099",
+    "title": "Nodame kantâbire",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "4248": {
+    "imdb_id": "tt0928099",
+    "title": "Nodame kantâbire",
+    "fromSeason": 3,
+    "fromEpisode": 1
   },
   "1526": {
     "imdb_id": "tt1081667",
@@ -4803,6 +4839,12 @@
     "imdb_id": "tt1483553",
     "title": "Kishin Taisen Gigantic Formula"
   },
+  "2007": {
+    "imdb_id": "tt1233119",
+    "title": "Shigurui: Death Frenzy",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "2012": {
     "imdb_id": "tt0293993",
     "title": "Rock 'n Roll Kids"
@@ -4968,6 +5010,10 @@
   "2223": {
     "imdb_id": "tt1024215",
     "title": "Ghost in the Shell: Stand Alone Complex - The Laughing Man"
+  },
+  "2228": {
+    "imdb_id": "tt0095448",
+    "title": "Kimagure Orange Road: I Want to Return to That Day"
   },
   "2246": {
     "imdb_id": "tt0113169",
@@ -5453,6 +5499,12 @@
     "imdb_id": "tt0083417",
     "title": "The Flying House"
   },
+  "2775": {
+    "imdb_id": "tt2800436",
+    "title": "The Laughing Salesman",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "2787": {
     "imdb_id": "tt0488477",
     "title": "XXXHOLiC",
@@ -5789,6 +5841,18 @@
     "fromSeason": 1,
     "fromEpisode": 14
   },
+  "3378": {
+    "imdb_id": "tt1244315",
+    "title": "Kannagi: Crazy Shrine Maidens ",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4369": {
+    "imdb_id": "tt1244315",
+    "title": "Kannagi: Crazy Shrine Maidens ",
+    "fromSeason": 1,
+    "fromEpisode": 14
+  },
   "3433": {
     "imdb_id": "tt0466352",
     "title": "Prince of Tennis: The National Tournament Finals",
@@ -5865,7 +5929,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "3632": {},
   "3689": {
     "imdb_id": "tt1422651",
     "title": "Gurren Lagann the Movie: The Lights in the Sky Are Stars"
@@ -5999,7 +6062,6 @@
     "imdb_id": "tt1347975",
     "title": "Phantom: Requiem for the Phantom"
   },
-  "4248": {},
   "4264": {
     "imdb_id": "tt0466352",
     "title": "Prince of Tennis: Another Story - Messages From Past and Future",
@@ -6037,6 +6099,12 @@
   "4432": {
     "imdb_id": "tt1414419",
     "title": "Mainichi kâsan"
+  },
+  "4456": {
+    "imdb_id": "tt1694025",
+    "title": "Cat Planet Cuties",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "4458": {
     "imdb_id": "tt2152368",
@@ -6190,7 +6258,15 @@
   },
   "4863": {
     "imdb_id": "tt1636694",
-    "title": "Ichiban ushiro no daimaou"
+    "title": "Ichiban ushiro no daimaou",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5346": {
+    "imdb_id": "tt1636694",
+    "title": "Ichiban ushiro no daimaou",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "4900": {
     "imdb_id": "tt1805647",
@@ -6214,12 +6290,26 @@
   },
   "5045": {
     "imdb_id": "tt1634209",
-    "title": "Kiss x sis"
+    "title": "Kiss x sis",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3901": {
+    "imdb_id": "tt1634209",
+    "title": "Kiss x sis",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "5067": {
     "imdb_id": "tt1639471",
     "title": "Arakawa Under the Bridge",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5595": {
+    "imdb_id": "tt1639471",
+    "title": "Arakawa Under the Bridge",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "5070": {
@@ -6402,6 +6492,12 @@
     "title": "Steins;Gate",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "9957": {
+    "imdb_id": "tt1910272",
+    "title": "Steins;Gate",
+    "fromSeason": 0,
+    "fromEpisode": 9
   },
   "5649": {
     "imdb_id": "tt3138698",
@@ -8937,8 +9033,10 @@
     "fromEpisode": 1
   },
   "8256": {
-    "imdb_id": "tt9062938",
-    "title": "Magi: Sinbad no Bouken OVA"
+    "imdb_id": "tt4431276",
+    "title": "Magi: Sinbad no Bouken",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "8258": {
     "imdb_id": "tt3590222",
@@ -9052,10 +9150,22 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "8299": {
+    "imdb_id": "tt1807824",
+    "title": "Wakfu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "8300": {
     "imdb_id": "tt1807824",
     "title": "Wakfu",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "11119": {
+    "imdb_id": "tt1807824",
+    "title": "Wakfu",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "8306": {
@@ -9741,6 +9851,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "9978": {
+    "imdb_id": "tt4125300",
+    "title": "The Murder Case of Hana & Alice"
+  },
   "9980": {
     "imdb_id": "tt4384306",
     "title": "Sound! Euphonium",
@@ -9860,6 +9974,10 @@
   "4946": {
     "imdb_id": "tt2653882",
     "title": "Hetalia: Axis Powers - Paint It, White!"
+  },
+  "10056": {
+    "imdb_id": "tt4489416",
+    "title": "The Anthem of the Heart"
   },
   "10061": {
     "imdb_id": "tt2820466",
@@ -10268,6 +10386,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11421": {
+    "imdb_id": "tt5095466",
+    "title": "The Asterisk War: The Academy City on the Water",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "10858": {
     "imdb_id": "tt2390066",
     "title": "Teekyû",
@@ -10412,6 +10536,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13275": {
+    "imdb_id": "tt5225764",
+    "title": "Drifters",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "41325": {
+    "imdb_id": "tt5225764",
+    "title": "Drifters",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
   "11029": {
     "imdb_id": "tt5271506",
     "title": "Hundred"
@@ -10473,12 +10609,6 @@
   "11115": {
     "imdb_id": "tt9044620",
     "title": "Kuroko no Basket: Saikou no Present Desu"
-  },
-  "11119": {
-    "imdb_id": "tt1807824",
-    "title": "Wakfu",
-    "fromSeason": 3,
-    "fromEpisode": 1
   },
   "11126": {
     "imdb_id": "tt4801510",
@@ -11092,7 +11222,7 @@
     "title": "Digimon Adventure Tri. 3: Confession"
   },
   "11548": {
-    "imdb_id": "tt05468016",
+    "imdb_id": "tt5468016",
     "title": "Digimon Adventure Tri. 4: Loss"
   },
   "11549": {
@@ -11279,6 +11409,16 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13299": {
+    "imdb_id": "tt5789296",
+    "title": "Love Live! Sunshine!!",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "14188": {
+    "imdb_id": "tt8659948",
+    "title": "Love Live! Sunshine!! The School Idol Movie: Over The Rainbow"
+  },
   "11748": {
     "imdb_id": "tt5897818",
     "title": "Days"
@@ -11323,7 +11463,19 @@
   },
   "11794": {
     "imdb_id": "tt6455986",
-    "title": "Saga of Tanya the Evil"
+    "title": "Saga of Tanya the Evil",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "13215": {
+    "imdb_id": "tt6455986",
+    "title": "Saga of Tanya the Evil",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "14173": {
+    "imdb_id": "tt9507276",
+    "title": "Saga of Tanya the Evil Movie"
   },
   "11802": {
     "imdb_id": "tt5878004",
@@ -11574,6 +11726,12 @@
     "imdb_id": "tt6401430",
     "title": "Hand Shakers"
   },
+  "11956": {
+    "imdb_id": "tt7765890",
+    "title": "Aggressive Retsuko",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "11957": {
     "imdb_id": "tt5839706",
     "title": "91 Days",
@@ -11691,6 +11849,10 @@
     "title": "The Disastrous Life of Saiki K.",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "12138": {
+    "imdb_id": "tt7625514",
+    "title": "Is the Order a Rabbit?: Dear My Sister"
   },
   "3293": {
     "imdb_id": "tt1276525",
@@ -12188,6 +12350,18 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "14029": {
+    "imdb_id": "tt3981902",
+    "title": "Yuki Yuna Is a Hero",
+    "fromSeason": 2,
+    "fromEpisode": 7
+  },
+  "13160": {
+    "imdb_id": "tt3981902",
+    "title": "Yuki Yuna Is a Hero",
+    "fromSeason": 2,
+    "fromEpisode": 8
+  },
   "12685": {
     "imdb_id": "tt6478640",
     "title": "Schoolgirl Strikers: Animation Channel",
@@ -12322,6 +12496,10 @@
     "imdb_id": "tt0805815",
     "title": "Cory in the House"
   },
+  "12584": {
+    "imdb_id": "tt6634906",
+    "title": "Gekijouban soushuuhen Ôbârôdo: Fushisha no ou"
+  },
   "12915": {
     "imdb_id": "tt6634910",
     "title": "Gekijouban soushuuhen Ôbârôdo: Shikkoku no eiyuu"
@@ -12376,6 +12554,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13066": {
+    "imdb_id": "tt6424454",
+    "title": "Fate/Apocrypha",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "13068": {
     "imdb_id": "tt7161104",
     "title": "Welcome to the Ballroom"
@@ -12384,6 +12568,30 @@
     "imdb_id": "tt1352421",
     "title": "Natsume yûjinchô",
     "fromSeason": 6,
+    "fromEpisode": 1
+  },
+  "13078": {
+    "imdb_id": "tt11317074",
+    "title": "Full-Time Magister",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "13841": {
+    "imdb_id": "tt11317074",
+    "title": "Full-Time Magister",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "41997": {
+    "imdb_id": "tt11317074",
+    "title": "Full-Time Magister",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "43232": {
+    "imdb_id": "tt11317074",
+    "title": "Full-Time Magister",
+    "fromSeason": 4,
     "fromEpisode": 1
   },
   "13096": {
@@ -12416,18 +12624,6 @@
   },
   "13143": {},
   "13148": {
-  },
-  "14029": {
-    "imdb_id": "tt3981902",
-    "title": "Yuki Yuna Is a Hero",
-    "fromSeason": 2,
-    "fromEpisode": 7
-  },
-  "13160": {
-    "imdb_id": "tt3981902",
-    "title": "Yuki Yuna Is a Hero",
-    "fromSeason": 2,
-    "fromEpisode": 8
   },
   "13170": {
     "imdb_id": "tt2320220",
@@ -12572,12 +12768,6 @@
   "13281": {
     "imdb_id": "tt8020634",
     "title": "18If"
-  },
-  "13299": {
-    "imdb_id": "tt5789296",
-    "title": "Love Live! Sunshine!!",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "13302": {
     "imdb_id": "tt6813106",
@@ -12948,6 +13138,14 @@
     "title": "Fox Spirit Matchmaker",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "13618": {
+    "imdb_id": "tt7089878",
+    "title": "Liz and the Blue Bird"
+  },
+  "13619": {
+    "imdb_id": "tt7089882",
+    "title": "Sound! Euphonium the Movie - Our Promise: A Brand New Day"
   },
   "13621": {
     "imdb_id": "tt6562940",
@@ -13389,8 +13587,16 @@
     "title": "Hakumei and Mikochi"
   },
   "13952": {
+    "imdb_id": "tt12486080",
+    "title": "Major 2nd",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "43109": {
+    "imdb_id": "tt12486080",
+    "title": "Major 2nd",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "13958": {
     "imdb_id": "tt7933666",
@@ -13756,6 +13962,10 @@
     "title": "That Time I Got Reincarnated as a Slime",
     "fromSeason": 1,
     "fromEpisode": 25
+  },
+  "42207": {
+    "imdb_id": "tt10981202",
+    "title": "Her Blue Sky"
   },
   "42022": {
     "imdb_id": "tt9054364",
@@ -14133,6 +14343,12 @@
     "fromSeason": 3,
     "fromEpisode": 13
   },
+  "41361": {
+    "imdb_id": "tt12953630",
+    "title": "Fog Hill of Five Elements",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "41370": {
     "imdb_id": "tt9335498",
     "title": "Demon Slayer: Kimetsu No Yaiba",
@@ -14146,6 +14362,12 @@
   "41373": {
     "imdb_id": "tt9522300",
     "title": "Kaguya-sama: Love Is War",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41379": {
+    "imdb_id": "tt10265146",
+    "title": "Miss Caretaker of Sunohara-sou",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -14260,6 +14482,10 @@
   "41778": {
     "imdb_id": "tt9526152",
     "title": "Is It Wrong to Try to Pick Up Girls in a Dungeon - Arrow of the Orion"
+  },
+  "41489": {
+    "imdb_id": "tt9850064",
+    "title": "Children of the Sea"
   },
   "41925": {
     "imdb_id": "tt10147790",
@@ -14494,6 +14720,10 @@
   "42030": {
     "imdb_id": "tt9418812",
     "title": "Hello World"
+  },
+  "42031": {
+    "imdb_id": "tt9193612",
+    "title": "Ride Your Wave"
   },
   "42032": {
     "imdb_id": "tt9193770",
@@ -15097,6 +15327,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42586": {
+    "imdb_id": "tt11032374",
+    "title": "Demon Slayer the Movie: Mugen Train"
+  },
   "42470": {
     "imdb_id": "tt11405408",
     "title": "Asteroid in Love",
@@ -15373,6 +15607,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42965": {
+    "imdb_id": "tt11958344",
+    "title": "A Whisker Away"
+  },
   "43019": {
     "imdb_id": "tt12885610",
     "title": "Noblesse",
@@ -15430,6 +15668,12 @@
   "43553": {
     "imdb_id": "tt12584900",
     "title": "Rail Romanesque",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43554": {
+    "imdb_id": "tt12885584",
+    "title": "The Gymnastics Samurai",
     "fromSeason": 1,
     "fromEpisode": 1
   }
