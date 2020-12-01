@@ -973,15 +973,21 @@
     "fromEpisode": 1
   },
   "1434": {
-    "imdb_id": "tt0968237",
-    "title": "Hell Girl: Two Mirrors",
-    "fromSeason": 1,
+    "imdb_id": "tt0962740",
+    "title": "Hell Girl",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "3210": {
-    "imdb_id": "tt1411813",
-    "title": "Hell Girl: Three Vessels",
-    "fromSeason": 1,
+    "imdb_id": "tt0962740",
+    "title": "Hell Girl",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "13249": {
+    "imdb_id": "tt0962740",
+    "title": "Hell Girl",
+    "fromSeason": 4,
     "fromEpisode": 1
   },
   "204": {
@@ -2783,6 +2789,10 @@
     "imdb_id": "tt0175385",
     "title": "Bubblegum Crisis: Tokyo 2040"
   },
+  "527": {
+    "imdb_id": "tt0193253",
+    "title": "Jin-Roh: The Wolf Brigade"
+  },
   "529": {
     "imdb_id": "tt0087544",
     "title": "Nausicaä of the Valley of the Wind"
@@ -2834,6 +2844,10 @@
   "548": {
     "imdb_id": "tt0272402",
     "title": "Infinite Ryvius"
+  },
+  "552": {
+    "imdb_id": "tt0347618",
+    "title": "The Cat Returns"
   },
   "553": {
     "imdb_id": "tt0305046",
@@ -2984,6 +2998,10 @@
   "657": {
     "imdb_id": "tt6096708",
     "title": "After School in the Teacher's Lounge"
+  },
+  "666": {
+    "imdb_id": "tt0108432",
+    "title": "Ocean Waves"
   },
   "667": {
     "imdb_id": "tt1997205",
@@ -3210,6 +3228,18 @@
   "790": {
     "imdb_id": "tt0143007",
     "title": "King of the Braves GaoGaiGar"
+  },
+  "791": {
+    "imdb_id": "tt0142249",
+    "title": "Dragon Ball: Sleeping Princess in Devil's Castle"
+  },
+  "792": {
+    "imdb_id": "tt0142248",
+    "title": "Dragon Ball: Mystical Adventure"
+  },
+  "793": {
+    "imdb_id": "tt0142250",
+    "title": "Dragon Ball: The Path to Power"
   },
   "807": {
     "imdb_id": "tt1188328",
@@ -3906,6 +3936,10 @@
   "4038": {
     "imdb_id": "tt0456978",
     "title": "Shin Kyûseishu densetsu Hokuto no Ken - Kenshirô den"
+  },
+  "1216": {
+    "imdb_id": "tt0114563",
+    "title": "Street Fighter II: The Animated Movie"
   },
   "1219": {
     "imdb_id": "tt0990372",
@@ -4653,6 +4687,12 @@
     "imdb_id": "tt3638066",
     "title": "Wairudo 7"
   },
+  "1766": {
+    "imdb_id": "tt0367414",
+    "title": "Soreike! Anpanman",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "1768": {
     "imdb_id": "tt0467724",
     "title": "The Daichis: Earth's Defense Family"
@@ -5014,6 +5054,38 @@
   "2228": {
     "imdb_id": "tt0095448",
     "title": "Kimagure Orange Road: I Want to Return to That Day"
+  },
+  "2245": {
+    "imdb_id": "tt0988982",
+    "title": "Naruto Shippûden: The Movie"
+  },
+  "3606": {
+    "imdb_id": "tt1160524",
+    "title": "Naruto Shippûden The Movie: Bonds"
+  },
+  "4520": {
+    "imdb_id": "tt1481363",
+    "title": "Naruto Shippûden: The Movie 3: Inheritors of the Will of Fire"
+  },
+  "5266": {
+    "imdb_id": "tt1703048",
+    "title": "Naruto Shippûden: The Lost Tower"
+  },
+  "6256": {
+    "imdb_id": "tt1999167",
+    "title": "Naruto Shippuden the Movie: Blood Prison"
+  },
+  "7008": {
+    "imdb_id": "tt2290828",
+    "title": "Road to Ninja: Naruto the Movie"
+  },
+  "7543": {
+    "imdb_id": "tt3717532",
+    "title": "The Last: Naruto the Movie"
+  },
+  "10089": {
+    "imdb_id": "tt4618398",
+    "title": "Boruto: Naruto the Movie"
   },
   "2246": {
     "imdb_id": "tt0113169",
@@ -5466,6 +5538,14 @@
   "2721": {
     "imdb_id": "tt0843548",
     "title": "Kaiketsu Zorro"
+  },
+  "2724": {
+    "imdb_id": "tt0095512",
+    "title": "Legend of the Galactic Heroes: My Conquest Is the Sea of Stars"
+  },
+  "2726": {
+    "imdb_id": "tt0107382",
+    "title": "Legend of the Galactic Heroes: Overture to a New War"
   },
   "2728": {
     "imdb_id": "tt3391896",
@@ -6363,9 +6443,17 @@
     "imdb_id": "tt1794963",
     "title": "Fafner in the Azure: Heaven and Earth"
   },
+  "5201": {
+    "imdb_id": "tt1679681",
+    "title": "Welcome to the Space Show"
+  },
   "5204": {
     "imdb_id": "tt1746043",
     "title": "Kurage hime"
+  },
+  "5319": {
+    "imdb_id": "tt0204460",
+    "title": "Makoto-chan"
   },
   "5323": {
     "imdb_id": "tt1528567",
@@ -7401,6 +7489,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "7090": {
+    "imdb_id": "tt2404237",
+    "title": "Hanasaku Iroha: Home Sweet Home"
+  },
   "7094": {
     "imdb_id": "tt2390038",
     "title": "Onii-chan Dakedo Ai Sae Areba Kankei Nai yo ne-"
@@ -7928,10 +8020,6 @@
   "7515": {
     "imdb_id": "tt2591814",
     "title": "The Garden of Words"
-  },
-  "7543": {
-    "imdb_id": "tt3717532",
-    "title": "The Last: Naruto the Movie"
   },
   "7544": {
     "imdb_id": "tt2904420",
@@ -9112,6 +9200,12 @@
     "imdb_id": "tt2904418",
     "title": "Free!",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "8279": {
+    "imdb_id": "tt3503520",
+    "title": "Ronja, the Robber's Daughter",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "8281": {
@@ -10606,6 +10700,18 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "42360": {
+    "imdb_id": "tt6348126",
+    "title": "Beyblade Burst",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "43060": {
+    "imdb_id": "tt6348126",
+    "title": "Beyblade Burst",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
   "11115": {
     "imdb_id": "tt9044620",
     "title": "Kuroko no Basket: Saikou no Present Desu"
@@ -10770,6 +10876,10 @@
     "title": "Ojisan and Marshmallow",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "11277": {
+    "imdb_id": "tt2871776",
+    "title": "Jungle Master"
   },
   "11280": {
     "imdb_id": "tt5142364",
@@ -11982,6 +12092,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13885": {
+    "imdb_id": "tt12882132",
+    "title": "Hitori No Shita - The Outcast",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43105": {
+    "imdb_id": "tt12882132",
+    "title": "Hitori No Shita - The Outcast",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "12260": {
     "imdb_id": "tt6104656",
     "title": "Izetta: The Last Witch"
@@ -12039,6 +12161,10 @@
   "12324": {
     "imdb_id": "tt6344696",
     "title": "Trinity Seven: The Movie - Eternity Library and Alchemic Girl"
+  },
+  "42057": {
+    "imdb_id": "tt9826484",
+    "title": "Trinity Seven: Heavens Library & Crimson Lord"
   },
   "12325": {
     "imdb_id": "tt5914996",
@@ -12686,10 +12812,6 @@
     "title": "Overlord",
     "fromSeason": 2,
     "fromEpisode": 1
-  },
-  "13249": {
-    "imdb_id": "tt7197316",
-    "title": "Hell Girl: The Fourth Twilight"
   },
   "13252": {
     "imdb_id": "tt7131720",
@@ -13387,6 +13509,10 @@
     "imdb_id": "tt7963070",
     "title": "Garo: Vanishing Line"
   },
+  "13747": {
+    "imdb_id": "tt6470762",
+    "title": "Mazinger Z: Infinity"
+  },
   "13749": {
     "imdb_id": "tt7879496",
     "title": "Lupin the 3rd: Part V"
@@ -13529,8 +13655,6 @@
     "title": "Re: Zero - Starting Life in Another World",
     "fromSeason": 2,
     "fromEpisode": 1
-  },
-  "13885": {
   },
   "13888": {
     "imdb_id": "tt8249034",
@@ -13765,13 +13889,13 @@
   },
   "14162": {
   },
-  "14173": {
-    "imdb_id": "tt9507276",
-    "title": "Saga of Tanya the Evil - The Movie"
-  },
   "14174": {
     "imdb_id": "tt8400680",
     "title": "Shoujo Kageki Revue Starlight"
+  },
+  "14185": {
+    "imdb_id": "tt7146054",
+    "title": "The Guardian"
   },
   "14190": {
     "imdb_id": "tt8086718",
@@ -13793,6 +13917,12 @@
     "imdb_id": "tt7899522",
     "title": "Gegege no Kitaro",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41973": {
+    "imdb_id": "tt7112156",
+    "title": "3D Kanojo Real Girl",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "14276": {
@@ -13862,6 +13992,10 @@
   "40611": {
     "imdb_id": "tt10240056",
     "title": "Saint Seiya: Saintia Shô"
+  },
+  "40643": {
+    "imdb_id": "tt8685672",
+    "title": "Aragne: Sign of Vermillion"
   },
   "40856": {
     "imdb_id": "tt7179032",
@@ -14093,6 +14227,12 @@
     "imdb_id": "tt8278692",
     "title": "Fumikiri Jikan"
   },
+  "41089": {
+    "imdb_id": "tt10496580",
+    "title": "Pet",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "41093": {
     "imdb_id": "tt8774888",
     "title": "Planet With"
@@ -14302,6 +14442,12 @@
     "fromEpisode": 1
   },
   "41303": {
+  },
+  "41309": {
+    "imdb_id": "tt11147864",
+    "title": "Oshi ga Budôkan ittekuretara shinu ",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "41312": {
     "imdb_id": "tt8788458",
@@ -14622,6 +14768,12 @@
     "title": "Attack on Titan",
     "fromSeason": 4,
     "fromEpisode": 1
+  },
+  "7889": {
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 0,
+    "fromEpisode": 10
   },
   "41984": {
     "imdb_id": "tt5679720",
@@ -15549,9 +15701,21 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43581": {
+    "imdb_id": "tt12464182",
+    "title": "Uzaki-chan Wants to Hang Out!",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "43124": {
     "imdb_id": "tt12350092",
     "title": "Gibiate",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43204": {
+    "imdb_id": "tt12305588",
+    "title": "The Day I Became a God",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -15652,6 +15816,10 @@
     "title": "Yashahime: Princess Half-Demon",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "43212": {
+    "imdb_id": "tt12415546",
+    "title": "Attack on Titan: Chronicle"
   },
   "43214": {
     "imdb_id": "tt12415504",
