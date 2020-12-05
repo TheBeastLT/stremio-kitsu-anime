@@ -15405,6 +15405,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "42532": {
+    "imdb_id": "tt12311920",
+    "title": "Gal & Dino",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42546": {
   },
   "42548": {
@@ -15447,6 +15453,12 @@
     "imdb_id": "tt7745956",
     "title": "She-Ra and the Princesses of Power",
     "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "42627": {
+    "imdb_id": "tt12457334",
+    "title": "Wandering Witch: The Journey of Elaina",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "42649": {
@@ -15833,9 +15845,27 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43535": {
+    "imdb_id": "tt12767982",
+    "title": "Iwa Kakeru! Sport Climbing Girls",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43367": {
     "imdb_id": "tt12706854",
     "title": "I'm Standing on a Million Lives",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43550": {
+    "imdb_id": "tt13041826",
+    "title": "King's Raid: Successors of the Will",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43552": {
+    "imdb_id": "tt12787170",
+    "title": "Inu to Neko Docchi mo Katteru to Mainichi Tanoshii",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -15848,6 +15878,12 @@
   "43554": {
     "imdb_id": "tt12885584",
     "title": "The Gymnastics Samurai",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43557": {
+    "imdb_id": "tt12768008",
+    "title": "D4DJ: First Mix",
     "fromSeason": 1,
     "fromEpisode": 1
   }
