@@ -9434,6 +9434,10 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "8483": {
+    "imdb_id": "tt3689910",
+    "title": "Miss Hokusai"
+  },
   "8498": {
     "imdb_id": "tt2575728",
     "title": "Ai Mai Mi",
@@ -15191,6 +15195,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "43607": {
+    "imdb_id": "tt10885406",
+    "title": "Ascendance of a Bookworm",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "42242": {
     "imdb_id": "tt12899130",
     "title": "Mobile Suit Gundam: The Origin - Advent of the Red Comet",
@@ -15756,6 +15766,12 @@
   "42117": {
     "imdb_id": "tt11328872",
     "title": "In/Spectre",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42524": {
+    "imdb_id": "tt12213092",
+    "title": "Mewkledreamy",
     "fromSeason": 1,
     "fromEpisode": 1
   },
