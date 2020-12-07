@@ -15159,6 +15159,12 @@
     "imdb_id": "tt9883660",
     "title": "Namuamida Butsu! Rendai Utena"
   },
+  "42216": {
+    "imdb_id": "tt12044608",
+    "title": "Ochikobore Fruit Tart",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42218": {
     "imdb_id": "tt4633694",
     "title": "Spider-Man: Into the Spider-Verse"
@@ -15193,6 +15199,12 @@
     "imdb_id": "tt10885406",
     "title": "Ascendance of a Bookworm",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42900": {
+    "imdb_id": "tt11858104",
+    "title": "Dragon Quest: The Adventure of Dai",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "43607": {
