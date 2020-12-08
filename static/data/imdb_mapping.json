@@ -14098,18 +14098,18 @@
   "42212": {
     "imdb_id": "tt9054364",
     "title": "That Time I Got Reincarnated as a Slime",
-    "fromSeason": 1,
-    "fromEpisode": 25
-  },
-  "42207": {
-    "imdb_id": "tt10981202",
-    "title": "Her Blue Sky"
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "42022": {
     "imdb_id": "tt9054364",
     "title": "That Time I Got Reincarnated as a Slime",
-    "fromSeason": 1,
-    "fromEpisode": 26
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "42207": {
+    "imdb_id": "tt10981202",
+    "title": "Her Blue Sky"
   },
   "41025": {
     "imdb_id": "tt8107988",
