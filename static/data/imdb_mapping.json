@@ -825,16 +825,22 @@
     "fromEpisode": 1
   },
   "167": {
-    "imdb_id": "tt0368520",
-    "title": "Love Hina Again "
+    "imdb_id": "tt0279570",
+    "title": "Love Hina",
+    "fromSeason": 0,
+    "fromEpisode": 5
   },
   "168": {
-    "imdb_id": "tt0414243",
-    "title": "Love Hina Christmas Special: Silent Eve"
+    "imdb_id": "tt0279570",
+    "title": "Love Hina Christmas Special: Silent Eve",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "169": {
-    "imdb_id": "tt0416938",
-    "title": "Love Hina Spring Special"
+    "imdb_id": "tt0279570",
+    "title": "Love Hina Spring Special",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "170": {
     "imdb_id": "tt0399990",
@@ -1547,6 +1553,34 @@
     "title": "Shakugan No Shana",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "2543": {
+    "imdb_id": "tt0972713",
+    "title": "Shakugan No Shana",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "4709": {
+    "imdb_id": "tt0972713",
+    "title": "Shakugan No Shana",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "1372": {
+    "imdb_id": "tt0972713",
+    "title": "Shakugan No Shana",
+    "fromSeason": 0,
+    "fromEpisode": 9
+  },
+  "4616": {
+    "imdb_id": "tt0972713",
+    "title": "Shakugan No Shana",
+    "fromSeason": 0,
+    "fromEpisode": 11
+  },
+  "1632": {
+    "imdb_id": "tt0994794",
+    "title": "Shakugan No Shana: The Movie"
   },
   "323": {
     "imdb_id": "tt0774809",
@@ -3087,7 +3121,21 @@
   },
   "727": {
     "imdb_id": "tt0096633",
-    "title": "Legend of the Galactic Heroes"
+    "title": "Legend of the Galactic Heroes",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "2963": {
+    "imdb_id": "tt0096633",
+    "title": "Legend of the Galactic Heroes",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
+  "3178": {
+    "imdb_id": "tt0096633",
+    "title": "Legend of the Galactic Heroes",
+    "fromSeason": 0,
+    "fromEpisode": 28
   },
   "732": {
     "imdb_id": "tt5925320",
@@ -5383,12 +5431,6 @@
     "imdb_id": "tt0997299",
     "title": "Bakegyamon"
   },
-  "2543": {
-    "imdb_id": "tt1120960",
-    "title": "Shakugan no Shana II",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "2551": {
     "imdb_id": "tt1132202",
     "title": "Dragonaut: The Resonance"
@@ -6535,6 +6577,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "7006": {
+    "imdb_id": "tt1751305",
+    "title": "Oreimo: My Little Sister Can't Be This Cute?",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "5998": {
+    "imdb_id": "tt1751305",
+    "title": "Oreimo: My Little Sister Can't Be This Cute?",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "7822": {
+    "imdb_id": "tt1751305",
+    "title": "Oreimo: My Little Sister Can't Be This Cute?",
+    "fromSeason": 0,
+    "fromEpisode": 38
+  },
   "5497": {
     "imdb_id": "tt1727444",
     "title": "Panty & Stocking with Garterbelt",
@@ -6712,12 +6772,6 @@
   "5981": {
     "imdb_id": "tt1913273",
     "title": "Anohana: The Flower We Saw That Day"
-  },
-  "5998": {
-    "imdb_id": "tt1751305",
-    "title": "Oreimo: My Little Sister Can't Be This Cute?",
-    "fromSeason": 1,
-    "fromEpisode": 13
   },
   "6000": {
     "imdb_id": "tt1798188",
@@ -7455,12 +7509,6 @@
     "imdb_id": "tt2309408",
     "title": "Little Busters!",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "7006": {
-    "imdb_id": "tt1751305",
-    "title": "Oreimo: My Little Sister Can't Be This Cute?",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "7007": {
@@ -11003,6 +11051,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11882": {
+    "imdb_id": "tt5679720",
+    "title": "Bungou Stray Dogs",
+    "fromSeason": 1,
+    "fromEpisode": 13
+  },
+  "41984": {
+    "imdb_id": "tt5679720",
+    "title": "Bungou Stray Dogs",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "12051": {
+    "imdb_id": "tt5679720",
+    "title": "Bungou Stray Dogs",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "11344": {
     "imdb_id": "tt3894916",
     "title": "Terra Formars",
@@ -11717,12 +11783,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "11882": {
-    "imdb_id": "tt5679720",
-    "title": "Bungou Stray Dogs",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "3179": {
     "imdb_id": "tt1300176",
     "title": "Strike Witches",
@@ -11931,12 +11991,6 @@
     "title": "Shônen Ashibe GO! GO! Goma-chan",
     "fromSeason": 1,
     "fromEpisode": 1
-  },
-  "12051": {
-    "imdb_id": "tt5679720",
-    "title": "Bungou Stray Dogs",
-    "fromSeason": 2,
-    "fromEpisode": 13
   },
   "12065": {
     "imdb_id": "tt6342604",
@@ -14787,12 +14841,6 @@
     "fromSeason": 0,
     "fromEpisode": 10
   },
-  "41984": {
-    "imdb_id": "tt5679720",
-    "title": "Bungou Stray Dogs",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
   "41990": {
     "imdb_id": "tt6517102",
     "title": "Castlevania",
@@ -15270,6 +15318,12 @@
   "42292": {
     "imdb_id": "tt10707854",
     "title": "Chidori RSC",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42297": {
+    "imdb_id": "tt10635210",
+    "title": "Science Fell in Love, So I Tried to Prove It",
     "fromSeason": 1,
     "fromEpisode": 1
   },
