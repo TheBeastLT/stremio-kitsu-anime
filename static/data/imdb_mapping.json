@@ -1049,7 +1049,7 @@
   "2275": {
     "imdb_id": "tt0473578",
     "title": "Genshiken",
-    "fromSeason": 1,
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "7677": {
@@ -1057,6 +1057,18 @@
     "title": "Genshiken",
     "fromSeason": 3,
     "fromEpisode": 1
+  },
+  "1631": {
+    "imdb_id": "tt0473578",
+    "title": "Genshiken",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "7820": {
+    "imdb_id": "tt0473578",
+    "title": "Genshiken",
+    "fromSeason": 0,
+    "fromEpisode": 5
   },
   "216": {
     "imdb_id": "tt0807675",
@@ -5859,6 +5871,24 @@
     "imdb_id": "tt1216133",
     "title": "Kyôran kazoku nikki"
   },
+  "3120": {
+    "imdb_id": "tt0275838",
+    "title": "Getta Robot",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3639": {
+    "imdb_id": "tt0275838",
+    "title": "Getta Robot",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "4039": {
+    "imdb_id": "tt0275838",
+    "title": "Getta Robot",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "3128": {
     "imdb_id": "tt1214085",
     "title": "Soul Eater"
@@ -6658,6 +6688,14 @@
   "5649": {
     "imdb_id": "tt3138698",
     "title": "Kizumonogatari Part 1: Tekketsu"
+  },
+  "11406": {
+    "imdb_id": "tt5084196",
+    "title": "Kizumonogatari Part 2: Nekketsu-hen"
+  },
+  "11407": {
+    "imdb_id": "tt5084198",
+    "title": "Kizumonogatari Part 3: Reiketsu"
   },
   "5657": {
     "imdb_id": "tt1820941",
@@ -7716,6 +7754,10 @@
     "title": "Fate/kaleid liner Prisma Illya",
     "fromSeason": 4,
     "fromEpisode": 1
+  },
+  "12555": {
+    "imdb_id": "tt7283066",
+    "title": "Fate/Kaleid Liner Prisma Illya: The Movie - Oath Under Snow"
   },
   "7174": {
     "imdb_id": "tt2552230",
@@ -11189,14 +11231,6 @@
     "imdb_id": "tt5671172",
     "title": "Three Leaves, Three Colors"
   },
-  "11406": {
-    "imdb_id": "tt5084196",
-    "title": "Kizumonogatari II: Nekketsu-hen"
-  },
-  "11407": {
-    "imdb_id": "tt5084198",
-    "title": "Kizumonogatari Part 3: Reiketsu"
-  },
   "11409": {
     "imdb_id": "tt5330856",
     "title": "Divine Gate"
@@ -14363,6 +14397,24 @@
     "imdb_id": "tt8438524",
     "title": "How NOT to Summon a Demon Lord"
   },
+  "41141": {
+    "imdb_id": "tt12209234",
+    "title": "Kiratto Pri Chan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42114": {
+    "imdb_id": "tt12209234",
+    "title": "Kiratto Pri Chan",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43369": {
+    "imdb_id": "tt12209234",
+    "title": "Kiratto Pri Chan",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "41145": {
     "imdb_id": "tt2549176",
     "title": "Cardfight!! Vanguard",
@@ -14810,6 +14862,12 @@
   "41978": {
     "imdb_id": "tt11742122",
     "title": "Heya Camp",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42072": {
+    "imdb_id": "tt11405370",
+    "title": "Nekopara",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -15815,6 +15873,10 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "43121": {
+    "imdb_id": "tt11311968",
+    "title": "Sumikko Gurashi the Movie: The Unexpected Picture Book and the Secret Child"
+  },
   "43124": {
     "imdb_id": "tt12350092",
     "title": "Gibiate",
@@ -15998,6 +16060,12 @@
   "43557": {
     "imdb_id": "tt12768008",
     "title": "D4DJ: First Mix",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43798": {
+    "imdb_id": "tt12912752",
+    "title": "Tototsu ni Egypt Kami",
     "fromSeason": 1,
     "fromEpisode": 1
   }
