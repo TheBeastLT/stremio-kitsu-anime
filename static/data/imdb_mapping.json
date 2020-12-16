@@ -969,8 +969,22 @@
     "title": "Elfen Lied"
   },
   "202": {
-    "imdb_id": "tt7112160",
-    "title": "FLCL Progressive"
+    "imdb_id": "tt0279077",
+    "title": "FLCL",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "11961": {
+    "imdb_id": "tt0279077",
+    "title": "FLCL",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "11962": {
+    "imdb_id": "tt0279077",
+    "title": "FLCL",
+    "fromSeason": 3,
+    "fromEpisode": 1
   },
   "203": {
     "imdb_id": "tt0962740",
@@ -8483,6 +8497,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "3023": {
+    "imdb_id": "tt1209393",
+    "title": "Vampire Knight",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "7761": {
     "imdb_id": "tt4744926",
     "title": "Tonari no Seki kun",
@@ -11784,12 +11804,6 @@
   "11871": {
     "imdb_id": "tt6114698",
     "title": "Nobunaga No Shinobi",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "11961": {
-    "imdb_id": "tt7112162",
-    "title": "FLCL Alternative",
     "fromSeason": 1,
     "fromEpisode": 1
   },
