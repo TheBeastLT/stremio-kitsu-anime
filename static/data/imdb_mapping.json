@@ -3129,6 +3129,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "717": {
+    "imdb_id": "tt1874901",
+    "title": "Android Ana Maico 2010",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "719": {
     "imdb_id": "tt0296324",
     "title": "Arjuna"
@@ -5129,6 +5135,12 @@
     "imdb_id": "tt0095448",
     "title": "Kimagure Orange Road: I Want to Return to That Day"
   },
+  "2241": {
+    "imdb_id": "tt0299398",
+    "title": "Tama of Third Street: Have You Seen My Tama?",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "2245": {
     "imdb_id": "tt0988982",
     "title": "Naruto Shippûden: The Movie"
@@ -5732,8 +5744,6 @@
     "title": "They are my noble masters"
   },
   "2879": {
-    "imdb_id": "tt2902582",
-    "title": "Danganronpa: The Animation"
   },
   "2893": {
     "imdb_id": "tt6464458",
@@ -11993,8 +12003,16 @@
     "title": "Flip Flappers"
   },
   "11998": {
-    "imdb_id": "tt2902582",
-    "title": "Danganronpa: The Animation"
+    "imdb_id": "tt8086086",
+    "title": "Tsukiuta",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43558": {
+    "imdb_id": "tt8086086",
+    "title": "Tsukiuta",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "11999": {
     "imdb_id": "tt6112556",
@@ -12969,6 +12987,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13266": {
+    "imdb_id": "tt7283052",
+    "title": "Your Voice -KIMIKOE-"
+  },
   "13268": {
     "imdb_id": "tt5274556",
     "title": "Owarimonogatari",
@@ -13586,8 +13608,10 @@
     "fromEpisode": 1
   },
   "13721": {
-    "imdb_id": "tt2902582",
-    "title": "Danganronpa: The Animation"
+    "imdb_id": "tt11628636",
+    "title": "Tsukipro the Animation",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "13722": {
     "imdb_id": "tt8253158",
@@ -14344,6 +14368,12 @@
   "41089": {
     "imdb_id": "tt10496580",
     "title": "Pet",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41091": {
+    "imdb_id": "tt8565136",
+    "title": "Sirius the Jaeger",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -15881,9 +15911,21 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43056": {
+    "imdb_id": "tt12117218",
+    "title": "The Millionaire Detective: Balance - Unlimited",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43094": {
     "imdb_id": "tt12464182",
     "title": "Uzaki-chan Wants to Hang Out!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43102": {
+    "imdb_id": "tt12855254",
+    "title": "Guraburu!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -16080,6 +16122,12 @@
   "43557": {
     "imdb_id": "tt12768008",
     "title": "D4DJ: First Mix",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43589": {
+    "imdb_id": "tt12803708",
+    "title": "Dogeza de Tanondemita",
     "fromSeason": 1,
     "fromEpisode": 1
   },
