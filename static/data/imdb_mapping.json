@@ -719,6 +719,30 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "859": {
+    "imdb_id": "tt0477543",
+    "title": "Reservoir Chronicle: Tsubasa",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "2447": {
+    "imdb_id": "tt0477543",
+    "title": "Reservoir Chronicle: Tsubasa",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "3859": {
+    "imdb_id": "tt0477543",
+    "title": "Reservoir Chronicle: Tsubasa",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "716": {
+    "imdb_id": "tt0477543",
+    "title": "Reservoir Chronicle: Tsubasa",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "155": {
     "imdb_id": "tt2107575",
     "title": "Ultra Maniac"
@@ -5397,10 +5421,6 @@
     "imdb_id": "tt1180327",
     "title": "Spider Riders: Resurrected Sun"
   },
-  "2447": {
-    "imdb_id": "tt1234258",
-    "title": "Tsubasa: Tokyo Revelations"
-  },
   "2450": {
     "imdb_id": "tt0293994",
     "title": "Red Spark Zillion"
@@ -6227,6 +6247,12 @@
   "4211": {
     "imdb_id": "tt1415054",
     "title": "Eden of the East"
+  },
+  "4235": {
+    "imdb_id": "tt1409064",
+    "title": "Saki",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "4240": {
     "imdb_id": "tt1410218",
@@ -8259,6 +8285,30 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "8273": {
+    "imdb_id": "tt2904418",
+    "title": "Free!",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "14010": {
+    "imdb_id": "tt2904418",
+    "title": "Free!",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "8762": {
+    "imdb_id": "tt2904418",
+    "title": "Free!",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
+  "12549": {
+    "imdb_id": "tt2904418",
+    "title": "Free!",
+    "fromSeason": 0,
+    "fromEpisode": 12
+  },
   "7669": {
     "imdb_id": "tt2904596",
     "title": "Servant X Service"
@@ -9324,12 +9374,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "8273": {
-    "imdb_id": "tt2904418",
-    "title": "Free!",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "8279": {
     "imdb_id": "tt3503520",
     "title": "Ronja, the Robber's Daughter",
@@ -9869,12 +9913,6 @@
     "title": "JoJo's Bizarre Adventure",
     "fromSeason": 2,
     "fromEpisode": 25
-  },
-  "8762": {
-    "imdb_id": "tt2904418",
-    "title": "Free!",
-    "fromSeason": 2,
-    "fromEpisode": 14
   },
   "8774": {
   },
@@ -12420,10 +12458,6 @@
   },
   "12542": {
   },
-  "12549": {
-    "imdb_id": "tt8141908",
-    "title": "Tokubetsuban Free!: Take Your Marks"
-  },
   "12551": {
     "imdb_id": "tt2909936",
     "title": "The Eccentric Family",
@@ -13914,12 +13948,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "14010": {
-    "imdb_id": "tt2904418",
-    "title": "Free!",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
   "14015": {
     "imdb_id": "tt5871330",
     "title": "Amanchu!",
@@ -14900,8 +14928,8 @@
   "41972": {
     "imdb_id": "tt9341062",
     "title": "Persona 5 the Animation: Dark Sun...",
-    "fromSeason": 1,
-    "fromEpisode": 27
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "41978": {
     "imdb_id": "tt11742122",
