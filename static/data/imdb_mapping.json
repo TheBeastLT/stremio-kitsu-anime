@@ -5049,6 +5049,12 @@
     "imdb_id": "tt0169473",
     "title": "TranZor Z"
   },
+  "2042": {
+    "imdb_id": "tt0462653",
+    "title": "Xabungle",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "2043": {
     "imdb_id": "tt0180345",
     "title": "Dancouga: Super Beast Machine God"
@@ -10511,6 +10517,12 @@
   "10716": {
     "imdb_id": "tt6452968",
     "title": "Aoharu X Machinegun",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "10732": {
+    "imdb_id": "tt1709198",
+    "title": "Sym-Bionic Titan",
     "fromSeason": 1,
     "fromEpisode": 1
   },
