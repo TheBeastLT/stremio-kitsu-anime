@@ -4933,6 +4933,48 @@
     "imdb_id": "tt0296386",
     "title": "The Wonderful Adventures of Nils"
   },
+  "1952": {
+    "imdb_id": "tt1114855",
+    "title": "Bakugan Battle Brawlers",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4062": {
+    "imdb_id": "tt1114855",
+    "title": "Bakugan Battle Brawlers",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "4944": {
+    "imdb_id": "tt1114855",
+    "title": "Bakugan Battle Brawlers",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "6131": {
+    "imdb_id": "tt1114855",
+    "title": "Bakugan Battle Brawlers",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "6131": {
+    "imdb_id": "tt1114855",
+    "title": "Bakugan Battle Brawlers",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "42166": {
+    "imdb_id": "tt9527662",
+    "title": "Bakugan: Battle Planet",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43043": {
+    "imdb_id": "tt9527662",
+    "title": "Bakugan: Battle Planet",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "1953": {
     "imdb_id": "tt2006485",
     "title": "Kotetsushin Jeeg"
@@ -6980,6 +7022,10 @@
     "title": "Natsume yûjinchô",
     "fromSeason": 3,
     "fromEpisode": 1
+  },
+  "6160": {
+    "imdb_id": "tt1853614",
+    "title": "A Letter to Momo"
   },
   "6164": {
     "imdb_id": "tt3625280",
