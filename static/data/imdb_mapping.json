@@ -3097,6 +3097,10 @@
     "imdb_id": "tt6096708",
     "title": "After School in the Teacher's Lounge"
   },
+  "659": {
+    "imdb_id": "tt0090248",
+    "title": "Vampire Hunter D"
+  },
   "666": {
     "imdb_id": "tt0108432",
     "title": "Ocean Waves"
@@ -3913,7 +3917,39 @@
   },
   "1129": {
     "imdb_id": "tt0161952",
-    "title": "Saint Seiya"
+    "title": "Saint Seiya",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1132": {
+    "imdb_id": "tt0161952",
+    "title": "Saint Seiya",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "1128": {
+    "imdb_id": "tt0161952",
+    "title": "Saint Seiya",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "3066": {
+    "imdb_id": "tt0161952",
+    "title": "Saint Seiya",
+    "fromSeason": 6,
+    "fromEpisode": 1
+  },
+  "4458": {
+    "imdb_id": "tt0161952",
+    "title": "Saint Seiya",
+    "fromSeason": 7,
+    "fromEpisode": 1
+  },
+  "5612": {
+    "imdb_id": "tt0161952",
+    "title": "Saint Seiya",
+    "fromSeason": 8,
+    "fromEpisode": 1
   },
   "1136": {
     "imdb_id": "tt0122834",
@@ -6394,12 +6430,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "4458": {
-    "imdb_id": "tt2152368",
-    "title": "Seinto Seiya: The Lost Canvas - Meio Shinwa",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "4662": {
     "imdb_id": "tt1515976",
     "title": "11 Eyes",
@@ -6498,6 +6528,24 @@
     "imdb_id": "tt1528406",
     "title": "Fairy Tail",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8203": {
+    "imdb_id": "tt1528406",
+    "title": "Fairy Tail",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "13658": {
+    "imdb_id": "tt1528406",
+    "title": "Fairy Tail",
+    "fromSeason": 8,
+    "fromEpisode": 1
+  },
+  "5979": {
+    "imdb_id": "tt1528406",
+    "title": "Fairy Tail",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "4678": {
@@ -6798,12 +6846,6 @@
     "title": "Angel Beats!",
     "fromSeason": 1,
     "fromEpisode": 14
-  },
-  "5612": {
-    "imdb_id": "tt2152368",
-    "title": "Seinto Seiya: The Lost Canvas - Meio Shinwa",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "5646": {
     "imdb_id": "tt1910272",
@@ -7599,7 +7641,9 @@
   },
   "6850": {
     "imdb_id": "tt2230515",
-    "title": "Seinto Seiya: Omega"
+    "title": "Seinto Seiya: Omega",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "6859": {
     "imdb_id": "tt2250048",
@@ -9466,12 +9510,6 @@
     "imdb_id": "tt2595474",
     "title": "Encouragement of Climb",
     "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  "8203": {
-    "imdb_id": "tt1528406",
-    "title": "Fairy Tail",
-    "fromSeason": 5,
     "fromEpisode": 1
   },
   "8246": {
@@ -13665,12 +13703,6 @@
     "title": "Haikyû!!: Sainou to sensu"
   },
   "13656": {},
-  "13658": {
-    "imdb_id": "tt1528406",
-    "title": "Fairy Tail",
-    "fromSeason": 8,
-    "fromEpisode": 1
-  },
   "13659": {
     "imdb_id": "tt8530992",
     "title": "Harukana Receive"
@@ -13736,6 +13768,12 @@
   "13693": {
     "imdb_id": "tt8644562",
     "title": "Boku no Kanojo ga Majimesugiru Sho-bitch na Ken"
+  },
+  "13695": {
+    "imdb_id": "tt6908976",
+    "title": "Knights of the Zodiac: Saint Seiya",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "13696": {
     "imdb_id": "tt8116380",
@@ -14736,6 +14774,18 @@
     "title": "Jashin-chan Dropkick",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  "41970": {
+    "imdb_id": "tt8400662",
+    "title": "Jashin-chan Dropkick",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "43163": {
+    "imdb_id": "tt8400662",
+    "title": "Jashin-chan Dropkick",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "41174": {
     "imdb_id": "tt4869896",
