@@ -553,19 +553,27 @@
   },
   "115": {
     "imdb_id": "tt0426719",
-    "title": "Hunter x Hunter"
+    "title": "Hunter x Hunter",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "116": {
-    "imdb_id": "tt0435031",
-    "title": "Hunter X Hunter OVA"
+    "imdb_id": "tt0426719",
+    "title": "Hunter x Hunter",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "117": {
-    "imdb_id": "tt0435033",
-    "title": "Hunter x Hunter: Greed Island"
+    "imdb_id": "tt0426719",
+    "title": "Hunter x Hunter",
+    "fromSeason": 3,
+    "fromEpisode": 1
   },
   "118": {
-    "imdb_id": "tt0435032",
-    "title": "Hunter X Hunter: Greed Island Final"
+    "imdb_id": "tt0426719",
+    "title": "Hunter x Hunter",
+    "fromSeason": 4,
+    "fromEpisode": 1
   },
   "119": {
     "imdb_id": "tt0769997",
@@ -2964,6 +2972,12 @@
   "568": {
     "imdb_id": "tt0963017",
     "title": "Onmyô taisenki"
+  },
+  "569": {
+    "imdb_id": "tt10270808",
+    "title": "My Wife Is a Magical Girl: Bewitched Agnes",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "571": {
     "imdb_id": "tt0112105",
@@ -5607,7 +5621,21 @@
   },
   "2648": {
     "imdb_id": "tt1133480",
-    "title": "My Guardian Characters"
+    "title": "My Guardian Characters",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4019": {
+    "imdb_id": "tt1133480",
+    "title": "My Guardian Characters",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "4861": {
+    "imdb_id": "tt1133480",
+    "title": "My Guardian Characters",
+    "fromSeason": 3,
+    "fromEpisode": 1
   },
   "2649": {
     "imdb_id": "tt1132203",
@@ -6096,6 +6124,12 @@
     "title": "Kannagi: Crazy Shrine Maidens ",
     "fromSeason": 1,
     "fromEpisode": 14
+  },
+  "3426": {
+    "imdb_id": "tt1166871",
+    "title": "Golgo 13",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "3433": {
     "imdb_id": "tt0466352",
@@ -6847,6 +6881,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "5844": {
+    "imdb_id": "tt1756988",
+    "title": "Appleseed XIII",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "5853": {
     "imdb_id": "tt1773185",
     "title": "Puella Magi Madoka Magica"
@@ -7038,8 +7078,8 @@
   "6183": {
     "imdb_id": "tt1783878",
     "title": "Digimon Xros Wars",
-    "fromSeason": 1,
-    "fromEpisode": 31
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "6191": {
     "imdb_id": "tt7164706",
@@ -7193,6 +7233,36 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6477": {
+    "imdb_id": "tt2176885",
+    "title": "Lagrange: The Flower of Rin-ne",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6699": {
+    "imdb_id": "tt2176885",
+    "title": "Lagrange: The Flower of Rin-ne",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "7139": {
+    "imdb_id": "tt2176885",
+    "title": "Lagrange: The Flower of Rin-ne",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "7019": {
+    "imdb_id": "tt2176885",
+    "title": "Lagrange: The Flower of Rin-ne",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
+  "7919": {
+    "imdb_id": "tt2176885",
+    "title": "Lagrange: The Flower of Rin-ne",
+    "fromSeason": 0,
+    "fromEpisode": 9
+  },
   "6481": {
     "imdb_id": "tt2176249",
     "title": "Brave 10"
@@ -7210,7 +7280,7 @@
   "6503": {
     "imdb_id": "tt1783878",
     "title": "Digimon Xros Wars",
-    "fromSeason": 2,
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "6508": {
@@ -7406,6 +7476,12 @@
   "6665": {
     "imdb_id": "tt2358913",
     "title": "Berserk: The Golden Age Arc III - The Advent"
+  },
+  "6667": {
+    "imdb_id": "tt2339005",
+    "title": "Natsuiro kiseki",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "6678": {
     "imdb_id": "tt2245880",
@@ -7887,6 +7963,30 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "7205": {
+    "imdb_id": "tt2398674",
+    "title": "Aikatsu!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7972": {
+    "imdb_id": "tt2398674",
+    "title": "Aikatsu!",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "9096": {
+    "imdb_id": "tt2398674",
+    "title": "Aikatsu!",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "11142": {
+    "imdb_id": "tt2398674",
+    "title": "Aikatsu!",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "7209": {
     "imdb_id": "tt2552204",
     "title": "Amnesia",
@@ -7896,6 +7996,18 @@
   "7213": {
     "imdb_id": "tt2552290",
     "title": "Cuticle Detective Inaba"
+  },
+  "7216": {
+    "imdb_id": "tt2360110",
+    "title": "Senran Kagura: Ninja Flash!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "13690": {
+    "imdb_id": "tt2360110",
+    "title": "Senran Kagura: Ninja Flash!",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "7217": {
     "imdb_id": "tt2390066",
@@ -8677,6 +8789,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "7843": {
+    "imdb_id": "tt3169640",
+    "title": "Yozakura Quartet: Hana no Uta",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "7844": {
     "imdb_id": "tt3396572",
     "title": "Riddle Story of Devil",
@@ -8786,6 +8904,12 @@
     "title": "Fate/stay night: Unlimited Blade Works",
     "fromSeason": 0,
     "fromEpisode": 2
+  },
+  "7887": {
+    "imdb_id": "tt0771645",
+    "title": "Aoki Densetsu Shoot!",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "7894": {
     "imdb_id": "tt3354352",
@@ -8982,6 +9106,12 @@
   "7988": {
     "imdb_id": "tt3417860",
     "title": "Inari, Konkon, Koi Iroha"
+  },
+  "7995": {
+    "imdb_id": "tt1666278",
+    "title": "Thundercats",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "7996": {
     "imdb_id": "tt3563898",
@@ -13602,10 +13732,6 @@
     "title": "Golden Kamuy",
     "fromSeason": 3,
     "fromEpisode": 1
-  },
-  "13690": {
-    "imdb_id": "tt9135316",
-    "title": "Senran Kagura Shinovi Master: Tokyo Yoma-hen"
   },
   "13693": {
     "imdb_id": "tt8644562",
