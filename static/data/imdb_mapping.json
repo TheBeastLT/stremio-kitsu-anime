@@ -5675,7 +5675,15 @@
   },
   "2649": {
     "imdb_id": "tt1132203",
-    "title": "Ef: A Tale of Memories."
+    "title": "Ef: A Tale of Memories.",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3784": {
+    "imdb_id": "tt1132203",
+    "title": "Ef: A Tale of Memories.",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "2650": {
     "imdb_id": "tt1145380",
@@ -5884,6 +5892,12 @@
   "2894": {
     "imdb_id": "tt1196655",
     "title": "My-Otome 0~S.ifr~"
+  },
+  "2898": {
+    "imdb_id": "tt0178148",
+    "title": "M.U.S.C.L.E.",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "2908": {
     "imdb_id": "tt0288961",
@@ -7532,6 +7546,12 @@
   "6686": {
     "imdb_id": "tt2340841",
     "title": "Hyouka",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6687": {
+    "imdb_id": "tt2230557",
+    "title": "Smile PreCure!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -15618,6 +15638,12 @@
   "42241": {
     "imdb_id": "tt10885406",
     "title": "Ascendance of a Bookworm",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42826": {
+    "imdb_id": "tt12362302",
+    "title": "Hypnosis Mic: Division Rap Battle - Rhyme Anima",
     "fromSeason": 1,
     "fromEpisode": 1
   },
