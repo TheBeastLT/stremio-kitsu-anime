@@ -5007,12 +5007,6 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
-  "6131": {
-    "imdb_id": "tt1114855",
-    "title": "Bakugan Battle Brawlers",
-    "fromSeason": 4,
-    "fromEpisode": 1
-  },
   "42166": {
     "imdb_id": "tt9527662",
     "title": "Bakugan: Battle Planet",
@@ -8322,6 +8316,12 @@
   "7425": {
     "imdb_id": "tt2560604",
     "title": "Tamako Market"
+  },
+  "7426": {
+    "imdb_id": "tt4621212",
+    "title": "DokiDoki! PreCure",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "7442": {
     "imdb_id": "tt2560140",
@@ -13085,6 +13085,10 @@
   "13057": {
     "imdb_id": "tt7230846",
     "title": "No Activity"
+  },
+  "13061": {
+    "imdb_id": "tt6336356",
+    "title": "Mary and the Witch's Flower"
   },
   "13065": {
     "imdb_id": "tt7726244",
