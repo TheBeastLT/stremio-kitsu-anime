@@ -4195,6 +4195,10 @@
     "imdb_id": "tt2312134",
     "title": "Ninja Cadets!"
   },
+  "1294": {
+    "imdb_id": "tt0089206",
+    "title": "Kenji Miyazawa's Night on the Galactic Railroad"
+  },
   "1298": {
     "imdb_id": "tt0061300",
     "title": "Speed Racer"
@@ -5937,6 +5941,12 @@
     "imdb_id": "tt1216131",
     "title": "Kurenai"
   },
+  "2955": {
+    "imdb_id": "tt1201681",
+    "title": "Amatsuki",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "2958": {
     "imdb_id": "tt1213889",
     "title": "Real Drive"
@@ -6421,6 +6431,12 @@
   "4397": {
     "imdb_id": "tt1745240",
     "title": "Kimi ni todoke",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4408": {
+    "imdb_id": "tt7722438",
+    "title": "Moeru! Onisan",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -8005,6 +8021,12 @@
     "imdb_id": "tt2645500",
     "title": "Haganai: I Don't Have Many Friends",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "7196": {
+    "imdb_id": "tt3651508",
+    "title": "Kyou no Asuka Show",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "7200": {
