@@ -4405,6 +4405,12 @@
     "imdb_id": "tt0972651",
     "title": "Gift: Eternal Rainbow"
   },
+  "1423": {
+    "imdb_id": "tt1025104",
+    "title": "009-1",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "1427": {
     "imdb_id": "tt0881819",
     "title": "Ghost Slayers Ayashi"
@@ -8558,6 +8564,12 @@
     "title": "Free!",
     "fromSeason": 0,
     "fromEpisode": 12
+  },
+  "7668": {
+    "imdb_id": "tt1568632",
+    "title": "Sound of the Sky",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "7669": {
     "imdb_id": "tt2904596",
