@@ -55,7 +55,27 @@
   },
   "15": {
     "imdb_id": "tt0878036",
-    "title": "School Rumble"
+    "title": "School Rumble",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "750": {
+    "imdb_id": "tt0878036",
+    "title": "School Rumble",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "476": {
+    "imdb_id": "tt0878036",
+    "title": "School Rumble",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "3413": {
+    "imdb_id": "tt0878036",
+    "title": "School Rumble",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "16": {
     "imdb_id": "tt0440988",
@@ -119,7 +139,21 @@
   },
   "31": {
     "imdb_id": "tt0872301",
-    "title": "Ah! My Goddess"
+    "title": "Ah! My Goddess",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7775": {
+    "imdb_id": "tt0872301",
+    "title": "Ah! My Goddess",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "7780": {
+    "imdb_id": "tt0872301",
+    "title": "Ah! My Goddess",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "32": {
     "imdb_id": "tt0308974",
@@ -1602,6 +1636,12 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "1230": {
+    "imdb_id": "tt0303503",
+    "title": "Ojamajo Doremi",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
   "321": {
     "imdb_id": "tt2657330",
     "title": "Ultimate Girls"
@@ -2166,6 +2206,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6185": {
+    "imdb_id": "tt0872309",
+    "title": "Genesis of Aquarion",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "10764": {
+    "imdb_id": "tt0872309",
+    "title": "Genesis of Aquarion",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "441": {
     "imdb_id": "tt0988935",
     "title": "The Law of Ueki"
@@ -2191,8 +2243,8 @@
   "7263": {
     "imdb_id": "tt2363624",
     "title": "Yu-Gi-Oh! Zexal",
-    "fromSeason": 4,
-    "fromEpisode": 1
+    "fromSeason": 2,
+    "fromEpisode": 25
   },
   "444": {
     "imdb_id": "tt0872306",
@@ -2324,10 +2376,6 @@
   "475": {
     "imdb_id": "tt0434693",
     "title": "Sgt. Frog"
-  },
-  "476": {
-    "imdb_id": "tt0878144",
-    "title": "School Rumble: First Semester Extra"
   },
   "477": {
     "imdb_id": "tt0159890",
@@ -4567,6 +4615,12 @@
     "imdb_id": "tt0297536",
     "title": "Cosmo Warrior Zero"
   },
+  "1508": {
+    "imdb_id": "tt0372650",
+    "title": "Cyborg 009",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "1516": {
     "imdb_id": "tt1132208",
     "title": "Nanatsuiro Drops"
@@ -6252,14 +6306,16 @@
     "fromEpisode": 1
   },
   "4438": {
-    "imdb_id": "tt5203692",
-    "title": "Toradora SOS!",
-    "fromSeason": 1,
+    "imdb_id": "tt1279024",
+    "title": "Toradora!",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "6536": {
-    "imdb_id": "tt5206584",
-    "title": "Toradora!: Bento no Gokui"
+    "imdb_id": "tt1279024",
+    "title": "Toradora!",
+    "fromSeason": 0,
+    "fromEpisode": 5
   },
   "3579": {
     "imdb_id": "tt0816407",
@@ -6874,8 +6930,8 @@
   "5591": {
     "imdb_id": "tt1639109",
     "title": "Angel Beats!",
-    "fromSeason": 1,
-    "fromEpisode": 14
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "5646": {
     "imdb_id": "tt1910272",
@@ -7557,7 +7613,15 @@
   },
   "6678": {
     "imdb_id": "tt2245880",
-    "title": "AKB0048"
+    "title": "AKB0048",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7184": {
+    "imdb_id": "tt2245880",
+    "title": "AKB0048",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "6686": {
     "imdb_id": "tt2340841",
@@ -8934,6 +8998,12 @@
   "7862": {
     "imdb_id": "tt4831682",
     "title": "Little Witch Academia: The Enchanted Parade"
+  },
+  "7868": {
+    "imdb_id": "tt0188327",
+    "title": "Cyborg 009",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "7870": {
     "imdb_id": "tt10342048",
@@ -10854,12 +10924,6 @@
     "imdb_id": "tt4872210",
     "title": "High Speed! Free! Starting Summer"
   },
-  "10764": {
-    "imdb_id": "tt5258698",
-    "title": "Aquarion Logos",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "10765": {
     "imdb_id": "tt3198674",
     "title": "Miss Monochrome",
@@ -12114,6 +12178,12 @@
   "11846": {
     "imdb_id": "tt8256136",
     "title": "Puzzle & Dragons X",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "11848": {
+    "imdb_id": "tt13117166",
+    "title": "Gekidol",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -13541,6 +13611,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43576": {
+    "imdb_id": "tt8253268",
+    "title": "Uma Musume: Pretty Derby",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "13502": {
     "imdb_id": "tt5857720",
     "title": "ReLIFE",
@@ -14111,6 +14187,10 @@
   "13888": {
     "imdb_id": "tt8249034",
     "title": "Tada Never Falls in Love"
+  },
+  "13889": {
+    "imdb_id": "tt13091238",
+    "title": "Kud Wafter"
   },
   "13892": {
     "imdb_id": "tt7058854",
@@ -15525,7 +15605,15 @@
   },
   "42147": {
     "imdb_id": "tt11043632",
-    "title": "Beastars"
+    "title": "Beastars",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42904": {
+    "imdb_id": "tt11043632",
+    "title": "Beastars",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "42148": {
     "imdb_id": "tt10483250",
@@ -16213,6 +16301,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42635": {
+    "imdb_id": "tt12898990",
+    "title": "Suppose a Kid from the Last Dungeon Boonies Moved to a Starter Town?",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42650": {
     "imdb_id": "tt11708996",
     "title": "Healin' Good PreCure",
@@ -16237,6 +16331,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42899": {
+    "imdb_id": "tt12098786",
+    "title": "Yu-Gi-Oh! Sevens",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43005": {
     "imdb_id": "tt12432936",
     "title": "The Misfit of Demon King Academy",
@@ -16252,6 +16352,12 @@
   "43028": {
     "imdb_id": "tt11448214",
     "title": "Rent-A-Girlfriend",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43042": {
+    "imdb_id": "tt13067534",
+    "title": "Otherside Picnic",
     "fromSeason": 1,
     "fromEpisode": 1
   },
