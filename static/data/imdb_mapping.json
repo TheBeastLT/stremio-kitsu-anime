@@ -1032,7 +1032,9 @@
   },
   "201": {
     "imdb_id": "tt0480489",
-    "title": "Elfen Lied"
+    "title": "Elfen Lied",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "202": {
     "imdb_id": "tt0279077",
@@ -1762,7 +1764,7 @@
   "343": {
     "imdb_id": "tt0480489",
     "title": "Elfen Lied",
-    "fromSeason": 10,
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "344": {
@@ -3331,6 +3333,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "2787": {
+    "imdb_id": "tt0488477",
+    "title": "XXXHOLiC",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "3848": {
+    "imdb_id": "tt0488477",
+    "title": "XXXHOLiC",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "4759": {
+    "imdb_id": "tt0488477",
+    "title": "XXXHOLiC",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
   "771": {
     "imdb_id": "tt0106769",
     "title": "Dragon Half"
@@ -3499,6 +3519,10 @@
     "imdb_id": "tt0098492",
     "title": "Gunbuster"
   },
+  "842": {
+    "imdb_id": "tt0495900",
+    "title": "Street Fighter Alpha: Generations"
+  },
   "844": {
     "imdb_id": "tt0430840",
     "title": "Mahô shôjo neko Taruto"
@@ -3530,6 +3554,10 @@
     "title": "Fist of the North Star",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "869": {
+    "imdb_id": "tt0185708",
+    "title": "Street Fighter Alpha"
   },
   "1210": {
     "imdb_id": "tt0091211",
@@ -4721,6 +4749,10 @@
     "imdb_id": "tt1916847",
     "title": "B'T X Neo"
   },
+  "1557": {
+    "imdb_id": "tt0295667",
+    "title": "Space Warriors Baldios"
+  },
   "1558": {
     "imdb_id": "tt1262009",
     "title": "Ramen Fighter Miki"
@@ -5593,6 +5625,12 @@
     "imdb_id": "tt0962742",
     "title": "Steam Detectives"
   },
+  "2467": {
+    "imdb_id": "tt1204829",
+    "title": "The Racing Brothers, Lets & Go",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "2500": {
     "imdb_id": "tt5009268",
     "title": "Monkî tân"
@@ -5860,12 +5898,6 @@
   "2775": {
     "imdb_id": "tt2800436",
     "title": "The Laughing Salesman",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  "2787": {
-    "imdb_id": "tt0488477",
-    "title": "XXXHOLiC",
     "fromSeason": 2,
     "fromEpisode": 1
   },
@@ -6646,10 +6678,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "4759": {
-    "imdb_id": "tt1648133",
-    "title": "XXXHOLiC: Rô"
-  },
   "4765": {
     "imdb_id": "tt1909447",
     "title": "Deadman Wonderland",
@@ -6906,6 +6934,26 @@
   "5513": {
     "imdb_id": "tt1743681",
     "title": "Yosuga no sora"
+  },
+  "5518": {
+    "imdb_id": "tt3354096",
+    "title": "Code Geass: Akito the Exiled - The Wyvern Arrives"
+  },
+  "7227": {
+    "imdb_id": "tt3354254",
+    "title": "Code Geass: Akito the Exiled 2 - The Torn-Up Wyvern"
+  },
+  "7228": {
+    "imdb_id": "tt3354302",
+    "title": "Code Geass: Akito the Exiled 3 - The Brightness Falls"
+  },
+  "7229": {
+    "imdb_id": "tt3354306",
+    "title": "Code Geass: Akito the Exiled 4 - From the Memories of Hatred"
+  },
+  "10904": {
+    "imdb_id": "tt5920384",
+    "title": "Code Geass: Akito the Exiled Final - To Beloved Ones"
   },
   "5530": {
     "imdb_id": "tt2131768",
@@ -10385,6 +10433,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11494": {
+    "imdb_id": "tt4623928",
+    "title": "Show by Rock!!",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "11493": {
+    "imdb_id": "tt4623928",
+    "title": "Show by Rock!!",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "9730": {
     "imdb_id": "tt7415066",
     "title": "Sword Gai: The Animation",
@@ -10548,6 +10608,12 @@
   "10045": {
     "imdb_id": "tt5420560",
     "title": "Garo: Guren no tsuki",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "10049": {
+    "imdb_id": "tt2106179",
+    "title": "Space Warrior Baldios",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -10964,6 +11030,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13526": {
+    "imdb_id": "tt7504716",
+    "title": "ChäoS;Child: Silent Sky"
+  },
   "10788": {
     "imdb_id": "tt5514358",
     "title": "Steins;Gate 0",
@@ -11339,6 +11409,24 @@
     "title": "Re: Zero - Starting Life in Another World",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "42198": {
+    "imdb_id": "tt5607616",
+    "title": "Re: Zero - Starting Life in Another World",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43247": {
+    "imdb_id": "tt5607616",
+    "title": "Re: Zero - Starting Life in Another World",
+    "fromSeason": 2,
+    "fromEpisode": 14
+  },
+  "13882": {
+    "imdb_id": "tt5607616",
+    "title": "Re: Zero - Starting Life in Another World",
+    "fromSeason": 0,
+    "fromEpisode": 26
   },
   "11210": {
     "imdb_id": "tt5861440",
@@ -11801,18 +11889,6 @@
     "imdb_id": "tt7001136",
     "title": "KADO: The Right Answer",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "11493": {
-    "imdb_id": "tt4623928",
-    "title": "Show by Rock!!",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  "11494": {
-    "imdb_id": "tt4623928",
-    "title": "Show by Rock!!",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "11517": {
@@ -12894,6 +12970,22 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "12611": {
+    "imdb_id": "tt6859260",
+    "title": "The King's Avatar",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41358": {
+    "imdb_id": "tt6859260",
+    "title": "The King's Avatar",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42673": {
+    "imdb_id": "tt10736726",
+    "title": "The King's Avatar: For the Glory"
+  },
   "12623": {
     "imdb_id": "tt6477270",
     "title": "Grimoire of Zero"
@@ -13603,6 +13695,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "41976": {
+    "imdb_id": "tt7742120",
+    "title": "Laid-Back Camp",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "13484": {
   },
   "13485": {
@@ -14168,21 +14266,9 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
-  "13882": {
-    "imdb_id": "tt5607616",
-    "title": "Re: Zero - Starting Life in Another World",
-    "fromSeason": 1,
-    "fromEpisode": 26
-  },
   "42006": {
     "imdb_id": "tt11285348",
     "title": "Re: Zero kara Hajimeru Isekai Seikatsu: Hyouketsu no Kizuna"
-  },
-  "42198": {
-    "imdb_id": "tt5607616",
-    "title": "Re: Zero - Starting Life in Another World",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "13888": {
     "imdb_id": "tt8249034",
@@ -14437,6 +14523,12 @@
     "imdb_id": "tt8673610",
     "title": "Cells at Work!",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42202": {
+    "imdb_id": "tt8673610",
+    "title": "Cells at Work!",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "14246": {
@@ -14847,6 +14939,12 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "41142": {
+    "imdb_id": "tt12826588",
+    "title": "Yo-kai Watch Shadowside",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "41145": {
     "imdb_id": "tt2549176",
     "title": "Cardfight!! Vanguard",
@@ -14879,26 +14977,16 @@
     "fromSeason": 1,
     "fromEpisode": 14
   },
-  "12611": {
-    "imdb_id": "tt6859260",
-    "title": "The King's Avatar",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "41358": {
-    "imdb_id": "tt6859260",
-    "title": "The King's Avatar",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  "42673": {
-    "imdb_id": "tt10736726",
-    "title": "The King's Avatar: For the Glory"
-  },
   "41159": {
     "imdb_id": "tt2758770",
     "title": "Star vs. the Forces of Evil",
     "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "41463": {
+    "imdb_id": "tt12598008",
+    "title": "So I'm a Spider, So What?",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "41165": {
@@ -15015,6 +15103,12 @@
     "imdb_id": "tt8788458",
     "title": "The Promised Neverland",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42220": {
+    "imdb_id": "tt8788458",
+    "title": "The Promised Neverland",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "41313": {
@@ -16085,6 +16179,12 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "42621": {
+    "imdb_id": "tt13103028",
+    "title": "Bottom-tier Character Tomozaki",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42627": {
     "imdb_id": "tt12457334",
     "title": "Wandering Witch: The Journey of Elaina",
@@ -16367,6 +16467,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43057": {
+    "imdb_id": "tt13344602",
+    "title": "Eiga Precure Miracle Leap: Minna to no Fushigi na Ichinichi"
+  },
   "43094": {
     "imdb_id": "tt12464182",
     "title": "Uzaki-chan Wants to Hang Out!",
@@ -16499,6 +16603,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43137": {
+    "imdb_id": "tt12745218",
+    "title": "Heaven's Design Team",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43167": {
+    "imdb_id": "tt12150836",
+    "title": "Cells at Work! Code Black",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43180": {
     "imdb_id": "tt12287748",
     "title": "Yashahime: Princess Half-Demon",
@@ -16518,6 +16634,18 @@
   "43273": {
     "imdb_id": "tt12642654",
     "title": "By the Grace of the Gods",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43301": {
+    "imdb_id": "tt12728856",
+    "title": "The Hidden Dungeon Only I Can Enter",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43307": {
+    "imdb_id": "tt13415416",
+    "title": "I-Chu: Halfway Through the Idol",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -16542,6 +16670,12 @@
   "43367": {
     "imdb_id": "tt12706854",
     "title": "I'm Standing on a Million Lives",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43464": {
+    "imdb_id": "tt13286958",
+    "title": "2.43: Seiin High School Boys Volleyball Team",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -16587,15 +16721,63 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43568": {
+    "imdb_id": "tt13266422",
+    "title": "Hortensia Saga",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43589": {
     "imdb_id": "tt12803708",
     "title": "Dogeza de Tanondemita",
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43608": {
+    "imdb_id": "tt13420070",
+    "title": "Himitsukessha Taka no Tsume: Golden Spell",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43651": {
+    "imdb_id": "tt13102918",
+    "title": "Cap Kakumei Bottleman",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43662": {
+    "imdb_id": "tt13041916",
+    "title": "Scar on the Praeter",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43716": {
+    "imdb_id": "tt13405062",
+    "title": "Back Arrow",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43798": {
     "imdb_id": "tt12912752",
     "title": "Tototsu ni Egypt Kami",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43807": {
+    "imdb_id": "tt12415562",
+    "title": "LBX Girls",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43824": {
+    "imdb_id": "tt13142936",
+    "title": "Wixoss Diva(A)Live",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43853": {
+    "imdb_id": "tt13592988",
+    "title": "Idolls!",
     "fromSeason": 1,
     "fromEpisode": 1
   }
