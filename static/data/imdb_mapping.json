@@ -10090,7 +10090,15 @@
   },
   "8631": {
     "imdb_id": "tt3950102",
-    "title": "World Trigger"
+    "title": "World Trigger",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42898": {
+    "imdb_id": "tt3950102",
+    "title": "World Trigger",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "8632": {
     "imdb_id": "tt3886492",
@@ -15989,6 +15997,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42323": {
+    "imdb_id": "tt13293588",
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42325": {
     "imdb_id": "tt2549176",
     "title": "Cardfight!! Vanguard",
@@ -16557,6 +16571,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42922": {
+    "imdb_id": "tt13186542",
+    "title": "Kemono Jihen",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42935": {
     "imdb_id": "tt12367868",
     "title": "Higurashi: When They Cry - New",
@@ -16679,6 +16699,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43545": {
+    "imdb_id": "tt13103134",
+    "title": "Horimiya",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43549": {
     "imdb_id": "tt13109788",
     "title": "Sore dake ga Neck",
@@ -16733,6 +16759,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43595": {
+    "imdb_id": "tt13129190",
+    "title": "SK8 the Infinity",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43608": {
     "imdb_id": "tt13420070",
     "title": "Himitsukessha Taka no Tsume: Golden Spell",
@@ -16766,6 +16798,12 @@
   "43807": {
     "imdb_id": "tt12415562",
     "title": "LBX Girls",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43818": {
+    "imdb_id": "tt13308820",
+    "title": "Kai Byoui Ramune",
     "fromSeason": 1,
     "fromEpisode": 1
   },
