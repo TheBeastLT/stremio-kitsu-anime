@@ -8977,6 +8977,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "7826": {
+    "imdb_id": "tt2049430",
+    "title": "Digimon Adventure"
+  },
   "7827": {
     "imdb_id": "tt0313441",
     "title": "Digimon Adventure: Our War Game!"
@@ -15627,6 +15631,12 @@
   },
   "42084": {
   },
+  "42085": {
+    "imdb_id": "tt12384506",
+    "title": "Ex-Arm",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42092": {
     "imdb_id": "tt9573854",
     "title": "Lord El-Melloi II's Case Files: Rail Zeppelin Grace Note",
@@ -16303,6 +16313,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42868": {
+    "imdb_id": "tt13009190",
+    "title": "Idoly Pride",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42108": {
     "imdb_id": "tt9310328",
     "title": "Altered Carbon: Resleeved"
@@ -16657,6 +16673,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43278": {
+    "imdb_id": "tt13695606",
+    "title": "Yi Nian Yong Heng 2020",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43301": {
     "imdb_id": "tt12728856",
     "title": "The Hidden Dungeon Only I Can Enter",
@@ -16789,6 +16811,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43797": {
+    "imdb_id": "tt3111906",
+    "title": "Yamishibai: Japanese Ghost Stories",
+    "fromSeason": 8,
+    "fromEpisode": 1
+  },
   "43798": {
     "imdb_id": "tt12912752",
     "title": "Tototsu ni Egypt Kami",
@@ -16804,6 +16832,18 @@
   "43818": {
     "imdb_id": "tt13308820",
     "title": "Kai Byoui Ramune",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43822": {
+    "imdb_id": "tt13084120",
+    "title": "Azur Lane: Bisoku Zenshin!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43823": {
+    "imdb_id": "tt13795144",
+    "title": "Wave!!: Surfing Yappe!!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
