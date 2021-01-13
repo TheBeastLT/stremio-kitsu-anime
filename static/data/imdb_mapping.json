@@ -11181,8 +11181,8 @@
   "11752": {
     "imdb_id": "tt5370118",
     "title": "KonoSuba - God's Blessing on This Wonderful World!",
-    "fromSeason": 1,
-    "fromEpisode": 11
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "11937": {
     "imdb_id": "tt5370118",
@@ -11193,8 +11193,8 @@
   "13136": {
     "imdb_id": "tt5370118",
     "title": "KonoSuba - God's Blessing on This Wonderful World!",
-    "fromSeason": 2,
-    "fromEpisode": 11
+    "fromSeason": 0,
+    "fromEpisode": 4
   },
   "10977": {
     "imdb_id": "tt4694304",
@@ -15147,6 +15147,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42637": {
+    "imdb_id": "tt10452436",
+    "title": "Naka no Hito Genome",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "41342": {
     "imdb_id": "tt9567240",
     "title": "How Clumsy You Are, Miss Ueno."
@@ -15630,6 +15636,22 @@
     "title": "Magical Sempai"
   },
   "42084": {
+    "imdb_id": "tt11764320",
+    "title": "Yatogame-chan Kansatsu Nikki",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42398": {
+    "imdb_id": "tt11764320",
+    "title": "Yatogame-chan Kansatsu Nikki",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43593": {
+    "imdb_id": "tt11764320",
+    "title": "Yatogame-chan Kansatsu Nikki",
+    "fromSeason": 3,
+    "fromEpisode": 1
   },
   "42085": {
     "imdb_id": "tt12384506",
@@ -16685,6 +16707,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43305": {
+    "imdb_id": "tt13192574",
+    "title": "Bungo Stray Dogs Wan!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43307": {
     "imdb_id": "tt13415416",
     "title": "I-Chu: Halfway Through the Idol",
@@ -16790,6 +16818,12 @@
   "43608": {
     "imdb_id": "tt13420070",
     "title": "Himitsukessha Taka no Tsume: Golden Spell",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43620": {
+    "imdb_id": "tt13248076",
+    "title": "Wonder Egg Priority",
     "fromSeason": 1,
     "fromEpisode": 1
   },
