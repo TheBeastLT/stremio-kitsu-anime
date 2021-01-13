@@ -5,7 +5,7 @@ const { cacheWrapMeta, cacheWrapCatalog } = require('./lib/cache');
 const kitsu = require('./lib/kitsu_api');
 const cinemeta = require('./lib/cinemeta_api');
 
-const CACHE_MAX_AGE = process.env.CACHE_MAX_AGE || 3 * 24 * 60; // 7 days
+const CACHE_MAX_AGE = process.env.CACHE_MAX_AGE || 12 * 60 * 60; // 12 hours
 
 const manifest = {
   id: 'community.anime.kitsu',
