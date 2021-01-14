@@ -8591,6 +8591,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "8313": {
+    "imdb_id": "tt2942218",
+    "title": "Log Horizon",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42957": {
+    "imdb_id": "tt2942218",
+    "title": "Log Horizon",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "7644": {
     "imdb_id": "tt3037954",
     "title": "Leviathan: The Last Defense"
@@ -9848,12 +9860,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "8313": {
-    "imdb_id": "tt2942218",
-    "title": "Log Horizon",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "8314": {
     "imdb_id": "tt4755410",
     "title": "Durarara!!x2",
@@ -10254,8 +10260,26 @@
   },
   "8699": {
     "imdb_id": "tt3909224",
-    "title": "Nanatsu no taizai",
+    "title": "The Seven Deadly Sins",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "12633": {
+    "imdb_id": "tt3909224",
+    "title": "The Seven Deadly Sins",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42263": {
+    "imdb_id": "tt3909224",
+    "title": "The Seven Deadly Sins",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "43458": {
+    "imdb_id": "tt3909224",
+    "title": "The Seven Deadly Sins",
+    "fromSeason": 4,
     "fromEpisode": 1
   },
   "8710": {
@@ -13021,12 +13045,6 @@
   "42947": {
     "imdb_id": "tt7834494",
     "title": "Girls und Panzer das Finale: Part II"
-  },
-  "12633": {
-    "imdb_id": "tt3909224",
-    "title": "Nanatsu no taizai",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "12634": {
     "imdb_id": "tt5979874",
@@ -15949,12 +15967,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "42263": {
-    "imdb_id": "tt3909224",
-    "title": "The Seven Deadly Sins",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
   "42268": {
     "imdb_id": "tt10431310",
     "title": "To the Abandoned Sacred Beasts"
@@ -16298,6 +16310,12 @@
   "42722": {
     "imdb_id": "tt11299538",
     "title": "Kakushigoto",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42732": {
+    "imdb_id": "tt13370404",
+    "title": "Redo of Healer",
     "fromSeason": 1,
     "fromEpisode": 1
   },
