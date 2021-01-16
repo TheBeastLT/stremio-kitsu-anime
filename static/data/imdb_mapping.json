@@ -2775,6 +2775,18 @@
     "fromSeason": 5,
     "fromEpisode": 1
   },
+  "1051": {
+    "imdb_id": "tt0112166",
+    "title": "The Slayers",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "1052": {
+    "imdb_id": "tt0112166",
+    "title": "The Slayers",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
   "495": {
     "imdb_id": "tt0161978",
     "title": "Slayers the Motion Picture"
@@ -2794,14 +2806,6 @@
   "770": {
     "imdb_id": "tt0161979",
     "title": "Slayers Return"
-  },
-  "1051": {
-    "imdb_id": "tt0161980",
-    "title": "Slayers: The Book of Spells"
-  },
-  "1052": {
-    "imdb_id": "tt1067925",
-    "title": "Slayers: Excellent"
   },
   "496": {
     "imdb_id": "tt0272880",
@@ -16111,6 +16115,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "42413": {
+    "imdb_id": "tt10545652",
+    "title": "Vlad Love",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42416": {
     "imdb_id": "tt11010142",
     "title": "Mob Psycho 100 II: The First Spirits and Such Company Trip ~A Journey that Mends the Heart and Heals the Soul~"
@@ -16375,10 +16385,16 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "43061": {
+  "42452": {
     "imdb_id": "tt2549176",
     "title": "Cardfight!! Vanguard",
     "fromSeason": 12,
+    "fromEpisode": 1
+  },
+  "43061": {
+    "imdb_id": "tt2549176",
+    "title": "Cardfight!! Vanguard",
+    "fromSeason": 13,
     "fromEpisode": 1
   },
   "43063": {
@@ -16706,6 +16722,10 @@
     "title": "Kuma Kuma Kuma Bear",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "43244": {
+    "imdb_id": "tt12441478",
+    "title": "Earwig and the Witch"
   },
   "43273": {
     "imdb_id": "tt12642654",
