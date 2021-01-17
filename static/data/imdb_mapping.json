@@ -419,7 +419,9 @@
   },
   "78": {
     "imdb_id": "tt0978540",
-    "title": "Mai otome"
+    "title": "Mai otome",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "79": {
     "imdb_id": "tt0431562",
@@ -2812,45 +2814,63 @@
     "title": "Tekken: The Motion Picture"
   },
   "498": {
-    "imdb_id": "tt0189305",
+    "imdb_id": "tt0105559",
     "title": "Tenchi Muyo!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "1027": {
-    "imdb_id": "tt0189305",
+    "imdb_id": "tt0105559",
     "title": "Tenchi Muyo!",
     "fromSeason": 1,
     "fromEpisode": 7
   },
   "499": {
-    "imdb_id": "tt0189305",
+    "imdb_id": "tt0105559",
     "title": "Tenchi Muyo!",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "500": {
-    "imdb_id": "tt0189305",
+    "imdb_id": "tt0105559",
     "title": "Tenchi Muyo!",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "1028": {
-    "imdb_id": "tt0189305",
+    "imdb_id": "tt0105559",
     "title": "Tenchi Muyo!",
     "fromSeason": 3,
     "fromEpisode": 7
   },
   "11451": {
-    "imdb_id": "tt0189305",
+    "imdb_id": "tt0105559",
     "title": "Tenchi Muyo!",
     "fromSeason": 4,
     "fromEpisode": 1
   },
   "42491": {
-    "imdb_id": "tt0189305",
+    "imdb_id": "tt0105559",
     "title": "Tenchi Muyo!",
     "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "2485": {
+    "imdb_id": "tt0105559",
+    "title": "Tenchi Muyo!",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "6142": {
+    "imdb_id": "tt0105559",
+    "title": "Tenchi Muyo!",
+    "fromSeason": 0,
+    "fromEpisode": 5
+  },
+  "4274": {
+    "imdb_id": "tt6603172",
+    "title": "Tenchi Muyo! War on Geminar",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "8580": {
@@ -3805,6 +3825,10 @@
     "imdb_id": "tt0293741",
     "title": "Shinzo"
   },
+  "1022": {
+    "imdb_id": "tt0311618",
+    "title": "A Tree of Palme"
+  },
   "1023": {
     "imdb_id": "tt0478838",
     "title": "Honey and Clover",
@@ -4244,21 +4268,27 @@
     "fromEpisode": 1
   },
   "1278": {
-    "imdb_id": "tt0159192",
-    "title": "Lupin the 3rd: Part II",
-    "fromSeason": 1,
+    "imdb_id": "tt0159175",
+    "title": "Lupin the 3rd",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "1279": {
-    "imdb_id": "tt0159176",
-    "title": "Lupin the 3rd: Part III ",
-    "fromSeason": 1,
+    "imdb_id": "tt0159175",
+    "title": "Lupin the 3rd",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "9958": {
-    "imdb_id": "tt4129452",
-    "title": "Lupin the 3rd: Part IV",
-    "fromSeason": 1,
+    "imdb_id": "tt0159175",
+    "title": "Lupin the 3rd",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "13749": {
+    "imdb_id": "tt0159175",
+    "title": "Lupin the 3rd",
+    "fromSeason": 5,
     "fromEpisode": 1
   },
   "6910": {
@@ -4538,8 +4568,10 @@
     "title": "Venus Versus Virus"
   },
   "1448": {
-    "imdb_id": "tt1192876",
-    "title": "Mai otome zwei"
+    "imdb_id": "tt0978540",
+    "title": "Mai otome",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "1451": {
     "imdb_id": "tt0294023",
@@ -5863,6 +5895,10 @@
     "imdb_id": "tt0095512",
     "title": "Legend of the Galactic Heroes: My Conquest Is the Sea of Stars"
   },
+  "2725": {
+    "imdb_id": "tt2661788",
+    "title": "Legend of the Galactic Heroes Gaiden: Golden Wings"
+  },
   "2726": {
     "imdb_id": "tt0107382",
     "title": "Legend of the Galactic Heroes: Overture to a New War"
@@ -6450,6 +6486,44 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "4000": {
+    "imdb_id": "tt2189248",
+    "title": "Inazuma Eleven",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6213": {
+    "imdb_id": "tt2189248",
+    "title": "Inazuma Eleven",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6927": {
+    "imdb_id": "tt2189248",
+    "title": "Inazuma Eleven",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "7765": {
+    "imdb_id": "tt2189248",
+    "title": "Inazuma Eleven",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "12496": {
+    "imdb_id": "tt10534392",
+    "title": "Inazuma Eleven Ares",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5580": {
+    "imdb_id": "tt1794796",
+    "title": "Inazuma Eleven: The Movie"
+  },
+  "6435": {
+    "imdb_id": "tt2141749",
+    "title": "Inazuma Eleven GO the Movie: The Ultimate Bonds Gryphon"
+  },
   "4044": {
     "imdb_id": "tt1352421",
     "title": "Natsume yûjinchô",
@@ -6493,6 +6567,36 @@
     "title": "K-On!",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "4758": {
+    "imdb_id": "tt1410218",
+    "title": "K-On!",
+    "fromSeason": 1,
+    "fromEpisode": 14
+  },
+  "5124": {
+    "imdb_id": "tt1410218",
+    "title": "K-On!",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "4833": {
+    "imdb_id": "tt1410218",
+    "title": "K-On!",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "5630": {
+    "imdb_id": "tt1410218",
+    "title": "K-On!",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
+  "5841": {
+    "imdb_id": "tt1410218",
+    "title": "K-On!",
+    "fromSeason": 0,
+    "fromEpisode": 17
   },
   "4241": {
     "imdb_id": "tt1474276",
@@ -6795,12 +6899,6 @@
   "5122": {
     "imdb_id": "tt1847445",
     "title": "Yojôhan shinwa taikei"
-  },
-  "5124": {
-    "imdb_id": "tt1410218",
-    "title": "K-On!",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "5134": {
     "imdb_id": "tt1634165",
@@ -8953,6 +9051,18 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "7760": {
+    "imdb_id": "tt0997313",
+    "title": "Sasami mahô shôjo kurabu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1693": {
+    "imdb_id": "tt0997313",
+    "title": "Sasami mahô shôjo kurabu",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "7761": {
     "imdb_id": "tt4744926",
     "title": "Tonari no Seki kun",
@@ -9408,6 +9518,10 @@
   "8018": {
     "imdb_id": "tt8286670",
     "title": "Calamity of a Zombie Girl"
+  },
+  "8024": {
+    "imdb_id": "tt3306776",
+    "title": "Bayonetta: Bloody Fate"
   },
   "8026": {
     "imdb_id": "tt3660104",
@@ -14172,10 +14286,6 @@
   "13747": {
     "imdb_id": "tt6470762",
     "title": "Mazinger Z: Infinity"
-  },
-  "13749": {
-    "imdb_id": "tt7879496",
-    "title": "Lupin the 3rd: Part V"
   },
   "13752": {
     "imdb_id": "tt7535746",
