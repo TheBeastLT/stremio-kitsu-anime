@@ -469,12 +469,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "42549": {
-    "imdb_id": "tt1171785",
-    "title": "Chuka ichiban",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "90": {
     "imdb_id": "tt3620568",
     "title": "Corrector Yui"
@@ -11780,6 +11774,12 @@
   "11347": {
     "imdb_id": "tt5515402",
     "title": "Ani Tore! EX",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "12459": {
+    "imdb_id": "tt5515402",
+    "title": "Ani Tore! EX",
     "fromSeason": 2,
     "fromEpisode": 1
   },
@@ -12682,6 +12682,66 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "12084": {
+    "imdb_id": "tt9089548",
+    "title": "Fox Spirit Matchmaker",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "12276": {
+    "imdb_id": "tt9089548",
+    "title": "Fox Spirit Matchmaker",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "12277": {
+    "imdb_id": "tt9089548",
+    "title": "Fox Spirit Matchmaker",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "13246": {
+    "imdb_id": "tt9089548",
+    "title": "Fox Spirit Matchmaker",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "13644": {
+    "imdb_id": "tt9089548",
+    "title": "Fox Spirit Matchmaker",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "14238": {
+    "imdb_id": "tt9089548",
+    "title": "Fox Spirit Matchmaker",
+    "fromSeason": 6,
+    "fromEpisode": 1
+  },
+  "42411": {
+    "imdb_id": "tt9089548",
+    "title": "Fox Spirit Matchmaker",
+    "fromSeason": 7,
+    "fromEpisode": 1
+  },
+  "42926": {
+    "imdb_id": "tt9089548",
+    "title": "Fox Spirit Matchmaker",
+    "fromSeason": 8,
+    "fromEpisode": 1
+  },
+  "43350": {
+    "imdb_id": "tt9089548",
+    "title": "Fox Spirit Matchmaker",
+    "fromSeason": 9,
+    "fromEpisode": 1
+  },
+  "43885": {
+    "imdb_id": "tt9089548",
+    "title": "Fox Spirit Matchmaker",
+    "fromSeason": 10,
+    "fromEpisode": 1
+  },
   "12088": {
     "imdb_id": "tt5915166",
     "title": "B-Project",
@@ -12929,12 +12989,6 @@
   "12346": {
   },
   "12448": {
-  },
-  "12459": {
-    "imdb_id": "tt5515402",
-    "title": "Ani Tore! EX",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "12460": {
     "imdb_id": "tt6422976",
@@ -16171,6 +16225,18 @@
     "imdb_id": "tt10973152",
     "title": "Assassins Pride"
   },
+  "42329": {
+    "imdb_id": "tt11349866",
+    "title": "Sorcerous Stabber Orphen: Battle of Kimluck",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43097": {
+    "imdb_id": "tt11349866",
+    "title": "Sorcerous Stabber Orphen: Battle of Kimluck",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "42342": {
     "imdb_id": "tt12728882",
     "title": "Adachi and Shimamura",
@@ -16319,6 +16385,18 @@
     "imdb_id": "tt10814346",
     "title": "Phantasy Star Online 2: Episode Oracle",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42549": {
+    "imdb_id": "tt13049890",
+    "title": "Shin Chuuka Ichiban!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43825": {
+    "imdb_id": "tt13049890",
+    "title": "Shin Chuuka Ichiban!",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "42550": {
