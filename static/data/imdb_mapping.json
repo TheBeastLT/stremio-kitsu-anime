@@ -14648,6 +14648,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "14091": {
+    "imdb_id": "tt8948304",
+    "title": "Yuuna and the Haunted Hot Springs",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "14092": {
     "imdb_id": "tt4731072",
     "title": "Food Wars: Shokugeki no Soma",
@@ -14918,6 +14924,12 @@
     "title": "That Time I Got Reincarnated as a Slime",
     "fromSeason": 0,
     "fromEpisode": 2
+  },
+  "43897": {
+    "imdb_id": "tt9054364",
+    "title": "That Time I Got Reincarnated as a Slime",
+    "fromSeason": 0,
+    "fromEpisode": 7
   },
   "42207": {
     "imdb_id": "tt10981202",
@@ -15600,6 +15612,18 @@
     "title": "Persona 5 the Animation: Dark Sun...",
     "fromSeason": 0,
     "fromEpisode": 3
+  },
+  "41974": {
+    "imdb_id": "tt13067512",
+    "title": "Armor Shop for Ladies and Gentlemen",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43569": {
+    "imdb_id": "tt13067512",
+    "title": "Armor Shop for Ladies and Gentlemen",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "41978": {
     "imdb_id": "tt11742122",
@@ -16699,6 +16723,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43886": {
+    "imdb_id": "tt12343534",
+    "title": "Jujutsu Kaisen",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "42724": {
     "imdb_id": "tt12312004",
     "title": "Monster Girl Doctor",
@@ -16863,6 +16893,12 @@
     "imdb_id": "tt12311976",
     "title": "TONIKAWA: Over the Moon for You",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43833": {
+    "imdb_id": "tt12311976",
+    "title": "TONIKAWA: Over the Moon for You",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "43062": {
