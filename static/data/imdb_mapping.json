@@ -4343,6 +4343,54 @@
     "imdb_id": "tt4060956",
     "title": "Hakugei: Legend of the Moby Dick"
   },
+  "1316": {
+    "imdb_id": "tt0159208",
+    "title": "City Hunter",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1317": {
+    "imdb_id": "tt0159208",
+    "title": "City Hunter",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "1318": {
+    "imdb_id": "tt0159208",
+    "title": "City Hunter",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "1319": {
+    "imdb_id": "tt0159208",
+    "title": "City Hunter",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "1320": {
+    "imdb_id": "tt0097067",
+    "title": "City Hunter: .357 Magnum"
+  },
+  "1321": {
+    "imdb_id": "tt0099272",
+    "title": "City Hunter: Bay City Wars"
+  },
+  "1322": {
+    "imdb_id": "tt0159362",
+    "title": "City Hunter: Million Dollar Conspiracy"
+  },
+  "1323": {
+    "imdb_id": "tt0154338",
+    "title": "City Hunter: Secret Service"
+  },
+  "1324": {
+    "imdb_id": "tt0366310",
+    "title": "City Hunter: The Motion Picture"
+  },
+  "1325": {
+    "imdb_id": "tt0211310",
+    "title": "City Hunter: Death Ot the Vicious Criminal Ryo Saeba"
+  },
   "1328": {
     "imdb_id": "tt0899258",
     "title": "D.Gray-man",
@@ -5180,6 +5228,10 @@
     "title": "Clannad: After Story",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  "1544": {
+    "imdb_id": "tt0997274",
+    "title": "Clannad"
   },
   "1991": {
     "imdb_id": "tt0377231",
@@ -12876,6 +12928,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13241": {
+    "imdb_id": "tt6185782",
+    "title": "Miss Kobayashi's Dragon Maid",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "13861": {
+    "imdb_id": "tt6185782",
+    "title": "Miss Kobayashi's Dragon Maid",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
   "12244": {
   },
   "12245": {
@@ -15367,6 +15431,30 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "41363": {
+    "imdb_id": "tt12923874",
+    "title": "The Wonderland of Ten Thousands",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43100": {
+    "imdb_id": "tt12923874",
+    "title": "The Wonderland of Ten Thousands",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43101": {
+    "imdb_id": "tt12923874",
+    "title": "The Wonderland of Ten Thousands",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "43892": {
+    "imdb_id": "tt12923874",
+    "title": "The Wonderland of Ten Thousands",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "41370": {
     "imdb_id": "tt9335498",
     "title": "Demon Slayer: Kimetsu No Yaiba",
@@ -16944,6 +17032,12 @@
   "43214": {
     "imdb_id": "tt12415504",
     "title": "Kuma Kuma Kuma Bear",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43237": {
+    "imdb_id": "tt12220526",
+    "title": "Girl Gaku. Hijiri Girls Square Gakuin",
     "fromSeason": 1,
     "fromEpisode": 1
   },
