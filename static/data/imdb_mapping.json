@@ -155,6 +155,18 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "893": {
+    "imdb_id": "tt0872301",
+    "title": "Ah! My Goddess",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
+  "5808": {
+    "imdb_id": "tt0872301",
+    "title": "Ah! My Goddess",
+    "fromSeason": 0,
+    "fromEpisode": 10
+  },
   "32": {
     "imdb_id": "tt0308974",
     "title": "Angel Sanctuary"
@@ -6832,6 +6844,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "8314": {
+    "imdb_id": "tt1584000",
+    "title": "Durarara!!",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "9726": {
+    "imdb_id": "tt1584000",
+    "title": "Durarara!!",
+    "fromSeason": 2,
+    "fromEpisode": 13
+  },
+  "9725": {
+    "imdb_id": "tt1584000",
+    "title": "Durarara!!",
+    "fromSeason": 2,
+    "fromEpisode": 25
+  },
   "4765": {
     "imdb_id": "tt1909447",
     "title": "Deadman Wonderland",
@@ -6983,6 +7013,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "5329": {
+    "imdb_id": "tt1952071",
+    "title": "mm!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "5330": {
     "imdb_id": "tt1872328",
     "title": "Gosick"
@@ -7127,6 +7163,12 @@
     "imdb_id": "tt1639109",
     "title": "Angel Beats!",
     "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "5626": {
+    "imdb_id": "tt1743493",
+    "title": "Motto to Love Ru",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "5646": {
@@ -7306,6 +7348,12 @@
     "title": "Fate/Zero",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "7658": {
+    "imdb_id": "tt2051178",
+    "title": "Fate/Zero",
+    "fromSeason": 1,
+    "fromEpisode": 14
   },
   "6030": {
     "imdb_id": "tt1856022",
@@ -8791,12 +8839,6 @@
     "imdb_id": "tt2250100",
     "title": "The Ambition of Oda Nobuna"
   },
-  "7658": {
-    "imdb_id": "tt2051178",
-    "title": "Fate/Zero",
-    "fromSeason": 1,
-    "fromEpisode": 14
-  },
   "7660": {
     "imdb_id": "tt0940874",
     "title": "Air",
@@ -9561,6 +9603,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "8257": {
+    "imdb_id": "tt3341534",
+    "title": "Witch Craft Works",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "8599": {
+    "imdb_id": "tt3341534",
+    "title": "Witch Craft Works",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
   "8018": {
     "imdb_id": "tt8286670",
     "title": "Calamity of a Zombie Girl"
@@ -10024,12 +10078,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "8314": {
-    "imdb_id": "tt4755410",
-    "title": "Durarara!!x2",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "8325": {
     "imdb_id": "tt3611294",
     "title": "Glasslip"
@@ -10118,6 +10166,12 @@
     "imdb_id": "tt3615002",
     "title": "Monthly Girls' Nozaki-kun",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "9154": {
+    "imdb_id": "tt3615002",
+    "title": "Monthly Girls' Nozaki-kun",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "8403": {
@@ -10338,7 +10392,15 @@
   },
   "8648": {
     "imdb_id": "tt3957196",
-    "title": "Yona of the Dawn"
+    "title": "Yona of the Dawn",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "10759": {
+    "imdb_id": "tt3957196",
+    "title": "Yona of the Dawn",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "8649": {
     "imdb_id": "tt4219158",
@@ -10614,18 +10676,6 @@
   "9721": {
     "imdb_id": "tt4337072",
     "title": "Ghost in the Shell: The New Movie"
-  },
-  "9725": {
-    "imdb_id": "tt1584000",
-    "title": "Durarara!!",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
-  "9726": {
-    "imdb_id": "tt1584000",
-    "title": "Durarara!!",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "9729": {
     "imdb_id": "tt4623928",
@@ -11175,10 +11225,6 @@
     "title": "The Testament of Sister New Devil",
     "fromSeason": 2,
     "fromEpisode": 1
-  },
-  "10759": {
-    "imdb_id": "tt8396222",
-    "title": "Akatsuki no Yona OVA"
   },
   "10760": {
     "imdb_id": "tt4219136",
@@ -12089,7 +12135,15 @@
   },
   "11487": {
     "imdb_id": "tt5345050",
-    "title": "Please Tell Me! Galko-chan"
+    "title": "Please Tell Me! Galko-chan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "12521": {
+    "imdb_id": "tt5345050",
+    "title": "Please Tell Me! Galko-chan",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "11490": {
     "imdb_id": "tt7001136",
@@ -12634,7 +12688,15 @@
   },
   "11951": {
     "imdb_id": "tt6401430",
-    "title": "Hand Shakers"
+    "title": "Hand Shakers",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "13599": {
+    "imdb_id": "tt6401430",
+    "title": "Hand Shakers",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "11956": {
     "imdb_id": "tt7765890",
