@@ -2301,12 +2301,6 @@
     "imdb_id": "tt0109151",
     "title": "Armitage III: Polymatrix"
   },
-  "455": {
-    "imdb_id": "tt0115104",
-    "title": "Bakuretsu hunters",
-    "fromSeason": 1,
-    "fromEpisode": 27
-  },
   "456": {
     "imdb_id": "tt0088983",
     "title": "The Dagger of Kamui"
@@ -3759,7 +3753,15 @@
   },
   "972": {
     "imdb_id": "tt0092386",
-    "title": "Kimagure Orange Road"
+    "title": "Kimagure Orange Road",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "2232": {
+    "imdb_id": "tt0092386",
+    "title": "Kimagure Orange Road",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "973": {
     "imdb_id": "tt0142183",
@@ -5489,7 +5491,27 @@
   },
   "2249": {
     "imdb_id": "tt1068993",
-    "title": "School Days"
+    "title": "School Days",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "678": {
+    "imdb_id": "tt1068993",
+    "title": "School Days",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "3235": {
+    "imdb_id": "tt1068993",
+    "title": "School Days",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "2940": {
+    "imdb_id": "tt1068993",
+    "title": "School Days",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "2254": {
     "imdb_id": "tt2641210",
@@ -6968,6 +6990,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6027": {
+    "imdb_id": "tt2016670",
+    "title": "Shiki",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "5114": {
     "imdb_id": "tt1685410",
     "title": "Okami-san and Her Seven Companions"
@@ -7273,19 +7301,27 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "12275": {
+    "imdb_id": "tt1799631",
+    "title": "Blue Exorcist",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "6484": {
-    "imdb_id": "tt5858632",
-    "title": "Ao no ekusoshisuto: Kuro no iede"
+    "imdb_id": "tt1799631",
+    "title": "Blue Exorcist",
+    "fromSeason": 0,
+    "fromEpisode": 11
+  },
+  "12774": {
+    "imdb_id": "tt1799631",
+    "title": "Blue Exorcist",
+    "fromSeason": 0,
+    "fromEpisode": 13
   },
   "6580": {
     "imdb_id": "tt3028018",
     "title": "Blue Exorcist: The Movie"
-  },
-  "12275": {
-    "imdb_id": "tt5987956",
-    "title": "Blue Exorcist: Kyoto Saga",
-    "fromSeason": 1,
-    "fromEpisode": 1
   },
   "5947": {
   },
@@ -7355,6 +7391,12 @@
     "fromSeason": 1,
     "fromEpisode": 14
   },
+  "6928": {
+    "imdb_id": "tt2051178",
+    "title": "Fate/Zero",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
   "6030": {
     "imdb_id": "tt1856022",
     "title": "Ghost in the Shell S.A.C. Solid State Society 3D"
@@ -7396,6 +7438,18 @@
     "title": "Maji de Watashi ni Koi Shinasai!"
   },
   "6083": {
+  },
+  "6084": {
+    "imdb_id": "tt2210479",
+    "title": "Berserk: The Golden Age Arc I - The Egg of the King"
+  },
+  "6664": {
+    "imdb_id": "tt2358911",
+    "title": "Berserk: The Golden Age Arc II - The Battle for Doldrey"
+  },
+  "6665": {
+    "imdb_id": "tt2358913",
+    "title": "Berserk: The Golden Age Arc III - The Advent"
   },
   "6109": {
     "imdb_id": "tt1202625",
@@ -7844,10 +7898,6 @@
     "title": "Space Battleship Yamato 2199",
     "fromSeason": 2,
     "fromEpisode": 1
-  },
-  "6665": {
-    "imdb_id": "tt2358913",
-    "title": "Berserk: The Golden Age Arc III - The Advent"
   },
   "6667": {
     "imdb_id": "tt2339005",
@@ -9071,7 +9121,33 @@
   },
   "7715": {
     "imdb_id": "tt2789238",
-    "title": "Strike the Blood"
+    "title": "Strike the Blood",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "12559": {
+    "imdb_id": "tt2789238",
+    "title": "Strike the Blood",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "41055": {
+    "imdb_id": "tt2789238",
+    "title": "Strike the Blood",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "42606": {
+    "imdb_id": "tt2789238",
+    "title": "Strike the Blood",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "10758": {
+    "imdb_id": "tt2789238",
+    "title": "Strike the Blood",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "7716": {
     "imdb_id": "tt0367439",
@@ -9184,6 +9260,24 @@
   "7782": {
     "imdb_id": "tt3199286",
     "title": "No-Rin"
+  },
+  "7786": {
+    "imdb_id": "tt0115104",
+    "title": "Sorcerer Hunters",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "455": {
+    "imdb_id": "tt0115104",
+    "title": "Sorcerer Hunters",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "1105": {
+    "imdb_id": "tt0115104",
+    "title": "Sorcerer Hunters",
+    "fromSeason": 0,
+    "fromEpisode": 4
   },
   "7821": {
     "imdb_id": "tt3115338",
@@ -11124,6 +11218,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13502": {
+    "imdb_id": "tt5857720",
+    "title": "ReLIFE",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "10465": {
     "imdb_id": "tt10257002",
     "title": "Million Doll",
@@ -12159,7 +12259,15 @@
   },
   "11529": {
     "imdb_id": "tt5867902",
-    "title": "Hybrid X Heart Magias Academy Ataraxia"
+    "title": "Hybrid X Heart Magias Academy Ataraxia",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "12780": {
+    "imdb_id": "tt5867902",
+    "title": "Hybrid X Heart Magias Academy Ataraxia",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "11536": {
     "imdb_id": "tt5338758",
@@ -14042,12 +14150,6 @@
     "title": "Uma Musume: Pretty Derby",
     "fromSeason": 2,
     "fromEpisode": 1
-  },
-  "13502": {
-    "imdb_id": "tt5857720",
-    "title": "ReLIFE",
-    "fromSeason": 1,
-    "fromEpisode": 14
   },
   "13503": {
     "imdb_id": "tt7263328",
@@ -15946,6 +16048,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42902": {
+    "imdb_id": "tt10883006",
+    "title": "Oresuki: Are You the Only One Who Loves Me?",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "42915": {
+    "imdb_id": "tt10883006",
+    "title": "Oresuki: Are You the Only One Who Loves Me?",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
   "42050": {},
   "42051": {
     "imdb_id": "tt8254880",
@@ -16047,6 +16161,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42108": {
+    "imdb_id": "tt9310328",
+    "title": "Altered Carbon: Resleeved"
+  },
   "42110": {
     "imdb_id": "tt7808344",
     "title": "Karakai Jouzu no Takagi-san",
@@ -16068,6 +16186,12 @@
   "42130": {
     "imdb_id": "tt9828600",
     "title": "Fairy gone",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42131": {
+    "imdb_id": "tt11295582",
+    "title": "Infinite Dendrogram",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -16211,10 +16335,6 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
-  "42941": {
-    "imdb_id": "tt11585560",
-    "title": "The Island of Giant Insects"
-  },
   "42927": {
     "imdb_id": "tt2250192",
     "title": "Sword Art Online",
@@ -16238,6 +16358,12 @@
   "42221": {
     "imdb_id": "tt10470444",
     "title": "Wasteful Days of High School Girls"
+  },
+  "42222": {
+    "imdb_id": "tt10671282",
+    "title": "High School Prodigies Have It Easy Even in Another World!",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "42226": {
     "imdb_id": "tt9308014",
@@ -16524,6 +16650,10 @@
     "fromEpisode": 1
   },
   "42469": {
+    "imdb_id": "tt13004300",
+    "title": "Null & Peta",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "42476": {
     "imdb_id": "tt10978032",
@@ -16731,9 +16861,15 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "42108": {
-    "imdb_id": "tt9310328",
-    "title": "Altered Carbon: Resleeved"
+  "42885": {
+    "imdb_id": "tt11455784",
+    "title": "Show by Rock!! Mashumairesh!!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42941": {
+    "imdb_id": "tt11585560",
+    "title": "The Island of Giant Insects"
   },
   "42954": {
     "imdb_id": "tt11645760",
