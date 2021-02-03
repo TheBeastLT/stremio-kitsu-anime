@@ -3699,6 +3699,10 @@
     "imdb_id": "tt0102587",
     "title": "Only Yesterday"
   },
+  "920": {
+    "imdb_id": "tt0110008",
+    "title": "Pom Poko"
+  },
   "923": {
     "imdb_id": "tt0291350",
     "title": "Millennium Actress"
@@ -3832,6 +3836,10 @@
   "1018": {
     "imdb_id": "tt0293741",
     "title": "Shinzo"
+  },
+  "1021": {
+    "imdb_id": "tt0493247",
+    "title": "Origin: Spirits of the Past"
   },
   "1022": {
     "imdb_id": "tt0311618",
@@ -6552,6 +6560,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "3898": {
+    "imdb_id": "tt1389648",
+    "title": "Kurozuka",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3899": {
     "imdb_id": "tt1411815",
     "title": "One Outs"
@@ -7239,6 +7253,18 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "6063": {
+    "imdb_id": "tt1909463",
+    "title": "Freezing",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "8168": {
+    "imdb_id": "tt1909463",
+    "title": "Freezing",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
   "5710": {
     "imdb_id": "tt2697872",
     "title": "Ground Control to Psychoelectric Girl",
@@ -7284,6 +7310,12 @@
   "5853": {
     "imdb_id": "tt1773185",
     "title": "Puella Magi Madoka Magica"
+  },
+  "5895": {
+    "imdb_id": "tt2629496",
+    "title": "Level E",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "5908": {
     "imdb_id": "tt1909586",
@@ -7507,6 +7539,18 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "6187": {
+    "imdb_id": "tt2074035",
+    "title": "Horizon in the Middle of Nowhere",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6746": {
+    "imdb_id": "tt2074035",
+    "title": "Horizon in the Middle of Nowhere",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "6191": {
     "imdb_id": "tt7164706",
     "title": "Kimi to Boku"
@@ -7676,6 +7720,12 @@
     "title": "Lagrange: The Flower of Rin-ne",
     "fromSeason": 0,
     "fromEpisode": 1
+  },
+  "7019": {
+    "imdb_id": "tt2176885",
+    "title": "Lagrange: The Flower of Rin-ne",
+    "fromSeason": 0,
+    "fromEpisode": 7
   },
   "7019": {
     "imdb_id": "tt2176885",
@@ -7893,6 +7943,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6652": {
+    "imdb_id": "tt2085795",
+    "title": "Fairy Tail: Priestess of the Phoenix"
+  },
   "43641": {
     "imdb_id": "tt2496120",
     "title": "Space Battleship Yamato 2199",
@@ -7939,7 +7993,15 @@
   },
   "6704": {
     "imdb_id": "tt2255264",
-    "title": "Upotte!!"
+    "title": "Upotte!!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7089": {
+    "imdb_id": "tt2255264",
+    "title": "Upotte!!",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "6711": {
     "imdb_id": "tt2140203",
@@ -7992,12 +8054,6 @@
   "6742": {
     "imdb_id": "tt2981768",
     "title": "Patema Inverted"
-  },
-  "6746": {
-    "imdb_id": "tt2074035",
-    "title": "Horizon in the Middle of Nowhere",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "6760": {
     "imdb_id": "tt2341375",
@@ -9048,6 +9104,24 @@
     "title": "Ace of Diamond",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "10741": {
+    "imdb_id": "tt3105422",
+    "title": "Ace of Diamond",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "8792": {
+    "imdb_id": "tt3105422",
+    "title": "Ace of Diamond",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "12725": {
+    "imdb_id": "tt3105422",
+    "title": "Ace of Diamond",
+    "fromSeason": 0,
+    "fromEpisode": 4
   },
   "7700": {
     "imdb_id": "tt2942228",
@@ -11296,12 +11370,6 @@
     "imdb_id": "tt4508902",
     "title": "One Punch Man: Wanpanman",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "10741": {
-    "imdb_id": "tt3105422",
-    "title": "Ace of Diamond",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "10742": {
@@ -15105,6 +15173,10 @@
     "fromSeason": 1,
     "fromEpisode": 27
   },
+  "41007": {
+    "imdb_id": "tt8076344",
+    "title": "Penguin Highway"
+  },
   "41012": {
     "imdb_id": "tt5580664",
     "title": "Voltron",
@@ -16269,6 +16341,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42570": {
+    "imdb_id": "tt10347516",
+    "title": "Cop Craft",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "42175": {
     "imdb_id": "tt10423424",
     "title": "BEM"
@@ -16767,6 +16845,18 @@
     "imdb_id": "tt9883676",
     "title": "We Never Learn: Bokuben",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42653": {
+    "imdb_id": "tt10380814",
+    "title": "Dino Girl Gauko",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43088": {
+    "imdb_id": "tt10380814",
+    "title": "Dino Girl Gauko",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "42040": {
