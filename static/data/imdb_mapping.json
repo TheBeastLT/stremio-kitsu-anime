@@ -423,7 +423,21 @@
   },
   "76": {
     "imdb_id": "tt0390733",
-    "title": "Last Exile"
+    "title": "Last Exile",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6134": {
+    "imdb_id": "tt0390733",
+    "title": "Last Exile",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6728": {
+    "imdb_id": "tt0390733",
+    "title": "Last Exile",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "77": {
     "imdb_id": "tt0824043",
@@ -5063,6 +5077,12 @@
     "imdb_id": "tt4012832",
     "title": "Muteki-Ô Tri-Zenon"
   },
+  "1787": {
+    "imdb_id": "tt0185070",
+    "title": "Grandizer",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "1801": {
     "imdb_id": "tt0948103",
     "title": "Tengen toppa gurren lagann"
@@ -5767,6 +5787,12 @@
     "imdb_id": "tt1092560",
     "title": "Potemayo"
   },
+  "2508": {
+    "imdb_id": "tt0403751",
+    "title": "Dash!! Kappei",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "2509": {
     "imdb_id": "tt3897812",
     "title": "Heisei Inu Monogatari Bow"
@@ -6447,6 +6473,12 @@
     "imdb_id": "tt1485763",
     "title": "One Piece: Strong World"
   },
+  "3508": {
+    "imdb_id": "tt1394286",
+    "title": "Chrome Shelled Regios",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3514": {
     "imdb_id": "tt1445868",
     "title": "Hayate, the Combat Butler 2",
@@ -6628,6 +6660,12 @@
     "imdb_id": "tt1158671",
     "title": "Spice and Wolf",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "4072": {
+    "imdb_id": "tt1480947",
+    "title": "Canaan",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "4073": {
@@ -7240,6 +7278,12 @@
   "5657": {
     "imdb_id": "tt1820941",
     "title": "Hanasaku iroha"
+  },
+  "5679": {
+    "imdb_id": "tt2119364",
+    "title": "Dream Eater Merry",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "5706": {
     "imdb_id": "tt1909463",
@@ -7892,6 +7936,12 @@
   "6607": {
     "imdb_id": "tt5879522",
     "title": "Gdgd Fairies",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6614": {
+    "imdb_id": "tt2090435",
+    "title": "Zetman",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -9181,6 +9231,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "8130": {
+    "imdb_id": "tt3114390",
+    "title": "KILL La KILL",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "7713": {
     "imdb_id": "tt11724248",
     "title": "Wish Upon the Pleiades",
@@ -9651,6 +9707,24 @@
     "imdb_id": "tt0278238",
     "title": "Samurai Jack",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7946": {
+    "imdb_id": "tt0088595",
+    "title": "Robotech",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7947": {
+    "imdb_id": "tt0088595",
+    "title": "Robotech",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "7948": {
+    "imdb_id": "tt0088595",
+    "title": "Robotech",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "7950": {
@@ -12529,6 +12603,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11655": {
+    "imdb_id": "tt5847454",
+    "title": "Berserk",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "12569": {
+    "imdb_id": "tt5847454",
+    "title": "Berserk",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "11662": {
     "imdb_id": "tt7120888",
     "title": "Clockwork Planet"
@@ -14882,6 +14968,12 @@
     "imdb_id": "tt8800144",
     "title": "Ulysses: Jeanne d'Arc and the Alchemist Knight"
   },
+  "13995": {
+    "imdb_id": "tt7945066",
+    "title": "Gen: Lock",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "13999": {
     "imdb_id": "tt6296094",
     "title": "Lastman",
@@ -14929,6 +15021,10 @@
   "14082": {
     "imdb_id": "tt7879138",
     "title": "KILLING BITES"
+  },
+  "14083": {
+    "imdb_id": "tt6900448",
+    "title": "Mirai"
   },
   "14084": {
     "imdb_id": "tt7745068",
