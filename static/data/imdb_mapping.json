@@ -1262,6 +1262,54 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "1762": {
+    "imdb_id": "tt0486171",
+    "title": "Ikki tosen: Dragon Destiny",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "3516": {
+    "imdb_id": "tt0486171",
+    "title": "Ikki tosen: Dragon Destiny",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "5037": {
+    "imdb_id": "tt0486171",
+    "title": "Ikki tosen: Dragon Destiny",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "2635": {
+    "imdb_id": "tt0486171",
+    "title": "Ikki tosen: Dragon Destiny",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "4061": {
+    "imdb_id": "tt0486171",
+    "title": "Ikki tosen: Dragon Destiny",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
+  "5365": {
+    "imdb_id": "tt0486171",
+    "title": "Ikki tosen: Dragon Destiny",
+    "fromSeason": 0,
+    "fromEpisode": 13
+  },
+  "13220": {
+    "imdb_id": "tt0486171",
+    "title": "Ikki tosen: Dragon Destiny",
+    "fromSeason": 0,
+    "fromEpisode": 20
+  },
+  "42005": {
+    "imdb_id": "tt0486171",
+    "title": "Ikki tosen: Dragon Destiny",
+    "fromSeason": 0,
+    "fromEpisode": 22
+  },
   "233": {
     "imdb_id": "tt0488556",
     "title": "Hitsuji no uta"
@@ -7195,6 +7243,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6347": {
+    "imdb_id": "tt1780262",
+    "title": "Is This a Zombie?",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6079": {
+    "imdb_id": "tt1780262",
+    "title": "Is This a Zombie?",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "7256": {
+    "imdb_id": "tt1780262",
+    "title": "Is This a Zombie?",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
   "5513": {
     "imdb_id": "tt1743681",
     "title": "Yosuga no sora"
@@ -7509,6 +7575,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "5512": {
+    "imdb_id": "tt2098308",
+    "title": "My Ordinary Life",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "6081": {
     "imdb_id": "tt3416460",
     "title": "Maji de Watashi ni Koi Shinasai!"
@@ -7665,15 +7737,21 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "7190": {
+    "imdb_id": "tt2645500",
+    "title": "Haganai: I Don't Have Many Friends",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6397": {
+    "imdb_id": "tt2645500",
+    "title": "Haganai: I Don't Have Many Friends",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
   "6318": {
     "imdb_id": "tt2017925",
     "title": "Mawaru-Penguindrum"
-  },
-  "6347": {
-    "imdb_id": "tt1780262",
-    "title": "Is This a Zombie?",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "6349": {
     "imdb_id": "tt2122656",
@@ -8485,12 +8563,6 @@
     "imdb_id": "tt2552230",
     "title": "Maoyuu Maou Yuusha",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "7190": {
-    "imdb_id": "tt2645500",
-    "title": "Haganai: I Don't Have Many Friends",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "7196": {
@@ -9314,6 +9386,18 @@
   "7728": {
     "imdb_id": "tt2716982",
     "title": "Nura: Rise of the Yokai Clan",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "7729": {
+    "imdb_id": "tt1409383",
+    "title": "Big Windup!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5095": {
+    "imdb_id": "tt1409383",
+    "title": "Big Windup!",
     "fromSeason": 2,
     "fromEpisode": 1
   },
@@ -10976,6 +11060,30 @@
     "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "40599": {
+    "imdb_id": "tt4728568",
+    "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42583": {
+    "imdb_id": "tt4728568",
+    "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "11851": {
+    "imdb_id": "tt4728568",
+    "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "42584": {
+    "imdb_id": "tt4728568",
+    "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "9964": {
     "imdb_id": "tt2377452",
@@ -13442,6 +13550,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13591": {
+    "imdb_id": "tt6435350",
+    "title": "Interviews with Monster Girls",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "12532": {
     "imdb_id": "tt6478612",
     "title": "Akiba's Trip: The Animation"
@@ -15187,18 +15301,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "40599": {
-    "imdb_id": "tt4728568",
-    "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  "42583": {
-    "imdb_id": "tt4728568",
-    "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
   "40600": {
     "imdb_id": "tt11418324",
     "title": "Plunderer"
@@ -15723,6 +15825,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "41319": {
+    "imdb_id": "tt8433216",
+    "title": "Super Dragon Ball Heroes",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42039": {
     "imdb_id": "tt8755254",
     "title": "Hangyakusei Million Arthur",
@@ -15924,6 +16032,10 @@
   "41489": {
     "imdb_id": "tt9850064",
     "title": "Children of the Sea"
+  },
+  "41761": {
+    "imdb_id": "tt9715318",
+    "title": "Tagatame no Alchemist"
   },
   "41925": {
     "imdb_id": "tt10147790",
@@ -16711,6 +16823,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "43117": {
+    "imdb_id": "tt11349866",
+    "title": "Sorcerous Stabber Orphen: Battle of Kimluck",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "42342": {
     "imdb_id": "tt12728882",
     "title": "Adachi and Shimamura",
@@ -16758,6 +16876,12 @@
   "41073": {
     "imdb_id": "tt10317978",
     "title": "Mob Psycho 100 REIGEN - The Miracle Psychic that Nobody Knows"
+  },
+  "42404": {
+    "imdb_id": "tt12150560",
+    "title": "Tamayomi: The Baseball Girls",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "42410": {
     "imdb_id": "tt9193770",
@@ -16888,6 +17012,10 @@
     "title": "Sleepy Princess in the Demon Castle",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "42572": {
+    "imdb_id": "tt13985576",
+    "title": "Eiga Given"
   },
   "42585": {
     "imdb_id": "tt11100658",
@@ -17458,6 +17586,10 @@
     "title": "I-Chu: Halfway Through the Idol",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "43348": {
+    "imdb_id": "tt11177804",
+    "title": "Legend of Deification"
   },
   "43448": {
     "imdb_id": "tt12831098",
