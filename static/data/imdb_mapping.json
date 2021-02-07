@@ -2031,7 +2031,9 @@
   },
   "388": {
     "imdb_id": "tt0088507",
-    "title": "Dirty Pair"
+    "title": "Dirty Pair",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "389": {
     "imdb_id": "tt4145978",
@@ -4943,6 +4945,18 @@
     "imdb_id": "tt0377237",
     "title": "Overman King-Gainer"
   },
+  "1614": {
+    "imdb_id": "tt0434908",
+    "title": "Dirty Pair: Mystery of Norlandia"
+  },
+  "1615": {
+    "imdb_id": "tt0099435",
+    "title": "Original Dirty Pair: Flight 005 Conspiracy"
+  },
+  "1616": {
+    "imdb_id": "tt0385668",
+    "title": "Original Dirty Pair: Project Eden"
+  },
   "1626": {
     "imdb_id": "tt1132210",
     "title": "Prism Ark"
@@ -7261,6 +7275,10 @@
     "fromSeason": 0,
     "fromEpisode": 3
   },
+  "5212": {
+    "imdb_id": "tt1677561",
+    "title": "Colourful"
+  },
   "5513": {
     "imdb_id": "tt1743681",
     "title": "Yosuga no sora"
@@ -7813,6 +7831,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6569": {
+    "imdb_id": "tt2176165",
+    "title": "Another",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "6464": {
     "imdb_id": "tt1907374",
     "title": "Sekaiichi hatsukoi",
@@ -7842,12 +7866,6 @@
     "title": "Lagrange: The Flower of Rin-ne",
     "fromSeason": 0,
     "fromEpisode": 1
-  },
-  "7019": {
-    "imdb_id": "tt2176885",
-    "title": "Lagrange: The Flower of Rin-ne",
-    "fromSeason": 0,
-    "fromEpisode": 7
   },
   "7019": {
     "imdb_id": "tt2176885",
@@ -11097,6 +11115,48 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13237": {
+    "imdb_id": "tt4869896",
+    "title": "Overlord",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "41174": {
+    "imdb_id": "tt4869896",
+    "title": "Overlord",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "11166": {
+    "imdb_id": "tt4869896",
+    "title": "Overlord",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "12239": {
+    "imdb_id": "tt4869896",
+    "title": "Overlord",
+    "fromSeason": 0,
+    "fromEpisode": 9
+  },
+  "14269": {
+    "imdb_id": "tt4869896",
+    "title": "Overlord",
+    "fromSeason": 0,
+    "fromEpisode": 16
+  },
+  "41482": {
+    "imdb_id": "tt4869896",
+    "title": "Overlord",
+    "fromSeason": 0,
+    "fromEpisode": 29
+  },
+  "42044": {
+    "imdb_id": "tt4869896",
+    "title": "Overlord",
+    "fromSeason": 0,
+    "fromEpisode": 42
+  },
   "9967": {
     "imdb_id": "tt4731072",
     "title": "Food Wars: Shokugeki no Soma",
@@ -14123,12 +14183,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "13237": {
-    "imdb_id": "tt4869896",
-    "title": "Overlord",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "13252": {
     "imdb_id": "tt7131720",
     "title": "Kakegurui",
@@ -14992,6 +15046,10 @@
   },
   "13908": {
   },
+  "13911": {
+    "imdb_id": "tt7451284",
+    "title": "Batman Ninja"
+  },
   "13932": {
     "imdb_id": "tt7725942",
     "title": "Rokuhoudou Yotsuio Biyori",
@@ -15720,12 +15778,6 @@
     "title": "Jashin-chan Dropkick",
     "fromSeason": 0,
     "fromEpisode": 2
-  },
-  "41174": {
-    "imdb_id": "tt4869896",
-    "title": "Overlord",
-    "fromSeason": 3,
-    "fromEpisode": 1
   },
   "41175": {
     "imdb_id": "tt7415066",
