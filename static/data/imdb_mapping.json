@@ -3011,6 +3011,10 @@
     "imdb_id": "tt0368185",
     "title": "Puni Puni Poemy"
   },
+  "522": {
+    "imdb_id": "tt0348121",
+    "title": "Steamboy"
+  },
   "524": {
     "imdb_id": "tt0280240",
     "title": "The Big O"
@@ -6850,6 +6854,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "5811": {
+    "imdb_id": "tt1694025",
+    "title": "Cat Planet Cuties",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "4662": {
     "imdb_id": "tt1515976",
     "title": "11 Eyes",
@@ -7216,6 +7226,12 @@
     "title": "Amagami SS",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  "5943": {
+    "imdb_id": "tt1685397",
+    "title": "Amagami SS",
+    "fromSeason": 0,
+    "fromEpisode": 7
   },
   "5469": {
     "imdb_id": "tt7947592",
@@ -7928,6 +7944,36 @@
     "title": "High School DxD",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "7258": {
+    "imdb_id": "tt2230051",
+    "title": "High School DxD",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "8514": {
+    "imdb_id": "tt2230051",
+    "title": "High School DxD",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "12677": {
+    "imdb_id": "tt2230051",
+    "title": "High School DxD",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "6801": {
+    "imdb_id": "tt2230051",
+    "title": "High School DxD BorN: Yomigaeranai Fushichou",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
+  "11598": {
+    "imdb_id": "tt2230051",
+    "title": "High School DxD BorN: Yomigaeranai Fushichou",
+    "fromSeason": 3,
+    "fromEpisode": 13
   },
   "6552": {
     "imdb_id": "tt2760784",
@@ -8699,12 +8745,6 @@
     "fromSeason": 6,
     "fromEpisode": 1
   },
-  "7258": {
-    "imdb_id": "tt2230051",
-    "title": "High School DxD",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "7273": {
     "imdb_id": "tt2391599",
     "title": "Oshiri kajiri mushi",
@@ -9196,6 +9236,10 @@
     "title": "Gatchaman Crowds",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  "7682": {
+    "imdb_id": "tt3392330",
+    "title": "Short Peace"
   },
   "7768": {
     "imdb_id": "tt3398976",
@@ -10578,12 +10622,6 @@
     "imdb_id": "tt2575728",
     "title": "Ai Mai Mi",
     "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  "8514": {
-    "imdb_id": "tt2230051",
-    "title": "High School DxD",
-    "fromSeason": 3,
     "fromEpisode": 1
   },
   "8521": {
@@ -12714,12 +12752,6 @@
     "fromSeason": 7,
     "fromEpisode": 1
   },
-  "11598": {
-    "imdb_id": "tt2230051",
-    "title": "High School DxD BorN: Yomigaeranai Fushichou",
-    "fromSeason": 3,
-    "fromEpisode": 13
-  },
   "11599": {
     "imdb_id": "tt5532808",
     "title": "This Boy Is a Professional Wizard",
@@ -13835,12 +13867,6 @@
   "12673": {
     "imdb_id": "tt6453340",
     "title": "Seiren"
-  },
-  "12677": {
-    "imdb_id": "tt2230051",
-    "title": "High School DxD",
-    "fromSeason": 4,
-    "fromEpisode": 1
   },
   "12678": {
     "imdb_id": "tt3981902",
@@ -15097,6 +15123,16 @@
     "title": "Kokkoku"
   },
   "13981": {
+    "imdb_id": "tt13469436",
+    "title": "Gurazeni",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41948": {
+    "imdb_id": "tt13469436",
+    "title": "Gurazeni",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "3676": {
     "imdb_id": "tt1308847",
@@ -17731,6 +17767,12 @@
     "imdb_id": "tt12803708",
     "title": "Dogeza de Tanondemita",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43605": {
+    "imdb_id": "tt12803708",
+    "title": "Dogeza de Tanondemita",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "43595": {
