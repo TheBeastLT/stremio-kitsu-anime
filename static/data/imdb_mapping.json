@@ -6309,7 +6309,45 @@
   },
   "3021": {
     "imdb_id": "tt1216222",
-    "title": "To Love-Ru"
+    "title": "To Love-Ru",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5626": {
+    "imdb_id": "tt1216222",
+    "title": "To Love-Ru",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "7007": {
+    "imdb_id": "tt1216222",
+    "title": "To Love-Ru",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "10078": {
+    "imdb_id": "tt1216222",
+    "title": "To Love-Ru",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "4233": {
+    "imdb_id": "tt1216222",
+    "title": "To Love-Ru",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "7047": {
+    "imdb_id": "tt1216222",
+    "title": "To Love-Ru",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
+  "11418": {
+    "imdb_id": "tt1216222",
+    "title": "To Love-Ru",
+    "fromSeason": 0,
+    "fromEpisode": 13
   },
   "3029": {
     "imdb_id": "tt1309395",
@@ -7343,12 +7381,6 @@
     "imdb_id": "tt1639109",
     "title": "Angel Beats!",
     "fromSeason": 0,
-    "fromEpisode": 1
-  },
-  "5626": {
-    "imdb_id": "tt1743493",
-    "title": "Motto to Love Ru",
-    "fromSeason": 1,
     "fromEpisode": 1
   },
   "5646": {
@@ -8410,12 +8442,6 @@
   "7005": {
     "imdb_id": "tt2309408",
     "title": "Little Busters!",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "7007": {
-    "imdb_id": "tt2341806",
-    "title": "To Love-Ru Darkness",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -11409,12 +11435,6 @@
     "imdb_id": "tt5024410",
     "title": "Aria the Scarlet Ammo AA"
   },
-  "10078": {
-    "imdb_id": "tt2341806",
-    "title": "To Love-Ru Darkness",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "10082": {
     "imdb_id": "tt4584326",
     "title": "Seraph of the End",
@@ -11651,6 +11671,30 @@
     "title": "One Punch Man: Wanpanman",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "12566": {
+    "imdb_id": "tt4508902",
+    "title": "One Punch Man: Wanpanman",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "11402": {
+    "imdb_id": "tt4508902",
+    "title": "One Punch Man: Wanpanman",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "11430": {
+    "imdb_id": "tt4508902",
+    "title": "One Punch Man: Wanpanman",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "42703": {
+    "imdb_id": "tt4508902",
+    "title": "One Punch Man: Wanpanman",
+    "fromSeason": 0,
+    "fromEpisode": 9
   },
   "10742": {
     "imdb_id": "tt2785038",
@@ -13741,12 +13785,6 @@
   "12565": {
     "imdb_id": "tt6096128",
     "title": "Orange: Future"
-  },
-  "12566": {
-    "imdb_id": "tt4508902",
-    "title": "One Punch Man: Wanpanman",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "12567": {
   },
