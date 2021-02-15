@@ -4047,6 +4047,12 @@
     "imdb_id": "tt0889540",
     "title": "Tsuyokiss: Cool×Sweet"
   },
+  "1079": {
+    "imdb_id": "tt0846454",
+    "title": "Gun-dou Musashi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "1088": {
     "imdb_id": "tt0857297",
     "title": "Welcome to the NHK!"
@@ -5442,6 +5448,12 @@
   "2066": {
     "imdb_id": "tt0238782",
     "title": "Flint: The Time Detective"
+  },
+  "2068": {
+    "imdb_id": "tt0488465",
+    "title": "Red Baron",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "2073": {
     "imdb_id": "tt0331167",
@@ -6970,6 +6982,10 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "4582": {
+    "imdb_id": "tt0189254",
+    "title": "Cutey Honey Flash"
+  },
   "4597": {
   },
   "4604": {
@@ -7382,6 +7398,10 @@
     "title": "Angel Beats!",
     "fromSeason": 0,
     "fromEpisode": 1
+  },
+  "5613": {
+    "imdb_id": "tt1776196",
+    "title": "Fullmetal Alchemist: The Sacred Star of Milos"
   },
   "5646": {
     "imdb_id": "tt1910272",
@@ -7851,6 +7871,10 @@
     "imdb_id": "tt4483100",
     "title": "Mobile Suit Gundam: The Origin I - Blue-Eyed Casval"
   },
+  "6436": {
+    "imdb_id": "tt2220674",
+    "title": "Library War: Wings of Revolution"
+  },
   "6439": {
     "imdb_id": "tt2196757",
     "title": "Inu x Boku SS"
@@ -7930,6 +7954,12 @@
   "6481": {
     "imdb_id": "tt2176249",
     "title": "Brave 10"
+  },
+  "6487": {
+    "imdb_id": "tt4038636",
+    "title": "Akadô Suzunosuke",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "6489": {
     "imdb_id": "tt2198397",
@@ -14186,6 +14216,12 @@
     "imdb_id": "tt6357658",
     "title": "Baki",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43599": {
+    "imdb_id": "tt6357658",
+    "title": "Baki",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "13143": {},
