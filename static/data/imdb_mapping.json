@@ -6129,6 +6129,10 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "2785": {
+    "imdb_id": "tt1056437",
+    "title": "The Sky Crawlers"
+  },
   "2791": {
     "imdb_id": "tt8531724",
     "title": "My 2c that may make NO sense"
@@ -6713,6 +6717,12 @@
   "3899": {
     "imdb_id": "tt1411815",
     "title": "One Outs"
+  },
+  "3917": {
+    "imdb_id": "tt1352417",
+    "title": "Kurokami: The Animation",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "3919": {
     "imdb_id": "tt1480925",
@@ -8192,6 +8202,10 @@
     "title": "Space Battleship Yamato 2199",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "6649": {
+    "imdb_id": "tt2086830",
+    "title": "Dwae-ji-ui wang"
   },
   "6652": {
     "imdb_id": "tt2085795",
@@ -10890,6 +10904,10 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "8672": {
+    "imdb_id": "tt3646944",
+    "title": "Attack on Titan: Crimson Bow and Arrow"
+  },
   "8673": {
     "imdb_id": "tt3646946",
     "title": "Attack on Titan: The Wings of Freedom"
@@ -12386,6 +12404,16 @@
     "title": "High School Fleet",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "12579": {
+    "imdb_id": "tt5567348",
+    "title": "High School Fleet",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "41259": {
+    "imdb_id": "tt11639420",
+    "title": "High School Fleet the Movie"
   },
   "11347": {
     "imdb_id": "tt5515402",
