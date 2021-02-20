@@ -1710,6 +1710,22 @@
     "fromSeason": 5,
     "fromEpisode": 1
   },
+  "2668": {
+    "imdb_id": "tt0303503",
+    "title": "Ojamajo Doremi Sharp Movie",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "2669": {
+    "imdb_id": "tt0303503",
+    "title": "Ojamajo Doremi Sharp Movie",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "43221": {
+    "imdb_id": "tt11867418",
+    "title": "Looking for Magical DoReMi"
+  },
   "321": {
     "imdb_id": "tt2657330",
     "title": "Ultimate Girls"
@@ -3210,6 +3226,12 @@
   "640": {
     "imdb_id": "tt0447582",
     "title": "Comic Party"
+  },
+  "642": {
+    "imdb_id": "tt1576820",
+    "title": "Patapata hikousen no bouken",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "643": {
     "imdb_id": "tt1561921",
@@ -4882,6 +4904,12 @@
   "1533": {
     "imdb_id": "tt5914182",
     "title": "Beast Fighter - The Apocalypse"
+  },
+  "1535": {
+    "imdb_id": "tt0367369",
+    "title": "MegaMan: NT Warrior",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "1537": {
     "imdb_id": "tt3425836",
@@ -14319,6 +14347,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "42112": {
+    "imdb_id": "tt7131720",
+    "title": "Kakegurui",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "13257": {
     "imdb_id": "tt7158574",
     "title": "Koi to uso",
@@ -16626,6 +16660,10 @@
     "title": "Kono Oto Tomare!",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "42106": {
+    "imdb_id": "tt9563632",
+    "title": "The Wonderland"
   },
   "42108": {
     "imdb_id": "tt9310328",
