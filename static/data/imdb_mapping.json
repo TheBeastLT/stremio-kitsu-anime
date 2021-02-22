@@ -1666,7 +1666,15 @@
   },
   "313": {
     "imdb_id": "tt4431126",
-    "title": "W Wish"
+    "title": "W Wish",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5969": {
+    "imdb_id": "tt4431126",
+    "title": "W Wish",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "314": {
     "imdb_id": "tt0802914",
@@ -2229,6 +2237,18 @@
   "427": {
     "imdb_id": "tt1059950",
     "title": "One Piece: Karakuri Castle's Mecha Giant Soldier"
+  },
+  "1906": {
+    "imdb_id": "tt1037116",
+    "title": "One Piece: Episode of Alabasta - The Desert Princess and the Pirates"
+  },
+  "3300": {
+    "imdb_id": "tt1206326",
+    "title": "One Piece: Episode of Chopper Plus - Bloom in the Winter, Miracle Sakura"
+  },
+  "5987": {
+    "imdb_id": "tt1865467",
+    "title": "One Piece 3D: Straw Hat Chase"
   },
   "428": {
     "imdb_id": "tt1012788",
@@ -3181,7 +3201,15 @@
   },
   "596": {
     "imdb_id": "tt0994633",
-    "title": "Tsuki wa higashi ni hi wa nishi ni: Operation Sanctuary"
+    "title": "Tsuki wa higashi ni hi wa nishi ni: Operation Sanctuary",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6835": {
+    "imdb_id": "tt0994633",
+    "title": "Tsuki wa higashi ni hi wa nishi ni: Operation Sanctuary",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "597": {
     "imdb_id": "tt2223998",
@@ -3377,7 +3405,15 @@
   },
   "736": {
     "imdb_id": "tt1155605",
-    "title": "A Little Snow Fairy Sugar"
+    "title": "A Little Snow Fairy Sugar",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "904": {
+    "imdb_id": "tt1155605",
+    "title": "A Little Snow Fairy Sugar",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "741": {
     "imdb_id": "tt1179815",
@@ -13638,6 +13674,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "14261": {
+    "imdb_id": "tt9013220",
+    "title": "Armed Girl's Machiavellism",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "12267": {
     "imdb_id": "tt6402190",
     "title": "Masamune-kun's Revenge",
@@ -15992,8 +16034,8 @@
     "title": "Bloom into You"
   },
   "41263": {
-    "imdb_id": "tt7964088",
-    "title": "School Babysitters",
+    "imdb_id": "tt13760402",
+    "title": "Gakuen Basara - Samurai High School",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -16415,7 +16457,25 @@
     "imdb_id": "tt2560140",
     "title": "Attack on Titan",
     "fromSeason": 0,
-    "fromEpisode": 10
+    "fromEpisode": 2
+  },
+  "7694": {
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 0,
+    "fromEpisode": 11
+  },
+  "8674": {
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 0,
+    "fromEpisode": 15
+  },
+  "13718": {
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 0,
+    "fromEpisode": 20
   },
   "41990": {
     "imdb_id": "tt6517102",
@@ -16786,6 +16846,10 @@
   "42182": {
     "imdb_id": "tt10409756",
     "title": "Gorgeous Butterfly: Young Nobunaga"
+  },
+  "42184": {
+    "imdb_id": "tt9232810",
+    "title": "Laidbackers"
   },
   "42190": {
     "imdb_id": "tt9561862",
