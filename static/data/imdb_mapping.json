@@ -3247,6 +3247,12 @@
     "imdb_id": "tt0469008",
     "title": "Tokyo Mew Mew"
   },
+  "629": {
+    "imdb_id": "tt0460384",
+    "title": "Uta kata",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "631": {
     "imdb_id": "tt0095474",
     "title": "Vampire Princess Miyu"
@@ -6866,6 +6872,12 @@
     "imdb_id": "tt1343046",
     "title": "Detective Conan: The Raven Chaser"
   },
+  "4124": {
+    "imdb_id": "tt1456228",
+    "title": "Kon'nichiwa An: Bifô Guriin Gêburusu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "4138": {
     "imdb_id": "tt1343645",
     "title": "Pandora Hearts"
@@ -7456,6 +7468,10 @@
     "title": "A Certain Magical Index",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  "5544": {
+    "imdb_id": "tt2555422",
+    "title": "Akage no An: Gurîn Gêburuzu e no michi"
   },
   "5583": {
     "imdb_id": "tt1929675",
@@ -11774,6 +11790,36 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13413": {
+    "imdb_id": "tt3061046",
+    "title": "Steven Universe",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "13414": {
+    "imdb_id": "tt3061046",
+    "title": "Steven Universe",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "13417": {
+    "imdb_id": "tt3061046",
+    "title": "Steven Universe",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "13423": {
+    "imdb_id": "tt3061046",
+    "title": "Steven Universe",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "42605": {
+    "imdb_id": "tt13714610",
+    "title": "Steven Universe Future",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "10740": {
     "imdb_id": "tt4508902",
     "title": "One Punch Man: Wanpanman",
@@ -14547,30 +14593,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "13413": {
-    "imdb_id": "tt3061046",
-    "title": "Steven Universe",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  "13414": {
-    "imdb_id": "tt3061046",
-    "title": "Steven Universe",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
-  "13417": {
-    "imdb_id": "tt3061046",
-    "title": "Steven Universe",
-    "fromSeason": 4,
-    "fromEpisode": 1
-  },
-  "13423": {
-    "imdb_id": "tt3061046",
-    "title": "Steven Universe",
-    "fromSeason": 5,
-    "fromEpisode": 1
-  },
   "13425": {
     "imdb_id": "tt2580046",
     "title": "Miraculous: Tales of Ladybug & Cat Noir",
@@ -15777,6 +15799,12 @@
     "imdb_id": "tt8489330",
     "title": "Double Decker! Doug & Kirill",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42224": {
+    "imdb_id": "tt8489330",
+    "title": "Double Decker! Doug & Kirill",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "41076": {
