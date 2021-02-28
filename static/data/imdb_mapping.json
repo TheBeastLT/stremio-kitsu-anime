@@ -6834,6 +6834,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "41985": {
+    "imdb_id": "tt10534392",
+    "title": "Inazuma Eleven Ares",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "5580": {
     "imdb_id": "tt1794796",
     "title": "Inazuma Eleven: The Movie"
@@ -7333,6 +7339,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "5382": {
+    "imdb_id": "tt1189033",
+    "title": "Dokutâ suranpu"
+  },
   "5404": {
     "imdb_id": "tt1783878",
     "title": "Digimon Xros Wars",
@@ -7592,6 +7602,10 @@
   "5853": {
     "imdb_id": "tt1773185",
     "title": "Puella Magi Madoka Magica"
+  },
+  "5855": {
+    "imdb_id": "tt1839494",
+    "title": "Journey to Agartha"
   },
   "5895": {
     "imdb_id": "tt2629496",
@@ -8223,6 +8237,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6605": {
+    "imdb_id": "tt2336371",
+    "title": "Midori no neko"
+  },
   "6607": {
     "imdb_id": "tt5879522",
     "title": "Gdgd Fairies",
@@ -8648,6 +8666,12 @@
   "7129": {
     "imdb_id": "tt2425098",
     "title": "Magi: The Kingdom of Magic",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7130": {
+    "imdb_id": "tt2342748",
+    "title": "Sasami-san@Ganbaranai",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -13087,6 +13111,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11782": {
+    "imdb_id": "tt5749826",
+    "title": "12-Sai. Chiccha na Mune no Tokimeki",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "12270": {
+    "imdb_id": "tt5749826",
+    "title": "12-Sai. Chiccha na Mune no Tokimeki",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "8481": {
+    "imdb_id": "tt5749826",
+    "title": "12-Sai. Chiccha na Mune no Tokimeki",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "11784": {
     "imdb_id": "tt5373222",
     "title": "My Wife Is the Student Council President",
@@ -16677,6 +16719,12 @@
     "imdb_id": "tt9828800",
     "title": "Senryuu Girl"
   },
+  "42078": {
+    "imdb_id": "tt10711718",
+    "title": "Miru Tights",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42079": {
     "imdb_id": "tt10974198",
     "title": "Cautious Hero: The Hero Is Overpowered but Overly Cautious"
@@ -16930,6 +16978,10 @@
     "title": "Number 24",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "42210": {
+    "imdb_id": "tt10622220",
+    "title": "Ningen shikkaku"
   },
   "42213": {
     "imdb_id": "tt2250192",
@@ -18033,9 +18085,21 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43703": {
+    "imdb_id": "tt13352232",
+    "title": "High-Rise Invasion",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43716": {
     "imdb_id": "tt13405062",
     "title": "Back Arrow",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43750": {
+    "imdb_id": "tt13884016",
+    "title": "Maiko-san Chi no Makanai-san",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -18060,6 +18124,12 @@
   "43818": {
     "imdb_id": "tt13308820",
     "title": "Kai Byoui Ramune",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43821": {
+    "imdb_id": "tt13721276",
+    "title": "Tropical-Rouge! Precure",
     "fromSeason": 1,
     "fromEpisode": 1
   },
