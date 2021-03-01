@@ -1477,6 +1477,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "1499": {
+    "imdb_id": "tt0328733",
+    "title": "Beyblade",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "1498": {
+    "imdb_id": "tt0328733",
+    "title": "Beyblade",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "264": {
     "imdb_id": "tt0447582",
     "title": "Comic Party"
@@ -6966,6 +6978,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "4365": {
+    "imdb_id": "tt1674928",
+    "title": "Beyblade: Metal Fusion",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5326": {
+    "imdb_id": "tt1674928",
+    "title": "Beyblade: Metal Fusion",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6152": {
+    "imdb_id": "tt1674928",
+    "title": "Beyblade: Metal Fusion",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "4397": {
     "imdb_id": "tt1745240",
     "title": "Kimi ni todoke",
@@ -7482,6 +7512,12 @@
   "5544": {
     "imdb_id": "tt2555422",
     "title": "Akage no An: Gurîn Gêburuzu e no michi"
+  },
+  "5562": {
+    "imdb_id": "tt1679482",
+    "title": "Supernatural: The Animation",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "5583": {
     "imdb_id": "tt1929675",
@@ -8200,6 +8236,78 @@
   "6589": {
     "imdb_id": "tt2250192",
     "title": "Sword Art Online",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8174": {
+    "imdb_id": "tt2250192",
+    "title": "Sword Art Online",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "13893": {
+    "imdb_id": "tt2250192",
+    "title": "Sword Art Online",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "7372": {
+    "imdb_id": "tt2250192",
+    "title": "Sword Art Online",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "7914": {
+    "imdb_id": "tt2250192",
+    "title": "Sword Art Online",
+    "fromSeason": 0,
+    "fromEpisode": 10
+  },
+  "8196": {
+    "imdb_id": "tt2250192",
+    "title": "Sword Art Online",
+    "fromSeason": 0,
+    "fromEpisode": 11
+  },
+  "9784": {
+    "imdb_id": "tt2250192",
+    "title": "Sword Art Online",
+    "fromSeason": 0,
+    "fromEpisode": 12
+  },
+  "9963": {
+    "imdb_id": "tt2250192",
+    "title": "Sword Art Online",
+    "fromSeason": 0,
+    "fromEpisode": 13
+  },
+  "40949": {
+    "imdb_id": "tt2250192",
+    "title": "Sword Art Online",
+    "fromSeason": 0,
+    "fromEpisode": 23
+  },
+  "42154": {
+    "imdb_id": "tt2250192",
+    "title": "Sword Art Online",
+    "fromSeason": 0,
+    "fromEpisode": 24
+  },
+  "42610": {
+    "imdb_id": "tt2250192",
+    "title": "Sword Art Online",
+    "fromSeason": 0,
+    "fromEpisode": 25
+  },
+  "43286": {
+    "imdb_id": "tt2250192",
+    "title": "Sword Art Online",
+    "fromSeason": 0,
+    "fromEpisode": 26
+  },
+  "13894": {
+    "imdb_id": "tt7978710",
+    "title": "Sword Art Online: Alternative Gun Gale Online",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -9919,10 +10027,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "7914": {
-    "imdb_id": "tt3241196",
-    "title": "Sword Art Online Extra Edition"
-  },
   "7924": {
     "imdb_id": "tt3069742",
     "title": "Captain Tsubasa: Road to 2002",
@@ -10435,12 +10539,6 @@
   "8163": {
     "imdb_id": "tt3451740",
     "title": "Daimidaler: Prince vs Penguin Empire"
-  },
-  "8174": {
-    "imdb_id": "tt2250192",
-    "title": "Sword Art Online",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "8184": {},
   "8192": {},
@@ -15294,18 +15392,6 @@
     "imdb_id": "tt7058854",
     "title": "Haikara-San: Here Comes Miss Modern"
   },
-  "13893": {
-    "imdb_id": "tt2250192",
-    "title": "Sword Art Online",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
-  "13894": {
-    "imdb_id": "tt7978710",
-    "title": "Sword Art Online: Alternative Gun Gale Online",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "13901": {
   },
   "13908": {
@@ -16149,6 +16235,12 @@
     "imdb_id": "tt8788458",
     "title": "The Promised Neverland",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "44076": {
+    "imdb_id": "tt8788458",
+    "title": "The Promised Neverland",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "41313": {
