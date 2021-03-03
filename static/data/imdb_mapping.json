@@ -7525,6 +7525,36 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "7733": {
+    "imdb_id": "tt1929675",
+    "title": "Infinite Stratos",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6350": {
+    "imdb_id": "tt1929675",
+    "title": "Infinite Stratos",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "7909": {
+    "imdb_id": "tt1929675",
+    "title": "Infinite Stratos",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "8137": {
+    "imdb_id": "tt1929675",
+    "title": "Infinite Stratos",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
+  "12323": {
+    "imdb_id": "tt1929675",
+    "title": "Infinite Stratos",
+    "fromSeason": 0,
+    "fromEpisode": 5
+  },
   "5591": {
     "imdb_id": "tt1639109",
     "title": "Angel Beats!",
@@ -9741,12 +9771,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "7733": {
-    "imdb_id": "tt1929675",
-    "title": "Infinite Stratos",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "7744": {
     "imdb_id": "tt3247574",
     "title": "Gifuu Doudou!!: Kanetsugu to Keiji",
@@ -10343,7 +10367,15 @@
   },
   "8060": {
     "imdb_id": "tt3341584",
-    "title": "Recently, My Sister is Unusual"
+    "title": "Recently, My Sister is Unusual",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8142": {
+    "imdb_id": "tt3341584",
+    "title": "Recently, My Sister is Unusual",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "8061": {
     "imdb_id": "tt1694038",
@@ -15087,6 +15119,36 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11602": {
+    "imdb_id": "tt8010544",
+    "title": "Persona 5: The Animation",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "41972": {
+    "imdb_id": "tt8010544",
+    "title": "Persona 5: The Animation",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "42090": {
+    "imdb_id": "tt8010544",
+    "title": "Persona 5: The Animation",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
+  "42354": {
+    "imdb_id": "tt8010544",
+    "title": "Persona 5: The Animation",
+    "fromSeason": 0,
+    "fromEpisode": 5
+  },
+  "43338": {
+    "imdb_id": "tt8010544",
+    "title": "Persona 5: The Animation",
+    "fromSeason": 0,
+    "fromEpisode": 6
+  },
   "13686": {
     "imdb_id": "tt7742090",
     "title": "Hakyu Hoshin Engi",
@@ -16867,6 +16929,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42076": {
+    "imdb_id": "tt9573854",
+    "title": "Lord El-Melloi II's Case Files: Rail Zeppelin Grace Note",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "42093": {
     "imdb_id": "tt10671412",
     "title": "Nobunaga teacher's young bride",
@@ -17214,6 +17282,10 @@
     "title": "Chidori RSC",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "42295": {
+    "imdb_id": "tt10675392",
+    "title": "Saezuru Tori Wa Habatakanai: The Clouds Gather"
   },
   "42297": {
     "imdb_id": "tt10635210",
@@ -17564,6 +17636,10 @@
   "42586": {
     "imdb_id": "tt11032374",
     "title": "Demon Slayer the Movie: Mugen Train"
+  },
+  "42659": {
+    "imdb_id": "tt11193002",
+    "title": "Umibe no Étranger"
   },
   "42470": {
     "imdb_id": "tt11405408",
