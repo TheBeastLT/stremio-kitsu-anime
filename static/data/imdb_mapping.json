@@ -5075,6 +5075,10 @@
     "imdb_id": "tt1029248",
     "title": "Guardian of the Sacred Spirit"
   },
+  "1646": {
+    "imdb_id": "tt0495596",
+    "title": "Tales from Earthsea"
+  },
   "1649": {
     "imdb_id": "tt0158772",
     "title": "Zeoraima: Project Hades"
@@ -5267,6 +5271,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "1828": {
+    "imdb_id": "tt0203895",
+    "title": "The Sea Prince and the Fire Child"
+  },
   "1829": {
     "imdb_id": "tt0976008",
     "title": "El Cazador de la Bruja"
@@ -5434,6 +5442,10 @@
   "1991": {
     "imdb_id": "tt0377231",
     "title": "Zambot 3"
+  },
+  "1993": {
+    "imdb_id": "tt0084881",
+    "title": "Waga seishun no Arcadia"
   },
   "1995": {
     "imdb_id": "tt0434660",
@@ -6677,6 +6689,12 @@
     "imdb_id": "tt1485763",
     "title": "One Piece: Strong World"
   },
+  "3503": {
+    "imdb_id": "tt1300170",
+    "title": "Xam'd: Lost Memories",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3508": {
     "imdb_id": "tt1394286",
     "title": "Chrome Shelled Regios",
@@ -6741,6 +6759,24 @@
     "imdb_id": "tt0765441",
     "title": "Digimon Savers Special",
     "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "3760": {
+    "imdb_id": "tt1356884",
+    "title": "White Album",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4455": {
+    "imdb_id": "tt1356884",
+    "title": "White Album",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "7697": {
+    "imdb_id": "tt2942224",
+    "title": "White Album 2",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "3761": {
@@ -7045,6 +7081,10 @@
     "title": "Cat Planet Cuties",
     "fromSeason": 0,
     "fromEpisode": 1
+  },
+  "4459": {
+    "imdb_id": "tt1488591",
+    "title": "Professor Layton and the Eternal Diva"
   },
   "4662": {
     "imdb_id": "tt1515976",
@@ -8557,7 +8597,15 @@
   },
   "6734": {
     "imdb_id": "tt2340511",
-    "title": "Dusk Maiden of Amnesia"
+    "title": "Dusk Maiden of Amnesia",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7093": {
+    "imdb_id": "tt2340511",
+    "title": "Dusk Maiden of Amnesia",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "6739": {
     "imdb_id": "tt2338857",
@@ -8782,6 +8830,12 @@
   "7107": {
     "imdb_id": "tt2293882",
     "title": "Chitose Get You!!"
+  },
+  "7108": {
+    "imdb_id": "tt2552224",
+    "title": "Vividred Operation",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "7109": {
     "imdb_id": "tt2309312",
@@ -9391,7 +9445,15 @@
   },
   "7617": {
     "imdb_id": "tt2942202",
-    "title": "Unbreakable Machine Doll"
+    "title": "Unbreakable Machine Doll",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8073": {
+    "imdb_id": "tt2942202",
+    "title": "Unbreakable Machine Doll",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "7622": {
     "imdb_id": "tt2942218",
@@ -9598,10 +9660,6 @@
     "title": "Magi: The Kingdom of Magic",
     "fromSeason": 2,
     "fromEpisode": 1
-  },
-  "7697": {
-    "imdb_id": "tt2942224",
-    "title": "White Album 2"
   },
   "7698": {
     "imdb_id": "tt2632048",
@@ -10490,6 +10548,12 @@
     "imdb_id": "tt3539986",
     "title": "Mushishi Tokubetsu-hen: Hihamukage"
   },
+  "8126": {
+    "imdb_id": "tt3696476",
+    "title": "Yu-Gi-Oh! Arc-V",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "8133": {
     "imdb_id": "tt3398540",
     "title": "Haikyuu!!",
@@ -11119,6 +11183,24 @@
     "title": "The Testament of Sister New Devil",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "10757": {
+    "imdb_id": "tt4219258",
+    "title": "The Testament of Sister New Devil",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "10143": {
+    "imdb_id": "tt4219258",
+    "title": "The Testament of Sister New Devil",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "10779": {
+    "imdb_id": "tt4219258",
+    "title": "The Testament of Sister New Devil",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "8657": {
     "imdb_id": "tt6448688",
@@ -12036,12 +12118,6 @@
     "imdb_id": "tt4831392",
     "title": "Monster Musume: Everyday Life with Monster Girls",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "10757": {
-    "imdb_id": "tt4219258",
-    "title": "The Testament of Sister New Devil",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "10760": {
@@ -16962,6 +17038,12 @@
   "42106": {
     "imdb_id": "tt9563632",
     "title": "The Wonderland"
+  },
+  "42107": {
+    "imdb_id": "tt9288848",
+    "title": "Pacific Rim: The Black",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "42108": {
     "imdb_id": "tt9310328",
