@@ -3351,7 +3351,21 @@
   },
   "695": {
     "imdb_id": "tt0495212",
-    "title": "Hellsing Ultimate"
+    "title": "Hellsing Ultimate",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6453": {
+    "imdb_id": "tt0495212",
+    "title": "Hellsing Ultimate",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "4782": {
+    "imdb_id": "tt0495212",
+    "title": "Hellsing Ultimate",
+    "fromSeason": 0,
+    "fromEpisode": 4
   },
   "699": {
     "imdb_id": "tt0250155",
@@ -3425,7 +3439,9 @@
   },
   "732": {
     "imdb_id": "tt5925320",
-    "title": "The King of Fighters: Another Day"
+    "title": "The King of Fighters: Another Day",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "736": {
     "imdb_id": "tt1155605",
@@ -6391,6 +6407,18 @@
     "imdb_id": "tt1215996",
     "title": "Blassreiter"
   },
+  "2996": {
+    "imdb_id": "tt1161688",
+    "title": "Shigofumi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3756": {
+    "imdb_id": "tt1161688",
+    "title": "Shigofumi",
+    "fromSeason": 1,
+    "fromEpisode": 13
+  },
   "2999": {
     "imdb_id": "tt1161683",
     "title": "Porufi no nagai tabi"
@@ -7369,6 +7397,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "5767": {
+    "imdb_id": "tt1685401",
+    "title": "Highschool of the Dead",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "5190": {
     "imdb_id": "tt2078651",
     "title": "The Story of Mr. Sorry"
@@ -7694,12 +7728,6 @@
   "5766": {
     "imdb_id": "tt1882240",
     "title": "Beelzebub"
-  },
-  "5767": {
-    "imdb_id": "tt1685401",
-    "title": "Highschool of the Dead",
-    "fromSeason": 0,
-    "fromEpisode": 1
   },
   "5781": {
     "imdb_id": "tt2549176",
@@ -12038,6 +12066,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11619": {
+    "imdb_id": "tt4917066",
+    "title": "Prison School",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "10735": {
     "imdb_id": "tt3061046",
     "title": "Steven Universe",
@@ -13455,6 +13489,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "12541": {
+    "imdb_id": "tt13117166",
+    "title": "Gekidol",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "11850": {
   },
   "11857": {
@@ -13641,6 +13681,18 @@
     "title": "91 Days",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "12515": {
+    "imdb_id": "tt5839706",
+    "title": "91 Days",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "13598": {
+    "imdb_id": "tt5839706",
+    "title": "91 Days",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "11965": {
     "imdb_id": "tt8526106",
@@ -15330,6 +15382,12 @@
   "13712": {
     "imdb_id": "tt7899036",
     "title": "Slow Start"
+  },
+  "13713": {
+    "imdb_id": "tt7254486",
+    "title": "The King of Fighters: Destiny",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "13714": {
   },
@@ -17347,6 +17405,12 @@
     "imdb_id": "tt10054654",
     "title": "Tokunana"
   },
+  "42273": {
+    "imdb_id": "tt11418344",
+    "title": "Drifting Dragons",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42278": {
   },
   "42279": {
@@ -18088,7 +18152,7 @@
     "fromEpisode": 1
   },
   "42935": {
-    "imdb_id": "tt12367868",
+    "imdb_id": "tt12980648",
     "title": "Higurashi: When They Cry - New",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -18311,6 +18375,12 @@
     "imdb_id": "tt13129190",
     "title": "SK8 the Infinity",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44177": {
+    "imdb_id": "tt13129190",
+    "title": "SK8 the Infinity",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "43608": {
