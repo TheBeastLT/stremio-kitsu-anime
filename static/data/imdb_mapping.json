@@ -7266,6 +7266,30 @@
     "fromSeason": 2,
     "fromEpisode": 25
   },
+  "5324": {
+    "imdb_id": "tt1584000",
+    "title": "Durarara!!",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "10707": {
+    "imdb_id": "tt1584000",
+    "title": "Durarara!!",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "11362": {
+    "imdb_id": "tt1584000",
+    "title": "Durarara!!",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
+  "11933": {
+    "imdb_id": "tt1584000",
+    "title": "Durarara!!",
+    "fromSeason": 0,
+    "fromEpisode": 5
+  },
   "4765": {
     "imdb_id": "tt1909447",
     "title": "Deadman Wonderland",
@@ -8066,6 +8090,12 @@
     "title": "Future Diary",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "7510": {
+    "imdb_id": "tt2069441",
+    "title": "Future Diary",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "6285": {
   },
@@ -8895,6 +8925,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "7814": {
+    "imdb_id": "tt2150751",
+    "title": "Chihayafuru",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "7125": {
     "imdb_id": "tt2377452",
     "title": "K",
@@ -9416,12 +9452,6 @@
     "title": "WataMote: No Matter How I Look at It, It's You Guys' Fault I'm Not Popular!",
     "fromSeason": 1,
     "fromEpisode": 1
-  },
-  "7510": {
-    "imdb_id": "tt2069441",
-    "title": "Future Diary",
-    "fromSeason": 1,
-    "fromEpisode": 27
   },
   "7515": {
     "imdb_id": "tt2591814",
@@ -10091,6 +10121,18 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "8152": {
+    "imdb_id": "tt3225270",
+    "title": "Noragami",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "11243": {
+    "imdb_id": "tt3225270",
+    "title": "Noragami",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
   "7882": {
     "imdb_id": "tt3621796",
     "title": "Fate/stay night: Unlimited Blade Works",
@@ -10542,6 +10584,12 @@
     "imdb_id": "tt3498072",
     "title": "The Kawai Complex Guide to Manors and Hostel Behavior",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8536": {
+    "imdb_id": "tt3498072",
+    "title": "The Kawai Complex Guide to Manors and Hostel Behavior",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "8095": {
@@ -11372,6 +11420,30 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "10082": {
+    "imdb_id": "tt4584326",
+    "title": "Seraph of the End",
+    "fromSeason": 1,
+    "fromEpisode": 13
+  },
+  "10881": {
+    "imdb_id": "tt4584326",
+    "title": "Seraph of the End",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "11342": {
+    "imdb_id": "tt4584326",
+    "title": "Seraph of the End",
+    "fromSeason": 0,
+    "fromEpisode": 11
+  },
+  "11462": {
+    "imdb_id": "tt4584326",
+    "title": "Seraph of the End",
+    "fromSeason": 0,
+    "fromEpisode": 12
+  },
   "8738": {
     "imdb_id": "tt3981544",
     "title": "Yuri Kuma Arashi"
@@ -11841,12 +11913,6 @@
     "imdb_id": "tt5024410",
     "title": "Aria the Scarlet Ammo AA"
   },
-  "10082": {
-    "imdb_id": "tt4584326",
-    "title": "Seraph of the End",
-    "fromSeason": 1,
-    "fromEpisode": 13
-  },
   "10083": {
     "imdb_id": "tt0988818",
     "title": "Gintama",
@@ -12279,8 +12345,6 @@
     "title": "Kamisama Kiss",
     "fromSeason": 0,
     "fromEpisode": 3
-  },
-  "10881": {
   },
   "10902": {
     "imdb_id": "tt7039224",
@@ -13771,6 +13835,12 @@
   "12038": {
     "imdb_id": "tt5824736",
     "title": "Shônen Ashibe GO! GO! Goma-chan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "12064": {
+    "imdb_id": "tt13887556",
+    "title": "Thus Spoke Kishibe Rohan",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -17589,6 +17659,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43428": {
+    "imdb_id": "tt13332914",
+    "title": "World Witches Hasshin Shimasu!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42429": {
     "imdb_id": "tt10635042",
     "title": "Sailor Moon Eternal"
@@ -18086,6 +18162,10 @@
     "title": "Gibiate",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "43146": {
+    "imdb_id": "tt12011442",
+    "title": "Burn the Witch"
   },
   "43204": {
     "imdb_id": "tt12305588",
