@@ -7559,6 +7559,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6326": {
+    "imdb_id": "tt1727444",
+    "title": "Panty & Stocking with Garterbelt",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "5507": {
     "imdb_id": "tt1780262",
     "title": "Is This a Zombie?",
@@ -8037,6 +8043,18 @@
     "imdb_id": "tt6562012",
     "title": "Student Council's Discretion",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6194": {
+    "imdb_id": "tt5568758",
+    "title": "Manyuu hikenchou",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41579": {
+    "imdb_id": "tt5568758",
+    "title": "Manyuu hikenchou",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "6203": {
@@ -9311,6 +9329,12 @@
     "imdb_id": "tt2904550",
     "title": "Sunday Without God",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7989": {
+    "imdb_id": "tt2904550",
+    "title": "Sunday Without God",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "7359": {
@@ -13599,6 +13623,12 @@
     "imdb_id": "tt7944664",
     "title": "B: The Beginning",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41401": {
+    "imdb_id": "tt7944664",
+    "title": "B: The Beginning",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "3179": {
