@@ -8325,17 +8325,41 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "6944": {
+    "imdb_id": "tt2230051",
+    "title": "High School DxD BorN: Yomigaeranai Fushichou",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
   "6801": {
     "imdb_id": "tt2230051",
     "title": "High School DxD BorN: Yomigaeranai Fushichou",
     "fromSeason": 0,
     "fromEpisode": 8
   },
+  "10744": {
+    "imdb_id": "tt2230051",
+    "title": "High School DxD BorN: Yomigaeranai Fushichou",
+    "fromSeason": 0,
+    "fromEpisode": 10
+  },
+  "11237": {
+    "imdb_id": "tt2230051",
+    "title": "High School DxD BorN: Yomigaeranai Fushichou",
+    "fromSeason": 0,
+    "fromEpisode": 11
+  },
   "11598": {
     "imdb_id": "tt2230051",
     "title": "High School DxD BorN: Yomigaeranai Fushichou",
-    "fromSeason": 3,
-    "fromEpisode": 13
+    "fromSeason": 0,
+    "fromEpisode": 15
+  },
+  "41208": {
+    "imdb_id": "tt2230051",
+    "title": "High School DxD BorN: Yomigaeranai Fushichou",
+    "fromSeason": 0,
+    "fromEpisode": 18
   },
   "6552": {
     "imdb_id": "tt2760784",
@@ -16895,6 +16919,12 @@
     "imdb_id": "tt11405370",
     "title": "Nekopara",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "13121": {
+    "imdb_id": "tt11405370",
+    "title": "Nekopara",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "41980": {
