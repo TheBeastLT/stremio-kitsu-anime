@@ -603,6 +603,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "3777": {
+    "imdb_id": "tt0476042",
+    "title": "Gunslinger Girl",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "114": {
     "imdb_id": "tt0426711",
     "title": "Hikaru no go"
@@ -6822,6 +6828,18 @@
     "imdb_id": "tt1278254",
     "title": "ChäoS;HEAd"
   },
+  "3878": {
+    "imdb_id": "tt1773213",
+    "title": "Tentai Senshi Sunred",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4622": {
+    "imdb_id": "tt1773213",
+    "title": "Tentai Senshi Sunred",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "3891": {
     "imdb_id": "tt1693435",
     "title": "Major",
@@ -6885,6 +6903,18 @@
     "title": "Fullmetal Alchemist: Brotherhood",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "4555": {
+    "imdb_id": "tt1355642",
+    "title": "Fullmetal Alchemist: Brotherhood",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "5154": {
+    "imdb_id": "tt1355642",
+    "title": "Fullmetal Alchemist: Brotherhood",
+    "fromSeason": 0,
+    "fromEpisode": 6
   },
   "4000": {
     "imdb_id": "tt2189248",
@@ -6969,6 +6999,18 @@
   "4138": {
     "imdb_id": "tt1343645",
     "title": "Pandora Hearts"
+  },
+  "4190": {
+    "imdb_id": "tt1409062",
+    "title": "Natsu no arashi!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4680": {
+    "imdb_id": "tt1409062",
+    "title": "Natsu no arashi!",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "4211": {
     "imdb_id": "tt1415054",
@@ -7162,12 +7204,6 @@
     "imdb_id": "tt1655610",
     "title": "Baka and Test: Summon the Beasts",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "4555": {
-    "imdb_id": "tt1355642",
-    "title": "Fullmetal Alchemist: Brotherhood",
-    "fromSeason": 0,
     "fromEpisode": 1
   },
   "4572": {
@@ -9524,7 +9560,7 @@
   "7553": {
     "imdb_id": "tt2909912",
     "title": "Silver Spoon",
-    "fromSeason": 2,
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "7561": {
@@ -12618,6 +12654,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11665": {
+    "imdb_id": "tt5334292",
+    "title": "Dimension W",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "12079": {
+    "imdb_id": "tt5334292",
+    "title": "Dimension W",
+    "fromSeason": 0,
+    "fromEpisode": 6
+  },
   "11172": {
     "imdb_id": "tt6234680",
     "title": "ClassicaLoid",
@@ -15710,6 +15758,36 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "43108": {
+    "imdb_id": "tt5626028",
+    "title": "Boku No Hero Academia",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "12511": {
+    "imdb_id": "tt5626028",
+    "title": "Boku No Hero Academia",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "13313": {
+    "imdb_id": "tt5626028",
+    "title": "Boku No Hero Academia",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "14030": {
+    "imdb_id": "tt5626028",
+    "title": "Boku No Hero Academia",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "43485": {
+    "imdb_id": "tt5626028",
+    "title": "Boku No Hero Academia",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
   "42006": {
     "imdb_id": "tt11285348",
     "title": "Re: Zero kara Hajimeru Isekai Seikatsu: Hyouketsu no Kizuna"
@@ -17123,6 +17201,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42499": {
+    "imdb_id": "tt9826344",
+    "title": "Why the Hell are You Here, Teacher!?",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "42068": {
     "imdb_id": "tt9307686",
     "title": "Fire Force",
@@ -17769,6 +17853,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42472": {
+    "imdb_id": "tt10718334",
+    "title": "SD Gundam World Sangoku Soketsuden",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42476": {
     "imdb_id": "tt10978032",
     "title": "Kandagawa Jet Girls"
@@ -17837,6 +17927,12 @@
     "imdb_id": "tt11100658",
     "title": "Gundam Build Divers Re: Rise",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43144": {
+    "imdb_id": "tt11100658",
+    "title": "Gundam Build Divers Re: Rise",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "41994": {
@@ -18135,6 +18231,12 @@
     "imdb_id": "tt12448470",
     "title": "Dokyuu Hentai HxEros",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43544": {
+    "imdb_id": "tt12448470",
+    "title": "Dokyuu Hentai HxEros",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "42765": {
@@ -18547,6 +18649,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43667": {
+    "imdb_id": "tt13229964",
+    "title": "Godzilla: Singular Point",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43703": {
     "imdb_id": "tt13352232",
     "title": "High-Rise Invasion",
@@ -18616,6 +18724,12 @@
   "43853": {
     "imdb_id": "tt13592988",
     "title": "Idolls!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44087": {
+    "imdb_id": "tt14069590",
+    "title": "Dota: Dragon's Blood",
     "fromSeason": 1,
     "fromEpisode": 1
   }
