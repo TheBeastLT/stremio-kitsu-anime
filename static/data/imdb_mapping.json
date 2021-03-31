@@ -7168,6 +7168,18 @@
     "fromSeason": 1,
     "fromEpisode": 13
   },
+  "4474": {
+    "imdb_id": "tt1516239",
+    "title": "Kenpufâ",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6023": {
+    "imdb_id": "tt1516239",
+    "title": "Kenpufâ",
+    "fromSeason": 0,
+    "fromEpisode": 9
+  },
   "4477": {
     "imdb_id": "tt1440068",
     "title": "Tokyo Magnitude 8.0"
@@ -7729,11 +7741,23 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6389": {
+    "imdb_id": "tt1910272",
+    "title": "Steins;Gate",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "9957": {
     "imdb_id": "tt1910272",
     "title": "Steins;Gate",
     "fromSeason": 0,
-    "fromEpisode": 9
+    "fromEpisode": 3
+  },
+  "11574": {
+    "imdb_id": "tt1910272",
+    "title": "Steins;Gate",
+    "fromSeason": 0,
+    "fromEpisode": 7
   },
   "5649": {
     "imdb_id": "tt3138698",
@@ -7896,6 +7920,36 @@
   "5981": {
     "imdb_id": "tt1913273",
     "title": "Anohana: The Flower We Saw That Day"
+  },
+  "5992": {
+    "imdb_id": "tt2076817",
+    "title": "Carnival Phantasm",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6695": {
+    "imdb_id": "tt2076817",
+    "title": "Carnival Phantasm",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "6685": {
+    "imdb_id": "tt2076817",
+    "title": "Carnival Phantasm",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "6765": {
+    "imdb_id": "tt2076817",
+    "title": "Carnival Phantasm",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "7342": {
+    "imdb_id": "tt2076817",
+    "title": "Carnival Phantasm",
+    "fromSeason": 0,
+    "fromEpisode": 4
   },
   "6000": {
     "imdb_id": "tt1798188",
@@ -8191,12 +8245,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "6389": {
-    "imdb_id": "tt1910272",
-    "title": "Steins;Gate",
-    "fromSeason": 1,
-    "fromEpisode": 25
-  },
   "6392": {
     "imdb_id": "tt2341377",
     "title": "Saki Achiga-hen episode of side-A",
@@ -8255,6 +8303,12 @@
     "imdb_id": "tt2189661",
     "title": "Listen to Me, Girls. I'm Your Father!",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7685": {
+    "imdb_id": "tt2189661",
+    "title": "Listen to Me, Girls. I'm Your Father!",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "6477": {
@@ -8452,6 +8506,18 @@
     "title": "Senki Zessho Symphogear",
     "fromSeason": 5,
     "fromEpisode": 1
+  },
+  "40594": {
+    "imdb_id": "tt2230531",
+    "title": "Senki Zessho Symphogear",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
+  "43035": {
+    "imdb_id": "tt2230531",
+    "title": "Senki Zessho Symphogear",
+    "fromSeason": 0,
+    "fromEpisode": 13
   },
   "6588": {
     "imdb_id": "tt2078523",
@@ -11332,7 +11398,15 @@
   },
   "8650": {
     "imdb_id": "tt5159084",
-    "title": "Sky Wizard Academy"
+    "title": "Sky Wizard Academy",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "11186": {
+    "imdb_id": "tt5159084",
+    "title": "Sky Wizard Academy",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "8651": {
     "imdb_id": "tt5355196",
@@ -12851,6 +12925,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "12183": {
+    "imdb_id": "tt5614180",
+    "title": "Joker Game",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "11323": {
     "imdb_id": "tt5452096",
     "title": "Rainbow Days"
@@ -13181,6 +13261,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13236": {
+    "imdb_id": "tt5862798",
+    "title": "New Game!",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "12681": {
+    "imdb_id": "tt5862798",
+    "title": "New Game!",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "11469": {
     "imdb_id": "tt5626028",
     "title": "Boku no Hero Academia",
@@ -13336,12 +13428,6 @@
     "imdb_id": "tt2580046",
     "title": "Miraculous: Tales of Ladybug & Cat Noir",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "11574": {
-    "imdb_id": "tt1910272",
-    "title": "Steins;Gate",
-    "fromSeason": 0,
     "fromEpisode": 1
   },
   "11578": {
@@ -14901,12 +14987,6 @@
     "imdb_id": "tt6472710",
     "title": "As the Moon, So Beautiful",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "13236": {
-    "imdb_id": "tt5862798",
-    "title": "New Game!",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "13252": {
@@ -18718,6 +18798,12 @@
   "43824": {
     "imdb_id": "tt13142936",
     "title": "Wixoss Diva(A)Live",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43831": {
+    "imdb_id": "tt13618148",
+    "title": "Koi to Yobu ni wa Kimochi Warui",
     "fromSeason": 1,
     "fromEpisode": 1
   },
