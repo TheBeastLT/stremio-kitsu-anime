@@ -2214,11 +2214,17 @@
     "fromSeason": 2,
     "fromEpisode": 11
   },
+  "8112": {
+    "imdb_id": "tt0807832",
+    "title": "Mushishi: Zoku-Sho",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
   "8519": {
     "imdb_id": "tt0807832",
     "title": "Mushishi: Zoku-Sho",
-    "fromSeason": 2,
-    "fromEpisode": 11
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "10084": {
     "imdb_id": "tt5575408",
@@ -9133,6 +9139,30 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "8063": {
+    "imdb_id": "tt2359704",
+    "title": "JoJo's Bizarre Adventure",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "8739": {
+    "imdb_id": "tt2359704",
+    "title": "JoJo's Bizarre Adventure",
+    "fromSeason": 2,
+    "fromEpisode": 25
+  },
+  "11459": {
+    "imdb_id": "tt2359704",
+    "title": "JoJo's Bizarre Adventure",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "41410": {
+    "imdb_id": "tt2359704",
+    "title": "JoJo's Bizarre Adventure",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "7160": {
     "imdb_id": "tt2321542",
     "title": "Love, Chunibyo & Other Delusions",
@@ -10679,12 +10709,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "8063": {
-    "imdb_id": "tt2359704",
-    "title": "JoJo's Bizarre Adventure",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "8076": {
     "imdb_id": "tt3358426",
     "title": "Nobunaga the Fool"
@@ -11605,12 +11629,6 @@
   "8738": {
     "imdb_id": "tt3981544",
     "title": "Yuri Kuma Arashi"
-  },
-  "8739": {
-    "imdb_id": "tt2359704",
-    "title": "JoJo's Bizarre Adventure",
-    "fromSeason": 2,
-    "fromEpisode": 25
   },
   "8774": {
   },
@@ -13243,12 +13261,6 @@
     "imdb_id": "tt5326434",
     "title": "Girls Beyond the Wasteland",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "11459": {
-    "imdb_id": "tt2359704",
-    "title": "JoJo's Bizarre Adventure",
-    "fromSeason": 3,
     "fromEpisode": 1
   },
   "11466": {
@@ -16879,12 +16891,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "41410": {
-    "imdb_id": "tt2359704",
-    "title": "JoJo's Bizarre Adventure",
-    "fromSeason": 4,
-    "fromEpisode": 1
-  },
   "41423": {
     "imdb_id": "tt9278360",
     "title": "Anima Yell!"
@@ -18581,6 +18587,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43302": {
+    "imdb_id": "tt12415634",
+    "title": "Mars Red",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44251": {
+    "imdb_id": "tt12415634",
+    "title": "Mars Red",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "43305": {
     "imdb_id": "tt13192574",
     "title": "Bungo Stray Dogs Wan!",
@@ -18601,6 +18619,12 @@
     "imdb_id": "tt12831098",
     "title": "Moriarty the Patriot",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43708": {
+    "imdb_id": "tt12831098",
+    "title": "Moriarty the Patriot",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "43534": {
@@ -18816,6 +18840,12 @@
   "44087": {
     "imdb_id": "tt14069590",
     "title": "Dota: Dragon's Blood",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44091": {
+    "imdb_id": "tt14022814",
+    "title": "Jouran: The Princess of Snow and Blood",
     "fromSeason": 1,
     "fromEpisode": 1
   }
