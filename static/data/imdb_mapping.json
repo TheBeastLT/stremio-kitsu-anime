@@ -7462,7 +7462,15 @@
   },
   "5122": {
     "imdb_id": "tt1847445",
-    "title": "Yojôhan shinwa taikei"
+    "title": "Yojôhan shinwa taikei",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5561": {
+    "imdb_id": "tt1847445",
+    "title": "Yojôhan shinwa taikei",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "5134": {
     "imdb_id": "tt1634165",
@@ -18421,6 +18429,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43222": {
+    "imdb_id": "tt12502782",
+    "title": "Shaman King",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43240": {
     "imdb_id": "tt12694572",
     "title": "Koi to Producer: Evol x Love",
@@ -18625,6 +18639,12 @@
     "imdb_id": "tt12831098",
     "title": "Moriarty the Patriot",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43521": {
+    "imdb_id": "tt13167196",
+    "title": "Edens Zero",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "43534": {
