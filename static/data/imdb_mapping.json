@@ -9177,6 +9177,30 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "7705": {
+    "imdb_id": "tt2321542",
+    "title": "Love, Chunibyo & Other Delusions",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "7293": {
+    "imdb_id": "tt2321542",
+    "title": "Love, Chunibyo & Other Delusions",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "7330": {
+    "imdb_id": "tt2321542",
+    "title": "Love, Chunibyo & Other Delusions",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
+  "7556": {
+    "imdb_id": "tt2321542",
+    "title": "Love, Chunibyo & Other Delusions",
+    "fromSeason": 0,
+    "fromEpisode": 14
+  },
   "7162": {
     "imdb_id": "tt2552240",
     "title": "Oreshura"
@@ -9950,12 +9974,6 @@
   "7704": {
     "imdb_id": "tt7062798",
     "title": "Little Busters! Refrain"
-  },
-  "7705": {
-    "imdb_id": "tt2321542",
-    "title": "Love, Chunibyo & Other Delusions",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "7706": {
     "imdb_id": "tt3774792",
@@ -18191,6 +18209,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42888": {
+    "imdb_id": "tt11443824",
+    "title": "SSSS.Dynazenon",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42941": {
     "imdb_id": "tt11585560",
     "title": "The Island of Giant Insects"
@@ -18217,6 +18241,12 @@
     "imdb_id": "tt2549176",
     "title": "Cardfight!! Vanguard",
     "fromSeason": 13,
+    "fromEpisode": 1
+  },
+  "44181": {
+    "imdb_id": "tt2549176",
+    "title": "Cardfight!! Vanguard",
+    "fromSeason": 14,
     "fromEpisode": 1
   },
   "43063": {
@@ -18625,6 +18655,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43309": {
+    "imdb_id": "tt13221420",
+    "title": "Shakunetsu Kabaddi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43348": {
     "imdb_id": "tt11177804",
     "title": "Legend of Deification"
@@ -18866,6 +18902,12 @@
   "44091": {
     "imdb_id": "tt14022814",
     "title": "Jouran: The Princess of Snow and Blood",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44106": {
+    "imdb_id": "tt12814598",
+    "title": "Mashiro no Oto",
     "fromSeason": 1,
     "fromEpisode": 1
   }
