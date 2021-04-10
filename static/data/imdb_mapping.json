@@ -15954,7 +15954,15 @@
   },
   "13949": {
     "imdb_id": "tt7965802",
-    "title": "Megalo Box"
+    "title": "Megalo Box",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42720": {
+    "imdb_id": "tt7965802",
+    "title": "Megalo Box",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "13950": {
     "imdb_id": "tt7806844",
@@ -18065,6 +18073,12 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "42616": {
+    "imdb_id": "tt12879646",
+    "title": "Dragon, Ie o Kau.",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42621": {
     "imdb_id": "tt13103028",
     "title": "Bottom-tier Character Tomozaki",
@@ -18881,15 +18895,39 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43830": {
+    "imdb_id": "tt13027558",
+    "title": "Sayonara Watashi no Cramer",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43831": {
     "imdb_id": "tt13618148",
     "title": "Koi to Yobu ni wa Kimochi Warui",
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43837": {
+    "imdb_id": "tt13758670",
+    "title": "Sentouin, Hakenshimasu!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43853": {
     "imdb_id": "tt13592988",
     "title": "Idolls!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43933": {
+    "imdb_id": "tt13851958",
+    "title": "Vivy: Fluorite Eye's Song",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44064": {
+    "imdb_id": "tt13984000",
+    "title": "Seven Knights Revolution: Eiyuu no Keishousha",
     "fromSeason": 1,
     "fromEpisode": 1
   },
