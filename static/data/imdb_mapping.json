@@ -18537,6 +18537,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42923": {
+    "imdb_id": "tt13198632",
+    "title": "Hige o Soru. Soshite Joshikousei o Hirou.",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42935": {
     "imdb_id": "tt12980648",
     "title": "Higurashi: When They Cry - New",
@@ -18916,6 +18922,12 @@
   "43853": {
     "imdb_id": "tt13592988",
     "title": "Idolls!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43875": {
+    "imdb_id": "tt12798548",
+    "title": "Yakunara Mug Cup mo",
     "fromSeason": 1,
     "fromEpisode": 1
   },
