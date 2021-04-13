@@ -13896,6 +13896,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "14016": {
+    "imdb_id": "tt6783056",
+    "title": "Eromanga Sensei",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "11931": {
     "imdb_id": "tt6580380",
     "title": "The Irregular at Magic High School: The Movie - The Girl Who Summons the Stars"
@@ -17193,6 +17199,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "43578": {
+    "imdb_id": "tt9304350",
+    "title": "Fruits Basket",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "41999": {
   },
   "42000": {
@@ -18177,6 +18189,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42736": {
+    "imdb_id": "tt12285778",
+    "title": "Super Cub",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43004": {
     "imdb_id": "tt12057106",
     "title": "Tower of God",
@@ -18925,9 +18943,21 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43861": {
+    "imdb_id": "tt13593022",
+    "title": "Kyuukyoku Shinka Shita Full Dive RPG ga Genjitsu yori mo Kusogee Dattara",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43875": {
     "imdb_id": "tt12798548",
     "title": "Yakunara Mug Cup mo",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43932": {
+    "imdb_id": "tt14134550",
+    "title": "Oddtaxi",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -18958,6 +18988,12 @@
   "44106": {
     "imdb_id": "tt12814598",
     "title": "Mashiro no Oto",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44115": {
+    "imdb_id": "tt13049906",
+    "title": "Seijo no Maryoku wa Bannou Desu",
     "fromSeason": 1,
     "fromEpisode": 1
   }
