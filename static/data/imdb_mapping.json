@@ -3629,6 +3629,70 @@
     "imdb_id": "tt0142250",
     "title": "Dragon Ball: The Path to Power"
   },
+  "794": {
+    "imdb_id": "tt0142235",
+    "title": "Dragon Ball Z - Movie 01 - The Dead Zone"
+  },
+  "795": {
+    "imdb_id": "tt0142240",
+    "title": "Dragon Ball Z - Movie 02 - The World's Strongest"
+  },
+  "796": {
+    "imdb_id": "tt0142233",
+    "title": "Dragon Ball Z - Movie 03 - Tree of Might"
+  },
+  "797": {
+    "imdb_id": "tt0142244",
+    "title": "Dragon Ball Z - Movie 04 - Lord Slug"
+  },
+  "798": {
+    "imdb_id": "tt1125254",
+    "title": "Dragon Ball Z - Movie 05 - Cooler's Revenge"
+  },
+  "799": {
+    "imdb_id": "tt0142237",
+    "title": "Dragon Ball Z - Movie 06 - The Return of Cooler"
+  },
+  "800": {
+    "imdb_id": "tt0142241",
+    "title": "Dragon Ball Z - Movie 07 - Super Android 13"
+  },
+  "801": {
+    "imdb_id": "tt0142242",
+    "title": "Dragon Ball Z - Movie 08 - Broly The Legendary Super Saiyan"
+  },
+  "802": {
+    "imdb_id": "tt0142238",
+    "title": "Dragon Ball Z - Movie 09 - Bojack Unbound"
+  },
+  "803": {
+    "imdb_id": "tt0142239",
+    "title": "Dragon Ball Z - Movie 10 - Broly Second Coming"
+  },
+  "804": {
+    "imdb_id": "tt0142234",
+    "title": "Dragon Ball Z - Movie 11 - Bio-Broly"
+  },
+  "805": {
+    "imdb_id": "tt0142236",
+    "title": "Dragon Ball Z - Movie 12 - Fusion Reborn"
+  },
+  "806": {
+    "imdb_id": "tt0142243",
+    "title": "Dragon Ball Z - Movie 13 - Wrath of the Dragon"
+  },
+  "7176": {
+    "imdb_id": "tt2263944",
+    "title": "Dragon Ball Z - Movie 14 - Battle of Gods"
+  },
+  "8676": {
+    "imdb_id": "tt3819668",
+    "title": "Dragon Ball Z - Movie 15 - Resurrection of F"
+  },
+  "41046": {
+    "imdb_id": "tt7961060",
+    "title": "Dragon Ball Super - Movie 16 - Broly"
+  },
   "807": {
     "imdb_id": "tt1188328",
     "title": "Princess Princess"
@@ -4299,7 +4363,15 @@
   },
   "1166": {
     "imdb_id": "tt0081954",
-    "title": "Lum the Invader Girl"
+    "title": "Lum the Invader Girl",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1729": {
+    "imdb_id": "tt0081954",
+    "title": "Lum the Invader Girl",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "1167": {
     "imdb_id": "tt0100421",
@@ -10820,10 +10892,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "8112": {
-    "imdb_id": "tt3539986",
-    "title": "Mushishi Tokubetsu-hen: Hihamukage"
-  },
   "8126": {
     "imdb_id": "tt3696476",
     "title": "Yu-Gi-Oh! Arc-V",
@@ -16415,10 +16483,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "41046": {
-    "imdb_id": "tt7961060",
-    "title": "Dragon Ball Super: Broly"
-  },
   "41052": {
     "imdb_id": "tt9042408",
     "title": "The Master of Ragnarok and Blesser of Einherjar"
@@ -16595,7 +16659,15 @@
   },
   "41133": {
     "imdb_id": "tt8438524",
-    "title": "How NOT to Summon a Demon Lord"
+    "title": "How NOT to Summon a Demon Lord",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43118": {
+    "imdb_id": "tt8438524",
+    "title": "How NOT to Summon a Demon Lord",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "41141": {
     "imdb_id": "tt12209234",
@@ -16957,6 +17029,12 @@
     "imdb_id": "tt9054354",
     "title": "Zombieland Saga",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42467": {
+    "imdb_id": "tt9054354",
+    "title": "Zombieland Saga",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "41465": {
@@ -18865,6 +18943,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43718": {
+    "imdb_id": "tt13357124",
+    "title": "Gokushufudo",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43750": {
     "imdb_id": "tt13884016",
     "title": "Maiko-san Chi no Makanai-san",
@@ -18994,6 +19078,18 @@
   "44115": {
     "imdb_id": "tt13049906",
     "title": "Seijo no Maryoku wa Bannou Desu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44123": {
+    "imdb_id": "tt13412606",
+    "title": "Bakuten!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44180": {
+    "imdb_id": "tt13807542",
+    "title": "Fairy Ranmaru: Anata no Kokoro Otasuke Shimasu",
     "fromSeason": 1,
     "fromEpisode": 1
   }
