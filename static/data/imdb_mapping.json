@@ -10649,7 +10649,15 @@
   },
   "7988": {
     "imdb_id": "tt3417860",
-    "title": "Inari, Konkon, Koi Iroha"
+    "title": "Inari, Konkon, Koi Iroha",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8251": {
+    "imdb_id": "tt3417860",
+    "title": "Inari, Konkon, Koi Iroha",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "7995": {
     "imdb_id": "tt1666278",
@@ -13821,6 +13829,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13609": {
+    "imdb_id": "tt6765658",
+    "title": "Thunderbolt Fantasy",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43201": {
+    "imdb_id": "tt6765658",
+    "title": "Thunderbolt Fantasy",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "11839": {
     "imdb_id": "tt1605838",
     "title": "Avatar: The Last Airbender - The Legend So Far"
@@ -15512,12 +15532,6 @@
   "42587": {
     "imdb_id": "tt11803614",
     "title": "Promare: Galo-hen"
-  },
-  "13609": {
-    "imdb_id": "tt6765658",
-    "title": "Thunderbolt Fantasy",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "13612": {
     "imdb_id": "tt7339826",
@@ -18071,7 +18085,21 @@
   },
   "42476": {
     "imdb_id": "tt10978032",
-    "title": "Kandagawa Jet Girls"
+    "title": "Kandagawa Jet Girls",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42711": {
+    "imdb_id": "tt10978032",
+    "title": "Kandagawa Jet Girls",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "42986": {
+    "imdb_id": "tt10978032",
+    "title": "Kandagawa Jet Girls",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "42486": {
     "imdb_id": "tt6631966",
@@ -18129,6 +18157,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42562": {
+    "imdb_id": "tt11398800",
+    "title": "Obsolete",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42572": {
     "imdb_id": "tt13985576",
     "title": "Eiga Given"
@@ -18181,6 +18215,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42628": {
+    "imdb_id": "tt14414836",
+    "title": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42649": {
     "imdb_id": "tt7745956",
     "title": "She-Ra and the Princesses of Power",
@@ -18192,6 +18232,10 @@
     "title": "She-Ra and the Princesses of Power",
     "fromSeason": 5,
     "fromEpisode": 1
+  },
+  "42682": {
+    "imdb_id": "tt12699782",
+    "title": "Shoujo Kageki Revue Starlight: Rondo Rondo Rondo"
   },
   "42356": {
     "imdb_id": "tt9883676",
@@ -18473,6 +18517,12 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "42764": {
+    "imdb_id": "tt13457122",
+    "title": "Bishounen Tanteidan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42765": {
     "imdb_id": "tt12343534",
     "title": "Jujutsu Kaisen",
@@ -18679,6 +18729,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43066": {
+    "imdb_id": "tt13718450",
+    "title": "86",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43067": {
     "imdb_id": "tt12331342",
     "title": "Akudama Drive",
@@ -18729,6 +18785,24 @@
     "imdb_id": "tt12441478",
     "title": "Earwig and the Witch"
   },
+  "43251": {
+    "imdb_id": "tt12643520",
+    "title": "Subarashiki Kono Sekai the Animation",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43252": {
+    "imdb_id": "tt13009154",
+    "title": "Battle Athletess Daiundoukai Restart!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43271": {
+    "imdb_id": "tt12635162",
+    "title": "Ijiranaide, Nagatoro-san",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43273": {
     "imdb_id": "tt12642654",
     "title": "By the Grace of the Gods",
@@ -18774,6 +18848,12 @@
   "43309": {
     "imdb_id": "tt13221420",
     "title": "Shakunetsu Kabaddi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43321": {
+    "imdb_id": "tt13196080",
+    "title": "Tokyo Revengers",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -18979,6 +19059,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43820": {
+    "imdb_id": "tt13362302",
+    "title": "Shadows House",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43821": {
     "imdb_id": "tt13721276",
     "title": "Tropical-Rouge! Precure",
@@ -19054,6 +19140,12 @@
   "44064": {
     "imdb_id": "tt13984000",
     "title": "Seven Knights Revolution: Eiyuu no Keishousha",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44084": {
+    "imdb_id": "tt14043600",
+    "title": "Blue Reflection Ray",
     "fromSeason": 1,
     "fromEpisode": 1
   },
