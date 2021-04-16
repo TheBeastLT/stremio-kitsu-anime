@@ -2827,7 +2827,15 @@
   },
   "488": {
     "imdb_id": "tt0373605",
-    "title": "She, the Ultimate Weapon"
+    "title": "She, the Ultimate Weapon",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "564": {
+    "imdb_id": "tt0373605",
+    "title": "She, the Ultimate Weapon",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "489": {
     "imdb_id": "tt0103369",
@@ -8823,6 +8831,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6974": {
+    "imdb_id": "tt2340841",
+    "title": "Hyouka",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "6687": {
     "imdb_id": "tt2230557",
     "title": "Smile PreCure!",
@@ -14603,6 +14617,10 @@
     "title": "Seven Mortal Sins"
   },
   "12542": {
+    "imdb_id": "tt14202290",
+    "title": "Cheating Craft",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "12551": {
     "imdb_id": "tt2909936",
@@ -15349,7 +15367,9 @@
   },
   "13467": {
     "imdb_id": "tt6638842",
-    "title": "Kino's Journey: The Beautiful World - The Animated Series"
+    "title": "Kino's Journey: The Beautiful World - The Animated Series",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "13469": {
     "imdb_id": "tt9826402",
@@ -18772,6 +18792,12 @@
   "43214": {
     "imdb_id": "tt12415504",
     "title": "Kuma Kuma Kuma Bear",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43211": {
+    "imdb_id": "tt12063450",
+    "title": "Fumetsu no Anata e",
     "fromSeason": 1,
     "fromEpisode": 1
   },
