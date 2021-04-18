@@ -3835,6 +3835,12 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "890": {
+    "imdb_id": "tt0182646",
+    "title": "Space Pirate Captain Harlock",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "892": {
     "imdb_id": "tt0856824",
     "title": "Gunbuster 2: Diebuster",
@@ -8600,6 +8606,18 @@
     "title": "Senki Zessho Symphogear",
     "fromSeason": 5,
     "fromEpisode": 1
+  },
+  "8081": {
+    "imdb_id": "tt2230531",
+    "title": "Senki Zessho Symphogear",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "11592": {
+    "imdb_id": "tt2230531",
+    "title": "Senki Zessho Symphogear",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "40594": {
     "imdb_id": "tt2230531",
@@ -14378,6 +14396,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42149": {
+    "imdb_id": "tt6185782",
+    "title": "Miss Kobayashi's Dragon Maid",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "13241": {
     "imdb_id": "tt6185782",
     "title": "Miss Kobayashi's Dragon Maid",
@@ -18601,6 +18625,12 @@
     "imdb_id": "tt13344602",
     "title": "Eiga Precure Miracle Leap: Minna to no Fushigi na Ichinichi"
   },
+  "43089": {
+    "imdb_id": "tt14408130",
+    "title": "Tensura Nikki: Tensei shitara Slime Datta Ken",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43094": {
     "imdb_id": "tt12464182",
     "title": "Uzaki-chan Wants to Hang Out!",
@@ -19037,6 +19067,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43689": {
+    "imdb_id": "tt13344434",
+    "title": "Hetalia: World Stars",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43703": {
     "imdb_id": "tt13352232",
     "title": "High-Rise Invasion",
@@ -19163,6 +19199,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43966": {
+    "imdb_id": "tt13211062",
+    "title": "Osananajimi ga Zettai ni Makenai Love Come",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44064": {
     "imdb_id": "tt13984000",
     "title": "Seven Knights Revolution: Eiyuu no Keishousha",
@@ -19202,6 +19244,12 @@
   "44123": {
     "imdb_id": "tt13412606",
     "title": "Bakuten!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44179": {
+    "imdb_id": "tt13409412",
+    "title": "Cestvs: The Roman Fighter",
     "fromSeason": 1,
     "fromEpisode": 1
   },
