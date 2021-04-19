@@ -3967,6 +3967,18 @@
     "imdb_id": "tt0105612",
     "title": "Tokyo Babylon"
   },
+  "935": {
+    "imdb_id": "tt0204087",
+    "title": "Those Who Hunt Elves",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "936": {
+    "imdb_id": "tt0204087",
+    "title": "Those Who Hunt Elves",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "938": {
     "imdb_id": "tt0374454",
     "title": "The SoulTaker"
@@ -7198,6 +7210,12 @@
     "imdb_id": "tt1674928",
     "title": "Beyblade: Metal Fusion",
     "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "4371": {
+    "imdb_id": "tt1454712",
+    "title": "Ristorante Paradiso",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "4391": {
@@ -18803,6 +18821,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44276": {
+    "imdb_id": "tt12745218",
+    "title": "Heaven's Design Team",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "43167": {
     "imdb_id": "tt12150836",
     "title": "Cells at Work! Code Black",
@@ -18828,6 +18852,12 @@
   "43211": {
     "imdb_id": "tt12063450",
     "title": "Fumetsu no Anata e",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43213": {
+    "imdb_id": "tt12396208",
+    "title": "Yuuki Yuuna wa Yuusha de Aru Churutto!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
