@@ -3545,6 +3545,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "708": {
+    "imdb_id": "tt0488477",
+    "title": "XXXHOLiC",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "3848": {
     "imdb_id": "tt0488477",
     "title": "XXXHOLiC",
@@ -9363,6 +9369,12 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "7748": {
+    "imdb_id": "tt2703720",
+    "title": "My Teen Romantic Comedy SNAFU",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "12045": {
     "imdb_id": "tt2703720",
     "title": "My Teen Romantic Comedy SNAFU",
@@ -10075,6 +10087,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "42160": {
+    "imdb_id": "tt3105422",
+    "title": "Ace of Diamond",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "8792": {
     "imdb_id": "tt3105422",
     "title": "Ace of Diamond",
@@ -10322,6 +10340,42 @@
     "title": "Sorcerer Hunters",
     "fromSeason": 0,
     "fromEpisode": 4
+  },
+  "7795": {
+    "imdb_id": "tt3411198",
+    "title": "Future Card Buddyfight",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "10600": {
+    "imdb_id": "tt3411198",
+    "title": "Future Card Buddyfight",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "12021": {
+    "imdb_id": "tt3411198",
+    "title": "Future Card Buddyfight",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "13314": {
+    "imdb_id": "tt3411198",
+    "title": "Future Card Buddyfight",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "41031": {
+    "imdb_id": "tt3411198",
+    "title": "Future Card Buddyfight",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "41212": {
+    "imdb_id": "tt3411198",
+    "title": "Future Card Buddyfight",
+    "fromSeason": 6,
+    "fromEpisode": 1
   },
   "7821": {
     "imdb_id": "tt3115338",
@@ -12551,6 +12605,18 @@
     "title": "Monster Musume: Everyday Life with Monster Girls",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "11145": {
+    "imdb_id": "tt4831392",
+    "title": "Monster Musume: Everyday Life with Monster Girls",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "11836": {
+    "imdb_id": "tt4831392",
+    "title": "Monster Musume: Everyday Life with Monster Girls",
+    "fromSeason": 0,
+    "fromEpisode": 73
   },
   "10760": {
     "imdb_id": "tt4219136",
@@ -15445,6 +15511,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "41068": {
+    "imdb_id": "tt7742120",
+    "title": "Laid-Back Camp",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "13484": {
   },
   "13485": {
@@ -17690,12 +17762,6 @@
   "42159": {
     "imdb_id": "tt10395126",
     "title": "Granbelm"
-  },
-  "42160": {
-    "imdb_id": "tt10838000",
-    "title": "Ace of Diamond: Act II",
-    "fromSeason": 1,
-    "fromEpisode": 1
   },
   "42161": {
   },
