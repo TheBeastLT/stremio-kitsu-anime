@@ -2330,6 +2330,42 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "852": {
+    "imdb_id": "tt0977907",
+    "title": "Aria: The Animation",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "2916": {
+    "imdb_id": "tt0977907",
+    "title": "Aria: The Animation",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "4009": {
+    "imdb_id": "tt0977907",
+    "title": "Aria: The Animation",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "2328": {
+    "imdb_id": "tt0977907",
+    "title": "Aria: The Animation",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "3778": {
+    "imdb_id": "tt0977907",
+    "title": "Aria: The Animation",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "10360": {
+    "imdb_id": "tt0977907",
+    "title": "Aria: The Animation",
+    "fromSeason": 0,
+    "fromEpisode": 11
+  },
   "440": {
     "imdb_id": "tt0872309",
     "title": "Genesis of Aquarion",
@@ -3810,10 +3846,6 @@
   "851": {
     "imdb_id": "tt2012536",
     "title": "Virtua Fighter"
-  },
-  "852": {
-    "imdb_id": "tt0977906",
-    "title": "Aria the Natural"
   },
   "854": {
     "imdb_id": "tt3391638",
@@ -6464,10 +6496,6 @@
   "2911": {
     "imdb_id": "tt0856794",
     "title": "Kidô senshi Gundam Evolve"
-  },
-  "2916": {
-    "imdb_id": "tt1151013",
-    "title": "Aria the Origination"
   },
   "2918": {
     "imdb_id": "tt1161657",
