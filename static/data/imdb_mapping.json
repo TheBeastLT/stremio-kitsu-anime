@@ -135,7 +135,45 @@
   },
   "30": {
     "imdb_id": "tt0361140",
-    "title": ".hack//SIGN"
+    "title": ".hack//SIGN",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "273": {
+    "imdb_id": "tt0361140",
+    "title": ".hack//SIGN",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "773": {
+    "imdb_id": "tt0361140",
+    "title": ".hack//SIGN",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "1024": {
+    "imdb_id": "tt0361140",
+    "title": ".hack//SIGN",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "274": {
+    "imdb_id": "tt0361140",
+    "title": ".hack//SIGN",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "1333": {
+    "imdb_id": "tt0361140",
+    "title": ".hack//SIGN",
+    "fromSeason": 0,
+    "fromEpisode": 6
+  },
+  "416": {
+    "imdb_id": "tt0361140",
+    "title": ".hack//SIGN",
+    "fromSeason": 0,
+    "fromEpisode": 8
   },
   "31": {
     "imdb_id": "tt0872301",
@@ -1533,14 +1571,6 @@
     "imdb_id": "tt0985984",
     "title": "Grenadier: Hohoemi no senshi"
   },
-  "273": {
-    "imdb_id": "tt0419299",
-    "title": ".hack//Legend of the Twilight"
-  },
-  "274": {
-    "imdb_id": "tt0371501",
-    "title": ".hack//Liminality"
-  },
   "275": {
     "imdb_id": "tt0834546",
     "title": "Cinderella Boy"
@@ -1909,6 +1939,30 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "600": {
+    "imdb_id": "tt0833572",
+    "title": "Galaxy Angel",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "601": {
+    "imdb_id": "tt0833572",
+    "title": "Galaxy Angel",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "603": {
+    "imdb_id": "tt0833572",
+    "title": "Galaxy Angel",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "6690": {
+    "imdb_id": "tt0833572",
+    "title": "Galaxy Angel",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
   "351": {
     "imdb_id": "tt0434685",
     "title": "Gantz",
@@ -2183,10 +2237,6 @@
   "415": {
     "imdb_id": "tt0322645",
     "title": "Inuyasha the Movie: Affections Touching Across Time"
-  },
-  "416": {
-    "imdb_id": "tt0823406",
-    "title": ".hack//GIFT"
   },
   "417": {
     "imdb_id": "tt0774065",
@@ -7502,6 +7552,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "4813": {
+    "imdb_id": "tt1685412",
+    "title": "Senkou no naitoreido",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5499": {
+    "imdb_id": "tt1685412",
+    "title": "Senkou no naitoreido",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "4829": {
     "imdb_id": "tt0466352",
     "title": "Prince of Tennis: Another Story - Messages From Past and Future Specials",
@@ -7965,6 +8027,12 @@
     "imdb_id": "tt2697872",
     "title": "Ground Control to Psychoelectric Girl",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6276": {
+    "imdb_id": "tt2697872",
+    "title": "Ground Control to Psychoelectric Girl",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "5746": {
@@ -9065,7 +9133,21 @@
   },
   "6896": {
     "imdb_id": "tt2269368",
-    "title": "Hagure Yusha no Aestetica"
+    "title": "Hagure Yusha no Aestetica",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7152": {
+    "imdb_id": "tt2269368",
+    "title": "Hagure Yusha no Aestetica",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "7298": {
+    "imdb_id": "tt2269368",
+    "title": "Hagure Yusha no Aestetica",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "6897": {
     "imdb_id": "tt2291137",
@@ -14406,6 +14488,30 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13477": {
+    "imdb_id": "tt6354518",
+    "title": "The Disastrous Life of Saiki K.",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42623": {
+    "imdb_id": "tt6354518",
+    "title": "The Disastrous Life of Saiki K.",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "8806": {
+    "imdb_id": "tt6354518",
+    "title": "The Disastrous Life of Saiki K.",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "41940": {
+    "imdb_id": "tt6354518",
+    "title": "The Disastrous Life of Saiki K.",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
   "12138": {
     "imdb_id": "tt7625514",
     "title": "Is the Order a Rabbit?: Dear My Sister"
@@ -15514,12 +15620,6 @@
   "13469": {
     "imdb_id": "tt9826402",
     "title": "Yu-No: A Girl Who Chants Love at the Bound of this World"
-  },
-  "13477": {
-    "imdb_id": "tt6354518",
-    "title": "The Disastrous Life of Saiki K.",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "13478": {
     "imdb_id": "tt8424906",
@@ -17273,12 +17373,6 @@
     "imdb_id": "tt9885888",
     "title": "Kabukichou Sherlock",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "41940": {
-    "imdb_id": "tt9748010",
-    "title": "Life of Pi",
-    "fromSeason": 3,
     "fromEpisode": 1
   },
   "41941": {
@@ -19064,8 +19158,8 @@
   "43708": {
     "imdb_id": "tt12831098",
     "title": "Moriarty the Patriot",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 12
   },
   "43521": {
     "imdb_id": "tt13167196",
