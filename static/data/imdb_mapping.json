@@ -2953,9 +2953,23 @@
     "fromSeason": 5,
     "fromEpisode": 1
   },
+  "2774": {
+    "imdb_id": "tt0103369",
+    "title": "Sailor Moon",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
   "490": {
     "imdb_id": "tt0106417",
     "title": "Sailor Moon R: The Movie: The Promise of the Rose"
+  },
+  "887": {
+    "imdb_id": "tt0109277",
+    "title": "Sailor Moon S: The Movie: Hearts in Ice"
+  },
+  "1116": {
+    "imdb_id": "tt0112513",
+    "title": "Sailor Moon Super S: The Movie: Black Dream Hole"
   },
   "492": {
     "imdb_id": "tt0406463",
@@ -7755,6 +7769,24 @@
     "imdb_id": "tt1189033",
     "title": "Dokutâ suranpu"
   },
+  "5389": {
+    "imdb_id": "tt1738090",
+    "title": "Shinryaku! Ika Musume",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6156": {
+    "imdb_id": "tt1738090",
+    "title": "Shinryaku! Ika Musume",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6929": {
+    "imdb_id": "tt1738090",
+    "title": "Shinryaku! Ika Musume",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
   "5404": {
     "imdb_id": "tt1783878",
     "title": "Digimon Xros Wars",
@@ -8119,6 +8151,36 @@
   },
   "5947": {
   },
+  "5949": {
+    "imdb_id": "tt3692198",
+    "title": "Maken-Ki! Battling Venus",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7275": {
+    "imdb_id": "tt3692198",
+    "title": "Maken-Ki! Battling Venus",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6736": {
+    "imdb_id": "tt3692198",
+    "title": "Maken-Ki! Battling Venus",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "6474": {
+    "imdb_id": "tt3692198",
+    "title": "Maken-Ki! Battling Venus",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
+  "8467": {
+    "imdb_id": "tt3692198",
+    "title": "Maken-Ki! Battling Venus",
+    "fromSeason": 0,
+    "fromEpisode": 9
+  },
   "5950": {
     "imdb_id": "tt1987179",
     "title": "Croisée in a Foreign Labyrinth -The Animation",
@@ -8306,12 +8368,6 @@
   "6153": {
     "imdb_id": "tt2074028",
     "title": "Kamisama Dolls"
-  },
-  "6156": {
-    "imdb_id": "tt1738090",
-    "title": "Squid Girl",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "6157": {
     "imdb_id": "tt1352421",
@@ -9649,12 +9705,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "7275": {
-    "imdb_id": "tt3692198",
-    "title": "Maken-Ki! Battling Venus",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "7278": {
     "imdb_id": "tt2575684",
     "title": "Date a Live",
@@ -10585,7 +10635,15 @@
   },
   "7875": {
     "imdb_id": "tt3121602",
-    "title": "Toei Robot Girls Z"
+    "title": "Toei Robot Girls Z",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "10307": {
+    "imdb_id": "tt3121602",
+    "title": "Toei Robot Girls Z",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "7877": {
     "imdb_id": "tt3432596",
@@ -12141,6 +12199,12 @@
     "fromSeason": 0,
     "fromEpisode": 3
   },
+  "43858": {
+    "imdb_id": "tt4728568",
+    "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
+    "fromSeason": 0,
+    "fromEpisode": 5
+  },
   "9964": {
     "imdb_id": "tt2377452",
     "title": "K",
@@ -12504,12 +12568,6 @@
     "imdb_id": "tt4928988",
     "title": "He Is an Ultimate Teacher",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "10307": {
-    "imdb_id": "tt3121602",
-    "title": "Toei Robot Girls Z",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "10339": {
