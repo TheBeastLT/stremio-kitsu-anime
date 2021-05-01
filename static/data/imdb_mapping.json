@@ -5397,6 +5397,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "3628": {
+    "imdb_id": "tt1086236",
+    "title": "Lucky Star",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "1723": {
     "imdb_id": "tt3143922",
     "title": "Shonan Junai Gumi"
@@ -7495,6 +7501,18 @@
     "title": "Fairy Tail",
     "fromSeason": 0,
     "fromEpisode": 1
+  },
+  "7692": {
+    "imdb_id": "tt1528406",
+    "title": "Fairy Tail",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
+  "12225": {
+    "imdb_id": "tt1528406",
+    "title": "Fairy Tail",
+    "fromSeason": 0,
+    "fromEpisode": 9
   },
   "4678": {
     "imdb_id": "tt1316554",
@@ -13825,6 +13843,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "12499": {
+    "imdb_id": "tt5753374",
+    "title": "Shônen Maid",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "11571": {},
   "11572": {
     "imdb_id": "tt2580046",
@@ -14898,6 +14922,12 @@
     "imdb_id": "tt8372010",
     "title": "Tsugumomo",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42181": {
+    "imdb_id": "tt8372010",
+    "title": "Tsugumomo",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "12535": {
@@ -18265,6 +18295,12 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "42339": {
+    "imdb_id": "tt9310330",
+    "title": "Yasuke",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42342": {
     "imdb_id": "tt12728882",
     "title": "Adachi and Shimamura",
@@ -18617,6 +18653,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42684": {
+    "imdb_id": "tt12105596",
+    "title": "Yes, No, or Maybe Half?"
+  },
   "42722": {
     "imdb_id": "tt11299538",
     "title": "Kakushigoto",
@@ -18634,6 +18674,10 @@
     "title": "Super Cub",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "42733": {
+    "imdb_id": "tt13033818",
+    "title": "Dounika naru hibi"
   },
   "43004": {
     "imdb_id": "tt12057106",
