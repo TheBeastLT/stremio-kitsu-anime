@@ -3721,6 +3721,12 @@
     "fromSeason": 1,
     "fromEpisode": 13
   },
+  "5335": {
+    "imdb_id": "tt0962826",
+    "title": "Black Lagoon",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "3841": {
     "imdb_id": "tt0962826",
     "title": "Black Lagoon",
@@ -7039,6 +7045,18 @@
   "3871": {
     "imdb_id": "tt1278254",
     "title": "ChäoS;HEAd"
+  },
+  "3799": {
+    "imdb_id": "tt0192886",
+    "title": "Shinzô ningen Kyashân",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3872": {
+    "imdb_id": "tt0235119",
+    "title": "Casshern Sins",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "3878": {
     "imdb_id": "tt1773213",
