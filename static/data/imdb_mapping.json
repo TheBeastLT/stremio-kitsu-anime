@@ -1712,6 +1712,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "1834": {
+    "imdb_id": "tt0466413",
+    "title": "Emma",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "313": {
     "imdb_id": "tt4431126",
     "title": "W Wish",
@@ -8313,6 +8319,12 @@
     "fromSeason": 1,
     "fromEpisode": 14
   },
+  "6906": {
+    "imdb_id": "tt2051178",
+    "title": "Fate/Zero",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "6928": {
     "imdb_id": "tt2051178",
     "title": "Fate/Zero",
@@ -9639,6 +9651,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "7871": {
+    "imdb_id": "tt2595486",
+    "title": "Love Live!: School Idol Project",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "8055": {
+    "imdb_id": "tt2595486",
+    "title": "Love Live!: School Idol Project",
+    "fromSeason": 0,
+    "fromEpisode": 6
+  },
+  "11006": {
+    "imdb_id": "tt2595486",
+    "title": "Love Live!: School Idol Project",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
   "7205": {
     "imdb_id": "tt2398674",
     "title": "Aikatsu!",
@@ -10662,12 +10692,6 @@
   "7870": {
     "imdb_id": "tt10342048",
     "title": "Kyousogiga"
-  },
-  "7871": {
-    "imdb_id": "tt2595486",
-    "title": "Love Live!: School Idol Project",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "7875": {
     "imdb_id": "tt3121602",
@@ -12881,6 +12905,12 @@
     "title": "Steins;Gate 0",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "41443": {
+    "imdb_id": "tt5514358",
+    "title": "Steins;Gate 0",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "10844": {
     "imdb_id": "tt4954596",
@@ -18198,6 +18228,12 @@
     "title": "Fate/Grand Order: Zettai Maju Sensen Babylonia",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "42475": {
+    "imdb_id": "tt9525238",
+    "title": "Fate/Grand Order: Zettai Maju Sensen Babylonia",
+    "fromSeason": 0,
+    "fromEpisode": 5
   },
   "42272": {
     "imdb_id": "tt10054654",
