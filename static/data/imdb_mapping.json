@@ -6609,7 +6609,15 @@
   },
   "2954": {
     "imdb_id": "tt1216131",
-    "title": "Kurenai"
+    "title": "Kurenai",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5188": {
+    "imdb_id": "tt1216131",
+    "title": "Kurenai",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "2955": {
     "imdb_id": "tt1201681",
@@ -10141,7 +10149,15 @@
   },
   "7656": {
     "imdb_id": "tt2250064",
-    "title": "So, I Can't Play H!"
+    "title": "So, I Can't Play H!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7180": {
+    "imdb_id": "tt2250064",
+    "title": "So, I Can't Play H!",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "7657": {
     "imdb_id": "tt2250100",
@@ -19392,6 +19408,12 @@
   "43557": {
     "imdb_id": "tt12768008",
     "title": "D4DJ: First Mix",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43560": {
+    "imdb_id": "tt12767988",
+    "title": "Saikyo Kamizmode!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
