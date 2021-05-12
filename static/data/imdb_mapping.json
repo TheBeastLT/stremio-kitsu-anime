@@ -6951,6 +6951,12 @@
     "imdb_id": "tt1288461",
     "title": "Gurren Lagann the Movie: Childhood's End"
   },
+  "3490": {
+    "imdb_id": "tt1208358",
+    "title": "Blade of the Immortal",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3492": {
     "imdb_id": "tt1485763",
     "title": "One Piece: Strong World"
@@ -7639,6 +7645,18 @@
     "title": "Maid Sama!",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "6118": {
+    "imdb_id": "tt1634208",
+    "title": "Maid Sama!",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "5705": {
+    "imdb_id": "tt1634208",
+    "title": "Maid Sama!",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "4863": {
     "imdb_id": "tt1636694",
@@ -9965,7 +9983,15 @@
   },
   "7425": {
     "imdb_id": "tt2560604",
-    "title": "Tamako Market"
+    "title": "Tamako Market",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7772": {
+    "imdb_id": "tt2560604",
+    "title": "Tamako Market",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "7426": {
     "imdb_id": "tt4621212",
@@ -9992,6 +10018,30 @@
     "title": "Gargantia on the Verdurous Planet",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "7751": {
+    "imdb_id": "tt2632044",
+    "title": "Gargantia on the Verdurous Planet",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "8592": {
+    "imdb_id": "tt2632044",
+    "title": "Gargantia on the Verdurous Planet",
+    "fromSeason": 0,
+    "fromEpisode": 14
+  },
+  "7872": {
+    "imdb_id": "tt2632044",
+    "title": "Gargantia on the Verdurous Planet",
+    "fromSeason": 0,
+    "fromEpisode": 15
+  },
+  "8419": {
+    "imdb_id": "tt2632044",
+    "title": "Gargantia on the Verdurous Planet",
+    "fromSeason": 0,
+    "fromEpisode": 17
   },
   "7469": {
     "imdb_id": "tt2902582",
