@@ -1718,6 +1718,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "2283": {
+    "imdb_id": "tt0466413",
+    "title": "Emma",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "313": {
     "imdb_id": "tt4431126",
     "title": "W Wish",
@@ -4993,10 +4999,6 @@
     "imdb_id": "tt1118528",
     "title": "Hatarakiman"
   },
-  "1439": {
-    "imdb_id": "tt0239360",
-    "title": "Eat-Man '98"
-  },
   "1440": {
     "imdb_id": "tt0972644",
     "title": "Galaxy Angel Rune"
@@ -5195,7 +5197,15 @@
   },
   "1530": {
     "imdb_id": "tt0239361",
-    "title": "Eat-Man"
+    "title": "Eat-Man",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1439": {
+    "imdb_id": "tt0239361",
+    "title": "Eat-Man",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "1531": {
     "imdb_id": "tt0315011",
@@ -6389,6 +6399,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "4063": {
+    "imdb_id": "tt1158671",
+    "title": "Spice and Wolf",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "4382": {
+    "imdb_id": "tt1158671",
+    "title": "Spice and Wolf",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
   "2693": {
     "imdb_id": "tt0421455",
     "title": "New Getter Robo"
@@ -6849,6 +6871,12 @@
     "imdb_id": "tt1209386",
     "title": "Kaiba"
   },
+  "3202": {
+    "imdb_id": "tt1354538",
+    "title": "Detroit Metal City",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3207": {
     "imdb_id": "tt1161659",
     "title": "Graveyard Kitaro"
@@ -7213,12 +7241,6 @@
   "4044": {
     "imdb_id": "tt1352421",
     "title": "Natsume yûjinchô",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  "4063": {
-    "imdb_id": "tt1158671",
-    "title": "Spice and Wolf",
     "fromSeason": 2,
     "fromEpisode": 1
   },
@@ -8617,6 +8639,18 @@
     "imdb_id": "tt2196757",
     "title": "Inu x Boku SS"
   },
+  "6682": {
+    "imdb_id": "tt2266660",
+    "title": "Koi to senkyo to chokoreto",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7737": {
+    "imdb_id": "tt2266660",
+    "title": "Koi to senkyo to chokoreto",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "6442": {
     "imdb_id": "tt2293824",
     "title": "Muv-Luv Alternative: Total Eclipse"
@@ -9783,7 +9817,15 @@
   },
   "7245": {
     "imdb_id": "tt2552262",
-    "title": "The Troubled Life of Miss Kotoura"
+    "title": "The Troubled Life of Miss Kotoura",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7477": {
+    "imdb_id": "tt2552262",
+    "title": "The Troubled Life of Miss Kotoura",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "7253": {
     "imdb_id": "tt0988818",
@@ -10609,7 +10651,9 @@
   },
   "7774": {
     "imdb_id": "tt3199306",
-    "title": "Wake Up, Girls!"
+    "title": "Wake Up, Girls!",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "7782": {
     "imdb_id": "tt3199286",
@@ -10876,6 +10920,30 @@
     "title": "Miss Monochrome",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "10765": {
+    "imdb_id": "tt3198674",
+    "title": "Miss Monochrome",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "11370": {
+    "imdb_id": "tt3198674",
+    "title": "Miss Monochrome",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "8515": {
+    "imdb_id": "tt3198674",
+    "title": "Miss Monochrome",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "9994": {
+    "imdb_id": "tt3198674",
+    "title": "Miss Monochrome",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "7924": {
     "imdb_id": "tt3069742",
@@ -12577,6 +12645,10 @@
     "fromSeason": 0,
     "fromEpisode": 13
   },
+  "10068": {
+    "imdb_id": "tt5263886",
+    "title": "Wake Up, Girls! Zoku gekijouban: Seishun no kage"
+  },
   "10069": {
     "imdb_id": "tt5373222",
     "title": "My Wife Is the Student Council President",
@@ -12922,12 +12994,6 @@
     "imdb_id": "tt4872210",
     "title": "High Speed! Free! Starting Summer"
   },
-  "10765": {
-    "imdb_id": "tt3198674",
-    "title": "Miss Monochrome",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "10766": {
     "imdb_id": "tt5235870",
     "title": "Valkyrie Drive: Mermaid",
@@ -12981,6 +13047,10 @@
   "10844": {
     "imdb_id": "tt4954596",
     "title": "Wakako-zake"
+  },
+  "10845": {
+    "imdb_id": "tt5263888",
+    "title": "Wake Up, Girls! Beyond the Bottom"
   },
   "10846": {
     "imdb_id": "tt5526028",
@@ -13643,12 +13713,6 @@
     "imdb_id": "tt5513012",
     "title": "JK meshi!",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "11370": {
-    "imdb_id": "tt3198674",
-    "title": "Miss Monochrome",
-    "fromSeason": 3,
     "fromEpisode": 1
   },
   "11373": {
@@ -15162,6 +15226,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "41158": {
+    "imdb_id": "tt6859260",
+    "title": "The King's Avatar",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "42673": {
     "imdb_id": "tt10736726",
     "title": "The King's Avatar: For the Glory"
@@ -15879,6 +15949,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13627": {
+    "imdb_id": "tt6517102",
+    "title": "Castlevania",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "41990": {
+    "imdb_id": "tt6517102",
+    "title": "Castlevania",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "44387": {
+    "imdb_id": "tt6517102",
+    "title": "Castlevania",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "13530": {
     "imdb_id": "tt7513452",
     "title": "Just Because"
@@ -16038,12 +16126,6 @@
     "fromEpisode": 1
   },
   "13623": {},
-  "13627": {
-    "imdb_id": "tt6517102",
-    "title": "Castlevania",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "13635": {
     "imdb_id": "tt7808344",
     "title": "Karakai Jouzu no Takagi-san",
@@ -16206,8 +16288,8 @@
   "13706": {
   },
   "13707": {
-    "imdb_id": "tt4663630",
-    "title": "Wake Up",
+    "imdb_id": "tt3199306",
+    "title": "Wake Up, Girls!",
     "fromSeason": 2,
     "fromEpisode": 1
   },
@@ -17725,12 +17807,6 @@
     "fromSeason": 0,
     "fromEpisode": 20
   },
-  "41990": {
-    "imdb_id": "tt6517102",
-    "title": "Castlevania",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
   "41991": {
     "imdb_id": "tt10472884",
     "title": "Rascal Does Not Dream of Bunny Girl Senpai The Movie"
@@ -17913,6 +17989,12 @@
     "imdb_id": "tt10711718",
     "title": "Miru Tights",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42473": {
+    "imdb_id": "tt10711718",
+    "title": "Miru Tights",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "42079": {
@@ -18493,7 +18575,15 @@
   },
   "42420": {
     "imdb_id": "tt10980934",
-    "title": "Azur Lane"
+    "title": "Azur Lane",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42734": {
+    "imdb_id": "tt10980934",
+    "title": "Azur Lane",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "42423": {
     "imdb_id": "tt10882992",
