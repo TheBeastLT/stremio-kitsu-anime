@@ -5281,6 +5281,18 @@
     "imdb_id": "tt0264281",
     "title": "Nazca"
   },
+  "1598": {
+    "imdb_id": "tt2224968",
+    "title": "Jang Geum ieui Kkum",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5627": {
+    "imdb_id": "tt2224968",
+    "title": "Jang Geum ieui Kkum",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "1606": {
     "imdb_id": "tt4110092",
     "title": "Sprite: Between Two Worlds"
@@ -11700,6 +11712,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42629": {
+    "imdb_id": "tt3895144",
+    "title": "Sora No Method",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "8338": {
     "imdb_id": "tt5714216",
     "title": "Black Butler: Book of Murder"
@@ -16604,7 +16622,15 @@
   },
   "13950": {
     "imdb_id": "tt7806844",
-    "title": "Hakumei and Mikochi"
+    "title": "Hakumei and Mikochi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "14203": {
+    "imdb_id": "tt7806844",
+    "title": "Hakumei and Mikochi",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "13952": {
     "imdb_id": "tt12486080",
@@ -17515,16 +17541,22 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "41379": {
-    "imdb_id": "tt10265146",
-    "title": "Miss Caretaker of Sunohara-sou",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "42632": {
     "imdb_id": "tt9522300",
     "title": "Kaguya-sama: Love Is War",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43731": {
+    "imdb_id": "tt9522300",
+    "title": "Kaguya-sama: Love Is War",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "41379": {
+    "imdb_id": "tt10265146",
+    "title": "Miss Caretaker of Sunohara-sou",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "41375": {
@@ -17584,6 +17616,10 @@
     "title": "School Babysitters",
     "fromSeason": 0,
     "fromEpisode": 1
+  },
+  "41450": {
+    "imdb_id": "tt8652818",
+    "title": "Violet Evergarden: The Movie"
   },
   "41451": {
     "imdb_id": "tt8660606",
