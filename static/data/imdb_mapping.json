@@ -3631,6 +3631,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "3254": {
+    "imdb_id": "tt0953916",
+    "title": "Air Gear",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "760": {
     "imdb_id": "tt0978042",
     "title": "Gunparade Orchestra"
@@ -6761,6 +6767,12 @@
     "fromSeason": 0,
     "fromEpisode": 13
   },
+  "14159": {
+    "imdb_id": "tt1216222",
+    "title": "To Love-Ru",
+    "fromSeason": 0,
+    "fromEpisode": 16
+  },
   "3029": {
     "imdb_id": "tt1309395",
     "title": "Kemeko Deluxe!"
@@ -7422,6 +7434,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "4427": {
+    "imdb_id": "tt1463151",
+    "title": "Sora no manimani",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4769": {
+    "imdb_id": "tt1463151",
+    "title": "Sora no manimani",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "4430": {
     "imdb_id": "tt1610860",
     "title": "Rainbow: Nishakubou no shichinin"
@@ -7535,6 +7559,18 @@
     "title": "Angel Beats!",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "5591": {
+    "imdb_id": "tt1639109",
+    "title": "Angel Beats!",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "6019": {
+    "imdb_id": "tt1639109",
+    "title": "Angel Beats!",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "4617": {
     "imdb_id": "tt0995941",
@@ -8077,12 +8113,6 @@
     "fromSeason": 0,
     "fromEpisode": 5
   },
-  "5591": {
-    "imdb_id": "tt1639109",
-    "title": "Angel Beats!",
-    "fromSeason": 0,
-    "fromEpisode": 1
-  },
   "5613": {
     "imdb_id": "tt1776196",
     "title": "Fullmetal Alchemist: The Sacred Star of Milos"
@@ -8353,12 +8383,6 @@
     "imdb_id": "tt1899047",
     "title": "Toriko",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "6019": {
-    "imdb_id": "tt6077008",
-    "title": "Angel Beats!",
-    "fromSeason": 0,
     "fromEpisode": 1
   },
   "6026": {
@@ -9987,6 +10011,12 @@
     "imdb_id": "tt2859264",
     "title": "Hyperdimension Neptunia",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8071": {
+    "imdb_id": "tt2859264",
+    "title": "Hyperdimension Neptunia",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "7382": {
@@ -13845,6 +13875,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11790": {
+    "imdb_id": "tt5341430",
+    "title": "Grimgar of Fantasy and Ash",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "11449": {
     "imdb_id": "tt5476944",
     "title": "Black Butler: Book of the Atlantic"
@@ -14913,6 +14949,12 @@
     "title": "Miss Kobayashi's Dragon Maid",
     "fromSeason": 0,
     "fromEpisode": 8
+  },
+  "44326": {
+    "imdb_id": "tt6185782",
+    "title": "Miss Kobayashi's Dragon Maid",
+    "fromSeason": 0,
+    "fromEpisode": 9
   },
   "12244": {
   },
@@ -16303,6 +16345,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "14061": {
+    "imdb_id": "tt7662364",
+    "title": "Recovery of an MMO Junkie",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "13706": {
   },
   "13707": {
@@ -17395,6 +17443,10 @@
     "imdb_id": "tt8993464",
     "title": "Bloom into You"
   },
+  "41254": {
+    "imdb_id": "tt8354164",
+    "title": "Princess Principal Crown Handler: Chapter 1"
+  },
   "41263": {
     "imdb_id": "tt13760402",
     "title": "Gakuen Basara - Samurai High School",
@@ -18400,6 +18452,12 @@
   "42260": {
     "imdb_id": "tt11405390",
     "title": "Darwin's Game",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42267": {
+    "imdb_id": "tt10545250",
+    "title": "Eden",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -19842,6 +19900,12 @@
   "44180": {
     "imdb_id": "tt13807542",
     "title": "Fairy Ranmaru: Anata no Kokoro Otasuke Shimasu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44595": {
+    "imdb_id": "tt14648632",
+    "title": "ArtisWitch",
     "fromSeason": 1,
     "fromEpisode": 1
   }
