@@ -7479,8 +7479,8 @@
   "5102": {
     "imdb_id": "tt1515976",
     "title": "11 Eyes",
-    "fromSeason": 1,
-    "fromEpisode": 13
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "4474": {
     "imdb_id": "tt1516239",
@@ -9187,7 +9187,15 @@
   },
   "6701": {
     "imdb_id": "tt2309934",
-    "title": "Acchi Kocchi"
+    "title": "Acchi Kocchi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7401": {
+    "imdb_id": "tt2309934",
+    "title": "Acchi Kocchi",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "6702": {
     "imdb_id": "tt2250160",
@@ -9898,6 +9906,30 @@
     "title": "Date a Live",
     "fromSeason": 4,
     "fromEpisode": 1
+  },
+  "7839": {
+    "imdb_id": "tt2575684",
+    "title": "Date a Live",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "8511": {
+    "imdb_id": "tt2575684",
+    "title": "Date a Live",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "42553": {
+    "imdb_id": "tt2575684",
+    "title": "Date a Live",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
+  "43355": {
+    "imdb_id": "tt2575684",
+    "title": "Date a Live",
+    "fromSeason": 0,
+    "fromEpisode": 5
   },
   "8512": {
     "imdb_id": "tt5331768",
@@ -12533,6 +12565,30 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11474": {
+    "imdb_id": "tt4384306",
+    "title": "Sound! Euphonium",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "11137": {
+    "imdb_id": "tt4384306",
+    "title": "Sound! Euphonium",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "11391": {
+    "imdb_id": "tt4384306",
+    "title": "Sound! Euphonium",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
+  "13212": {
+    "imdb_id": "tt4384306",
+    "title": "Sound! Euphonium",
+    "fromSeason": 0,
+    "fromEpisode": 10
+  },
   "9992": {
     "imdb_id": "tt5827092",
     "title": "Macross Delta",
@@ -13935,12 +13991,6 @@
     "imdb_id": "tt5170006",
     "title": "The Reflection"
   },
-  "11474": {
-    "imdb_id": "tt4384306",
-    "title": "Sound! Euphonium",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "11476": {
   },
   "12755": {
@@ -14621,6 +14671,12 @@
     "title": "91 Days",
     "fromSeason": 0,
     "fromEpisode": 2
+  },
+  "41661": {
+    "imdb_id": "tt5839706",
+    "title": "91 Days",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "11965": {
     "imdb_id": "tt8526106",
