@@ -6823,6 +6823,18 @@
     "imdb_id": "tt1216133",
     "title": "Kyôran kazoku nikki"
   },
+  "3117": {
+    "imdb_id": "tt1524993",
+    "title": "Kodai Oja Kyoryu Kingu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4259": {
+    "imdb_id": "tt1524993",
+    "title": "Kodai Oja Kyoryu Kingu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3120": {
     "imdb_id": "tt0275838",
     "title": "Getta Robot",
@@ -8651,6 +8663,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6727": {
+    "imdb_id": "tt2122656",
+    "title": "Guilty Crown",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "6958": {
+    "imdb_id": "tt2122656",
+    "title": "Guilty Crown",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
   "6353": {
     "imdb_id": "tt2127216",
     "title": "Un-Go"
@@ -9830,6 +9854,18 @@
     "title": "Senran Kagura: Ninja Flash!",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  "7818 ": {
+    "imdb_id": "tt2360110",
+    "title": "Senran Kagura: Ninja Flash!",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "10005": {
+    "imdb_id": "tt2360110",
+    "title": "Senran Kagura: Ninja Flash!",
+    "fromSeason": 0,
+    "fromEpisode": 7
   },
   "7217": {
     "imdb_id": "tt2390066",
@@ -17037,6 +17073,18 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "42007": {
+    "imdb_id": "tt8673610",
+    "title": "Cells at Work!",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "42341": {
+    "imdb_id": "tt8673610",
+    "title": "Cells at Work!",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
   "14246": {
     "imdb_id": "tt7899522",
     "title": "Gegege no Kitaro",
@@ -20026,6 +20074,12 @@
   "44180": {
     "imdb_id": "tt13807542",
     "title": "Fairy Ranmaru: Anata no Kokoro Otasuke Shimasu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44207": {
+    "imdb_id": "tt13676344",
+    "title": "Shuumatsu no Valkyrie",
     "fromSeason": 1,
     "fromEpisode": 1
   },
