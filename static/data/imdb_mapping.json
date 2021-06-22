@@ -14433,6 +14433,12 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "44779": {
+    "imdb_id": "tt6455986",
+    "title": "Saga of Tanya the Evil",
+    "fromSeason": 0,
+    "fromEpisode": 17
+  },
   "14173": {
     "imdb_id": "tt9507276",
     "title": "Saga of Tanya the Evil Movie"
@@ -14813,6 +14819,10 @@
   "12023": {
     "imdb_id": "tt6026166",
     "title": "Planetarian: The Reverie of a Little Planet"
+  },
+  "12053": {
+    "imdb_id": "tt6047388",
+    "title": "Planetarian: Hoshi no Hito"
   },
   "12024": {
     "imdb_id": "tt6176438",
@@ -20077,6 +20087,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44195": {
+    "imdb_id": "tt14271876",
+    "title": "Scarlet Nexus",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44207": {
     "imdb_id": "tt13676344",
     "title": "Shuumatsu no Valkyrie",
@@ -20090,6 +20106,12 @@
   "44391": {
     "imdb_id": "tt14443540",
     "title": "Yoru no Kuni",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44501": {
+    "imdb_id": "tt14642342",
+    "title": "Sonny Boy",
     "fromSeason": 1,
     "fromEpisode": 1
   },
