@@ -17,7 +17,15 @@
   },
   "5": {
     "imdb_id": "tt3123886",
-    "title": "Beet the Vandel Buster"
+    "title": "Beet the Vandel Buster",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1007": {
+    "imdb_id": "tt3123886",
+    "title": "Beet the Vandel Buster",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "6": {
     "imdb_id": "tt0996695",
@@ -1102,6 +1110,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "343": {
+    "imdb_id": "tt0480489",
+    "title": "Elfen Lied",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "202": {
     "imdb_id": "tt0279077",
     "title": "FLCL",
@@ -1910,12 +1924,6 @@
   "342": {
     "imdb_id": "tt0414813",
     "title": "All Purpose Cultural Cat Girl Nuku Nuku"
-  },
-  "343": {
-    "imdb_id": "tt0480489",
-    "title": "Elfen Lied",
-    "fromSeason": 0,
-    "fromEpisode": 1
   },
   "344": {
     "imdb_id": "tt1000946",
@@ -6457,6 +6465,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6957": {
+    "imdb_id": "tt1143514",
+    "title": "Tales of Agriculture",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "3144": {
+    "imdb_id": "tt1143514",
+    "title": "Tales of Agriculture",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "2713": {
     "imdb_id": "tt1202625",
     "title": "Gambling Apocalypse Kaiji",
@@ -9418,12 +9438,6 @@
   "6951": {
     "imdb_id": "tt6163360",
     "title": "Recorder to Randoseru",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  "6957": {
-    "imdb_id": "tt1143514",
-    "title": "Tales of Agriculture",
     "fromSeason": 2,
     "fromEpisode": 1
   },
@@ -17265,6 +17279,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "43361": {
+    "imdb_id": "tt9054364",
+    "title": "That Time I Got Reincarnated as a Slime",
+    "fromSeason": 2,
+    "fromEpisode": 13
+  },
   "42212": {
     "imdb_id": "tt9054364",
     "title": "That Time I Got Reincarnated as a Slime",
@@ -17369,7 +17389,15 @@
   },
   "41076": {
     "imdb_id": "tt9286928",
-    "title": "Muhyo & Roji's Bureau of Supernatural Investigation"
+    "title": "Muhyo & Roji's Bureau of Supernatural Investigation",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43295": {
+    "imdb_id": "tt9286928",
+    "title": "Muhyo & Roji's Bureau of Supernatural Investigation",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "41077": {
   },
@@ -19507,6 +19535,12 @@
     "imdb_id": "tt12213092",
     "title": "Mewkledreamy",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44172": {
+    "imdb_id": "tt12213092",
+    "title": "Mewkledreamy",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "42615": {
