@@ -7019,6 +7019,18 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "4031": {
+    "imdb_id": "tt1339238",
+    "title": "Sekirei",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "5700": {
+    "imdb_id": "tt1339238",
+    "title": "Sekirei",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
   "3453": {
     "imdb_id": "tt1352421",
     "title": "Natsume yûjinchô",
@@ -8629,6 +8641,18 @@
     "imdb_id": "tt0466352",
     "title": "Prince of Tennis: Another Story 2 - Messages From Past and Future",
     "fromSeason": 12,
+    "fromEpisode": 1
+  },
+  "6249": {
+    "imdb_id": "tt2073864",
+    "title": "C³: C Cube",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6751": {
+    "imdb_id": "tt2073864",
+    "title": "C³: C Cube",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "6255": {
@@ -10462,6 +10486,24 @@
   "7671": {
     "imdb_id": "tt2904622",
     "title": "Stella Women's Academy, High School Division Class C³"
+  },
+  "7672": {
+    "imdb_id": "tt2662790",
+    "title": "Kimi no Iru Machi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6492": {
+    "imdb_id": "tt2662790",
+    "title": "Kimi no Iru Machi",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "8185": {
+    "imdb_id": "tt2662790",
+    "title": "Kimi no Iru Machi",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "7673": {
     "imdb_id": "tt2904570",
@@ -13602,7 +13644,21 @@
   },
   "11207": {
     "imdb_id": "tt9731082",
-    "title": "A Sister's All You Need"
+    "title": "A Sister's All You Need",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41714": {
+    "imdb_id": "tt9731082",
+    "title": "A Sister's All You Need",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "41715": {
+    "imdb_id": "tt9731082",
+    "title": "A Sister's All You Need",
+    "fromSeason": 0,
+    "fromEpisode": 7
   },
   "11208": {
     "imdb_id": "tt5527048",
@@ -13934,6 +13990,24 @@
     "title": "Granblue Fantasy: The Animation",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "14132": {
+    "imdb_id": "tt6138612",
+    "title": "Granblue Fantasy: The Animation",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "13626": {
+    "imdb_id": "tt6138612",
+    "title": "Granblue Fantasy: The Animation",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "43058": {
+    "imdb_id": "tt6138612",
+    "title": "Granblue Fantasy: The Animation",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "11387": {
     "imdb_id": "tt5483318",
@@ -15905,6 +15979,30 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13245": {
+    "imdb_id": "tt8938030",
+    "title": "Ani ni Tsukeru Kusuri wa Nai!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41331": {
+    "imdb_id": "tt8938030",
+    "title": "Ani ni Tsukeru Kusuri wa Nai!",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42399": {
+    "imdb_id": "tt8938030",
+    "title": "Ani ni Tsukeru Kusuri wa Nai!",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "43275": {
+    "imdb_id": "tt8938030",
+    "title": "Ani ni Tsukeru Kusuri wa Nai!",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "13252": {
     "imdb_id": "tt7131720",
     "title": "Kakegurui",
@@ -17038,12 +17136,6 @@
   "14129": {
     "imdb_id": "tt9266104",
     "title": "After Owarimonogatari"
-  },
-  "14132": {
-    "imdb_id": "tt6138612",
-    "title": "Granblue Fantasy: The Animation",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "14137": {
     "imdb_id": "tt8250240",
@@ -19625,6 +19717,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44398": {
+    "imdb_id": "tt13718450",
+    "title": "86",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "44788": {
+    "imdb_id": "tt13718450",
+    "title": "86",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "43067": {
     "imdb_id": "tt12331342",
     "title": "Akudama Drive",
@@ -20065,6 +20169,12 @@
     "imdb_id": "tt13851958",
     "title": "Vivy: Fluorite Eye's Song",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44828": {
+    "imdb_id": "tt13851958",
+    "title": "Vivy: Fluorite Eye's Song",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "43966": {
