@@ -445,11 +445,27 @@
   },
   "72": {
     "imdb_id": "tt0374407",
-    "title": "Mobile Suit Gundam Seed"
+    "title": "Mobile Suit Gundam Seed",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "2080": {
+    "imdb_id": "tt0374407",
+    "title": "Mobile Suit Gundam Seed",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "73": {
     "imdb_id": "tt0434694",
-    "title": "Mobile Suit Gundam Seed Destiny"
+    "title": "Mobile Suit Gundam Seed Destiny",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1092": {
+    "imdb_id": "tt0434694",
+    "title": "Mobile Suit Gundam Seed Destiny",
+    "fromSeason": 0,
+    "fromEpisode": 7
   },
   "74": {
     "imdb_id": "tt0189318",
@@ -5557,6 +5573,36 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "3514": {
+    "imdb_id": "tt0983962",
+    "title": "Hayate, the Combat Butler",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "7148": {
+    "imdb_id": "tt0983962",
+    "title": "Hayate, the Combat Butler",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "7561": {
+    "imdb_id": "tt0983962",
+    "title": "Hayate, the Combat Butler",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "4133": {
+    "imdb_id": "tt0983962",
+    "title": "Hayate, the Combat Butler",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "8451": {
+    "imdb_id": "tt0983962",
+    "title": "Hayate, the Combat Butler",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
   "1828": {
     "imdb_id": "tt0203895",
     "title": "The Sea Prince and the Fire Child"
@@ -5648,6 +5694,12 @@
   "1947": {
     "imdb_id": "tt0296386",
     "title": "The Wonderful Adventures of Nils"
+  },
+  "1948": {
+    "imdb_id": "tt0997284",
+    "title": "Ohedo Rocket",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "1952": {
     "imdb_id": "tt1114855",
@@ -7073,12 +7125,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "3514": {
-    "imdb_id": "tt1445868",
-    "title": "Hayate, the Combat Butler 2",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "3529": {
     "imdb_id": "tt1821149",
     "title": "Rosario + Vampire",
@@ -7564,6 +7610,42 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "5174": {
+    "imdb_id": "tt1515996",
+    "title": "A Certain Scientific Railgun",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "5592": {
+    "imdb_id": "tt1515996",
+    "title": "A Certain Scientific Railgun",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "5586": {
+    "imdb_id": "tt1515996",
+    "title": "A Certain Scientific Railgun",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
+  "7969": {
+    "imdb_id": "tt1515996",
+    "title": "A Certain Scientific Railgun",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
+  "8357": {
+    "imdb_id": "tt1515996",
+    "title": "A Certain Scientific Railgun",
+    "fromSeason": 0,
+    "fromEpisode": 9
+  },
+  "43707": {
+    "imdb_id": "tt1515996",
+    "title": "A Certain Scientific Railgun",
+    "fromSeason": 0,
+    "fromEpisode": 12
+  },
   "4519": {
     "imdb_id": "tt3029762",
     "title": "Omamori Himari",
@@ -7935,6 +8017,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6413": {
+    "imdb_id": "tt2011519",
+    "title": "Hourou Musuko",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "5356": {
     "imdb_id": "tt5328606",
     "title": "Digimon Savers 3D: Digital World Kiki Ippatsu!"
@@ -7990,6 +8078,24 @@
     "title": "Seitokai yakuindomo",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "8061": {
+    "imdb_id": "tt1694038",
+    "title": "Seitokai yakuindomo",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6046": {
+    "imdb_id": "tt1694038",
+    "title": "Seitokai yakuindomo",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "8708": {
+    "imdb_id": "tt1694038",
+    "title": "Seitokai yakuindomo",
+    "fromSeason": 0,
+    "fromEpisode": 9
   },
   "5435": {
     "imdb_id": "tt1685397",
@@ -8294,6 +8400,12 @@
   "5908": {
     "imdb_id": "tt1909586",
     "title": "Sket Dance",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5927": {
+    "imdb_id": "tt2230587",
+    "title": "Suite PreCure",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -9649,12 +9761,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "7148": {
-    "imdb_id": "tt2359708",
-    "title": "Hayate the Combat Butler: Can't Take My Eyes Off You",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "7156": {
     "imdb_id": "tt2309390",
     "title": "Yurumate3Dei"
@@ -10320,12 +10426,6 @@
   "7553": {
     "imdb_id": "tt2909912",
     "title": "Silver Spoon",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "7561": {
-    "imdb_id": "tt5647272",
-    "title": "Hayate the Combat Butler: Cuties",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -11469,12 +11569,6 @@
     "imdb_id": "tt3341584",
     "title": "Recently, My Sister is Unusual",
     "fromSeason": 0,
-    "fromEpisode": 1
-  },
-  "8061": {
-    "imdb_id": "tt1694038",
-    "title": "Seitokai yakuindomo",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "8076": {
@@ -17395,6 +17489,12 @@
     "fromSeason": 0,
     "fromEpisode": 7
   },
+  "44852": {
+    "imdb_id": "tt9054364",
+    "title": "That Time I Got Reincarnated as a Slime",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
   "42207": {
     "imdb_id": "tt10981202",
     "title": "Her Blue Sky"
@@ -18045,6 +18145,12 @@
     "imdb_id": "tt9885888",
     "title": "Kabukichou Sherlock",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43391": {
+    "imdb_id": "tt9885888",
+    "title": "Kabukichou Sherlock",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "41941": {
@@ -19171,6 +19277,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44077": {
+    "imdb_id": "tt13103028",
+    "title": "Bottom-tier Character Tomozaki",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "42627": {
     "imdb_id": "tt12457334",
     "title": "Wandering Witch: The Journey of Elaina",
@@ -19413,6 +19525,12 @@
     "imdb_id": "tt11822984",
     "title": "My Next Life as a Villainess: All Routes Lead to Doom! ",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43238": {
+    "imdb_id": "tt11822984",
+    "title": "My Next Life as a Villainess: All Routes Lead to Doom! ",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "42921": {
@@ -19668,6 +19786,12 @@
   "42923": {
     "imdb_id": "tt13198632",
     "title": "Hige o Soru. Soshite Joshikousei o Hirou.",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42924": {
+    "imdb_id": "tt13528102",
+    "title": "Bokutachi no Remake",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -20009,10 +20133,22 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43613": {
+    "imdb_id": "tt13399402",
+    "title": "How a Realist Hero Rebuilt the Kingdom",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43620": {
     "imdb_id": "tt13248076",
     "title": "Wonder Egg Priority",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44260": {
+    "imdb_id": "tt13248076",
+    "title": "Wonder Egg Priority",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "43651": {
@@ -20141,6 +20277,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43847": {
+    "imdb_id": "tt13715764",
+    "title": "Mahouka Koukou no Yuutousei",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43853": {
     "imdb_id": "tt13592988",
     "title": "Idolls!",
@@ -20150,6 +20292,12 @@
   "43861": {
     "imdb_id": "tt13593022",
     "title": "Kyuukyoku Shinka Shita Full Dive RPG ga Genjitsu yori mo Kusogee Dattara",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43870": {
+    "imdb_id": "tt13022022",
+    "title": "Peach Boy Riverside",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -20219,9 +20367,21 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44122": {
+    "imdb_id": "tt14201334",
+    "title": "Re-Main",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44123": {
     "imdb_id": "tt13412606",
     "title": "Bakuten!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44165": {
+    "imdb_id": "tt13463778",
+    "title": "Kanojo mo Kanojo",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -20237,15 +20397,33 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44184": {
+    "imdb_id": "tt14550644",
+    "title": "Higurashi no Naku Koro ni Sotsu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44195": {
     "imdb_id": "tt14271876",
     "title": "Scarlet Nexus",
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44206": {
+    "imdb_id": "tt13351056",
+    "title": "Kageki Shoujo!!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44207": {
     "imdb_id": "tt13676344",
     "title": "Shuumatsu no Valkyrie",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44241": {
+    "imdb_id": "tt14641098",
+    "title": "Vanitas no Carte",
     "fromSeason": 1,
     "fromEpisode": 1
   },
