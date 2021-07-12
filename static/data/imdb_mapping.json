@@ -11005,6 +11005,10 @@
     "fromSeason": 6,
     "fromEpisode": 1
   },
+  "7801": {
+    "imdb_id": "tt3178174",
+    "title": "Giovanni's Island"
+  },
   "7821": {
     "imdb_id": "tt3115338",
     "title": "Nisekoi",
@@ -18955,7 +18959,15 @@
   },
   "42319": {
     "imdb_id": "tt10431262",
-    "title": "Isekai Cheat Magician"
+    "title": "Isekai Cheat Magician",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44871": {
+    "imdb_id": "tt10431262",
+    "title": "Isekai Cheat Magician",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "42322": {
     "imdb_id": "tt10777610",
@@ -19350,6 +19362,12 @@
   "42586": {
     "imdb_id": "tt11032374",
     "title": "Demon Slayer the Movie: Mugen Train"
+  },
+  "42658": {
+    "imdb_id": "tt11192890",
+    "title": "Uramichi Oniisan",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "42659": {
     "imdb_id": "tt11193002",
@@ -19911,6 +19929,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43234": {
+    "imdb_id": "tt10487722",
+    "title": "On-Gaku: Our Sound"
+  },
   "43237": {
     "imdb_id": "tt12220526",
     "title": "Girl Gaku. Hijiri Girls Square Gakuin",
@@ -20187,6 +20209,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43712": {
+    "imdb_id": "tt13417144",
+    "title": "Getter Robo Ark",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43716": {
     "imdb_id": "tt13405062",
     "title": "Back Arrow",
@@ -20331,6 +20359,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44022": {
+    "imdb_id": "tt13884052",
+    "title": "Tantei wa Mou, Shindeiru.",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44035": {
+    "imdb_id": "tt13971512",
+    "title": "Shinigami Bocchan to Kuro Maid",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44064": {
     "imdb_id": "tt13984000",
     "title": "Seven Knights Revolution: Eiyuu no Keishousha",
@@ -20382,6 +20422,12 @@
   "44165": {
     "imdb_id": "tt13463778",
     "title": "Kanojo mo Kanojo",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44174": {
+    "imdb_id": "tt13544802",
+    "title": "Seirei Gensouki",
     "fromSeason": 1,
     "fromEpisode": 1
   },
