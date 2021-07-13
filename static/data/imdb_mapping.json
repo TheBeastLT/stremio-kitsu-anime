@@ -1060,7 +1060,33 @@
   },
   "186": {
     "imdb_id": "tt0096686",
-    "title": "Ranma ½"
+    "title": "Ranma ½",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "897": {
+    "imdb_id": "tt0096686",
+    "title": "Ranma ½",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "898": {
+    "imdb_id": "tt0096686",
+    "title": "Ranma ½",
+    "fromSeason": 0,
+    "fromEpisode": 9
+  },
+  "901": {
+    "imdb_id": "tt0096686",
+    "title": "Ranma ½",
+    "fromSeason": 0,
+    "fromEpisode": 12
+  },
+  "4123": {
+    "imdb_id": "tt0096686",
+    "title": "Ranma ½",
+    "fromSeason": 0,
+    "fromEpisode": 15
   },
   "188": {
     "imdb_id": "tt0091794",
@@ -5547,7 +5573,27 @@
   },
   "1801": {
     "imdb_id": "tt0948103",
-    "title": "Tengen toppa gurren lagann"
+    "title": "Tengen toppa gurren lagann",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6267": {
+    "imdb_id": "tt0948103",
+    "title": "Tengen toppa gurren lagann",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "2950": {
+    "imdb_id": "tt0948103",
+    "title": "Tengen toppa gurren lagann",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "4358": {
+    "imdb_id": "tt0948103",
+    "title": "Tengen toppa gurren lagann",
+    "fromSeason": 0,
+    "fromEpisode": 5
   },
   "1802": {
     "imdb_id": "tt1433670",
@@ -5566,6 +5612,24 @@
     "title": "Darker Than Black: Gemini of the Meteor",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "4617": {
+    "imdb_id": "tt0995941",
+    "title": "Darker Than Black: Gemini of the Meteor",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "3506": {
+    "imdb_id": "tt0995941",
+    "title": "Darker Than Black: Gemini of the Meteor",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "4947": {
+    "imdb_id": "tt0995941",
+    "title": "Darker Than Black: Gemini of the Meteor",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "1825": {
     "imdb_id": "tt0983962",
@@ -7702,12 +7766,6 @@
     "fromSeason": 0,
     "fromEpisode": 2
   },
-  "4617": {
-    "imdb_id": "tt0995941",
-    "title": "Darker Than Black: Gemini of the Meteor",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "4630": {
     "imdb_id": "tt1945730",
     "title": "Katanagatari"
@@ -7879,12 +7937,6 @@
   "4938": {
     "imdb_id": "tt1572781",
     "title": "The Disappearance of Haruhi Suzumiya"
-  },
-  "4947": {
-    "imdb_id": "tt0995941",
-    "title": "Darker Than Black: Gemini of the Meteor",
-    "fromSeason": 2,
-    "fromEpisode": 13
   },
   "4989": {
     "imdb_id": "tt1636780",
@@ -16803,6 +16855,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43890": {
+    "imdb_id": "tt11628636",
+    "title": "Tsukipro the Animation",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "13722": {
     "imdb_id": "tt8253158",
     "title": "Comic Girls"
@@ -19439,6 +19497,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42729": {
+    "imdb_id": "tt11301554",
+    "title": "Natsunagu!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42744": {
     "imdb_id": "tt11595706",
     "title": "Interspecies Reviewers",
@@ -19749,6 +19813,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43268": {
+    "imdb_id": "tt13943462",
+    "title": "Meikyuu Black Company",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42204": {
     "imdb_id": "tt11151982",
     "title": "Goblin Slayer: Goblin's Crown"
@@ -19979,6 +20049,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44295": {
+    "imdb_id": "tt12728856",
+    "title": "The Hidden Dungeon Only I Can Enter",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "43302": {
     "imdb_id": "tt12415634",
     "title": "Mars Red",
@@ -20054,6 +20130,12 @@
     "fromEpisode": 1
   },
   "43367": {
+    "imdb_id": "tt12706854",
+    "title": "I'm Standing on a Million Lives",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43883": {
     "imdb_id": "tt12706854",
     "title": "I'm Standing on a Million Lives",
     "fromSeason": 1,
@@ -20155,6 +20237,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43612": {
+    "imdb_id": "tt12390384",
+    "title": "Cheat Kusushi no Slow Life: Isekai ni Tsukurou Drug Store",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43613": {
     "imdb_id": "tt13399402",
     "title": "How a Realist Hero Rebuilt the Kingdom",
@@ -20176,6 +20264,12 @@
   "43651": {
     "imdb_id": "tt13102918",
     "title": "Cap Kakumei Bottleman",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43653": {
+    "imdb_id": "tt13173456",
+    "title": "Resident Evil: Infinite Darkness",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -20407,6 +20501,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44116": {
+    "imdb_id": "tt13851952",
+    "title": "Shiroi Suna no Aquatope",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44122": {
     "imdb_id": "tt14201334",
     "title": "Re-Main",
@@ -20467,9 +20567,21 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44213": {
+    "imdb_id": "tt14827932",
+    "title": "Gloomy the Naughty Grizzly",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44241": {
     "imdb_id": "tt14641098",
     "title": "Vanitas no Carte",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44297": {
+    "imdb_id": "tt13311344",
+    "title": "Tsukimichi - Moonlit Fantasy",
     "fromSeason": 1,
     "fromEpisode": 1
   },
