@@ -6245,7 +6245,27 @@
   },
   "2347": {
     "imdb_id": "tt0085092",
-    "title": "Armored Trooper VOTOMS"
+    "title": "Armored Trooper VOTOMS",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "2351": {
+    "imdb_id": "tt7162308",
+    "title": "Armored Trooper VOTOMS: Shining Heresy",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "2887": {
+    "imdb_id": "tt8964354",
+    "title": "Armored Trooper VOTOMS: Pailsen Files",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5172": {
+    "imdb_id": "tt8964432",
+    "title": "Armored Trooper VOTOMS: Phantom Chapter",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "2357": {
     "imdb_id": "tt1155650",
@@ -8842,6 +8862,28 @@
     "fromEpisode": 2
   },
   "6285": {
+    "imdb_id": "tt13219090",
+    "title": "Morita-san wa Mukuchi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6549": {
+    "imdb_id": "tt13219090",
+    "title": "Morita-san wa Mukuchi",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "5860": {
+    "imdb_id": "tt13219090",
+    "title": "Morita-san wa Mukuchi",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "6849": {
+    "imdb_id": "tt13219090",
+    "title": "Morita-san wa Mukuchi",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "6316": {
     "imdb_id": "tt2645500",
@@ -11093,6 +11135,54 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "8359": {
+    "imdb_id": "tt3111906",
+    "title": "Yami shibai",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "11484": {
+    "imdb_id": "tt3111906",
+    "title": "Yami shibai",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "12783": {
+    "imdb_id": "tt3111906",
+    "title": "Yami shibai",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "13576": {
+    "imdb_id": "tt3111906",
+    "title": "Yami shibai",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "41315": {
+    "imdb_id": "tt3111906",
+    "title": "Yami shibai",
+    "fromSeason": 6,
+    "fromEpisode": 1
+  },
+  "42359": {
+    "imdb_id": "tt3111906",
+    "title": "Yami shibai",
+    "fromSeason": 7,
+    "fromEpisode": 1
+  },
+  "43797": {
+    "imdb_id": "tt3111906",
+    "title": "Yamishibai: Japanese Ghost Stories",
+    "fromSeason": 8,
+    "fromEpisode": 1
+  },
+  "44664": {
+    "imdb_id": "tt3111906",
+    "title": "Yamishibai: Japanese Ghost Stories",
+    "fromSeason": 9,
+    "fromEpisode": 1
+  },
   "7843": {
     "imdb_id": "tt3169640",
     "title": "Yozakura Quartet: Hana no Uta",
@@ -12080,12 +12170,6 @@
     "imdb_id": "tt3894916",
     "title": "Terra Formars",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "8359": {
-    "imdb_id": "tt3111906",
-    "title": "Yami shibai",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "8380": {
@@ -14309,12 +14393,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "11484": {
-    "imdb_id": "tt3111906",
-    "title": "Yami shibai",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
   "11485": {
     "imdb_id": "tt5618002",
     "title": "Super Lovers",
@@ -15904,12 +15982,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "12783": {
-    "imdb_id": "tt3111906",
-    "title": "Yami shibai",
-    "fromSeason": 4,
-    "fromEpisode": 1
-  },
   "12793": {
     "imdb_id": "tt6740188",
     "title": "Sakura Quest"
@@ -16527,12 +16599,6 @@
     "imdb_id": "tt8425966",
     "title": "The Silver Guardian",
     "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  "13576": {
-    "imdb_id": "tt3111906",
-    "title": "Yami shibai",
-    "fromSeason": 5,
     "fromEpisode": 1
   },
   "13581": {
@@ -17981,12 +18047,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "41315": {
-    "imdb_id": "tt3111906",
-    "title": "Yami shibai",
-    "fromSeason": 6,
-    "fromEpisode": 1
-  },
   "41336": {
     "imdb_id": "tt10452436",
     "title": "Naka no Hito Genome",
@@ -19099,12 +19159,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "42359": {
-    "imdb_id": "tt3111906",
-    "title": "Yami shibai",
-    "fromSeason": 7,
-    "fromEpisode": 1
-  },
   "42369": {
   },
   "42379": {
@@ -20138,7 +20192,7 @@
   "43883": {
     "imdb_id": "tt12706854",
     "title": "I'm Standing on a Million Lives",
-    "fromSeason": 1,
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "43464": {
@@ -20325,12 +20379,6 @@
     "imdb_id": "tt13884016",
     "title": "Maiko-san Chi no Makanai-san",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "43797": {
-    "imdb_id": "tt3111906",
-    "title": "Yamishibai: Japanese Ghost Stories",
-    "fromSeason": 8,
     "fromEpisode": 1
   },
   "43798": {
@@ -20555,6 +20603,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44198": {
+    "imdb_id": "tt14264200",
+    "title": "D_Cide Traumerei the Animation",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44206": {
     "imdb_id": "tt13351056",
     "title": "Kageki Shoujo!!",
@@ -20598,6 +20652,12 @@
   "44501": {
     "imdb_id": "tt14642342",
     "title": "Sonny Boy",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44503": {
+    "imdb_id": "tt14976292",
+    "title": "Link Click",
     "fromSeason": 1,
     "fromEpisode": 1
   },
