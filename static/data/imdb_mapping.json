@@ -19705,6 +19705,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42401": {
+    "imdb_id": "tt13099214",
+    "title": "Yubisaki kara Honki no Netsujou",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44016": {
+    "imdb_id": "tt13099214",
+    "title": "Yubisaki kara Honki no Netsujou",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "42433": {
     "imdb_id": "tt12443322",
     "title": "Deca-Dence",
@@ -20195,6 +20207,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "43456": {
+    "imdb_id": "tt12779780",
+    "title": "Fena: Pirate Princess",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43464": {
     "imdb_id": "tt13286958",
     "title": "2.43: Seiin High School Boys Volleyball Team",
@@ -20375,6 +20393,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43734": {
+    "imdb_id": "tt13409388",
+    "title": "Heion Sedai no Idaten-tachi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43750": {
     "imdb_id": "tt13884016",
     "title": "Maiko-san Chi no Makanai-san",
@@ -20477,6 +20501,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43894": {
+    "imdb_id": "tt13405764",
+    "title": "Night Head 2041",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43932": {
     "imdb_id": "tt14134550",
     "title": "Oddtaxi",
@@ -20561,6 +20591,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44124":{
+    "imdb_id": "tt13840232",
+    "title": "Love Live! Superstar!!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44123": {
     "imdb_id": "tt13412606",
     "title": "Bakuten!",
@@ -20576,6 +20612,12 @@
   "44174": {
     "imdb_id": "tt13544802",
     "title": "Seirei Gensouki",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44176": {
+    "imdb_id": "tt12378990",
+    "title": "Megami-ryou no Ryoubo-kun.",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -20606,6 +20648,12 @@
   "44198": {
     "imdb_id": "tt14264200",
     "title": "D_Cide Traumerei the Animation",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44200": {
+    "imdb_id": "tt13444580",
+    "title": "Deatte 5-byou de Battle",
     "fromSeason": 1,
     "fromEpisode": 1
   },
