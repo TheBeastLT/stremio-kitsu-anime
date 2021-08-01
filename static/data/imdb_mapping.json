@@ -3249,6 +3249,18 @@
     "imdb_id": "tt0175385",
     "title": "Bubblegum Crisis: Tokyo 2040"
   },
+  "526": {
+    "imdb_id": "tt0106076",
+    "title": "The Irresponsible Captain Tylor",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1049": {
+    "imdb_id": "tt0106076",
+    "title": "The Irresponsible Captain Tylor",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "527": {
     "imdb_id": "tt0193253",
     "title": "Jin-Roh: The Wolf Brigade"
@@ -11109,6 +11121,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "9178": {
+    "imdb_id": "tt3115338",
+    "title": "Nisekoi",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "7826": {
     "imdb_id": "tt2049430",
     "title": "Digimon Adventure"
@@ -11269,7 +11287,15 @@
   },
   "7880": {
     "imdb_id": "tt3431758",
-    "title": "No Game, No Life"
+    "title": "No Game, No Life",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8534": {
+    "imdb_id": "tt3431758",
+    "title": "No Game, No Life",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "7881": {
     "imdb_id": "tt3225270",
@@ -12729,12 +12755,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "9178": {
-    "imdb_id": "tt3115338",
-    "title": "Nisekoi",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "9215": {
   },
   "9520": {
@@ -13997,6 +14017,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11953": {
+    "imdb_id": "tt5621006",
+    "title": "Flying Witch",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "11318": {
     "imdb_id": "tt5674072",
     "title": "Tonkatsu DJ Agetarou",
@@ -14074,6 +14100,18 @@
     "title": "Myriad Colors Phantom World",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "11686": {
+    "imdb_id": "tt5321046",
+    "title": "Myriad Colors Phantom World",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "12128": {
+    "imdb_id": "tt5321046",
+    "title": "Myriad Colors Phantom World",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "11334": {
     "imdb_id": "tt2390066",
@@ -14617,6 +14655,10 @@
     "title": "Active Raid",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  "11621": {
+    "imdb_id": "tt3666024",
+    "title": "The Red Turtle"
   },
   "11627": {},
   "11653": {
@@ -16188,6 +16230,18 @@
   "13228": {
     "imdb_id": "tt7326322",
     "title": "The Ancient Magus' Bride"
+  },
+  "13229": {
+    "imdb_id": "tt7484994",
+    "title": "Children of the Whales",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "14054": {
+    "imdb_id": "tt7484994",
+    "title": "Children of the Whales",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "13230": {
     "imdb_id": "tt6660498",
@@ -17989,6 +18043,10 @@
     "imdb_id": "tt8993464",
     "title": "Bloom into You"
   },
+  "41224": {
+    "imdb_id": "tt13288678",
+    "title": "Mobile Suit Gundam: Hathaway"
+  },
   "41254": {
     "imdb_id": "tt8354164",
     "title": "Princess Principal Crown Handler: Chapter 1"
@@ -18757,6 +18815,10 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "42143": {
+    "imdb_id": "tt12735338",
+    "title": "Words Bubble Up Like Soda Pop"
+  },
   "42144": {
     "imdb_id": "tt9836798",
     "title": "Cinderella Nine"
@@ -19169,6 +19231,12 @@
     "imdb_id": "tt4731072",
     "title": "Food Wars: Shokugeki no Soma",
     "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "42397": {
+    "imdb_id": "tt10675070",
+    "title": "Uchi Tama?! Uchi no Tama Shirimasen ka?",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "41073": {
@@ -20357,6 +20425,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43683": {
+    "imdb_id": "tt10766468",
+    "title": "Gintama: The Final"
+  },
   "43689": {
     "imdb_id": "tt13344434",
     "title": "Hetalia: World Stars",
@@ -20501,6 +20573,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44787": {
+    "imdb_id": "tt12798548",
+    "title": "Yakunara Mug Cup mo",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "43894": {
     "imdb_id": "tt13405764",
     "title": "Night Head 2041",
@@ -20591,7 +20669,7 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "44124":{
+  "44124": {
     "imdb_id": "tt13840232",
     "title": "Love Live! Superstar!!",
     "fromSeason": 1,
@@ -20686,6 +20764,16 @@
     "title": "Tsukimichi - Moonlit Fantasy",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "44301": {
+    "imdb_id": "tt15077804",
+    "title": "Obey Me!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44338": {
+    "imdb_id": "tt13210990",
+    "title": "Natsume Yuujinchou: Ishi Okoshi to Ayashiki Raihousha"
   },
   "44339": {
     "imdb_id": "tt13048312",
