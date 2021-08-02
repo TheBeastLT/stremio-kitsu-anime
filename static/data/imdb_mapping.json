@@ -3685,7 +3685,39 @@
   },
   "758": {
     "imdb_id": "tt0978215",
-    "title": "Utawarerumono"
+    "title": "Utawarerumono",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "11021": {
+    "imdb_id": "tt0978215",
+    "title": "Utawarerumono",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "3129": {
+    "imdb_id": "tt0978215",
+    "title": "Utawarerumono",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "4695": {
+    "imdb_id": "tt0978215",
+    "title": "Utawarerumono",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
+  "1647": {
+    "imdb_id": "tt0978215",
+    "title": "Utawarerumono",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
+  "41429": {
+    "imdb_id": "tt0978215",
+    "title": "Utawarerumono",
+    "fromSeason": 0,
+    "fromEpisode": 11
   },
   "759": {
     "imdb_id": "tt0953916",
@@ -5849,6 +5881,18 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "3438": {
+    "imdb_id": "tt1118804",
+    "title": "Clannad: After Story",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "4529": {
+    "imdb_id": "tt1118804",
+    "title": "Clannad: After Story",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
   "1544": {
     "imdb_id": "tt0997274",
     "title": "Clannad"
@@ -7133,15 +7177,21 @@
   },
   "3378": {
     "imdb_id": "tt1244315",
-    "title": "Kannagi: Crazy Shrine Maidens ",
+    "title": "Kannagi: Crazy Shrine Maidens",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "4369": {
     "imdb_id": "tt1244315",
-    "title": "Kannagi: Crazy Shrine Maidens ",
+    "title": "Kannagi: Crazy Shrine Maidens",
     "fromSeason": 1,
     "fromEpisode": 14
+  },
+  "3387": {
+    "imdb_id": "tt1196094",
+    "title": "Yu☆Gi☆Oh! 5D's",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "3426": {
     "imdb_id": "tt1166871",
@@ -8191,6 +8241,12 @@
     "imdb_id": "tt1685397",
     "title": "Amagami SS",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "5606": {
+    "imdb_id": "tt1685397",
+    "title": "Amagami SS",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "5943": {
@@ -10681,6 +10737,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "4724": {
+    "imdb_id": "tt1568632",
+    "title": "Sound of the Sky",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "7669": {
     "imdb_id": "tt2904596",
     "title": "Servant X Service"
@@ -11989,6 +12051,18 @@
     "title": "Amagi Brilliant Park",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "10610": {
+    "imdb_id": "tt3950084",
+    "title": "Amagi Brilliant Park",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "10715": {
+    "imdb_id": "tt3950084",
+    "title": "Amagi Brilliant Park",
+    "fromSeason": 0,
+    "fromEpisode": 8
   },
   "8262": {
     "imdb_id": "tt3592032",
@@ -13685,12 +13759,6 @@
   "11020": {
     "imdb_id": "tt5321096",
     "title": "Haruchika: Haruta & Chika"
-  },
-  "11021": {
-    "imdb_id": "tt0978215",
-    "title": "Utawarerumono",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "11023": {
     "imdb_id": "tt5861670",
@@ -18395,6 +18463,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "41962": {
+    "imdb_id": "tt9642578",
+    "title": "I'm glad I could keep running",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "41965": {
     "imdb_id": "tt9182894",
     "title": "Merc Storia: Yujutsushi to Suzu no Shirabe"
@@ -19897,16 +19971,16 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "43102": {
-    "imdb_id": "tt12855254",
-    "title": "Guraburu!",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "43581": {
     "imdb_id": "tt12464182",
     "title": "Uzaki-chan Wants to Hang Out!",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43102": {
+    "imdb_id": "tt12855254",
+    "title": "Guraburu!",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "43121": {
@@ -20782,6 +20856,12 @@
   "44391": {
     "imdb_id": "tt14443540",
     "title": "Yoru no Kuni",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44400": {
+    "imdb_id": "tt14986786",
+    "title": "Wanmei Shijie",
     "fromSeason": 1,
     "fromEpisode": 1
   },
