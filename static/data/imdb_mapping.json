@@ -803,7 +803,15 @@
   },
   "143": {
     "imdb_id": "tt0364863",
-    "title": "RahXephon"
+    "title": "RahXephon",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "516": {
+    "imdb_id": "tt0364863",
+    "title": "RahXephon",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "144": {
     "imdb_id": "tt0482424",
@@ -4463,6 +4471,18 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "4269": {
+    "imdb_id": "tt0978553",
+    "title": "The Familiar of Zero",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "4579": {
+    "imdb_id": "tt0978553",
+    "title": "The Familiar of Zero",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
   "1077": {
     "imdb_id": "tt0889540",
     "title": "Tsuyokiss: Cool×Sweet"
@@ -7077,6 +7097,18 @@
     "imdb_id": "tt5317270",
     "title": "Yotoden: Chronicle of the Warlord Period"
   },
+  "3140": {
+    "imdb_id": "tt1216223",
+    "title": "Library Wars",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4060": {
+    "imdb_id": "tt1216223",
+    "title": "Library Wars",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "3143": {
     "imdb_id": "tt1216123",
     "title": "Kamen No Maid Guy"
@@ -7534,7 +7566,15 @@
   },
   "4138": {
     "imdb_id": "tt1343645",
-    "title": "Pandora Hearts"
+    "title": "Pandora Hearts",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4776": {
+    "imdb_id": "tt1343645",
+    "title": "Pandora Hearts",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "4190": {
     "imdb_id": "tt1409062",
@@ -9405,6 +9445,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "7545": {
+    "imdb_id": "tt2348803",
+    "title": "Kuroko's Basketball",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "8524": {
+    "imdb_id": "tt2348803",
+    "title": "Kuroko's Basketball",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "8261": {
+    "imdb_id": "tt2348803",
+    "title": "Kuroko's Basketball",
+    "fromSeason": 0,
+    "fromEpisode": 19
+  },
   "6598": {
     "imdb_id": "tt2082624",
     "title": "Dog Days",
@@ -10572,12 +10630,6 @@
   "7544": {
     "imdb_id": "tt2904420",
     "title": "Makai Ouji: Devils and Realist"
-  },
-  "7545": {
-    "imdb_id": "tt2348803",
-    "title": "Kuroko's Basketball",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "7549": {
     "imdb_id": "tt2703716",
@@ -12378,12 +12430,6 @@
     "imdb_id": "tt3399712",
     "title": "Hamatora",
     "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  "8524": {
-    "imdb_id": "tt2348803",
-    "title": "Kuroko's Basketball",
-    "fromSeason": 3,
     "fromEpisode": 1
   },
   "8531": {
@@ -15716,6 +15762,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13294": {
+    "imdb_id": "tt6407994",
+    "title": "Gabriel DropOut",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "12504": {
     "imdb_id": "tt6210806",
     "title": "Monster Strike the Movie"
@@ -18625,6 +18677,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43090": {
+    "imdb_id": "tt9547400",
+    "title": "Magia Record: Puella Magi Madoka Magica Side Story",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "42018": {
   },
   "42024": {
@@ -20856,6 +20914,12 @@
   "44391": {
     "imdb_id": "tt14443540",
     "title": "Yoru no Kuni",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44392": {
+    "imdb_id": "tt14470072",
+    "title": "Jahy-sama wa Kujikenai!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
