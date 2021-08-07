@@ -6267,6 +6267,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "2325": {
+    "imdb_id": "tt0081648",
+    "title": "Terra e..."
+  },
   "2326": {
     "imdb_id": "tt0122336",
     "title": "Captain Future"
@@ -8839,7 +8843,15 @@
   },
   "6153": {
     "imdb_id": "tt2074028",
-    "title": "Kamisama Dolls"
+    "title": "Kamisama Dolls",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6574": {
+    "imdb_id": "tt2074028",
+    "title": "Kamisama Dolls",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "6157": {
     "imdb_id": "tt1352421",
@@ -9363,6 +9375,18 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "42213": {
+    "imdb_id": "tt2250192",
+    "title": "Sword Art Online",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "42927": {
+    "imdb_id": "tt2250192",
+    "title": "Sword Art Online",
+    "fromSeason": 4,
+    "fromEpisode": 13
+  },
   "7372": {
     "imdb_id": "tt2250192",
     "title": "Sword Art Online",
@@ -9421,6 +9445,12 @@
     "imdb_id": "tt7978710",
     "title": "Sword Art Online: Alternative Gun Gale Online",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41273": {
+    "imdb_id": "tt7978710",
+    "title": "Sword Art Online: Alternative Gun Gale Online",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "6590": {
@@ -10540,6 +10570,54 @@
     "title": "Attack on Titan",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "8671": {
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "13569": {
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "41982": {
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 3,
+    "fromEpisode": 13
+  },
+  "42422": {
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "7889": {
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "7694": {
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 0,
+    "fromEpisode": 11
+  },
+  "8674": {
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 0,
+    "fromEpisode": 15
+  },
+  "13718": {
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 0,
+    "fromEpisode": 20
   },
   "7446": {
     "imdb_id": "tt2698484",
@@ -12558,6 +12636,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "12770": {
+    "imdb_id": "tt4379632",
+    "title": "Blood Blockade Battlefront",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "11030": {
+    "imdb_id": "tt4379632",
+    "title": "Blood Blockade Battlefront",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "11772": {
+    "imdb_id": "tt4379632",
+    "title": "Blood Blockade Battlefront",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
   "8647": {
     "imdb_id": "tt3981980",
     "title": "Koufuku Graffiti"
@@ -12647,12 +12743,6 @@
   "8669": {
     "imdb_id": "tt5236254",
     "title": "Anti-Magic Academy: The 35th Test Platoon"
-  },
-  "8671": {
-    "imdb_id": "tt2560140",
-    "title": "Attack on Titan",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "8672": {
     "imdb_id": "tt3646944",
@@ -13038,6 +13128,54 @@
     "title": "Food Wars: Shokugeki no Soma",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "11612": {
+    "imdb_id": "tt4731072",
+    "title": "Food Wars: Shokugeki no Soma",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "13581": {
+    "imdb_id": "tt4731072",
+    "title": "Food Wars: Shokugeki no Soma",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "14092": {
+    "imdb_id": "tt4731072",
+    "title": "Food Wars: Shokugeki no Soma",
+    "fromSeason": 3,
+    "fromEpisode": 13
+  },
+  "42390": {
+    "imdb_id": "tt4731072",
+    "title": "Food Wars: Shokugeki no Soma",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "42921": {
+    "imdb_id": "tt4731072",
+    "title": "Food Wars: Shokugeki no Soma",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "11353": {
+    "imdb_id": "tt4731072",
+    "title": "Food Wars: Shokugeki no Soma",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "13508": {
+    "imdb_id": "tt4731072",
+    "title": "Food Wars: Shokugeki no Soma",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
+  "14124": {
+    "imdb_id": "tt4731072",
+    "title": "Food Wars: Shokugeki no Soma",
+    "fromSeason": 0,
+    "fromEpisode": 6
   },
   "9969": {
     "imdb_id": "tt4279012",
@@ -14531,6 +14669,54 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "12268": {
+    "imdb_id": "tt5626028",
+    "title": "Boku no Hero Academia",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "13881": {
+    "imdb_id": "tt5626028",
+    "title": "Boku No Hero Academia",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "41971": {
+    "imdb_id": "tt5626028",
+    "title": "Boku No Hero Academia",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "43108": {
+    "imdb_id": "tt5626028",
+    "title": "Boku No Hero Academia",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "12511": {
+    "imdb_id": "tt5626028",
+    "title": "Boku No Hero Academia",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "13313": {
+    "imdb_id": "tt5626028",
+    "title": "Boku No Hero Academia",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "14030": {
+    "imdb_id": "tt5626028",
+    "title": "Boku No Hero Academia",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "43485": {
+    "imdb_id": "tt5626028",
+    "title": "Boku No Hero Academia",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
   "11473": {
     "imdb_id": "tt5170006",
     "title": "The Reflection"
@@ -14747,12 +14933,6 @@
   "11610": {
     "imdb_id": "tt6777074",
     "title": "Love Tyrant"
-  },
-  "11612": {
-    "imdb_id": "tt4731072",
-    "title": "Food Wars: Shokugeki no Soma",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "11613": {
     "imdb_id": "tt5483932",
@@ -15630,12 +15810,6 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
-  "12268": {
-    "imdb_id": "tt5626028",
-    "title": "Boku no Hero Academia",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "12272": {
     "imdb_id": "tt6352180",
     "title": "Little Witch Academia"
@@ -16137,12 +16311,6 @@
   "12769": {
     "imdb_id": "tt6819736",
     "title": "WorldEnd: What Do You Do at the End of the World? Are You Busy? Will You Save Us?"
-  },
-  "12770": {
-    "imdb_id": "tt4379632",
-    "title": "Blood Blockade Battlefront",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "12793": {
     "imdb_id": "tt6740188",
@@ -16757,12 +16925,6 @@
     "imdb_id": "tt6799518",
     "title": "Free! Timeless Medley: The Promise"
   },
-  "13569": {
-    "imdb_id": "tt2560140",
-    "title": "Attack on Titan",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
   "13570": {
     "imdb_id": "tt8391976",
     "title": "Bungou Stray Dogs: Dead Apple"
@@ -16773,12 +16935,6 @@
     "imdb_id": "tt8425966",
     "title": "The Silver Guardian",
     "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  "13581": {
-    "imdb_id": "tt4731072",
-    "title": "Food Wars: Shokugeki no Soma",
-    "fromSeason": 3,
     "fromEpisode": 1
   },
   "13583": {
@@ -17250,48 +17406,6 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
-  "13881": {
-    "imdb_id": "tt5626028",
-    "title": "Boku No Hero Academia",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
-  "41971": {
-    "imdb_id": "tt5626028",
-    "title": "Boku No Hero Academia",
-    "fromSeason": 4,
-    "fromEpisode": 1
-  },
-  "43108": {
-    "imdb_id": "tt5626028",
-    "title": "Boku No Hero Academia",
-    "fromSeason": 5,
-    "fromEpisode": 1
-  },
-  "12511": {
-    "imdb_id": "tt5626028",
-    "title": "Boku No Hero Academia",
-    "fromSeason": 0,
-    "fromEpisode": 1
-  },
-  "13313": {
-    "imdb_id": "tt5626028",
-    "title": "Boku No Hero Academia",
-    "fromSeason": 0,
-    "fromEpisode": 2
-  },
-  "14030": {
-    "imdb_id": "tt5626028",
-    "title": "Boku No Hero Academia",
-    "fromSeason": 0,
-    "fromEpisode": 3
-  },
-  "43485": {
-    "imdb_id": "tt5626028",
-    "title": "Boku No Hero Academia",
-    "fromSeason": 0,
-    "fromEpisode": 8
-  },
   "42006": {
     "imdb_id": "tt11285348",
     "title": "Re: Zero kara Hajimeru Isekai Seikatsu: Hyouketsu no Kizuna"
@@ -17510,12 +17624,6 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
-  "14092": {
-    "imdb_id": "tt4731072",
-    "title": "Food Wars: Shokugeki no Soma",
-    "fromSeason": 3,
-    "fromEpisode": 13
-  },
   "14093": {
     "imdb_id": "tt7847678",
     "title": "Gdgd Men's Party",
@@ -17528,7 +17636,6 @@
     "fromSeason": 10,
     "fromEpisode": 1
   },
-  "14124": {},
   "14129": {
     "imdb_id": "tt9266104",
     "title": "After Owarimonogatari"
@@ -17713,6 +17820,12 @@
     "imdb_id": "tt2150751",
     "title": "Chihayafuru",
     "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "42100": {
+    "imdb_id": "tt11296252",
+    "title": "A Destructive God Sits Next to Me",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "41004": {
@@ -18320,6 +18433,10 @@
   "41376": {
   },
   "41378": {
+    "imdb_id": "tt13293368",
+    "title": "100 Sleeping Princes and the Kingdom of Dreams",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "41381": {
     "imdb_id": "tt8683066",
@@ -18570,42 +18687,6 @@
   "41980": {
     "imdb_id": "tt10256918",
     "title": "A Certain Scientific Accelerator"
-  },
-  "41982": {
-    "imdb_id": "tt2560140",
-    "title": "Attack on Titan",
-    "fromSeason": 3,
-    "fromEpisode": 13
-  },
-  "42422": {
-    "imdb_id": "tt2560140",
-    "title": "Attack on Titan",
-    "fromSeason": 4,
-    "fromEpisode": 1
-  },
-  "7889": {
-    "imdb_id": "tt2560140",
-    "title": "Attack on Titan",
-    "fromSeason": 0,
-    "fromEpisode": 2
-  },
-  "7694": {
-    "imdb_id": "tt2560140",
-    "title": "Attack on Titan",
-    "fromSeason": 0,
-    "fromEpisode": 11
-  },
-  "8674": {
-    "imdb_id": "tt2560140",
-    "title": "Attack on Titan",
-    "fromSeason": 0,
-    "fromEpisode": 15
-  },
-  "13718": {
-    "imdb_id": "tt2560140",
-    "title": "Attack on Titan",
-    "fromSeason": 0,
-    "fromEpisode": 20
   },
   "41991": {
     "imdb_id": "tt10472884",
@@ -18859,6 +18940,18 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "42083": {
+    "imdb_id": "tt10443344",
+    "title": "Tsuujou Kougeki ga Zentai Kougeki de Ni-kai Kougeki no Okaasan wa Suki Desuka?",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42450": {
+    "imdb_id": "tt10443344",
+    "title": "Tsuujou Kougeki ga Zentai Kougeki de Ni-kai Kougeki no Okaasan wa Suki Desuka?",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "42093": {
     "imdb_id": "tt10671412",
     "title": "Nobunaga teacher's young bride",
@@ -19071,18 +19164,6 @@
     "imdb_id": "tt10622220",
     "title": "Ningen shikkaku"
   },
-  "42213": {
-    "imdb_id": "tt2250192",
-    "title": "Sword Art Online",
-    "fromSeason": 4,
-    "fromEpisode": 1
-  },
-  "42927": {
-    "imdb_id": "tt2250192",
-    "title": "Sword Art Online",
-    "fromSeason": 4,
-    "fromEpisode": 13
-  },
   "42214": {
     "imdb_id": "tt9883660",
     "title": "Namuamida Butsu! Rendai Utena"
@@ -19129,6 +19210,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42838": {
+    "imdb_id": "tt10885406",
+    "title": "Ascendance of a Bookworm",
+    "fromSeason": 1,
+    "fromEpisode": 15
+  },
+  "43607": {
+    "imdb_id": "tt10885406",
+    "title": "Ascendance of a Bookworm",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "43048": {
+    "imdb_id": "tt10885406",
+    "title": "Ascendance of a Bookworm",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "42444": {
     "imdb_id": "tt12373578",
     "title": "Maesetsu!",
@@ -19141,12 +19240,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "42838": {
-    "imdb_id": "tt10885406",
-    "title": "Ascendance of a Bookworm",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "42849": {
     "imdb_id": "tt12390430",
     "title": "Skate Leading Stars",
@@ -19157,12 +19250,6 @@
     "imdb_id": "tt11858104",
     "title": "Dragon Quest: The Adventure of Dai",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "43607": {
-    "imdb_id": "tt10885406",
-    "title": "Ascendance of a Bookworm",
-    "fromSeason": 3,
     "fromEpisode": 1
   },
   "42242": {
@@ -19359,12 +19446,6 @@
     "imdb_id": "tt10479420",
     "title": "Given"
   },
-  "42390": {
-    "imdb_id": "tt4731072",
-    "title": "Food Wars: Shokugeki no Soma",
-    "fromSeason": 4,
-    "fromEpisode": 1
-  },
   "42397": {
     "imdb_id": "tt10675070",
     "title": "Uchi Tama?! Uchi no Tama Shirimasen ka?",
@@ -19481,6 +19562,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42488": {
+    "imdb_id": "tt11480896",
+    "title": "The Case Files of Jeweler Richard",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42711": {
     "imdb_id": "tt10978032",
     "title": "Kandagawa Jet Girls",
@@ -19589,6 +19676,12 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "42601": {
+    "imdb_id": "tt11428682",
+    "title": "Murenase! Seton Gakuen",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42616": {
     "imdb_id": "tt12879646",
     "title": "Dragon, Ie o Kau.",
@@ -19689,6 +19782,12 @@
     "imdb_id": "tt11405408",
     "title": "Asteroid in Love",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43013": {
+    "imdb_id": "tt11405408",
+    "title": "Asteroid in Love",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "42391": {
@@ -19867,12 +19966,6 @@
     "imdb_id": "tt11822984",
     "title": "My Next Life as a Villainess: All Routes Lead to Doom! ",
     "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  "42921": {
-    "imdb_id": "tt4731072",
-    "title": "Food Wars: Shokugeki no Soma",
-    "fromSeason": 5,
     "fromEpisode": 1
   },
   "42602": {
@@ -20210,6 +20303,12 @@
   "43067": {
     "imdb_id": "tt12331342",
     "title": "Akudama Drive",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43069": {
+    "imdb_id": "tt12094170",
+    "title": "Extra Olympia Kyklos",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -20620,6 +20719,10 @@
     "title": "LBX Girls",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "43810": {
+    "imdb_id": "tt14402928",
+    "title": "Gekijou Henshuuban Kakushigoto: Himegoto wa Nandesuka"
   },
   "43818": {
     "imdb_id": "tt13308820",
