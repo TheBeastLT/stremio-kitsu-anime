@@ -1050,13 +1050,17 @@
     "imdb_id": "tt0423731",
     "title": "Samurai Champloo"
   },
-  "182": {
-    "imdb_id": "tt0247128",
-    "title": "Record of Lodoss War: Chronicles of the Heroic Knight"
-  },
   "183": {
     "imdb_id": "tt0100044",
-    "title": "Record of the Lodoss War"
+    "title": "Record of the Lodoss War",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "182": {
+    "imdb_id": "tt0100044",
+    "title": "Record of the Lodoss War",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "184": {
     "imdb_id": "tt0368197",
@@ -2207,13 +2211,28 @@
   },
   "391": {
     "imdb_id": "tt0444953",
-    "title": "Kaleido Star"
+    "title": "Kaleido Star",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "392": {
-    "imdb_id": "tt6264836",
-    "title": "Kaleido Star: Aratanaru Tsubasa Extra Stage - Waranai Sugoi Ohimesama"
+    "imdb_id": "tt0444953",
+    "title": "Kaleido Star",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
-  "393": {},
+  "393": {
+    "imdb_id": "tt0444953",
+    "title": "Kaleido Star",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "1347": {
+    "imdb_id": "tt0444953",
+    "title": "Kaleido Star",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
   "394": {
     "imdb_id": "tt0485323",
     "title": "Fullmetal Alchemist the Movie: Conqueror of Shamballa"
@@ -9175,7 +9194,15 @@
   },
   "6489": {
     "imdb_id": "tt2198397",
-    "title": "Black Rock Shooter"
+    "title": "Black Rock Shooter",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4854": {
+    "imdb_id": "tt2198397",
+    "title": "Black Rock Shooter",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "6501": {
     "imdb_id": "tt0466352",
@@ -10154,6 +10181,54 @@
     "title": "Fate/kaleid liner Prisma Illya",
     "fromSeason": 4,
     "fromEpisode": 1
+  },
+  "7858": {
+    "imdb_id": "tt2904426",
+    "title": "Fate/kaleid liner Prisma Illya",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "7861": {
+    "imdb_id": "tt2904426",
+    "title": "Fate/kaleid liner Prisma Illya",
+    "fromSeason": 0,
+    "fromEpisode": 6
+  },
+  "8661": {
+    "imdb_id": "tt2904426",
+    "title": "Fate/kaleid liner Prisma Illya",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
+  "8831": {
+    "imdb_id": "tt2904426",
+    "title": "Fate/kaleid liner Prisma Illya",
+    "fromSeason": 0,
+    "fromEpisode": 12
+  },
+  "11176": {
+    "imdb_id": "tt2904426",
+    "title": "Fate/kaleid liner Prisma Illya",
+    "fromSeason": 0,
+    "fromEpisode": 13
+  },
+  "12965": {
+    "imdb_id": "tt2904426",
+    "title": "Fate/kaleid liner Prisma Illya",
+    "fromSeason": 0,
+    "fromEpisode": 18
+  },
+  "41391": {
+    "imdb_id": "tt2904426",
+    "title": "Fate/kaleid liner Prisma Illya",
+    "fromSeason": 0,
+    "fromEpisode": 25
+  },
+  "42223": {
+    "imdb_id": "tt2904426",
+    "title": "Fate/kaleid liner Prisma Illya",
+    "fromSeason": 0,
+    "fromEpisode": 26
   },
   "12555": {
     "imdb_id": "tt7283066",
@@ -12094,6 +12169,12 @@
     "imdb_id": "tt3588312",
     "title": "The Comic Artist and Assistants",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8525": {
+    "imdb_id": "tt3588312",
+    "title": "The Comic Artist and Assistants",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "8151": {
