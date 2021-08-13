@@ -14119,6 +14119,12 @@
     "fromSeason": 5,
     "fromEpisode": 1
   },
+  "44957": {
+    "imdb_id": "tt6348126",
+    "title": "Beyblade Burst",
+    "fromSeason": 6,
+    "fromEpisode": 1
+  },
   "11115": {
     "imdb_id": "tt9044620",
     "title": "Kuroko no Basket: Saikou no Present Desu"
@@ -18013,6 +18019,12 @@
     "imdb_id": "tt9005728",
     "title": "Mo Dao Zu Shi",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43083": {
+    "imdb_id": "tt9005728",
+    "title": "Mo Dao Zu Shi",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "41052": {
