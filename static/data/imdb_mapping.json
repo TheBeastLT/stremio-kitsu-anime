@@ -811,7 +811,17 @@
     "imdb_id": "tt0364863",
     "title": "RahXephon",
     "fromSeason": 0,
-    "fromEpisode": 1
+    "fromEpisode": 2
+  },
+  "4035": {
+    "imdb_id": "tt0364863",
+    "title": "RahXephon",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "680": {
+    "imdb_id": "tt1047518",
+    "title": "RahXephon: Pluralitas Concentio"
   },
   "144": {
     "imdb_id": "tt0482424",
@@ -8009,6 +8019,18 @@
     "fromSeason": 0,
     "fromEpisode": 5
   },
+  "4697": {
+    "imdb_id": "tt1586814",
+    "title": "Dance in the Vampire Bund",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5244": {
+    "imdb_id": "tt1586814",
+    "title": "Dance in the Vampire Bund",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "4765": {
     "imdb_id": "tt1909447",
     "title": "Deadman Wonderland",
@@ -8023,6 +8045,24 @@
     "imdb_id": "tt1685484",
     "title": "Working!!",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6220": {
+    "imdb_id": "tt1685484",
+    "title": "Working!!",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "8712": {
+    "imdb_id": "tt1685484",
+    "title": "Working!!",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "11420": {
+    "imdb_id": "tt1685484",
+    "title": "Working!!",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "4813": {
@@ -8938,12 +8978,6 @@
     "imdb_id": "tt2785038",
     "title": "Yuruyuri",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "6220": {
-    "imdb_id": "tt1685484",
-    "title": "Working!!",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "6232": {
@@ -9989,6 +10023,30 @@
     "title": "Encouragement of Climb",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "8201": {
+    "imdb_id": "tt2595474",
+    "title": "Encouragement of Climb",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "13583": {
+    "imdb_id": "tt2595474",
+    "title": "Encouragement of Climb",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "7766": {
+    "imdb_id": "tt2595474",
+    "title": "Encouragement of Climb",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "9783": {
+    "imdb_id": "tt2595474",
+    "title": "Encouragement of Climb",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "7123": {
     "imdb_id": "tt2150751",
@@ -11490,6 +11548,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "8188": {
+    "imdb_id": "tt3105434",
+    "title": "My Mental Choices Are Completely Interfering with My School Romantic Comedy",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "7849": {
     "imdb_id": "tt3104096",
     "title": "Warukyûre romantse"
@@ -12235,12 +12299,6 @@
     "imdb_id": "tt3465710",
     "title": "Wake Up, Girls! 7 Nin No Idol the Movie"
   },
-  "8201": {
-    "imdb_id": "tt2595474",
-    "title": "Encouragement of Climb",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "8246": {
     "imdb_id": "tt3615768",
     "title": "Blue Spring Ride",
@@ -12884,12 +12942,6 @@
   "8710": {
     "imdb_id": "tt3985216",
     "title": "Ore, Twintails ni Narimasu"
-  },
-  "8712": {
-    "imdb_id": "tt1685484",
-    "title": "Working!!",
-    "fromSeason": 3,
-    "fromEpisode": 1
   },
   "8716": {
     "imdb_id": "tt2320220",
@@ -14659,12 +14711,6 @@
     "title": "Sailor Moon Crystal",
     "fromSeason": 3,
     "fromEpisode": 1
-  },
-  "11420": {
-    "imdb_id": "tt1685484",
-    "title": "Working!!",
-    "fromSeason": 3,
-    "fromEpisode": 14
   },
   "11423": {
     "imdb_id": "tt5544384",
@@ -17022,12 +17068,6 @@
     "imdb_id": "tt8425966",
     "title": "The Silver Guardian",
     "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  "13583": {
-    "imdb_id": "tt2595474",
-    "title": "Encouragement of Climb ",
-    "fromSeason": 3,
     "fromEpisode": 1
   },
   "13592": {
@@ -20335,6 +20375,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44990": {
+    "imdb_id": "tt13528102",
+    "title": "Bokutachi no Remake",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "42935": {
     "imdb_id": "tt12980648",
     "title": "Higurashi: When They Cry - New",
@@ -20367,7 +20413,13 @@
     "imdb_id": "tt12311976",
     "title": "TONIKAWA: Over the Moon for You",
     "fromSeason": 0,
-    "fromEpisode": 1
+    "fromEpisode": 13
+  },
+  "43832": {
+    "imdb_id": "tt12311976",
+    "title": "TONIKAWA: Over the Moon for You",
+    "fromSeason": 0,
+    "fromEpisode": 14
   },
   "43062": {
     "imdb_id": "tt12080774",
@@ -21134,6 +21186,12 @@
   "44503": {
     "imdb_id": "tt14976292",
     "title": "Link Click",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44551": {
+    "imdb_id": "tt14626352",
+    "title": "Komi Can't Communicate",
     "fromSeason": 1,
     "fromEpisode": 1
   },
