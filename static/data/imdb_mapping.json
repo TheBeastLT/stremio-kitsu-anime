@@ -3988,6 +3988,60 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "5971": {
+    "imdb_id": "tt0988818",
+    "title": "Gintama",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "7253": {
+    "imdb_id": "tt0988818",
+    "title": "Gintama",
+    "fromSeason": 6,
+    "fromEpisode": 1
+  },
+  "10083": {
+    "imdb_id": "tt0988818",
+    "title": "Gintama",
+    "fromSeason": 7,
+    "fromEpisode": 1
+  },
+  "12553": {
+    "imdb_id": "tt0988818",
+    "title": "Gintama",
+    "fromSeason": 8,
+    "fromEpisode": 1
+  },
+  "13726": {
+    "imdb_id": "tt0988818",
+    "title": "Gintama",
+    "fromSeason": 9,
+    "fromEpisode": 1
+  },
+  "14095": {
+    "imdb_id": "tt0988818",
+    "title": "Gintama",
+    "fromSeason": 10,
+    "fromEpisode": 1
+  },
+  "41079": {
+    "imdb_id": "tt0988818",
+    "title": "Gintama",
+    "fromSeason": 10,
+    "fromEpisode": 13
+  },
+  "11545": {
+    "imdb_id": "tt0988818",
+    "title": "Gintama",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
+  "43829": {
+    "imdb_id": "tt0988818",
+    "title": "Gintama",
+    "fromSeason": 0,
+    "fromEpisode": 18
+  },
   "819": {
     "imdb_id": "tt2531918",
     "title": "Ray the Animation"
@@ -8726,12 +8780,6 @@
     "imdb_id": "tt2061527",
     "title": "Tiger & Bunny"
   },
-  "5971": {
-    "imdb_id": "tt0988818",
-    "title": "Gintama",
-    "fromSeason": 5,
-    "fromEpisode": 1
-  },
   "5978": {
     "imdb_id": "tt2263799",
     "title": "Phi Brain: Puzzle of God",
@@ -10454,12 +10502,6 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
-  "7253": {
-    "imdb_id": "tt0988818",
-    "title": "Gintama",
-    "fromSeason": 6,
-    "fromEpisode": 1
-  },
   "7273": {
     "imdb_id": "tt2391599",
     "title": "Oshiri kajiri mushi",
@@ -11908,6 +11950,24 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "10150": {
+    "imdb_id": "tt3909210",
+    "title": "The Fruit of Grisaia",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "10154": {
+    "imdb_id": "tt3909210",
+    "title": "The Fruit of Grisaia",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
+  "11322": {
+    "imdb_id": "tt3909210",
+    "title": "The Fruit of Grisaia",
+    "fromSeason": 0,
+    "fromEpisode": 9
+  },
   "7987": {
     "imdb_id": "tt3451870",
     "title": "Captain Earth"
@@ -13326,6 +13386,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11121": {
+    "imdb_id": "tt4808010",
+    "title": "Etotama",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "41362": {
+    "imdb_id": "tt4808010",
+    "title": "Etotama",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
   "9978": {
     "imdb_id": "tt4125300",
     "title": "The Murder Case of Hana & Alice"
@@ -13545,12 +13617,6 @@
   "10077": {
     "imdb_id": "tt5024410",
     "title": "Aria the Scarlet Ammo AA"
-  },
-  "10083": {
-    "imdb_id": "tt0988818",
-    "title": "Gintama",
-    "fromSeason": 7,
-    "fromEpisode": 1
   },
   "10085": {
     "imdb_id": "tt4958580",
@@ -14376,10 +14442,6 @@
     "imdb_id": "tt5238484",
     "title": "Comet Lucifer"
   },
-  "10154": {
-    "imdb_id": "tt6035666",
-    "title": "The Labyrinth of Grisaia: The Cocoon of Caprice 0"
-  },
   "11261": {
     "imdb_id": "tt5461834",
     "title": "Ojisan and Marshmallow",
@@ -14929,12 +14991,6 @@
   "11538": {
     "imdb_id": "tt5531604",
     "title": "Tanaka-kun Is Always Listless"
-  },
-  "11545": {
-    "imdb_id": "tt0988818",
-    "title": "Gintama Jump Special Anime Festa 2015",
-    "fromSeason": 0,
-    "fromEpisode": 8
   },
   "8684": {
     "imdb_id": "tt4307880",
@@ -16145,12 +16201,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "12553": {
-    "imdb_id": "tt0988818",
-    "title": "Gintama",
-    "fromSeason": 8,
-    "fromEpisode": 1
-  },
   "12554": {
     "imdb_id": "tt6100248",
     "title": "Danganronpa 3: The End of Hope's Peak Academy - Hope Arc",
@@ -16364,10 +16414,6 @@
     "title": "Kemono Friends",
     "fromSeason": 1,
     "fromEpisode": 1
-  },
-  "12710": {
-    "imdb_id": "tt6213810",
-    "title": "Fate/Grand Order: First Order"
   },
   "12720": {
     "imdb_id": "tt6237498",
@@ -17392,12 +17438,6 @@
     "imdb_id": "tt7236034",
     "title": "I Want to Eat Your Pancreas"
   },
-  "13726": {
-    "imdb_id": "tt0988818",
-    "title": "Gintama",
-    "fromSeason": 9,
-    "fromEpisode": 1
-  },
   "13727": {
     "imdb_id": "tt7462702",
     "title": "Osama Game",
@@ -17755,12 +17795,6 @@
     "imdb_id": "tt7847678",
     "title": "Gdgd Men's Party",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "14095": {
-    "imdb_id": "tt0988818",
-    "title": "Gintama",
-    "fromSeason": 10,
     "fromEpisode": 1
   },
   "14129": {
@@ -18140,12 +18174,6 @@
     "fromEpisode": 1
   },
   "41077": {
-  },
-  "41079": {
-    "imdb_id": "tt0988818",
-    "title": "Gintama",
-    "fromSeason": 10,
-    "fromEpisode": 13
   },
   "41080": {
     "imdb_id": "tt10068158",
@@ -19005,6 +19033,18 @@
     "imdb_id": "tt9828800",
     "title": "Senryuu Girl"
   },
+  "42074": {
+    "imdb_id": "tt13549930",
+    "title": "Strike Witches: 501 Butai Hasshin Shimasu!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43428": {
+    "imdb_id": "tt13549930",
+    "title": "Strike Witches: 501 Butai Hasshin Shimasu!",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "42078": {
     "imdb_id": "tt10711718",
     "title": "Miru Tights",
@@ -19413,11 +19453,47 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "12710": {
+    "imdb_id": "tt9525238",
+    "title": "Fate/Grand Order: Zettai Maju Sensen Babylonia",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "14096": {
+    "imdb_id": "tt9525238",
+    "title": "Fate/Grand Order: Zettai Maju Sensen Babylonia",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "14097": {
+    "imdb_id": "tt9525238",
+    "title": "Fate/Grand Order: Zettai Maju Sensen Babylonia",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "42099": {
+    "imdb_id": "tt9525238",
+    "title": "Fate/Grand Order: Zettai Maju Sensen Babylonia",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
   "42475": {
     "imdb_id": "tt9525238",
     "title": "Fate/Grand Order: Zettai Maju Sensen Babylonia",
     "fromSeason": 0,
     "fromEpisode": 5
+  },
+  "42270": {
+    "imdb_id": "tt9525238",
+    "title": "Fate/Grand Order: Zettai Maju Sensen Babylonia",
+    "fromSeason": 0,
+    "fromEpisode": 6
+  },
+  "42271": {
+    "imdb_id": "tt9525238",
+    "title": "Fate/Grand Order: Zettai Maju Sensen Babylonia",
+    "fromSeason": 0,
+    "fromEpisode": 7
   },
   "42272": {
     "imdb_id": "tt10054654",
@@ -19626,12 +19702,6 @@
   "42423": {
     "imdb_id": "tt10882992",
     "title": "Didn't I Say to Make My Abilities Average in the Next Life?!",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "43428": {
-    "imdb_id": "tt13332914",
-    "title": "World Witches Hasshin Shimasu!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -20382,9 +20452,15 @@
     "fromEpisode": 1
   },
   "42935": {
-    "imdb_id": "tt12980648",
+    "imdb_id": "tt12367868",
     "title": "Higurashi: When They Cry - New",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44184": {
+    "imdb_id": "tt12367868",
+    "title": "Higurashi no Naku Koro ni Sotsu",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "42965": {
@@ -21088,12 +21164,6 @@
   "44180": {
     "imdb_id": "tt13807542",
     "title": "Fairy Ranmaru: Anata no Kokoro Otasuke Shimasu",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "44184": {
-    "imdb_id": "tt14550644",
-    "title": "Higurashi no Naku Koro ni Sotsu",
     "fromSeason": 1,
     "fromEpisode": 1
   },
