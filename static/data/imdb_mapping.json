@@ -2419,9 +2419,25 @@
     "imdb_id": "tt1206326",
     "title": "One Piece: Episode of Chopper Plus - Bloom in the Winter, Miracle Sakura"
   },
+  "3492": {
+    "imdb_id": "tt1485763",
+    "title": "One Piece: Strong World"
+  },
   "5987": {
     "imdb_id": "tt1865467",
     "title": "One Piece 3D: Straw Hat Chase"
+  },
+  "6827": {
+    "imdb_id": "tt2375379",
+    "title": "One Piece Film Z"
+  },
+  "11351": {
+    "imdb_id": "tt5251328",
+    "title": "One Piece Film: Gold"
+  },
+  "42061": {
+    "imdb_id": "tt9430698",
+    "title": "One Piece: Stampede"
   },
   "428": {
     "imdb_id": "tt1012788",
@@ -7374,10 +7390,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "3492": {
-    "imdb_id": "tt1485763",
-    "title": "One Piece: Strong World"
-  },
   "3503": {
     "imdb_id": "tt1300170",
     "title": "Xam'd: Lost Memories",
@@ -7527,6 +7539,12 @@
     "imdb_id": "tt1346122",
     "title": "Maria Holic",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "3839": {
+    "imdb_id": "tt1450620",
+    "title": "When Seagulls Cry",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "3881": {
@@ -9841,10 +9859,6 @@
   "6821": {
     "imdb_id": "tt2177954",
     "title": "Polar Bear's Café"
-  },
-  "6827": {
-    "imdb_id": "tt2375379",
-    "title": "One Piece Film Z"
   },
   "6836": {
     "imdb_id": "tt2341757",
@@ -14395,11 +14409,29 @@
     "fromSeason": 2,
     "fromEpisode": 14
   },
+  "12047": {
+    "imdb_id": "tt5607616",
+    "title": "Re: Zero - Starting Life in Another World",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "12313": {
+    "imdb_id": "tt5607616",
+    "title": "Re: Zero - Starting Life in Another World",
+    "fromSeason": 0,
+    "fromEpisode": 12
+  },
   "13882": {
     "imdb_id": "tt5607616",
     "title": "Re: Zero - Starting Life in Another World",
     "fromSeason": 0,
     "fromEpisode": 26
+  },
+  "43300": {
+    "imdb_id": "tt5607616",
+    "title": "Re: Zero - Starting Life in Another World",
+    "fromSeason": 0,
+    "fromEpisode": 30
   },
   "11210": {
     "imdb_id": "tt5861440",
@@ -14641,10 +14673,6 @@
   "11349": {
     "imdb_id": "tt5674066",
     "title": "Pan De Peace!"
-  },
-  "11351": {
-    "imdb_id": "tt5251328",
-    "title": "One Piece Film: Gold"
   },
   "11354": {
     "imdb_id": "tt9203780",
@@ -15858,10 +15886,6 @@
   "12228": {
     "imdb_id": "tt6425816",
     "title": "One Piece: Heart of Gold"
-  },
-  "42061": {
-    "imdb_id": "tt9430698",
-    "title": "One Piece: Stampede"
   },
   "12230": {
     "imdb_id": "tt7078180",
@@ -19407,6 +19431,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42825": {
+    "imdb_id": "tt12879624",
+    "title": "Josee, the Tiger and the Fish"
+  },
   "42826": {
     "imdb_id": "tt12362302",
     "title": "Hypnosis Mic: Division Rap Battle - Rhyme Anima",
@@ -20916,6 +20944,10 @@
     "title": "Gokushufudo",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "43730": {
+    "imdb_id": "tt11657662",
+    "title": "The Witcher: Nightmare of the Wolf"
   },
   "43734": {
     "imdb_id": "tt13409388",
