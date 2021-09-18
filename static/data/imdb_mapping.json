@@ -3552,6 +3552,12 @@
     "imdb_id": "tt1305809",
     "title": "Goldfish Warning!"
   },
+  "656": {
+    "imdb_id": "tt0294101",
+    "title": "Hiatari Ryôkô!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "657": {
     "imdb_id": "tt6096708",
     "title": "After School in the Teacher's Lounge"
@@ -3633,6 +3639,10 @@
   "705": {
     "imdb_id": "tt0791205",
     "title": "Ergo Proxy"
+  },
+  "706": {
+    "imdb_id": "tt0090658",
+    "title": "Arion"
   },
   "714": {
     "imdb_id": "tt0299357",
@@ -6902,6 +6912,10 @@
     "imdb_id": "tt0838345",
     "title": "BASToF Syndrome"
   },
+  "2826": {
+    "imdb_id": "tt0415906",
+    "title": "Science Ninja Team Gatchaman"
+  },
   "2827": {
     "imdb_id": "tt0233780",
     "title": "Gatchaman"
@@ -8183,6 +8197,12 @@
     "imdb_id": "tt1636694",
     "title": "Ichiban ushiro no daimaou",
     "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "4879": {
+    "imdb_id": "tt1584003",
+    "title": "Ladies versus Butlers!",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "4900": {
@@ -9948,6 +9968,12 @@
     "imdb_id": "tt6163360",
     "title": "Recorder to Randoseru",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6988": {
+    "imdb_id": "tt2250040",
+    "title": "Binbougami ga!",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "6996": {
@@ -12468,6 +12494,18 @@
     "title": "Tokyo Ghoul",
     "fromSeason": 3,
     "fromEpisode": 13
+  },
+  "10789": {
+    "imdb_id": "tt3741634",
+    "title": "Tokyo Ghoul",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "11294": {
+    "imdb_id": "tt3741634",
+    "title": "Tokyo Ghoul",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "8272": {
     "imdb_id": "tt7684436",
@@ -17772,8 +17810,10 @@
     "title": "Made in Abyss: Dawn of the Deep Soul"
   },
   "14037": {
-    "imdb_id": "tt1584003",
-    "title": "Ladies versus Butlers!"
+    "imdb_id": "tt12017010",
+    "title": "Butlers: Chitose Momotose Monogatari",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "14043": {
     "imdb_id": "tt10431290",
@@ -17820,6 +17860,42 @@
     "title": "Gdgd Men's Party",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "14116": {
+    "imdb_id": "tt12409194",
+    "title": "Battle Through the Heavens",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41206": {
+    "imdb_id": "tt12409194",
+    "title": "Battle Through the Heavens",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42663": {
+    "imdb_id": "tt12409194",
+    "title": "Battle Through the Heavens",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "44606": {
+    "imdb_id": "tt12409194",
+    "title": "Battle Through the Heavens",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "40595": {
+    "imdb_id": "tt12409194",
+    "title": "Battle Through the Heavens",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "42665": {
+    "imdb_id": "tt12409194",
+    "title": "Battle Through the Heavens",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "14129": {
     "imdb_id": "tt9266104",
@@ -19737,10 +19813,6 @@
     "imdb_id": "tt10635042",
     "title": "Sailor Moon Eternal"
   },
-  "44470": {
-    "imdb_id": "tt10635042",
-    "title": "Sailor Moon Eternal"
-  },
   "42434": {
     "imdb_id": "tt12013558",
     "title": "BNA",
@@ -20150,6 +20222,10 @@
     "title": "Cardfight!! Vanguard",
     "fromSeason": 14,
     "fromEpisode": 1
+  },
+  "43022": {
+    "imdb_id": "tt13533532",
+    "title": "Tokyo 7th Sisters: Bokura wa Aozora ni Naru"
   },
   "43063": {
     "imdb_id": "tt10204658",
@@ -21289,6 +21365,12 @@
     "imdb_id": "tt14976292",
     "title": "Link Click",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44789": {
+    "imdb_id": "tt14976292",
+    "title": "Link Click",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "44551": {
