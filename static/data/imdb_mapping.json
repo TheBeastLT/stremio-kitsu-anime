@@ -3910,7 +3910,21 @@
   },
   "790": {
     "imdb_id": "tt0143007",
-    "title": "King of the Braves GaoGaiGar"
+    "title": "King of the Braves GaoGaiGar",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1236": {
+    "imdb_id": "tt0143007",
+    "title": "King of the Braves GaoGaiGar",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "3600": {
+    "imdb_id": "tt0143007",
+    "title": "King of the Braves GaoGaiGar",
+    "fromSeason": 3,
+    "fromEpisode": 1
   },
   "791": {
     "imdb_id": "tt0142249",
@@ -9351,6 +9365,18 @@
     "title": "Sankarea: Undying Love",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "6873": {
+    "imdb_id": "tt2341379",
+    "title": "Sankarea: Undying Love",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "7492": {
+    "imdb_id": "tt2341379",
+    "title": "Sankarea: Undying Love",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "6539": {
     "imdb_id": "tt2967286",
@@ -16677,6 +16703,12 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "44956": {
+    "imdb_id": "tt11317074",
+    "title": "Full-Time Magister",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
   "13096": {
     "imdb_id": "tt6340502",
     "title": "Inuyashiki",
@@ -18893,6 +18925,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42759": {
+    "imdb_id": "tt9074304",
+    "title": "Himote House",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "41962": {
     "imdb_id": "tt9642578",
     "title": "I'm glad I could keep running",
@@ -19851,6 +19889,12 @@
     "imdb_id": "tt13004300",
     "title": "Null & Peta",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42702": {
+    "imdb_id": "tt13004300",
+    "title": "Null & Peta",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "42472": {
