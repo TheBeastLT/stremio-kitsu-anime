@@ -12034,6 +12034,12 @@
     "fromSeason": 0,
     "fromEpisode": 9
   },
+  "13685": {
+    "imdb_id": "tt3909210",
+    "title": "The Fruit of Grisaia",
+    "fromSeason": 0,
+    "fromEpisode": 14
+  },
   "7987": {
     "imdb_id": "tt3451870",
     "title": "Captain Earth"
@@ -12563,6 +12569,12 @@
     "imdb_id": "tt3496018",
     "title": "Selector Infected WIXOSS",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "9171": {
+    "imdb_id": "tt3496018",
+    "title": "Selector Infected WIXOSS",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "8290": {
@@ -16099,6 +16111,24 @@
   },
   "12274": {
   },
+  "12291": {
+    "imdb_id": "tt11605032",
+    "title": "Zhen Hun Jie",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42933": {
+    "imdb_id": "tt11605032",
+    "title": "Zhen Hun Jie",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "44340": {
+    "imdb_id": "tt11605032",
+    "title": "Zhen Hun Jie",
+    "fromSeason": 2,
+    "fromEpisode": 6
+  },
   "12292": {
     "imdb_id": "tt6475250",
     "title": "Assassination Classroom: 365 Days"
@@ -17852,6 +17882,18 @@
     "title": "Arifureta: From Commonplace to World's Strongest",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "42493": {
+    "imdb_id": "tt10431290",
+    "title": "Arifureta: From Commonplace to World's Strongest",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "42446": {
+    "imdb_id": "tt10431290",
+    "title": "Arifureta: From Commonplace to World's Strongest",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "14072": {
     "imdb_id": "tt8322496",
@@ -19933,6 +19975,30 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "42503": {
+    "imdb_id": "tt11503082",
+    "title": "Scissor Seven",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42969": {
+    "imdb_id": "tt11503082",
+    "title": "Scissor Seven",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43905": {
+    "imdb_id": "tt11503082",
+    "title": "Scissor Seven",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "42504": {
+    "imdb_id": "tt11503082",
+    "title": "Scissor Seven",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "42521": {
     "imdb_id": "tt9225320",
     "title": "Radiant",
@@ -21426,6 +21492,12 @@
   "44595": {
     "imdb_id": "tt14648632",
     "title": "ArtisWitch",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45055": {
+    "imdb_id": "tt15356258",
+    "title": "Pokémon Evolutions",
     "fromSeason": 1,
     "fromEpisode": 1
   }
