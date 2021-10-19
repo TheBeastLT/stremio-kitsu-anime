@@ -20987,6 +20987,10 @@
     "fromSeason": 1,
     "fromEpisode": 12
   },
+  "43505": {
+    "imdb_id": "tt13057626",
+    "title": "Kamiarizuki no Kodomo"
+  },
   "43521": {
     "imdb_id": "tt13167196",
     "title": "Edens Zero",
@@ -21691,7 +21695,7 @@
   },
   "44422": {
     "imdb_id": "tt14489118",
-    "title": "Kaginado"
+    "title": "Dakaretai Otoko 1-i ni Odosarete Imasu. Movie: Spain-hen"
   },
   "44425": {
     "imdb_id": "tt14489144",
@@ -21747,6 +21751,14 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44694": {
+    "imdb_id": "tt10915840",
+    "title": "Uchuu senkan Yamato 2205: Aratanaru tabidachi"
+  },
+  "44806": {
+    "imdb_id": "tt13409496",
+    "title": "Hula Fulla Dance"
+  },
   "44814": {
     "imdb_id": "tt14924976",
     "title": "Waccha PriMagi!",
@@ -21788,5 +21800,13 @@
     "title": "Heike Monogatari",
     "fromSeason": 1,
     "fromEpisode": 1
+  }
+  "45150": {
+    "imdb_id": "tt15392166",
+    "title": "Ghost in the Shell: SAC_2045"
+  },
+  "45244": {
+    "imdb_id": "tt13898164",
+    "title": "Gekijouban Macross Delta: Zettai Live!!!!!!"
   }
 }
