@@ -4952,6 +4952,12 @@
     "fromSeason": 5,
     "fromEpisode": 1
   },
+  "44618": {
+    "imdb_id": "tt0159175",
+    "title": "Lupin the 3rd",
+    "fromSeason": 6,
+    "fromEpisode": 1
+  },
   "6910": {
     "imdb_id": "tt2298919",
     "title": "Lupin the Third: Mine Fujiko to iu onna",
@@ -12867,6 +12873,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "44396": {
+    "imdb_id": "tt3950102",
+    "title": "World Trigger",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "8632": {
     "imdb_id": "tt3886492",
     "title": "Girl Friend BETA",
@@ -16253,6 +16265,12 @@
     "imdb_id": "tt6210806",
     "title": "Monster Strike the Movie"
   },
+  "12509": {
+    "imdb_id": "tt13167222",
+    "title": "Megaton-kyuu Musashi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "12529": {
     "imdb_id": "tt6435350",
     "title": "Interviews with Monster Girls",
@@ -16291,6 +16309,12 @@
     "imdb_id": "tt7224994",
     "title": "Restaurant to Another World",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+   "44434": {
+    "imdb_id": "tt7224994",
+    "title": "Restaurant to Another World",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "12536": {
@@ -16845,6 +16869,10 @@
     "title": "As the Moon, So Beautiful",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "13240": {
+    "imdb_id": "tt11951334",
+    "title": "Koukyoushihen Eureka Seven Hi-Evolution 3: Eureka"
   },
   "13245": {
     "imdb_id": "tt8938030",
@@ -18731,6 +18759,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45249": {
+    "imdb_id": "tt9335498",
+    "title": "Demon Slayer: Kimetsu No Yaiba",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "41372": {
     "imdb_id": "tt9402026",
     "title": "Run with the Wind"
@@ -19057,6 +19091,12 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "41998": {
+    "imdb_id": "tt9359796",
+    "title": "Blade Runner: Black Lotus",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "41999": {
   },
   "42000": {
@@ -19216,6 +19256,12 @@
   "42074": {
     "imdb_id": "tt13549930",
     "title": "Strike Witches: 501 Butai Hasshin Shimasu!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42077": {
+    "imdb_id": "tt13580730",
+    "title": "Sakugan",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -19773,6 +19819,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43907": {
+    "imdb_id": "tt13293588",
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "fromSeason": 1,
+    "fromEpisode": 12
+  },
   "42325": {
     "imdb_id": "tt2549176",
     "title": "Cardfight!! Vanguard",
@@ -19786,6 +19838,12 @@
   "42329": {
     "imdb_id": "tt11349866",
     "title": "Sorcerous Stabber Orphen: Battle of Kimluck",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42330": {
+    "imdb_id": "tt9442120",
+    "title": "Shikizakura",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -20565,6 +20623,12 @@
     "imdb_id": "tt12011442",
     "title": "Burn the Witch"
   },
+  "43198": {
+    "imdb_id": "tt13411814",
+    "title": "Shuumatsu no Harem",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43204": {
     "imdb_id": "tt12305588",
     "title": "The Day I Became a God",
@@ -20777,6 +20841,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44199": {
+    "imdb_id": "tt12287748",
+    "title": "Yashahime: Princess Half-Demon",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "43212": {
     "imdb_id": "tt12415546",
     "title": "Attack on Titan: Chronicle"
@@ -20861,6 +20931,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43313": {
+    "imdb_id": "tt15192340",
+    "title": "Senpai ga Uzai Kouhai no Hanashi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44251": {
     "imdb_id": "tt12415634",
     "title": "Mars Red",
@@ -20929,6 +21005,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43537": {
+    "imdb_id": "tt13064272",
+    "title": "Ai no Utagoe wo Kikasete"
+  },
   "43367": {
     "imdb_id": "tt12706854",
     "title": "I'm Standing on a Million Lives",
@@ -20958,6 +21038,10 @@
     "title": "Horimiya",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "43546": {
+    "imdb_id": "tt13424422",
+    "title": "Sword Art Online: Progressive Movie - Hoshi Naki Yoru no Aria"
   },
   "43549": {
     "imdb_id": "tt13109788",
@@ -21101,6 +21185,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43690": {
+    "imdb_id": "tt12421676",
+    "title": "Muv-Luv Alternative",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43703": {
     "imdb_id": "tt13352232",
     "title": "High-Rise Invasion",
@@ -21163,6 +21253,12 @@
     "imdb_id": "tt14402928",
     "title": "Gekijou Henshuuban Kakushigoto: Himegoto wa Nandesuka"
   },
+  "43817": {
+    "imdb_id": "tt13677314",
+    "title": "Taishou Otome Otogibanashi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43818": {
     "imdb_id": "tt13308820",
     "title": "Kai Byoui Ramune",
@@ -21223,6 +21319,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43849": {
+    "imdb_id": "tt13409432",
+    "title": "Ousama Ranking",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43853": {
     "imdb_id": "tt13592988",
     "title": "Idolls!",
@@ -21232,6 +21334,12 @@
   "43861": {
     "imdb_id": "tt13593022",
     "title": "Kyuukyoku Shinka Shita Full Dive RPG ga Genjitsu yori mo Kusogee Dattara",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43862": {
+    "imdb_id": "tt13676300",
+    "title": "Platinum End",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -21251,6 +21359,24 @@
     "imdb_id": "tt12798548",
     "title": "Yakunara Mug Cup mo",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43880": {
+    "imdb_id": "tt13628864",
+    "title": "Puraore! Pride of Orange",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44787": {
+    "imdb_id": "tt12798548",
+    "title": "Yakunara Mug Cup mo",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43888": {
+    "imdb_id": "tt14115912",
+    "title": "Blue Period",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "43894": {
@@ -21289,6 +21415,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44024": {
+    "imdb_id": "tt15026576",
+    "title": "Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44035": {
     "imdb_id": "tt13971512",
     "title": "Shinigami Bocchan to Kuro Maid",
@@ -21318,6 +21450,10 @@
     "title": "Jouran: The Princess of Snow and Blood",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "44099": {
+    "imdb_id": "tt15052770",
+    "title": "Summer Ghost"
   },
   "44106": {
     "imdb_id": "tt12814598",
@@ -21361,6 +21497,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44167": {
+    "imdb_id": "tt13483212",
+    "title": "Shin no Nakama ja Nai to Yuusha no Party wo Oidasareta node, Henkyou de Slow Life suru Koto ni Shimashita",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44174": {
     "imdb_id": "tt13544802",
     "title": "Seirei Gensouki",
@@ -21385,9 +21527,27 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44185": {
+    "imdb_id": "tt14271890",
+    "title": "Mieruko-chan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+   "44192": {
+    "imdb_id": "tt14264160",
+    "title": "Tsuki to Laika to Nosferatu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44195": {
     "imdb_id": "tt14271876",
     "title": "Scarlet Nexus",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44197": {
+    "imdb_id": "tt15128210",
+    "title": "Kyoukai Senki",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -21415,9 +21575,37 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44211": {
+    "imdb_id": "tt14278890",
+    "title": "Selection Project",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44212": {
+    "imdb_id": "tt14331144",
+    "title": "Jujutsu Kaisen 0 Movie"
+  },
   "44213": {
     "imdb_id": "tt14827932",
     "title": "Gloomy the Naughty Grizzly",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44233": {
+    "imdb_id": "tt14935960",
+    "title": "Takt Op. Destiny",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44234": {
+    "imdb_id": "tt15024322",
+    "title": "Visual Prison",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44236": {
+    "imdb_id": "tt14338604",
+    "title": "Muteking the Dancing Hero",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -21433,9 +21621,27 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44300": {
+    "imdb_id": "tt14979584",
+    "title": "Gyakuten Sekai no Denchi Shoujo",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44301": {
     "imdb_id": "tt15077804",
     "title": "Obey Me!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44312": {
+    "imdb_id": "tt13870312",
+    "title": "Sankaku Mado no Sotogawa wa Yoru",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44333": {
+    "imdb_id": "tt15614646",
+    "title": "Yuuki Yuuna wa Yuusha de Aru: Dai Mankai no Shou",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -21446,6 +21652,12 @@
   "44339": {
     "imdb_id": "tt13048312",
     "title": "Eiga: Sayonara watashi no Cramer: First Touch"
+  },
+  "44345": {
+    "imdb_id": "tt14402938",
+    "title": "Tesla Note",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "44391": {
     "imdb_id": "tt14443540",
@@ -21459,9 +21671,37 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44393": {
+    "imdb_id": "tt14061838",
+    "title": "Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44400": {
     "imdb_id": "tt14986786",
     "title": "Wanmei Shijie",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44420": {
+    "imdb_id": "tt14489160",
+    "title": "Kaginado",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44422": {
+    "imdb_id": "tt14489118",
+    "title": "Kaginado"
+  },
+  "44425": {
+    "imdb_id": "tt14489144",
+    "title": "Build Divide: Code Black",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44432": {
+    "imdb_id": "tt14476244",
+    "title": "Saihate no Paladin",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -21489,15 +21729,63 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44574": {
+    "imdb_id": "tt15128000",
+    "title": "180 Byou de Kimi no Mimi wo Shiawase ni Dekiru ka?",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44595": {
     "imdb_id": "tt14648632",
     "title": "ArtisWitch",
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44595": {
+    "imdb_id": "tt12279682",
+    "title": "Kyuuketsuki Sugu Shinu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44814": {
+    "imdb_id": "tt14924976",
+    "title": "Waccha PriMagi!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44941": {
+    "imdb_id": "tt15202838",
+    "title": "Deji Meets Girl",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44946": {
+    "imdb_id": "tt15400650",
+    "title": "Digimon Ghost Game",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45007": {
+    "imdb_id": "tt14924740",
+    "title": "Deep Insanity: The Lost Child",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  }
+  "45018": {
+    "imdb_id": "tt15310574",
+    "title": "Kimi to Fit Boxing",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  }
   "45055": {
     "imdb_id": "tt15356258",
     "title": "Pokémon Evolutions",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  }
+  "45065": {
+    "imdb_id": "tt15353550",
+    "title": "Heike Monogatari",
     "fromSeason": 1,
     "fromEpisode": 1
   }
