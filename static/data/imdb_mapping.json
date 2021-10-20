@@ -6548,7 +6548,39 @@
   },
   "2369": {
     "imdb_id": "tt1169193",
-    "title": "Goodbye, Mr. Despair"
+    "title": "Goodbye, Mr. Despair",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "2871": {
+    "imdb_id": "tt1169193",
+    "title": "Goodbye, Mr. Despair",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "4537": {
+    "imdb_id": "tt1169193",
+    "title": "Goodbye, Mr. Despair",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "3832": {
+    "imdb_id": "tt1169193",
+    "title": "Goodbye, Mr. Despair",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "4847": {
+    "imdb_id": "tt1169193",
+    "title": "Goodbye, Mr. Despair",
+    "fromSeason": 0,
+    "fromEpisode": 6
+  },
+  "6196": {
+    "imdb_id": "tt1169193",
+    "title": "Goodbye, Mr. Despair",
+    "fromSeason": 0,
+    "fromEpisode": 8
   },
   "2370": {
     "imdb_id": "tt4183328",
@@ -12853,6 +12885,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "10014": {
+    "imdb_id": "tt3989670",
+    "title": "Trinity Seven",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "8629": {
     "imdb_id": "tt3909838",
     "title": "Denki-Gai no Honya-san"
@@ -16311,7 +16349,7 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-   "44434": {
+  "44434": {
     "imdb_id": "tt7224994",
     "title": "Restaurant to Another World",
     "fromSeason": 2,
@@ -21371,12 +21409,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "44787": {
-    "imdb_id": "tt12798548",
-    "title": "Yakunara Mug Cup mo",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "43888": {
     "imdb_id": "tt14115912",
     "title": "Blue Period",
@@ -21537,7 +21569,7 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-   "44192": {
+  "44192": {
     "imdb_id": "tt14264160",
     "title": "Tsuki to Laika to Nosferatu",
     "fromSeason": 1,
@@ -21592,6 +21624,12 @@
   "44213": {
     "imdb_id": "tt14827932",
     "title": "Gloomy the Naughty Grizzly",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44218": {
+    "imdb_id": "tt15280514",
+    "title": "Mazica Party",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -21745,7 +21783,7 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "44595": {
+  "44637": {
     "imdb_id": "tt12279682",
     "title": "Kyuuketsuki Sugu Shinu",
     "fromSeason": 1,
