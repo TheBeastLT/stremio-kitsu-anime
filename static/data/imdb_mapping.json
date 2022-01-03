@@ -10874,6 +10874,12 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "44240": {
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 4,
+    "fromEpisode": 17
+  },
   "7889": {
     "imdb_id": "tt2560140",
     "title": "Attack on Titan",
@@ -11670,6 +11676,12 @@
     "imdb_id": "tt3111906",
     "title": "Yamishibai: Japanese Ghost Stories",
     "fromSeason": 9,
+    "fromEpisode": 1
+  },
+  "45601": {
+    "imdb_id": "tt3111906",
+    "title": "Yamishibai: Japanese Ghost Stories",
+    "fromSeason": 10,
     "fromEpisode": 1
   },
   "7843": {
@@ -17387,6 +17399,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42110": {
+    "imdb_id": "tt7808344",
+    "title": "Karakai Jouzu no Takagi-san",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "45022": {
+    "imdb_id": "tt7808344",
+    "title": "Karakai Jouzu no Takagi-san",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "13638": {
     "imdb_id": "tt7351734",
     "title": "Urahara"
@@ -17947,6 +17971,12 @@
     "imdb_id": "tt10431290",
     "title": "Arifureta: From Commonplace to World's Strongest",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42611": {
+    "imdb_id": "tt10431290",
+    "title": "Arifureta: From Commonplace to World's Strongest",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "42493": {
@@ -18803,6 +18833,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "44081": {
+    "imdb_id": "tt9335498",
+    "title": "Demon Slayer: Kimetsu No Yaiba",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "41372": {
     "imdb_id": "tt9402026",
     "title": "Run with the Wind"
@@ -19424,12 +19460,6 @@
   "42108": {
     "imdb_id": "tt9310328",
     "title": "Altered Carbon: Resleeved"
-  },
-  "42110": {
-    "imdb_id": "tt7808344",
-    "title": "Karakai Jouzu no Takagi-san",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "42120": {
     "imdb_id": "tt11033998",
@@ -20451,6 +20481,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43600": {
+    "imdb_id": "tt11886236",
+    "title": "Princess Connect! Re: Dive",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "42613": {
     "imdb_id": "tt12100946",
     "title": "Shadowverse",
@@ -20855,6 +20891,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43126": {
+    "imdb_id": "tt15811920",
+    "title": "Futsal Boys!!!!!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43137": {
     "imdb_id": "tt12745218",
     "title": "Heaven's Design Team",
@@ -20915,6 +20957,12 @@
     "imdb_id": "tt12220526",
     "title": "Girl Gaku. Hijiri Girls Square Gakuin",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45549": {
+    "imdb_id": "tt12220526",
+    "title": "Girl Gaku. Hijiri Girls Square Gakuin",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "43244": {
@@ -21181,6 +21229,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45252": {
+    "imdb_id": "tt13399402",
+    "title": "How a Realist Hero Rebuilt the Kingdom",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "43620": {
     "imdb_id": "tt13248076",
     "title": "Wonder Egg Priority",
@@ -21421,6 +21475,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43929": {
+    "imdb_id": "tt13898130",
+    "title": "Dolls' Frontline",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43932": {
     "imdb_id": "tt14134550",
     "title": "Oddtaxi",
@@ -21445,6 +21505,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44020": {
+    "imdb_id": "tt13956466",
+    "title": "The Genius Prince's Guide to Raising a Nation Out of Debt",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44022": {
     "imdb_id": "tt13884052",
     "title": "Tantei wa Mou, Shindeiru.",
@@ -21454,6 +21520,12 @@
   "44024": {
     "imdb_id": "tt15026576",
     "title": "Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44025": {
+    "imdb_id": "tt15441424",
+    "title": "Shikkakumon no Saikyou Kenja",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -21506,6 +21578,12 @@
   "44116": {
     "imdb_id": "tt13851952",
     "title": "Shiroi Suna no Aquatope",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44121": {
+    "imdb_id": "tt14960284",
+    "title": "She Professed Herself Pupil of the Wise Man",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -21569,6 +21647,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44186": {
+    "imdb_id": "tt14506186",
+    "title": "In the Land of Leadale",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44189": {
+    "imdb_id": "tt14187728",
+    "title": "Sabikui Bisco",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44192": {
     "imdb_id": "tt14264160",
     "title": "Tsuki to Laika to Nosferatu",
@@ -21599,6 +21689,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44205": {
+    "imdb_id": "tt15170340",
+    "title": "Orient",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44206": {
     "imdb_id": "tt13351056",
     "title": "Kageki Shoujo!!",
@@ -21608,6 +21704,18 @@
   "44207": {
     "imdb_id": "tt13676344",
     "title": "Shuumatsu no Valkyrie",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44208": {
+    "imdb_id": "tt14979604",
+    "title": "Bara Ou no Souretsu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44210": {
+    "imdb_id": "tt15533674",
+    "title": "Akebi-chan no Sailor-fuku",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -21630,6 +21738,12 @@
   "44218": {
     "imdb_id": "tt15280514",
     "title": "Mazica Party",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44226": {
+    "imdb_id": "tt15018116",
+    "title": "Koroshi Ai",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -21657,6 +21771,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44672": {
+    "imdb_id": "tt14641098",
+    "title": "Vanitas no Carte",
+    "fromSeason": 1,
+    "fromEpisode": 13
+  },
   "44297": {
     "imdb_id": "tt13311344",
     "title": "Tsukimichi - Moonlit Fantasy",
@@ -21681,6 +21801,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44319": {
+    "imdb_id": "tt13819192",
+    "title": "Saiyuuki Reload: Zeroin",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44333": {
     "imdb_id": "tt15614646",
     "title": "Yuuki Yuuna wa Yuusha de Aru: Dai Mankai no Shou",
@@ -21698,6 +21824,18 @@
   "44345": {
     "imdb_id": "tt14402938",
     "title": "Tesla Note",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44381": {
+    "imdb_id": "tt14694762",
+    "title": "Slow Loop",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44382": {
+    "imdb_id": "tt15765670",
+    "title": "My Dress-Up Darling",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -21777,6 +21915,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44575": {
+    "imdb_id": "tt14980764",
+    "title": "Sasaki to Miyano",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44580": {
+    "imdb_id": "tt14669108",
+    "title": "Fantasy Bishoujo Juniku Ojisan to",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44595": {
     "imdb_id": "tt14648632",
     "title": "ArtisWitch",
@@ -21803,15 +21953,45 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44876": {
+    "imdb_id": "tt15582924",
+    "title": "Kaijin Kaihatsubu no Kuroitsu-san",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44941": {
     "imdb_id": "tt15202838",
     "title": "Deji Meets Girl",
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44943": {
+    "imdb_id": "tt15176722",
+    "title": "Gensou Sangokushi: Tengen Reishinki",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44946": {
     "imdb_id": "tt15400650",
     "title": "Digimon Ghost Game",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44948": {
+    "imdb_id": "tt15715750",
+    "title": "Hakozume: Kouban Joshi no Gyakushuu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44978": {
+    "imdb_id": "tt15529826",
+    "title": "Sabiiro no Armor: Reimei",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44979": {
+    "imdb_id": "tt13398930",
+    "title": "Cue!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -21839,6 +22019,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45149": {
+    "imdb_id": "tt15802804",
+    "title": "Atasha Kawashiri Kodama dayo: Dangerous Lifehacker no tadareta seikatsu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45150": {
     "imdb_id": "tt15392166",
     "title": "Ghost in the Shell: SAC_2045"
@@ -21846,5 +22032,29 @@
   "45244": {
     "imdb_id": "tt13898164",
     "title": "Gekijouban Macross Delta: Zettai Live!!!!!!"
+  },
+  "45271": {
+    "imdb_id": "tt15529750",
+    "title": "Tribe Nine",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45372": {
+    "imdb_id": "tt15758108",
+    "title": "Tokyo 24-ku",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45388": {
+    "imdb_id": "tt15744206",
+    "title": "Ryman's Club",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45575": {
+    "imdb_id": "tt13853360",
+    "title": "Ninjala",
+    "fromSeason": 1,
+    "fromEpisode": 1
   }
 }
