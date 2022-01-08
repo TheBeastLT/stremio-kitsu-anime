@@ -10,13 +10,13 @@
   "author": "TheBeastLT <pauliox@beyond.lt>",
   "license": "MIT",
   "dependencies": {
-    "cache-manager": "^2.9.0",
-    "cache-manager-mongodb": "^0.2.1",
+    "cache-manager": "^3.6.0",
+    "cache-manager-mongodb": "^0.3.0",
     "express": "^4.17.1",
     "parse-torrent-title": "git://github.com/TheBeastLT/parse-torrent-title.git#2ece588b19d64da6726804b9b18842897b34ffc7",
     "jaro-winkler": "^0.2.8",
     "needle": "^2.2.4",
-    "stremio-addon-sdk": "^1.4.0",
+    "stremio-addon-sdk": "^1.6.5",
     "url-exists": "^1.0.3"
   }
 }
