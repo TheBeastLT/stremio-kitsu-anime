@@ -18,15 +18,13 @@ const manifest = {
   types: ['movie', 'series'],
   catalogs: [
     {
-      id: 'kitsu-anime-list',
-      name: 'Kitsu',
-      type: 'series',
-      extra: [{ name: 'search' }, { name: 'genre' }, { name: 'skip' }],
-      genres: Object.values(genres)
+      id: 'kitsu-anime-trending',
+      name: 'Kitsu Trending',
+      type: 'series'
     },
     {
-      id: 'kitsu-anime-newest',
-      name: 'Kitsu Newest',
+      id: 'kitsu-anime-popular',
+      name: 'Kitsu Most Popular',
       type: 'series',
       extra: [{ name: 'genre' }, { name: 'skip' }],
       genres: Object.values(genres)
@@ -39,17 +37,19 @@ const manifest = {
       genres: Object.values(genres)
     },
     {
-      id: 'kitsu-anime-popular',
-      name: 'Kitsu Most Popular',
+      id: 'kitsu-anime-newest',
+      name: 'Kitsu Newest',
       type: 'series',
       extra: [{ name: 'genre' }, { name: 'skip' }],
       genres: Object.values(genres)
     },
     {
-      id: 'kitsu-anime-trending',
-      name: 'Kitsu Trending',
-      type: 'series'
-    }
+      id: 'kitsu-anime-list',
+      name: 'Kitsu',
+      type: 'series',
+      extra: [{ name: 'search' }, { name: 'genre' }, { name: 'skip' }],
+      genres: Object.values(genres)
+    },
   ],
   idPrefixes: ['kitsu']
 };
