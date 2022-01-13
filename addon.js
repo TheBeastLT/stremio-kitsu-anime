@@ -26,28 +26,28 @@ const manifest = {
       id: 'kitsu-anime-popular',
       name: 'Kitsu Most Popular',
       type: 'series',
-      extra: [{ name: 'genre' }, { name: 'skip' }],
+      extra: [{ name: 'genre', options: genres }, { name: 'skip' }],
       genres: Object.values(genres)
     },
     {
       id: 'kitsu-anime-rating',
       name: 'Kitsu Highest Rated',
       type: 'series',
-      extra: [{ name: 'genre' }, { name: 'skip' }],
+      extra: [{ name: 'genre', options: genres }, { name: 'skip' }],
       genres: Object.values(genres)
     },
     {
       id: 'kitsu-anime-newest',
       name: 'Kitsu Newest',
       type: 'series',
-      extra: [{ name: 'genre' }, { name: 'skip' }],
+      extra: [{ name: 'genre', options: genres }, { name: 'skip' }],
       genres: Object.values(genres)
     },
     {
       id: 'kitsu-anime-list',
       name: 'Kitsu',
       type: 'series',
-      extra: [{ name: 'search' }, { name: 'genre' }, { name: 'skip' }],
+      extra: [{ name: 'genre', options: genres }, { name: 'skip' }, { name: 'search' }],
       genres: Object.values(genres)
     },
   ],
