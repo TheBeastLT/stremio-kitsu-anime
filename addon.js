@@ -21,28 +21,28 @@ const manifest = {
       id: 'kitsu-anime-list',
       name: 'Kitsu',
       type: 'series',
-      extra: [{ name: 'search', isRequired: false }, { name: 'genre' }],
+      extra: [{ name: 'search' }, { name: 'genre' }, { name: 'skip' }],
       genres: Object.values(genres)
     },
     {
       id: 'kitsu-anime-newest',
       name: 'Kitsu Newest',
       type: 'series',
-      extra: [{ name: 'genre' }],
+      extra: [{ name: 'genre' }, { name: 'skip' }],
       genres: Object.values(genres)
     },
     {
       id: 'kitsu-anime-rating',
       name: 'Kitsu Highest Rated',
       type: 'series',
-      extra: [{ name: 'genre' }],
+      extra: [{ name: 'genre' }, { name: 'skip' }],
       genres: Object.values(genres)
     },
     {
       id: 'kitsu-anime-popular',
       name: 'Kitsu Most Popular',
       type: 'series',
-      extra: [{ name: 'genre' }],
+      extra: [{ name: 'genre' }, { name: 'skip' }],
       genres: Object.values(genres)
     },
     {
