@@ -23,32 +23,38 @@ const manifest = {
       type: 'series'
     },
     {
+      id: 'kitsu-anime-airing',
+      name: 'Kitsu Top Airing',
+      type: 'series',
+      extra: [{ name: 'genre', options: genres }, { name: 'skip' }],
+      genres: genres
+    },
+    {
       id: 'kitsu-anime-popular',
       name: 'Kitsu Most Popular',
       type: 'series',
       extra: [{ name: 'genre', options: genres }, { name: 'skip' }],
-      genres: Object.values(genres)
+      genres: genres
     },
     {
       id: 'kitsu-anime-rating',
       name: 'Kitsu Highest Rated',
       type: 'series',
       extra: [{ name: 'genre', options: genres }, { name: 'skip' }],
-      genres: Object.values(genres)
+      genres: genres
     },
     {
       id: 'kitsu-anime-newest',
       name: 'Kitsu Newest',
       type: 'series',
       extra: [{ name: 'genre', options: genres }, { name: 'skip' }],
-      genres: Object.values(genres)
+      genres: genres
     },
     {
       id: 'kitsu-anime-list',
       name: 'Kitsu',
       type: 'series',
-      extra: [{ name: 'genre', options: genres }, { name: 'skip' }, { name: 'search' }],
-      genres: Object.values(genres)
+      extra: [{ name: 'skip' }, { name: 'search', isRequired: true }],
     },
   ],
   idPrefixes: ['kitsu']
@@ -58,8 +64,12 @@ const sortValue = {
   'kitsu-anime-list': 'createdAt',
   'kitsu-anime-newest': '-createdAt',
   'kitsu-anime-rating': '-average_rating',
-  'kitsu-anime-popular': '-user_count'
+  'kitsu-anime-popular': '-user_count',
+  'kitsu-anime-airing': '-user_count',
 };
+const statusValue = {
+  'kitsu-anime-airing': 'current',
+}
 
 builder.defineCatalogHandler((args) => {
   const skip = args.extra && args.extra.skip || 0;
@@ -75,6 +85,7 @@ builder.defineCatalogHandler((args) => {
     offset: skip,
     genre: args.extra && args.extra.genre,
     sort: sortValue[args.id],
+    status: statusValue[args.id],
     trending: args.id === 'kitsu-anime-trending'
   };
 
