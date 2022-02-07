@@ -5288,6 +5288,12 @@
     "imdb_id": "tt0294023",
     "title": "Kyaputen Tsubasa"
   },
+  "1455": {
+    "imdb_id": "tt0110464",
+    "title": "Maps",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "1458": {
     "imdb_id": "tt0872175",
     "title": "G-on Riders"
@@ -6796,6 +6802,30 @@
     "imdb_id": "tt1118543",
     "title": "Sketchbook: Full Colors"
   },
+  "2681": {
+    "imdb_id": "tt1132205",
+    "title": "Minami-ke",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "2868": {
+    "imdb_id": "tt1132205",
+    "title": "Minami-ke",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "3959": {
+    "imdb_id": "tt1132205",
+    "title": "Minami-ke",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "7128": {
+    "imdb_id": "tt1132205",
+    "title": "Minami-ke",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "2682": {
     "imdb_id": "tt1139447",
     "title": "Blue Drop: Tenshi tachi no gikyoku"
@@ -7370,6 +7400,12 @@
     "imdb_id": "tt0179584",
     "title": "The Littl' Bits"
   },
+  "3319": {
+    "imdb_id": "tt0303508",
+    "title": "Paris no Isabelle",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3334": {
     "imdb_id": "tt1334722",
     "title": "Baccano!",
@@ -7558,6 +7594,12 @@
   "3799": {
     "imdb_id": "tt0192886",
     "title": "Shinzô ningen Kyashân",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3842": {
+    "imdb_id": "tt1308085",
+    "title": "Today in Class 5-2",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -8777,6 +8819,12 @@
   "5855": {
     "imdb_id": "tt1839494",
     "title": "Journey to Agartha"
+  },
+  "5861": {
+    "imdb_id": "tt2670718",
+    "title": "A-Channel",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "5895": {
     "imdb_id": "tt2629496",
@@ -10288,6 +10336,12 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "44294": {
+    "imdb_id": "tt2359704",
+    "title": "JoJo's Bizarre Adventure",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
   "7160": {
     "imdb_id": "tt2321542",
     "title": "Love, Chunibyo & Other Delusions",
@@ -11484,6 +11538,12 @@
     "imdb_id": "tt1209393",
     "title": "Vampire Knight",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "7758": {
+    "imdb_id": "tt1132207",
+    "title": "Moetan",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "7760": {
@@ -18268,8 +18328,62 @@
   "42037": {
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 1,
-    "fromEpisode": 27
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "44607": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "44609": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "44611": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "44616": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 6,
+    "fromEpisode": 1
+  },
+  "44617": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 7,
+    "fromEpisode": 1
+  },
+  "44624": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 8,
+    "fromEpisode": 1
+  },
+  "44625": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 9,
+    "fromEpisode": 1
+  },
+  "45032": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 10,
+    "fromEpisode": 1
+  },
+  "45661": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 11,
+    "fromEpisode": 1
   },
   "41007": {
     "imdb_id": "tt8076344",
@@ -18729,7 +18843,13 @@
   },
   "41309": {
     "imdb_id": "tt11147864",
-    "title": "Oshi ga Budôkan ittekuretara shinu ",
+    "title": "Oshi ga Budôkan ittekuretara shinu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41311": {
+    "imdb_id": "tt13351614",
+    "title": "The Orbital Children",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -19851,6 +19971,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42309": {
+    "imdb_id": "tt11157544",
+    "title": "Stand My Heroes: Piece of Truth",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42310": {
     "imdb_id": "tt11034066",
     "title": "Welcome to Demon-School, Iruma-kun",
@@ -20448,16 +20574,22 @@
     "fromEpisode": 1
   },
   "43061": {
-    "imdb_id": "tt2549176",
-    "title": "Cardfight!! Vanguard",
-    "fromSeason": 13,
+    "imdb_id": "tt12317746",
+    "title": "Cardfight!! Vanguard Gaiden: If",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "44181": {
-    "imdb_id": "tt2549176",
-    "title": "Cardfight!! Vanguard",
+    "imdb_id": "tt13872472",
+    "title": "Vanguard OverDress",
     "fromSeason": 14,
     "fromEpisode": 1
+  },
+  "44521": {
+    "imdb_id": "tt13872472",
+    "title": "Vanguard OverDress",
+    "fromSeason": 14,
+    "fromEpisode": 13
   },
   "43022": {
     "imdb_id": "tt13533532",
@@ -20577,6 +20709,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42019": {
+    "imdb_id": "tt13620226",
+    "title": "Star Twinkle PreCure",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42650": {
     "imdb_id": "tt11708996",
     "title": "Healin' Good PreCure",
@@ -20629,6 +20767,18 @@
     "imdb_id": "tt12432936",
     "title": "The Misfit of Demon King Academy",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43014": {
+    "imdb_id": "tt11755260",
+    "title": "The Daily Life of the Immortal King",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43795": {
+    "imdb_id": "tt11755260",
+    "title": "The Daily Life of the Immortal King",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "43018": {
@@ -21080,6 +21230,12 @@
   "43521": {
     "imdb_id": "tt13167196",
     "title": "Edens Zero",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43530": {
+    "imdb_id": "tt13035210",
+    "title": "Shenmue the Animation",
     "fromSeason": 1,
     "fromEpisode": 1
   },
