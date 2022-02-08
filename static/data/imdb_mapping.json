@@ -4534,6 +4534,12 @@
     "imdb_id": "tt0112071",
     "title": "Metal Fighter Miku"
   },
+  "1057": {
+    "imdb_id": "tt1915535",
+    "title": "Alien Nine",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "1058": {
     "imdb_id": "tt0101718",
     "title": "Detonator Orgun"
@@ -8445,6 +8451,10 @@
     "title": "Hourou Musuko",
     "fromSeason": 0,
     "fromEpisode": 1
+  },
+  "5348": {
+    "imdb_id": "tt2328505",
+    "title": "Asura"
   },
   "5356": {
     "imdb_id": "tt5328606",
@@ -13416,6 +13426,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "9935": {
+    "imdb_id": "tt4266572",
+    "title": "Shaolin Wuzang",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "9781": {
     "imdb_id": "tt2549176",
     "title": "Cardfight!! Vanguard",
@@ -14422,6 +14438,12 @@
   "11113": {
     "imdb_id": "tt6348126",
     "title": "Beyblade Burst",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "11114": {
+    "imdb_id": "tt5675016",
+    "title": "Cyborg 009 vs Devilman",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -16137,23 +16159,35 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "13241": {
+  "13861": {
     "imdb_id": "tt6185782",
     "title": "Miss Kobayashi's Dragon Maid",
     "fromSeason": 0,
     "fromEpisode": 1
   },
-  "13861": {
+  "45014": {
     "imdb_id": "tt6185782",
     "title": "Miss Kobayashi's Dragon Maid",
     "fromSeason": 0,
-    "fromEpisode": 8
+    "fromEpisode": 2
+  },
+  "13241": {
+    "imdb_id": "tt6185782",
+    "title": "Miss Kobayashi's Dragon Maid",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "44326": {
     "imdb_id": "tt6185782",
     "title": "Miss Kobayashi's Dragon Maid",
     "fromSeason": 0,
-    "fromEpisode": 9
+    "fromEpisode": 10
+  },
+  "45015": {
+    "imdb_id": "tt6185782",
+    "title": "Miss Kobayashi's Dragon Maid",
+    "fromSeason": 0,
+    "fromEpisode": 26
   },
   "12244": {
   },
@@ -21694,6 +21728,12 @@
   "44064": {
     "imdb_id": "tt13984000",
     "title": "Seven Knights Revolution: Eiyuu no Keishousha",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44075": {
+    "imdb_id": "tt14368970",
+    "title": "Thousand Autumns",
     "fromSeason": 1,
     "fromEpisode": 1
   },
