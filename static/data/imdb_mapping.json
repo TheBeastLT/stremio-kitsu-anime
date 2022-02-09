@@ -1674,9 +1674,22 @@
   "280": {},
   "281": {
     "imdb_id": "tt0296295",
-    "title": "Aim for the Ace"
+    "title": "Aim for the Ace",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
-  "282": {},
+  "8123": {
+    "imdb_id": "tt0296295",
+    "title": "Aim for the Ace",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "282": {
+    "imdb_id": "tt0296295",
+    "title": "Aim for the Ace",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "283": {
     "imdb_id": "tt7523106",
     "title": "Aim for the Ace!"
@@ -14776,6 +14789,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42006": {
+    "imdb_id": "tt11285348",
+    "title": "Re: Zero kara Hajimeru Isekai Seikatsu: Hyouketsu no Kizuna"
+  },
   "11210": {
     "imdb_id": "tt5861440",
     "title": "Servamp"
@@ -18032,10 +18049,6 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
-  "42006": {
-    "imdb_id": "tt11285348",
-    "title": "Re: Zero kara Hajimeru Isekai Seikatsu: Hyouketsu no Kizuna"
-  },
   "13888": {
     "imdb_id": "tt8249034",
     "title": "Tada Never Falls in Love"
@@ -20789,19 +20802,19 @@
     "fromEpisode": 1
   },
   "43061": {
-    "imdb_id": "tt12317746",
+    "imdb_id": "tt2549176",
     "title": "Cardfight!! Vanguard Gaiden: If",
-    "fromSeason": 1,
+    "fromSeason": 13,
     "fromEpisode": 1
   },
   "44181": {
-    "imdb_id": "tt13872472",
+    "imdb_id": "tt2549176",
     "title": "Vanguard OverDress",
     "fromSeason": 14,
     "fromEpisode": 1
   },
   "44521": {
-    "imdb_id": "tt13872472",
+    "imdb_id": "tt2549176",
     "title": "Vanguard OverDress",
     "fromSeason": 14,
     "fromEpisode": 13
