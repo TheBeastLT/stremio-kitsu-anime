@@ -1657,7 +1657,12 @@
     "imdb_id": "tt0077013",
     "title": "Future Boy Conan"
   },
-  "277": {},
+  "277": {
+    "imdb_id": "tt1862157",
+    "title": "Adventures of the Mini Goddesses",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "278": {
     "imdb_id": "tt0122369",
     "title": "The Abashiri Family"
@@ -3478,6 +3483,18 @@
     "imdb_id": "tt0910592",
     "title": "Akagi"
   },
+  "610": {
+    "imdb_id": "tt0248119",
+    "title": "Jojo's Bizarre Adventure",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7730": {
+    "imdb_id": "tt0248119",
+    "title": "Jojo's Bizarre Adventure",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "612": {
     "imdb_id": "tt1311112",
     "title": "Koi koi 7"
@@ -3734,6 +3751,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "3579": {
+    "imdb_id": "tt0816407",
+    "title": "The Melancholy of Haruhi Suzumiya",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "3939": {
+    "imdb_id": "tt1386581",
+    "title": "Suzumiya Haruhi-chan no Yuutsu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "752": {
     "imdb_id": "tt0978030",
     "title": "Gakuen Heaven"
@@ -3877,6 +3906,10 @@
   "779": {
     "imdb_id": "tt0991062",
     "title": "Simoun"
+  },
+  "785": {
+    "imdb_id": "tt0208502",
+    "title": "Angel's Egg"
   },
   "788": {
     "imdb_id": "tt0291343",
@@ -4142,7 +4175,43 @@
   },
   "841": {
     "imdb_id": "tt0098492",
-    "title": "Gunbuster"
+    "title": "Gunbuster",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "892": {
+    "imdb_id": "tt0098492",
+    "title": "Gunbuster",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "4108": {
+    "imdb_id": "tt0098492",
+    "title": "Gunbuster",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "4911": {
+    "imdb_id": "tt0098492",
+    "title": "Gunbuster",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
+  "8893": {
+    "imdb_id": "tt0098492",
+    "title": "Gunbuster",
+    "fromSeason": 0,
+    "fromEpisode": 10
+  },
+  "8897": {
+    "imdb_id": "tt0098492",
+    "title": "Gunbuster",
+    "fromSeason": 0,
+    "fromEpisode": 12
+  },
+  "1721": {
+    "imdb_id": "tt15739684",
+    "title": "Gunbuster vs Diebuster: Aim for the Top! The GATTAI!! Movie"
   },
   "842": {
     "imdb_id": "tt0495900",
@@ -4192,12 +4261,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "892": {
-    "imdb_id": "tt0856824",
-    "title": "Gunbuster 2: Diebuster",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "896": {
     "imdb_id": "tt0117876",
     "title": "Tenchi Forever!: The Movie"
@@ -4228,7 +4291,7 @@
   },
   "41953": {
     "imdb_id": "tt8390536",
-    "title": "Fist of the Blue Sky: Re: Genesis ",
+    "title": "Fist of the Blue Sky: Re: Genesis",
     "fromSeason": 2,
     "fromEpisode": 1
   },
@@ -4239,6 +4302,18 @@
   "863": {
     "imdb_id": "tt0870976",
     "title": "Glass Fleet - The Legend of the Wind of the Universe"
+  },
+  "865": {
+    "imdb_id": "tt1160947",
+    "title": "Yokohama Kaidashi Kikou",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "866": {
+    "imdb_id": "tt1160947",
+    "title": "Yokohama Kaidashi Kikou",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "868": {
     "imdb_id": "tt0346226",
@@ -7436,6 +7511,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "3405": {
+    "imdb_id": "tt2455528",
+    "title": "Dream Hunter Rem",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3426": {
     "imdb_id": "tt1166871",
     "title": "Golgo 13",
@@ -7533,12 +7614,6 @@
     "title": "Toradora!",
     "fromSeason": 0,
     "fromEpisode": 5
-  },
-  "3579": {
-    "imdb_id": "tt0816407",
-    "title": "The Melancholy of Haruhi Suzumiya",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "3689": {
     "imdb_id": "tt1422651",
@@ -8540,6 +8615,12 @@
     "imdb_id": "tt1685397",
     "title": "Amagami SS",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "5443": {
+    "imdb_id": "tt4083422",
+    "title": "Doraemon",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "5606": {
@@ -9988,6 +10069,12 @@
     "imdb_id": "tt2286879",
     "title": "Ozuma"
   },
+  "6789": {
+    "imdb_id": "tt2250184",
+    "title": "Joshiraku",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "6796": {
     "imdb_id": "tt2362887",
     "title": "Uta no prince-sama - maji love 1000%"
@@ -10179,6 +10266,12 @@
     "title": "Girls und Panzer",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "42948": {
+    "imdb_id": "tt2294076",
+    "title": "Girls und Panzer",
+    "fromSeason": 0,
+    "fromEpisode": 46
   },
   "7090": {
     "imdb_id": "tt2404237",
@@ -12304,6 +12397,10 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "44397": {
+    "imdb_id": "tt15497404",
+    "title": "Mahouka Koukou no Rettousei: Tsuioku Hen"
+  },
   "8054": {
     "imdb_id": "tt5837794",
     "title": "Natsume Yujin-cho OVA"
@@ -12399,6 +12496,12 @@
     "imdb_id": "tt3517010",
     "title": "Is the Order a Rabbit?",
     "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "42364": {
+    "imdb_id": "tt3517010",
+    "title": "Is the Order a Rabbit?",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "8096": {
@@ -13220,6 +13323,20 @@
     "title": "The Seven Deadly Sins",
     "fromSeason": 4,
     "fromEpisode": 1
+  },
+  "11414": {
+    "imdb_id": "tt9135756",
+    "title": "The Seven Deadly Sins: Signs of Holy War",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "13647": {
+    "imdb_id": "tt9089294",
+    "title": "The Seven Deadly Sins the Movie: Prisoners of the Sky"
+  },
+  "44164": {
+    "imdb_id": "tt13884144",
+    "title": "The Seven Deadly Sins: Cursed by Light"
   },
   "8710": {
     "imdb_id": "tt3985216",
@@ -14653,6 +14770,12 @@
     "fromSeason": 0,
     "fromEpisode": 30
   },
+  "42903": {
+    "imdb_id": "tt13906272",
+    "title": "Re: Zero kara Hajimeru Isekai Seikatsu: Shin Henshuu-ban",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "11210": {
     "imdb_id": "tt5861440",
     "title": "Servamp"
@@ -15010,12 +15133,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "11414": {
-    "imdb_id": "tt9135756",
-    "title": "Nanatsu no taizai",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "11415": {
     "imdb_id": "tt3124992",
     "title": "Sailor Moon Crystal",
@@ -15053,6 +15170,12 @@
   "11447": {
     "imdb_id": "tt5341430",
     "title": "Grimgar of Fantasy and Ash",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "11450": {
+    "imdb_id": "tt15830626",
+    "title": "Irodorimidori",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -16607,6 +16730,10 @@
     "imdb_id": "tt7834494",
     "title": "Girls und Panzer das Finale: Part II"
   },
+  "44519": {
+    "imdb_id": "tt12286898",
+    "title": "Girls und Panzer das Finale: Part III"
+  },
   "12634": {
     "imdb_id": "tt5979874",
     "title": "Godzilla: Planet of the Monsters"
@@ -16618,6 +16745,30 @@
   "13298": {
     "imdb_id": "tt8478602",
     "title": "Godzilla: The Planet Eater"
+  },
+  "12640": {
+    "imdb_id": "tt6153026",
+    "title": "Tawawa on Monday",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45228": {
+    "imdb_id": "tt6153026",
+    "title": "Tawawa on Monday",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "12932": {
+    "imdb_id": "tt6153026",
+    "title": "Tawawa on Monday",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "45375": {
+    "imdb_id": "tt6153026",
+    "title": "Tawawa on Monday",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "12641": {
     "imdb_id": "tt6004864",
@@ -16989,6 +17140,10 @@
   "13228": {
     "imdb_id": "tt7326322",
     "title": "The Ancient Magus' Bride"
+  },
+  "44168": {
+    "imdb_id": "tt15400722",
+    "title": "Mahou Tsukai no Yome: Nishi no Shounen to Seiran no Kishi"
   },
   "13229": {
     "imdb_id": "tt7484994",
@@ -17510,10 +17665,6 @@
     "title": "Urahara"
   },
   "13642": {
-  },
-  "13647": {
-    "imdb_id": "tt9089294",
-    "title": "The Seven Deadly Sins the Movie: Prisoners of the Sky"
   },
   "13651": {
     "imdb_id": "tt7283046",
@@ -18189,7 +18340,13 @@
   },
   "14174": {
     "imdb_id": "tt8400680",
-    "title": "Shoujo Kageki Revue Starlight"
+    "title": "Shoujo Kageki Revue Starlight",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42681": {
+    "imdb_id": "tt13593042",
+    "title": "Gekijouban Shoujo Kageki Revue Starlight"
   },
   "14185": {
     "imdb_id": "tt7146054",
@@ -18839,6 +18996,18 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "43846": {
+    "imdb_id": "tt8019444",
+    "title": "Aggretsuko",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "42027": {
+    "imdb_id": "tt8019444",
+    "title": "Aggretsuko",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "41209": {
     "imdb_id": "tt8993614",
     "title": "UzaMaid: Our Maid Is Way Too Annoying!",
@@ -19427,6 +19596,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43086": {
+    "imdb_id": "tt11428630",
+    "title": "Bofuri: I Don't Want to Get Hurt, So I'll Max Out My Defense",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "42046": {},
   "42047": {
     "imdb_id": "tt10883006",
@@ -19728,6 +19903,12 @@
   "42184": {
     "imdb_id": "tt9232810",
     "title": "Laidbackers"
+  },
+  "42189": {
+    "imdb_id": "tt14272628",
+    "title": "Super Crooks",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "42190": {
     "imdb_id": "tt9561862",
@@ -21213,6 +21394,10 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "43304": {
+    "imdb_id": "tt12007484",
+    "title": "Fate Grand Order: The Grand Temple of Time"
+  },
   "43305": {
     "imdb_id": "tt13192574",
     "title": "Bungo Stray Dogs Wan!",
@@ -21312,6 +21497,10 @@
     "title": "2.43: Seiin High School Boys Volleyball Team",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "43481": {
+    "imdb_id": "tt13749654",
+    "title": "Aria the Crepuscolo"
   },
   "43545": {
     "imdb_id": "tt13103134",
@@ -21529,11 +21718,21 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43804": {
+    "imdb_id": "tt13622982",
+    "title": "Star Wars: Visions",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43807": {
     "imdb_id": "tt12415562",
     "title": "LBX Girls",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "43808": {
+    "imdb_id": "tt13651628",
+    "title": "Belle: The Dragon and the Freckled Princess"
   },
   "43810": {
     "imdb_id": "tt14402928",
@@ -21973,6 +22172,12 @@
     "fromSeason": 1,
     "fromEpisode": 13
   },
+  "45736": {
+    "imdb_id": "tt14641098",
+    "title": "Vanitas no Carte",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "44297": {
     "imdb_id": "tt13311344",
     "title": "Tsukimichi - Moonlit Fantasy",
@@ -22179,6 +22384,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44977": {
+    "imdb_id": "tt15379212",
+    "title": "Ganbare Douki-chan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44978": {
     "imdb_id": "tt15529826",
     "title": "Sabiiro no Armor: Reimei",
@@ -22234,6 +22445,10 @@
     "title": "Tribe Nine",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "45303": {
+    "imdb_id": "tt6848928",
+    "title": "Junk Head"
   },
   "45372": {
     "imdb_id": "tt15758108",
