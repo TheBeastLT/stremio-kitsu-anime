@@ -4704,6 +4704,12 @@
     "imdb_id": "tt0889540",
     "title": "Tsuyokiss: Cool×Sweet"
   },
+  "1078": {
+    "imdb_id": "tt0306365",
+    "title": "Nintama Rantarou",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "1079": {
     "imdb_id": "tt0846454",
     "title": "Gun-dou Musashi",
@@ -6332,6 +6338,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "2182": {
+    "imdb_id": "tt0236924",
+    "title": "Sazae-san",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "2185": {
     "imdb_id": "tt0756269",
     "title": "Gokudô-kun man'yûki"
@@ -7116,6 +7128,10 @@
     "imdb_id": "tt0213329",
     "title": "Saban's Adventures of the Little Mermaid"
   },
+  "2855": {
+    "imdb_id": "tt2167725",
+    "title": "Chibi Maruko-chan"
+  },
   "2857": {
     "imdb_id": "tt6103384",
     "title": "Ikoku Irokoi Romantan"
@@ -7628,6 +7644,12 @@
     "fromSeason": 0,
     "fromEpisode": 5
   },
+  "3618": {
+    "imdb_id": "tt0283783",
+    "title": "Prince Mackaroo",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3689": {
     "imdb_id": "tt1422651",
     "title": "Gurren Lagann the Movie: The Lights in the Sky Are Stars"
@@ -8040,6 +8062,12 @@
   "4432": {
     "imdb_id": "tt1414419",
     "title": "Mainichi kâsan"
+  },
+  "4445": {
+    "imdb_id": "tt0220205",
+    "title": "Chibi Maruko-chan",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "4456": {
     "imdb_id": "tt1694025",
@@ -16219,6 +16247,12 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "12168": {
+    "imdb_id": "tt12838778",
+    "title": "Aware! Meisaku-kun",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "12182": {
     "imdb_id": "tt6114684",
     "title": "Magic Kyun! Renaissance",
@@ -21093,6 +21127,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43228": {
+    "imdb_id": "tt12471116",
+    "title": "Pokétoon",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43240": {
     "imdb_id": "tt12694572",
     "title": "Koi to Producer: Evol x Love",
@@ -21102,6 +21142,12 @@
   "43236": {
     "imdb_id": "tt12706364",
     "title": "Ninja Collection",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43248": {
+    "imdb_id": "tt12590266",
+    "title": "Cyberpunk: Edgerunners",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -21119,6 +21165,12 @@
     "imdb_id": "tt11328872",
     "title": "In/Spectre",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43755": {
+    "imdb_id": "tt11328872",
+    "title": "In/Spectre",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "42524": {
@@ -21196,6 +21248,18 @@
   "42965": {
     "imdb_id": "tt11958344",
     "title": "A Whisker Away"
+  },
+  "42990": {
+    "imdb_id": "tt8050756",
+    "title": "The Owl House",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42991": {
+    "imdb_id": "tt8050756",
+    "title": "The Owl House",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "43019": {
     "imdb_id": "tt12885610",
@@ -21356,6 +21420,12 @@
   "43252": {
     "imdb_id": "tt13009154",
     "title": "Battle Athletess Daiundoukai Restart!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43256": {
+    "imdb_id": "tt12787182",
+    "title": "Fushigi Dagashiya: Zenitendou",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -21719,6 +21789,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43740": {
+    "imdb_id": "tt15447298",
+    "title": "Holo no Graffiti",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43750": {
     "imdb_id": "tt13884016",
     "title": "Maiko-san Chi no Makanai-san",
@@ -21728,6 +21804,12 @@
   "43798": {
     "imdb_id": "tt12912752",
     "title": "Tototsu ni Egypt Kami",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43801": {
+    "imdb_id": "tt12895414",
+    "title": "The SpongeBob SquarePants Anime",
     "fromSeason": 1,
     "fromEpisode": 1
   },
