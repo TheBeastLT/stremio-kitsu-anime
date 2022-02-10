@@ -16253,6 +16253,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "41155": {
+    "imdb_id": "tt7078180",
+    "title": "Violet Evergarden",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "42340": {
     "imdb_id": "tt10477558",
     "title": "Violet Evergarden: Eternity and the Auto Memories Doll"
@@ -18938,12 +18944,6 @@
   "41151": {
     "imdb_id": "tt9085692",
     "title": "Dakaretai Otoko 1-i ni Odosarete Imasu."
-  },
-  "41155": {
-    "imdb_id": "tt7078180",
-    "title": "Violet Evergarden",
-    "fromSeason": 1,
-    "fromEpisode": 14
   },
   "41159": {
     "imdb_id": "tt2758770",
@@ -22297,6 +22297,12 @@
     "imdb_id": "tt14476244",
     "title": "Saihate no Paladin",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45537": {
+    "imdb_id": "tt14476244",
+    "title": "Saihate no Paladin",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "44501": {
