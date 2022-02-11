@@ -70,7 +70,7 @@ const sortValue = {
   'kitsu-anime-newest': '-createdAt',
   'kitsu-anime-rating': '-average_rating',
   'kitsu-anime-popular': '-user_count',
-  'kitsu-anime-airing': '-user_count',
+  'kitsu-anime-airing': '-average_rating',
 };
 const statusValue = {
   'kitsu-anime-airing': 'current',
