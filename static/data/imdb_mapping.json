@@ -6067,6 +6067,10 @@
     "imdb_id": "tt1161697",
     "title": "True Tears"
   },
+  "1930": {
+    "imdb_id": "tt0302758",
+    "title": "Mari iyagi"
+  },
   "1939": {
     "imdb_id": "tt1238937",
     "title": "Blue Dragon",
@@ -6392,6 +6396,10 @@
   "2228": {
     "imdb_id": "tt0095448",
     "title": "Kimagure Orange Road: I Want to Return to That Day"
+  },
+  "2230": {
+    "imdb_id": "tt0093399",
+    "title": "Legend of the Forest"
   },
   "2241": {
     "imdb_id": "tt0299398",
@@ -7085,6 +7093,14 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "2783": {
+    "imdb_id": "tt1492151",
+    "title": "Cencoroll"
+  },
+  "5749": {
+    "imdb_id": "tt3741646",
+    "title": "Cencoroll 2"
+  },
   "2785": {
     "imdb_id": "tt1056437",
     "title": "The Sky Crawlers"
@@ -7503,6 +7519,10 @@
     "imdb_id": "tt1161659",
     "title": "Graveyard Kitaro"
   },
+  "3211": {
+    "imdb_id": "tt0074705",
+    "title": "Jack and the Beanstalk"
+  },
   "3218": {
     "imdb_id": "tt1214373",
     "title": "Mischievous Kiss"
@@ -7673,15 +7693,32 @@
     "fromSeason": 0,
     "fromEpisode": 5
   },
+  "3559": {
+    "imdb_id": "tt1815065",
+    "title": "Heroman",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3618": {
     "imdb_id": "tt0283783",
     "title": "Prince Mackaroo",
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "3663": {
+    "imdb_id": "tt0971215",
+    "title": "Shenmue: The Movie"
+  },
   "3689": {
     "imdb_id": "tt1422651",
     "title": "Gurren Lagann the Movie: The Lights in the Sky Are Stars"
+  },
+  "3692": {
+    "imdb_id": "tt13345962",
+    "tvdb_id": "251747",
+    "title": "Saikyou Robot Daiouja",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "3725": {
     "imdb_id": "tt1308089",
@@ -7847,6 +7884,12 @@
     "title": "Fullmetal Alchemist: Brotherhood",
     "fromSeason": 0,
     "fromEpisode": 6
+  },
+  "3967": {
+    "imdb_id": "tt2636966",
+    "title": "Electromagnetic Girlfriend",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "4000": {
     "imdb_id": "tt2189248",
@@ -8367,6 +8410,42 @@
     "title": "Deadman Wonderland",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "4775": {
+    "imdb_id": "tt1658978",
+    "title": "Hakuouki",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5593": {
+    "imdb_id": "tt1658978",
+    "title": "Hakuouki",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6884": {
+    "imdb_id": "tt1658978",
+    "title": "Hakuouki",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "44865": {
+    "imdb_id": "tt1658978",
+    "title": "Hakuouki",
+    "fromSeason": 0,
+    "fromEpisode": 12
+  },
+  "6885": {
+    "imdb_id": "tt3856638",
+    "title": "Hakuouki Movie 1: Kyoto Ranbu"
+  },
+  "6886": {
+    "imdb_id": "tt5825186",
+    "title": "Hakuouki Movie 2: Shikon Soukyuu"
+  },
+  "4788": {
+    "imdb_id": "tt1587156",
+    "title": "Gekijouban Fate/Stay Night: Unlimited Blade Works"
   },
   "4797": {
     "imdb_id": "tt7412514",
@@ -8943,6 +9022,10 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "5718": {
+    "imdb_id": "tt0062260",
+    "title": "Shounen Jack to Mahoutsukai"
+  },
   "5746": {
     "imdb_id": "tt3105492",
     "title": "Coppelion"
@@ -8985,6 +9068,36 @@
     "imdb_id": "tt2670718",
     "title": "A-Channel",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5879": {
+    "imdb_id": "tt5887030",
+    "title": "Qin's Moon",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6615": {
+    "imdb_id": "tt5887030",
+    "title": "Qin's Moon",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6613": {
+    "imdb_id": "tt5887030",
+    "title": "Qin's Moon",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "7337": {
+    "imdb_id": "tt5887030",
+    "title": "Qin's Moon",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "10556": {
+    "imdb_id": "tt5887030",
+    "title": "Qin's Moon",
+    "fromSeason": 5,
     "fromEpisode": 1
   },
   "5895": {
@@ -10179,12 +10292,6 @@
     "imdb_id": "tt2301807",
     "title": "Naruto SD: Rock Lee & His Ninja Pals"
   },
-  "6884": {
-    "imdb_id": "tt1658978",
-    "title": "Hakuouki",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
   "6887": {
     "imdb_id": "tt2309320",
     "title": "From the New World"
@@ -11372,6 +11479,26 @@
     "title": "Free!",
     "fromSeason": 0,
     "fromEpisode": 17
+  },
+  "10761": {
+    "imdb_id": "tt4872210",
+    "title": "High Speed! Free! Starting Summer"
+  },
+  "13562": {
+    "imdb_id": "tt6799508",
+    "title": "Free! Timeless Medley: The Bond"
+  },
+  "13567": {
+    "imdb_id": "tt6799518",
+    "title": "Free! Timeless Medley: The Promise"
+  },
+  "42357": {
+    "imdb_id": "tt14531302",
+    "title": "Free! the Final Stroke"
+  },
+  "42380": {
+    "imdb_id": "tt10621390",
+    "title": "Free! Road to the World - The Dream"
   },
   "7668": {
     "imdb_id": "tt1568632",
@@ -13853,6 +13980,14 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "14151": {
+    "imdb_id": "tt7986790",
+    "title": "Gekijouban Macross Delta: Gekijou no Walküre"
+  },
+  "45244": {
+    "imdb_id": "tt13898164",
+    "title": "Gekijouban Macross Delta: Zettai Live!!!!!!"
+  },
   "10011": {
     "imdb_id": "tt4291128",
     "title": "Yatterman Night",
@@ -14345,10 +14480,6 @@
     "title": "The Idolm@ster Cinderella Girls",
     "fromSeason": 1,
     "fromEpisode": 14
-  },
-  "10761": {
-    "imdb_id": "tt4872210",
-    "title": "High Speed! Free! Starting Summer"
   },
   "10766": {
     "imdb_id": "tt5235870",
@@ -15357,6 +15488,18 @@
     "title": "Boku No Hero Academia",
     "fromSeason": 0,
     "fromEpisode": 8
+  },
+  "14084": {
+    "imdb_id": "tt7745068",
+    "title": "My Hero Academia: Two Heroes"
+  },
+  "42205": {
+    "imdb_id": "tt11107074",
+    "title": "My Hero Academia: Heroes Rising"
+  },
+  "44209": {
+    "imdb_id": "tt13544716",
+    "title": "My Hero Academia: World Heroes' Mission"
   },
   "11473": {
     "imdb_id": "tt5170006",
@@ -17634,14 +17777,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "13562": {
-    "imdb_id": "tt6799508",
-    "title": "Free! Timeless Medley: The Bond"
-  },
-  "13567": {
-    "imdb_id": "tt6799518",
-    "title": "Free! Timeless Medley: The Promise"
-  },
   "13570": {
     "imdb_id": "tt8391976",
     "title": "Bungou Stray Dogs: Dead Apple"
@@ -18332,14 +18467,6 @@
   "14083": {
     "imdb_id": "tt6900448",
     "title": "Mirai"
-  },
-  "14084": {
-    "imdb_id": "tt7745068",
-    "title": "My Hero Academia: Two Heroes"
-  },
-  "42205": {
-    "imdb_id": "tt11107074",
-    "title": "My Hero Academia: Heroes Rising"
   },
   "14090": {
     "imdb_id": "tt8948304",
@@ -20436,6 +20563,12 @@
   "42429": {
     "imdb_id": "tt10635042",
     "title": "Sailor Moon Eternal"
+  },
+  "42431": {
+    "imdb_id": "tt10827146",
+    "title": "Ling Cage",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "42434": {
     "imdb_id": "tt12013558",
@@ -22569,10 +22702,6 @@
   "45150": {
     "imdb_id": "tt15392166",
     "title": "Ghost in the Shell: SAC_2045"
-  },
-  "45244": {
-    "imdb_id": "tt13898164",
-    "title": "Gekijouban Macross Delta: Zettai Live!!!!!!"
   },
   "45271": {
     "imdb_id": "tt15529750",
