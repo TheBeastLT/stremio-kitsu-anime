@@ -5576,8 +5576,37 @@
   },
   "1535": {
     "imdb_id": "tt0367369",
+    "tvdb_id": "71682",
     "title": "MegaMan: NT Warrior",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1907": {
+    "imdb_id": "tt0367369",
+    "tvdb_id": "73820",
+    "title": "MegaMan: NT Warrior",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "1908": {
+    "imdb_id": "tt0367369",
+    "tvdb_id": "75097",
+    "title": "MegaMan: NT Warrior",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "1909": {
+    "imdb_id": "tt0367369",
+    "tvdb_id": "248903",
+    "title": "MegaMan: NT Warrior",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "2474": {
+    "imdb_id": "tt0367369",
+    "tvdb_id": "373443",
+    "title": "MegaMan: NT Warrior",
+    "fromSeason": 5,
     "fromEpisode": 1
   },
   "1537": {
@@ -14801,6 +14830,7 @@
   },
   "13882": {
     "imdb_id": "tt5607616",
+    "tmdb_id": "532321",
     "title": "Re: Zero - Starting Life in Another World",
     "fromSeason": 0,
     "fromEpisode": 26
@@ -20837,18 +20867,21 @@
   },
   "43061": {
     "imdb_id": "tt2549176",
+    "tvdb_id": "379742",
     "title": "Cardfight!! Vanguard Gaiden: If",
     "fromSeason": 13,
     "fromEpisode": 1
   },
   "44181": {
     "imdb_id": "tt2549176",
+    "tvdb_id": "400398",
     "title": "Vanguard OverDress",
     "fromSeason": 14,
     "fromEpisode": 1
   },
   "44521": {
     "imdb_id": "tt2549176",
+    "tvdb_id": "400398",
     "title": "Vanguard OverDress",
     "fromSeason": 14,
     "fromEpisode": 13
