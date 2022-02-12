@@ -59,7 +59,11 @@ const manifest = {
       name: 'Kitsu',
       type: 'series',
       pageSize: kitsu.PAGE_SIZE,
-      extra: [{ name: 'search', isRequired: true }, { name: 'skip' }],
+      extra: [
+          { name: 'search', isRequired: true },
+          { name: 'lastVideosIds', isRequired: false, "optionsLimit": 20 },
+          { name: 'skip' }
+      ],
     },
   ],
   idPrefixes: ['kitsu']
@@ -80,9 +84,13 @@ builder.defineCatalogHandler((args) => {
   const skip = args.extra && args.extra.skip || 0;
   const id = `${args.id}|${args.extra && args.extra.genre || 'All'}|${skip}`;
 
-  if (args.extra && args.extra.search) {
+  if (args.extra?.search) {
     // no need to cache search results
     return kitsu.search(args.extra.search)
+        .then((metas) => ({ metas: metas, cacheMaxAge: CACHE_MAX_AGE }));
+  }
+  if (args.extra?.lastVideosIds) {
+    return kitsu.list(args.extra.lastVideosIds)
         .then((metas) => ({ metas: metas, cacheMaxAge: CACHE_MAX_AGE }));
   }
 
