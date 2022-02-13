@@ -4937,7 +4937,29 @@
   },
   "1139": {
     "imdb_id": "tt0159933",
-    "title": "Ronin Warriors"
+    "title": "Ronin Warriors",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1140": {
+    "imdb_id": "tt0159933",
+    "fanartLogoId": "103831",
+    "title": "Ronin Warriors",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "1141": {
+    "imdb_id": "tt0159933",
+    "fanartLogoId": "102780",
+    "title": "Ronin Warriors",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "1142": {
+    "imdb_id": "tt0159933",
+    "title": "Ronin Warriors",
+    "fromSeason": 0,
+    "fromEpisode": 7
   },
   "1154": {
     "imdb_id": "tt0122356",
@@ -6412,6 +6434,12 @@
     "imdb_id": "tt0238782",
     "title": "Flint: The Time Detective"
   },
+  "2067": {
+    "imdb_id": "tt10955388",
+    "title": "In the Beginning: The Bible Stories",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "2068": {
     "imdb_id": "tt0488465",
     "title": "Red Baron",
@@ -6925,6 +6953,10 @@
   "2522": {
     "imdb_id": "tt0903437",
     "title": "Iga-no Kabamaru"
+  },
+  "2528": {
+    "imdb_id": "tt0088028",
+    "title": "SF Shinseiki Lensman"
   },
   "2531": {
     "imdb_id": "tt0158634",
@@ -7819,6 +7851,14 @@
     "title": "Heroman",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "3597": {
+    "imdb_id": "tt0345612",
+    "title": "Mazinger Z vs. The Great General of Darkness"
+  },
+  "13747": {
+    "imdb_id": "tt6470762",
+    "title": "Mazinger Z: Infinity"
   },
   "3618": {
     "imdb_id": "tt0283783",
@@ -8913,6 +8953,14 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "8566": {
+    "imdb_id": "tt3331846",
+    "title": "Stand by Me Doraemon"
+  },
+  "44424": {
+    "imdb_id": "tt13428402",
+    "title": "Stand by Me Doraemon 2"
+  },
   "5606": {
     "imdb_id": "tt1685397",
     "title": "Amagami SS",
@@ -9075,6 +9123,10 @@
     "imdb_id": "tt1776196",
     "title": "Fullmetal Alchemist: The Sacred Star of Milos"
   },
+  "5625": {
+    "imdb_id": "tt4003854",
+    "title": "Burning Blood"
+  },
   "5646": {
     "imdb_id": "tt1910272",
     "title": "Steins;Gate",
@@ -9168,6 +9220,10 @@
   "5766": {
     "imdb_id": "tt1882240",
     "title": "Beelzebub"
+  },
+  "5777": {
+    "imdb_id": "tt1654078",
+    "title": "Tezuka Osamu monogatari: Boku wa Son Gokû"
   },
   "5781": {
     "imdb_id": "tt2549176",
@@ -18293,10 +18349,6 @@
     "imdb_id": "tt7963070",
     "title": "Garo: Vanishing Line"
   },
-  "13747": {
-    "imdb_id": "tt6470762",
-    "title": "Mazinger Z: Infinity"
-  },
   "13752": {
     "imdb_id": "tt7535746",
     "title": "Konohana Kitan"
@@ -22858,6 +22910,12 @@
     "imdb_id": "tt15392166",
     "title": "Ghost in the Shell: SAC_2045"
   },
+  "45265": {
+    "imdb_id": "tt18225160",
+    "title": "Umisea",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45271": {
     "imdb_id": "tt15529750",
     "title": "Tribe Nine",
@@ -22880,9 +22938,21 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45551": {
+    "imdb_id": "tt16409202",
+    "title": "Spare Me, Great Lord!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45575": {
     "imdb_id": "tt13853360",
     "title": "Ninjala",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45733": {
+    "tvdb_id": "414107",
+    "title": "Delicious Party♡Pretty Cure",
     "fromSeason": 1,
     "fromEpisode": 1
   }
