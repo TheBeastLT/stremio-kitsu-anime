@@ -383,14 +383,14 @@
   },
   "57": {
     "imdb_id": "tt0808082",
-    "fanartLogoId": "29091",
+    "fanartLogoId": "144766",
     "title": "Magical Girl Lyrical Nanoha",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "1725": {
     "imdb_id": "tt0808082",
-    "fanartLogoId": "29092",
+    "fanartLogoId": "144765",
     "title": "Magical Girl Lyrical Nanoha",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -537,7 +537,7 @@
   },
   "6134": {
     "imdb_id": "tt0390733",
-    "fanartLogoId": "45333",
+    "fanartLogoId": "144770",
     "title": "Last Exile",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -986,7 +986,7 @@
   },
   "162": {
     "imdb_id": "tt0385426",
-    "fanartLogoId": "43276",
+    "fanartLogoId": "144772",
     "title": "Initial D",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -1007,7 +1007,7 @@
   },
   "9": {
     "imdb_id": "tt0385426",
-    "fanartLogoId": "102893",
+    "fanartLogoId": "144771",
     "title": "Initial D",
     "fromSeason": 4,
     "fromEpisode": 1
@@ -1411,12 +1411,14 @@
   },
   "224": {
     "imdb_id": "tt0290223",
+    "fanartLogoId": "35397",
     "title": "Inuyasha",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "4726": {
     "imdb_id": "tt0290223",
+    "fanartLogoId": "134405",
     "title": "InuYasha: The Final Act",
     "fromSeason": 8,
     "fromEpisode": 1
@@ -1459,45 +1461,58 @@
   },
   "232": {
     "imdb_id": "tt0486171",
+    "fanartLogoId": "48791",
     "title": "Ikki tosen: Dragon Destiny",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "1762": {
     "imdb_id": "tt0486171",
+    "fanartLogoId": "93177",
     "title": "Ikki tosen: Dragon Destiny",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "3516": {
     "imdb_id": "tt0486171",
+    "fanartLogoId": "96065",
     "title": "Ikki tosen: Dragon Destiny",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "5037": {
     "imdb_id": "tt0486171",
-    "title": "Ikki tosen: Dragon Destiny",
+    "fanartLogoId": "96247",
+    "title": "Ikki 96246: Dragon Destiny",
     "fromSeason": 4,
     "fromEpisode": 1
   },
   "2635": {
     "imdb_id": "tt0486171",
+    "fanartLogoId": "93177",
     "title": "Ikki tosen: Dragon Destiny",
     "fromSeason": 0,
     "fromEpisode": 1
   },
   "4061": {
     "imdb_id": "tt0486171",
+    "fanartLogoId": "96065",
     "title": "Ikki tosen: Dragon Destiny",
     "fromSeason": 0,
     "fromEpisode": 7
   },
   "5365": {
     "imdb_id": "tt0486171",
+    "fanartLogoId": "96247",
     "title": "Ikki tosen: Dragon Destiny",
     "fromSeason": 0,
     "fromEpisode": 13
+  },
+  "6483": {
+    "imdb_id": "tt0486171",
+    "title": "Ikki tosen: Dragon Destiny",
+    "fromSeason": 0,
+    "fromEpisode": 19
   },
   "13220": {
     "imdb_id": "tt0486171",
@@ -1507,6 +1522,7 @@
   },
   "42005": {
     "imdb_id": "tt0486171",
+    "fanartLogoId": "42005",
     "title": "Ikki tosen: Dragon Destiny",
     "fromSeason": 0,
     "fromEpisode": 22
@@ -1530,24 +1546,28 @@
   "237": {},
   "238": {
     "imdb_id": "tt0481256",
+    "fanartLogoId": "131847",
     "title": "Hajime no Ippo",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "4016": {
     "imdb_id": "tt0481256",
+    "fanartLogoId": "55113",
     "title": "Hajime no Ippo",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "7855": {
     "imdb_id": "tt0481256",
+    "fanartLogoId": "55114",
     "title": "Hajime no Ippo",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "6660": {
     "imdb_id": "tt0481256",
+    "fanartLogoId": "131847",
     "title": "Hajime no Ippo",
     "fromSeason": 1,
     "fromEpisode": 76
@@ -1618,15 +1638,36 @@
   },
   "251": {
     "imdb_id": "tt0337769",
+    "fanartLogoId": "91593",
     "title": "Mahoromatic",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "252": {
     "imdb_id": "tt0337769",
+    "fanartLogoId": "91592",
     "title": "Mahoromatic",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  "3875": {
+    "imdb_id": "tt0337769",
+    "title": "Mahoromatic",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+    "585": {
+    "imdb_id": "tt0337769",
+    "title": "Mahoromatic",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "4857": {
+    "imdb_id": "tt0337769",
+    "fanartLogoId": "91591",
+    "title": "Mahoromatic",
+    "fromSeason": 0,
+    "fromEpisode": 4
   },
   "253": {
     "imdb_id": "tt0464782",
@@ -1678,18 +1719,21 @@
   },
   "263": {
     "imdb_id": "tt0328733",
+    "fanartLogoId": "100620",
     "title": "Beyblade",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "1499": {
     "imdb_id": "tt0328733",
+    "fanartLogoId": "115865",
     "title": "Beyblade",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "1498": {
     "imdb_id": "tt0328733",
+    "fanartLogoId": "144642",
     "title": "Beyblade",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -8163,18 +8207,21 @@
   },
   "4365": {
     "imdb_id": "tt1674928",
+    "fanartLogoId": "98558",
     "title": "Beyblade: Metal Fusion",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "5326": {
     "imdb_id": "tt1674928",
+    "fanartLogoId": "94658",
     "title": "Beyblade: Metal Fusion",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "6152": {
     "imdb_id": "tt1674928",
+    "fanartLogoId": "143751",
     "title": "Beyblade: Metal Fusion",
     "fromSeason": 3,
     "fromEpisode": 1
