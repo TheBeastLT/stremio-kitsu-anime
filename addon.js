@@ -9,23 +9,23 @@ const CACHE_MAX_AGE = process.env.CACHE_MAX_AGE || 12 * 60 * 60; // 12 hours
 
 const manifest = {
   id: 'community.anime.kitsu',
-  version: '0.0.5',
+  version: '0.0.6',
   name: 'Anime Kitsu',
   description: 'Unofficial Kitsu.io anime catalog addon',
   logo: 'https://i.imgur.com/ANMG9VF.png',
   background: 'https://i.imgur.com/ym4n96o.png',
   resources: ['catalog', 'meta'],
-  types: ['movie', 'series'],
+  types: ['anime', 'movie', 'series'],
   catalogs: [
     {
       id: 'kitsu-anime-trending',
       name: 'Kitsu Trending',
-      type: 'series'
+      type: 'anime'
     },
     {
       id: 'kitsu-anime-airing',
       name: 'Kitsu Top Airing',
-      type: 'series',
+      type: 'anime',
       pageSize: kitsu.PAGE_SIZE,
       extra: [{ name: 'genre', options: genres }, { name: 'skip' }],
       genres: genres
@@ -33,7 +33,7 @@ const manifest = {
     {
       id: 'kitsu-anime-popular',
       name: 'Kitsu Most Popular',
-      type: 'series',
+      type: 'anime',
       pageSize: kitsu.PAGE_SIZE,
       extra: [{ name: 'genre', options: genres }, { name: 'skip' }],
       genres: genres
@@ -41,7 +41,7 @@ const manifest = {
     {
       id: 'kitsu-anime-rating',
       name: 'Kitsu Highest Rated',
-      type: 'series',
+      type: 'anime',
       pageSize: kitsu.PAGE_SIZE,
       extra: [{ name: 'genre', options: genres }, { name: 'skip' }],
       genres: genres
@@ -49,7 +49,7 @@ const manifest = {
     {
       id: 'kitsu-anime-newest',
       name: 'Kitsu Newest',
-      type: 'series',
+      type: 'anime',
       pageSize: kitsu.PAGE_SIZE,
       extra: [{ name: 'genre', options: genres }, { name: 'skip' }],
       genres: genres
@@ -57,7 +57,7 @@ const manifest = {
     {
       id: 'kitsu-anime-list',
       name: 'Kitsu',
-      type: 'series',
+      type: 'anime',
       pageSize: kitsu.PAGE_SIZE,
       extra: [
           { name: 'search', isRequired: true },
