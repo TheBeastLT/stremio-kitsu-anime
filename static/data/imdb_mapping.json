@@ -17,12 +17,14 @@
   },
   "5": {
     "imdb_id": "tt3123886",
+    "tvdb_id": "75205",
     "title": "Beet the Vandel Buster",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "1007": {
     "imdb_id": "tt3123886",
+    "tvdb_id": "75205",
     "title": "Beet the Vandel Buster",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -62,25 +64,29 @@
     "title": "Ring ni kakero"
   },
   "15": {
-    "imdb_id": "tt0878036",
+    "imdb_id": "tt0878037",
+    "fanartLogoId": "43651",
     "title": "School Rumble",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "750": {
-    "imdb_id": "tt0878036",
+    "imdb_id": "tt0878037",
+    "fanartLogoId": "91074",
     "title": "School Rumble",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "476": {
-    "imdb_id": "tt0878036",
+    "imdb_id": "tt0878037",
+    "fanartLogoId": "90880",
     "title": "School Rumble",
     "fromSeason": 0,
     "fromEpisode": 1
   },
   "3413": {
-    "imdb_id": "tt0878036",
+    "imdb_id": "tt0878037",
+    "fanartLogoId": "90881",
     "title": "School Rumble",
     "fromSeason": 0,
     "fromEpisode": 3
@@ -143,18 +149,21 @@
   },
   "30": {
     "imdb_id": "tt0361140",
+    "fanartLogoId": "127950",
     "title": ".hack//SIGN",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "273": {
     "imdb_id": "tt0361140",
+    "fanartLogoId": "127951",
     "title": ".hack//SIGN",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "773": {
     "imdb_id": "tt0361140",
+    "fanartLogoId": "127952",
     "title": ".hack//SIGN",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -185,12 +194,14 @@
   },
   "31": {
     "imdb_id": "tt0872301",
+    "fanartLogoId": "28138",
     "title": "Ah! My Goddess",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "7775": {
     "imdb_id": "tt0872301",
+    "fanartLogoId": "116243",
     "title": "Ah! My Goddess",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -207,11 +218,22 @@
     "fromSeason": 0,
     "fromEpisode": 7
   },
+  "2786": {
+    "imdb_id": "tt0872301",
+    "fanartLogoId": "133333",
+    "title": "Ah! My Goddess: Fighting Wings",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
   "5808": {
     "imdb_id": "tt0872301",
     "title": "Ah! My Goddess",
     "fromSeason": 0,
     "fromEpisode": 10
+  },
+  "7784": {
+    "imdb_id": "tt0265018",
+    "title": "Ah! My Goddess: The Movie"
   },
   "32": {
     "imdb_id": "tt0308974",
@@ -271,15 +293,30 @@
   },
   "45": {
     "imdb_id": "tt0861287",
+    "fanartLogoId": "92283",
     "title": "Rozen Maiden",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "46": {
     "imdb_id": "tt0861287",
+    "fanartLogoId": "95609",
     "title": "Rozen Maiden",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  "2028": {
+    "imdb_id": "tt0861287",
+    "title": "Rozen Maiden",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "1540": {
+    "imdb_id": "tt0861287",
+    "fanartLogoId": "96463",
+    "title": "Rozen Maiden",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "47": {
     "imdb_id": "tt0339955",
@@ -299,24 +336,28 @@
   },
   "51": {
     "imdb_id": "tt0328739",
+    "fanartLogoId": "124064",
     "title": "Full Metal Panic!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "52": {
     "imdb_id": "tt0328739",
+    "fanartLogoId": "123939",
     "title": "Full Metal Panic!",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "53": {
     "imdb_id": "tt0328739",
+    "fanartLogoId": "102892",
     "title": "Full Metal Panic!",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "11460": {
     "imdb_id": "tt0328739",
+    "fanartLogoId": "87000",
     "title": "Full Metal Panic!",
     "fromSeason": 4,
     "fromEpisode": 1
@@ -335,32 +376,36 @@
   },
   "56": {
     "imdb_id": "tt0808082",
+    "fanartLogoId": "25711",
     "title": "Magical Girl Lyrical Nanoha",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "57": {
     "imdb_id": "tt0808082",
+    "fanartLogoId": "29091",
     "title": "Magical Girl Lyrical Nanoha",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "1725": {
     "imdb_id": "tt0808082",
+    "fanartLogoId": "29092",
     "title": "Magical Girl Lyrical Nanoha",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "8687": {
     "imdb_id": "tt0808082",
+    "fanartLogoId": "91174",
     "title": "Magical Girl Lyrical Nanoha",
     "fromSeason": 4,
     "fromEpisode": 1
   },
   "12304": {
-    "imdb_id": "tt0808082",
+    "imdb_id": "tt6912372",
     "title": "Magical Girl Lyrical Nanoha",
-    "fromSeason": 5,
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "58": {
@@ -485,12 +530,14 @@
   },
   "76": {
     "imdb_id": "tt0390733",
+    "fanartLogoId": "45333",
     "title": "Last Exile",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "6134": {
     "imdb_id": "tt0390733",
+    "fanartLogoId": "45333",
     "title": "Last Exile",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -500,6 +547,10 @@
     "title": "Last Exile",
     "fromSeason": 0,
     "fromEpisode": 2
+  },
+  "11491": {
+    "tmdb_id": "372757",
+    "title": "Last Exile: Fam, the Silver Wing - Over the Wishes"
   },
   "77": {
     "imdb_id": "tt0824043",
@@ -607,15 +658,31 @@
   },
   "102": {
     "imdb_id": "tt0111973",
+    "fanartLogoId": "94610",
     "title": "Fushigi Yûgi - The Mysterious Play",
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "347": {
+    "imdb_id": "tt0111973",
+    "fanartLogoId": "97658",
+    "title": "Fushigi Yugi - The Mysterious Play",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "348": {
+    "imdb_id": "tt0111973",
+    "fanartLogoId": "96777",
+    "title": "Fushigi Yugi - The Mysterious Play",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
   "103": {
     "imdb_id": "tt0111973",
+    "fanartLogoId": "91306",
     "title": "Fushigi Yûgi - The Mysterious Play",
-    "fromSeason": 4,
-    "fromEpisode": 1
+    "fromSeason": 0,
+    "fromEpisode": 10
   },
   "104": {
     "imdb_id": "tt0988817",
@@ -698,12 +765,6 @@
     "title": "Hunter x Hunter",
     "fromSeason": 4,
     "fromEpisode": 1
-  },
-  "119": {
-    "imdb_id": "tt0769997",
-    "title": "Jinki: Extend",
-    "fromSeason": 1,
-    "fromEpisode": 13
   },
   "120": {
     "imdb_id": "tt0272988",
@@ -811,13 +872,13 @@
     "imdb_id": "tt0364863",
     "title": "RahXephon",
     "fromSeason": 0,
-    "fromEpisode": 2
+    "fromEpisode": 1
   },
   "4035": {
     "imdb_id": "tt0364863",
     "title": "RahXephon",
     "fromSeason": 0,
-    "fromEpisode": 3
+    "fromEpisode": 2
   },
   "680": {
     "imdb_id": "tt1047518",
@@ -883,15 +944,14 @@
   },
   "3859": {
     "imdb_id": "tt0477543",
+    "fanartLogoId": "102786",
     "title": "Reservoir Chronicle: Tsubasa",
     "fromSeason": 4,
     "fromEpisode": 1
   },
   "716": {
-    "imdb_id": "tt0477543",
-    "title": "Reservoir Chronicle: Tsubasa",
-    "fromSeason": 0,
-    "fromEpisode": 1
+    "imdb_id": "tt0466551",
+    "title": "Tsubasa Chronicle The Movie: The Princess in the Birdcage Kingdom"
   },
   "155": {
     "imdb_id": "tt2107575",
@@ -900,12 +960,14 @@
   "156": {},
   "157": {
     "imdb_id": "tt0309226",
+    "fanartLogoId": "93732",
     "title": "Vandread",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "158": {
     "imdb_id": "tt0309226",
+    "fanartLogoId": "102893",
     "title": "Vandread",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -924,36 +986,42 @@
   },
   "162": {
     "imdb_id": "tt0385426",
+    "fanartLogoId": "43276",
     "title": "Initial D",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "163": {
     "imdb_id": "tt0385426",
+    "fanartLogoId": "138767",
     "title": "Initial D",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "164": {
     "imdb_id": "tt0385426",
+    "fanartLogoId": "138770",
     "title": "Initial D",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "9": {
     "imdb_id": "tt0385426",
+    "fanartLogoId": "102893",
     "title": "Initial D",
     "fromSeason": 4,
     "fromEpisode": 1
   },
   "7204": {
     "imdb_id": "tt0385426",
+    "fanartLogoId": "138768",
     "title": "Initial D",
     "fromSeason": 5,
     "fromEpisode": 1
   },
   "8482": {
     "imdb_id": "tt0385426",
+    "fanartLogoId": "138769",
     "title": "Initial D",
     "fromSeason": 6,
     "fromEpisode": 1
@@ -965,6 +1033,10 @@
   "3358": {
     "imdb_id": "tt11294636",
     "title": "Initial D: Battle Stage 2"
+  },
+  "44506": {
+    "imdb_id": "tt15411068",
+    "title": "Initial D: Battle Stage 3"
   },
   "729": {
     "imdb_id": "tt0400537",
@@ -1100,6 +1172,7 @@
   },
   "901": {
     "imdb_id": "tt0096686",
+    "fanartLogoId": "98004",
     "title": "Ranma ½",
     "fromSeason": 0,
     "fromEpisode": 12
@@ -1152,18 +1225,21 @@
   },
   "4394": {
     "imdb_id": "tt1409055",
+    "fanartLogoId": "31906",
     "title": "Dragon Ball Z Kai",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "6500": {
     "imdb_id": "tt1409055",
+    "fanartLogoId": "31906",
     "title": "Dragon Ball Z Kai",
     "fromSeason": 1,
     "fromEpisode": 98
   },
   "8351": {
     "imdb_id": "tt1409055",
+    "fanartLogoId": "100410",
     "title": "Dragon Ball Z Kai",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -1182,42 +1258,49 @@
   },
   "202": {
     "imdb_id": "tt0279077",
+    "fanartLogoId": "31113",
     "title": "FLCL",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "11961": {
     "imdb_id": "tt0279077",
+    "fanartLogoId": "123700",
     "title": "FLCL",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "11962": {
     "imdb_id": "tt0279077",
+    "fanartLogoId": "123701",
     "title": "FLCL",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "203": {
     "imdb_id": "tt0962740",
+    "fanartLogoId": "35987",
     "title": "Hell Girl",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "1434": {
     "imdb_id": "tt0962740",
+    "fanartLogoId": "35988",
     "title": "Hell Girl",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "3210": {
     "imdb_id": "tt0962740",
+    "fanartLogoId": "35989",
     "title": "Hell Girl",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "13249": {
     "imdb_id": "tt0962740",
+    "fanartLogoId": "35987",
     "title": "Hell Girl",
     "fromSeason": 4,
     "fromEpisode": 1
@@ -2018,18 +2101,6 @@
   "346": {
     "imdb_id": "tt0240493",
     "title": "Excel Saga"
-  },
-  "347": {
-    "imdb_id": "tt0111973",
-    "title": "Fushigi Yugi - The Mysterious Play",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
-  "348": {
-    "imdb_id": "tt0111973",
-    "title": "Fushigi Yugi - The Mysterious Play",
-    "fromSeason": 3,
-    "fromEpisode": 4
   },
   "349": {
     "imdb_id": "tt0929753",
@@ -3760,12 +3831,14 @@
   },
   "751": {
     "imdb_id": "tt0816407",
+    "fanartLogoId": "55556",
     "title": "The Melancholy of Haruhi Suzumiya",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "3579": {
     "imdb_id": "tt0816407",
+    "fanartLogoId": "90919",
     "title": "The Melancholy of Haruhi Suzumiya",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -4188,12 +4261,14 @@
   },
   "841": {
     "imdb_id": "tt0098492",
+    "fanartLogoId": "28145",
     "title": "Gunbuster",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "892": {
     "imdb_id": "tt0098492",
+    "fanartLogoId": "127311",
     "title": "Gunbuster",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -6159,12 +6234,14 @@
   },
   "1962": {
     "imdb_id": "tt1118804",
+    "fanartLogoId": "29387",
     "title": "Clannad",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "3505": {
     "imdb_id": "tt1118804",
+    "fanartLogoId": "29388",
     "title": "Clannad: After Story",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -7722,8 +7799,23 @@
   },
   "3725": {
     "imdb_id": "tt1308089",
+    "fanartLogoId": "89630",
     "title": "A Certain Magical Index",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5541": {
+    "imdb_id": "tt1308089",
+    "fanartLogoId": "89631",
+    "title": "A Certain Magical Index",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "13880": {
+    "imdb_id": "tt1308089",
+    "fanartLogoId": "89632",
+    "title": "A Certain Magical Index",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "6583": {
@@ -7821,11 +7913,13 @@
   },
   "3893": {
     "imdb_id": "tt1346122",
+    "fanartLogoId": "50214",
     "title": "Maria Holic",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "5832": {
+    "fanartLogoId": "96464",
     "imdb_id": "tt1346122",
     "title": "Maria Holic",
     "fromSeason": 2,
@@ -8883,12 +8977,6 @@
   "5531": {
     "imdb_id": "tt2176669",
     "title": "Bodacious Space Pirates"
-  },
-  "5541": {
-    "imdb_id": "tt1308089",
-    "title": "A Certain Magical Index",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "5544": {
     "imdb_id": "tt2555422",
@@ -10060,12 +10148,14 @@
   },
   "7762": {
     "imdb_id": "tt1407599",
+    "fanartLogoId": "94796",
     "title": "Queen's Blade: Wandering Warrior",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "4642": {
     "imdb_id": "tt1407599",
+    "fanartLogoId": "94797",
     "title": "Queen's Blade: Wandering Warrior",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -11889,6 +11979,18 @@
     "title": "Wake Up, Girls!",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "7781": {
+    "imdb_id": "tt0769997",
+    "title": "Jinki: Extend",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "119": {
+    "imdb_id": "tt0769997",
+    "title": "Jinki: Extend",
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   "7782": {
     "imdb_id": "tt3199286",
@@ -15283,8 +15385,16 @@
   },
   "11381": {
     "imdb_id": "tt5346952",
+    "fanartLogoId": "98545",
     "title": "Dagashi kashi",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "13701": {
+    "imdb_id": "tt5346952",
+    "fanartLogoId": "98386",
+    "title": "Dagashi kashi",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "11382": {
@@ -16978,12 +17088,14 @@
   },
   "12640": {
     "imdb_id": "tt6153026",
+    "fanartLogoId": "138529",
     "title": "Tawawa on Monday",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "45228": {
     "imdb_id": "tt6153026",
+    "fanartLogoId": "138478",
     "title": "Tawawa on Monday",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -18015,14 +18127,9 @@
   },
   "13700": {
     "imdb_id": "tt7814540",
+    "tvdb_id": "337123",
     "title": "Meruhen Medohen",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "13701": {
-    "imdb_id": "tt5346952",
-    "title": "Dagashi kashi",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "13703": {
@@ -18247,12 +18354,6 @@
   "13852": {
     "imdb_id": "tt9844256",
     "title": "Code Geass: Lelouch of the Rebellion III - Glorification"
-  },
-  "13880": {
-    "imdb_id": "tt1308089",
-    "title": "A Certain Magical Index",
-    "fromSeason": 3,
-    "fromEpisode": 1
   },
   "13888": {
     "imdb_id": "tt8249034",
