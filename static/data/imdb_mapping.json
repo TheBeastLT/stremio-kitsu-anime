@@ -17,14 +17,12 @@
   },
   "5": {
     "imdb_id": "tt3123886",
-    "tvdb_id": "75205",
     "title": "Beet the Vandel Buster",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "1007": {
     "imdb_id": "tt3123886",
-    "tvdb_id": "75205",
     "title": "Beet the Vandel Buster",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -7876,7 +7874,6 @@
   },
   "3692": {
     "imdb_id": "tt13345962",
-    "tvdb_id": "251747",
     "title": "Saikyou Robot Daiouja",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -10083,30 +10080,35 @@
   },
   "6589": {
     "imdb_id": "tt2250192",
+    "fanartLogoId": "41749",
     "title": "Sword Art Online",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "8174": {
     "imdb_id": "tt2250192",
+    "fanartLogoId": "41749",
     "title": "Sword Art Online",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "13893": {
     "imdb_id": "tt2250192",
+    "fanartLogoId": "106821",
     "title": "Sword Art Online",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "42213": {
     "imdb_id": "tt2250192",
+    "fanartLogoId": "106818",
     "title": "Sword Art Online",
     "fromSeason": 4,
     "fromEpisode": 1
   },
   "42927": {
     "imdb_id": "tt2250192",
+    "fanartLogoId": "106818",
     "title": "Sword Art Online",
     "fromSeason": 4,
     "fromEpisode": 13
@@ -10116,12 +10118,6 @@
     "title": "Sword Art Online",
     "fromSeason": 0,
     "fromEpisode": 1
-  },
-  "7914": {
-    "imdb_id": "tt2250192",
-    "title": "Sword Art Online",
-    "fromSeason": 0,
-    "fromEpisode": 10
   },
   "8196": {
     "imdb_id": "tt2250192",
@@ -10149,21 +10145,32 @@
   },
   "42154": {
     "imdb_id": "tt2250192",
+    "fanartLogoId": "106821",
     "title": "Sword Art Online",
     "fromSeason": 0,
     "fromEpisode": 24
   },
   "42610": {
     "imdb_id": "tt2250192",
+    "fanartLogoId": "106818",
     "title": "Sword Art Online",
     "fromSeason": 0,
     "fromEpisode": 25
   },
   "43286": {
     "imdb_id": "tt2250192",
+    "fanartLogoId": "106818",
     "title": "Sword Art Online",
     "fromSeason": 0,
     "fromEpisode": 26
+  },
+  "7914": {
+    "imdb_id": "tt3241196",
+    "title": "Sword Art Online Extra Edition"
+  },
+  "11423": {
+    "imdb_id": "tt5544384",
+    "title": "Sword Art Online: The Movie - Ordinal Scale"
   },
   "13894": {
     "imdb_id": "tt7978710",
@@ -10814,6 +10821,10 @@
     "title": "JoJo's Bizarre Adventure",
     "fromSeason": 5,
     "fromEpisode": 1
+  },
+  "3136": {
+    "imdb_id": "tt6490990",
+    "title": "JoJo's Bizarre Adventure: Phantom Blood"
   },
   "7160": {
     "imdb_id": "tt2321542",
@@ -12353,12 +12364,14 @@
   },
   "7881": {
     "imdb_id": "tt3225270",
+    "fanartLogoId": "56312",
     "title": "Noragami",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "10800": {
     "imdb_id": "tt3225270",
+    "fanartLogoId": "98546",
     "title": "Noragami",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -13538,6 +13551,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "10877": {
+    "imdb_id": "tt3837246",
+    "title": "Assassination Classroom",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "8641": {
     "imdb_id": "tt4216878",
     "title": "Absolute Duo"
@@ -13704,33 +13723,38 @@
   },
   "8699": {
     "imdb_id": "tt3909224",
+    "fanartLogoId": "116951",
     "title": "The Seven Deadly Sins",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "12633": {
     "imdb_id": "tt3909224",
+    "fanartLogoId": "119645",
     "title": "The Seven Deadly Sins",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "42263": {
     "imdb_id": "tt3909224",
+    "fanartLogoId": "116953",
     "title": "The Seven Deadly Sins",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "43458": {
     "imdb_id": "tt3909224",
+    "fanartLogoId": "116954",
     "title": "The Seven Deadly Sins",
     "fromSeason": 4,
     "fromEpisode": 1
   },
   "11414": {
-    "imdb_id": "tt9135756",
-    "title": "The Seven Deadly Sins: Signs of Holy War",
-    "fromSeason": 1,
-    "fromEpisode": 1
+    "imdb_id": "tt3909224",
+    "fanartLogoId": "108253",
+    "title": "The Seven Deadly Sins",
+    "fromSeason": 0,
+    "fromEpisode": 4
   },
   "13647": {
     "imdb_id": "tt9089294",
@@ -14065,36 +14089,42 @@
   },
   "9967": {
     "imdb_id": "tt4731072",
+    "fanartLogoId": "91476",
     "title": "Food Wars: Shokugeki no Soma",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "11612": {
     "imdb_id": "tt4731072",
+    "fanartLogoId": "91478",
     "title": "Food Wars: Shokugeki no Soma",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "13581": {
     "imdb_id": "tt4731072",
+    "fanartLogoId": "91477",
     "title": "Food Wars: Shokugeki no Soma",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "14092": {
     "imdb_id": "tt4731072",
+    "fanartLogoId": "91477",
     "title": "Food Wars: Shokugeki no Soma",
     "fromSeason": 3,
     "fromEpisode": 13
   },
   "42390": {
     "imdb_id": "tt4731072",
+    "fanartLogoId": "104666",
     "title": "Food Wars: Shokugeki no Soma",
     "fromSeason": 4,
     "fromEpisode": 1
   },
   "42921": {
     "imdb_id": "tt4731072",
+    "fanartLogoId": "132503",
     "title": "Food Wars: Shokugeki no Soma",
     "fromSeason": 5,
     "fromEpisode": 1
@@ -14783,12 +14813,6 @@
     "fromEpisode": 1
   },
   "10872": {
-  },
-  "10877": {
-    "imdb_id": "tt3837246",
-    "title": "Assassination Classroom",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "10878": {
     "imdb_id": "tt6343554",
@@ -15557,10 +15581,6 @@
     "title": "Sailor Moon Crystal",
     "fromSeason": 3,
     "fromEpisode": 1
-  },
-  "11423": {
-    "imdb_id": "tt5544384",
-    "title": "Sword Art Online: The Movie - Ordinal Scale"
   },
   "11431": {
     "imdb_id": "tt4431276",
@@ -18230,7 +18250,6 @@
   },
   "13700": {
     "imdb_id": "tt7814540",
-    "tvdb_id": "337123",
     "title": "Meruhen Medohen",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -19568,10 +19587,29 @@
   },
   "44063": {
     "imdb_id": "tt15130616",
-    "tvdb_id": "412610",
     "title": "Kimetsu Gakuen: Valentine-hen",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "44388": {
+    "imdb_id": "tt14888860",
+    "title": "Demon Slayer: Kimetsu no Yaiba Sibling`s Bond"
+  },
+  "44389": {
+    "imdb_id": "tt14888874",
+    "title": "Demon Slayer: Kimetsu no Yaiba - Mt. Natagumo Arc"
+  },
+  "44390": {
+    "imdb_id": "tt14882302",
+    "title": "Demon Slayer: Kimetsu no Yaiba - The Hashira Meeting Arc"
+  },
+  "45253": {
+    "imdb_id": "tt16492636",
+    "title": "Demon Slayer: Kimetsu no Yaiba Asakusa Arc"
+  },
+  "45254": {
+    "imdb_id": "tt16492678",
+    "title": "Demon Slayer: Kimetsu no Yaiba Tsuzumi Mansion Arc"
   },
   "41372": {
     "imdb_id": "tt9402026",
