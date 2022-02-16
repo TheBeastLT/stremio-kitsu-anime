@@ -4347,6 +4347,30 @@
     "imdb_id": "tt0495900",
     "title": "Street Fighter Alpha: Generations"
   },
+  "843": {
+    "imdb_id": "tt0220204",
+    "title": "Chibi Maruko-chan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4445": {
+    "imdb_id": "tt0220204",
+    "title": "Chibi Maruko-chan",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "2855": {
+    "imdb_id": "tt2167725",
+    "title": "Chibi Maruko-chan"
+  },
+  "5695": {
+    "imdb_id": "tt6882528",
+    "title": "Chibi Maruko-chan: Watashi no suki-na uta"
+  },
+  "11198": {
+    "imdb_id": "tt5462882",
+    "title": "Chibi Maruko-chan: A Boy from Italy"
+  },
   "844": {
     "imdb_id": "tt0430840",
     "title": "Mahô shôjo neko Taruto"
@@ -7194,6 +7218,12 @@
     "imdb_id": "tt0843548",
     "title": "Kaiketsu Zorro"
   },
+  "2723": {
+    "imdb_id": "tt1867710",
+    "title": "Crush Gear Turbo",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "2724": {
     "imdb_id": "tt0095512",
     "title": "Legend of the Galactic Heroes: My Conquest Is the Sea of Stars"
@@ -7323,10 +7353,6 @@
   "2850": {
     "imdb_id": "tt0213329",
     "title": "Saban's Adventures of the Little Mermaid"
-  },
-  "2855": {
-    "imdb_id": "tt2167725",
-    "title": "Chibi Maruko-chan"
   },
   "2857": {
     "imdb_id": "tt6103384",
@@ -7520,7 +7546,24 @@
   },
   "3032": {
     "imdb_id": "tt1266617",
-    "title": "Nogizaka Haruka no himitsu"
+    "fanartLogoId": "61727",
+    "title": "Nogizaka Haruka no himitsu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4387": {
+    "imdb_id": "tt1266617",
+    "fanartLogoId": "61724",
+    "title": "Nogizaka Haruka no himitsu",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6410": {
+    "imdb_id": "tt1266617",
+    "fanartLogoId": "61726",
+    "title": "Nogizaka Haruka no himitsu",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "3033": {
     "imdb_id": "tt1216196",
@@ -8313,12 +8356,7 @@
     "imdb_id": "tt1414419",
     "title": "Mainichi kâsan"
   },
-  "4445": {
-    "imdb_id": "tt0220205",
-    "title": "Chibi Maruko-chan",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
+
   "4456": {
     "imdb_id": "tt1694025",
     "title": "Cat Planet Cuties",
@@ -9389,6 +9427,10 @@
   "5981": {
     "imdb_id": "tt1913273",
     "title": "Anohana: The Flower We Saw That Day"
+  },
+  "5991": {
+    "imdb_id": "tt0988142",
+    "title": "Tetsujin 28-gô: Hakuchû no zangetsu"
   },
   "5992": {
     "imdb_id": "tt2076817",
@@ -17698,7 +17740,17 @@
   },
   "13261": {
     "imdb_id": "tt6692956",
-    "title": "Princess Principal"
+    "title": "Princess Principal",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44679": {
+    "imdb_id": "tt8354164",
+    "title": "Princess Principal Crown Handler: Chapter 1"
+  },
+  "45704": {
+    "imdb_id": "tt14031960",
+    "title": "Princess Principal Crown Handler: Chapter 2"
   },
   "13263": {
     "imdb_id": "tt7418688",
@@ -20312,6 +20364,24 @@
   "42150": {
     "imdb_id": "tt10530266",
     "title": "Frame Arms Girl Movie: Kya Kya Ufufu na Wonderland"
+  },
+  "42157": {
+    "imdb_id": "tt15374364",
+    "title": "Xie Wang Zhui Qi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43815": {
+    "imdb_id": "tt15374364",
+    "title": "Xie Wang Zhui Qi",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "44592": {
+    "imdb_id": "tt15374364",
+    "title": "Xie Wang Zhui Qi",
+    "fromSeason": 3,
+    "fromEpisode": 1
   },
   "42159": {
     "imdb_id": "tt10395126",
