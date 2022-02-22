@@ -374,7 +374,7 @@
   },
   "56": {
     "imdb_id": "tt0808082",
-    "fanartLogoId": "25711",
+    "fanartLogoId": "91170",
     "title": "Magical Girl Lyrical Nanoha",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -1298,7 +1298,7 @@
   },
   "13249": {
     "imdb_id": "tt0962740",
-    "fanartLogoId": "35987",
+    "fanartLogoId": "145155",
     "title": "Hell Girl",
     "fromSeason": 4,
     "fromEpisode": 1
@@ -1473,7 +1473,7 @@
   },
   "3516": {
     "imdb_id": "tt0486171",
-    "fanartLogoId": "96065",
+    "fanartLogoId": "144859",
     "title": "Ikki tosen: Dragon Destiny",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -7546,21 +7546,21 @@
   },
   "3032": {
     "imdb_id": "tt1266617",
-    "fanartLogoId": "61727",
+    "fanartLogoId": "61717",
     "title": "Nogizaka Haruka no himitsu",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "4387": {
     "imdb_id": "tt1266617",
-    "fanartLogoId": "61724",
+    "fanartLogoId": "61718",
     "title": "Nogizaka Haruka no himitsu",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "6410": {
     "imdb_id": "tt1266617",
-    "fanartLogoId": "61726",
+    "fanartLogoId": "61773",
     "title": "Nogizaka Haruka no himitsu",
     "fromSeason": 0,
     "fromEpisode": 1
@@ -9416,7 +9416,23 @@
   },
   "5953": {
     "imdb_id": "tt2061527",
-    "title": "Tiger & Bunny"
+    "title": "Tiger & Bunny",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43224": {
+    "imdb_id": "tt2061527",
+    "title": "Tiger & Bunny",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6643": {
+    "imdb_id": "tt2507174",
+    "title": "Tiger & Bunny: The Beginning"
+  },
+  "6644": {
+    "imdb_id": "tt3204012",
+    "title": "Tiger & Bunny: The Rising"
   },
   "5978": {
     "imdb_id": "tt2263799",
@@ -10830,36 +10846,42 @@
   },
   "7158": {
     "imdb_id": "tt2359704",
+    "fanartLogoId": "43185",
     "title": "JoJo's Bizarre Adventure",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "8063": {
     "imdb_id": "tt2359704",
+    "fanartLogoId": "94317",
     "title": "JoJo's Bizarre Adventure",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "8739": {
     "imdb_id": "tt2359704",
+    "fanartLogoId": "94317",
     "title": "JoJo's Bizarre Adventure",
     "fromSeason": 2,
     "fromEpisode": 25
   },
   "11459": {
     "imdb_id": "tt2359704",
+    "fanartLogoId": "144858",
     "title": "JoJo's Bizarre Adventure",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "41410": {
     "imdb_id": "tt2359704",
+    "fanartLogoId": "94338",
     "title": "JoJo's Bizarre Adventure",
     "fromSeason": 4,
     "fromEpisode": 1
   },
   "44294": {
     "imdb_id": "tt2359704",
+    "fanartLogoId": "144820",
     "title": "JoJo's Bizarre Adventure",
     "fromSeason": 5,
     "fromEpisode": 1
@@ -11830,6 +11852,12 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "45324": {
+    "imdb_id": "tt2404499",
+    "title": "Kingdom",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "7681": {
     "imdb_id": "tt2959370",
     "title": "Gatchaman Crowds",
@@ -11918,6 +11946,24 @@
     "imdb_id": "tt2942228",
     "title": "Yowamushi Pedal",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8635": {
+    "imdb_id": "tt2942228",
+    "title": "Yowamushi Pedal",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "11583": {
+    "imdb_id": "tt2942228",
+    "title": "Yowamushi Pedal",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "13594": {
+    "imdb_id": "tt2942228",
+    "title": "Yowamushi Pedal",
+    "fromSeason": 4,
     "fromEpisode": 1
   },
   "7703": {
@@ -12979,30 +13025,35 @@
   },
   "8133": {
     "imdb_id": "tt3398540",
+    "fanartLogoId": "144854",
     "title": "Haikyuu!!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "10076": {
     "imdb_id": "tt3398540",
+    "fanartLogoId": "91568",
     "title": "Haikyuu!!",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "11935": {
     "imdb_id": "tt3398540",
+    "fanartLogoId": "144853",
     "title": "Haikyuu!!",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "42059": {
     "imdb_id": "tt3398540",
+    "fanartLogoId": "145156",
     "title": "Haikyuu!!",
     "fromSeason": 4,
     "fromEpisode": 1
   },
   "42938": {
     "imdb_id": "tt3398540",
+    "fanartLogoId": "145156",
     "title": "Haikyuu!!",
     "fromSeason": 4,
     "fromEpisode": 14
@@ -13563,12 +13614,6 @@
     "imdb_id": "tt3886492",
     "title": "Girl Friend BETA",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "8635": {
-    "imdb_id": "tt2942228",
-    "title": "Yowamushi Pedal",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "8636": {
@@ -14864,7 +14909,13 @@
   },
   "10879": {
     "imdb_id": "tt4644488",
-    "title": "Dragon Ball Super"
+    "title": "Dragon Ball Super",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44544": {
+    "imdb_id": "tt14614892",
+    "title": "Dragon Ball Super: Super Hero"
   },
   "10880": {
     "imdb_id": "tt2320220",
@@ -15931,12 +15982,6 @@
     "imdb_id": "tt0278238",
     "title": "Samurai Jack",
     "fromSeason": 5,
-    "fromEpisode": 1
-  },
-  "11583": {
-    "imdb_id": "tt2942228",
-    "title": "Yowamushi Pedal",
-    "fromSeason": 3,
     "fromEpisode": 1
   },
   "11584": {
@@ -18082,12 +18127,14 @@
   },
   "13593": {
     "imdb_id": "tt9529546",
-    "title": "The Rising of the Shield Hero"
+    "title": "The Rising of the Shield Hero",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
-  "13594": {
-    "imdb_id": "tt2942228",
-    "title": "Yowamushi Pedal",
-    "fromSeason": 4,
+  "42530": {
+    "imdb_id": "tt9529546",
+    "title": "The Rising of the Shield Hero",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "13597": {
@@ -18792,6 +18839,18 @@
     "title": "Battle Through the Heavens",
     "fromSeason": 0,
     "fromEpisode": 3
+  },
+  "14125": {
+    "imdb_id": "tt8699270",
+    "title": "Ultraman",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42384": {
+    "imdb_id": "tt8699270",
+    "title": "Ultraman",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "14129": {
     "imdb_id": "tt9266104",
@@ -19621,18 +19680,21 @@
   },
   "41370": {
     "imdb_id": "tt9335498",
+    "fanartLogoId": "98299",
     "title": "Demon Slayer: Kimetsu No Yaiba",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "45249": {
     "imdb_id": "tt9335498",
+    "fanartLogoId": "144806",
     "title": "Demon Slayer: Kimetsu No Yaiba",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "44081": {
     "imdb_id": "tt9335498",
+    "fanartLogoId": "144804",
     "title": "Demon Slayer: Kimetsu No Yaiba",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -19677,6 +19739,12 @@
     "imdb_id": "tt9522300",
     "title": "Kaguya-sama: Love Is War",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43691": {
+    "imdb_id": "tt9522300",
+    "title": "Kaguya-sama: Love Is War",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "43731": {
@@ -19734,6 +19802,10 @@
     "title": "Kemurikusa.",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "41412": {
+    "imdb_id": "tt11417856",
+    "title": "The Deer King"
   },
   "41423": {
     "imdb_id": "tt9278360",
@@ -20033,14 +20105,22 @@
   },
   "42016": {
     "imdb_id": "tt9547400",
+    "fanartLogoId": "110822",
     "title": "Magia Record: Puella Magi Madoka Magica Side Story",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "43090": {
     "imdb_id": "tt9547400",
+    "fanartLogoId": "141588",
     "title": "Magia Record: Puella Magi Madoka Magica Side Story",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "44813": {
+    "imdb_id": "tt9547400",
+    "title": "Magia Record: Puella Magi Madoka Magica Side Story",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "42018": {
@@ -20225,6 +20305,12 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "45523": {
+    "imdb_id": "tt11764320",
+    "title": "Yatogame-chan Kansatsu Nikki",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "42085": {
     "imdb_id": "tt12384506",
     "title": "Ex-Arm",
@@ -20327,6 +20413,7 @@
   },
   "42137": {
     "imdb_id": "tt10417572",
+    "fanartLogoId": "100950",
     "title": "The Demon Girl Next Door",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -20540,7 +20627,7 @@
   "43607": {
     "imdb_id": "tt10885406",
     "title": "Ascendance of a Bookworm",
-    "fromSeason": 3,
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "43048": {
@@ -20683,8 +20770,15 @@
   },
   "42297": {
     "imdb_id": "tt10635210",
+    "fanartLogoId": "107755",
     "title": "Science Fell in Love, So I Tried to Prove It",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43681": {
+    "imdb_id": "tt10635210",
+    "title": "Science Fell in Love, So I Tried to Prove It",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "42306": {
@@ -21217,6 +21311,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42723": {
+    "imdb_id": "tt12518378",
+    "title": "Deemo"
+  },
   "42732": {
     "imdb_id": "tt13370404",
     "title": "Redo of Healer",
@@ -21690,6 +21788,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44537": {
+    "imdb_id": "tt12792684",
+    "title": "Love Live! Nijigasaki High School Idol Club",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42922": {
     "imdb_id": "tt13186542",
     "title": "Kemono Jihen",
@@ -22005,6 +22109,12 @@
     "title": "Moriarty the Patriot",
     "fromSeason": 1,
     "fromEpisode": 12
+  },
+  "45069": {
+    "imdb_id": "tt12831098",
+    "title": "Moriarty the Patriot",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "43505": {
     "imdb_id": "tt13057626",
@@ -22470,6 +22580,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44011": {
+    "imdb_id": "tt13956452",
+    "title": "Shokei Shoujo no Virgin Road",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44020": {
     "imdb_id": "tt13956466",
     "title": "The Genius Prince's Guide to Raising a Nation Out of Debt",
@@ -22491,6 +22607,12 @@
   "44025": {
     "imdb_id": "tt15441424",
     "title": "Shikkakumon no Saikyou Kenja",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44032": {
+    "imdb_id": "tt15686254",
+    "title": "Sama Taimu Renda",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -22576,6 +22698,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44159": {
+    "imdb_id": "tt15529074",
+    "title": "Kawaii dake ja nai Shikimori-san",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44165": {
     "imdb_id": "tt13463778",
     "title": "Kanojo mo Kanojo",
@@ -22624,6 +22752,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44187": {
+    "imdb_id": "tt15447890",
+    "title": "The Greatest Demon Lord Is Reborn as a Typical Nobody",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44189": {
     "imdb_id": "tt14187728",
     "title": "Sabikui Bisco",
@@ -22647,6 +22781,12 @@
     "title": "Kyoukai Senki",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "45703": {
+    "imdb_id": "tt15128210",
+    "title": "Kyoukai Senki",
+    "fromSeason": 1,
+    "fromEpisode": 14
   },
   "44198": {
     "imdb_id": "tt14264200",
@@ -22718,6 +22858,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44229": {
+    "imdb_id": "tt15721650",
+    "title": "Eiga Go-Toubun no Hanayome"
+  },
   "44233": {
     "imdb_id": "tt14935960",
     "title": "Takt Op. Destiny",
@@ -22772,9 +22916,21 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44310": {
+    "imdb_id": "tt14400866",
+    "title": "Kakkou no Iinazuke",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44312": {
     "imdb_id": "tt13870312",
     "title": "Sankaku Mado no Sotogawa wa Yoru",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44313": {
+    "imdb_id": "tt14396202",
+    "title": "Koi wa Sekai Seifuku no Ato de",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -22804,6 +22960,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44376": {
+    "imdb_id": "tt14134436",
+    "title": "RPG Fudousan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44381": {
     "imdb_id": "tt14694762",
     "title": "Slow Loop",
@@ -22813,6 +22975,12 @@
   "44382": {
     "imdb_id": "tt15765670",
     "title": "My Dress-Up Darling",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44383": {
+    "imdb_id": "tt14453538",
+    "title": "Kono Healer, Mendokusai",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -22834,9 +23002,19 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44394": {
+    "imdb_id": "tt14702778",
+    "title": "Gekijouban Re: cycle of the Penguindrum - Movie 1"
+  },
   "44400": {
     "imdb_id": "tt14986786",
     "title": "Wanmei Shijie",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44419": {
+    "imdb_id": "tt15391190",
+    "title": "Dance Dance Danseur",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -22846,13 +23024,37 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45699": {
+    "imdb_id": "tt14489160",
+    "title": "Kaginado",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "44422": {
     "imdb_id": "tt14489118",
     "title": "Dakaretai Otoko 1-i ni Odosarete Imasu. Movie: Spain-hen"
   },
+  "44423": {
+    "imdb_id": "tt14476236",
+    "title": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44425": {
     "imdb_id": "tt14489144",
     "title": "Build Divide: Code Black",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44426": {
+    "imdb_id": "tt14489144",
+    "title": "Build Divide: Code Black",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "44428": {
+    "imdb_id": "tt14489130",
+    "title": "Deaimon",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -22886,10 +23088,34 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "45506": {
+    "imdb_id": "tt15978212",
+    "title": "Paripi Koumei",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44511": {
+    "imdb_id": "tt15791550",
+    "title": "Mahotsukai Reimeiki",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45529": {
+    "imdb_id": "tt16255458",
+    "title": "Trapped in a Dating Sim: The World of Otome Games is Tough for Mobs",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44551": {
     "imdb_id": "tt14626352",
     "title": "Komi Can't Communicate",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45641": {
+    "imdb_id": "tt14626352",
+    "title": "Komi Can't Communicate",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "44574": {
@@ -22916,9 +23142,21 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44629": {
+    "imdb_id": "tt15792808",
+    "title": "Aoashi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44637": {
     "imdb_id": "tt12279682",
     "title": "Kyuuketsuki Sugu Shinu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44689": {
+    "imdb_id": "tt15978968",
+    "title": "Shachiku-san wa Yôjo-yûrei ni iyasaretai.",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -22933,6 +23171,16 @@
   "44814": {
     "imdb_id": "tt14924976",
     "title": "Waccha PriMagi!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44858": {
+    "imdb_id": "tt14967958",
+    "title": "Goodbye, DonGlees!"
+  },
+  "44859": {
+    "imdb_id": "tt14979560",
+    "title": "Shin Ikkitousen",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -22954,6 +23202,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44944": {
+    "imdb_id": "tt16341212",
+    "title": "Aharen-san wa hakarenai",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44946": {
     "imdb_id": "tt15400650",
     "title": "Digimon Ghost Game",
@@ -22963,6 +23217,12 @@
   "44948": {
     "imdb_id": "tt15715750",
     "title": "Hakozume: Kouban Joshi no Gyakushuu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44960": {
+    "imdb_id": "tt15202816",
+    "title": "Love All Play",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -22996,6 +23256,16 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45024": {
+    "imdb_id": "tt15304756",
+    "title": "Blue Thermal"
+  },
+  "45030": {
+    "imdb_id": "tt16088380",
+    "title": "Gunjou no Fanfare",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45055": {
     "imdb_id": "tt15356258",
     "title": "Pokémon Evolutions",
@@ -23018,6 +23288,12 @@
     "imdb_id": "tt15392166",
     "title": "Ghost in the Shell: SAC_2045"
   },
+  "45218": {
+    "imdb_id": "tt15582422",
+    "title": "Black Rock Shooter: Dawn Fall",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45265": {
     "imdb_id": "tt18225160",
     "title": "Umisea",
@@ -23034,6 +23310,16 @@
     "imdb_id": "tt6848928",
     "title": "Junk Head"
   },
+  "45328": {
+    "imdb_id": "tt10915840",
+    "title": "Uchuu senkan Yamato 2205: Aratanaru tabidachi"
+  },
+  "45341": {
+    "imdb_id": "tt15723722",
+    "title": "Yûsha, yamemasu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45372": {
     "imdb_id": "tt15758108",
     "title": "Tokyo 24-ku",
@@ -23045,6 +23331,40 @@
     "title": "Ryman's Club",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "45391": {
+    "imdb_id": "tt15789088",
+    "title": "Birdie Wing: Golf Girls' Story",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45398": {
+    "imdb_id": "tt13706018",
+    "title": "Spy x Family",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45619": {
+    "imdb_id": "tt13706018",
+    "title": "Spy x Family",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "45401": {
+    "imdb_id": "tt15830678",
+    "title": "Tomodachi Game",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45464": {
+    "imdb_id": "tt15929150",
+    "title": "Kunoichi Tsubaki no mune no uchi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45519": {
+    "imdb_id": "tt16220566",
+    "title": "Ensemble Stars!! Road to Show!!"
   },
   "45551": {
     "imdb_id": "tt16409202",
