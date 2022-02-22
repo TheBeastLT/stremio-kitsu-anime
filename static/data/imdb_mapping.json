@@ -14352,6 +14352,10 @@
     "imdb_id": "tt4958610",
     "title": "Rokka no Yuusha"
   },
+  "10035": {
+    "imdb_id": "tt4235644",
+    "title": "Shisha no teikoku"
+  },
   "10036": {
     "imdb_id": "tt5556656",
     "title": "Kotetsujo no Kabaneri"
@@ -21480,15 +21484,25 @@
   },
   "42277": {
     "imdb_id": "tt11822984",
-    "title": "My Next Life as a Villainess: All Routes Lead to Doom! ",
+    "title": "My Next Life as a Villainess: All Routes Lead to Doom!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "43238": {
     "imdb_id": "tt11822984",
-    "title": "My Next Life as a Villainess: All Routes Lead to Doom! ",
+    "title": "My Next Life as a Villainess: All Routes Lead to Doom!",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  "44910": {
+    "imdb_id": "tt11822984",
+    "title": "My Next Life as a Villainess: All Routes Lead to Doom!",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
+  "45213": {
+    "imdb_id": "tt15447084",
+    "title": "My Next Life as a Villainess: All Routes Lead to Doom! Movie"
   },
   "42602": {
     "imdb_id": "tt11731712",
@@ -23379,8 +23393,8 @@
     "fromEpisode": 1
   },
   "45733": {
-    "tvdb_id": "414107",
-    "title": "Delicious Party♡Pretty Cure",
+    "imdb_id": "tt18246604",
+    "title": "Delicious Party Precure",
     "fromSeason": 1,
     "fromEpisode": 1
   }
