@@ -10,14 +10,15 @@
   "author": "TheBeastLT <pauliox@beyond.lt>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.26.0",
     "cache-manager": "^3.6.0",
     "cache-manager-mongodb": "^0.3.0",
     "express": "^4.17.1",
     "fanart.tv-api": "^2.0.1",
     "jaro-winkler": "^0.2.8",
-    "needle": "^2.2.4",
     "parse-torrent-title": "git://github.com/TheBeastLT/parse-torrent-title.git#2ece588b19d64da6726804b9b18842897b34ffc7",
     "stremio-addon-sdk": "^1.6.5",
-    "url-exists": "^1.0.3"
+    "url-exists": "^1.0.3",
+    "xml-js": "^1.6.11"
   }
 }
