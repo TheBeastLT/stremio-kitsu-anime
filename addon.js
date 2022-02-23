@@ -90,7 +90,7 @@ builder.defineCatalogHandler((args) => {
         .then((metas) => ({ metas: metas, cacheMaxAge: CACHE_MAX_AGE }));
   }
   if (args.extra?.lastVideosIds) {
-    return kitsu.list(args.extra.lastVideosIds.split(','))
+    return kitsu.list(args.extra.lastVideosIds)
         .then((metas) => ({ metas: metas, cacheMaxAge: CACHE_MAX_AGE }));
   }
 
