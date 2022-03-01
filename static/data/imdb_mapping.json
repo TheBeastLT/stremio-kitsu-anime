@@ -5802,7 +5802,15 @@
   },
   "1555": {
     "imdb_id": "tt0988824",
-    "title": "Naruto: Shippûden"
+    "title": "Naruto: Shippûden",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "7975": {
+    "imdb_id": "tt0988824",
+    "title": "Naruto: Shippûden",
+    "fromSeason": 0,
+    "fromEpisode": 11
   },
   "1556": {
     "imdb_id": "tt1916847",
@@ -7402,6 +7410,12 @@
     "imdb_id": "tt1051943",
     "title": "Montana Jones"
   },
+  "2930": {
+    "imdb_id": "tt3086402",
+    "title": "Armored Police Metal Jack",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "2934": {
     "imdb_id": "tt1216232",
     "title": "Wagaya no oinari sama."
@@ -7887,6 +7901,12 @@
     "fromSeason": 0,
     "fromEpisode": 5
   },
+  "3536": {
+    "imdb_id": "tt3948376",
+    "title": "Ginga Shippû Sasuraiger",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3559": {
     "imdb_id": "tt1815065",
     "title": "Heroman",
@@ -8285,6 +8305,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "5323": {
+    "imdb_id": "tt1528567",
+    "title": "Heaven's Lost Property",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "4365": {
     "imdb_id": "tt1674928",
     "fanartLogoId": "98558",
@@ -8627,6 +8653,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6172": {
+    "imdb_id": "tt1909447",
+    "title": "Deadman Wonderland",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "4775": {
     "imdb_id": "tt1658978",
     "title": "Hakuouki",
@@ -8848,6 +8880,12 @@
     "imdb_id": "tt2078651",
     "title": "The Story of Mr. Sorry"
   },
+  "5191": {
+    "imdb_id": "tt1690400",
+    "title": "The Legend of the Legendary Heroes",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "5194": {
     "imdb_id": "tt1794963",
     "title": "Fafner in the Azure: Heaven and Earth"
@@ -8864,10 +8902,10 @@
     "imdb_id": "tt0204460",
     "title": "Makoto-chan"
   },
-  "5323": {
-    "imdb_id": "tt1528567",
-    "title": "Heaven's Lost Property",
-    "fromSeason": 2,
+  "5321": {
+    "imdb_id": "tt1371593",
+    "title": "Chogattai majutsu robot Ginguiser",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "5329": {
@@ -21038,6 +21076,12 @@
   "42476": {
     "imdb_id": "tt10978032",
     "title": "Kandagawa Jet Girls",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42487": {
+    "imdb_id": "tt13214882",
+    "title": "Scumbag System",
     "fromSeason": 1,
     "fromEpisode": 1
   },
