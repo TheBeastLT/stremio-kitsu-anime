@@ -4171,6 +4171,12 @@
     "imdb_id": "tt0390708",
     "title": "Geneshaft"
   },
+  "812": {
+    "imdb_id": "tt3755768",
+    "title": "Ninku",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "814": {
     "imdb_id": "tt0309163",
     "title": "The Ping-Pong Club"
@@ -5279,6 +5285,12 @@
     "imdb_id": "tt4060956",
     "title": "Hakugei: Legend of the Moby Dick"
   },
+  "1315": {
+    "imdb_id": "tt0218775",
+    "title": "Monster Rancher",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "1316": {
     "imdb_id": "tt0159208",
     "title": "City Hunter",
@@ -5663,6 +5675,18 @@
     "imdb_id": "tt0372650",
     "title": "Cyborg 009",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1514": {
+    "imdb_id": "tt0404597",
+    "title": "Duel Masters",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3610": {
+    "imdb_id": "tt0404597",
+    "title": "Duel Masters",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "1516": {
@@ -6476,6 +6500,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "2072": {
+    "imdb_id": "tt0341765",
+    "title": "Kakutou ryouri densetsu bistro recipe",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "2073": {
     "imdb_id": "tt0331167",
     "title": "Cyber Team in Akihabara"
@@ -7155,6 +7185,12 @@
   "2682": {
     "imdb_id": "tt1139447",
     "title": "Blue Drop: Tenshi tachi no gikyoku"
+  },
+  "2683": {
+    "imdb_id": "tt1139539",
+    "title": "Fantastic Detective Labyrinth",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "2684": {
     "imdb_id": "tt1158671",
@@ -12794,6 +12830,12 @@
     "fromSeason": 0,
     "fromEpisode": 14
   },
+  "43368": {
+    "imdb_id": "tt3909210",
+    "title": "The Fruit of Grisaia",
+    "fromSeason": 0,
+    "fromEpisode": 16
+  },
   "7987": {
     "imdb_id": "tt3451870",
     "title": "Captain Earth"
@@ -16595,6 +16637,18 @@
     "title": "Mobile Suit Gundam: Iron-Blooded Orphans",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "12006": {
+    "imdb_id": "tt7940468",
+    "title": "Fate/Extra Last Encore",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41396": {
+    "imdb_id": "tt7940468",
+    "title": "Fate/Extra Last Encore",
+    "fromSeason": 1,
+    "fromEpisode": 11
   },
   "12009": {
     "imdb_id": "tt6350614",
@@ -20614,6 +20668,18 @@
     "imdb_id": "tt10622220",
     "title": "Ningen shikkaku"
   },
+  "42211": {
+    "imdb_id": "tt10470356",
+    "title": "Hensuki: Are You Willing to Fall in Love with a Pervert, as Long as She's a Cutie?",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42451": {
+    "imdb_id": "tt10470356",
+    "title": "Hensuki: Are you willing to fall in love with a pervert, as long as she's a cutie?",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "42214": {
     "imdb_id": "tt9883660",
     "title": "Namuamida Butsu! Rendai Utena"
@@ -21042,12 +21108,6 @@
   "42445": {
     "imdb_id": "tt10621032",
     "title": "Lupin III: The First"
-  },
-  "42451": {
-    "imdb_id": "tt10470356",
-    "title": "Hensuki: Are you willing to fall in love with a pervert, as long as she's a cutie?",
-    "fromSeason": 1,
-    "fromEpisode": 1
   },
   "42456": {
     "imdb_id": "tt12024510",
@@ -23349,6 +23409,12 @@
   "45218": {
     "imdb_id": "tt15582422",
     "title": "Black Rock Shooter: Dawn Fall",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45245": {
+    "imdb_id": "tt15490038",
+    "title": "Kotaro wa Hitori Gurashi",
     "fromSeason": 1,
     "fromEpisode": 1
   },
