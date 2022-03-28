@@ -1337,7 +1337,33 @@
   },
   "212": {
     "imdb_id": "tt0765491",
-    "title": "Eureka Seven"
+    "fanartLogoId": "122995",
+    "title": "Eureka Seven",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6741": {
+    "imdb_id": "tt0765491",
+    "fanartLogoId": "122994",
+    "title": "Eureka Seven",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "3537": {
+    "imdb_id": "tt1414518",
+    "title": "Psalms of Planets Eureka Seven: Good Night, Sleep Tight, Young Lovers"
+  },
+  "13238": {
+    "imdb_id": "tt7480958",
+    "title": "Eureka Seven Hi-Evolution 1"
+  },
+  "13239": {
+    "imdb_id": "tt9266078",
+    "title": "Eureka Seven Hi-Evolution 2: Anemone"
+  },
+  "13240": {
+    "imdb_id": "tt11951334",
+    "title": "Eureka Seven Hi-Evolution 3: Eureka"
   },
   "213": {
     "imdb_id": "tt2160200",
@@ -5373,6 +5399,12 @@
     "imdb_id": "tt0159198",
     "title": "Magical Project S"
   },
+  "1353": {
+    "imdb_id": "tt3337196",
+    "title": "Sci-Fi Harry",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "1354": {
     "imdb_id": "tt0983973",
     "title": "Mamotte! Lollipop"
@@ -5657,7 +5689,21 @@
   },
   "1495": {
     "imdb_id": "tt4266894",
-    "title": "Babel II: Beyond Infinity"
+    "title": "Babel II: Beyond Infinity",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1496": {
+    "imdb_id": "tt1933701",
+    "title": "Babel nisei",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8930": {
+    "imdb_id": "tt0167014",
+    "title": "Babel nisei",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "1497": {
     "imdb_id": "tt3427294",
@@ -6057,6 +6103,12 @@
   "1754": {
     "imdb_id": "tt0447579",
     "title": "Ashita no Nadja"
+  },
+  "1760": {
+    "imdb_id": "tt0168143",
+    "title": "Rayearth",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "1765": {
     "imdb_id": "tt3638066",
@@ -6525,6 +6577,12 @@
   "2100": {
     "imdb_id": "tt2061039",
     "title": "Dog Soldiers: Legacy"
+  },
+  "2113": {
+    "imdb_id": "tt0294002",
+    "title": "Anime san jushi",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "2117": {
     "imdb_id": "tt1116638",
@@ -7258,6 +7316,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "2720": {
+    "imdb_id": "tt0206516",
+    "title": "Tiger Mask",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "2721": {
     "imdb_id": "tt0843548",
     "title": "Kaiketsu Zorro"
@@ -7337,6 +7401,10 @@
   "2793": {
     "imdb_id": "tt9173738",
     "title": "Jûsenshi Gulkeeva"
+  },
+  "2795": {
+    "imdb_id": "tt3476730",
+    "title": "F-Zero: Farukon densetsu"
   },
   "2802": {
     "imdb_id": "tt6895186",
@@ -7913,6 +7981,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "3527": {
+    "imdb_id": "tt3982472",
+    "title": "Hareluya II BØY",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3529": {
     "imdb_id": "tt1821149",
     "title": "Rosario + Vampire",
@@ -8159,6 +8233,12 @@
     "fromSeason": 0,
     "fromEpisode": 6
   },
+  "3941": {
+    "imdb_id": "tt0421354",
+    "title": "Groizer X",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3967": {
     "imdb_id": "tt2636966",
     "title": "Electromagnetic Girlfriend",
@@ -8321,6 +8401,12 @@
     "imdb_id": "tt0466352",
     "title": "Prince of Tennis: Another Story - Messages From Past and Future",
     "fromSeason": 11,
+    "fromEpisode": 1
+  },
+  "4292": {
+    "imdb_id": "tt3466844",
+    "title": "Blocker Gundan IV Machine Blaster",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "4332": {
@@ -9638,6 +9724,12 @@
     "imdb_id": "tt2098308",
     "title": "My Ordinary Life",
     "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "6067": {
+    "imdb_id": "tt5503288",
+    "title": "Hen zemi",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "6081": {
@@ -13138,6 +13230,36 @@
     "fromSeason": 4,
     "fromEpisode": 14
   },
+  "8626": {
+    "imdb_id": "tt3398540",
+    "title": "Haikyuu!!",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "11374": {
+    "imdb_id": "tt3398540",
+    "title": "Haikyuu!!",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "41556": {
+    "imdb_id": "tt3398540",
+    "title": "Haikyuu!!",
+    "fromSeason": 0,
+    "fromEpisode": 5
+  },
+  "42502": {
+    "imdb_id": "tt3398540",
+    "title": "Haikyuu!!",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
+  "11395": {
+    "imdb_id": "tt3398540",
+    "title": "Haikyuu!!",
+    "fromSeason": 0,
+    "fromEpisode": 11
+  },
   "8135": {
     "imdb_id": "tt3413018",
     "title": "Tamako rabu sutôrî"
@@ -15091,6 +15213,12 @@
   },
   "10978": {
   },
+  "11005": {
+    "imdb_id": "tt5833466",
+    "title": "SuzakiNishi: The Animation",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "11020": {
     "imdb_id": "tt5321096",
     "title": "Haruchika: Haruta & Chika"
@@ -15670,10 +15798,6 @@
   "11373": {
     "imdb_id": "tt6738600",
     "title": "All Out"
-  },
-  "11374": {
-    "imdb_id": "tt8943066",
-    "title": "Haikyuu!!: vs Akaten"
   },
   "11375": {
     "imdb_id": "tt5603356",
@@ -17581,6 +17705,10 @@
     "title": "Sakura Quest"
   },
   "12807": {
+    "imdb_id": "tt13871228",
+    "title": "Frame Arms Girl",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "12821": {
     "imdb_id": "tt9642532",
@@ -17816,10 +17944,6 @@
     "title": "As the Moon, So Beautiful",
     "fromSeason": 1,
     "fromEpisode": 1
-  },
-  "13240": {
-    "imdb_id": "tt11951334",
-    "title": "Koukyoushihen Eureka Seven Hi-Evolution 3: Eureka"
   },
   "13245": {
     "imdb_id": "tt8938030",
