@@ -2592,6 +2592,10 @@
     "imdb_id": "tt5251328",
     "title": "One Piece Film: Gold"
   },
+  "45513": {
+    "imdb_id": "tt16183464",
+    "title": "One Piece Film: Red"
+  },
   "42061": {
     "imdb_id": "tt9430698",
     "title": "One Piece: Stampede"
@@ -3673,7 +3677,15 @@
   },
   "628": {
     "imdb_id": "tt0469008",
-    "title": "Tokyo Mew Mew"
+    "title": "Tokyo Mew Mew",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43098": {
+    "imdb_id": "tt12299696",
+    "title": "Tokyo Mew Mew New",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "629": {
     "imdb_id": "tt0460384",
@@ -3937,8 +3949,18 @@
   },
   "11021": {
     "imdb_id": "tt0978215",
+    "tvdb_id": "331223",
+    "fanartLogoId": "95610",
     "title": "Utawarerumono",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42641": {
+    "imdb_id": "tt0978215",
+    "tvdb_id": "412803",
+    "fanartLogoId": "144736",
+    "title": "Utawarerumono",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "3129": {
@@ -11484,7 +11506,15 @@
   },
   "7314": {
     "imdb_id": "tt2622982",
-    "title": "The Devil Is a Part-Timer!"
+    "title": "The Devil Is a Part-Timer!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44113": {
+    "imdb_id": "tt2622982",
+    "title": "The Devil Is a Part-Timer!",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "7325": {
     "imdb_id": "tt2703708",
@@ -12748,18 +12778,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "11013": {
-    "imdb_id": "tt3066242",
-    "title": "RWBY",
-    "fromSeason": 0,
-    "fromEpisode": 1
-  },
-  "12629": {
-    "imdb_id": "tt3066242",
-    "title": "RWBY",
-    "fromSeason": 4,
-    "fromEpisode": 0
-  },
   "7929": {
     "imdb_id": "tt3066242",
     "title": "RWBY",
@@ -12813,6 +12831,24 @@
     "title": "RWBY",
     "fromSeason": 9,
     "fromEpisode": 1
+  },
+  "45997": {
+    "imdb_id": "tt19389868",
+    "title": "RWBY: Ice Queendom",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "11013": {
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "12629": {
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 4,
+    "fromEpisode": 0
   },
   "7936": {
     "imdb_id": "tt0417299",
@@ -13050,6 +13086,12 @@
     "imdb_id": "tt0466352",
     "title": "The Prince of Tennis II OVA vs Genius10",
     "fromSeason": 15,
+    "fromEpisode": 1
+  },
+  "45312": {
+    "imdb_id": "tt0466352",
+    "title": "The Prince of Tennis II: U-17 WORLD CUP",
+    "fromSeason": 16,
     "fromEpisode": 1
   },
   "8039": {
@@ -14282,30 +14324,47 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13334": {
+    "imdb_id": "tt10245818",
+    "title": "Urawa no Usagi-chan",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "9961": {
     "imdb_id": "tt4213580",
     "title": "Tsukimonogatari"
   },
   "9962": {
     "imdb_id": "tt4728568",
+    "fanartLogoId": "92296",
     "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "40599": {
     "imdb_id": "tt4728568",
+    "fanartLogoId": "118623",
     "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "42583": {
     "imdb_id": "tt4728568",
+    "fanartLogoId": "132923",
     "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "44031": {
+    "imdb_id": "tt4728568",
+    "fanartLogoId": "139179",
+    "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "11851": {
     "imdb_id": "tt4728568",
+    "fanartLogoId": "96778",
     "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
     "fromSeason": 0,
     "fromEpisode": 1
@@ -14330,20 +14389,30 @@
   },
   "9965": {
     "imdb_id": "tt4869896",
+    "fanartLogoId": "127675",
     "title": "Overlord",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "13237": {
     "imdb_id": "tt4869896",
+    "fanartLogoId": "90222",
     "title": "Overlord",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "41174": {
     "imdb_id": "tt4869896",
+    "fanartLogoId": "90221",
     "title": "Overlord",
     "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "44529": {
+    "imdb_id": "tt4869896",
+    "fanartLogoId": "127670",
+    "title": "Overlord",
+    "fromSeason": 4,
     "fromEpisode": 1
   },
   "11166": {
@@ -17987,6 +18056,12 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "45471": {
+    "imdb_id": "tt15912380",
+    "title": "Kakegurui Twin",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "13257": {
     "imdb_id": "tt7158574",
     "title": "Koi to uso",
@@ -18045,6 +18120,12 @@
     "imdb_id": "tt7222086",
     "title": "Made in Abyss",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42951": {
+    "imdb_id": "tt7222086",
+    "title": "Made in Abyss",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "13274": {
@@ -18239,6 +18320,10 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "41977": {
+    "imdb_id": "tt14364238",
+    "title": "Laid-Back Camp Movie"
+  },
   "13484": {
   },
   "13485": {
@@ -18255,7 +18340,17 @@
   },
   "13503": {
     "imdb_id": "tt7263328",
-    "title": "Classroom of the Elite"
+    "fanartLogoId": "93063",
+    "title": "Classroom of the Elite",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45925": {
+    "imdb_id": "tt7263328",
+    "fanartLogoId": "149318",
+    "title": "Classroom of the Elite",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "13521": {
     "imdb_id": "tt7790776",
@@ -19700,14 +19795,23 @@
   },
   "41165": {
     "imdb_id": "tt8400662",
+    "fanartLogoId": "87761",
     "title": "Dropkick on My Devil!!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "42126": {
     "imdb_id": "tt8400662",
+    "fanartLogoId": "138488",
     "title": "Jashin-chan Dropkick",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43611": {
+    "imdb_id": "tt8400662",
+    "fanartLogoId": "138489",
+    "title": "Jashin-chan Dropkick",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "41970": {
@@ -20502,6 +20606,18 @@
     "title": "Dr. Stone",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  "43682": {
+    "imdb_id": "tt9679542",
+    "title": "Dr. Stone",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "45615": {
+    "imdb_id": "tt9679542",
+    "title": "Dr. Stone",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "42082": {
     "imdb_id": "tt10427926",
@@ -21664,6 +21780,13 @@
     "fromSeason": 14,
     "fromEpisode": 13
   },
+  "45214": {
+    "imdb_id": "tt2549176",
+    "tvdb_id": "400398",
+    "title": "Vanguard OverDress",
+    "fromSeason": 14,
+    "fromEpisode": 26
+  },
   "43022": {
     "imdb_id": "tt13533532",
     "title": "Tokyo 7th Sisters: Bokura wa Aozora ni Naru"
@@ -21874,6 +21997,12 @@
     "imdb_id": "tt11448214",
     "title": "Rent-A-Girlfriend",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43588": {
+    "imdb_id": "tt11448214",
+    "title": "Rent-A-Girlfriend",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "43042": {
@@ -22470,6 +22599,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45974": {
+    "imdb_id": "tt12768008",
+    "title": "D4DJ: First Mix",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "43560": {
     "imdb_id": "tt12767988",
     "title": "Saikyo Kamizmode!",
@@ -22680,8 +22815,16 @@
   },
   "43820": {
     "imdb_id": "tt13362302",
+    "fanartLogoId": "143565",
     "title": "Shadows House",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45155": {
+    "imdb_id": "tt13362302",
+    "fanartLogoId": "142532",
+    "title": "Shadows House",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "43821": {
@@ -22792,6 +22935,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43909": {
+    "imdb_id": "tt14979456",
+    "title": "Soredemo Ayumu wa Yosetekuru",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43911": {
+    "imdb_id": "tt13628870",
+    "title": "Harem in the Labyrinth of Another World",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43929": {
     "imdb_id": "tt13898130",
     "title": "Dolls' Frontline",
@@ -22849,6 +23004,12 @@
   "44025": {
     "imdb_id": "tt15441424",
     "title": "Shikkakumon no Saikyou Kenja",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44015": {
+    "imdb_id": "tt15441076",
+    "title": "My Isekai Life: I Gained a Second Character Class and Became the Strongest Sage in the World!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -22932,6 +23093,12 @@
     "imdb_id": "tt13840232",
     "title": "Love Live! Superstar!!",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45360": {
+    "imdb_id": "tt13840232",
+    "title": "Love Live! Superstar!!",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "44123": {
@@ -23048,6 +23215,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45993": {
+    "imdb_id": "tt15170340",
+    "title": "Orient",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "44206": {
     "imdb_id": "tt13351056",
     "title": "Kageki Shoujo!!",
@@ -23097,6 +23270,12 @@
   "44226": {
     "imdb_id": "tt15018116",
     "title": "Koroshi Ai",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44227": {
+    "imdb_id": "tt13032878",
+    "title": "Luminous Witches",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -23179,6 +23358,12 @@
   "44319": {
     "imdb_id": "tt13819192",
     "title": "Saiyuuki Reload: Zeroin",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44323": {
+    "imdb_id": "tt14377292",
+    "title": "Fuuto PI",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -23372,6 +23557,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45655": {
+    "imdb_id": "tt14980764",
+    "title": "Sasaki to Miyano",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "44580": {
     "imdb_id": "tt14669108",
     "title": "Fantasy Bishoujo Juniku Ojisan to",
@@ -23406,6 +23597,12 @@
     "imdb_id": "tt10915840",
     "title": "Uchuu senkan Yamato 2205: Aratanaru tabidachi"
   },
+  "44773": {
+    "imdb_id": "tt15219320",
+    "title": "Isekai Ojisan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44806": {
     "imdb_id": "tt13409496",
     "title": "Hula Fulla Dance"
@@ -23429,6 +23626,18 @@
   "44876": {
     "imdb_id": "tt15582924",
     "title": "Kaijin Kaihatsubu no Kuroitsu-san",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44900": {
+    "imdb_id": "tt18574004",
+    "title": "Isekai Yakkyoku",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44913": {
+    "imdb_id": "tt19848112",
+    "title": "My Stepmom's Daughter Is My Ex",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -23465,6 +23674,12 @@
   "44960": {
     "imdb_id": "tt15202816",
     "title": "Love All Play",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44961": {
+    "imdb_id": "tt16270300",
+    "title": "Hanabi-chan wa Okure-gachi",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -23520,6 +23735,8 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45133": {
+  },
   "45149": {
     "imdb_id": "tt15802804",
     "title": "Atasha Kawashiri Kodama dayo: Dangerous Lifehacker no tadareta seikatsu",
@@ -23541,6 +23758,10 @@
     "title": "Kotaro wa Hitori Gurashi",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "45247": {
+    "imdb_id": "tt15494038",
+    "title": "Drifting Home"
   },
   "45265": {
     "imdb_id": "tt18225160",
@@ -23580,6 +23801,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45389": {
+    "imdb_id": "tt15783416",
+    "title": "Shine Post",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45391": {
     "imdb_id": "tt15789088",
     "title": "Birdie Wing: Golf Girls' Story",
@@ -23610,9 +23837,27 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45483": {
+    "imdb_id": "tt15975122",
+    "title": "Yofukashi no uta",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45514": {
+    "imdb_id": "tt16148546",
+    "title": "Shoot! Goal to the Future",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45519": {
     "imdb_id": "tt16220566",
     "title": "Ensemble Stars!! Road to Show!!"
+  },
+  "45530": {
+    "imdb_id": "tt16254906",
+    "title": "Kami Kuzu Idol",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "45551": {
     "imdb_id": "tt16409202",
@@ -23626,10 +23871,68 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45598": {
+    "imdb_id": "tt17382524",
+    "title": "The Tunnel to Summer, the Exit of Goodbye"
+  },
+  "45705": {
+    "imdb_id": "tt16755706",
+    "title": "Lycoris Recoil",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45729": {
+    "imdb_id": "tt18939874",
+    "title": "Teppen-!!!!!!!!!!!!!!!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45733": {
     "imdb_id": "tt18246604",
     "title": "Delicious Party Precure",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "45794": {
+    "imdb_id": "tt12105800",
+    "title": "Hoshi no samidare",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45855": {
+    "imdb_id": "tt18183882",
+    "title": "Extreme Hearts",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45956": {
+    "imdb_id": "tt18561422",
+    "title": "Vermeil in Gold - A Magician Pushes Through the Magical World With the Strongest Disaster",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45812": {
+  },
+  "45884": {
+  },
+  "46001": {
+    "imdb_id": "tt19045110",
+    "title": "Bucchigire!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46003": {
+    "imdb_id": "tt18573684",
+    "title": "You0 DECO",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46013": {
+  },
+  "46113": {
+  },
+  "46135": {
+  },
+  "46136": {
   }
 }
