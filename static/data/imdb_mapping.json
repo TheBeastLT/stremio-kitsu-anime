@@ -13114,6 +13114,18 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "45700": {
+    "imdb_id": "tt3874528",
+    "title": "The Irregular at Magic High",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "8341": {
+    "imdb_id": "tt3874528",
+    "title": "The Irregular at Magic High",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "44397": {
     "imdb_id": "tt15497404",
     "title": "Mahouka Koukou no Rettousei: Tsuioku Hen"
@@ -20488,8 +20500,8 @@
   "43142": {
     "imdb_id": "tt9466298",
     "title": "Ghost in the Shell SAC_2045",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   "42042": {
     "imdb_id": "tt9567240",
@@ -20975,14 +20987,20 @@
   "43607": {
     "imdb_id": "tt10885406",
     "title": "Ascendance of a Bookworm",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 27
   },
   "43048": {
     "imdb_id": "tt10885406",
     "title": "Ascendance of a Bookworm",
     "fromSeason": 0,
     "fromEpisode": 1
+  },
+  "46075": {
+    "imdb_id": "tt10885406",
+    "title": "Ascendance of a Bookworm",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "42444": {
     "imdb_id": "tt12373578",
@@ -23875,6 +23893,12 @@
     "imdb_id": "tt17382524",
     "title": "The Tunnel to Summer, the Exit of Goodbye"
   },
+  "45605": {
+    "imdb_id": "tt19383782",
+    "title": "Yu☆Gi☆Oh! Go Rush!!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45705": {
     "imdb_id": "tt16755706",
     "title": "Lycoris Recoil",
@@ -23928,6 +23952,12 @@
     "fromEpisode": 1
   },
   "46013": {
+  },
+  "46081": {
+    "imdb_id": "tt19893526",
+    "title": "The Last Summoner",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "46113": {
   },
