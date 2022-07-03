@@ -11404,24 +11404,28 @@
   },
   "7278": {
     "imdb_id": "tt2575684",
+    "fanartLogoId": "90339",
     "title": "Date a Live",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "7864": {
     "imdb_id": "tt2575684",
+    "fanartLogoId": "90338",
     "title": "Date a Live",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "14040": {
     "imdb_id": "tt2575684",
+    "fanartLogoId": "93403",
     "title": "Date a Live",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "43065": {
     "imdb_id": "tt2575684",
+    "fanartLogoId": "148982",
     "title": "Date a Live",
     "fromSeason": 4,
     "fromEpisode": 1
@@ -18454,12 +18458,14 @@
   },
   "13593": {
     "imdb_id": "tt9529546",
+    "fanartLogoId": "91785",
     "title": "The Rising of the Shield Hero",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "42530": {
     "imdb_id": "tt9529546",
+    "fanartLogoId": "145608",
     "title": "The Rising of the Shield Hero",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -20067,24 +20073,28 @@
   },
   "41373": {
     "imdb_id": "tt9522300",
+    "fanartLogoId": "91793",
     "title": "Kaguya-sama: Love Is War",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "42632": {
     "imdb_id": "tt9522300",
+    "fanartLogoId": "115878",
     "title": "Kaguya-sama: Love Is War",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "43691": {
     "imdb_id": "tt9522300",
+    "fanartLogoId": "149579",
     "title": "Kaguya-sama: Love Is War",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "43731": {
     "imdb_id": "tt9522300",
+    "fanartLogoId": "91793",
     "title": "Kaguya-sama: Love Is War",
     "fromSeason": 0,
     "fromEpisode": 1
@@ -20768,6 +20778,7 @@
   },
   "43547": {
     "imdb_id": "tt10417572",
+    "fanartLogoId": "150509",
     "title": "The Demon Girl Next Door",
     "fromSeason": 2,
     "fromEpisode": 1
