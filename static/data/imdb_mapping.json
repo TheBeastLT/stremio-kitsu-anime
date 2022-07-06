@@ -4974,33 +4974,51 @@
     "fromEpisode": 1
   },
   "1132": {
-    "imdb_id": "tt0161952",
-    "title": "Saint Seiya",
-    "fromSeason": 4,
+    "imdb_id": "tt0805448",
+    "title": "Saint Seiya: The Hades Chapter",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "1128": {
-    "imdb_id": "tt0161952",
-    "title": "Saint Seiya",
-    "fromSeason": 5,
+    "imdb_id": "tt0805448",
+    "title": "Saint Seiya: The Hades Chapter",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "3066": {
-    "imdb_id": "tt0161952",
-    "title": "Saint Seiya",
-    "fromSeason": 6,
+    "imdb_id": "tt0805448",
+    "title": "Saint Seiya: The Hades Chapter",
+    "fromSeason": 4,
     "fromEpisode": 1
   },
   "4458": {
-    "imdb_id": "tt0161952",
-    "title": "Saint Seiya",
-    "fromSeason": 7,
+    "imdb_id": "tt2152368",
+    "title": "Saint Seiya: The Lost Canvas",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "5612": {
-    "imdb_id": "tt0161952",
-    "title": "Saint Seiya",
-    "fromSeason": 8,
+    "imdb_id": "tt2152368",
+    "title": "Saint Seiya: The Lost Canvas",
+    "fromSeason": 1,
+    "fromEpisode": 13
+  },
+  "6850": {
+    "imdb_id": "tt2230515",
+    "title": "Seinto Seiya: Omega",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "10026": {
+    "imdb_id": "tt4670988",
+    "title": "Saint Seiya: Soul of Gold",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "40611": {
+    "imdb_id": "tt10240056",
+    "title": "Saint Seiya: Saintia Shô",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "1136": {
@@ -9772,6 +9790,55 @@
     "imdb_id": "tt2358913",
     "title": "Berserk: The Golden Age Arc III - The Advent"
   },
+  "6087": {
+    "imdb_id": "tt2629754",
+    "fanartLogoId": "110890",
+    "title": "Tamayura: Hitotose",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7299": {
+    "imdb_id": "tt2629754",
+    "fanartLogoId": "100028",
+    "title": "Tamayura: Hitotose",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "8808": {
+    "imdb_id": "tt2629754",
+    "fanartLogoId": "110889",
+    "title": "Tamayura: Hitotose",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "10439": {
+    "imdb_id": "tt2629754",
+    "fanartLogoId": "110889",
+    "title": "Tamayura: Hitotose",
+    "fromSeason": 3,
+    "fromEpisode": 2
+  },
+  "10440": {
+    "imdb_id": "tt2629754",
+    "fanartLogoId": "110889",
+    "title": "Tamayura: Hitotose",
+    "fromSeason": 3,
+    "fromEpisode": 3
+  },
+  "10441": {
+    "imdb_id": "tt2629754",
+    "fanartLogoId": "110889",
+    "title": "Tamayura: Hitotose",
+    "fromSeason": 3,
+    "fromEpisode": 4
+  },
+  "5588": {
+    "imdb_id": "tt2629754",
+    "fanartLogoId": "110959",
+    "title": "Tamayura: Hitotose",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "6109": {
     "imdb_id": "tt1202625",
     "title": "Gambling Apocalypse Kaiji",
@@ -10721,12 +10788,6 @@
   "6836": {
     "imdb_id": "tt2341757",
     "title": "Tsuritama"
-  },
-  "6850": {
-    "imdb_id": "tt2230515",
-    "title": "Seinto Seiya: Omega",
-    "fromSeason": 1,
-    "fromEpisode": 1
   },
   "6859": {
     "imdb_id": "tt2250048",
@@ -14096,12 +14157,26 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "10751": {
+    "imdb_id": "tt3909224",
+    "fanartLogoId": "116951",
+    "title": "The Seven Deadly Sins",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
   "11414": {
     "imdb_id": "tt3909224",
     "fanartLogoId": "108253",
     "title": "The Seven Deadly Sins",
     "fromSeason": 0,
     "fromEpisode": 4
+  },
+  "42050": {
+    "imdb_id": "tt3909224",
+    "fanartLogoId": "116951",
+    "title": "The Seven Deadly Sins",
+    "fromSeason": 0,
+    "fromEpisode": 8
   },
   "13647": {
     "imdb_id": "tt9089294",
@@ -14626,10 +14701,6 @@
   "10021": {
     "imdb_id": "tt5354314",
     "title": "Aokana: Four Rhythm Across the Blue"
-  },
-  "10026": {
-    "imdb_id": "tt4670988",
-    "title": "Saint Seiya: Soul of Gold"
   },
   "10028": {
     "imdb_id": "tt5323662",
@@ -17725,6 +17796,12 @@
     "imdb_id": "tt6237498",
     "title": "Osomatsusan: Ouma de kobanashi"
   },
+  "12722": {
+    "imdb_id": "tt7211600",
+    "title": "Lost Song",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "12726": {
     "imdb_id": "tt6735466",
     "title": "Alice & Zouroku"
@@ -18324,6 +18401,10 @@
     "imdb_id": "tt9826402",
     "title": "Yu-No: A Girl Who Chants Love at the Bound of this World"
   },
+  "13470": {
+    "imdb_id": "tt10253816",
+    "title": "Kabaneri of the Iron Fortress: The Battle of Unato"
+  },
   "13478": {
     "imdb_id": "tt8424906",
     "title": "Touken Ranbu: Hanamaru",
@@ -18688,6 +18769,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13698": {
+    "imdb_id": "tt9348716",
+    "title": "Rilakkuma and Kaoru",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "13699": {
     "imdb_id": "tt7535706",
     "title": "Anime-Gataris"
@@ -18897,6 +18984,12 @@
     "imdb_id": "tt7428594",
     "title": "Blade Runner: Black Out 2022"
   },
+  "13816": {
+    "imdb_id": "tt6921524",
+    "title": "Cyborg 009: Call of Justice",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "13821": {
     "imdb_id": "tt9100954",
     "title": "Gaikotsu Shotenin Honda-san"
@@ -19090,6 +19183,12 @@
   "14037": {
     "imdb_id": "tt12017010",
     "title": "Butlers: Chitose Momotose Monogatari",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "14042": {
+    "imdb_id": "tt8528256",
+    "title": "Dragon Pilot: Hisone and Masotan",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -19335,10 +19434,6 @@
     "imdb_id": "tt11418324",
     "title": "Plunderer"
   },
-  "40611": {
-    "imdb_id": "tt10240056",
-    "title": "Saint Seiya: Saintia Shô"
-  },
   "40643": {
     "imdb_id": "tt8685672",
     "title": "Aragne: Sign of Vermillion"
@@ -19538,6 +19633,18 @@
   "41025": {
     "imdb_id": "tt8107988",
     "title": "Carole & Tuesday"
+  },
+  "41026": {
+    "imdb_id": "tt9522354",
+    "title": "Revisions",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41030": {
+    "imdb_id": "tt9561968",
+    "title": "Ingress: The Animation",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "41032": {
     "imdb_id": "tt9458372",
@@ -19923,6 +20030,18 @@
   "41263": {
     "imdb_id": "tt13760402",
     "title": "Gakuen Basara - Samurai High School",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41265": {
+    "imdb_id": "tt9826314",
+    "title": "Magmel of the Sea Blue",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41268": {
+    "imdb_id": "tt10106108",
+    "title": "Seis Manos",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -20560,7 +20679,6 @@
     "fromSeason": 0,
     "fromEpisode": 2
   },
-  "42050": {},
   "42051": {
     "imdb_id": "tt8254880",
     "title": "Wotakoi: Love Is Hard for Otaku",
@@ -20711,6 +20829,12 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "42089": {
+    "imdb_id": "tt9288892",
+    "title": "Mushikago no Cagaster",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42093": {
     "imdb_id": "tt10671412",
     "title": "Nobunaga teacher's young bride",
@@ -20741,6 +20865,12 @@
     "imdb_id": "tt9288848",
     "title": "Pacific Rim: The Black",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44418": {
+    "imdb_id": "tt9288848",
+    "title": "Pacific Rim: The Black",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "42108": {
@@ -20881,6 +21011,12 @@
     "imdb_id": "tt9232810",
     "title": "Laidbackers"
   },
+  "42188": {
+    "imdb_id": "tt10011314",
+    "title": "Vampire in the Garden",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42189": {
     "imdb_id": "tt14272628",
     "title": "Super Crooks",
@@ -20890,6 +21026,12 @@
   "42190": {
     "imdb_id": "tt9561862",
     "title": "Love, Death & Robots",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42191": {
+    "imdb_id": "tt10011298",
+    "title": "Dragon's Dogma",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -21059,6 +21201,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42248": {
+    "imdb_id": "tt10127562",
+    "title": "Dragon Quest: Your Story"
+  },
   "42260": {
     "imdb_id": "tt11405390",
     "title": "Darwin's Game",
@@ -21132,6 +21278,10 @@
     "title": "Drifting Dragons",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "42274": {
+    "imdb_id": "tt9760504",
+    "title": "NiNoKuni"
   },
   "42278": {
   },
@@ -21693,6 +21843,12 @@
   "42684": {
     "imdb_id": "tt12105596",
     "title": "Yes, No, or Maybe Half?"
+  },
+  "42701": {
+    "imdb_id": "tt0177443",
+    "title": "Godzilla: The Series",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "42722": {
     "imdb_id": "tt11299538",
@@ -22444,6 +22600,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43294": {
+    "imdb_id": "tt9789660",
+    "title": "Transformers: War for Cybertron",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43597": {
+    "imdb_id": "tt9789660",
+    "title": "Transformers: War for Cybertron",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "44942": {
+    "imdb_id": "tt9789660",
+    "title": "Transformers: War for Cybertron",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "43301": {
     "imdb_id": "tt12728856",
     "title": "The Hidden Dungeon Only I Can Enter",
@@ -22588,6 +22762,18 @@
     "imdb_id": "tt13749654",
     "title": "Aria the Crepuscolo"
   },
+  "43538": {
+    "imdb_id": "tt9731266",
+    "title": "The Idhun Chronicles",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43834": {
+    "imdb_id": "tt9731266",
+    "title": "The Idhun Chronicles",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "43545": {
     "imdb_id": "tt13103134",
     "title": "Horimiya",
@@ -22718,6 +22904,12 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "43623": {
+    "imdb_id": "tt10009170",
+    "title": "Blood of Zeus",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43651": {
     "imdb_id": "tt13102918",
     "title": "Cap Kakumei Bottleman",
@@ -22758,6 +22950,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "43702": {
+    "imdb_id": "tt13357234",
+    "title": "Thermae Romae Novae",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43703": {
     "imdb_id": "tt13352232",
     "title": "High-Rise Invasion",
@@ -22787,6 +22985,12 @@
     "title": "Gokushufudo",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "44336": {
+    "imdb_id": "tt13357124",
+    "title": "Gokushufudo",
+    "fromSeason": 1,
+    "fromEpisode": 6
   },
   "43730": {
     "imdb_id": "tt11657662",
@@ -23640,6 +23844,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44692": {
+    "imdb_id": "tt14837960",
+    "title": "Bright: Samurai Soul"
+  },
   "44694": {
     "imdb_id": "tt10915840",
     "title": "Uchuu senkan Yamato 2205: Aratanaru tabidachi"
@@ -23934,6 +24142,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45654": {
+    "imdb_id": "tt6043124",
+    "title": "Lost in the Moonlight"
+  },
   "45705": {
     "imdb_id": "tt16755706",
     "title": "Lycoris Recoil",
@@ -23979,6 +24191,10 @@
   "45812": {
   },
   "45884": {
+  },
+  "45850": {
+    "imdb_id": "tt9174358",
+    "title": "Monster Hunter: Legends of the Guild"
   },
   "46001": {
     "imdb_id": "tt19045110",
