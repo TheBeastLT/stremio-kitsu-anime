@@ -21269,6 +21269,12 @@
     "fromSeason": 0,
     "fromEpisode": 7
   },
+  "43857": {
+    "imdb_id": "tt13749554",
+    "title": "Fate/Grand Carnival",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42272": {
     "imdb_id": "tt10054654",
     "title": "Tokunana"
@@ -21907,6 +21913,12 @@
   "42744": {
     "imdb_id": "tt11595706",
     "title": "Interspecies Reviewers",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42797": {
+    "imdb_id": "tt10011306",
+    "title": "Spriggan",
     "fromSeason": 1,
     "fromEpisode": 1
   },
