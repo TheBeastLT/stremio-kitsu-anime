@@ -14467,14 +14467,23 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
-  "42584": {
+  "42441": {
     "imdb_id": "tt4728568",
+    "fanartLogoId": "118623",
     "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
     "fromSeason": 0,
     "fromEpisode": 3
   },
+  "42584": {
+    "imdb_id": "tt4728568",
+    "fanartLogoId": "118623",
+    "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
   "43858": {
     "imdb_id": "tt4728568",
+    "fanartLogoId": "132923",
     "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
     "fromSeason": 0,
     "fromEpisode": 5
@@ -22803,6 +22812,10 @@
     "imdb_id": "tt13424422",
     "title": "Sword Art Online: Progressive Movie - Hoshi Naki Yoru no Aria"
   },
+  "45400": {
+    "imdb_id": "tt15830702",
+    "title": "Sword Art Online: Progressive Movie - Scherzo of Deep Night"
+  },
   "43549": {
     "imdb_id": "tt13109788",
     "title": "Sore dake ga Neck",
@@ -24016,6 +24029,10 @@
     "fromEpisode": 1
   },
   "45133": {
+    "imdb_id": "tt21230432",
+    "title": "The Yakuza's Guide to Babysitting",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "45149": {
     "imdb_id": "tt15802804",
@@ -24201,12 +24218,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "45956": {
-    "imdb_id": "tt18561422",
-    "title": "Vermeil in Gold - A Magician Pushes Through the Magical World With the Strongest Disaster",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "45812": {
     "imdb_id": "tt21001320",
     "title": "Prima Doll",
@@ -24219,11 +24230,23 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45856": {
+  },
   "45884": {
+    "imdb_id": "tt21249100",
+    "title": "Kuro no Shoukanshi",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "45850": {
     "imdb_id": "tt9174358",
     "title": "Monster Hunter: Legends of the Guild"
+  },
+  "45956": {
+    "imdb_id": "tt18561422",
+    "title": "Vermeil in Gold - A Magician Pushes Through the Magical World With the Strongest Disaster",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "46001": {
     "imdb_id": "tt19045110",
