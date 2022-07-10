@@ -2610,6 +2610,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "715": {
+    "imdb_id": "tt0346314",
+    "title": "Ghost in the Shell: Stand Alone Complex",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "8115": {
+    "imdb_id": "tt0346314",
+    "title": "Ghost in the Shell: Stand Alone Complex",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
+  "3045": {
+    "imdb_id": "tt0346314",
+    "title": "Ghost in the Shell: Stand Alone Complex",
+    "fromSeason": 0,
+    "fromEpisode": 34
+  },
   "430": {
     "imdb_id": "tt0347246",
     "title": "Ghost in the Shell 2: Innocence"
@@ -3828,12 +3846,6 @@
   "714": {
     "imdb_id": "tt0299357",
     "title": "NieA under 7"
-  },
-  "715": {
-    "imdb_id": "tt0346314",
-    "title": "Ghost in the Shell: Stand Alone Complex",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "717": {
     "imdb_id": "tt1874901",
@@ -5236,6 +5248,12 @@
   "1812": {
     "imdb_id": "tt0377008",
     "title": "You're Under Arrest: The Movie"
+  },
+  "1126": {
+    "imdb_id": "tt0096591",
+    "title": "Nadia: Secret of Blue Water",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "1228": {
     "imdb_id": "tt0488266",
@@ -6666,6 +6684,12 @@
     "imdb_id": "tt0106010",
     "title": "Ghost Sweeper Mikami"
   },
+  "2178": {
+    "imdb_id": "tt1690397",
+    "title": "Tomorrow's Joe",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "2179": {
     "imdb_id": "tt1125577",
     "title": "Kodomo no jikan",
@@ -7939,6 +7963,24 @@
     "imdb_id": "tt1196094",
     "title": "Yu☆Gi☆Oh! 5D's",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3389": {
+    "imdb_id": "tt1245698",
+    "title": "Birdy the Mighty Decode",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3915": {
+    "imdb_id": "tt1245698",
+    "title": "Birdy the Mighty Decode",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "4539": {
+    "imdb_id": "tt1245698",
+    "title": "Birdy the Mighty Decode",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "3405": {
@@ -11750,6 +11792,12 @@
     "fromSeason": 4,
     "fromEpisode": 17
   },
+  "7838": {
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "7889": {
     "imdb_id": "tt2560140",
     "title": "Attack on Titan",
@@ -11760,7 +11808,7 @@
     "imdb_id": "tt2560140",
     "title": "Attack on Titan",
     "fromSeason": 0,
-    "fromEpisode": 11
+    "fromEpisode": 7
   },
   "8674": {
     "imdb_id": "tt2560140",
@@ -13790,11 +13838,27 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "9968": {
+    "imdb_id": "tt3895150",
+    "title": "Your Lie in April",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "8406": {
     "imdb_id": "tt3612626",
     "title": "Saekano: How to Raise a Boring Girlfriend",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "10909": {
+    "imdb_id": "tt3612626",
+    "title": "Saekano: How to Raise a Boring Girlfriend",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "14050": {
+    "imdb_id": "tt11203468",
+    "title": "Saekano: How to Raise a Boring Girlfriend Fine"
   },
   "8409": {
     "imdb_id": "tt3957550",
@@ -15314,12 +15378,6 @@
   "10907": {
     "imdb_id": "tt8422138",
     "title": "Makura no Danshi"
-  },
-  "10909": {
-    "imdb_id": "tt3612626",
-    "title": "Saekano: How to Raise a Boring Girlfriend",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "10913": {
     "imdb_id": "tt5334364",
@@ -20554,6 +20612,10 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "44829": {
+    "imdb_id": "tt15799550",
+    "title": "Fruits Basket: Prelude"
+  },
   "41998": {
     "imdb_id": "tt9359796",
     "title": "Blade Runner: Black Lotus",
@@ -23342,6 +23404,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44114": {
+    "imdb_id": "tt14228078",
+    "title": "Totsukuni no shôjo"
+  },
   "44115": {
     "imdb_id": "tt13049906",
     "title": "Seijo no Maryoku wa Bannou Desu",
@@ -24072,6 +24138,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45296": {
+    "imdb_id": "tt19606992",
+    "title": "Shadowverse Flame",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45303": {
     "imdb_id": "tt6848928",
     "title": "Junk Head"
@@ -24108,6 +24180,12 @@
     "imdb_id": "tt15789088",
     "title": "Birdie Wing: Golf Girls' Story",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46218": {
+    "imdb_id": "tt15789088",
+    "title": "Birdie Wing: Golf Girls' Story",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "45398": {
@@ -24172,6 +24250,10 @@
     "imdb_id": "tt17382524",
     "title": "The Tunnel to Summer, the Exit of Goodbye"
   },
+  "45559": {
+    "imdb_id": "tt16360006",
+    "title": "Bubble"
+  },
   "45605": {
     "imdb_id": "tt19383782",
     "title": "Yu☆Gi☆Oh! Go Rush!!",
@@ -24230,6 +24312,16 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45837": {
+    "imdb_id": "tt19037400",
+    "title": "Estab-Life: Great Escape",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45850": {
+    "imdb_id": "tt9174358",
+    "title": "Monster Hunter: Legends of the Guild"
+  },
   "45856": {
   },
   "45884": {
@@ -24237,10 +24329,6 @@
     "title": "Kuro no Shoukanshi",
     "fromSeason": 1,
     "fromEpisode": 1
-  },
-  "45850": {
-    "imdb_id": "tt9174358",
-    "title": "Monster Hunter: Legends of the Guild"
   },
   "45956": {
     "imdb_id": "tt18561422",
