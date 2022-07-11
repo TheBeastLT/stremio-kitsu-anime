@@ -4347,6 +4347,24 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "2631": {
+    "imdb_id": "tt0845738",
+    "title": "When They Cry",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "6204": {
+    "imdb_id": "tt0845738",
+    "title": "When They Cry",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "7494": {
+    "imdb_id": "tt0845738",
+    "title": "When They Cry",
+    "fromSeason": 0,
+    "fromEpisode": 6
+  },
   "832": {
     "imdb_id": "tt0813971",
     "title": "Witchblade"
