@@ -17494,6 +17494,18 @@
     "fromSeason": 0,
     "fromEpisode": 14
   },
+  "43370": {
+    "imdb_id": "tt11056458",
+    "title": "BanG Dream! FILM LIVE"
+  },
+  "43371": {
+    "imdb_id": "tt14264308",
+    "title": "Bang Dream! Film Live 2nd Stage"
+  },
+  "44523": {
+    "imdb_id": "tt13911494",
+    "title": "Bang Dream! Episode of Roselia: Promise"
+  },
   "12346": {
   },
   "12448": {
@@ -24411,6 +24423,12 @@
   "46136": {
     "imdb_id": "tt21101866",
     "title": "Smile of the Arsnotoria the Animation",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46238": {
+    "imdb_id": "tt16183478",
+    "title": "Yowai 5000-nen no Soushoku Dragon, Iwarenaki Jaryuu Nintei",
     "fromSeason": 1,
     "fromEpisode": 1
   }
