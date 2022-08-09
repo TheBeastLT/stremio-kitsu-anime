@@ -16283,6 +16283,12 @@
     "fromSeason": 0,
     "fromEpisode": 8
   },
+  "46117": {
+    "imdb_id": "tt5626028",
+    "title": "Boku No Hero Academia",
+    "fromSeason": 0,
+    "fromEpisode": 13
+  },
   "14084": {
     "imdb_id": "tt7745068",
     "title": "My Hero Academia: Two Heroes"
@@ -18861,6 +18867,12 @@
     "imdb_id": "tt6908976",
     "title": "Knights of the Zodiac: Saint Seiya",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46220": {
+    "imdb_id": "tt6908976",
+    "title": "Knights of the Zodiac: Saint Seiya",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "13696": {
