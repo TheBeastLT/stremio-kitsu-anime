@@ -18539,6 +18539,12 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "44601": {
+    "imdb_id": "tt7742120",
+    "title": "Laid-Back Camp",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
   "41977": {
     "imdb_id": "tt14364238",
     "title": "Laid-Back Camp Movie"
@@ -20138,6 +20144,24 @@
   "41224": {
     "imdb_id": "tt13288678",
     "title": "Mobile Suit Gundam: Hathaway"
+  },
+  "41250": {
+    "imdb_id": "tt15856874",
+    "title": "Cinderella Chef",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45232": {
+    "imdb_id": "tt15856874",
+    "title": "Cinderella Chef",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "45720": {
+    "imdb_id": "tt15856874",
+    "title": "Cinderella Chef",
+    "fromSeason": 3,
+    "fromEpisode": 1
   },
   "41254": {
     "imdb_id": "tt8354164",
