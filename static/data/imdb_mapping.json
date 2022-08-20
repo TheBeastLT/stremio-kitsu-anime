@@ -49,7 +49,10 @@
   },
   "12": {
     "imdb_id": "tt0388629",
-    "title": "One Piece: Wan pîsu"
+    "title": "One Piece",
+    "nonImdbEpisodes": [ 590 ],
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "13": {
     "imdb_id": "tt0466352",
