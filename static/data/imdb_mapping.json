@@ -12409,6 +12409,12 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "44834": {
+    "imdb_id": "tt2789238",
+    "title": "Strike the Blood",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
   "10758": {
     "imdb_id": "tt2789238",
     "title": "Strike the Blood",
@@ -20216,6 +20222,10 @@
     "imdb_id": "tt13288678",
     "title": "Mobile Suit Gundam: Hathaway"
   },
+  "41255": {
+    "imdb_id": "tt8346438",
+    "title": "Shirobako: The Movie"
+  },
   "41250": {
     "imdb_id": "tt15856874",
     "title": "Cinderella Chef",
@@ -23671,6 +23681,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44171": {
+    "imdb_id": "tt14292584",
+    "title": "Aria the Benedizione"
+  },
   "44179": {
     "imdb_id": "tt13409412",
     "title": "Cestvs: The Roman Fighter",
@@ -24275,6 +24289,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44974": {
+    "imdb_id": "tt15684222",
+    "title": "Tatami Time Machine Blues",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44977": {
     "imdb_id": "tt15379212",
     "title": "Ganbare Douki-chan",
@@ -24555,6 +24575,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45653": {
+    "imdb_id": "tt16609250",
+    "title": "Odd Taxi: In the Woods"
+  },
   "45654": {
     "imdb_id": "tt6043124",
     "title": "Lost in the Moonlight"
@@ -24598,6 +24622,12 @@
   "45855": {
     "imdb_id": "tt18183882",
     "title": "Extreme Hearts",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45856": {
+    "imdb_id": "tt21413688",
+    "title": "Chimimo",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -24706,6 +24736,12 @@
   "46081": {
     "imdb_id": "tt19893526",
     "title": "The Last Summoner",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46090": {
+    "imdb_id": "tt21244528",
+    "title": "Yoru wa Neko to Issho",
     "fromSeason": 1,
     "fromEpisode": 1
   },
