@@ -12293,30 +12293,35 @@
   },
   "7700": {
     "imdb_id": "tt2942228",
+    "fanartLogoId": "98131",
     "title": "Yowamushi Pedal",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "8635": {
     "imdb_id": "tt2942228",
+    "fanartLogoId": "93112",
     "title": "Yowamushi Pedal",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "11583": {
     "imdb_id": "tt2942228",
+    "fanartLogoId": "98665",
     "title": "Yowamushi Pedal",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "13594": {
     "imdb_id": "tt2942228",
+    "fanartLogoId": "98656",
     "title": "Yowamushi Pedal",
     "fromSeason": 4,
     "fromEpisode": 1
   },
   "45562": {
     "imdb_id": "tt2942228",
+    "fanartLogoId": "92532",
     "title": "Yowamushi Pedal",
     "fromSeason": 5,
     "fromEpisode": 1
@@ -14831,6 +14836,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11366": {
+    "imdb_id": "tt4584754",
+    "title": "RIN-NE",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "12561": {
+    "imdb_id": "tt4584754",
+    "title": "RIN-NE",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "10021": {
     "imdb_id": "tt5354314",
     "title": "Aokana: Four Rhythm Across the Blue"
@@ -16072,12 +16089,6 @@
     "imdb_id": "tt5321184",
     "title": "Prince of Stride: Alternative"
   },
-  "11366": {
-    "imdb_id": "tt4584754",
-    "title": "RIN-NE",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "11368": {
     "imdb_id": "tt5537534",
     "title": "Ajin",
@@ -16483,18 +16494,21 @@
   },
   "11578": {
     "imdb_id": "tt5897304",
+    "fanartLogoId": "63740",
     "title": "Mob Psycho 100",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "41071": {
     "imdb_id": "tt5897304",
+    "fanartLogoId": "91114",
     "title": "Mob Psycho 100",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "45338": {
     "imdb_id": "tt5897304",
+    "fanartLogoId": "156547",
     "title": "Mob Psycho 100",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -17731,33 +17745,31 @@
   },
   "12558": {
     "imdb_id": "tt11834102",
+    "fanartLogoId": "92771",
     "title": "IDOLiSH7",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "42453": {
     "imdb_id": "tt11834102",
+    "fanartLogoId": "131603",
     "title": "IDOLiSH7",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "44314": {
     "imdb_id": "tt11834102",
+    "fanartLogoId": "132499",
     "title": "IDOLiSH7",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "44315": {
     "imdb_id": "tt11834102",
+    "fanartLogoId": "132499",
     "title": "IDOLiSH7",
     "fromSeason": 3,
     "fromEpisode": 14
-  },
-  "12561": {
-    "imdb_id": "tt4584754",
-    "title": "RIN-NE",
-    "fromSeason": 3,
-    "fromEpisode": 1
   },
   "12563": {
     "imdb_id": "tt2480498",
@@ -22351,12 +22363,14 @@
   },
   "42563": {
     "imdb_id": "tt12464204",
+    "fanartLogoId": "116408",
     "title": "Peter Grill and the Philosopher's Time",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "45490": {
     "imdb_id": "tt12464204",
+    "fanartLogoId": "155084",
     "title": "Peter Grill and the Philosopher's Time",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -22429,18 +22443,21 @@
   },
   "43014": {
     "imdb_id": "tt11755260",
+    "fanartLogoId": "157606",
     "title": "The Daily Life of the Immortal King",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "43795": {
     "imdb_id": "tt11755260",
+    "fanartLogoId": "157607",
     "title": "The Daily Life of the Immortal King",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "45524": {
     "imdb_id": "tt11755260",
+    "fanartLogoId": "157608",
     "title": "The Daily Life of the Immortal King",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -24658,8 +24675,6 @@
   "45850": {
     "imdb_id": "tt9174358",
     "title": "Monster Hunter: Legends of the Guild"
-  },
-  "45856": {
   },
   "45884": {
     "imdb_id": "tt21249100",
