@@ -86,7 +86,7 @@ builder.defineCatalogHandler((args) => {
 
   if (args.extra?.search) {
     if (args.extra.search.match(/(?:https?|stremio):\/\//)) {
-      return Promise.reject("Invalid search term")
+      return Promise.reject(`Invalid search term: ${args.extra.search}`)
     }
     // no need to cache search results
     return kitsu.search(args.extra.search)
@@ -129,7 +129,7 @@ builder.defineMetaHandler((args) => {
         .then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE })));
   }
 
-  return Promise.reject(new Error('invalid id'));
+  return Promise.reject(`Invalid id: ${args.id}`);
 });
 
 module.exports = builder.getInterface();
