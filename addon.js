@@ -85,6 +85,9 @@ builder.defineCatalogHandler((args) => {
   const id = `${args.id}|${args.extra && args.extra.genre || 'All'}|${skip}`;
 
   if (args.extra?.search) {
+    if (args.extra.search.match(/(?:https?|stremio):\/\//)) {
+      return Promise.reject("Invalid search term")
+    }
     // no need to cache search results
     return kitsu.search(args.extra.search)
         .then((metas) => ({ metas: metas, cacheMaxAge: CACHE_MAX_AGE }));
