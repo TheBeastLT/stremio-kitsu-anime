@@ -1621,7 +1621,17 @@
   },
   "244": {
     "imdb_id": "tt0434665",
-    "title": "Bleach"
+    "fanartLogoId": "28356",
+    "title": "Bleach",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43078": {
+    "imdb_id": "tt0434665",
+    "fanartLogoId": "157743",
+    "title": "Bleach: Thousand Year Blood War",
+    "fromSeason": 17,
+    "fromEpisode": 1
   },
   "1515": {
     "imdb_id": "tt1105263",
@@ -11096,9 +11106,10 @@
     "fromEpisode": 1
   },
   "44193": {
-    "imdb_id": "tt15372356",
+    "imdb_id": "tt2595474",
+    "fanartLogoId": "157248",
     "title": "Encouragement of Climb: Next Summit",
-    "fromSeason": 1,
+    "fromSeason": 4,
     "fromEpisode": 1
   },
   "7766": {
@@ -11112,6 +11123,12 @@
     "title": "Encouragement of Climb",
     "fromSeason": 0,
     "fromEpisode": 2
+  },
+  "13585": {
+    "imdb_id": "tt2595474",
+    "title": "Encouragement of Climb",
+    "fromSeason": 0,
+    "fromEpisode": 4
   },
   "7123": {
     "imdb_id": "tt2150751",
@@ -11129,6 +11146,12 @@
     "imdb_id": "tt2377452",
     "title": "K",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "9964": {
+    "imdb_id": "tt2377452",
+    "title": "K",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "7129": {
@@ -12428,6 +12451,12 @@
     "title": "Strike the Blood",
     "fromSeason": 0,
     "fromEpisode": 1
+  },
+  "42612": {
+    "imdb_id": "tt2789238",
+    "title": "Strike the Blood",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "7716": {
     "imdb_id": "tt0367439",
@@ -14582,7 +14611,7 @@
   },
   "44031": {
     "imdb_id": "tt4728568",
-    "fanartLogoId": "139179",
+    "fanartLogoId": "153849",
     "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
     "fromSeason": 4,
     "fromEpisode": 1
@@ -14615,11 +14644,12 @@
     "fromSeason": 0,
     "fromEpisode": 5
   },
-  "9964": {
-    "imdb_id": "tt2377452",
-    "title": "K",
-    "fromSeason": 2,
-    "fromEpisode": 1
+  "46404": {
+    "imdb_id": "tt4728568",
+    "fanartLogoId": "153850",
+    "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
+    "fromSeason": 0,
+    "fromEpisode": 6
   },
   "9965": {
     "imdb_id": "tt4869896",
@@ -22763,12 +22793,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "43078": {
-    "imdb_id": "tt14986406",
-    "title": "Bleach: Thousand Year Blood War",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "43115": {
     "imdb_id": "tt12156162",
     "title": "Zashiki-Warashi no Tatami-chan",
@@ -24820,6 +24844,12 @@
   "46272": {
     "imdb_id": "tt21867530",
     "title": "Aru Asa Dummy Head Mic ni Natteita Ore-kun no Jinsei",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46323": {
+    "imdb_id": "tt22445494",
+    "title": "Berserk: The Golden Age Arc - Memorial Edition",
     "fromSeason": 1,
     "fromEpisode": 1
   },
