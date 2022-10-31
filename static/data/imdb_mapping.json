@@ -23276,8 +23276,8 @@
   "45656": {
     "imdb_id": "tt12421676",
     "title": "Muv-Luv Alternative",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   "43702": {
     "imdb_id": "tt13357234",
@@ -24500,6 +24500,12 @@
   "45341": {
     "imdb_id": "tt15723722",
     "title": "Yûsha, yamemasu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45367": {
+    "imdb_id": "tt22443832",
+    "title": "Arknights: Reimei Zensou",
     "fromSeason": 1,
     "fromEpisode": 1
   },
