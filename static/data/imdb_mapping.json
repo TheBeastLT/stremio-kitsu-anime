@@ -2076,6 +2076,12 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "953": {
+    "imdb_id": "tt0972713",
+    "title": "Shakugan No Shana",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "1372": {
     "imdb_id": "tt0972713",
     "title": "Shakugan No Shana",
@@ -2087,6 +2093,12 @@
     "title": "Shakugan No Shana",
     "fromSeason": 0,
     "fromEpisode": 11
+  },
+  "4523": {
+    "imdb_id": "tt0972713",
+    "title": "Shakugan No Shana",
+    "fromSeason": 0,
+    "fromEpisode": 21
   },
   "1632": {
     "imdb_id": "tt0994794",
@@ -8224,6 +8236,12 @@
     "imdb_id": "tt1329466",
     "title": "Skip Beat!"
   },
+  "3825": {
+    "imdb_id": "tt1196478",
+    "title": "Don Dracula",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3837": {},
   "3840": {
     "imdb_id": "tt1316554",
@@ -8724,10 +8742,6 @@
     "title": "Omamori Himari",
     "fromSeason": 1,
     "fromEpisode": 1
-  },
-  "4525": {
-    "imdb_id": "tt1587790",
-    "title": "Kidô senshi Gandamu Yunikôn: Yunikôn no hi"
   },
   "4528": {
     "imdb_id": "tt1655610",
@@ -9527,6 +9541,12 @@
   "5746": {
     "imdb_id": "tt3105492",
     "title": "Coppelion"
+  },
+  "5775": {
+    "imdb_id": "tt21294196",
+    "title": "Urufu gai",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "5766": {
     "imdb_id": "tt1882240",
@@ -15576,11 +15596,23 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "12087": {
+    "imdb_id": "tt5225764",
+    "title": "Drifters",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "41325": {
     "imdb_id": "tt5225764",
     "title": "Drifters",
     "fromSeason": 0,
-    "fromEpisode": 3
+    "fromEpisode": 2
+  },
+  "43449": {
+    "imdb_id": "tt5225764",
+    "title": "Drifters",
+    "fromSeason": 0,
+    "fromEpisode": 4
   },
   "11029": {
     "imdb_id": "tt5271506",
@@ -16864,6 +16896,16 @@
     "fromEpisode": 1
   },
   "11850": {
+    "imdb_id": "tt1587790",
+    "title": "Mobile Suit Gundam UC",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4525": {
+    "imdb_id": "tt1587790",
+    "title": "Mobile Suit Gundam UC",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "11857": {
     "imdb_id": "tt2549176",
@@ -17486,6 +17528,12 @@
     "imdb_id": "tt12882132",
     "title": "Hitori No Shita - The Outcast",
     "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "45264": {
+    "imdb_id": "tt12882132",
+    "title": "Hitori No Shita - The Outcast",
+    "fromSeason": 4,
     "fromEpisode": 1
   },
   "12260": {
@@ -22569,6 +22617,12 @@
     "imdb_id": "tt12011442",
     "title": "Burn the Witch"
   },
+  "43184": {
+    "imdb_id": "tt12809744",
+    "title": "All Saints Street",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "43198": {
     "imdb_id": "tt13411814",
     "title": "Shuumatsu no Harem",
@@ -22772,14 +22826,20 @@
   "44398": {
     "imdb_id": "tt13718450",
     "title": "86",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 12
   },
   "44788": {
     "imdb_id": "tt13718450",
     "title": "86",
     "fromSeason": 0,
     "fromEpisode": 1
+  },
+  "45545": {
+    "imdb_id": "tt13718450",
+    "title": "86",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   "43067": {
     "imdb_id": "tt12331342",
@@ -24423,6 +24483,12 @@
     "imdb_id": "tt15433166",
     "title": "Mobile Suit Gundam: The Witch from Mercury",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46291": {
+    "imdb_id": "tt15433166",
+    "title": "Mobile Suit Gundam: The Witch from Mercury",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "45218": {
