@@ -18,7 +18,7 @@
     "jaro-winkler": "^0.2.8",
     "kitsu": "^10.0.0-alpha.20",
     "parse-torrent-title": "git://github.com/TheBeastLT/parse-torrent-title.git#2ece588b19d64da6726804b9b18842897b34ffc7",
-    "stremio-addon-sdk": "^1.6.5",
+    "stremio-addon-sdk": "^1.6.10",
     "url-exists": "^1.0.3",
     "xml-js": "^1.6.11"
   }

@@ -2,14 +2,16 @@ const { addonBuilder } = require('stremio-addon-sdk');
 const genres = require('./static/data/genres');
 const { enrichKitsuMetadata, enrichImdbMetadata, hasImdbMapping } = require('./lib/metadataEnrich');
 const { cacheWrapMeta, cacheWrapCatalog } = require('./lib/cache');
+const { mapToKitsuId } = require('./lib/id_convert');
+const { ADDON_URL } = require('./lib/config')
 const kitsu = require('./lib/kitsu_api');
 const cinemeta = require('./lib/cinemeta_api');
 
-const CACHE_MAX_AGE = process.env.CACHE_MAX_AGE || 12 * 60 * 60; // 12 hours
+const CACHE_MAX_AGE = parseInt(process.env.CACHE_MAX_AGE) || 12 * 60 * 60; // 12 hours
 
 const manifest = {
   id: 'community.anime.kitsu',
-  version: '0.0.6',
+  version: '0.0.7',
   name: 'Anime Kitsu',
   description: 'Unofficial Kitsu.io anime catalog addon',
   logo: 'https://i.imgur.com/ANMG9VF.png',
@@ -66,7 +68,7 @@ const manifest = {
       ],
     },
   ],
-  idPrefixes: ['kitsu']
+  idPrefixes: ['kitsu', 'mal', 'anilist', 'anidb']
 };
 const builder = new addonBuilder(manifest);
 const sortValue = {
@@ -127,6 +129,13 @@ builder.defineMetaHandler((args) => {
     return cacheWrapMeta(id, () => cinemeta.getCinemetaMetadata(id, args.type)
         .then((metadata) => enrichImdbMetadata(metadata, kitsu.animeData))
         .then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE })));
+  }
+
+  if (args.id.match(/^(?:mal|anilist|anidb)/)) {
+    return mapToKitsuId(args.id)
+        .then(id => ({
+          redirect: `${ADDON_URL}/meta/anime/kitsu:${id}.json`
+        }));
   }
 
   return Promise.reject(`Invalid id: ${args.id}`);
