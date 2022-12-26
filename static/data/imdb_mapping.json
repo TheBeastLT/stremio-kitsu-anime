@@ -1596,8 +1596,8 @@
     "imdb_id": "tt0481256",
     "fanartLogoId": "131847",
     "title": "Hajime no Ippo",
-    "fromSeason": 1,
-    "fromEpisode": 76
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "239": {
     "imdb_id": "tt0805540",
@@ -2393,6 +2393,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "3520": {
+    "imdb_id": "tt0159410",
+    "title": "Dirty Pair OVA",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "389": {
     "imdb_id": "tt4145978",
     "title": "Araiso Private High School Student Council Executive Committee"
@@ -2806,12 +2812,6 @@
   "449": {
     "imdb_id": "tt0810056",
     "title": "Strawberry Marshmallow"
-  },
-  "450": {
-    "imdb_id": "tt0961173",
-    "title": "Kamichu!",
-    "fromSeason": 1,
-    "fromEpisode": 13
   },
   "451": {
     "imdb_id": "tt1094084",
@@ -4691,6 +4691,12 @@
   "947": {
     "imdb_id": "tt2382224",
     "title": "Kidô shinsengumi: Moe yo ken"
+  },
+  "952": {
+    "imdb_id": "tt0294208",
+    "title": "Tatchi",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "964": {
     "imdb_id": "tt0366186",
@@ -7432,6 +7438,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "4294": {
+    "imdb_id": "tt0206516",
+    "title": "Tiger Mask",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "2721": {
     "imdb_id": "tt0843548",
     "title": "Kaiketsu Zorro"
@@ -9272,6 +9284,24 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "5606": {
+    "imdb_id": "tt1685397",
+    "title": "Amagami SS",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "5943": {
+    "imdb_id": "tt1685397",
+    "title": "Amagami SS",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
+  "6785": {
+    "imdb_id": "tt1685397",
+    "title": "Amagami SS",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
   "5443": {
     "imdb_id": "tt4083422",
     "title": "Doraemon",
@@ -9285,18 +9315,6 @@
   "44424": {
     "imdb_id": "tt13428402",
     "title": "Stand by Me Doraemon 2"
-  },
-  "5606": {
-    "imdb_id": "tt1685397",
-    "title": "Amagami SS",
-    "fromSeason": 0,
-    "fromEpisode": 1
-  },
-  "5943": {
-    "imdb_id": "tt1685397",
-    "title": "Amagami SS",
-    "fromSeason": 0,
-    "fromEpisode": 7
   },
   "5469": {
     "imdb_id": "tt7947592",
@@ -10803,6 +10821,12 @@
     "imdb_id": "tt1738419",
     "title": "Bakuman.",
     "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "7623": {
+    "imdb_id": "tt2959410",
+    "title": "Futari wa Milky Holmes",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "6724": {
@@ -12581,6 +12605,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "7763": {
+    "imdb_id": "tt0961173",
+    "title": "Kamichu!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "450": {
+    "imdb_id": "tt0961173",
+    "title": "Kamichu!",
+    "fromSeason": 1,
+    "fromEpisode": 13
+  },
   "7767": {
     "imdb_id": "tt3792116",
     "title": "Love Stage!!",
@@ -13219,6 +13255,12 @@
     "imdb_id": "tt3563898",
     "title": "Brynhildr in the Darkness",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8634": {
+    "imdb_id": "tt3563898",
+    "title": "Brynhildr in the Darkness",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "8000": {
