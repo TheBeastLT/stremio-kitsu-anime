@@ -20105,7 +20105,9 @@
   },
   "41084": {
     "imdb_id": "tt10233448",
-    "title": "Vinland Saga"
+    "title": "Vinland Saga",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "41085": {
     "imdb_id": "tt10937632",
@@ -22132,7 +22134,7 @@
     "fromEpisode": 1
   },
   "42628": {
-    "imdb_id": "tt14414836",
+    "imdb_id": "tt13248062",
     "title": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
     "fromSeason": 1,
     "fromEpisode": 1
