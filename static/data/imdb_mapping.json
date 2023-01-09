@@ -14528,6 +14528,12 @@
     "imdb_id": "tt4219164",
     "title": "Military!"
   },
+  "8884": {
+    "imdb_id": "tt21104890",
+    "title": "Gudetama: An Eggcellent Adventure",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "8891": {
     "imdb_id": "tt4045510",
     "title": "I Can't Understand What My Husband Is Saying",
@@ -14559,6 +14565,12 @@
   "8971": {
     "imdb_id": "tt5330596",
     "title": "GARAKOWA - Restore the World"
+  },
+  "9039": {
+    "imdb_id": "tt12826532",
+    "title": "Shimajiro No Wow",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "9063": {
   },
@@ -16963,6 +16975,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "41143": {
+    "imdb_id": "tt8256136",
+    "title": "Puzzle & Dragons X",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "11848": {
     "imdb_id": "tt13117166",
     "title": "Gekidol",
@@ -18417,6 +18435,10 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "44242": {
+    "imdb_id": "tt22868844",
+    "title": "Black Clover: Sword of the Wizard King"
+  },
   "13225": {
     "imdb_id": "tt7694276",
     "title": "Juuni Taisen"
@@ -19508,6 +19530,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46368": {
+    "imdb_id": "tt8994044",
+    "title": "Tsurune: Kazemai koukou kyuudoubu",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "13991": {
     "imdb_id": "tt8574388",
     "title": "Tsukumogami Kashimasu",
@@ -19697,6 +19725,12 @@
   "14161": {
   },
   "14162": {
+  },
+  "14170": {
+    "imdb_id": "tt19811740",
+    "title": "Otoppe",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "14174": {
     "imdb_id": "tt8400680",
@@ -21764,6 +21798,12 @@
     "imdb_id": "tt11157544",
     "title": "Stand My Heroes: Piece of Truth",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44543": {
+    "imdb_id": "tt11157544",
+    "title": "Stand My Heroes: Piece of Truth",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "42310": {
@@ -24104,6 +24144,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44221": {
+    "imdb_id": "tt13084262",
+    "title": "Uchuu Nanchara Kotetsu-kun",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44226": {
     "imdb_id": "tt15018116",
     "title": "Koroshi Ai",
@@ -24424,11 +24470,13 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
-  "46014": {
+  "46268": {
     "imdb_id": "tt14980764",
     "title": "Sasaki to Miyano",
     "fromSeason": 0,
     "fromEpisode": 2
+  },
+  "46014": {
   },
   "44580": {
     "imdb_id": "tt14669108",
@@ -24472,6 +24520,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44691": {
+    "imdb_id": "tt14837962",
+    "title": "Make My Day",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44692": {
     "imdb_id": "tt14837960",
     "title": "Bright: Samurai Soul"
@@ -24479,6 +24533,12 @@
   "44694": {
     "imdb_id": "tt10915840",
     "title": "Uchuu senkan Yamato 2205: Aratanaru tabidachi"
+  },
+  "44706": {
+    "imdb_id": "tt25275610",
+    "title": "High Card",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "44773": {
     "imdb_id": "tt15219320",
@@ -24515,6 +24575,12 @@
   "44876": {
     "imdb_id": "tt15582924",
     "title": "Kaijin Kaihatsubu no Kuroitsu-san",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44877": {
+    "imdb_id": "tt25816576",
+    "title": "Mou Ippon!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -24605,6 +24671,12 @@
   "44979": {
     "imdb_id": "tt13398930",
     "title": "Cue!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44982": {
+    "imdb_id": "tt15237164",
+    "title": "Ningen Fushin no Bôkensha-tachi ga Sekai wo Sukû Yô Desu",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -24728,6 +24800,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45270": {
+    "imdb_id": "tt15538376",
+    "title": "Sugar Apple Fairy Tale",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45271": {
     "imdb_id": "tt15529750",
     "title": "Tribe Nine",
@@ -24757,6 +24835,10 @@
     "title": "Yûsha, yamemasu",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "45347": {
+    "imdb_id": "tt15737898",
+    "title": "Blue Giant"
   },
   "45367": {
     "imdb_id": "tt22443832",
@@ -24794,6 +24876,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "45394": {
+    "imdb_id": "tt14206996",
+    "title": "The Legend of Heroes: Trails of Cold Steel",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45398": {
     "imdb_id": "tt13706018",
     "title": "Spy x Family",
@@ -24812,6 +24900,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45409": {
+    "imdb_id": "tt15893716",
+    "title": "Technoroid: Overmind",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45464": {
     "imdb_id": "tt15929150",
     "title": "Kunoichi Tsubaki no mune no uchi",
@@ -24823,6 +24917,8 @@
     "title": "Yofukashi no uta",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "45509": {
   },
   "45514": {
     "imdb_id": "tt16148546",
@@ -24858,6 +24954,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45583": {
+    "imdb_id": "tt16418362",
+    "title": "Gridman Universe"
+  },
   "45591": {
     "imdb_id": "tt21197084",
     "title": "Koukyuu no Karasu",
@@ -24882,6 +24982,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45609": {
+    "imdb_id": "tt21962510",
+    "title": "Ayakashi Triangle",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45653": {
     "imdb_id": "tt16609250",
     "title": "Odd Taxi: In the Woods"
@@ -24890,15 +24996,29 @@
     "imdb_id": "tt6043124",
     "title": "Lost in the Moonlight"
   },
+  "45658": {
+    "imdb_id": "tt25721166",
+    "title": "Tsundere Akuyaku Reijou Liselotte to Jikkyou no Endou-kun to Kaisetsu no Kobayashi-san",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45694": {
     "imdb_id": "tt16764368",
     "title": "Urusei Yatsura",
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45701": {
+  },
   "45705": {
     "imdb_id": "tt16755706",
     "title": "Lycoris Recoil",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45715": {
+    "imdb_id": "tt19064770",
+    "title": "Otonari no tenshi-sama ni itsu no ma ni ka dame-ningen ni sareteita ken",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -24914,9 +25034,33 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45787": {
+    "imdb_id": "tt17221100",
+    "title": "Ôyukiumi no Kaina",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45788": {
+    "imdb_id": "tt21844644",
+    "title": "Benriya Saitou-san, Isekai ni Iku",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45794": {
     "imdb_id": "tt12105800",
     "title": "Hoshi no samidare",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45813": {
+    "imdb_id": "tt25809288",
+    "title": "Saikyou Onmyouji no Isekai Tenseiki",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45818": {
+    "imdb_id": "tt21912036",
+    "title": "Hikari no Ô",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -24990,6 +25134,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45966": {
+    "imdb_id": "tt25697580",
+    "title": "Spy Kyoushitsu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45967": {
+    "imdb_id": "tt21689900",
+    "title": "Inu ni Nattara Suki na Hito ni Hirowareta.",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45977": {
     "imdb_id": "tt21826010",
     "title": "C Danchi",
@@ -25032,9 +25188,21 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46016": {
+    "imdb_id": "tt19223420",
+    "title": "Isekai Nonbiri Nouka",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "46034": {
     "imdb_id": "tt21345894",
     "title": "4-nin wa Sorezore Uso wo Tsuku",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46077": {
+    "imdb_id": "tt21929424",
+    "title": "Oniichan wa Oshimai!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -25050,9 +25218,21 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46088": {
+    "imdb_id": "tt25531288",
+    "title": "Hyouken no Majutsushi ga Sekai wo Suberu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "46090": {
     "imdb_id": "tt21244528",
     "title": "Yoru wa Neko to Issho",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46110": {
+    "imdb_id": "tt21844614",
+    "title": "Kubo-san wa Mobu o Yurusanai",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -25086,9 +25266,29 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46144": {
+  },
+  "46168": {
+    "imdb_id": "tt21856734",
+    "title": "Junji Ito Maniac: Japanese Tales of the Macabre",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "46171": {
     "imdb_id": "tt21345944",
     "title": "Yuusha Party wo Tsuihou sareta Beast Tamer, Saikyoushu no Nekomimi Shoujo to Deau",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46183": {
+    "imdb_id": "tt21216104",
+    "title": "Trigun Stampede",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46192": {
+    "imdb_id": "tt21929398",
+    "title": "Koori Zokusei Danshi to Cool na Douryou Joshi",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -25098,9 +25298,21 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46223": {
+    "imdb_id": "tt25814162",
+    "title": "Nokemono-tachi no Yoru",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "46225": {
     "imdb_id": "tt15242330",
     "title": "The First Slam Dunk"
+  },
+  "46232": {
+    "imdb_id": "tt21210326",
+    "title": "Tomo-chan Is a Girl!",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "46238": {
     "imdb_id": "tt16183478",
@@ -25120,9 +25332,27 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46274": {
+    "imdb_id": "tt21342052",
+    "title": "Kaiko sareta Ankoku Heishi (30-dai) no Slow na Second Life",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46304": {
+    "imdb_id": "tt21608762",
+    "title": "Rôgo ni sonaete Isekai de 8-man-mai no kinka wo tamemasu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "46323": {
     "imdb_id": "tt22445494",
     "title": "Berserk: The Golden Age Arc - Memorial Edition",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46335": {
+    "imdb_id": "tt22889156",
+    "title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -25138,9 +25368,61 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46499": {
+    "imdb_id": "tt22171506",
+    "title": "Nijiyon Animation",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "46509": {
     "imdb_id": "tt22266604",
     "title": "VazzRock the Animation",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46523": {
+    "imdb_id": "tt22192398",
+    "title": "Lupin III VS Cat's Eye"
+  },
+  "46526": {
+    "imdb_id": "tt25808792",
+    "title": "UniteUp!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46544": {
+  },
+  "46560": {
+    "imdb_id": "tt23812370",
+    "title": "Ars no Kyojuu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46562": {
+    "imdb_id": "tt25534100",
+    "title": "Revenger",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46650": {
+    "imdb_id": "tt22986710",
+    "title": "Buddy Daddies",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46652": {
+    "imdb_id": "tt19047064",
+    "title": "Rakudai Majo"
+  },
+  "46676": {
+    "imdb_id": "tt24229160",
+    "title": "Tondemo Skill de Isekai Hourou Meshi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46783": {
+    "imdb_id": "tt23862502",
+    "title": "Hirogaru Sky! Precure",
     "fromSeason": 1,
     "fromEpisode": 1
   }
