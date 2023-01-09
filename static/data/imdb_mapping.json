@@ -3012,6 +3012,12 @@
     "fromSeason": 19,
     "fromEpisode": 1
   },
+  "46857": {
+    "imdb_id": "tt0176385",
+    "title": "Pokémon",
+    "fromSeason": 20,
+    "fromEpisode": 1
+  },
   "5334": {
     "imdb_id": "tt8393838",
     "title": "Pokémon Ranger: Guardian Signs",
@@ -9055,6 +9061,12 @@
     "imdb_id": "tt1636780",
     "title": "Gintama: The Movie"
   },
+  "5007": {
+    "title": "Knyacki!",
+    "imdb_id": "tt1978960",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "5045": {
     "imdb_id": "tt1634209",
     "title": "Kiss x sis",
@@ -9161,6 +9173,12 @@
   "5204": {
     "imdb_id": "tt1746043",
     "title": "Kurage hime"
+  },
+  "5297": {
+    "title": "Hanakappa",
+    "imdb_id": "tt12826684",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "5319": {
     "imdb_id": "tt0204460",
@@ -14685,6 +14703,13 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "46556": {
+    "imdb_id": "tt4728568",
+    "fanartLogoId": "153849",
+    "title": "DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?",
+    "fromSeason": 4,
+    "fromEpisode": 12
+  },
   "11851": {
     "imdb_id": "tt4728568",
     "fanartLogoId": "96778",
@@ -16139,6 +16164,12 @@
     "imdb_id": "tt5679720",
     "title": "Bungou Stray Dogs",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "45460": {
+    "imdb_id": "tt5679720",
+    "title": "Bungou Stray Dogs",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "12051": {
@@ -20105,8 +20136,16 @@
   },
   "41084": {
     "imdb_id": "tt10233448",
+    "fanartLogoId": "139065",
     "title": "Vinland Saga",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44875": {
+    "imdb_id": "tt10233448",
+    "fanartLogoId": "158412",
+    "title": "Vinland Saga",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "41085": {
@@ -20340,6 +20379,12 @@
     "imdb_id": "tt8019444",
     "title": "Aggretsuko",
     "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "46540": {
+    "imdb_id": "tt8019444",
+    "title": "Aggretsuko",
+    "fromSeason": 5,
     "fromEpisode": 1
   },
   "42027": {
@@ -21791,22 +21836,28 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "42330": {
-    "imdb_id": "tt9442120",
-    "title": "Shikizakura",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "43097": {
     "imdb_id": "tt11349866",
     "title": "Sorcerous Stabber Orphen: Battle of Kimluck",
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "46549": {
+    "imdb_id": "tt11349866",
+    "title": "Sorcerous Stabber Orphen: Battle of Kimluck",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "43117": {
     "imdb_id": "tt11349866",
     "title": "Sorcerous Stabber Orphen: Battle of Kimluck",
     "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "42330": {
+    "imdb_id": "tt9442120",
+    "title": "Shikizakura",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "42339": {
@@ -22005,6 +22056,12 @@
     "imdb_id": "tt11503082",
     "title": "Scissor Seven",
     "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "46919": {
+    "imdb_id": "tt11503082",
+    "title": "Scissor Seven",
+    "fromSeason": 4,
     "fromEpisode": 1
   },
   "42504": {
@@ -22376,8 +22433,15 @@
     "imdb_id": "tt2549176",
     "tvdb_id": "400398",
     "title": "Vanguard OverDress",
-    "fromSeason": 14,
-    "fromEpisode": 26
+    "fromSeason": 15,
+    "fromEpisode": 1
+  },
+  "45215": {
+    "imdb_id": "tt2549176",
+    "tvdb_id": "400398",
+    "title": "Vanguard OverDress",
+    "fromSeason": 15,
+    "fromEpisode": 14
   },
   "43022": {
     "imdb_id": "tt13533532",
@@ -22573,6 +22637,12 @@
     "imdb_id": "tt12432936",
     "title": "The Misfit of Demon King Academy",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44125": {
+    "imdb_id": "tt12432936",
+    "title": "The Misfit of Demon King Academy",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "43014": {
@@ -23014,8 +23084,16 @@
   },
   "43271": {
     "imdb_id": "tt12635162",
-    "title": "Ijiranaide, Nagatoro-san",
+    "fanartLogoId": "131649",
+    "title": "Don't Toy with Me, Miss Nagatoro",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45355": {
+    "imdb_id": "tt12635162",
+    "fanartLogoId": "156537",
+    "title": "Don't Toy with Me, Miss Nagatoro",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "43273": {
@@ -23104,6 +23182,12 @@
     "imdb_id": "tt13196080",
     "title": "Tokyo Revengers",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45607": {
+    "imdb_id": "tt13196080",
+    "title": "Tokyo Revengers",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "43348": {
@@ -23260,6 +23344,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46507": {
+    "imdb_id": "tt12768008",
+    "title": "D4DJ: First Mix",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "45974": {
     "imdb_id": "tt12768008",
     "title": "D4DJ: First Mix",
@@ -23350,6 +23440,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46046": {
+    "imdb_id": "tt13102918",
+    "title": "Cap Kakumei Bottleman",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "43653": {
     "imdb_id": "tt13173456",
     "title": "Resident Evil: Infinite Darkness",
@@ -23426,6 +23522,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46542": {
+    "imdb_id": "tt13357124",
+    "title": "Gokushufudo",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "44336": {
     "imdb_id": "tt13357124",
     "title": "Gokushufudo",
@@ -23458,6 +23560,12 @@
     "imdb_id": "tt12912752",
     "title": "Tototsu ni Egypt Kami",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44945": {
+    "imdb_id": "tt12912752",
+    "title": "Tototsu ni Egypt Kami",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "43801": {
@@ -23690,6 +23798,12 @@
     "imdb_id": "tt15026576",
     "title": "Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46033": {
+    "imdb_id": "tt15026576",
+    "title": "Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "44025": {
@@ -23942,6 +24056,12 @@
     "imdb_id": "tt13676344",
     "title": "Shuumatsu no Valkyrie",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44988": {
+    "imdb_id": "tt13676344",
+    "title": "Shuumatsu no Valkyrie",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "44208": {
@@ -24298,6 +24418,12 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "46014": {
+    "imdb_id": "tt14980764",
+    "title": "Sasaki to Miyano",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
   "44580": {
     "imdb_id": "tt14669108",
     "title": "Fantasy Bishoujo Juniku Ojisan to",
@@ -24320,6 +24446,12 @@
     "imdb_id": "tt12279682",
     "title": "Kyuuketsuki Sugu Shinu",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45625": {
+    "imdb_id": "tt12279682",
+    "title": "Kyuuketsuki Sugu Shinu",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "44689": {
@@ -24834,6 +24966,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45926": {
+    "imdb_id": "tt18311412",
+    "title": "NieR: Automata Ver 1.1a",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45956": {
     "imdb_id": "tt18561422",
     "title": "Vermeil in Gold - A Magician Pushes Through the Magical World With the Strongest Disaster",
@@ -24916,6 +25054,12 @@
     "imdb_id": "tt21237620",
     "title": "KJ File",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46651": {
+    "imdb_id": "tt21237620",
+    "title": "KJ File",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "46134": {
