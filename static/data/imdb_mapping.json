@@ -2947,76 +2947,82 @@
     "title": "Please Save My Earth"
   },
   "486": {
-    "imdb_id": "tt0176385",
+    "imdb_id": "tt0168366",
     "title": "Pokémon",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "1404": {
-    "imdb_id": "tt0176385",
+    "imdb_id": "tt0168366",
     "title": "Pokémon",
     "fromSeason": 6,
     "fromEpisode": 1
   },
   "1405": {
-    "imdb_id": "tt0176385",
+    "imdb_id": "tt0168366",
     "title": "Pokémon",
     "fromSeason": 10,
     "fromEpisode": 1
   },
   "5605": {
-    "imdb_id": "tt0176385",
+    "imdb_id": "tt0168366",
     "title": "Pokémon",
     "fromSeason": 14,
     "fromEpisode": 1
   },
   "7080": {
-    "imdb_id": "tt0176385",
+    "imdb_id": "tt0168366",
     "title": "Pokémon",
     "fromSeason": 15,
     "fromEpisode": 1
   },
   "7586": {
-    "imdb_id": "tt0176385",
+    "imdb_id": "tt0168366",
     "title": "Pokémon",
     "fromSeason": 15,
     "fromEpisode": 25
   },
   "7895": {
-    "imdb_id": "tt0176385",
+    "imdb_id": "tt0168366",
     "title": "Pokémon",
     "fromSeason": 15,
     "fromEpisode": 39
   },
   "7850": {
-    "imdb_id": "tt0176385",
+    "imdb_id": "tt0168366",
     "title": "Pokémon",
     "fromSeason": 16,
     "fromEpisode": 1
   },
   "11367": {
-    "imdb_id": "tt0176385",
+    "imdb_id": "tt0168366",
     "title": "Pokémon",
     "fromSeason": 17,
     "fromEpisode": 1
   },
   "12533": {
-    "imdb_id": "tt0176385",
+    "imdb_id": "tt0168366",
     "title": "Pokémon",
     "fromSeason": 18,
     "fromEpisode": 1
   },
   "42534": {
-    "imdb_id": "tt0176385",
+    "imdb_id": "tt0168366",
     "title": "Pokémon",
     "fromSeason": 19,
     "fromEpisode": 1
   },
   "46857": {
-    "imdb_id": "tt0176385",
+    "imdb_id": "tt0168366",
     "title": "Pokémon",
     "fromSeason": 20,
     "fromEpisode": 1
+  },
+  "46858": {
+    "imdb_id": "tt0168366",
+    "title": "Pokémon",
+    "fromSeason": 0,
+    "fromEpisode": 83
   },
   "5334": {
     "imdb_id": "tt8393838",
@@ -5127,7 +5133,27 @@
   },
   "1154": {
     "imdb_id": "tt0122356",
-    "title": "The Mysterious Cities of Gold"
+    "title": "The Mysterious Cities of Gold",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "10917": {
+    "imdb_id": "tt0122356",
+    "title": "The Mysterious Cities of Gold",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "13295": {
+    "imdb_id": "tt0122356",
+    "title": "The Mysterious Cities of Gold",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "44094": {
+    "imdb_id": "tt0122356",
+    "title": "The Mysterious Cities of Gold",
+    "fromSeason": 4,
+    "fromEpisode": 1
   },
   "1155": {
     "imdb_id": "tt0100099",
@@ -15600,7 +15626,21 @@
   },
   "10920": {
     "imdb_id": "tt5020030",
-    "title": "Bikini Warriors"
+    "title": "Bikini Warriors",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "11216": {
+    "imdb_id": "tt5020030",
+    "title": "Bikini Warriors",
+    "fromSeason": 0,
+    "fromEpisode": 13
+  },
+  "12452": {
+    "imdb_id": "tt5020030",
+    "title": "Bikini Warriors",
+    "fromSeason": 0,
+    "fromEpisode": 14
   },
   "10922": {
     "imdb_id": "tt6548966",
@@ -17566,25 +17606,25 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
-  "45014": {
+  "13241": {
     "imdb_id": "tt6185782",
     "title": "Miss Kobayashi's Dragon Maid",
     "fromSeason": 0,
     "fromEpisode": 2
   },
-  "13241": {
-    "imdb_id": "tt6185782",
-    "title": "Miss Kobayashi's Dragon Maid",
-    "fromSeason": 0,
-    "fromEpisode": 3
-  },
   "44326": {
     "imdb_id": "tt6185782",
     "title": "Miss Kobayashi's Dragon Maid",
     "fromSeason": 0,
-    "fromEpisode": 10
+    "fromEpisode": 9
   },
   "45015": {
+    "imdb_id": "tt6185782",
+    "title": "Miss Kobayashi's Dragon Maid",
+    "fromSeason": 0,
+    "fromEpisode": 25
+  },
+  "45014": {
     "imdb_id": "tt6185782",
     "title": "Miss Kobayashi's Dragon Maid",
     "fromSeason": 0,
@@ -17898,7 +17938,27 @@
   },
   "12540": {
     "imdb_id": "tt6901486",
-    "title": "Seven Mortal Sins"
+    "title": "Seven Mortal Sins",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "13514": {
+    "imdb_id": "tt6901486",
+    "title": "Seven Mortal Sins",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "13435": {
+    "imdb_id": "tt6901486",
+    "title": "Seven Mortal Sins",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
+  "13436": {
+    "imdb_id": "tt6901486",
+    "title": "Seven Mortal Sins",
+    "fromSeason": 0,
+    "fromEpisode": 16
   },
   "12542": {
     "imdb_id": "tt14202290",
@@ -19028,6 +19088,10 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "45023": {
+    "imdb_id": "tt15313532",
+    "title": "Karakai Jouzu no Takagi-san Movie"
+  },
   "13638": {
     "imdb_id": "tt7351734",
     "title": "Urahara"
@@ -19536,6 +19600,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "42355": {
+    "imdb_id": "tt8994044",
+    "title": "Tsurune: Kazemai koukou kyuudoubu",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "13991": {
     "imdb_id": "tt8574388",
     "title": "Tsukumogami Kashimasu",
@@ -19703,6 +19773,18 @@
   "14129": {
     "imdb_id": "tt9266104",
     "title": "After Owarimonogatari"
+  },
+  "14131": {
+    "imdb_id": "tt11954426",
+    "title": "The Seven Heavenly Virtues",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41486": {
+    "imdb_id": "tt11954426",
+    "title": "The Seven Heavenly Virtues",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "14137": {
     "imdb_id": "tt8250240",
@@ -23068,12 +23150,14 @@
   },
   "43211": {
     "imdb_id": "tt12063450",
+    "fanartLogoId": "131858",
     "title": "Fumetsu no Anata e",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "45045": {
     "imdb_id": "tt12063450",
+    "fanartLogoId": "159784",
     "title": "Fumetsu no Anata e",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -24596,6 +24680,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44925": {
+    "imdb_id": "tt15801642",
+    "title": "Gekijouban Isekai Quartet: Another World"
+  },
   "44941": {
     "imdb_id": "tt15202838",
     "title": "Deji Meets Girl",
@@ -24745,6 +24833,12 @@
     "title": "Mobile Suit Gundam: The Witch from Mercury",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "46561": {
+    "imdb_id": "tt15433166",
+    "title": "Mobile Suit Gundam: The Witch from Mercury",
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   "46291": {
     "imdb_id": "tt15433166",
@@ -24941,6 +25035,8 @@
     "title": "Kami Kuzu Idol",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "45548": {
   },
   "45551": {
     "imdb_id": "tt16409202",
@@ -25413,6 +25509,12 @@
   "46652": {
     "imdb_id": "tt19047064",
     "title": "Rakudai Majo"
+  },
+  "46654": {
+    "imdb_id": "tt22983862",
+    "title": "Lupin Zero",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "46676": {
     "imdb_id": "tt24229160",
