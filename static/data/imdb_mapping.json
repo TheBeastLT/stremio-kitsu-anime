@@ -3762,6 +3762,12 @@
     "imdb_id": "tt0447582",
     "title": "Comic Party"
   },
+  "637": {
+    "imdb_id": "tt0105559",
+    "title": "Tenchi Muyo!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "642": {
     "imdb_id": "tt1576820",
     "title": "Patapata hikousen no bouken",
@@ -3837,6 +3843,12 @@
   "692": {
     "imdb_id": "tt1183586",
     "title": "Meine Liebe"
+  },
+  "693": {
+    "imdb_id": "tt1499872",
+    "title": "Tenamon'ya Voyagers",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "695": {
     "imdb_id": "tt0495212",
@@ -3957,6 +3969,12 @@
   "746": {
     "imdb_id": "tt0844490",
     "title": "Colorful"
+  },
+  "749": {
+    "imdb_id": "tt0928095",
+    "title": "Kiba",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "751": {
     "imdb_id": "tt0816407",
@@ -6100,6 +6118,10 @@
     "imdb_id": "tt0985344",
     "title": "Claymore"
   },
+  "1641": {
+    "imdb_id": "tt0085218",
+    "title": "Barefoot Gen"
+  },
   "1643": {
     "imdb_id": "tt0926230",
     "title": "Deltora Quest"
@@ -6287,6 +6309,10 @@
     "title": "Grandizer",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "1800": {
+    "imdb_id": "tt0102812",
+    "title": "Roujin Z"
   },
   "1801": {
     "imdb_id": "tt0948103",
@@ -6719,6 +6745,12 @@
   "2100": {
     "imdb_id": "tt2061039",
     "title": "Dog Soldiers: Legacy"
+  },
+  "2110": {
+    "imdb_id": "tt11189300",
+    "title": "Bucky: The Incredible Kid",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "2113": {
     "imdb_id": "tt0294002",
@@ -7154,6 +7186,12 @@
     "imdb_id": "tt3385730",
     "title": "Wangan Midnight"
   },
+  "2382": {
+    "imdb_id": "tt0296435",
+    "title": "Treasure Island",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "2384": {
     "imdb_id": "tt1180327",
     "title": "Spider Riders: Resurrected Sun"
@@ -7309,6 +7347,10 @@
     "title": "Tomorrow's Joe 2",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "2647": {
+    "imdb_id": "tt1690442",
+    "title": "Tomorrow's Joe 2 (Movie)"
   },
   "2648": {
     "imdb_id": "tt1133480",
@@ -8025,6 +8067,12 @@
     "imdb_id": "tt0179584",
     "title": "The Littl' Bits"
   },
+  "3287": {
+    "imdb_id": "tt0296297",
+    "title": "Ai no gakko cuore monogatari",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3319": {
     "imdb_id": "tt0303508",
     "title": "Paris no Isabelle",
@@ -8732,6 +8780,10 @@
     "title": "A Certain Scientific Railgun",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "4481": {
+    "imdb_id": "tt2450486",
+    "title": "Rainbow Fireflies"
   },
   "7366": {
     "imdb_id": "tt1515996",
@@ -16602,6 +16654,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11498": {
+    "imdb_id": "tt5923962",
+    "title": "Gantz: O"
+  },
   "11517": {
     "imdb_id": "tt5347634",
     "title": "Nurse Witch Komugi-chan R",
@@ -17190,6 +17246,12 @@
     "imdb_id": "tt5878200",
     "title": "Battery"
   },
+  "11939": {
+    "imdb_id": "tt6142628",
+    "title": "The Great Passage",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "11940": {
     "imdb_id": "tt6197170",
     "title": "Scum's Wish"
@@ -17744,6 +17806,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "12314": {
+    "imdb_id": "tt6114326",
+    "title": "Digimon Universe: App Monsters",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "12318": {
     "imdb_id": "tt6994582",
     "title": "Hitorijime My Hero"
@@ -17929,6 +17997,12 @@
   "12536": {
     "imdb_id": "tt10484890",
     "title": "To Be Hero",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "12538": {
+    "imdb_id": "tt6494518",
+    "title": "Onihei",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -18349,6 +18423,10 @@
     "fromEpisode": 1
   },
   "12951": {
+    "imdb_id": "tt13104352",
+    "title": "Warau Salesman NEW",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "12971": {
     "imdb_id": "tt9728290",
@@ -18614,6 +18692,10 @@
     "title": "Aho Girl"
   },
   "13260": {
+    "imdb_id": "tt12510204",
+    "title": "Elegant Yokai Apartment Life",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "13261": {
     "imdb_id": "tt6692956",
@@ -19096,6 +19178,10 @@
     "imdb_id": "tt7351734",
     "title": "Urahara"
   },
+  "13639": {
+    "imdb_id": "tt10563920",
+    "title": "Hakubo"
+  },
   "13642": {
   },
   "13651": {
@@ -19292,6 +19378,10 @@
     "fromEpisode": 1
   },
   "13714": {
+    "imdb_id": "tt14563172",
+    "title": "Sanrio Boys",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "13715": {
     "imdb_id": "tt8670784",
@@ -19309,6 +19399,12 @@
     "imdb_id": "tt7814574",
     "title": "Junji Ito Collection",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "14130": {
+    "imdb_id": "tt7814574",
+    "title": "Junji Ito Collection: Tomie",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "13719": {
@@ -19659,6 +19755,10 @@
     "title": "Butlers: Chitose Momotose Monogatari",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "14041": {
+    "imdb_id": "tt12357636",
+    "title": "Sorcery in the Big City"
   },
   "14042": {
     "imdb_id": "tt8528256",
@@ -20072,6 +20172,12 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "41021": {
+    "imdb_id": "tt8693818",
+    "title": "Back Street Girls",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "41023": {
     "imdb_id": "tt8113938",
     "title": "Chuukan Kanriroku Tonegawa"
@@ -20231,6 +20337,10 @@
     "fromEpisode": 1
   },
   "41077": {
+    "imdb_id": "tt12052708",
+    "title": "W'z",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "41080": {
     "imdb_id": "tt10068158",
@@ -20311,6 +20421,10 @@
     "title": "Ms. Vampire Who Lives in My Neighborhood"
   },
   "41112": {
+    "imdb_id": "tt13759914",
+    "title": "BAKUMATSU",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "41115": {
     "imdb_id": "tt12305568",
@@ -20343,6 +20457,10 @@
     "title": "Hitori Bocchi's OO Lifestyle"
   },
   "41131": {
+    "imdb_id": "tt5619276",
+    "title": "Last Period",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "41133": {
     "imdb_id": "tt8438524",
@@ -20849,6 +20967,10 @@
     "title": "Zombieland Saga",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  "41460": {
+    "imdb_id": "tt8223844",
+    "title": "Modest Heroes"
   },
   "41465": {
     "imdb_id": "tt10022916",
@@ -21595,9 +21717,21 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "42200": {
+    "imdb_id": "tt8963328",
+    "title": "Hi Score Girl",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "42201": {
     "imdb_id": "tt11428586",
     "title": "Somali and the Forest Spirit",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42203": {
+    "imdb_id": "tt10347622",
+    "title": "If It's for My Daughter, I'd Even Defeat a Demon Lord",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -21834,6 +21968,10 @@
     "title": "Re: Stage! Dream Days"
   },
   "42281": {
+    "imdb_id": "tt13799316",
+    "title": "Try Knights",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "42292": {
     "imdb_id": "tt10707854",
@@ -22211,6 +22349,10 @@
     "fromEpisode": 1
   },
   "42546": {
+    "imdb_id": "tt13070158",
+    "title": "Days of Urashimasakatasen",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "42548": {
     "imdb_id": "tt10814346",
@@ -22749,6 +22891,16 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "42851": {
+    "imdb_id": "tt10627720",
+    "title": "Ne Zha"
+  },
+  "42879": {
+    "imdb_id": "tt13752200",
+    "title": "ARP Backstage Pass",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42899": {
     "imdb_id": "tt12098786",
     "title": "Yu-Gi-Oh! Sevens",
@@ -22804,6 +22956,12 @@
     "imdb_id": "tt11448214",
     "title": "Rent-A-Girlfriend",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43038": {
+    "imdb_id": "tt12390492",
+    "title": "Hakushon Daimaou 2020",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "43042": {
@@ -23645,6 +23803,10 @@
     "title": "Back Arrow",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "43717": {
+    "imdb_id": "tt13404868",
+    "title": "The House of the Lost on the Cape"
   },
   "43718": {
     "imdb_id": "tt13357124",
@@ -24906,6 +25068,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45281": {
+    "imdb_id": "tt19798344",
+    "title": "Meitantei Conan: Zero no Tea Time",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45296": {
     "imdb_id": "tt19606992",
     "title": "Shadowverse Flame",
@@ -25458,6 +25626,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46405": {
+    "imdb_id": "tt13450886",
+    "title": "SD Gundam World Heroes",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "46463": {
     "imdb_id": "tt22265884",
     "title": "Human Bug Daigaku",
@@ -25521,6 +25695,10 @@
     "title": "Tondemo Skill de Isekai Hourou Meshi",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "46780": {
+    "imdb_id": "tt25041020",
+    "title": "Violet Evergarden: Recollections"
   },
   "46783": {
     "imdb_id": "tt23862502",
