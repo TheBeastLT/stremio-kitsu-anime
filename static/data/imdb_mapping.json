@@ -22909,12 +22909,14 @@
   },
   "43005": {
     "imdb_id": "tt12432936",
+    "fanartLogoId": "117540",
     "title": "The Misfit of Demon King Academy",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "44125": {
     "imdb_id": "tt12432936",
+    "fanartLogoId": "164489",
     "title": "The Misfit of Demon King Academy",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -23085,8 +23087,8 @@
   "43755": {
     "imdb_id": "tt11328872",
     "title": "In/Spectre",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   "42524": {
     "imdb_id": "tt12213092",
@@ -24036,6 +24038,12 @@
     "imdb_id": "tt13628870",
     "title": "Harem in the Labyrinth of Another World",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46222": {
+    "imdb_id": "tt13628870",
+    "title": "Harem in the Labyrinth of Another World",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "43929": {
@@ -25181,6 +25189,10 @@
     "fromEpisode": 1
   },
   "45509": {
+    "imdb_id": "tt26140070",
+    "title": "Mononogatari",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "45514": {
     "imdb_id": "tt16148546",
@@ -25205,6 +25217,10 @@
     "fromEpisode": 1
   },
   "45548": {
+    "imdb_id": "tt25971150",
+    "title": "Reborn to Master the Blade: From Hero-King to Extraordinary Squire",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "45551": {
     "imdb_id": "tt16409202",
