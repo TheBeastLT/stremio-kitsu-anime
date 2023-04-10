@@ -17218,10 +17218,6 @@
     "imdb_id": "tt6631966",
     "title": "Bananya"
   },
-  "11913": {
-    "imdb_id": "tt5970298",
-    "title": "The Ancient Magus Bride"
-  },
   "11914": {
     "imdb_id": "tt6783056",
     "title": "Eromanga Sensei",
@@ -18619,6 +18615,12 @@
     "imdb_id": "tt7326322",
     "title": "The Ancient Magus' Bride",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "11913": {
+    "imdb_id": "tt7326322",
+    "title": "The Ancient Magus' Bride",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "44168": {
@@ -21459,6 +21461,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "44289": {
+    "imdb_id": "tt9679542",
+    "title": "Dr. Stone",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "43682": {
     "imdb_id": "tt9679542",
     "title": "Dr. Stone",
@@ -23273,6 +23281,12 @@
     "title": "TONIKAWA: Over the Moon for You",
     "fromSeason": 0,
     "fromEpisode": 14
+  },
+  "45455": {
+    "imdb_id": "tt12311976",
+    "title": "TONIKAWA: Over the Moon for You",
+    "fromSeason": 0,
+    "fromEpisode": 15
   },
   "43062": {
     "imdb_id": "tt12080774",
