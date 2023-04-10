@@ -3742,6 +3742,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46521": {
+    "imdb_id": "tt12299696",
+    "title": "Tokyo Mew Mew New",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "629": {
     "imdb_id": "tt0460384",
     "title": "Uta kata",
@@ -11472,6 +11478,12 @@
     "fromSeason": 0,
     "fromEpisode": 2
   },
+  "43910": {
+    "imdb_id": "tt2703720",
+    "title": "My Teen Romantic Comedy SNAFU",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
   "7172": {
   },
   "7173": {
@@ -18599,7 +18611,15 @@
   },
   "13228": {
     "imdb_id": "tt7326322",
-    "title": "The Ancient Magus' Bride"
+    "title": "The Ancient Magus' Bride",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46436": {
+    "imdb_id": "tt7326322",
+    "title": "The Ancient Magus' Bride",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "44168": {
     "imdb_id": "tt15400722",
@@ -18899,7 +18919,15 @@
   },
   "13457": {
     "imdb_id": "tt7088332",
-    "title": "Isekai wa smartphone to tomo ni."
+    "title": "Isekai wa smartphone to tomo ni.",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46057": {
+    "imdb_id": "tt7088332",
+    "title": "Isekai wa smartphone to tomo ni.",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "13463": {
     "imdb_id": "tt8254088",
@@ -19870,6 +19898,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "46068": {
+    "imdb_id": "tt8699270",
+    "title": "Ultraman",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "14129": {
     "imdb_id": "tt9266104",
     "title": "After Owarimonogatari"
@@ -20818,6 +20852,12 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "45866": {
+    "imdb_id": "tt9335498",
+    "title": "Demon Slayer: Kimetsu No Yaiba",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "44063": {
     "imdb_id": "tt15130616",
     "title": "Kimetsu Gakuen: Valentine-hen",
@@ -21016,6 +21056,12 @@
     "imdb_id": "tt10147790",
     "title": "Mix: Meisei Story",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46308": {
+    "imdb_id": "tt10147790",
+    "title": "Mix: Meisei Story",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "41938": {
@@ -23129,7 +23175,13 @@
   "44537": {
     "imdb_id": "tt12792684",
     "title": "Love Live! Nijigasaki High School Idol Club",
-    "fromSeason": 1,
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "46774": {
+    "imdb_id": "tt12792684",
+    "title": "Love Live! Nijigasaki High School Idol Club",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "42922": {
@@ -23198,8 +23250,16 @@
   },
   "43034": {
     "imdb_id": "tt12311976",
+    "fanartLogoId": "116419",
     "title": "TONIKAWA: Over the Moon for You",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45415": {
+    "imdb_id": "tt12311976",
+    "fanartLogoId": "169317",
+    "title": "TONIKAWA: Over the Moon for You",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "43833": {
@@ -23306,6 +23366,12 @@
     "imdb_id": "tt12415504",
     "title": "Kuma Kuma Kuma Bear",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43863": {
+    "imdb_id": "tt12415504",
+    "title": "Kuma Kuma Kuma Bear",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "43211": {
@@ -23514,6 +23580,12 @@
     "imdb_id": "tt13167196",
     "title": "Edens Zero",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45847": {
+    "imdb_id": "tt13167196",
+    "title": "Edens Zero",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "43530": {
@@ -25440,8 +25512,16 @@
   },
   "45995": {
     "imdb_id": "tt21369972",
+    "fanartLogoId": "166754",
     "title": "Eternal Boys",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "47212": {
+    "imdb_id": "tt21369972",
+    "fanartLogoId": "169851",
+    "title": "Eternal Boys",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "46001": {
