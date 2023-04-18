@@ -4772,6 +4772,14 @@
     "fromSeason": 0,
     "fromEpisode": 2
   },
+  "1897": {
+    "imdb_id": "tt0160865",
+    "title": "New Kimagure Orange Road: Summer's Beginning"
+  },
+  "2228": {
+    "imdb_id": "tt0095448",
+    "title": "Kimagure Orange Road: I Want to Return to That Day"
+  },
   "973": {
     "imdb_id": "tt0142183",
     "title": "Super Dimensional Fortress Macross"
@@ -6851,10 +6859,6 @@
   "2223": {
     "imdb_id": "tt1024215",
     "title": "Ghost in the Shell: Stand Alone Complex - The Laughing Man"
-  },
-  "2228": {
-    "imdb_id": "tt0095448",
-    "title": "Kimagure Orange Road: I Want to Return to That Day"
   },
   "2230": {
     "imdb_id": "tt0093399",
@@ -18735,7 +18739,7 @@
     "imdb_id": "tt8354164",
     "title": "Princess Principal Crown Handler: Chapter 1"
   },
-  "45704": {
+  "44680": {
     "imdb_id": "tt14031960",
     "title": "Princess Principal Crown Handler: Chapter 2"
   },
@@ -24078,6 +24082,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "47257": {
+    "imdb_id": "tt27417791",
+    "title": "Alice Gear Aegis Expansion",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "43847": {
     "imdb_id": "tt13715764",
     "title": "Mahouka Koukou no Yuutousei",
@@ -25896,6 +25906,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46317": {
+    "imdb_id": "tt27504251",
+    "title": "Ranking of Kings: The Treasure Chest of Courage",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "46323": {
     "imdb_id": "tt22445494",
     "title": "Berserk: The Golden Age Arc - Memorial Edition",
@@ -26013,6 +26029,10 @@
     "fromEpisode": 1
   },
   "46731": {
+    "imdb_id": "tt27497540",
+    "title": "The Marginal Service",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "46732": {
     "imdb_id": "tt27427810",
