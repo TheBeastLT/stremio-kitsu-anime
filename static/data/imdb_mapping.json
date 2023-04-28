@@ -14443,6 +14443,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "10070": {
+    "imdb_id": "tt4046802",
+    "title": "Mysterious Joker",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "11393": {
+    "imdb_id": "tt4046802",
+    "title": "Mysterious Joker",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "12361": {
+    "imdb_id": "tt4046802",
+    "title": "Mysterious Joker",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "8666": {
     "imdb_id": "tt5173790",
     "title": "Lance N' Masques"
