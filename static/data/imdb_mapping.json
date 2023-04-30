@@ -9185,6 +9185,24 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "5060": {
+    "imdb_id": "tt1685408",
+    "title": "Mitsudomoe",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5765": {
+    "imdb_id": "tt1685408",
+    "title": "Mitsudomoe",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "5721": {
+    "imdb_id": "tt1685408",
+    "title": "Mitsudomoe",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "5067": {
     "imdb_id": "tt1639471",
     "title": "Arakawa Under the Bridge",
@@ -25265,6 +25283,12 @@
   "45281": {
     "imdb_id": "tt19798344",
     "title": "Meitantei Conan: Zero no Tea Time",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "45282": {
+    "imdb_id": "tt26346675",
+    "title": "Detective Conan: The Culprit Hanzawa",
     "fromSeason": 1,
     "fromEpisode": 1
   },
