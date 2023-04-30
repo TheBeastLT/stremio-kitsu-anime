@@ -1795,7 +1795,49 @@
   },
   "268": {
     "imdb_id": "tt4415404",
-    "title": "Di Gi Charat"
+    "title": "Di Gi Charat",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1574": {
+    "imdb_id": "tt4415404",
+    "title": "Di Gi Charat",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "1577": {
+    "imdb_id": "tt4415404",
+    "title": "Di Gi Charat",
+    "fromSeason": 0,
+    "fromEpisode": 5
+  },
+  "1575": {
+    "imdb_id": "tt4415404",
+    "title": "Di Gi Charat",
+    "fromSeason": 0,
+    "fromEpisode": 6
+  },
+  "1576": {
+    "imdb_id": "tt4415404",
+    "title": "Di Gi Charat",
+    "fromSeason": 0,
+    "fromEpisode": 10
+  },
+  "1578": {
+    "imdb_id": "tt4415404",
+    "title": "Di Gi Charat",
+    "fromSeason": 0,
+    "fromEpisode": 14
+  },
+  "1539": {
+    "imdb_id": "tt4415404",
+    "title": "Di Gi Charat",
+    "fromSeason": 0,
+    "fromEpisode": 16
+  },
+  "1572": {
+    "imdb_id": "tt4146056",
+    "title": "Di Gi Charat: A Trip to the Planet"
   },
   "269": {
     "imdb_id": "tt0972633",
@@ -8193,9 +8235,69 @@
   },
   "3453": {
     "imdb_id": "tt1352421",
-    "title": "Natsume yûjinchô",
+    "title": "Natsume's Book of Friends",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "4044": {
+    "imdb_id": "tt1352421",
+    "title": "Natsume's Book of Friends",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6157": {
+    "imdb_id": "tt1352421",
+    "title": "Natsume's Book of Friends",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "6557": {
+    "imdb_id": "tt1352421",
+    "title": "Natsume's Book of Friends",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "11950": {
+    "imdb_id": "tt1352421",
+    "title": "Natsume's Book of Friends",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "13077": {
+    "imdb_id": "tt1352421",
+    "title": "Natsume's Book of Friends",
+    "fromSeason": 6,
+    "fromEpisode": 1
+  },
+  "7747": {
+    "imdb_id": "tt1352421",
+    "title": "Natsume's Book of Friends",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "8054": {
+    "imdb_id": "tt1352421",
+    "title": "Natsume's Book of Friends",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "13143": {
+    "imdb_id": "tt1352421",
+    "title": "Natsume's Book of Friends",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "13757": {
+    "imdb_id": "tt1352421",
+    "title": "Natsume's Book of Friends",
+    "fromSeason": 0,
+    "fromEpisode": 5
+  },
+  "8228": {
+    "imdb_id": "tt1352421",
+    "title": "Natsume's Book of Friends",
+    "fromSeason": 0,
+    "fromEpisode": 7
   },
   "3458": {
     "imdb_id": "tt1324968",
@@ -8542,12 +8644,6 @@
   "6435": {
     "imdb_id": "tt2141749",
     "title": "Inazuma Eleven GO the Movie: The Ultimate Bonds Gryphon"
-  },
-  "4044": {
-    "imdb_id": "tt1352421",
-    "title": "Natsume yûjinchô",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "4072": {
     "imdb_id": "tt1480947",
@@ -10135,12 +10231,6 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
-  "6157": {
-    "imdb_id": "tt1352421",
-    "title": "Natsume yûjinchô",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
   "6160": {
     "imdb_id": "tt1853614",
     "title": "A Letter to Momo"
@@ -10573,12 +10663,6 @@
     "imdb_id": "tt2760784",
     "title": "Blood Lad",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "6557": {
-    "imdb_id": "tt1352421",
-    "title": "Natsume yûjinchô",
-    "fromSeason": 4,
     "fromEpisode": 1
   },
   "6567": {
@@ -12713,10 +12797,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "7747": {
-    "imdb_id": "tt5837794",
-    "title": "Natsume Yujin-cho OVA"
-  },
   "7753": {
     "imdb_id": "tt1209393",
     "title": "Vampire Knight",
@@ -13556,10 +13636,6 @@
   "44397": {
     "imdb_id": "tt15497404",
     "title": "Mahouka Koukou no Rettousei: Tsuioku Hen"
-  },
-  "8054": {
-    "imdb_id": "tt5837794",
-    "title": "Natsume Yujin-cho OVA"
   },
   "8057": {
     "imdb_id": "tt3399712",
@@ -14651,6 +14727,10 @@
     "title": "Seraph of the End",
     "fromSeason": 0,
     "fromEpisode": 12
+  },
+  "8737": {
+    "imdb_id": "tt3615160",
+    "title": "Genocidal Organ"
   },
   "8738": {
     "imdb_id": "tt3981544",
@@ -17340,12 +17420,6 @@
     "imdb_id": "tt6135350",
     "title": "Occultic;Nine"
   },
-  "11950": {
-    "imdb_id": "tt1352421",
-    "title": "Natsume yûjinchô",
-    "fromSeason": 5,
-    "fromEpisode": 1
-  },
   "11951": {
     "imdb_id": "tt6401430",
     "title": "Hand Shakers",
@@ -18544,12 +18618,6 @@
     "imdb_id": "tt7161104",
     "title": "Welcome to the Ballroom"
   },
-  "13077": {
-    "imdb_id": "tt1352421",
-    "title": "Natsume yûjinchô",
-    "fromSeason": 6,
-    "fromEpisode": 1
-  },
   "13078": {
     "imdb_id": "tt11317074",
     "title": "Full-Time Magister",
@@ -18614,7 +18682,6 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
-  "13143": {},
   "13148": {
   },
   "13170": {
@@ -19563,7 +19630,6 @@
   },
   "13756": {
   },
-  "13757": {},
   "13760": {
     "imdb_id": "tt1305826",
     "title": "Adventure Time",
@@ -20022,6 +20088,12 @@
     "imdb_id": "tt8400680",
     "title": "Shoujo Kageki Revue Starlight",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41897": {
+    "imdb_id": "tt8400680",
+    "title": "Shoujo Kageki Revue Starlight",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "42681": {
@@ -22218,25 +22290,29 @@
   },
   "42329": {
     "imdb_id": "tt11349866",
-    "title": "Sorcerous Stabber Orphen: Battle of Kimluck",
+    "fanartLogoId": "107750",
+    "title": "Sorcerous Stabber Orphen",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "43097": {
     "imdb_id": "tt11349866",
-    "title": "Sorcerous Stabber Orphen: Battle of Kimluck",
+    "fanartLogoId": "169942",
+    "title": "Sorcerous Stabber Orphen",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "46549": {
     "imdb_id": "tt11349866",
-    "title": "Sorcerous Stabber Orphen: Battle of Kimluck",
+    "fanartLogoId": "169324",
+    "title": "Sorcerous Stabber Orphen",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "47282": {
     "imdb_id": "tt11349866",
-    "title": "Sorcerous Stabber Orphen: Battle of Kimluck",
+    "fanartLogoId": "107750",
+    "title": "Sorcerous Stabber Orphen",
     "fromSeason": 4,
     "fromEpisode": 1
   },
