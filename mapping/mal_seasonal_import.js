@@ -65,6 +65,7 @@ async function createImdbMappingEntry(malEntry) {
     };
   }
   const imdbMeta = await getImdbMeta(foundImdbId).catch((err) => undefined);
+  const hasVideos = kitsuMetadata?.videos?.length > 1 || kitsuMetadata?.animeType === 'TV';
   return {
     malId: malEntry.malId,
     malTitle: malEntry.title,
@@ -73,8 +74,8 @@ async function createImdbMappingEntry(malEntry) {
     animeType: kitsuMetadata?.animeType,
     imdb_id: foundImdbId,
     title: imdbMeta?.title,
-    fromSeason: kitsuMetadata?.videos?.length > 1 ? 1 : undefined,
-    fromEpisode: kitsuMetadata?.videos?.length > 1 ? 1 : undefined,
+    fromSeason: hasVideos ? 1 : undefined,
+    fromEpisode: hasVideos ? 1 : undefined,
   };
 }
 
@@ -160,4 +161,4 @@ async function sequence(promises) {
       promise.then(result => func().then(Array.prototype.concat.bind(result))), Promise.resolve([]));
 }
 
-importMalSeason('2023/spring').then(season => `Finished importing MAL ${season}`);
+importMalSeason('2023/summer').then(season => `Finished importing MAL ${season}`);
