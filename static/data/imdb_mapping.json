@@ -21108,6 +21108,10 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "46206": {
+    "imdb_id": "tt23770418",
+    "title": "Kaguya-sama: Love Is War - The First Kiss That Never Ends"
+  },
   "41379": {
     "imdb_id": "tt10265146",
     "title": "Miss Caretaker of Sunohara-sou",
@@ -23776,6 +23780,10 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "43296": {
+    "imdb_id": "tt10734928",
+    "title": "The Legend of Hei"
+  },
   "43301": {
     "imdb_id": "tt12728856",
     "title": "The Hidden Dungeon Only I Can Enter",
@@ -24474,6 +24482,12 @@
     "imdb_id": "tt13851958",
     "title": "Vivy: Fluorite Eye's Song",
     "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "43944": {
+    "imdb_id": "tt13929756",
+    "title": "Skull Island",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "43966": {
@@ -26395,6 +26409,12 @@
   "46509": {
     "imdb_id": "tt22266604",
     "title": "VazzRock the Animation",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46516": {
+    "imdb_id": "tt27442011",
+    "title": "Long Zu",
     "fromSeason": 1,
     "fromEpisode": 1
   },
