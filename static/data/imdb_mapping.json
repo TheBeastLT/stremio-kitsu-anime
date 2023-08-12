@@ -8975,6 +8975,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "5367": {
+    "imdb_id": "tt1655610",
+    "title": "Baka and Test: Summon the Beasts",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "4572": {
     "imdb_id": "tt1636815",
     "title": "Detective Conan: The Lost Ship in the Sky"
@@ -9329,6 +9335,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6001": {
+    "imdb_id": "tt1738419",
+    "title": "Bakuman.",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6714": {
+    "imdb_id": "tt1738419",
+    "title": "Bakuman.",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "5090": {
     "imdb_id": "tt1568921",
     "title": "Arrietty"
@@ -9445,12 +9463,6 @@
   "5356": {
     "imdb_id": "tt5328606",
     "title": "Digimon Savers 3D: Digital World Kiki Ippatsu!"
-  },
-  "5367": {
-    "imdb_id": "tt1655610",
-    "title": "Baka and Test: Summon the Beasts",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "5374": {
     "imdb_id": "tt1899022",
@@ -10045,12 +10057,6 @@
   "6000": {
     "imdb_id": "tt1798188",
     "title": "From Up on Poppy Hill"
-  },
-  "6001": {
-    "imdb_id": "tt1738419",
-    "title": "Bakuman.",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "6002": {
     "imdb_id": "tt1899047",
@@ -11048,12 +11054,6 @@
   "6711": {
     "imdb_id": "tt2140203",
     "title": "Wolf Children"
-  },
-  "6714": {
-    "imdb_id": "tt1738419",
-    "title": "Bakuman.",
-    "fromSeason": 3,
-    "fromEpisode": 1
   },
   "7623": {
     "imdb_id": "tt2959410",
@@ -16473,8 +16473,8 @@
   "47258": {
     "imdb_id": "tt5679720",
     "title": "Bungou Stray Dogs",
-    "fromSeason": 4,
-    "fromEpisode": 1
+    "fromSeason": 3,
+    "fromEpisode": 15
   },
   "12051": {
     "imdb_id": "tt5679720",
