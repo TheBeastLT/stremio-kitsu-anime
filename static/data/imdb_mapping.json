@@ -22354,11 +22354,23 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "47694": {
+    "imdb_id": "tt13293588",
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "fromSeason": 2,
+    "fromEpisode": 13
+  },
   "45492": {
     "imdb_id": "tt13293588",
     "title": "Mushoku Tensei: Jobless Reincarnation",
     "fromSeason": 0,
     "fromEpisode": 1
+  },
+  "47683": {
+    "imdb_id": "tt13293588",
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "42325": {
     "imdb_id": "tt2549176",
@@ -24565,8 +24577,8 @@
   "45229": {
     "imdb_id": "tt13971512",
     "title": "Shinigami Bocchan to Kuro Maid",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   "44064": {
     "imdb_id": "tt13984000",
@@ -26535,6 +26547,10 @@
     "fromEpisode": 1
   },
   "46763": {
+    "imdb_id": "tt28278738",
+    "title": "Yumemiru Danshi wa Genjitsushugisha",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "46780": {
     "imdb_id": "tt25041020",
