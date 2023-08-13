@@ -1510,7 +1510,7 @@
   "5037": {
     "imdb_id": "tt0486171",
     "fanartLogoId": "96247",
-    "title": "Ikki 96246: Dragon Destiny",
+    "title": "Ikki tosen: Dragon Destiny",
     "fromSeason": 4,
     "fromEpisode": 1
   },
@@ -2625,19 +2625,19 @@
   },
   "422": {
     "imdb_id": "tt0832449",
-    "title": "One Piece: Adventure on Nejimaki Island"
+    "title": "One Piece: Adventures on Clockwork Island"
   },
   "423": {
     "imdb_id": "tt0997084",
-    "title": "One piece: Chinjou shima no chopper oukoku"
+    "title": "One piece: Chopper's Kingdom in the Strange Animal Island"
   },
   "424": {
     "imdb_id": "tt1006926",
-    "title": "One piece: Dead end no bôken"
+    "title": "One piece: The Adventure of Dead End"
   },
   "425": {
     "imdb_id": "tt1010435",
-    "title": "One piece: Norowareta seiken"
+    "title": "One piece: The Curse of the Sacred Sword"
   },
   "426": {
     "imdb_id": "tt1018764",
@@ -2671,13 +2671,13 @@
     "imdb_id": "tt5251328",
     "title": "One Piece Film: Gold"
   },
-  "45513": {
-    "imdb_id": "tt16183464",
-    "title": "One Piece Film: Red"
-  },
   "42061": {
     "imdb_id": "tt9430698",
     "title": "One Piece: Stampede"
+  },
+  "45513": {
+    "imdb_id": "tt16183464",
+    "title": "One Piece Film: Red"
   },
   "428": {
     "imdb_id": "tt1012788",
@@ -8133,7 +8133,7 @@
   },
   "3252": {
     "imdb_id": "tt2458948",
-    "title": "Evangerion shin gekijoban"
+    "title": "Evangelion: 3.0+1.0 Thrice Upon a Time"
   },
   "3265": {
     "imdb_id": "tt0296416",
@@ -9836,6 +9836,119 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "6893": {
+    "imdb_id": "tt2549176",
+    "title": "Cardfight!! Vanguard",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "7283": {
+    "imdb_id": "tt2549176",
+    "title": "Cardfight!! Vanguard",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "8264": {
+    "imdb_id": "tt2549176",
+    "title": "Cardfight!! Vanguard",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "9781": {
+    "imdb_id": "tt2549176",
+    "title": "Cardfight!! Vanguard",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  "11220": {
+    "imdb_id": "tt2549176",
+    "title": "Cardfight!! Vanguard",
+    "fromSeason": 6,
+    "fromEpisode": 1
+  },
+  "11857": {
+    "imdb_id": "tt2549176",
+    "title": "Cardfight!! Vanguard",
+    "fromSeason": 7,
+    "fromEpisode": 1
+  },
+  "12564": {
+    "imdb_id": "tt2549176",
+    "title": "Cardfight!! Vanguard",
+    "fromSeason": 8,
+    "fromEpisode": 1
+  },
+  "13786": {
+    "imdb_id": "tt2549176",
+    "title": "Cardfight!! Vanguard",
+    "fromSeason": 9,
+    "fromEpisode": 1
+  },
+  "41145": {
+    "imdb_id": "tt2549176",
+    "title": "Cardfight!! Vanguard",
+    "fromSeason": 10,
+    "fromEpisode": 1
+  },
+  "42325": {
+    "imdb_id": "tt2549176",
+    "title": "Cardfight!! Vanguard",
+    "fromSeason": 11,
+    "fromEpisode": 1
+  },
+  "42452": {
+    "imdb_id": "tt2549176",
+    "title": "Cardfight!! Vanguard",
+    "fromSeason": 12,
+    "fromEpisode": 1
+  },
+  "43061": {
+    "imdb_id": "tt2549176",
+    "tvdb_id": "379742",
+    "title": "Cardfight!! Vanguard Gaiden: If",
+    "fromSeason": 13,
+    "fromEpisode": 1
+  },
+  "44181": {
+    "imdb_id": "tt2549176",
+    "tvdb_id": "400398",
+    "fanartLogoId": "131585",
+    "title": "Vanguard OverDress",
+    "fromSeason": 14,
+    "fromEpisode": 1
+  },
+  "44521": {
+    "imdb_id": "tt2549176",
+    "tvdb_id": "400398",
+    "fanartLogoId": "131585",
+    "title": "Vanguard OverDress",
+    "fromSeason": 14,
+    "fromEpisode": 13
+  },
+  "45214": {
+    "imdb_id": "tt2549176",
+    "tvdb_id": "400398",
+    "fanartLogoId": "153851",
+    "title": "Vanguard OverDress",
+    "fromSeason": 15,
+    "fromEpisode": 1
+  },
+  "45215": {
+    "imdb_id": "tt2549176",
+    "tvdb_id": "400398",
+    "fanartLogoId": "153851",
+    "title": "Vanguard OverDress",
+    "fromSeason": 15,
+    "fromEpisode": 14
+  },
+  "46186": {
+    "imdb_id": "tt2549176",
+    "tvdb_id": "400398",
+    "fanartLogoId": "153851",
+    "title": "Vanguard OverDress",
+    "fromSeason": 15,
+    "fromEpisode": 26
+  },
   "5810": {
     "imdb_id": "tt1909796",
     "title": "K-On! The Movie"
@@ -11161,12 +11274,6 @@
     "imdb_id": "tt2309320",
     "title": "From the New World"
   },
-  "6893": {
-    "imdb_id": "tt2549176",
-    "title": "Cardfight!! Vanguard",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "6896": {
     "imdb_id": "tt2269368",
     "title": "Hagure Yusha no Aestetica",
@@ -11920,12 +12027,6 @@
     "imdb_id": "tt2904656",
     "title": "Brothers Conflict",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "7283": {
-    "imdb_id": "tt2549176",
-    "title": "Cardfight!! Vanguard",
-    "fromSeason": 3,
     "fromEpisode": 1
   },
   "7284": {
@@ -14001,12 +14102,6 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
-  "8264": {
-    "imdb_id": "tt2549176",
-    "title": "Cardfight!! Vanguard",
-    "fromSeason": 4,
-    "fromEpisode": 1
-  },
   "8267": {
     "imdb_id": "tt3590246",
     "title": "Futsuu no Joshikousei ga [Locodol] Yatte Mita",
@@ -14923,12 +15018,6 @@
     "imdb_id": "tt4266572",
     "title": "Shaolin Wuzang",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "9781": {
-    "imdb_id": "tt2549176",
-    "title": "Cardfight!! Vanguard",
-    "fromSeason": 5,
     "fromEpisode": 1
   },
   "9786": {
@@ -16286,12 +16375,6 @@
     "imdb_id": "tt2362887",
     "title": "Uta no prince-sama - maji love 1000%"
   },
-  "11220": {
-    "imdb_id": "tt2549176",
-    "title": "Cardfight!! Vanguard",
-    "fromSeason": 6,
-    "fromEpisode": 1
-  },
   "11234": {
     "imdb_id": "tt5238484",
     "title": "Comet Lucifer"
@@ -17301,12 +17384,6 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
-  "11857": {
-    "imdb_id": "tt2549176",
-    "title": "Cardfight!! Vanguard",
-    "fromSeason": 7,
-    "fromEpisode": 1
-  },
   "11870": {
     "imdb_id": "tt5853222",
     "title": "Sweetness and Lightning"
@@ -18285,12 +18362,6 @@
   "12563": {
     "imdb_id": "tt2480498",
     "title": "Life of Crime"
-  },
-  "12564": {
-    "imdb_id": "tt2549176",
-    "title": "Cardfight!! Vanguard",
-    "fromSeason": 8,
-    "fromEpisode": 1
   },
   "12565": {
     "imdb_id": "tt6096128",
@@ -19742,12 +19813,6 @@
     "imdb_id": "tt8941186",
     "title": "Sengoku Night Blood"
   },
-  "13786": {
-    "imdb_id": "tt2549176",
-    "title": "Cardfight!! Vanguard",
-    "fromSeason": 9,
-    "fromEpisode": 1
-  },
   "13788": {
     "imdb_id": "tt7351628",
     "title": "Our love has always been 10cm apart."
@@ -20374,6 +20439,72 @@
     "fromSeason": 11,
     "fromEpisode": 1
   },
+  "46149": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 12,
+    "fromEpisode": 1
+  },
+  "46150": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 13,
+    "fromEpisode": 1
+  },
+  "46536": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 14,
+    "fromEpisode": 1
+  },
+  "46535": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 15,
+    "fromEpisode": 1
+  },
+  "46537": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 16,
+    "fromEpisode": 1
+  },
+  "46538": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 17,
+    "fromEpisode": 1
+  },
+  "46539": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 18,
+    "fromEpisode": 1
+  },
+  "46557": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 19,
+    "fromEpisode": 1
+  },
+  "46558": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 20,
+    "fromEpisode": 1
+  },
+  "46813": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 21,
+    "fromEpisode": 1
+  },
+  "47595": {
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 22,
+    "fromEpisode": 1
+  },
   "41007": {
     "imdb_id": "tt8076344",
     "title": "Penguin Highway"
@@ -20722,12 +20853,6 @@
     "imdb_id": "tt12826588",
     "title": "Yo-kai Watch Shadowside",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "41145": {
-    "imdb_id": "tt2549176",
-    "title": "Cardfight!! Vanguard",
-    "fromSeason": 10,
     "fromEpisode": 1
   },
   "41146": {
@@ -22372,12 +22497,6 @@
     "fromSeason": 0,
     "fromEpisode": 2
   },
-  "42325": {
-    "imdb_id": "tt2549176",
-    "title": "Cardfight!! Vanguard",
-    "fromSeason": 11,
-    "fromEpisode": 1
-  },
   "42328": {
     "imdb_id": "tt10973152",
     "title": "Assassins Pride"
@@ -22973,59 +23092,6 @@
     "title": "Sakura Wars: The Animation",
     "fromSeason": 1,
     "fromEpisode": 1
-  },
-  "42452": {
-    "imdb_id": "tt2549176",
-    "title": "Cardfight!! Vanguard",
-    "fromSeason": 12,
-    "fromEpisode": 1
-  },
-  "43061": {
-    "imdb_id": "tt2549176",
-    "tvdb_id": "379742",
-    "title": "Cardfight!! Vanguard Gaiden: If",
-    "fromSeason": 13,
-    "fromEpisode": 1
-  },
-  "44181": {
-    "imdb_id": "tt2549176",
-    "tvdb_id": "400398",
-    "fanartLogoId": "131585",
-    "title": "Vanguard OverDress",
-    "fromSeason": 14,
-    "fromEpisode": 1
-  },
-  "44521": {
-    "imdb_id": "tt2549176",
-    "tvdb_id": "400398",
-    "fanartLogoId": "131585",
-    "title": "Vanguard OverDress",
-    "fromSeason": 14,
-    "fromEpisode": 13
-  },
-  "45214": {
-    "imdb_id": "tt2549176",
-    "tvdb_id": "400398",
-    "fanartLogoId": "153851",
-    "title": "Vanguard OverDress",
-    "fromSeason": 15,
-    "fromEpisode": 1
-  },
-  "45215": {
-    "imdb_id": "tt2549176",
-    "tvdb_id": "400398",
-    "fanartLogoId": "153851",
-    "title": "Vanguard OverDress",
-    "fromSeason": 15,
-    "fromEpisode": 14
-  },
-  "46186": {
-    "imdb_id": "tt2549176",
-    "tvdb_id": "400398",
-    "fanartLogoId": "153851",
-    "title": "Vanguard OverDress",
-    "fromSeason": 15,
-    "fromEpisode": 26
   },
   "43022": {
     "imdb_id": "tt13533532",
