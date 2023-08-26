@@ -4900,7 +4900,15 @@
   },
   "1015": {
     "imdb_id": "tt0331154",
-    "title": "Tenchi Muyô! GXP"
+    "title": "Tenchi Muyô! GXP",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "47499": {
+    "imdb_id": "tt0331154",
+    "title": "Tenchi Muyô! GXP",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "1017": {
     "imdb_id": "tt0257294",
@@ -12069,21 +12077,24 @@
   },
   "7314": {
     "imdb_id": "tt2622982",
+    "fanartLogoId": "56313",
     "title": "The Devil Is a Part-Timer!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "44113": {
     "imdb_id": "tt2622982",
+    "fanartLogoId": "158206",
     "title": "The Devil Is a Part-Timer!",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "46550": {
     "imdb_id": "tt2622982",
+    "fanartLogoId": "158206",
     "title": "The Devil Is a Part-Timer!",
-    "fromSeason": 3,
-    "fromEpisode": 1
+    "fromSeason": 2,
+    "fromEpisode": 13
   },
   "7325": {
     "imdb_id": "tt2703708",
@@ -22463,24 +22474,28 @@
   },
   "42323": {
     "imdb_id": "tt13293588",
+    "fanartLogoId": "126175",
     "title": "Mushoku Tensei: Jobless Reincarnation",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "43907": {
     "imdb_id": "tt13293588",
+    "fanartLogoId": "126175",
     "title": "Mushoku Tensei: Jobless Reincarnation",
     "fromSeason": 1,
     "fromEpisode": 12
   },
   "45950": {
     "imdb_id": "tt13293588",
+    "fanartLogoId": "174171",
     "title": "Mushoku Tensei: Jobless Reincarnation",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "47694": {
     "imdb_id": "tt13293588",
+    "fanartLogoId": "174171",
     "title": "Mushoku Tensei: Jobless Reincarnation",
     "fromSeason": 2,
     "fromEpisode": 13
@@ -23496,12 +23511,14 @@
   },
   "42117": {
     "imdb_id": "tt11328872",
+    "fanartLogoId": "107171",
     "title": "In/Spectre",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "43755": {
     "imdb_id": "tt11328872",
+    "fanartLogoId": "169319",
     "title": "In/Spectre",
     "fromSeason": 1,
     "fromEpisode": 13
@@ -23649,6 +23666,12 @@
     "title": "TONIKAWA: Over the Moon for You",
     "fromSeason": 0,
     "fromEpisode": 15
+  },
+  "47622": {
+    "imdb_id": "tt12311976",
+    "title": "TONIKAWA: Over the Moon for You",
+    "fromSeason": 0,
+    "fromEpisode": 16
   },
   "43062": {
     "imdb_id": "tt12080774",
@@ -26465,6 +26488,10 @@
     "fromEpisode": 1
   },
   "46456": {
+    "imdb_id": "tt28254867",
+    "title": "Jitsu wa Ore, Saikyou deshita?",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "46458": {
     "imdb_id": "tt22087138",
@@ -26582,6 +26609,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46685": {
+    "imdb_id": "tt28266753",
+    "title": "Ayaka",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "46689": {
     "imdb_id": "tt23132598",
     "title": "Higeki no Genkyo to naru Saikyo Gedo Last Boss Joo wa Min no tame ni Tsukushimasu",
@@ -26657,6 +26690,10 @@
     "fromEpisode": 1
   },
   "46970": {
+    "imdb_id": "tt28265657",
+    "title": "Suki na Ko ga Megane wo Wasureta",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "46992": {
     "imdb_id": "tt27462737",
@@ -26737,7 +26774,5 @@
   "47557": {
     "imdb_id": "tt28055106",
     "title": "Ôyukiumi no Kaina: Hoshi no Kenja"
-  },
-  "47622": {
   }
 }
