@@ -3081,6 +3081,7 @@
   },
   "46859": {
     "imdb_id": "tt0168366",
+    "fanartLogoId": "177186",
     "title": "Pokémon",
     "fromSeason": 20,
     "fromEpisode": 1
@@ -16741,8 +16742,16 @@
   },
   "11432": {
     "imdb_id": "tt5871330",
+    "fanartLogoId": "90011",
     "title": "Amanchu!",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "14015": {
+    "imdb_id": "tt5871330",
+    "fanartLogoId": "177174",
+    "title": "Amanchu!",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "11433": {
@@ -19227,14 +19236,23 @@
   },
   "13480": {
     "imdb_id": "tt7742120",
+    "fanartLogoId": "140329",
     "title": "Laid-Back Camp",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "41976": {
     "imdb_id": "tt7742120",
+    "fanartLogoId": "140327",
     "title": "Laid-Back Camp",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "46649": {
+    "imdb_id": "tt7742120",
+    "fanartLogoId": "177188",
+    "title": "Laid-Back Camp",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "41068": {
@@ -20017,12 +20035,6 @@
     "imdb_id": "tt6296094",
     "title": "Lastman",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "14015": {
-    "imdb_id": "tt5871330",
-    "title": "Amanchu!",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "14018": {
@@ -21546,7 +21558,7 @@
     "fromEpisode": 1
   },
   "41978": {
-    "imdb_id": "tt11742122",
+    "imdb_id": "tt10814148",
     "title": "Heya Camp",
     "fromSeason": 1,
     "fromEpisode": 1
