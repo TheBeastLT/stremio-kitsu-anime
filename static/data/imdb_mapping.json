@@ -17051,6 +17051,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "13425": {
+    "imdb_id": "tt2580046",
+    "title": "Miraculous: Tales of Ladybug & Cat Noir",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42156": {
+    "imdb_id": "tt2580046",
+    "title": "Miraculous: Tales of Ladybug & Cat Noir",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "44436": {
+    "imdb_id": "tt2580046",
+    "title": "Miraculous: Tales of Ladybug & Cat Noir",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "11578": {
     "imdb_id": "tt5897304",
     "fanartLogoId": "63740",
@@ -19148,18 +19166,6 @@
     "imdb_id": "tt7839458",
     "title": "Mahôjin guru guru ",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "13425": {
-    "imdb_id": "tt2580046",
-    "title": "Miraculous: Tales of Ladybug & Cat Noir",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  "42156": {
-    "imdb_id": "tt2580046",
-    "title": "Miraculous: Tales of Ladybug & Cat Noir",
-    "fromSeason": 3,
     "fromEpisode": 1
   },
   "13426": {
@@ -24390,6 +24396,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46145": {
+    "imdb_id": "tt13622982",
+    "title": "Star Wars: Visions",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "43807": {
     "imdb_id": "tt12415562",
     "title": "LBX Girls",
@@ -26072,6 +26084,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45932": {
+    "imdb_id": "tt11247158",
+    "title": "The Legend of Vox Machina",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46861": {
+    "imdb_id": "tt11247158",
+    "title": "The Legend of Vox Machina",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "45956": {
     "imdb_id": "tt18561422",
     "title": "Vermeil in Gold - A Magician Pushes Through the Magical World With the Strongest Disaster",
@@ -26799,5 +26823,11 @@
   "47557": {
     "imdb_id": "tt28055106",
     "title": "Ôyukiumi no Kaina: Hoshi no Kenja"
+  },
+  "47711": {
+    "imdb_id": "tt14681924",
+    "title": "My Adventures with Superman",
+    "fromSeason": 1,
+    "fromEpisode": 1
   }
 }
