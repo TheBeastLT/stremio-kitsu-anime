@@ -11884,6 +11884,42 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "11868": {
+    "imdb_id": "tt9864008",
+    "title": "Aikatsu Stars!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "41015": {
+    "imdb_id": "tt9864132",
+    "title": "Aikatsu Friends!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42169": {
+    "imdb_id": "tt9864132",
+    "title": "Aikatsu Friends!",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42497": {
+    "imdb_id": "tt13856702",
+    "title": "Aikatsu on Parade!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43104": {
+    "imdb_id": "tt13856702",
+    "title": "Aikatsu on Parade!",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "43827": {
+    "imdb_id": "tt21104776",
+    "title": "Aikatsu Planet!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "7209": {
     "imdb_id": "tt2552204",
     "title": "Amnesia",
@@ -21558,6 +21594,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "47275": {
+    "imdb_id": "tt9584920",
+    "title": "The Quintessential Quintuplets",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
   "41974": {
     "imdb_id": "tt13067512",
     "title": "Armor Shop for Ladies and Gentlemen",
@@ -26714,6 +26756,12 @@
   "46783": {
     "imdb_id": "tt23862502",
     "title": "Hirogaru Sky! Precure",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46784": {
+    "imdb_id": "tt27246089",
+    "title": "Hi no tori: Eden no sora",
     "fromSeason": 1,
     "fromEpisode": 1
   },
