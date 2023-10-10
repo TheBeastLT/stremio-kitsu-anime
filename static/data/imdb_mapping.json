@@ -1285,6 +1285,13 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "45976": {
+    "imdb_id": "tt0279077",
+    "fanartLogoId": "155081",
+    "title": "FLCL",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
   "203": {
     "imdb_id": "tt0962740",
     "fanartLogoId": "35987",
@@ -19497,6 +19504,13 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "42531": {
+    "imdb_id": "tt9529546",
+    "fanartLogoId": "172179",
+    "title": "The Rising of the Shield Hero",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "13597": {
     "imdb_id": "tt7474942",
     "title": "Girls' Last Tour"
@@ -20435,8 +20449,16 @@
   },
   "40597": {
     "imdb_id": "tt8690728",
+    "fanartLogoId": "126487",
     "title": "Goblin Slayer",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "44010": {
+    "imdb_id": "tt8690728",
+    "fanartLogoId": "175723",
+    "title": "Goblin Slayer",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "40600": {
@@ -24882,8 +24904,16 @@
   },
   "44107": {
     "imdb_id": "tt14115938",
+    "fanartLogoId": "170441",
     "title": "The Eminence in Shadow",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "47099": {
+    "imdb_id": "tt14115938",
+    "fanartLogoId": "178266",
+    "title": "The Eminence in Shadow",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "44114": {
@@ -25483,6 +25513,8 @@
     "fromEpisode": 2
   },
   "46014": {
+    "imdb_id": "tt29092780",
+    "title": "Sasaki and Miyano: Graduation chapter"
   },
   "44580": {
     "imdb_id": "tt14669108",
@@ -25916,6 +25948,12 @@
     "imdb_id": "tt22443832",
     "title": "Arknights: Reimei Zensou",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46880": {
+    "imdb_id": "tt22443832",
+    "title": "Arknights: Reimei Zensou",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "45372": {
