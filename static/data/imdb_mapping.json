@@ -24916,6 +24916,13 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "46901": {
+    "imdb_id": "tt14115938",
+    "fanartLogoId": "178266",
+    "title": "The Eminence in Shadow",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "44114": {
     "imdb_id": "tt14228078",
     "title": "Totsukuni no shôjo"
@@ -26600,7 +26607,14 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46141": {
+    "tvdb_id": "420663"
+  },
   "46144": {
+    "imdb_id": "tt27191819",
+    "title": "Boku to Roboko",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "46158": {
     "imdb_id": "tt20860298",
@@ -27049,6 +27063,7 @@
     "fromEpisode": 1
   },
   "46762": {
+    "tvdb_id": "427359"
   },
   "46763": {
     "imdb_id": "tt28278738",
@@ -27234,6 +27249,7 @@
     "fromEpisode": 1
   },
   "47227": {
+    "tvdb_id": "432749"
   },
   "47234": {
     "imdb_id": "tt28261206",
@@ -27324,5 +27340,8 @@
     "title": "Good Night World",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "47887": {
+    "tvdb_id": "438685"
   }
 }
