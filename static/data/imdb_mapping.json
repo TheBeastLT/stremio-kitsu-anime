@@ -13417,6 +13417,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "8312": {
+    "imdb_id": "tt3158246",
+    "title": "Space Dandy",
+    "fromSeason": 1,
+    "fromEpisode": 14
+  },
+  "8741": {
+    "imdb_id": "tt3158246",
+    "title": "Space Dandy",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "7911": {
     "imdb_id": "tt3198674",
     "title": "Miss Monochrome",
@@ -14299,12 +14311,6 @@
     "imdb_id": "tt3620020",
     "title": "Kindaichi Shounen no Jikenbo Returns",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "8312": {
-    "imdb_id": "tt3158246",
-    "title": "Space Dandy",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "8325": {
