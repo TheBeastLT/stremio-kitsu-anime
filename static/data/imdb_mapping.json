@@ -5775,9 +5775,59 @@
   },
   "1415": {
     "imdb_id": "tt0994314",
+    "fanartLogoId": "91248",
     "title": "Code Geass: Lelouch of the Rebellion",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "2634": {
+    "imdb_id": "tt0994314",
+    "fanartLogoId": "91247",
+    "title": "Code Geass: Lelouch of the Rebellion",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "3700": {
+    "imdb_id": "tt0994314",
+    "title": "Code Geass: Lelouch of the Rebellion",
+    "fromSeason": 0,
+    "fromEpisode": 5
+  },
+  "6791": {
+    "imdb_id": "tt0994314",
+    "title": "Code Geass: Lelouch of the Rebellion",
+    "fromSeason": 0,
+    "fromEpisode": 12
+  },
+  "1921": {
+    "imdb_id": "tt0994314",
+    "title": "Code Geass: Lelouch of the Rebellion",
+    "fromSeason": 0,
+    "fromEpisode": 14
+  },
+  "1759": {
+    "imdb_id": "tt0994314",
+    "title": "Code Geass: Lelouch of the Rebellion",
+    "fromSeason": 0,
+    "fromEpisode": 16
+  },
+  "3960": {
+    "imdb_id": "tt0994314",
+    "title": "Code Geass: Lelouch of the Rebellion",
+    "fromSeason": 0,
+    "fromEpisode": 25
+  },
+  "12976": {
+    "imdb_id": "tt0994314",
+    "title": "Code Geass: Lelouch of the Rebellion",
+    "fromSeason": 0,
+    "fromEpisode": 34
+  },
+  "12906": {
+    "imdb_id": "tt0994314",
+    "title": "Code Geass: Lelouch of the Rebellion",
+    "fromSeason": 0,
+    "fromEpisode": 35
   },
   "1416": {
     "imdb_id": "tt1359083",
@@ -7435,12 +7485,6 @@
   "2624": {
     "imdb_id": "tt0876563",
     "title": "Ponyo"
-  },
-  "2634": {
-    "imdb_id": "tt0994314",
-    "title": "Code Geass: Lelouch of the Rebellion",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "2646": {
     "imdb_id": "tt5765272",
