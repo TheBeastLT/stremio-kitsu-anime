@@ -113,10 +113,8 @@ builder.defineCatalogHandler((args) => {
 });
 
 builder.defineMetaHandler((args) => {
-  if (args.id.match(/^kitsu:\d+$/)) {
-    const id = parseInt(args.id.replace('kitsu:', ''));
-
-    return getKitsuIdMetadata(id);
+  if (args.id.match(/^(?:kitsu|mal|anilist|anidb):\d+$/)) {
+    return getKitsuIdMetadata(args.id);
   }
   if (args.id.match(/^tt\d+$/)) {
     const id = args.id;
@@ -127,13 +125,6 @@ builder.defineMetaHandler((args) => {
 
     return getImdbIdMetadata(id);
   }
-
-  if (args.id.match(/^(?:mal|anilist|anidb)/)) {
-    return mapToKitsuId(args.id).then(id => ({
-      redirect: `${ADDON_URL}/meta/anime/kitsu:${id}.json`
-    }));
-  }
-
   return Promise.reject(`Invalid id: ${args.id}`);
 });
 
@@ -142,8 +133,7 @@ builder.defineSubtitlesHandler((args) => {
     return Promise.reject(`Invalid id: ${args.id}`);
   }
 
-  return mapToKitsuId(args.id)
-      .then((kitsuId) => getKitsuIdMetadata(kitsuId))
+  return getKitsuIdMetadata(args.id)
       .then((metaResponse) => metaResponse.meta)
       .then((metadata) => opensubtitles.getRedirectUrl(metadata, args))
       .then((url) => ({ redirect: url }))
@@ -151,9 +141,10 @@ builder.defineSubtitlesHandler((args) => {
 });
 
 async function getKitsuIdMetadata(id) {
-  return cacheWrapMeta(id, () => kitsu.animeData(id)
-      .then((metadata) => enrichKitsuMetadata(metadata, cinemeta.getCinemetaMetadata))
-      .then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE })));
+  return mapToKitsuId(id)
+      .then((kitsuId) => cacheWrapMeta(kitsuId, () => kitsu.animeData(kitsuId)
+        .then((metadata) => enrichKitsuMetadata(metadata, cinemeta.getCinemetaMetadata))
+        .then((meta) => ({ meta: meta, cacheMaxAge: CACHE_MAX_AGE }))));
 }
 
 async function getImdbIdMetadata(id) {
