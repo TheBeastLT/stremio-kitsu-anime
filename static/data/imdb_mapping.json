@@ -5255,6 +5255,10 @@
     "fromSeason": 0,
     "fromEpisode": 7
   },
+  "1146": {
+    "imdb_id": "tt2304700",
+    "title": "Kyokasho ni nai!"
+  },
   "1154": {
     "imdb_id": "tt0122356",
     "title": "The Mysterious Cities of Gold",
@@ -8273,6 +8277,30 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "3425": {
+    "imdb_id": "tt1216257",
+    "title": "Zettai Karen Children",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "4304": {
+    "imdb_id": "tt1216257",
+    "title": "Zettai Karen Children",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "5105": {
+    "imdb_id": "tt1216257",
+    "title": "Zettai Karen Children",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "5611": {
+    "imdb_id": "tt1216257",
+    "title": "Zettai Karen Children",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
   "3426": {
     "imdb_id": "tt1166871",
     "title": "Golgo 13",
@@ -10762,6 +10790,12 @@
     "imdb_id": "tt2187287",
     "title": "Waiting in the Summer"
   },
+  "6509": {
+    "imdb_id": "tt15072540",
+    "title": "Rurouni Kenshin: Meiji kenkaku romantan - Shin Kyoto-hen",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "6519": {
     "imdb_id": "tt6163360",
     "title": "Recorder to Randoseru",
@@ -12194,6 +12228,13 @@
     "fromSeason": 2,
     "fromEpisode": 13
   },
+  "47705": {
+    "imdb_id": "tt2622982",
+    "fanartLogoId": "158206",
+    "title": "The Devil Is a Part-Timer!",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
   "7325": {
     "imdb_id": "tt2703708",
     "title": "Ginga Kikoutai: Majestic Prince"
@@ -12216,7 +12257,9 @@
   },
   "7356": {
     "imdb_id": "tt2575708",
-    "title": "Zettai Karen Children: The Unlimited - Hyoubu Kyousuke"
+    "title": "Zettai Karen Children: The Unlimited - Hyoubu Kyousuke",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "7358": {
     "imdb_id": "tt2904550",
@@ -15958,6 +16001,18 @@
     "imdb_id": "tt5086972",
     "title": "Starmyu",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "10784": {
+    "imdb_id": "tt5076704",
+    "title": "Pikaia!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "40628": {
+    "imdb_id": "tt5076704",
+    "title": "Pikaia!",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "10786": {
