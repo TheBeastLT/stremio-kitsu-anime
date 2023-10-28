@@ -4394,6 +4394,10 @@
     "imdb_id": "tt1141604",
     "title": "Tokko"
   },
+  "817": {
+    "imdb_id": "tt0098202",
+    "title": "Riding Bean"
+  },
   "818": {
     "imdb_id": "tt0988818",
     "title": "Gintama",
@@ -5723,6 +5727,12 @@
     "imdb_id": "tt0480493",
     "title": "Negima!"
   },
+  "1389": {
+    "imdb_id": "tt0185110",
+    "title": "Queen Millennia",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "1391": {
     "imdb_id": "tt0296304",
     "title": "Attack No. 1"
@@ -6373,6 +6383,18 @@
   "1690": {
     "imdb_id": "tt4084590",
     "title": "Kaze no Shoujo Emily"
+  },
+  "1691": {
+    "imdb_id": "tt0097445",
+    "title": "Goku Midnight Eye",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "1692": {
+    "imdb_id": "tt0097445",
+    "title": "Goku Midnight Eye",
+    "fromSeason": 1,
+    "fromEpisode": 2
   },
   "1696": {
     "imdb_id": "tt1161678",
@@ -10057,6 +10079,18 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "5843": {
+    "imdb_id": "tt6460126",
+    "title": "Astarotte no Omocha!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6251": {
+    "imdb_id": "tt6460126",
+    "title": "Astarotte no Omocha!",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "5844": {
     "imdb_id": "tt1756988",
     "title": "Appleseed XIII",
@@ -10692,6 +10726,18 @@
     "imdb_id": "tt3198698",
     "title": "Hunter x Hunter: The Last Mission"
   },
+  "6454": {
+    "imdb_id": "tt3656982",
+    "title": "Kill Me Baby",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7900": {
+    "imdb_id": "tt3656982",
+    "title": "Kill Me Baby",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "6462": {
     "imdb_id": "tt2176165",
     "title": "Another",
@@ -10893,6 +10939,10 @@
     "title": "Blood Lad",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "6554": {
+    "imdb_id": "tt0185607",
+    "title": "Pink Mizu Dorobou Ame Dorobou"
   },
   "6567": {
     "imdb_id": "tt2176177",
@@ -12703,6 +12753,12 @@
     "imdb_id": "tt10621390",
     "title": "Free! Road to the World - The Dream"
   },
+  "7665": {
+    "imdb_id": "tt0398412",
+    "title": "Magical☆Shopping Arcade Abenobashi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "7668": {
     "imdb_id": "tt1568632",
     "title": "Sound of the Sky",
@@ -12951,6 +13007,24 @@
     "title": "Non Non Biyori",
     "fromSeason": 3,
     "fromEpisode": 1
+  },
+  "8187": {
+    "imdb_id": "tt3114358",
+    "title": "Non Non Biyori",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "11767": {
+    "imdb_id": "tt3114358",
+    "title": "Non Non Biyori",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "44958": {
+    "imdb_id": "tt3114358",
+    "title": "Non Non Biyori",
+    "fromSeason": 0,
+    "fromEpisode": 4
   },
   "7712": {
     "imdb_id": "tt3114390",
@@ -25692,6 +25766,12 @@
     "imdb_id": "tt10915840",
     "title": "Uchuu senkan Yamato 2205: Aratanaru tabidachi"
   },
+  "44702": {
+    "imdb_id": "tt28682964",
+    "title": "Mignon",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "44706": {
     "imdb_id": "tt25275610",
     "title": "High Card",
@@ -26748,6 +26828,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46173": {
+    "imdb_id": "tt14833612",
+    "title": "Castlevania: Nocturne",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "46183": {
     "imdb_id": "tt21216104",
     "title": "Trigun Stampede",
@@ -27231,8 +27317,8 @@
     "title": "Spy x Family Movie: Code: White"
   },
   "46876": {
-    "imdb_id": "tt0922724",
-    "title": "The Adventure of the Deranged Detective",
+    "imdb_id": "tt29370857",
+    "title": "Kamonohashi Ron no Kindan Suiri",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -27375,6 +27461,12 @@
   "47240": {
     "imdb_id": "tt28313387",
     "title": "Kikansha no Mahou wa Tokubetsu desu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "47241": {
+    "imdb_id": "tt27250301",
+    "title": "Ōoku: The Inner Chambers",
     "fromSeason": 1,
     "fromEpisode": 1
   },
