@@ -1641,18 +1641,20 @@
     "fromEpisode": 1
   },
   "43078": {
-    "imdb_id": "tt0434665",
+    "imdb_id": "tt14986406",
+    "tvdb_id": "74796",
     "fanartLogoId": "157743",
     "title": "Bleach: Thousand Year Blood War",
-    "fromSeason": 17,
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "46903": {
-    "imdb_id": "tt0434665",
+    "imdb_id": "tt14986406",
+    "tvdb_id": "74796",
     "fanartLogoId": "157743",
     "title": "Bleach: Thousand Year Blood War",
-    "fromSeason": 17,
-    "fromEpisode": 14
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "1515": {
     "imdb_id": "tt1105263",
