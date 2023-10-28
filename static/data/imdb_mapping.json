@@ -26715,7 +26715,10 @@
     "fromEpisode": 1
   },
   "46141": {
-    "tvdb_id": "420663"
+    "imdb_id": "tt29514999",
+    "title": "Paradox Live the Animation",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "46144": {
     "imdb_id": "tt27191819",
@@ -27170,7 +27173,10 @@
     "fromEpisode": 1
   },
   "46762": {
-    "tvdb_id": "427359"
+    "imdb_id": "tt29476307",
+    "title": "Bullbuster",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "46763": {
     "imdb_id": "tt28278738",
@@ -27312,7 +27318,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-
   "47152": {
   },
   "47154": {
@@ -27356,7 +27361,10 @@
     "fromEpisode": 1
   },
   "47227": {
-    "tvdb_id": "432749"
+    "imdb_id": "tt29475583",
+    "title": "Kamierabi",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "47234": {
     "imdb_id": "tt28261206",
@@ -27449,6 +27457,9 @@
     "fromEpisode": 1
   },
   "47887": {
-    "tvdb_id": "438685"
+    "imdb_id": "tt29473209",
+    "title": "After-school Hanako-kun",
+    "fromSeason": 1,
+    "fromEpisode": 1
   }
 }
