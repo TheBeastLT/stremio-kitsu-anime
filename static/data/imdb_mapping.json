@@ -1777,6 +1777,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "1676": {
+    "imdb_id": "tt0981456",
+    "title": "Baki the Grappler",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "263": {
     "imdb_id": "tt0328733",
     "fanartLogoId": "100620",
@@ -2876,7 +2882,27 @@
   },
   "449": {
     "imdb_id": "tt0810056",
-    "title": "Strawberry Marshmallow"
+    "title": "Strawberry Marshmallow",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3493": {
+    "imdb_id": "tt0810056",
+    "title": "Strawberry Marshmallow",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "1698": {
+    "imdb_id": "tt0810056",
+    "title": "Strawberry Marshmallow",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "3800": {
+    "imdb_id": "tt0810056",
+    "title": "Strawberry Marshmallow",
+    "fromSeason": 0,
+    "fromEpisode": 5
   },
   "451": {
     "imdb_id": "tt1094084",
@@ -12603,6 +12629,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "10854": {
+    "imdb_id": "tt6278620",
+    "title": "Fafner Exodus",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "7576": {
     "imdb_id": "tt2781830",
     "title": "Aiura"
@@ -14464,6 +14496,12 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "11106": {
+    "imdb_id": "tt1807824",
+    "title": "Wakfu",
+    "fromSeason": 0,
+    "fromEpisode": 14
+  },
   "8306": {
     "imdb_id": "tt3639864",
     "title": "Himegoto",
@@ -15726,6 +15764,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "11784": {
+    "imdb_id": "tt5373222",
+    "title": "My Wife Is the Student Council President",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "11669": {
+    "imdb_id": "tt5373222",
+    "title": "My Wife Is the Student Council President",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "10071": {
     "imdb_id": "tt6302332",
     "title": "Chein kuronikuru: Hekuseitasu no hikari",
@@ -15826,6 +15876,10 @@
   "10229": {
     "imdb_id": "tt4508686",
     "title": "Ghost in the Shell Arise: Alternative Architecture"
+  },
+  "43876": {
+    "imdb_id": "tt5973984",
+    "title": "Ghost in the Shell Arise: Border 5 - Pyrophoric Cult"
   },
   "10235": {
     "imdb_id": "tt4928988",
@@ -16126,12 +16180,6 @@
   "10847": {
     "imdb_id": "tt5445056",
     "title": "Haikyû!: Shousha to haisha"
-  },
-  "10854": {
-    "imdb_id": "tt6278620",
-    "title": "Fafner Exodus",
-    "fromSeason": 1,
-    "fromEpisode": 14
   },
   "10857": {
     "imdb_id": "tt5095466",
@@ -17510,12 +17558,6 @@
     "imdb_id": "tt5749826",
     "title": "12-Sai. Chiccha na Mune no Tokimeki",
     "fromSeason": 0,
-    "fromEpisode": 1
-  },
-  "11784": {
-    "imdb_id": "tt5373222",
-    "title": "My Wife Is the Student Council President",
-    "fromSeason": 2,
     "fromEpisode": 1
   },
   "11785": {
@@ -27125,6 +27167,12 @@
   "46562": {
     "imdb_id": "tt25534100",
     "title": "Revenger",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46587": {
+    "imdb_id": "tt11680642",
+    "title": "Pantheon",
     "fromSeason": 1,
     "fromEpisode": 1
   },
