@@ -495,11 +495,23 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "2080": {
+  "2057": {
     "imdb_id": "tt0374407",
     "title": "Mobile Suit Gundam Seed",
     "fromSeason": 0,
     "fromEpisode": 1
+  },
+  "2080": {
+    "imdb_id": "tt0374407",
+    "title": "Mobile Suit Gundam Seed",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
+  "765": {
+    "imdb_id": "tt0374407",
+    "title": "Mobile Suit Gundam Seed",
+    "fromSeason": 0,
+    "fromEpisode": 5
   },
   "73": {
     "imdb_id": "tt0434694",
@@ -507,11 +519,23 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "2079": {
+    "imdb_id": "tt0434694",
+    "title": "Mobile Suit Gundam Seed Destiny",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "1092": {
     "imdb_id": "tt0434694",
     "title": "Mobile Suit Gundam Seed Destiny",
     "fromSeason": 0,
     "fromEpisode": 7
+  },
+  "1117": {
+    "imdb_id": "tt0434694",
+    "title": "Mobile Suit Gundam Seed Destiny",
+    "fromSeason": 0,
+    "fromEpisode": 8
   },
   "74": {
     "imdb_id": "tt0189318",
@@ -3459,8 +3483,8 @@
     "fromEpisode": 4
   },
   "495": {
-    "imdb_id": "tt0161978",
-    "title": "Slayers the Motion Picture"
+    "imdb_id": "tt0161981",
+    "title": "Slayers"
   },
   "767": {
     "imdb_id": "tt0462717",
@@ -5389,6 +5413,20 @@
     "imdb_id": "tt0302211",
     "title": "Noozles"
   },
+  "1191": {
+    "imdb_id": "tt0143353",
+    "fanartLogoId": "98829",
+    "title": "The Guyver: Bio-Booster Armor",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "8124": {
+    "imdb_id": "tt0143353",
+    "fanartLogoId": "98973",
+    "title": "The Guyver: Bio-Booster Armor",
+    "fromSeason": 1,
+    "fromEpisode": 7
+  },
   "1199": {
     "imdb_id": "tt0124971",
     "title": "8 Man After"
@@ -6455,6 +6493,10 @@
   "1727": {
     "imdb_id": "tt2328145",
     "title": "Mobile Suit Gundam MS IGLOO: The Hidden One Year War"
+  },
+  "3533": {
+    "imdb_id": "tt7127562",
+    "title": "Mobile Suit Gundam MS IGLOO: Gravity Front"
   },
   "1744": {
     "imdb_id": "tt0160521",
@@ -7659,6 +7701,10 @@
   "2693": {
     "imdb_id": "tt0421455",
     "title": "New Getter Robo"
+  },
+  "2696": {
+    "imdb_id": "tt0930902",
+    "title": "Midori"
   },
   "2699": {
     "imdb_id": "tt6565980",
@@ -12790,6 +12836,30 @@
     "title": "Magical☆Shopping Arcade Abenobashi",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "7666": {
+    "imdb_id": "tt1301958",
+    "title": "Shikabane Hime",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7667": {
+    "imdb_id": "tt1301958",
+    "title": "Shikabane Hime",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "3695": {
+    "imdb_id": "tt1301958",
+    "title": "Shikabane Hime",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "4868": {
+    "imdb_id": "tt1301958",
+    "title": "Shikabane Hime",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "7668": {
     "imdb_id": "tt1568632",
