@@ -10,7 +10,7 @@
   "author": "TheBeastLT <pauliox@beyond.lt>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.26.0",
+    "axios": "^1.6.0",
     "cache-manager": "^3.6.0",
     "cache-manager-mongodb": "^0.3.0",
     "cheerio": "^1.0.0-rc.12",
