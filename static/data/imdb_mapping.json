@@ -463,7 +463,15 @@
   },
   "65": {
     "imdb_id": "tt0159184",
-    "title": "Mobile Suit Gundam ZZ"
+    "title": "Mobile Suit Gundam ZZ",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "5831": {
+    "imdb_id": "tt0159184",
+    "title": "Mobile Suit Gundam ZZ",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   "66": {
     "imdb_id": "tt0095262",
@@ -2489,10 +2497,28 @@
     "fromEpisode": 1
   },
   "3520": {
-    "imdb_id": "tt0159410",
-    "title": "Dirty Pair OVA",
+    "imdb_id": "tt0088507",
+    "title": "Dirty Pair",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "1621": {
+    "imdb_id": "tt0109633",
+    "title": "Dirty Pair Flash",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "6708": {
+    "imdb_id": "tt0109633",
+    "title": "Dirty Pair Flash",
+    "fromSeason": 1,
+    "fromEpisode": 7
+  },
+  "6709": {
+    "imdb_id": "tt0109633",
+    "title": "Dirty Pair Flash",
+    "fromSeason": 1,
+    "fromEpisode": 12
   },
   "389": {
     "imdb_id": "tt4145978",
@@ -5873,6 +5899,12 @@
     "fromSeason": 0,
     "fromEpisode": 5
   },
+  "4705": {
+    "imdb_id": "tt0994314",
+    "title": "Code Geass: Lelouch of the Rebellion",
+    "fromSeason": 0,
+    "fromEpisode": 6
+  },
   "6791": {
     "imdb_id": "tt0994314",
     "title": "Code Geass: Lelouch of the Rebellion",
@@ -7464,6 +7496,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "2482": {
+    "imdb_id": "tt0158568",
+    "title": "Crusher Joe"
+  },
   "2500": {
     "imdb_id": "tt5009268",
     "title": "Monkî tân"
@@ -7581,6 +7617,10 @@
   "2624": {
     "imdb_id": "tt0876563",
     "title": "Ponyo"
+  },
+  "2625": {
+    "imdb_id": "tt1161426",
+    "title": "Ibarado time"
   },
   "2646": {
     "imdb_id": "tt5765272",
@@ -7963,6 +8003,12 @@
   "2934": {
     "imdb_id": "tt1216232",
     "title": "Wagaya no oinari sama."
+  },
+  "2942": {
+    "imdb_id": "tt10958280",
+    "title": "Stop!! Hibari-kun!",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "2946": {
     "imdb_id": "tt1196027",
@@ -14769,6 +14815,10 @@
     "title": "Akuma-kun",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "8505": {
+    "imdb_id": "tt3638012",
+    "title": "Appleseed Alpha"
   },
   "8521": {
     "imdb_id": "tt3646574",
@@ -25228,6 +25278,13 @@
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "48198": {
+    "imdb_id": "tt14115938",
+    "fanartLogoId": "178266",
+    "title": "The Eminence in Shadow",
+    "fromSeason": 0,
+    "fromEpisode": 18
+  },
   "44114": {
     "imdb_id": "tt14228078",
     "title": "Totsukuni no shôjo"
@@ -27437,6 +27494,12 @@
   "46789": {
     "imdb_id": "tt19413836",
     "title": "City Hunter the Movie: Angel Dust"
+  },
+  "46801": {
+    "imdb_id": "tt28689252",
+    "title": "4 Cut Hero",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "46808": {
     "imdb_id": "tt27418288",
