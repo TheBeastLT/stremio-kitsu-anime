@@ -12827,6 +12827,10 @@
     "imdb_id": "tt14531302",
     "title": "Free! the Final Stroke"
   },
+  "44651": {
+    "imdb_id": "tt19849494",
+    "title": "Free! The Final Stroke Part 2"
+  },
   "42380": {
     "imdb_id": "tt10621390",
     "title": "Free! Road to the World - The Dream"
@@ -14758,6 +14762,12 @@
     "imdb_id": "tt2575728",
     "title": "Ai Mai Mi",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "8501": {
+    "imdb_id": "tt4672342",
+    "title": "Akuma-kun",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "8521": {
@@ -20628,12 +20638,14 @@
   },
   "14182": {
     "imdb_id": "tt7784442",
+    "fanartLogoId": "92542",
     "title": "Captain Tsubasa",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "47229": {
     "imdb_id": "tt7784442",
+    "fanartLogoId": "181979",
     "title": "Captain Tsubasa",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -25896,6 +25908,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "44755": {
+    "imdb_id": "tt25434854",
+    "title": "Deep Sea"
+  },
   "44806": {
     "imdb_id": "tt13409496",
     "title": "Hula Fulla Dance"
@@ -27030,6 +27046,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46259": {
+    "imdb_id": "tt23055158",
+    "title": "Zanting! Rang Wo Cha Gonglüe",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "46270": {
     "imdb_id": "tt21345970",
     "title": "Noumin Kanren no Skill bakka Agetetara Nazeka Tsuyoku Natta.",
@@ -27351,8 +27373,8 @@
   "47672": {
     "imdb_id": "tt27427810",
     "title": "Kizuna no Ariru",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   "46754": {
     "imdb_id": "tt23730842",
@@ -27512,6 +27534,10 @@
     "imdb_id": "tt26674627",
     "title": "Resident Evil: Death Island"
   },
+  "47080": {
+    "imdb_id": "tt27892601",
+    "title": "IDOLiSH7 Movie: LIVE 4bit - BEYOND THE PERiOD"
+  },
   "47083": {
     "imdb_id": "tt26743760",
     "title": "Kusuriya no Hitorigoto",
@@ -27525,6 +27551,10 @@
     "fromEpisode": 1
   },
   "47152": {
+    "imdb_id": "tt29908328",
+    "title": "Kawagoe Boys Sing",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "47154": {
     "imdb_id": "tt29171927",
@@ -27671,6 +27701,18 @@
   "47887": {
     "imdb_id": "tt29473209",
     "title": "After-school Hanako-kun",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48004": {
+    "imdb_id": "tt16969708",
+    "title": "Scott Pilgrim Takes Off",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48196": {
+    "imdb_id": "tt13309742",
+    "title": "Blue Eye Samurai",
     "fromSeason": 1,
     "fromEpisode": 1
   }
