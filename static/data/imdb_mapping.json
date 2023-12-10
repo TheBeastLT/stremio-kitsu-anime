@@ -487,7 +487,27 @@
   },
   "69": {
     "imdb_id": "tt0159193",
-    "title": "Mobile Suit Gundam Wing"
+    "title": "Mobile Suit Gundam Wing",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3150": {
+    "imdb_id": "tt0159193",
+    "title": "Mobile Suit Gundam Wing",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "7964": {
+    "imdb_id": "tt0159193",
+    "title": "Mobile Suit Gundam Wing",
+    "fromSeason": 0,
+    "fromEpisode": 5
+  },
+  "8603": {
+    "imdb_id": "tt0159193",
+    "title": "Mobile Suit Gundam Wing",
+    "fromSeason": 0,
+    "fromEpisode": 9
   },
   "70": {
     "imdb_id": "tt0260191",
@@ -8179,7 +8199,21 @@
   },
   "3056": {
     "imdb_id": "tt1216124",
-    "title": "Kanokon"
+    "title": "Kanokon",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "3774": {
+    "imdb_id": "tt1216124",
+    "title": "Kanokon",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "4715": {
+    "imdb_id": "tt1216124",
+    "title": "Kanokon",
+    "fromSeason": 0,
+    "fromEpisode": 14
   },
   "3065": {
     "imdb_id": "tt1161680",
@@ -18207,18 +18241,21 @@
   },
   "12088": {
     "imdb_id": "tt5915166",
+    "fanartLogoId": "91646",
     "title": "B-Project",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "41992": {
     "imdb_id": "tt5915166",
+    "fanartLogoId": "91646",
     "title": "B-Project",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "44311": {
     "imdb_id": "tt5915166",
+    "fanartLogoId": "182054",
     "title": "B-Project",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -24483,6 +24520,12 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "44526": {
+    "imdb_id": "tt13196080",
+    "title": "Tokyo Revengers",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
   "43348": {
     "imdb_id": "tt11177804",
     "title": "Legend of Deification"
@@ -25359,6 +25402,12 @@
     "imdb_id": "tt13483212",
     "title": "Shin no Nakama ja Nai to Yuusha no Party wo Oidasareta node, Henkyou de Slow Life suru Koto ni Shimashita",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46686": {
+    "imdb_id": "tt13483212",
+    "title": "Shin no Nakama ja Nai to Yuusha no Party wo Oidasareta node, Henkyou de Slow Life suru Koto ni Shimashita",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "44174": {
@@ -27728,6 +27777,12 @@
     "fromEpisode": 1
   },
   "47528": {
+  },
+  "47546": {
+    "imdb_id": "tt27865962",
+    "title": "Beyblade X",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "47550": {
     "imdb_id": "tt28061652",
