@@ -21523,6 +21523,12 @@
     "fromSeason": 0,
     "fromEpisode": 2
   },
+  "48357": {
+    "imdb_id": "tt8400662",
+    "title": "Jashin-chan Dropkick",
+    "fromSeason": 0,
+    "fromEpisode": 17
+  },
   "41175": {
     "imdb_id": "tt7415066",
     "title": "Sword Gai: The Animation",
@@ -22274,6 +22280,12 @@
     "imdb_id": "tt9193770",
     "title": "Isekai Quartet",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "42410": {
+    "imdb_id": "tt9193770",
+    "title": "Isekai Quartet",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "42036": {
@@ -23214,12 +23226,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "42410": {
-    "imdb_id": "tt9193770",
-    "title": "Isekai Quartet",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "42413": {
     "imdb_id": "tt10545652",
     "title": "Vlad Love",
@@ -23965,6 +23971,13 @@
     "fanartLogoId": "157608",
     "title": "The Daily Life of the Immortal King",
     "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "48349": {
+    "imdb_id": "tt11755260",
+    "fanartLogoId": "157608",
+    "title": "The Daily Life of the Immortal King",
+    "fromSeason": 4,
     "fromEpisode": 1
   },
   "43018": {
@@ -27631,6 +27644,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46663": {
+    "imdb_id": "tt23029874",
+    "title": "Hokkaido Gals Are Super Adorable!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "46667": {
     "imdb_id": "tt27617338",
     "title": "Hyakushô Kizoku",
@@ -28080,6 +28099,10 @@
     "title": "Ôyukiumi no Kaina: Hoshi no Kenja"
   },
   "47583": {
+    "imdb_id": "tt30975941",
+    "title": "Brave Bang Bravern!",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "47656": {
     "imdb_id": "tt30643998",
@@ -28200,6 +28223,12 @@
   "48275": {
     "imdb_id": "tt30608459",
     "title": "Wonderful Precure!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48392": {
+    "imdb_id": "tt30495035",
+    "title": "Meiji Gekken: 1874",
     "fromSeason": 1,
     "fromEpisode": 1
   }
