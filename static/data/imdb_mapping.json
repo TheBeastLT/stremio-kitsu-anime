@@ -24107,13 +24107,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "46079": {
-    "imdb_id": "tt12502782",
-    "fanartLogoId": "183854",
-    "title": "Shaman King",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "43228": {
     "imdb_id": "tt12471116",
     "title": "Pokétoon",
@@ -27067,6 +27060,14 @@
   "46078": {
     "imdb_id": "tt21345982",
     "title": "Cool Doji Danshi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46079": {
+    "imdb_id": "tt30873755",
+    "tvdbId": "383837",
+    "fanartLogoId": "183854",
+    "title": "Shaman King: Flowers",
     "fromSeason": 1,
     "fromEpisode": 1
   },
