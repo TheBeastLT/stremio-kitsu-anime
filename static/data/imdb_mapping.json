@@ -10522,6 +10522,30 @@
     "imdb_id": "tt3833714",
     "title": "Magical Girl Lyrical Nanoha the Movie 2nd A's"
   },
+  "6057": {
+    "imdb_id": "tt2082624",
+    "title": "Dog Days",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "6598": {
+    "imdb_id": "tt2082624",
+    "title": "Dog Days",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "7417": {
+    "imdb_id": "tt2082624",
+    "title": "Dog Days",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "11527": {
+    "imdb_id": "tt2082624",
+    "title": "Dog Days",
+    "fromSeason": 0,
+    "fromEpisode": 27
+  },
   "6058": {
     "imdb_id": "tt1980688",
     "title": "Sacred Seven"
@@ -11332,12 +11356,6 @@
     "title": "Kuroko's Basketball",
     "fromSeason": 0,
     "fromEpisode": 19
-  },
-  "6598": {
-    "imdb_id": "tt2082624",
-    "title": "Dog Days",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   "6599": {
     "imdb_id": "tt2564106",
@@ -12549,12 +12567,6 @@
   "7411": {
     "imdb_id": "tt2623000",
     "title": "The Severing Crime Edge"
-  },
-  "7417": {
-    "imdb_id": "tt2082624",
-    "title": "Dog Days",
-    "fromSeason": 3,
-    "fromEpisode": 1
   },
   "7421": {
     "imdb_id": "tt2623042",
@@ -19778,7 +19790,7 @@
     "imdb_id": "tt7742120",
     "title": "Laid-Back Camp",
     "fromSeason": 0,
-    "fromEpisode": 2
+    "fromEpisode": 18
   },
   "41977": {
     "imdb_id": "tt14364238",
@@ -27281,6 +27293,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "47466": {
+    "imdb_id": "tt21209804",
+    "title": "Mashle: Magic and Muscles",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "46231": {
     "imdb_id": "tt21209876",
     "title": "Solo Leveling",
@@ -27857,6 +27875,12 @@
     "imdb_id": "tt27571647",
     "title": "TenPuru: No One Can Live on Loneliness",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48300": {
+    "imdb_id": "tt27571647",
+    "title": "TenPuru: No One Can Live on Loneliness",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "47018": {
