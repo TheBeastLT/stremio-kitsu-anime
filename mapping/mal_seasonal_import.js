@@ -161,4 +161,4 @@ async function sequence(promises) {
       promise.then(result => func().then(Array.prototype.concat.bind(result))), Promise.resolve([]));
 }
 
-importMalSeason('2024/winter').then(season => `Finished importing MAL ${season}`);
+importMalSeason('2024/spring').then(season => `Finished importing MAL ${season}`);
