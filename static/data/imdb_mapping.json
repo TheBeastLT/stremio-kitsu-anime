@@ -27693,6 +27693,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "48105": {
+    "imdb_id": "tt22248376",
+    "title": "Sousou no Frieren",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "46477": {
     "imdb_id": "tt24240038",
     "title": "Shindyuariti: Noir",
@@ -28595,6 +28601,12 @@
   "48257": {
     "imdb_id": "tt30644058",
     "title": "Meitou Isekai no Yu Kaitakuki: Around 40 Onsen Mania no Tensei Saki wa, Nonbiri Onsen Tengoku deshita",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48268": {
+    "imdb_id": "tt29958256",
+    "title": "Sand Land: The Series",
     "fromSeason": 1,
     "fromEpisode": 1
   },
