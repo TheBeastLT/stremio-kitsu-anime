@@ -19849,7 +19849,7 @@
   },
   "46649": {
     "imdb_id": "tt7742120",
-    "fanartLogoId": "177188",
+    "fanartLogoId": "180413",
     "title": "Laid-Back Camp",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -27800,6 +27800,12 @@
   "46601": {
     "imdb_id": "tt29171939",
     "title": "Hoshikuzu Telepath",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46623": {
+    "imdb_id": "tt31975747",
+    "title": "Train to the End of the World",
     "fromSeason": 1,
     "fromEpisode": 1
   },
