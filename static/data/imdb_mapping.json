@@ -8766,6 +8766,7 @@
   },
   "47688": {
     "imdb_id": "tt1316554",
+    "fanartLogoId": "188553",
     "title": "Black Butler",
     "fromSeason": 4,
     "fromEpisode": 1
@@ -15819,6 +15820,7 @@
   },
   "42372": {
     "imdb_id": "tt4384306",
+    "fanartLogoId": "188528",
     "title": "Sound! Euphonium",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -18854,12 +18856,14 @@
   },
   "12534": {
     "imdb_id": "tt8372010",
+    "fanartLogoId": "94215",
     "title": "Tsugumomo",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "42180": {
     "imdb_id": "tt8372010",
+    "fanartLogoId": "188584",
     "title": "Tsugumomo",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -19849,7 +19853,7 @@
   },
   "46649": {
     "imdb_id": "tt7742120",
-    "fanartLogoId": "180413",
+    "fanartLogoId": "188527",
     "title": "Laid-Back Camp",
     "fromSeason": 3,
     "fromEpisode": 1
