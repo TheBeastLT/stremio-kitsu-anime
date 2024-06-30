@@ -20,6 +20,8 @@ async function importMalSeason(season) {
       .filter(entry => entry && !imdbMapping[entry.kitsuId])
       .reduce((map, entry) => (map[entry.kitsuId] = entry, map), {})
   writeToFile(newMappings, "./static/data/new_mappings.json")
+  console.log("Ids to remove from cache:")
+  console.log(newMappingEntries.map(e => [e?.kitsuId, e?.imdb_id]).flat().filter(x => x).join('|'))
   return season;
 }
 
@@ -161,4 +163,4 @@ async function sequence(promises) {
       promise.then(result => func().then(Array.prototype.concat.bind(result))), Promise.resolve([]));
 }
 
-importMalSeason('2024/spring').then(season => `Finished importing MAL ${season}`);
+importMalSeason('2024/summer').then(season => `Finished importing MAL ${season}`);
