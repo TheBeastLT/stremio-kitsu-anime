@@ -27092,7 +27092,9 @@
   },
   "45839": {
     "imdb_id": "tt30414322",
-    "title": "Yamato yo, Towa ni: Rebel 3199"
+    "title": "Yamato yo, Towa ni: Rebel 3199",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "45850": {
     "imdb_id": "tt9174358",
@@ -27930,8 +27932,8 @@
   "48328": {
     "imdb_id": "tt22524872",
     "title": "Shy",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   "46600": {
     "imdb_id": "tt28101962",
@@ -28399,6 +28401,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "49022": {
+    "imdb_id": "tt29338030",
+    "title": "Kinnikuman Kanpeki Chôjin Shiso-hen",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "47192": {
     "imdb_id": "tt31131295",
     "title": "Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san",
@@ -28742,7 +28750,10 @@
     "fromEpisode": 1
   },
   "47872": {
-    "tvdb_id": "438420"
+    "imdb_id": "tt32832441",
+    "title": "Dungeon People",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "47874": {
     "imdb_id": "tt28685624",
@@ -28758,18 +28769,23 @@
   },
   "47891": {
     "imdb_id": "tt30325850",
+    "fanartLogoId": "188914",
     "title": "Sengoku Youko",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "48690": {
     "imdb_id": "tt30325850",
+    "fanartLogoId": "191337",
     "title": "Sengoku Youko",
-    "fromSeason": 1,
-    "fromEpisode": 14
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "47892": {
-    "tvdb_id": "438812"
+    "imdb_id": "tt32832439",
+    "title": "Dahlia in Bloom: Crafting a Fresh Start with Magical Tools",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "47907": {
     "imdb_id": "tt30836045",
