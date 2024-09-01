@@ -16911,6 +16911,12 @@
     "fromSeason": 2,
     "fromEpisode": 14
   },
+  "47235": {
+    "imdb_id": "tt5607616",
+    "title": "Re: Zero - Starting Life in Another World",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "12047": {
     "imdb_id": "tt5607616",
     "title": "Re: Zero - Starting Life in Another World",
@@ -18867,8 +18873,8 @@
   "45580": {
     "imdb_id": "tt13167222",
     "title": "Megaton-kyuu Musashi",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 14
   },
   "12529": {
     "imdb_id": "tt6435350",
@@ -27342,6 +27348,12 @@
     "imdb_id": "tt19861160",
     "title": "Gekijoban Bishojo Senshi Sailor Moon Cosmos"
   },
+  "46086": {
+    "imdb_id": "tt33022396",
+    "title": "Gunma-chan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "46087": {
     "imdb_id": "tt19853780",
     "title": "Yûsha ga shinda!",
@@ -27614,6 +27626,12 @@
   "46270": {
     "imdb_id": "tt21345970",
     "title": "Noumin Kanren no Skill bakka Agetetara Nazeka Tsuyoku Natta.",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46271": {
+    "imdb_id": "tt33054444",
+    "title": "True Beauty",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -28931,6 +28949,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "48269": {
+    "imdb_id": "tt30217403",
+    "title": "Dandadan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "48275": {
     "imdb_id": "tt30608459",
     "title": "Wonderful Precure!",
@@ -29084,5 +29108,35 @@
   "48891": {
     "imdb_id": "tt28036831",
     "title": "Ghost Cat Anzu"
+  },
+  "48892": {
+    "imdb_id": "tt32420174",
+    "title": "Dead Dead Demons Dededede Destruction",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48927": {
+    "imdb_id": "tt32420174",
+    "title": "Dead Dead Demons Dededede Destruction",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "48981": {
+    "imdb_id": "tt32766897",
+    "title": "Ranma 1/2",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48996": {
+    "imdb_id": "tt28596452",
+    "title": "Grendizer U",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49043": {
+    "imdb_id": "tt32903600",
+    "title": "0-Saiji Start Dash Monogatari",
+    "fromSeason": 1,
+    "fromEpisode": 1
   }
 }
