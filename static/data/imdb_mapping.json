@@ -23923,6 +23923,24 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45296": {
+    "imdb_id": "tt12100946",
+    "title": "Shadowverse Flame",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "47251": {
+    "imdb_id": "tt12100946",
+    "title": "Shadowverse Flame",
+    "fromSeason": 2,
+    "fromEpisode": 51
+  },
+  "48386": {
+    "imdb_id": "tt12100946",
+    "title": "Shadowverse Flame",
+    "fromSeason": 2,
+    "fromEpisode": 76
+  },
   "43084": {
     "imdb_id": "tt11688122",
     "title": "Shironeko Project: Zero Chronicle",
@@ -26665,24 +26683,6 @@
     "title": "Detective Conan: The Culprit Hanzawa",
     "fromSeason": 1,
     "fromEpisode": 1
-  },
-  "45296": {
-    "imdb_id": "tt19606992",
-    "title": "Shadowverse Flame",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  "47251": {
-    "imdb_id": "tt19606992",
-    "title": "Shadowverse Flame",
-    "fromSeason": 1,
-    "fromEpisode": 51
-  },
-  "48386": {
-    "imdb_id": "tt19606992",
-    "title": "Shadowverse Flame",
-    "fromSeason": 1,
-    "fromEpisode": 76
   },
   "45303": {
     "imdb_id": "tt6848928",
