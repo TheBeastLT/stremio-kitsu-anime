@@ -18493,12 +18493,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "42623": {
-    "imdb_id": "tt6354518",
-    "title": "The Disastrous Life of Saiki K.",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
   "8806": {
     "imdb_id": "tt6354518",
     "title": "The Disastrous Life of Saiki K.",
@@ -23894,6 +23888,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "49244": {
+    "imdb_id": "tt12057106",
+    "title": "Tower of God",
+    "fromSeason": 2,
+    "fromEpisode": 14
+  },
   "43059": {
     "imdb_id": "tt11886172",
     "title": "The Eighth Son? That Can't Be Right!",
@@ -24126,6 +24126,12 @@
     "fanartLogoId": "155084",
     "title": "Peter Grill and the Philosopher's Time",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "42623": {
+    "imdb_id": "tt11163352",
+    "title": "The Disastrous Life of Saiki K.: Reawakened",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "42635": {
@@ -27645,6 +27651,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46184": {
+    "imdb_id": "tt31308294",
+    "title": "Murai no Koi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "46185": {
     "imdb_id": "tt26895902",
     "title": "Edomae Elf",
@@ -27748,7 +27760,7 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "49027": {
+  "48191": {
     "imdb_id": "tt16183478",
     "title": "Yowai 5000-nen no Soushoku Dragon, Iwarenaki Jaryuu Nintei",
     "fromSeason": 2,
@@ -28159,6 +28171,12 @@
   "46641": {
     "imdb_id": "tt22817632",
     "title": "Tengoku Daimakyou",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46643": {
+    "imdb_id": "tt34048201",
+    "title": "Ya She",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -29113,8 +29131,10 @@
     "fromEpisode": 1
   },
   "47944": {
-    "tvdb_id": "439592",
-    "title": "Trillion Game"
+    "imdb_id": "tt33609048",
+    "title": "Trillion Game",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "48004": {
     "imdb_id": "tt16969708",
@@ -29388,6 +29408,12 @@
     "tvdb_id": "445259",
     "title": "Fearful Lord and a Cheerful Dog Live Together as Masters and Servants!"
   },
+  "48464": {
+    "imdb_id": "tt32158870",
+    "title": "Himitsu no AiPri",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "48466": {
     "imdb_id": "tt31390266",
     "title": "Tasûketsu",
@@ -29495,8 +29521,10 @@
     "fromEpisode": 1
   },
   "48871": {
-    "title": "Kinokoinu - Mushroom Pup",
-    "tvdb_id": "449989"
+    "imdb_id": "tt33613782",
+    "title": "Kinokoinu: Mushroom Pup",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "48891": {
     "imdb_id": "tt28036831",
