@@ -18493,12 +18493,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "42623": {
-    "imdb_id": "tt6354518",
-    "title": "The Disastrous Life of Saiki K.",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
   "8806": {
     "imdb_id": "tt6354518",
     "title": "The Disastrous Life of Saiki K.",
@@ -24128,6 +24122,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "42623": {
+    "imdb_id": "tt11163352",
+    "title": "The Disastrous Life of Saiki K.: Reawakened",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "42635": {
     "imdb_id": "tt12898990",
     "title": "Suppose a Kid from the Last Dungeon Boonies Moved to a Starter Town?",
@@ -29113,8 +29113,10 @@
     "fromEpisode": 1
   },
   "47944": {
-    "tvdb_id": "439592",
-    "title": "Trillion Game"
+    "imdb_id": "tt33609048",
+    "title": "Trillion Game",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "48004": {
     "imdb_id": "tt16969708",
@@ -29495,8 +29497,10 @@
     "fromEpisode": 1
   },
   "48871": {
-    "title": "Kinokoinu - Mushroom Pup",
-    "tvdb_id": "449989"
+    "imdb_id": "tt33613782",
+    "title": "Kinokoinu: Mushroom Pup",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "48891": {
     "imdb_id": "tt28036831",
