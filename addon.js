@@ -29,7 +29,6 @@ const manifest = {
       id: 'kitsu-anime-airing',
       name: 'Kitsu Top Airing',
       type: 'anime',
-      pageSize: kitsu.PAGE_SIZE,
       extra: [{ name: 'genre', options: genres }, { name: 'skip' }],
       genres: genres
     },
@@ -37,7 +36,6 @@ const manifest = {
       id: 'kitsu-anime-popular',
       name: 'Kitsu Most Popular',
       type: 'anime',
-      pageSize: kitsu.PAGE_SIZE,
       extra: [{ name: 'genre', options: genres }, { name: 'skip' }],
       genres: genres
     },
@@ -45,7 +43,6 @@ const manifest = {
       id: 'kitsu-anime-rating',
       name: 'Kitsu Highest Rated',
       type: 'anime',
-      pageSize: kitsu.PAGE_SIZE,
       extra: [{ name: 'genre', options: genres }, { name: 'skip' }],
       genres: genres
     },
@@ -53,7 +50,6 @@ const manifest = {
       id: 'kitsu-anime-newest',
       name: 'Kitsu Newest',
       type: 'anime',
-      pageSize: kitsu.PAGE_SIZE,
       extra: [{ name: 'genre', options: genres }, { name: 'skip' }],
       genres: genres
     },
@@ -61,10 +57,9 @@ const manifest = {
       id: 'kitsu-anime-list',
       name: 'Kitsu',
       type: 'anime',
-      pageSize: kitsu.PAGE_SIZE,
       extra: [
           { name: 'search', isRequired: true },
-          { name: 'lastVideosIds', isRequired: false, "optionsLimit": 20 },
+          { name: 'lastVideosIds', isRequired: false, optionsLimit: 20 },
           { name: 'skip' }
       ],
     },
