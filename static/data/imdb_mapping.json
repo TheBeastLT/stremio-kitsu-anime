@@ -16981,6 +16981,12 @@
     "fromSeason": 0,
     "fromEpisode": 30
   },
+  "49258": {
+    "imdb_id": "tt5607616",
+    "title": "Re: Zero - Starting Life in Another World",
+    "fromSeason": 0,
+    "fromEpisode": 55
+  },
   "42903": {
     "imdb_id": "tt13906272",
     "title": "Re: Zero kara Hajimeru Isekai Seikatsu: Shin Henshuu-ban",
@@ -23600,6 +23606,12 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "49223": {
+    "imdb_id": "tt11503082",
+    "title": "Scissor Seven",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
   "42504": {
     "imdb_id": "tt11503082",
     "title": "Scissor Seven",
@@ -26449,6 +26461,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "48665": {
+    "imdb_id": "tt25275610",
+    "title": "High Card",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "44745": {
     "imdb_id": "tt14872196",
     "title": "The Grimm Variations",
@@ -28588,6 +28606,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "47106": {
+    "imdb_id": "tt27724196",
+    "title": "Kuromi's Pretty Journey",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49302": {
+    "imdb_id": "tt27724196",
+    "title": "Kuromi's Pretty Journey",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "47110": {
     "imdb_id": "tt26916286",
     "title": "Pokémon Concierge",
@@ -28598,6 +28628,18 @@
     "imdb_id": "tt28247170",
     "title": "Doctor Elise",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "47127": {
+    "imdb_id": "tt27531662",
+    "title": "Chibi Godzilla no Gyakushuu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48610": {
+    "imdb_id": "tt27531662",
+    "title": "Chibi Godzilla no Gyakushuu",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "47152": {
@@ -29599,5 +29641,41 @@
   "49220": {
     "imdb_id": "tt33428606",
     "title": "Solo Leveling: ReAwakening"
+  },
+  "49234": {
+    "imdb_id": "tt33498499",
+    "title": "Puniru wa Kawaii Slime",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49259": {
+    "imdb_id": "tt33998607",
+    "title": "One Piece Fan Letter",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49261": {
+    "imdb_id": "tt33568259",
+    "title": "Hamidashi Creative",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49281": {
+    "imdb_id": "tt33992229",
+    "title": "One Piece Log: Fish-Man Island Saga",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49322": {
+    "imdb_id": "tt33614031",
+    "title": "Okaimono Panda!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49324": {
+    "imdb_id": "tt34623148",
+    "title": "KagakuxBouken Survival!",
+    "fromSeason": 1,
+    "fromEpisode": 1
   }
 }
