@@ -3,7 +3,6 @@ const genres = require('./static/data/genres');
 const { enrichKitsuMetadata, enrichImdbMetadata, hasImdbMapping } = require('./lib/metadataEnrich');
 const { cacheWrapMeta, cacheWrapCatalog } = require('./lib/cache');
 const { mapToKitsuId } = require('./lib/id_convert');
-const { ADDON_URL } = require('./lib/config')
 const kitsu = require('./lib/kitsu_api');
 const cinemeta = require('./lib/cinemeta_api');
 const opensubtitles = require('./lib/opensubtitles_api')
@@ -12,7 +11,7 @@ const CACHE_MAX_AGE = parseInt(process.env.CACHE_MAX_AGE) || 12 * 60 * 60; // 12
 
 const manifest = {
   id: 'community.anime.kitsu',
-  version: '0.0.9',
+  version: '0.0.10',
   name: 'Anime Kitsu',
   description: 'Unofficial Kitsu.io anime catalog addon',
   logo: 'https://i.imgur.com/7N6XGoO.png',
@@ -47,13 +46,6 @@ const manifest = {
       genres: genres
     },
     {
-      id: 'kitsu-anime-newest',
-      name: 'Kitsu Newest',
-      type: 'anime',
-      extra: [{ name: 'genre', options: genres }, { name: 'skip' }],
-      genres: genres
-    },
-    {
       id: 'kitsu-anime-list',
       name: 'Kitsu',
       type: 'anime',
@@ -69,7 +61,6 @@ const manifest = {
 const builder = new addonBuilder(manifest);
 const sortValue = {
   'kitsu-anime-list': 'createdAt',
-  'kitsu-anime-newest': '-createdAt',
   'kitsu-anime-rating': '-average_rating',
   'kitsu-anime-popular': '-user_count',
   'kitsu-anime-airing': '-average_rating',
@@ -97,7 +88,7 @@ builder.defineCatalogHandler((args) => {
 
   const options = {
     offset: skip,
-    genre: args.extra && args.extra.genre,
+    genre: args.extra?.genre,
     sort: sortValue[args.id],
     status: statusValue[args.id],
     trending: args.id === 'kitsu-anime-trending'
