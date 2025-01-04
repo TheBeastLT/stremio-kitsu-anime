@@ -2909,11 +2909,6 @@
     "fromEpisode": 1
   },
   "47225": {
-    "malId": "54769",
-    "malTitle": "Sousei no Aquarion: Myth of Emotions",
-    "kitsuId": 47225,
-    "kitsuTitle": "Sousei no Aquarion: Myth of Emotions",
-    "animeType": "TV",
     "imdb_id": "tt0872309",
     "title": "Genesis of Aquarion",
     "fromSeason": 4,
@@ -22692,6 +22687,7 @@
   },
   "48342": {
     "imdb_id": "tt9679542",
+    "fanartLogoId": "196889",
     "title": "Dr. Stone",
     "fromSeason": 4,
     "fromEpisode": 1
@@ -29799,8 +29795,10 @@
     "fromEpisode": 1
   },
   "48644": {
-    "title": "The Old Man Who Was Reincarnated as a Cat",
-    "tvdb_id": 447354
+    "imdb_id": "tt33614026",
+    "title": "Neko ni Tensei Shita Ojisan",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "48653": {
     "imdb_id": "tt15286358",
