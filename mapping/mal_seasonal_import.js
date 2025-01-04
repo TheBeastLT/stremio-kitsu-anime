@@ -5,6 +5,7 @@ const googleSr = require('google-sr');
 const { queryIdMapping } = require('../lib/id_convert');
 const { getImdbMapping } = require('../lib/metadataEnrich');
 const { search, animeData } = require('../lib/kitsu_api');
+const { getTvdbId } = require("../lib/fanart");
 
 const selectors = {
   ...googleSr.defaultSelectors,
@@ -68,12 +69,14 @@ async function createImdbMappingEntry(malEntry) {
   }
   const imdbMeta = await getImdbMeta(foundImdbId).catch((err) => undefined);
   const hasVideos = kitsuMetadata?.videos?.length > 1 || kitsuMetadata?.animeType === 'TV';
+  const tvdbId = getTvdbId({ imdb_id: foundImdbId }).catch(() => undefined);
   return {
     malId: malEntry.malId,
     malTitle: malEntry.title,
     kitsuId: kitsuId,
     kitsuTitle: kitsuMetadata?.name,
     animeType: kitsuMetadata?.animeType,
+    tvdb_id: tvdbId,
     imdb_id: foundImdbId,
     title: imdbMeta?.title,
     fromSeason: hasVideos ? 1 : undefined,
@@ -163,4 +166,4 @@ async function sequence(promises) {
       promise.then(result => func().then(Array.prototype.concat.bind(result))), Promise.resolve([]));
 }
 
-importMalSeason('2024/fall').then(season => `Finished importing MAL ${season}`);
+importMalSeason('2025/winter').then(season => `Finished importing MAL ${season}`);

@@ -2908,6 +2908,17 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "47225": {
+    "malId": "54769",
+    "malTitle": "Sousei no Aquarion: Myth of Emotions",
+    "kitsuId": 47225,
+    "kitsuTitle": "Sousei no Aquarion: Myth of Emotions",
+    "animeType": "TV",
+    "imdb_id": "tt0872309",
+    "title": "Genesis of Aquarion",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "441": {
     "imdb_id": "tt0988935",
     "title": "The Law of Ueki"
@@ -10414,8 +10425,16 @@
   },
   "48650": {
     "imdb_id": "tt1799631",
+    "fanartLogoId": "193775",
     "title": "Blue Exorcist",
     "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "49040": {
+    "imdb_id": "tt1799631",
+    "fanartLogoId": "45229",
+    "title": "Blue Exorcist",
+    "fromSeason": 5,
     "fromEpisode": 1
   },
   "6484": {
@@ -12842,6 +12861,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "7511": {
+    "imdb_id": "tt3498252",
+    "title": "Inferno Cop",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "7515": {
     "imdb_id": "tt2591814",
     "title": "The Garden of Words"
@@ -13716,6 +13741,12 @@
     "imdb_id": "tt3111906",
     "title": "Yamishibai: Japanese Ghost Stories",
     "fromSeason": 13,
+    "fromEpisode": 1
+  },
+  "49380": {
+    "imdb_id": "tt3111906",
+    "title": "Yamishibai: Japanese Ghost Stories",
+    "fromSeason": 14,
     "fromEpisode": 1
   },
   "7843": {
@@ -14776,6 +14807,12 @@
     "imdb_id": "tt3544556",
     "title": "Aldnoah.Zero",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49209": {
+    "imdb_id": "tt3544556",
+    "title": "Aldnoah.Zero",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "8299": {
@@ -22653,6 +22690,12 @@
     "fromSeason": 3,
     "fromEpisode": 12
   },
+  "48342": {
+    "imdb_id": "tt9679542",
+    "title": "Dr. Stone",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "43682": {
     "imdb_id": "tt9679542",
     "fanartLogoId": "128970",
@@ -23320,6 +23363,12 @@
     "imdb_id": "tt10777610",
     "title": "Toilet-Bound Hanako-kun",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46924": {
+    "imdb_id": "tt10777610",
+    "title": "Jibaku Shounen Hanako-kun",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "42323": {
@@ -25172,6 +25221,12 @@
     "title": "SK8 the Infinity",
     "fromSeason": 0,
     "fromEpisode": 1
+  },
+  "44870": {
+    "imdb_id": "tt13129190",
+    "title": "SK8 the Infinity",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   "43608": {
     "imdb_id": "tt13420070",
@@ -27423,6 +27478,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46011": {
+    "imdb_id": "tt33503859",
+    "title": "Grisaia Phantom Trigger",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "46013": {
     "imdb_id": "tt21114720",
     "title": "Engage Kiss",
@@ -27457,6 +27518,12 @@
     "imdb_id": "tt19869172",
     "title": "Watashi no Shiawase na Kekkon",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "47969": {
+    "imdb_id": "tt19869172",
+    "title": "Watashi no Shiawase na Kekkon",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "47800": {
@@ -27773,8 +27840,16 @@
   },
   "46231": {
     "imdb_id": "tt21209876",
+    "fanartLogoId": "154023",
     "title": "Solo Leveling",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48671": {
+    "imdb_id": "tt21209876",
+    "fanartLogoId": "195713",
+    "title": "Solo Leveling",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "46232": {
@@ -27903,6 +27978,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "48994": {
+    "imdb_id": "tt21975436",
+    "title": "Kaiju No. 8",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "49103": {
+    "imdb_id": "tt21975436",
+    "title": "Kaiju No. 8",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "46303": {
     "imdb_id": "tt27524116",
     "title": "Sasaki to Pi-chan",
@@ -28015,6 +28102,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46449": {
+    "imdb_id": "tt21996220",
+    "title": "Versailles no bara"
+  },
   "46455": {
     "imdb_id": "tt21996318",
     "title": "Tearmoon Teikoku Monogatari: Dantoudai kara Hajimaru, Hime no Tensei Gyakuten Story",
@@ -28125,6 +28216,12 @@
     "imdb_id": "tt25808792",
     "title": "UniteUp!",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "47816": {
+    "imdb_id": "tt25808792",
+    "title": "UniteUp!",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "46527": {
@@ -28469,10 +28566,22 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "46900": {
+    "imdb_id": "tt23749170",
+    "title": "Tom and Jerry",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "46921": {
     "imdb_id": "tt24326724",
     "title": "Unnamed Memory",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48991": {
+    "imdb_id": "tt24326724",
+    "title": "Unnamed Memory",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "46922": {
@@ -28488,6 +28597,10 @@
     "fromEpisode": 1
   },
   "46932": {
+    "imdb_id": "tt32245532",
+    "title": "Tosochu: The Great Mission",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "46934": {
     "imdb_id": "tt29143189",
@@ -28597,6 +28710,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "48635": {
+    "imdb_id": "tt26713948",
+    "title": "Ishura",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "47079": {
     "imdb_id": "tt26674627",
     "title": "Resident Evil: Death Island"
@@ -28609,6 +28728,12 @@
     "imdb_id": "tt26743760",
     "title": "Kusuriya no Hitorigoto",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48649": {
+    "imdb_id": "tt26743760",
+    "title": "Kusuriya no Hitorigoto",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "47106": {
@@ -28677,6 +28802,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "48348": {
+    "imdb_id": "tt28919914",
+    "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "47184": {
     "imdb_id": "tt27197973",
     "title": "Kibô no Chikara: Otona Precure 23",
@@ -28686,6 +28817,12 @@
   "47185": {
     "imdb_id": "tt29605390",
     "title": "Gushing Over Magical Girls",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "47186": {
+    "imdb_id": "tt32475746",
+    "title": "Maho Tsukai PreCure!! MIRAI DAYS",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -28699,6 +28836,12 @@
     "imdb_id": "tt29338030",
     "title": "Kinnikuman Kanpeki Chôjin Shiso-hen",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49226": {
+    "imdb_id": "tt29338030",
+    "title": "Kinnikuman Kanpeki Chôjin Shiso-hen",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "49022": {
@@ -28853,6 +28996,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "47943": {
+    "imdb_id": "tt27479417",
+    "title": "BanG Dream! It's MyGO!!!!!",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "47296": {
     "imdb_id": "tt32552529",
     "title": "Giji Hâremu",
@@ -28913,6 +29062,12 @@
     "imdb_id": "tt31957516",
     "title": "Oi! Tonbo",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "47454": {
+    "imdb_id": "tt33310730",
+    "title": "Medarisuto",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   "47469": {
@@ -29029,6 +29184,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "47703": {
+    "imdb_id": "tt31169642",
+    "title": "OKITSURA: Fell in Love with an Okinawan Girl, but I Just Wish I Know What She's Saying",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "47711": {
     "imdb_id": "tt14681924",
     "title": "My Adventures with Superman",
@@ -29060,6 +29221,12 @@
   "47751": {
     "imdb_id": "tt30691068",
     "title": "The Demon Prince of Momochi House",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "47752": {
+    "imdb_id": "tt33059860",
+    "title": "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -29285,6 +29452,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "48201": {
+    "imdb_id": "tt32485245",
+    "title": "Kisaki Kyôiku kara Nigetai Watashi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "48202": {
     "imdb_id": "tt32395862",
     "title": "Ore wa Subete o Parry Suru: Gyaku Kanchigai no Sekai Saikyô wa Bôken-sha ni Naritai",
@@ -29385,6 +29558,18 @@
     "imdb_id": "tt30648377",
     "title": "Uma Musume: Pretty Derby - Beginning of a New Era"
   },
+  "48361": {
+    "imdb_id": "tt30689448",
+    "title": "Welcome to Japan, Ms. Elf!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48362": {
+    "imdb_id": "tt33058180",
+    "title": "From Bureaucrat to Villainess: Dad's Been Reincarnated!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "48388": {
     "imdb_id": "tt31976125",
     "title": "Boukyaku Battery",
@@ -29464,8 +29649,10 @@
     "fromEpisode": 1
   },
   "48460": {
-    "tvdb_id": "445259",
-    "title": "Fearful Lord and a Cheerful Dog Live Together as Masters and Servants!"
+    "imdb_id": "tt34715295",
+    "title": "The Corgi and the Samurai",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "48464": {
     "imdb_id": "tt32158870",
@@ -29491,6 +29678,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "48532": {
+    "imdb_id": "tt34621563",
+    "title": "Sorairo Utility",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "48533": {
     "imdb_id": "tt31975855",
     "title": "Viral Hit",
@@ -29500,6 +29693,12 @@
   "48534": {
     "imdb_id": "tt31889371",
     "title": "Tsue to Tsurugi no Wistoria",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48535": {
+    "imdb_id": "tt32034812",
+    "title": "I'm Living with an Otaku NEET Kunoichi?!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -29519,9 +29718,33 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "48570": {
+    "imdb_id": "tt32581027",
+    "title": "Ubel Blatt",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48575": {
+    "imdb_id": "tt32832412",
+    "title": "Anyway, I'm Falling in Love with You",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48587": {
+    "imdb_id": "tt31528958",
+    "title": "Honey Lemon Soda",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "48588": {
     "imdb_id": "tt32332642",
     "title": "Boku no Tsuma wa Kanjo ga nai",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48589": {
+    "imdb_id": "tt34754131",
+    "title": "Baban Baban Ban Vampire",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -29547,6 +29770,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "48620": {
+    "imdb_id": "tt32524468",
+    "title": "I'm a Noble on the Brink of Ruin, So I Might as Well Try Mastering Magic",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48628": {
+    "imdb_id": "tt32856718",
+    "title": "Beheneko: The Elf-Girl's Cat is Secretly an S-Ranked Monster!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "48631": {
     "imdb_id": "tt30400535",
     "title": "Raijingu Inpakuto",
@@ -29557,6 +29792,16 @@
     "imdb_id": "tt31142500",
     "title": "Trapezium"
   },
+  "48638": {
+    "imdb_id": "tt31863730",
+    "title": "ZENSHU",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48644": {
+    "title": "The Old Man Who Was Reincarnated as a Cat",
+    "tvdb_id": 447354
+  },
   "48653": {
     "imdb_id": "tt15286358",
     "title": "Kurayukaba"
@@ -29565,17 +29810,31 @@
     "imdb_id": "tt31688642",
     "title": "Kurameru Kagari"
   },
-  "48644": {
-    "title": "The Old Man Who Was Reincarnated as a Cat",
-    "tvdb_id": 447354
-  },
   "48655": {
     "imdb_id": "tt30317151",
     "title": "Fureru"
   },
+  "48691": {
+    "imdb_id": "tt33384314",
+    "title": "Ameku M.D.: Doctor Detective",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "48837": {
     "imdb_id": "tt32501772",
     "title": "The Most Notorious \"Talker\" Runs the World's Greatest Clan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48840": {
+    "imdb_id": "tt33310997",
+    "title": "Momentary Lily",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48857": {
+    "imdb_id": "tt32550272",
+    "title": "Kuroiwa Medaka ni Watashi no Kawaî ga Tsûjinai",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -29599,15 +29858,49 @@
     "imdb_id": "tt32809227",
     "title": "Fuuto PI: Portrait of Kamen Rider Skull"
   },
+  "48915": {
+    "imdb_id": "tt17069148",
+    "title": "Sakamoto Days",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48924": {
+    "imdb_id": "tt32508210",
+    "title": "Batman Ninja vs. Yakuza League"
+  },
   "48927": {
     "imdb_id": "tt32420174",
     "title": "Dead Dead Demons Dededede Destruction",
     "fromSeason": 0,
     "fromEpisode": 1
   },
+  "48947": {
+    "imdb_id": "tt32801156",
+    "title": "Flower and Asura",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48971": {
+    "imdb_id": "tt34621467",
+    "title": "Promise of Wizard",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48973": {
+    "imdb_id": "tt32579866",
+    "title": "Bogus Skill \"Fruitmaster\" ~About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)~",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "48981": {
     "imdb_id": "tt32766897",
     "title": "Ranma 1/2",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48995": {
+    "imdb_id": "tt32741637",
+    "title": "I'm Getting Married to a Girl I Hate in My Class",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -29623,9 +29916,69 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "49405": {
+    "imdb_id": "tt32903600",
+    "title": "0-Saiji Start Dash Monogatari",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "49058": {
+    "imdb_id": "tt34621609",
+    "title": "Tasokare Hotel",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49059": {
+    "imdb_id": "tt34620612",
+    "title": "Fugoushoku (Kanteishi) ga Jitsu wa Saikyou Datta",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49063": {
+    "imdb_id": "tt34621291",
+    "title": "Magic Maker -Isekai Mahou no Tsukurikata",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49065": {
+    "imdb_id": "tt33021990",
+    "title": "Headhunted to Another World: From Salaryman to Big Four!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49066": {
+    "imdb_id": "tt33349897",
+    "title": "Kono Kaisha ni Suki na Hito ga Imasu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49068": {
+    "imdb_id": "tt34602994",
+    "title": "Binan Kouko Chikyuu Bouei-bu Eternal Love!"
+  },
+  "49086": {
+  },
+  "49092": {
+    "imdb_id": "tt33050528",
+    "title": "Gekijôban Project Sekai: Kowareta Sekai to Utaenai Miku"
+  },
+  "49102": {
+  },
   "49117": {
     "imdb_id": "tt33054366",
     "title": "Negative Positive Angler",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49121": {
+    "imdb_id": "tt33084834",
+    "title": "Sentai Reddo Isekai de Bôkensha ni Naru",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49124": {
+    "imdb_id": "tt34621652",
+    "title": "The Daily Life of a Middle-Aged Online Shopper in Another World",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -29633,9 +29986,23 @@
     "imdb_id": "tt33175825",
     "title": "Attack on Titan the Movie: The Last Attack"
   },
+  "49179": {
+    "imdb_id": "tt33615810",
+    "title": "I Left My A-Rank Party to Help My Former Students Reach the Dungeon Depths!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "49193": {
-    "tvdb_id": "452993",
-    "title": "Lockdown Zone: Level X"
+    "imdb_id": "tt33613789",
+    "title": "Lockdown Zone: Lv. X",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49283": {
+    "imdb_id": "tt33613789",
+    "title": "Lockdown Zone: Lv. X",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   "49214": {
     "imdb_id": "tt33458087",
@@ -29646,6 +30013,10 @@
   "49220": {
     "imdb_id": "tt33428606",
     "title": "Solo Leveling: ReAwakening"
+  },
+  "49233": {
+    "imdb_id": "tt33507588",
+    "title": "Senpai wa Otokonoko: Ame Nochi Hare"
   },
   "49234": {
     "imdb_id": "tt33498499",
@@ -29680,6 +30051,12 @@
   "49324": {
     "imdb_id": "tt34623148",
     "title": "KagakuxBouken Survival!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49333": {
+    "imdb_id": "tt34621220",
+    "title": "Farmagia",
     "fromSeason": 1,
     "fromEpisode": 1
   }
