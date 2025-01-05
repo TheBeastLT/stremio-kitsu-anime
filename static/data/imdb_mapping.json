@@ -18055,6 +18055,12 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "49089": {
+    "imdb_id": "tt6765658",
+    "title": "Thunderbolt Fantasy",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "11839": {
     "imdb_id": "tt1605838",
     "title": "Avatar: The Last Airbender - The Legend So Far"
@@ -29144,6 +29150,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "47682": {
+    "imdb_id": "tt32864316",
+    "title": "Fate/strange Fake",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "47686": {
     "imdb_id": "tt30277745",
     "title": "Gundam: Requiem for Vengeance",
@@ -29827,6 +29839,12 @@
   "48840": {
     "imdb_id": "tt33310997",
     "title": "Momentary Lily",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48842": {
+    "imdb_id": "tt33478787",
+    "title": "Possibly the Greatest Alchemist of All Time",
     "fromSeason": 1,
     "fromEpisode": 1
   },
