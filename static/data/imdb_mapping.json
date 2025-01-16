@@ -23363,13 +23363,15 @@
   },
   "42322": {
     "imdb_id": "tt10777610",
+    "fanartLogoId": "107159",
     "title": "Toilet-Bound Hanako-kun",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "46924": {
     "imdb_id": "tt10777610",
-    "title": "Jibaku Shounen Hanako-kun",
+    "fanartLogoId": "197190",
+    "title": "Toilet-Bound Hanako-kun",
     "fromSeason": 2,
     "fromEpisode": 1
   },
@@ -28216,12 +28218,14 @@
   },
   "46526": {
     "imdb_id": "tt25808792",
+    "fanartLogoId": "163853",
     "title": "UniteUp!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "47816": {
     "imdb_id": "tt25808792",
+    "fanartLogoId": "197128",
     "title": "UniteUp!",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -28576,12 +28580,14 @@
   },
   "46921": {
     "imdb_id": "tt24326724",
+    "fanartLogoId": "170694",
     "title": "Unnamed Memory",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "48991": {
     "imdb_id": "tt24326724",
+    "fanartLogoId": "197181",
     "title": "Unnamed Memory",
     "fromSeason": 2,
     "fromEpisode": 1
