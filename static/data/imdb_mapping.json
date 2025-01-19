@@ -18873,11 +18873,35 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
-  "41292": {
+  "13753": {
     "imdb_id": "tt6460600",
     "title": "BanG Dream!",
     "fromSeason": 0,
-    "fromEpisode": 14
+    "fromEpisode": 1
+  },
+  "45963": {
+    "imdb_id": "tt6460600",
+    "title": "BanG Dream!",
+    "fromSeason": 0,
+    "fromEpisode": 7
+  },
+  "41292": {
+    "imdb_id": "tt11834788",
+    "title": "BanG Dream!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "43185": {
+    "imdb_id": "tt11834788",
+    "title": "BanG Dream!",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "44673": {
+    "imdb_id": "tt11834788",
+    "title": "BanG Dream!",
+    "fromSeason": 3,
+    "fromEpisode": 1
   },
   "43370": {
     "imdb_id": "tt11056458",
@@ -18890,6 +18914,10 @@
   "44523": {
     "imdb_id": "tt13911494",
     "title": "Bang Dream! Episode of Roselia: Promise"
+  },
+  "44524": {
+    "imdb_id": "tt14147078",
+    "title": "Bang Dream! Episode of Roselia: Song I Am."
   },
   "12346": {
   },
@@ -26664,12 +26692,14 @@
   },
   "44973": {
     "imdb_id": "tt15222080",
+    "fanartLogoId": "158814",
     "title": "Blue Lock",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "47245": {
     "imdb_id": "tt15222080",
+    "fanartLogoId": "194666",
     "title": "Blue Lock",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -29010,12 +29040,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "47943": {
-    "imdb_id": "tt27479417",
-    "title": "BanG Dream! It's MyGO!!!!!",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
   "47296": {
     "imdb_id": "tt32552529",
     "title": "Giji Hâremu",
@@ -29361,6 +29385,12 @@
   "47936": {
     "imdb_id": "tt30523856",
     "title": "Ao no Miburo",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "47943": {
+    "imdb_id": "tt29135397",
+    "title": "BanG Dream! Ave Mujica",
     "fromSeason": 1,
     "fromEpisode": 1
   },
