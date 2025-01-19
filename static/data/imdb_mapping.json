@@ -9041,6 +9041,12 @@
     "imdb_id": "tt1415054",
     "title": "Eden of the East"
   },
+  "4227": {
+    "imdb_id": "tt0421352",
+    "title": "Great Mazinger",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "4235": {
     "imdb_id": "tt1409064",
     "title": "Saki",
@@ -17891,6 +17897,20 @@
     "imdb_id": "tt5829254",
     "title": "Usakame"
   },
+  "11688": {
+    "imdb_id": "tt5296398",
+    "fanartLogoId": "106222",
+    "title": "Maho Tsukai PreCure!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "47186": {
+    "imdb_id": "tt5296398",
+    "fanartLogoId": "197426",
+    "title": "Maho Tsukai PreCure!! MIRAI DAYS",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "11737": {
     "imdb_id": "tt5321682",
     "title": "She and Her Cat: Everything Flows"
@@ -22904,18 +22924,21 @@
   },
   "42147": {
     "imdb_id": "tt11043632",
+    "fanartLogoId": "103988",
     "title": "Beastars",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "42904": {
     "imdb_id": "tt11043632",
+    "fanartLogoId": "103988",
     "title": "Beastars",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "44914": {
     "imdb_id": "tt11043632",
+    "fanartLogoId": "195246",
     "title": "Beastars",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -24427,12 +24450,16 @@
   },
   "43103": {
     "imdb_id": "tt11616778",
+    "tvdb_id": "376126",
+    "fanartLogoId": "115872",
     "title": "Future's Folktales",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "49130": {
     "imdb_id": "tt11616778",
+    "tvdb_id": "376126",
+    "fanartLogoId": "194588",
     "title": "Future's Folktales",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -25934,12 +25961,14 @@
   },
   "44174": {
     "imdb_id": "tt13544802",
+    "fanartLogoId": "138486",
     "title": "Seirei Gensouki",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "45420": {
     "imdb_id": "tt13544802",
+    "fanartLogoId": "194211",
     "title": "Seirei Gensouki",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -27238,12 +27267,14 @@
   },
   "45713": {
     "imdb_id": "tt28299608",
+    "fanartLogoId": "170472",
     "title": "MF Ghost",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "48337": {
     "imdb_id": "tt28299608",
+    "fanartLogoId": "194182",
     "title": "MF Ghost",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -27784,6 +27815,12 @@
     "imdb_id": "tt14833612",
     "title": "Castlevania: Nocturne",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48071": {
+    "imdb_id": "tt14833612",
+    "title": "Castlevania: Nocturne",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "46183": {
@@ -28605,8 +28642,8 @@
   "48399": {
     "imdb_id": "tt29370857",
     "title": "Kamonohashi Ron no Kindan Suiri",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 14
   },
   "46900": {
     "imdb_id": "tt23749170",
@@ -28864,12 +28901,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "47186": {
-    "imdb_id": "tt32475746",
-    "title": "Maho Tsukai PreCure!! MIRAI DAYS",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "47187": {
     "imdb_id": "tt32832434",
     "title": "Tsuma, Shougakusei ni Naru",
@@ -29122,12 +29153,14 @@
   },
   "47481": {
     "imdb_id": "tt31975847",
+    "fanartLogoId": "188549",
     "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "48979": {
     "imdb_id": "tt31975847",
+    "fanartLogoId": "194671",
     "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
     "fromSeason": 2,
     "fromEpisode": 1
