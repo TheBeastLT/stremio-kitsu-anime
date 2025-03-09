@@ -13,7 +13,7 @@ jobs:
 
       - name: Create Docker image
         run: |
-          docker build -t anime-kitsu:latest . -f Dockerfile.deprecated
+          docker build -t anime-kitsu:latest . -f Dockerfile
           docker save anime-kitsu:latest > kitsu_latest.tar
 
       - name: Upload Docker image

@@ -7,12 +7,6 @@ const { getImdbMapping } = require('../lib/metadataEnrich');
 const { search, animeData } = require('../lib/kitsu_api');
 const { getTvdbId } = require("../lib/fanart");
 
-const selectors = {
-  ...googleSr.defaultSelectors,
-  TitleSelector: 'a:has(h3)',
-  LinkSelector: 'a:has(h3)'
-}
-
 async function importMalSeason(season) {
   const imdbMapping = require('../static/data/imdb_mapping');
   const malEntries = await getMalSeasonalEntries(season);
@@ -103,11 +97,12 @@ async function getMalSeasonalEntries(season) {
 
 async function searchImdbId(title) {
   const query = `${title} imdb`;
-  return googleSr.search(query, { selectors })
+  return googleSr.search({ query })
       .then(response => response.length ? response : Promise.reject('No results'))
       .then(results => results
-          .filter(result => result.Link && result.Link.match(/imdb.com\/.*title\//))
-          .map(result => result.Link.match(/(tt\d+)/)[1])[0]);
+          .filter(result => result?.link?.match(/imdb.com\/.*title\//))
+          .map(result => result.link.match(/(tt\d+)/)[1])[0])
+      .catch((err) => getImdbIdFromImdbSuggestions(title));
 }
 
 async function getImdbMeta(imdbId) {

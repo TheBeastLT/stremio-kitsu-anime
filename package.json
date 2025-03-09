@@ -5,18 +5,18 @@
     "start": "node ./index.js"
   },
   "engines": {
-    "node": "16.x"
+    "node": "22.x"
   },
   "author": "TheBeastLT <pauliox@beyond.lt>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^1.6.0",
+    "axios": "^1.8.2",
     "cache-manager": "^3.6.0",
     "cache-manager-mongodb": "^0.3.0",
     "cheerio": "^1.0.0-rc.12",
-    "express": "^4.17.3",
+    "express": "^4.21.2",
     "fanart.tv-api": "^2.0.1",
-    "google-sr": "^2.0.0",
+    "google-sr": "^5.0.0",
     "jaro-winkler": "^0.2.8",
     "kitsu": "^10.0.4",
     "parse-torrent-title": "git://github.com/TheBeastLT/parse-torrent-title.git#2ece588b19d64da6726804b9b18842897b34ffc7",
