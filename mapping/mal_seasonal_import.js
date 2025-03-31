@@ -21,10 +21,10 @@ async function importMalSeason(season) {
 }
 
 async function createImdbMappingEntry(malEntry) {
-  const kitsuIdFromMal = await queryIdMapping(`mal`, malEntry.malId).catch(() => undefined);
+  const kitsuIdFromMal = await queryIdMapping(`mal`, malEntry.malId).catch((err) => undefined);
   const kitsuIdFromSearch = !kitsuIdFromMal && await search(malEntry.title)
       .then(metas => metas[0]?.kitsu_id)
-      .catch(() => undefined);
+      .catch((err) => undefined);
   const kitsuId = kitsuIdFromMal || kitsuIdFromSearch;
   if (!kitsuId) {
     console.log(`No kitsuId found for: ${JSON.stringify(malEntry)}`);
@@ -50,7 +50,7 @@ async function createImdbMappingEntry(malEntry) {
     };
   }
 
-  const foundImdbId = await searchImdbId(malEntry.title).catch(() => undefined);
+  const foundImdbId = await searchImdbId(malEntry.title).catch((err) => undefined);
   if (!foundImdbId) {
     console.log(`No imdbId found for: ${JSON.stringify(malEntry)}`);
     return {
@@ -63,7 +63,7 @@ async function createImdbMappingEntry(malEntry) {
   }
   const imdbMeta = await getImdbMeta(foundImdbId).catch((err) => undefined);
   const hasVideos = kitsuMetadata?.videos?.length > 1 || kitsuMetadata?.animeType === 'TV';
-  const tvdbId = getTvdbId({ imdb_id: foundImdbId }).catch(() => undefined);
+  const tvdbId = await getTvdbId({ imdb_id: foundImdbId }).catch(() => false);
   return {
     malId: malEntry.malId,
     malTitle: malEntry.title,
@@ -103,6 +103,14 @@ async function searchImdbId(title) {
           .filter(result => result?.link?.match(/imdb.com\/.*title\//))
           .map(result => result.link.match(/(tt\d+)/)[1])[0])
       .catch((err) => getImdbIdFromImdbSuggestions(title));
+}
+
+async function getImdbIdFromImdbSuggestions(title) {
+  const letter = title.slice(0,1).toLowerCase().normalize('NFKD');
+  const query = encodeURIComponent(title.trim());
+  return axios.get(`https://v2.sg.media-imdb.com/suggestion/${letter}/${query}.json`)
+      .then(response => response.data?.d?.[0]?.id)
+      .then(result => result ? result : Promise.reject("No imdb result"));
 }
 
 async function getImdbMeta(imdbId) {
@@ -161,4 +169,4 @@ async function sequence(promises) {
       promise.then(result => func().then(Array.prototype.concat.bind(result))), Promise.resolve([]));
 }
 
-importMalSeason('2025/winter').then(season => `Finished importing MAL ${season}`);
+importMalSeason('2025/spring').then(season => `Finished importing MAL ${season}`);
