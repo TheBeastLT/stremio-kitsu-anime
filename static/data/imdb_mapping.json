@@ -24356,6 +24356,10 @@
     "imdb_id": "tt10627720",
     "title": "Ne Zha"
   },
+  "49524": {
+    "imdb_id": "tt34956443",
+    "title": "Ne Zha 2"
+  },
   "42879": {
     "imdb_id": "tt13752200",
     "title": "ARP Backstage Pass",
@@ -30456,6 +30460,12 @@
     "imdb_id": "tt35444710",
     "title": "Detective Conan Movie 28: One-Eyed Flashback"
   },
+  "49739": {
+    "imdb_id": "tt28197251",
+    "title": "Chao Neng Lifang",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "49740": {
     "imdb_id": "tt35014218",
     "title": "Kanchigai no Atelier Meister: Eiyuu Party no Moto Zatsuyou-Gakari ga, Jitsu wa Sentou Igai ga SSS Rank Datta to Iu Yoku Aru Hanashi",
@@ -30477,6 +30487,12 @@
   "49821": {
     "imdb_id": "tt35348180",
     "title": "Gorilla no Kami Kara Kago Sareta Reijo wa Oritsu Kishdan de Kawaigareru",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49825": {
+    "imdb_id": "tt35346388",
+    "title": "#Compass 2.0 Combat Providence Analysis System",
     "fromSeason": 1,
     "fromEpisode": 1
   }
