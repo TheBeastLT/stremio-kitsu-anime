@@ -54,6 +54,18 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "49229": {
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 56
+  },
+  "49259": {
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 57
+  },
   "13": {
     "imdb_id": "tt0466352",
     "title": "The Prince of Tennis",
@@ -8411,6 +8423,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "3360": {
+    "imdb_id": "tt0950730",
+    "title": "Clockwork Fighters: Hiwou's Wari",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "3319": {
     "imdb_id": "tt0303508",
     "title": "Paris no Isabelle",
@@ -10978,6 +10996,18 @@
     "imdb_id": "tt2150751",
     "title": "Chihayafuru",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "6361": {
+    "imdb_id": "tt2193783",
+    "title": "Mobile Suit Gundam AGE",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "7689": {
+    "imdb_id": "tt2193783",
+    "title": "Mobile Suit Gundam AGE",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "6392": {
@@ -14735,24 +14765,28 @@
   },
   "8271": {
     "imdb_id": "tt3741634",
+    "fanartLogoId": "41639",
     "title": "Tokyo Ghoul",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "9135": {
     "imdb_id": "tt3741634",
+    "fanartLogoId": "96482",
     "title": "Tokyo Ghoul",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "13929": {
     "imdb_id": "tt3741634",
+    "fanartLogoId": "96485",
     "title": "Tokyo Ghoul",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   "41359": {
     "imdb_id": "tt3741634",
+    "fanartLogoId": "96485",
     "title": "Tokyo Ghoul",
     "fromSeason": 3,
     "fromEpisode": 13
@@ -26079,6 +26113,20 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "49245": {
+    "imdb_id": "tt17158756",
+    "title": "Bocchi the Rock!",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "47470": {
+    "imdb_id": "tt32561659",
+    "title": "Theater Compilation Bocchi the Rock! Re:"
+  },
+  "48210": {
+    "imdb_id": "tt32576588",
+    "title": "Theater Compilation Bocchi the Rock! Re: Re:"
+  },
   "44197": {
     "imdb_id": "tt15128210",
     "title": "Kyoukai Senki",
@@ -26503,11 +26551,9 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "45529": {
-    "imdb_id": "tt16255458",
-    "title": "Trapped in a Dating Sim: The World of Otome Games is Tough for Mobs",
-    "fromSeason": 1,
-    "fromEpisode": 1
+  "44530": {
+    "imdb_id": "tt14603848",
+    "title": "Overlord: The Sacred Kingdom"
   },
   "44551": {
     "imdb_id": "tt14626352",
@@ -27187,6 +27233,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "45529": {
+    "imdb_id": "tt16255458",
+    "title": "Trapped in a Dating Sim: The World of Otome Games is Tough for Mobs",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "45530": {
     "imdb_id": "tt16254906",
     "title": "Kami Kuzu Idol",
@@ -27287,6 +27339,12 @@
     "imdb_id": "tt22249034",
     "title": "Rurouni Kenshin: Meiji Kenkaku Romantan",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "49716": {
+    "imdb_id": "tt22249034",
+    "title": "Rurouni Kenshin: Meiji Kenkaku Romantan",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "45653": {
@@ -27453,6 +27511,7 @@
   },
   "45839": {
     "imdb_id": "tt30414322",
+    "tvdb_id": "452593",
     "title": "Yamato yo, Towa ni: Rebel 3199",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -29011,8 +29070,8 @@
   "49226": {
     "imdb_id": "tt29338030",
     "title": "Kinnikuman Kanpeki Chôjin Shiso-hen",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 12
   },
   "49022": {
     "imdb_id": "tt29338030",
@@ -29328,6 +29387,10 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "47658": {
+    "imdb_id": "tt36361934",
+    "title": "Cocoon: One Summer of Girlhood"
+  },
   "47682": {
     "imdb_id": "tt32864316",
     "title": "Fate/strange Fake",
@@ -29581,6 +29644,12 @@
   "48009": {
     "imdb_id": "tt31976070",
     "title": "Tadaima, Okaeri",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48010": {
+    "imdb_id": "tt15716776",
+    "title": "Devil May Cry",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -30158,6 +30227,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "48972": {
+    "imdb_id": "tt34853325",
+    "title": "Princession Orchestra",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "48973": {
     "imdb_id": "tt32579866",
     "title": "Bogus Skill \"Fruitmaster\" ~About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)~",
@@ -30360,12 +30435,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-  "49259": {
-    "imdb_id": "tt33998607",
-    "title": "One Piece Fan Letter",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "49261": {
     "imdb_id": "tt33568259",
     "title": "Hamidashi Creative",
@@ -30432,6 +30501,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "49377": {
+    "imdb_id": "tt34852961",
+    "title": "Kimi to Idol Precure",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "49379": {
     "imdb_id": "tt35331840",
     "title": "Uchuujin Muumuu",
@@ -30481,6 +30556,16 @@
   "49757": {
     "imdb_id": "tt36269978",
     "title": "Hibi wa Sugiredo Meshi Umashi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49779": {
+    "imdb_id": "tt36415390",
+    "title": "Twins Hinahima"
+  },
+  "49819": {
+    "imdb_id": "tt35346410",
+    "title": "Everyday Host",
     "fromSeason": 1,
     "fromEpisode": 1
   },
