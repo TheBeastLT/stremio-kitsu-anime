@@ -3896,6 +3896,12 @@
     "imdb_id": "tt2223998",
     "title": "Hanaukyo Maid Team: La Verite"
   },
+  "598": {
+    "imdb_id": "tt0113236",
+    "title": "Gunsmith Cats",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "605": {
     "imdb_id": "tt0910592",
     "title": "Akagi"
@@ -4361,6 +4367,14 @@
   "779": {
     "imdb_id": "tt0991062",
     "title": "Simoun"
+  },
+  "782": {
+    "imdb_id": "tt1119171",
+    "title": "Yu Yu Hakusho: The Movie"
+  },
+  "783": {
+    "imdb_id": "tt0203237",
+    "title": "Yu Yu Hakusho the Movie: Poltergeist Report"
   },
   "785": {
     "imdb_id": "tt0208502",
@@ -6521,6 +6535,12 @@
   "1675": {
     "imdb_id": "tt2505510",
     "title": "Gakuen Utopia Manabi Straight!"
+  },
+  "1684": {
+    "imdb_id": "tt0295495",
+    "title": "Mighty Space Miners",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "1690": {
     "imdb_id": "tt4084590",
@@ -11901,6 +11921,30 @@
     "title": "Girls und Panzer",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "7386": {
+    "imdb_id": "tt2294076",
+    "title": "Girls und Panzer",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  "7315": {
+    "imdb_id": "tt2294076",
+    "title": "Girls und Panzer",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  "7811": {
+    "imdb_id": "tt2294076",
+    "title": "Girls und Panzer",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  "7981": {
+    "imdb_id": "tt2294076",
+    "title": "Girls und Panzer",
+    "fromSeason": 0,
+    "fromEpisode": 34
   },
   "42948": {
     "imdb_id": "tt2294076",
@@ -17619,6 +17663,12 @@
     "fromSeason": 0,
     "fromEpisode": 3
   },
+  "42046": {
+    "imdb_id": "tt5626028",
+    "title": "Boku No Hero Academia",
+    "fromSeason": 0,
+    "fromEpisode": 5
+  },
   "43485": {
     "imdb_id": "tt5626028",
     "title": "Boku No Hero Academia",
@@ -20381,7 +20431,10 @@
     "imdb_id": "tt7328554",
     "title": "Haikyû!!: Sainou to sensu"
   },
-  "13656": {},
+  "13656": {
+    "imdb_id": "tt7328556",
+    "title": "Haikyû!! Concept no Tatakai"
+  },
   "13659": {
     "imdb_id": "tt8530992",
     "title": "Harukana Receive"
@@ -21521,6 +21574,18 @@
     "title": "That Time I Got Reincarnated as a Slime",
     "fromSeason": 0,
     "fromEpisode": 10
+  },
+  "48689": {
+    "imdb_id": "tt9054364",
+    "title": "That Time I Got Reincarnated as a Slime",
+    "fromSeason": 0,
+    "fromEpisode": 13
+  },
+  "49100": {
+    "imdb_id": "tt9054364",
+    "title": "That Time I Got Reincarnated as a Slime",
+    "fromSeason": 0,
+    "fromEpisode": 14
   },
   "45231": {
     "imdb_id": "tt15467380",
@@ -22681,7 +22746,6 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
-  "42046": {},
   "42047": {
     "imdb_id": "tt10883006",
     "title": "Oresuki: Are You the Only One Who Loves Me?",
@@ -29755,6 +29819,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "48225": {
+    "imdb_id": "tt14153236",
+    "title": "Terminator Zero",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
   "48238": {
     "imdb_id": "tt30970523",
     "title": "Katsute Maho Shojo to Aku wa Tekitai Shiteita",
@@ -30189,6 +30259,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "48927": {
+    "imdb_id": "tt32420174",
+    "title": "Dead Dead Demons Dededede Destruction",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
   "49003": {
     "imdb_id": "tt32809227",
     "title": "Fuuto PI: Portrait of Kamen Rider Skull"
@@ -30202,12 +30278,6 @@
   "48924": {
     "imdb_id": "tt32508210",
     "title": "Batman Ninja vs. Yakuza League"
-  },
-  "48927": {
-    "imdb_id": "tt32420174",
-    "title": "Dead Dead Demons Dededede Destruction",
-    "fromSeason": 0,
-    "fromEpisode": 1
   },
   "48947": {
     "imdb_id": "tt32801156",
