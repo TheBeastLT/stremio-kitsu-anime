@@ -10007,6 +10007,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "46227": {
+    "imdb_id": "tt1727444",
+    "title": "Panty & Stocking with Garterbelt",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "6326": {
     "imdb_id": "tt1727444",
     "title": "Panty & Stocking with Garterbelt",
@@ -13837,6 +13843,12 @@
     "fromSeason": 14,
     "fromEpisode": 1
   },
+  "49967": {
+    "imdb_id": "tt3111906",
+    "title": "Yamishibai: Japanese Ghost Stories",
+    "fromSeason": 15,
+    "fromEpisode": 1
+  },
   "7843": {
     "imdb_id": "tt3169640",
     "title": "Yozakura Quartet: Hana no Uta",
@@ -17003,6 +17015,12 @@
     "imdb_id": "tt4838372",
     "title": "Osomatsu-san",
     "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "48932": {
+    "imdb_id": "tt4838372",
+    "title": "Osomatsu-san",
+    "fromSeason": 4,
     "fromEpisode": 1
   },
   "11179": {
@@ -20330,6 +20348,12 @@
     "fromSeason": 3,
     "fromEpisode": 1
   },
+  "48444": {
+    "imdb_id": "tt9529546",
+    "title": "The Rising of the Shield Hero",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
   "13597": {
     "imdb_id": "tt7474942",
     "title": "Girls' Last Tour"
@@ -22876,6 +22900,13 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "49751": {
+    "imdb_id": "tt9679542",
+    "fanartLogoId": "196889",
+    "title": "Dr. Stone",
+    "fromSeason": 4,
+    "fromEpisode": 13
+  },
   "43682": {
     "imdb_id": "tt9679542",
     "fanartLogoId": "128970",
@@ -23555,6 +23586,12 @@
     "title": "Toilet-Bound Hanako-kun",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  "49776": {
+    "imdb_id": "tt10777610",
+    "title": "Toilet-Bound Hanako-kun",
+    "fromSeason": 2,
+    "fromEpisode": 13
   },
   "42323": {
     "imdb_id": "tt13293588",
@@ -24526,20 +24563,29 @@
   },
   "43028": {
     "imdb_id": "tt11448214",
+    "fanartLogoId": "195232",
     "title": "Rent-A-Girlfriend",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "43588": {
     "imdb_id": "tt11448214",
+    "fanartLogoId": "198010",
     "title": "Rent-A-Girlfriend",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   "46489": {
     "imdb_id": "tt11448214",
+    "fanartLogoId": "200968",
     "title": "Rent-A-Girlfriend",
     "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  "49033": {
+    "imdb_id": "tt11448214",
+    "title": "Rent-A-Girlfriend",
+    "fromSeason": 4,
     "fromEpisode": 1
   },
   "43038": {
@@ -24959,6 +25005,12 @@
     "imdb_id": "tt15250594",
     "title": "Fairies Album",
     "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "49434": {
+    "imdb_id": "tt15250594",
+    "title": "Fairies Album",
+    "fromSeason": 5,
     "fromEpisode": 1
   },
   "43180": {
@@ -26393,8 +26445,16 @@
   },
   "44310": {
     "imdb_id": "tt14400866",
+    "fanartLogoId": "149964",
     "title": "Kakkou no Iinazuke",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49067": {
+    "imdb_id": "tt14400866",
+    "fanartLogoId": "201704",
+    "title": "Kakkou no Iinazuke",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "44312": {
@@ -26463,6 +26523,12 @@
     "imdb_id": "tt15765670",
     "title": "My Dress-Up Darling",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "46492": {
+    "imdb_id": "tt15765670",
+    "title": "My Dress-Up Darling",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "44383": {
@@ -27261,6 +27327,12 @@
     "imdb_id": "tt15975122",
     "title": "Yofukashi no uta",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48611": {
+    "imdb_id": "tt15975122",
+    "title": "Yofukashi no uta",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "45509": {
@@ -28290,6 +28362,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "47968": {
+    "imdb_id": "tt28100731",
+    "title": "Jidou Hanbaiki ni Umarekawatta Ore wa Meikyuu wo Samayou",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "46316": {
     "imdb_id": "tt26739471",
     "title": "Duel Masters WIN",
@@ -28476,6 +28554,12 @@
     "imdb_id": "tt27442011",
     "title": "Long Zu",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49191": {
+    "imdb_id": "tt27442011",
+    "title": "Long Zu",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "46523": {
@@ -28683,8 +28767,16 @@
   },
   "46704": {
     "imdb_id": "tt31624309",
+    "fanartLogoId": "176268",
     "title": "I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48968": {
+    "imdb_id": "tt31624309",
+    "fanartLogoId": "201688",
+    "title": "I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "46731": {
@@ -29053,6 +29145,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "48560": {
+    "imdb_id": "tt26916286",
+    "title": "Pokémon Concierge",
+    "fromSeason": 1,
+    "fromEpisode": 5
+  },
   "47111": {
     "imdb_id": "tt28247170",
     "title": "Doctor Elise",
@@ -29069,6 +29167,12 @@
     "imdb_id": "tt27531662",
     "title": "Chibi Godzilla no Gyakushuu",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "49962": {
+    "imdb_id": "tt27531662",
+    "title": "Chibi Godzilla no Gyakushuu",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "47152": {
@@ -29861,6 +29965,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "49425": {
+    "imdb_id": "tt30217403",
+    "title": "Dandadan",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "48272": {
     "imdb_id": "tt30476504",
     "title": "Magilumiere Magical Girls Inc.",
@@ -30275,6 +30385,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "49332": {
+    "imdb_id": "tt17069148",
+    "title": "Sakamoto Days",
+    "fromSeason": 1,
+    "fromEpisode": 12
+  },
   "48924": {
     "imdb_id": "tt32508210",
     "title": "Batman Ninja vs. Yakuza League"
@@ -30509,6 +30625,12 @@
     "imdb_id": "tt33498499",
     "title": "Puniru wa Kawaii Slime",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "49436": {
+    "imdb_id": "tt33498499",
+    "title": "Puniru wa Kawaii Slime",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "49261": {
