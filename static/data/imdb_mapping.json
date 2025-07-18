@@ -23632,6 +23632,7 @@
   },
   "49776": {
     "imdb_id": "tt10777610",
+    "fanartLogoId": "197190",
     "title": "Toilet-Bound Hanako-kun",
     "fromSeason": 2,
     "fromEpisode": 13
@@ -27236,9 +27237,7 @@
   },
   "45307": {
     "imdb_id": "tt36979965",
-    "title": "Liao Zhai Lanruo Si",
-    "fromSeason": 1,
-    "fromEpisode": 1
+    "title": "Liao Zhai Lanruo Si"
   },
   "45328": {
     "imdb_id": "tt10915840",
@@ -30895,8 +30894,8 @@
   "49436": {
     "imdb_id": "tt33498499",
     "title": "Puniru wa Kawaii Slime",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   "49261": {
     "imdb_id": "tt33568259",
