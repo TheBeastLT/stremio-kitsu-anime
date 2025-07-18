@@ -27263,15 +27263,21 @@
   "45367": {
     "imdb_id": "tt22443832",
     "fanartLogoId": "157076",
-    "title": "Arknights: Reimei Zensou",
+    "title": "Arknights: Prelude to Dawn",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "46880": {
     "imdb_id": "tt22443832",
     "fanartLogoId": "181951",
-    "title": "Arknights: Reimei Zensou",
+    "title": "Arknights: Prelude to Dawn",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "48796": {
+    "imdb_id": "tt22443832",
+    "title": "Arknights: Prelude to Dawn",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "45372": {
@@ -29067,6 +29073,7 @@
     "fromEpisode": 1
   },
   "46926": {
+    "imdb_id": "tt36074011",
     "title": "Turkey!",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -29982,8 +29989,8 @@
     "fromEpisode": 1
   },
   "48126": {
-    "imdb_id": "tt37531355",
-    "title": "That Which Rejects",
+    "imdb_id": "tt32536624",
+    "title": "Private Tutor to the Duke's Daughter",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -30459,12 +30466,6 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
-    "48796": {
-    "imdb_id": "tt36987898",
-    "title": "Arknights: Rise from Ember",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
   "48834": {
     "imdb_id": "tt32344704",
     "title": "Tougen Anki: Dark Demon of Paradise",
@@ -30650,12 +30651,6 @@
     "fromEpisode": 1
   },
   "49012": {
-    "malId": "59207",
-    "malTitle": "Mikadono Sanshimai wa Angai, Choroi.",
-    "kitsuId": 49012,
-    "kitsuTitle": "Mikadono Sanshimai wa Angai, Choroi.",
-    "animeType": "TV",
-    "tvdb_id": "451821",
     "imdb_id": "tt36469298",
     "title": "Dealing with Mikadono Sisters Is a Breeze",
     "fromSeason": 1,
