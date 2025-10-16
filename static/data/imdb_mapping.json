@@ -13293,6 +13293,12 @@
     "fromSeason": 5,
     "fromEpisode": 1
   },
+  "49861": {
+    "imdb_id": "tt2404499",
+    "title": "Kingdom",
+    "fromSeason": 6,
+    "fromEpisode": 1
+  },
   "7681": {
     "imdb_id": "tt2959370",
     "title": "Gatchaman Crowds",
@@ -16539,6 +16545,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "46360": {
+    "imdb_id": "tt4508902",
+    "title": "One Punch Man: Wanpanman",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "11402": {
     "imdb_id": "tt4508902",
     "title": "One Punch Man: Wanpanman",
@@ -17674,6 +17686,12 @@
     "imdb_id": "tt5626028",
     "title": "Boku No Hero Academia",
     "fromSeason": 7,
+    "fromEpisode": 1
+  },
+  "49279": {
+    "imdb_id": "tt5626028",
+    "title": "Boku No Hero Academia",
+    "fromSeason": 8,
     "fromEpisode": 1
   },
   "12511": {
@@ -22775,14 +22793,22 @@
   },
   "42032": {
     "imdb_id": "tt9193770",
+    "fanartLogoId": "97282",
     "title": "Isekai Quartet",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   "42410": {
     "imdb_id": "tt9193770",
+    "fanartLogoId": "202741",
     "title": "Isekai Quartet",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "43114": {
+    "imdb_id": "tt9193770",
+    "title": "Isekai Quartet",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "42036": {
@@ -24594,9 +24620,16 @@
   },
   "48349": {
     "imdb_id": "tt11755260",
-    "fanartLogoId": "157608",
+    "fanartLogoId": "200967",
     "title": "The Daily Life of the Immortal King",
     "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  "50106": {
+    "imdb_id": "tt11755260",
+    "fanartLogoId": "131860",
+    "title": "The Daily Life of the Immortal King",
+    "fromSeason": 5,
     "fromEpisode": 1
   },
   "43018": {
@@ -25097,6 +25130,13 @@
     "fanartLogoId": "159784",
     "title": "Fumetsu no Anata e",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  "47161": {
+    "imdb_id": "tt12063450",
+    "fanartLogoId": "203510",
+    "title": "Fumetsu no Anata e",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   "43213": {
@@ -25727,6 +25767,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "49359": {
+    "imdb_id": "tt13622982",
+    "title": "Star Wars: Visions",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "43807": {
     "imdb_id": "tt12415562",
     "title": "LBX Girls",
@@ -26346,6 +26392,12 @@
     "title": "Shuumatsu no Valkyrie",
     "fromSeason": 2,
     "fromEpisode": 11
+  },
+  "49669": {
+    "imdb_id": "tt13676344",
+    "title": "Shuumatsu no Valkyrie",
+    "fromSeason": 3,
+    "fromEpisode": 1
   },
   "44208": {
     "imdb_id": "tt14979604",
@@ -27341,6 +27393,12 @@
     "fromSeason": 2,
     "fromEpisode": 1
   },
+  "48939": {
+    "imdb_id": "tt13706018",
+    "title": "Spy x Family",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
   "45401": {
     "imdb_id": "tt15830678",
     "title": "Tomodachi Game",
@@ -27920,6 +27978,12 @@
     "imdb_id": "tt26450255",
     "title": "Ao no Orchestra",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  "48070": {
+    "imdb_id": "tt26450255",
+    "title": "Ao no Orchestra",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   "46059": {
@@ -28813,6 +28877,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "48190": {
+    "imdb_id": "tt24229160",
+    "title": "Tondemo Skill de Isekai Hourou Meshi",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "46685": {
     "imdb_id": "tt28266753",
     "title": "Ayaka",
@@ -29162,6 +29232,12 @@
     "title": "Tales of Wedding Rings",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "48648": {
+    "imdb_id": "tt30488398",
+    "title": "Tales of Wedding Rings",
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   "47034": {
     "imdb_id": "tt24548912",
@@ -30337,6 +30413,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "49651": {
+    "imdb_id": "tt32508529",
+    "title": "Let This Grieving Soul Retire!",
+    "fromSeason": 1,
+    "fromEpisode": 14
+  },
   "48564": {
     "imdb_id": "tt31435652",
     "title": "Nyaight of the Living Cat",
@@ -30619,6 +30701,12 @@
     "fromSeason": 1,
     "fromEpisode": 1
   },
+  "49433": {
+    "imdb_id": "tt32766897",
+    "title": "Ranma 1/2",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
   "48995": {
     "imdb_id": "tt32741637",
     "title": "I'm Getting Married to a Girl I Hate in My Class",
@@ -30804,6 +30892,12 @@
     "title": "Uma Musume: Cinderella Gray",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  "50006": {
+    "imdb_id": "tt35437675",
+    "title": "Uma Musume: Cinderella Gray",
+    "fromSeason": 1,
+    "fromEpisode": 14
   },
   "49144": {
     "imdb_id": "tt36143285",
@@ -31218,6 +31312,12 @@
   "49925": {
     "imdb_id": "tt36592916",
     "title": "ChaO"
+  },
+  "49927": {
+    "imdb_id": "tt37038599",
+    "title": "Sozai Saishuka no Isekai Ryokouki",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   "49942": {
     "imdb_id": "tt37205939",

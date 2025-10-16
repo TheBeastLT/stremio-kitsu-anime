@@ -50,7 +50,8 @@ async function createImdbMappingEntry(malEntry) {
     };
   }
 
-  const foundImdbId = await searchImdbId(malEntry.title).catch((err) => undefined);
+  const type = kitsuMetadata?.animeType === 'movie' ? 'movie' : 'series';
+  const foundImdbId = await searchImdbId(malEntry.title, type).catch((err) => undefined);
   if (!foundImdbId) {
     console.log(`No imdbId found for: ${JSON.stringify(malEntry)}`);
     return {
@@ -95,14 +96,15 @@ async function getMalSeasonalEntries(season) {
       });
 }
 
-async function searchImdbId(title) {
+async function searchImdbId(title, type) {
   const query = `${title} imdb`;
   return googleSr.search({ query })
       .then(response => response.length ? response : Promise.reject('No results'))
       .then(results => results
           .filter(result => result?.link?.match(/imdb.com\/.*title\//))
           .map(result => result.link.match(/(tt\d+)/)[1])[0])
-      .catch((err) => getImdbIdFromImdbSuggestions(title));
+      .catch((err) => getImdbIdFromImdbSuggestions(title))
+      .catch((err) => getImdbIdFromTrakt(title, type));
 }
 
 async function getImdbIdFromImdbSuggestions(title) {
@@ -111,6 +113,19 @@ async function getImdbIdFromImdbSuggestions(title) {
   return axios.get(`https://v2.sg.media-imdb.com/suggestion/${letter}/${query}.json`)
       .then(response => response.data?.d?.[0]?.id)
       .then(result => result ? result : Promise.reject("No imdb result"));
+}
+
+async function getImdbIdFromTrakt(title, type) {
+    const traktType = type === 'movie' ? 'movie' : 'show';
+    const query = encodeURIComponent(title.trim());
+    const headers = { 'trakt-api-key': process.env.TRAKT_CLIENT_ID }
+    return axios.get(`https://api.trakt.tv/search/${traktType}?query=${query}`, { headers })
+        .then(response => {
+            if (Array.isArray(response.data)) {
+                return response.data.map(result => result[traktType])[0]?.ids?.imdb;
+            }
+            return Promise.reject('No imdb match found in trakt');
+        });
 }
 
 async function getImdbMeta(imdbId) {
@@ -169,4 +184,4 @@ async function sequence(promises) {
       promise.then(result => func().then(Array.prototype.concat.bind(result))), Promise.resolve([]));
 }
 
-importMalSeason('2025/summer').then(season => `Finished importing MAL ${season}`);
+importMalSeason('2025/autumn').then(season => `Finished importing MAL ${season}`);
