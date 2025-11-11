@@ -37,7 +37,7 @@ jobs:
           echo "season_path=$year/$season" >> $GITHUB_OUTPUT
 
       - name: Generate new IMDb mapping
-        run: bun mapping/generate_imdb_mapping.js ${{ steps.season.outputs.season_path }}
+        run: bun mapping/mal_seasonal_import.js ${{ steps.season.outputs.season_path }}
 
       - name: Commit and push if changes exist
         run: |
