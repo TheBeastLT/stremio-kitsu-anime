@@ -1,0 +1,47 @@
+name: Update IMDb Mapping
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Runs every Sunday at midnight
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  update-mapping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Get current season
+        id: season
+        run: |
+          year=$(date +'%Y')
+          month=$(date +'%m')
+          season=""
+          if ((10#$month >= 1 && 10#$month <= 3)); then
+            season="winter"
+          elif ((10#$month >= 4 && 10#$month <= 6)); then
+            season="spring"
+          elif ((10#$month >= 7 && 10#$month <= 9)); then
+            season="summer"
+          else
+            season="autumn"
+          fi
+          echo "season_path=$year/$season" >> $GITHUB_OUTPUT
+
+      - name: Generate new IMDb mapping
+        run: bun mapping/generate_imdb_mapping.js ${{ steps.season.outputs.season_path }}
+
+      - name: Commit and push if changes exist
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add static/data/imdb_mapping.json
+          git diff --staged --quiet || (git commit -m "Update IMDb mapping for ${{ steps.season.outputs.season_path }}" && git push)
