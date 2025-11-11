@@ -1,12 +1,11 @@
-FROM node:22-alpine
+FROM oven/bun:1
 
-RUN apk update && apk upgrade && \
-    apk add --no-cache git
+RUN apt-get update && apt-get install -y git
 
 WORKDIR /home/node/app
 
-COPY package*.json ./
-RUN npm ci --only-production
+COPY package.json ./
+RUN bun install --production
 COPY . .
 
-CMD [ "node", "index.js" ]
+CMD [ "bun", "index.js" ]

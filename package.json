@@ -2,10 +2,7 @@
   "name": "stremio-kitsu-anime",
   "version": "0.0.6",
   "scripts": {
-    "start": "node ./index.js"
-  },
-  "engines": {
-    "node": "22.x"
+    "start": "bun ./index.js"
   },
   "author": "TheBeastLT <pauliox@beyond.lt>",
   "license": "MIT",
@@ -14,7 +11,8 @@
     "cache-manager": "^3.6.0",
     "cache-manager-mongodb": "^0.3.0",
     "cheerio": "^1.0.0-rc.12",
-    "express": "^4.21.2",
+    "elysia": "latest",
+    "elysia-connect-middleware": "latest",
     "fanart.tv-api": "^2.0.1",
     "google-sr": "^5.0.0",
     "jaro-winkler": "^0.2.8",

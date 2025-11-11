@@ -8,15 +8,23 @@ const { search, animeData } = require('../lib/kitsu_api');
 const { getTvdbId } = require("../lib/fanart");
 
 async function importMalSeason(season) {
-  const imdbMapping = require('../static/data/imdb_mapping');
+  const imdbMapping = require('../static/data/imdb_mapping.json');
   const malEntries = await getMalSeasonalEntries(season);
   const newMappingEntries = await sequence(malEntries.map(malEntry => () => createImdbMappingEntry(malEntry)));
+
   const newMappings = newMappingEntries
       .filter(entry => entry && !imdbMapping[entry.kitsuId])
-      .reduce((map, entry) => (map[entry.kitsuId] = entry, map), {})
-  writeToFile(newMappings, "./static/data/new_mappings.json")
-  console.log("Ids to remove from cache:")
-  console.log(newMappingEntries.map(e => [e?.kitsuId, e?.imdb_id]).flat().filter(x => x).join('|'))
+      .reduce((map, entry) => {
+        map[entry.kitsuId] = entry;
+        return map;
+      }, {});
+
+  const updatedImdbMapping = { ...imdbMapping, ...newMappings };
+  writeToFile(updatedImdbMapping, "./static/data/imdb_mapping.json");
+
+  console.log("New mappings added:", newMappings);
+  console.log("Ids to remove from cache:");
+  console.log(newMappingEntries.map(e => [e?.kitsuId, e?.imdb_id]).flat().filter(x => x).join('|'));
   return season;
 }
 
@@ -132,7 +140,7 @@ async function getImdbMeta(imdbId) {
   const url = `https://www.imdb.com/title/${imdbId}`;
   const config = {
     headers: {
-      'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+      'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/536',
       'accept-language': 'en-GB'
     }
   };
@@ -145,30 +153,6 @@ async function getImdbMeta(imdbId) {
           title: title || undefined,
         };
       })
-}
-
-function findMappingInsertIndex(imdbMappingEntries, mapping) {
-  const kitsuId = parseInt(mapping.kitsuId);
-  const imdbId = mapping.imdb_id;
-  let insertIndex = 0;
-  let franchiseIndex = 0;
-  for (let i = imdbMappingEntries.length - 1; i >= 0; i--) {
-    const imdbMappingEntry = imdbMappingEntries[i];
-    const imdbMapping = imdbMappingEntry[1];
-    if (imdbId === imdbMapping && imdbMapping.fromSeason !== 0) {
-      franchiseIndex = i + 1;
-      break;
-    }
-    if (!insertIndex && parseInt(imdbMappingEntry[0]) < kitsuId) {
-      insertIndex = i + 1;
-    }
-  }
-  return franchiseIndex || insertIndex;
-}
-
-function writeImdbMappingToFile(imdbMappingEntries) {
-  const imdbMappings = imdbMappingEntries.reduce((map, entry) => (map[entry[0]] = entry[1], map), {})
-  writeToFile(imdbMappings, "./static/data/imdb_mapping.json")
 }
 
 function writeToFile(object, path) {
@@ -184,4 +168,10 @@ async function sequence(promises) {
       promise.then(result => func().then(Array.prototype.concat.bind(result))), Promise.resolve([]));
 }
 
-importMalSeason('2025/autumn').then(season => `Finished importing MAL ${season}`);
+const season = process.argv[2];
+if (!season) {
+  console.log("Usage: node generate_imdb_mapping.js <year>/<season>");
+  process.exit(1);
+}
+
+importMalSeason(season).then(season => `Finished importing MAL ${season}`);
