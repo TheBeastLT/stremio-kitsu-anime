@@ -4,9 +4,6 @@
   "scripts": {
     "start": "node ./index.js"
   },
-  "engines": {
-    "node": "22.x"
-  },
   "author": "TheBeastLT <pauliox@beyond.lt>",
   "license": "MIT",
   "dependencies": {
