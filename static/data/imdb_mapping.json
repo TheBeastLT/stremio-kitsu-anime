@@ -10367,7 +10367,7 @@
   "48746": {
     "imdb_id": "tt2549176",
     "tvdb_id": "400398",
-    "fanartLogoId": "191687",
+    "fanartLogoId": "192039",
     "title": "Vanguard OverDress",
     "fromSeason": 16,
     "fromEpisode": 14
@@ -10379,7 +10379,7 @@
     "fromSeason": 16,
     "fromEpisode": 27
   },
-  "49528": {
+  "50434": {
     "imdb_id": "tt2549176",
     "title": "Vanguard OverDress",
     "fromSeason": 16,
@@ -18919,6 +18919,12 @@
     "fromSeason": 4,
     "fromEpisode": 1
   },
+  "47640": {
+    "imdb_id": "tt12882132",
+    "title": "Hitori No Shita - The Outcast",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
   "12260": {
     "imdb_id": "tt6104656",
     "title": "Izetta: The Last Witch"
@@ -23866,7 +23872,7 @@
   "48236": {
     "imdb_id": "tt11680468",
     "title": "Great Pretender",
-    "fromSeason": 3,
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   "42445": {
