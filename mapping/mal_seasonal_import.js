@@ -42,6 +42,7 @@ async function createImdbMappingEntry(malEntry) {
       malTitle: malEntry.title,
       kitsuId: kitsuId,
       kitsuTitle: kitsuMetadata?.name,
+      kitsuAliases: kitsuMetadata?.aliases,
       animeType: kitsuMetadata?.animeType,
       imdb_id: prequelImdbMapping.imdb_id,
       title: prequelImdbMapping.title,
@@ -59,6 +60,7 @@ async function createImdbMappingEntry(malEntry) {
       malTitle: malEntry.title,
       kitsuId: kitsuId,
       kitsuTitle: kitsuMetadata?.name,
+      kitsuAliases: kitsuMetadata?.aliases,
       animeType: kitsuMetadata?.animeType,
     };
   }
@@ -70,6 +72,7 @@ async function createImdbMappingEntry(malEntry) {
     malTitle: malEntry.title,
     kitsuId: kitsuId,
     kitsuTitle: kitsuMetadata?.name,
+    kitsuAliases: kitsuMetadata?.aliases,
     animeType: kitsuMetadata?.animeType,
     tvdb_id: tvdbId,
     imdb_id: foundImdbId,
