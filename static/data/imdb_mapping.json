@@ -36519,8 +36519,8 @@
     "kitsu_id": 49768,
     "imdb_id": "tt32832412",
     "title": "Anyway, I'm Falling in Love with You",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   {
     "kitsu_id": 48587,
@@ -37518,16 +37518,16 @@
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 49438,
-    "imdb_id": "tt35114460",
-    "title": "Scarlet"
-  },
-  {
     "kitsu_id": 50007,
     "imdb_id": "tt35636246",
     "title": "My Hero Academia: Vigilantes",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 49438,
+    "imdb_id": "tt35114460",
+    "title": "Scarlet"
   },
   {
     "kitsu_id": 49466,
@@ -38341,8 +38341,8 @@
   },
   {
     "kitsu_id": 50484,
-    "imdb_id": "469053",
-    "title": "Saioshi no Gikei Mederu Tame, Nagaikishimasu!",
+    "tvdb_id": "469053",
+    "title": "I'll Live a Long Life to Dote on My Favorite Stepbrother!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
