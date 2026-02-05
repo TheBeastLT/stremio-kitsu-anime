@@ -34556,14 +34556,22 @@
     "imdb_id": "tt27617338",
     "fanartLogoId": "190427",
     "title": "Hyakushô Kizoku",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   {
     "kitsu_id": 49439,
     "imdb_id": "tt27617338",
     "title": "Hyakushô Kizoku",
-    "fromSeason": 3,
+    "fromSeason": 1,
+    "fromEpisode": 24
+  },
+  {
+    "kitsu_id": 48933,
+    "imdb_id": "tt27617338",
+    "fanartLogoId": "190427",
+    "title": "Hyakushô Kizoku",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -34572,7 +34580,7 @@
     "fanartLogoId": "190427",
     "title": "Hyakushô Kizoku",
     "fromSeason": 0,
-    "fromEpisode": 2
+    "fromEpisode": 3
   },
   {
     "kitsu_id": 46648,
@@ -37972,6 +37980,13 @@
     "imdb_id": "tt37532634",
     "title": "Dusk Beyond the End of the World",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 50190,
+    "imdb_id": "tt37532634",
+    "title": "Dusk Beyond the End of the World",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
