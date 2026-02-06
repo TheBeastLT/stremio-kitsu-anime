@@ -12562,6 +12562,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 5850,
+    "imdb_id": "tt13815676",
+    "title": "A Dark Rabbit has Seven Lives",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 5853,
     "imdb_id": "tt1773185",
     "title": "Puella Magi Madoka Magica"
@@ -38141,6 +38148,13 @@
     "title": "Another World"
   },
   {
+    "kitsu_id": 50253,
+    "imdb_id": "tt39281420",
+    "title": "Koala E Nikki",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 50270,
     "imdb_id": "tt38711470",
     "title": "High School! Kimengumi",
@@ -38161,6 +38175,13 @@
     "kitsu_id": 50325,
     "imdb_id": "tt38646055",
     "title": "DARK MOON: THE BLOOD ALTAR",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 50334,
+    "imdb_id": "tt37901124",
+    "title": "Roll Over and Die",
     "fromSeason": 1,
     "fromEpisode": 1
   },
