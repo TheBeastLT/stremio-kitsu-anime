@@ -12569,6 +12569,20 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 6412,
+    "imdb_id": "tt13815676",
+    "title": "A Dark Rabbit has Seven Lives",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 6767,
+    "imdb_id": "tt13815676",
+    "title": "A Dark Rabbit has Seven Lives",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  {
     "kitsu_id": 5853,
     "imdb_id": "tt1773185",
     "title": "Puella Magi Madoka Magica"
@@ -29404,6 +29418,7 @@
   {
     "kitsu_id": 42765,
     "imdb_id": "tt12343534",
+    "fanartLogoId": "140490",
     "title": "Jujutsu Kaisen",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -29411,6 +29426,7 @@
   {
     "kitsu_id": 45857,
     "imdb_id": "tt12343534",
+    "fanartLogoId": "185489",
     "title": "Jujutsu Kaisen",
     "fromSeason": 2,
     "fromEpisode": 1
