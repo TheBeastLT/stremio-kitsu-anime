@@ -1684,7 +1684,16 @@
   {
     "kitsu_id": 207,
     "imdb_id": "tt0221735",
-    "title": "Cardcaptor Sakura"
+    "title": "Cardcaptor Sakura",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 2200,
+    "imdb_id": "tt0221735",
+    "title": "Cardcaptor Sakura",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 208,
@@ -9401,6 +9410,13 @@
     "title": "Sketchbook: Full Colors"
   },
   {
+    "kitsu_id": 2269,
+    "imdb_id": "tt0202299",
+    "title": "The Cockpit",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 2681,
     "imdb_id": "tt1132205",
     "title": "Minami-ke",
@@ -11696,6 +11712,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 5012,
+    "imdb_id": "tt11808432",
+    "title": "Tai Chi Chasers",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 5045,
     "imdb_id": "tt1634209",
     "title": "Kiss x sis",
@@ -12279,6 +12302,13 @@
     "kitsu_id": 5657,
     "imdb_id": "tt1820941",
     "title": "Hanasaku iroha"
+  },
+  {
+    "kitsu_id": 5668,
+    "imdb_id": "tt1909462",
+    "title": "Fractale",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 5679,
@@ -13435,6 +13465,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 6465,
+    "imdb_id": "tt4266154",
+    "title": "Hybrid Child",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 6469,
     "imdb_id": "tt2189661",
     "title": "Listen to Me, Girls. I'm Your Father!",
@@ -13648,6 +13685,13 @@
     "imdb_id": "tt2760784",
     "title": "Blood Lad",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 7724,
+    "imdb_id": "tt2760784",
+    "title": "Blood Lad",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -14477,6 +14521,11 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 7110,
+    "imdb_id": "tt2399537",
+    "title": "Psychic School Wars"
+  },
+  {
     "kitsu_id": 7113,
     "imdb_id": "tt2329220",
     "title": "Btooom!"
@@ -14888,6 +14937,13 @@
     "kitsu_id": 7174,
     "imdb_id": "tt2552230",
     "title": "Maoyuu Maou Yuusha",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 7199,
+    "imdb_id": "tt3127798",
+    "title": "Corpse Party: Tortured Souls",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -15344,6 +15400,11 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 7378,
+    "imdb_id": "tt2753048",
+    "title": "Kick-Heart"
+  },
+  {
     "kitsu_id": 7379,
     "imdb_id": "tt2859264",
     "title": "Hyperdimension Neptunia",
@@ -15561,6 +15622,11 @@
     "title": "Gargantia on the Verdurous Planet",
     "fromSeason": 0,
     "fromEpisode": 17
+  },
+  {
+    "kitsu_id": 7451,
+    "imdb_id": "tt2573198",
+    "title": "Hal"
   },
   {
     "kitsu_id": 7469,
@@ -16020,6 +16086,20 @@
     "title": "Gatchaman Crowds",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 8424,
+    "imdb_id": "tt2959370",
+    "title": "Gatchaman Crowds",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 11033,
+    "imdb_id": "tt2959370",
+    "title": "Gatchaman Crowds",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   {
     "kitsu_id": 7682,
@@ -16695,6 +16775,13 @@
     "imdb_id": "tt3396572",
     "title": "Riddle Story of Devil",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 8724,
+    "imdb_id": "tt3396572",
+    "title": "Riddle Story of Devil",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -17670,7 +17757,9 @@
   {
     "kitsu_id": 8147,
     "imdb_id": "tt3358020",
-    "title": "Parasyte: The Maxim"
+    "title": "Parasyte: The Maxim",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 8148,
@@ -19930,6 +20019,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 11445,
+    "imdb_id": "tt5235870",
+    "title": "Valkyrie Drive: Mermaid",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 10767,
     "imdb_id": "tt5591262",
     "title": "Wakaba Girl"
@@ -20043,6 +20139,11 @@
     "title": "Kagewani",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 10869,
+    "imdb_id": "tt4663760",
+    "title": "Typhoon Noruda"
   },
   {
     "kitsu_id": 10872
@@ -20210,6 +20311,13 @@
     "imdb_id": "tt5861670",
     "title": "Tales of Zestiria the X",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 12294,
+    "imdb_id": "tt5861670",
+    "title": "Tales of Zestiria the X",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   {
@@ -21999,6 +22107,11 @@
     "title": "Strike Witches: Operation Victory Arrow"
   },
   {
+    "kitsu_id": 11855,
+    "imdb_id": "tt5605470",
+    "title": "Pigtails"
+  },
+  {
     "kitsu_id": 11889,
     "imdb_id": "tt6597832",
     "title": "Kuroko no Basket Movie 1: Winter Cup Soushuuhen - Kage to Hikari"
@@ -22290,6 +22403,11 @@
     "title": "Shônen Ashibe GO! GO! Goma-chan",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 12063,
+    "imdb_id": "tt5731132",
+    "title": "Napping Princess"
   },
   {
     "kitsu_id": 12064,
@@ -23903,6 +24021,11 @@
     "title": "Kakegurui Twin",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 13253,
+    "imdb_id": "tt6452332",
+    "title": "Lu Over the Wall"
   },
   {
     "kitsu_id": 13257,
@@ -26103,6 +26226,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 41070,
+    "imdb_id": "tt9331376",
+    "title": "The Young Innkeeper Is a Grade Schooler!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 41075,
     "imdb_id": "tt8489330",
     "title": "Double Decker! Doug & Kirill",
@@ -26875,6 +27005,11 @@
     "title": "Release the Spyce"
   },
   {
+    "kitsu_id": 41406,
+    "imdb_id": "tt8328740",
+    "title": "Okko's Inn"
+  },
+  {
     "kitsu_id": 41408,
     "imdb_id": "tt9573902",
     "title": "Kemurikusa.",
@@ -27031,6 +27166,13 @@
     "imdb_id": "tt9050410",
     "title": "My Sister, My Writer",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 42225,
+    "imdb_id": "tt9050410",
+    "title": "My Sister, My Writer",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -27323,6 +27465,11 @@
   },
   {
     "kitsu_id": 42018
+  },
+  {
+    "kitsu_id": 42021,
+    "imdb_id": "tt9648078",
+    "title": "The Relative Worlds"
   },
   {
     "kitsu_id": 42024,
@@ -27646,6 +27793,13 @@
     "title": "Lord El-Melloi II's Case Files: Rail Zeppelin Grace Note",
     "fromSeason": 0,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 44868,
+    "imdb_id": "tt9573854",
+    "title": "Lord El-Melloi II's Case Files: Rail Zeppelin Grace Note",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   {
     "kitsu_id": 42083,
@@ -28540,6 +28694,11 @@
     "title": "Given"
   },
   {
+    "kitsu_id": 42389,
+    "imdb_id": "tt10540510",
+    "title": "Inu-Oh"
+  },
+  {
     "kitsu_id": 42397,
     "imdb_id": "tt10675070",
     "title": "Uchi Tama?! Uchi no Tama Shirimasen ka?",
@@ -28648,6 +28807,13 @@
     "imdb_id": "tt12024510",
     "title": "22/7",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 43285,
+    "imdb_id": "tt12024510",
+    "title": "22/7",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -30399,6 +30565,11 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 43454,
+    "imdb_id": "tt13139218",
+    "title": "Over the Sky"
+  },
+  {
     "kitsu_id": 43505,
     "imdb_id": "tt13057626",
     "title": "Kamiarizuki no Kodomo"
@@ -31097,6 +31268,11 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 43898,
+    "imdb_id": "tt12354886",
+    "title": "Beauty Water"
+  },
+  {
     "kitsu_id": 43909,
     "imdb_id": "tt14979456",
     "title": "Soredemo Ayumu wa Yosetekuru",
@@ -31143,6 +31319,20 @@
     "imdb_id": "tt13851958",
     "title": "Vivy: Fluorite Eye's Song",
     "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 43943,
+    "imdb_id": "tt13930822",
+    "title": "Tomb Raider: The Legend of Lara Croft",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 50394,
+    "imdb_id": "tt13930822",
+    "title": "Tomb Raider: The Legend of Lara Croft",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   {
