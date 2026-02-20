@@ -14978,6 +14978,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 7033,
+    "imdb_id": "tt3127798",
+    "title": "Corpse Party: Tortured Souls",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 7196,
     "imdb_id": "tt3651508",
     "title": "Kyou no Asuka Show",
@@ -20354,8 +20361,8 @@
     "kitsu_id": 12294,
     "imdb_id": "tt5861670",
     "title": "Tales of Zestiria the X",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   {
     "kitsu_id": 11028,
@@ -33610,7 +33617,7 @@
     "title": "Gekijouban Tsurune: Kazemai Koukou Kyuudou Bu"
   },
   {
-    "kitsu_id": 45942,
+    "kitsu_id": 45947,
     "imdb_id": "tt22868842",
     "title": "Lonely Castle in the Mirror"
   },
