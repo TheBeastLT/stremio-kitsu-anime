@@ -5966,6 +5966,13 @@
     "title": "Wings of Honneamise"
   },
   {
+    "kitsu_id": 925,
+    "imdb_id": "tt3914166",
+    "title": "Patalliro Saiyuki",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 933,
     "imdb_id": "tt0105612",
     "title": "Tokyo Babylon"
@@ -9083,7 +9090,16 @@
   {
     "kitsu_id": 2368,
     "imdb_id": "tt1094233",
-    "title": "Sky Girls"
+    "title": "Sky Girls",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 1326,
+    "imdb_id": "tt1094233",
+    "title": "Sky Girls",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 2369,
@@ -11099,9 +11115,23 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 4296,
+    "imdb_id": "tt1661592",
+    "title": "Star of the Giants",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 4332,
     "imdb_id": "tt6562012",
     "title": "Student Council's Discretion",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 4354,
+    "imdb_id": "tt1515993",
+    "title": "The Sacred Blacksmith",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -11283,11 +11313,6 @@
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 4481,
-    "imdb_id": "tt2450486",
-    "title": "Rainbow Fireflies"
-  },
-  {
     "kitsu_id": 7366,
     "imdb_id": "tt1515996",
     "title": "A Certain Scientific Railgun",
@@ -11342,6 +11367,11 @@
     "title": "A Certain Scientific Railgun",
     "fromSeason": 0,
     "fromEpisode": 12
+  },
+  {
+    "kitsu_id": 4481,
+    "imdb_id": "tt2450486",
+    "title": "Rainbow Fireflies"
   },
   {
     "kitsu_id": 4519,
@@ -19369,12 +19399,19 @@
     "title": "Sound! Euphonium",
     "fromSeason": 0,
     "fromEpisode": 10
-  },
+  },,
   {
     "kitsu_id": 9992,
     "imdb_id": "tt5827092",
     "title": "Macross Delta",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 43341,
+    "imdb_id": "tt5827092",
+    "title": "Macross Delta",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -20600,6 +20637,13 @@
     "imdb_id": "tt5344382",
     "title": "Mobile Suit Gundam: Iron-Blooded Orphans",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 12005,
+    "imdb_id": "tt5344382",
+    "title": "Mobile Suit Gundam: Iron-Blooded Orphans",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   {
@@ -22342,13 +22386,6 @@
     "title": "The Moment You Fall in Love"
   },
   {
-    "kitsu_id": 12005,
-    "imdb_id": "tt5344382",
-    "title": "Mobile Suit Gundam: Iron-Blooded Orphans",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  {
     "kitsu_id": 12006,
     "imdb_id": "tt7940468",
     "title": "Fate/Extra Last Encore",
@@ -22752,7 +22789,11 @@
     "fromEpisode": 26
   },
   {
-    "kitsu_id": 12244
+    "kitsu_id": 12244,
+    "imdb_id": "tt20601618",
+    "title": "Mahou Shoujo? Naria Girls",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 12245,
@@ -23021,6 +23062,11 @@
     "kitsu_id": 44524,
     "imdb_id": "tt14147078",
     "title": "Bang Dream! Episode of Roselia: Song I Am."
+  },
+  {
+    "kitsu_id": 44525,
+    "imdb_id": "tt14294724",
+    "title": "BanG Dream! Poppin'Dream!"
   },
   {
     "kitsu_id": 12346
@@ -23719,8 +23765,10 @@
   },
   {
     "kitsu_id": 13007,
-    "imdb_id": "tt5699366",
-    "title": "French Open Live 2016"
+    "imdb_id": "tt6340544",
+    "title": "Dive!!",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 13051,
@@ -26930,7 +26978,7 @@
     "title": "Kaguya-sama: Love Is War",
     "fromSeason": 3,
     "fromEpisode": 1
-  },
+  },,
   {
     "kitsu_id": 43731,
     "imdb_id": "tt9522300",
@@ -26938,6 +26986,14 @@
     "title": "Kaguya-sama: Love Is War",
     "fromSeason": 0,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 45542,
+    "imdb_id": "tt9522300",
+    "fanartLogoId": "91793",
+    "title": "Kaguya-sama: Love Is War",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   {
     "kitsu_id": 49998,
@@ -31004,6 +31060,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 43742,
+    "imdb_id": "tt19390124",
+    "title": "When I Woke Up I Became a Bagel Girl",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 43750,
     "imdb_id": "tt13884016",
     "title": "Maiko-san Chi no Makanai-san",
@@ -31946,6 +32009,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 44280,
+    "imdb_id": "tt33038878",
+    "title": "Fate/Grand Order: Fujimaru Ritsuka wa Wakaranai",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 44297,
     "imdb_id": "tt13311344",
     "title": "Tsukimichi - Moonlit Fantasy",
@@ -32570,6 +32640,11 @@
     "title": "Uchi no Shishou wa Shippo ga Nai",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 44955,
+    "imdb_id": "tt15554968",
+    "title": "Eternal 831"
   },
   {
     "kitsu_id": 44960,
@@ -33528,6 +33603,16 @@
     "title": "The Legend of Vox Machina",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 45942,
+    "imdb_id": "tt15420852",
+    "title": "Gekijouban Tsurune: Kazemai Koukou Kyuudou Bu"
+  },
+  {
+    "kitsu_id": 45942,
+    "imdb_id": "tt22868842",
+    "title": "Lonely Castle in the Mirror"
   },
   {
     "kitsu_id": 45956,
