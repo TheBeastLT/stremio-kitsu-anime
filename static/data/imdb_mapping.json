@@ -1404,7 +1404,16 @@
   {
     "kitsu_id": 172,
     "imdb_id": "tt0366848",
-    "title": "Please Teacher!"
+    "title": "Please Teacher!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 406,
+    "imdb_id": "tt0983133",
+    "title": "Please Teacher!",
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   {
     "kitsu_id": 173,
@@ -2959,13 +2968,6 @@
     "kitsu_id": 366
   },
   {
-    "kitsu_id": 367,
-    "imdb_id": "tt0266171",
-    "title": "Outlaw Star",
-    "fromSeason": 1,
-    "fromEpisode": 0
-  },
-  {
     "kitsu_id": 368,
     "imdb_id": "tt0294885",
     "title": "Samurai X: Reflection"
@@ -3214,13 +3216,6 @@
     "kitsu_id": 1941,
     "imdb_id": "tt1071815",
     "title": "Naruto the Movie 3: Guardians of the Crescent Moon Kingdom"
-  },
-  {
-    "kitsu_id": 406,
-    "imdb_id": "tt0983133",
-    "title": "MPlease Teacher!",
-    "fromSeason": 1,
-    "fromEpisode": 13
   },
   {
     "kitsu_id": 407
@@ -16462,6 +16457,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 367,
+    "imdb_id": "tt0266171",
+    "title": "Outlaw Star",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 7728,
     "imdb_id": "tt2716982",
     "title": "Nura: Rise of the Yokai Clan",
@@ -20464,8 +20466,8 @@
     "kitsu_id": 11109,
     "imdb_id": "tt4163486",
     "title": "Bee and PuppyCat",
-    "fromSeason": 1,
-    "fromEpisode": 0
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 11110,
@@ -24528,7 +24530,8 @@
   {
     "kitsu_id": 49194,
     "imdb_id": "tt7263328",
-    "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season: 2-nensei-hen 1 Gakki",
+    "fanartLogoId": "214296",
+    "title": "Classroom of the Elite",
     "fromSeason": 4,
     "fromEpisode": 1
   },
@@ -27839,6 +27842,7 @@
   {
     "kitsu_id": 50187,
     "imdb_id": "tt9679542",
+    "fanartLogoId": "196889",
     "title": "Dr. Stone",
     "fromSeason": 4,
     "fromEpisode": 25
@@ -39258,6 +39262,13 @@
     "imdb_id": "tt32894936",
     "title": "You Shou Yan 5th Season",
     "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 50567,
+    "imdb_id": "tt41448834",
+    "title": "Rilakkuma: Goyururi Yume no Tabi",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   {
