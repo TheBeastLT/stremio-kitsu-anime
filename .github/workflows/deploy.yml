@@ -3,13 +3,21 @@ name: Deploy
 on:
   push:
     branches: [master]
+  # Pushes made with GITHUB_TOKEN (the scheduled mapping import) don't trigger `push`, so that workflow dispatches this.
+  workflow_dispatch:
+    inputs:
+      before:
+        description: Commit deployed before, to clear the cache of mappings changed since
+        required: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Create Docker image
         run: |
@@ -40,3 +48,27 @@ jobs:
             docker rm anime-kitsu
             docker run -p 7000:7000 -d --name anime-kitsu --restart always --log-opt max-size=100m -e MONGODB_URI=${{ secrets.MONGODB_URI }} -e FANART_APIKEY=${{ secrets.FANART_APIKEY }} anime-kitsu:latest
             docker image prune -f
+
+      - name: Find changed mappings
+        id: mapping
+        env:
+          BEFORE: ${{ github.event.before || inputs.before }}
+        run: |
+          if [ -n "$BEFORE" ] && git cat-file -e "$BEFORE^{commit}" 2>/dev/null \
+              && ! git diff --quiet "$BEFORE" HEAD -- static/data/imdb_mapping.json; then
+            echo "before=$BEFORE" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.mapping.outputs.before
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Clear cache of changed mappings
+        if: steps.mapping.outputs.before
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+        run: |
+          npm ci
+          node mapping/clear_mapping_cache.js ${{ steps.mapping.outputs.before }} HEAD --delete
