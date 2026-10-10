@@ -1,7 +1,7 @@
 const { addonBuilder } = require('stremio-addon-sdk');
 const genres = require('./static/data/genres');
 const { enrichKitsuMetadata, enrichImdbMetadata, hasImdbMapping } = require('./lib/metadataEnrich');
-const { cacheWrapMeta, cacheWrapCatalog } = require('./lib/cache');
+const { cacheWrapMeta, cacheWrapCatalog, getCachedMetas } = require('./lib/cache');
 const { mapToKitsuId } = require('./lib/id_convert');
 const kitsu = require('./lib/kitsu_api');
 const cinemeta = require('./lib/cinemeta_api');
@@ -55,6 +55,14 @@ const manifest = {
           { name: 'skip' }
       ],
     },
+    {
+      // Stremio's new-episode notifications only use a catalog of the library item's type (series) that requires
+      // nothing besides lastVideosIds.
+      id: 'kitsu-anime-last-videos',
+      name: 'Last videos',
+      type: 'series',
+      extra: [{ name: 'lastVideosIds', isRequired: true, optionsLimit: 20 }],
+    },
   ],
   idPrefixes: ['kitsu', 'mal', 'anilist', 'anidb']
 };
@@ -82,8 +90,21 @@ builder.defineCatalogHandler((args) => {
         .then((metas) => ({ metas: metas, cacheMaxAge: CACHE_MAX_AGE }));
   }
   if (args.extra?.lastVideosIds) {
-    return kitsu.list(args.extra.lastVideosIds)
-        .then((metas) => ({ metas: metas, cacheMaxAge: CACHE_MAX_AGE }));
+    // Like Cinemeta's last-videos: the last videos of each library id, from the cached metas the meta handler serves
+    // (read in one query), so only cache misses are built from Kitsu and Cinemeta.
+    const ids = args.extra.lastVideosIds.split(',');
+    return Promise.all(ids.map((id) => mapToKitsuId(id).catch(() => undefined)))
+        .then((kitsuIds) => getCachedMetas(kitsuIds))
+        .then((cached) => Promise.all(ids.map((id, index) => (cached[index] ? Promise.resolve(cached[index]) : getKitsuIdMetadata(id))
+            .then(({ meta }) => ({
+              id,
+              type: meta.type,
+              name: meta.name,
+              videos: meta.videos?.slice(-20)
+                  .map(({ id, title, released, season, episode }) => ({ id, title, released, season, episode })),
+            }))
+            .catch(() => undefined))))
+        .then((metas) => ({ metasDetailed: metas.filter((meta) => meta), cacheMaxAge: CACHE_MAX_AGE }));
   }
 
   const options = {
