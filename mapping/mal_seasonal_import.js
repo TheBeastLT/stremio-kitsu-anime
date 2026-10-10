@@ -541,4 +541,5 @@ module.exports = {
   getMalSeasonalEntries,
   insertInKitsuOrder,
   insertMappingEntry,
+  mapWithConcurrency,
 };

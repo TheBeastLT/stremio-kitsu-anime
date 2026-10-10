@@ -174,14 +174,12 @@ function verifyContinuation(candidate, cinemeta, siblings, window, kitsuFirstAir
     return fail(`S${start.fromSeason}E${start.fromEpisode} aired ${target.released.slice(0, 10)} outside season`);
   }
   const kitsuAired = kitsuFirstAired && new Date(kitsuFirstAired);
-  const daysApart = kitsuAired && Math.abs(aired - kitsuAired) / DAY_MS;
-  if (!(daysApart <= CONTINUATION_DATE_LEEWAY_DAYS)) {
+  if (!kitsuAired || !airedNear(target, kitsuAired)) {
     return fail(`S${start.fromSeason}E${start.fromEpisode} aired ${target.released.slice(0, 10)}, kitsu ep 1 ${kitsuAired ? kitsuAired.toISOString().slice(0, 10) : 'unknown'}`);
   }
   const previous = (cinemeta.videos || [])
       .find(video => video.season === start.fromSeason && video.episode === start.fromEpisode - 1);
-  const previousGap = previous?.released && (kitsuAired - new Date(previous.released)) / DAY_MS;
-  if (!(previousGap > CONTINUATION_DATE_LEEWAY_DAYS)) {
+  if (!previous?.released || !startsRun(cinemeta.videos, target, kitsuAired)) {
     return fail(`no clear cour boundary before S${start.fromSeason}E${start.fromEpisode}`);
   }
   return ok();
@@ -226,8 +224,6 @@ function verifySpecial({ animeType, kitsuAirDates, kitsuEpisodeLength, kitsuTitl
     return fail('imdb has no S0');
   }
   const byEpisode = new Map(specials.map(video => [video.episode, video]));
-  const airedNear = (video, date) => video?.released
-      && Math.abs(new Date(video.released) - new Date(date)) / DAY_MS <= CONTINUATION_DATE_LEEWAY_DAYS;
   const starts = specials.map(video => video.episode).filter(start => kitsuAirDates.every((date, i) =>
       airedNear(byEpisode.get(start + i), date) && !used.has(start + i)));
   if (starts.length !== 1) {
@@ -269,6 +265,48 @@ function verifySpecial({ animeType, kitsuAirDates, kitsuEpisodeLength, kitsuTitl
     return { ...fail(`S0E${starts[0]} aired ${aired.toISOString().slice(0, 10)} outside season`), fromEpisode: starts[0] };
   }
   return { ok: true, fromEpisode: starts[0] };
+}
+
+// An already mapped row (sequel, continuation cour or special) re-checked against fresh Cinemeta data: IMDb keeps
+// reshaping running shows (a "Part 2" cour moved into its own season, specials renumbered), which silently shifts
+// every episode of the row. It still holds when its start episode SxEy aired on (about) the day Kitsu's entry
+// started. Otherwise `suggestions` are the IMDb episodes starting a run that day (specials for a season-0 row,
+// regular seasons otherwise); `unknown` marks rows that can't be checked.
+// row: imdb_mapping row; kitsuStart: Kitsu start date of its entry; cinemeta: Cinemeta meta of its imdb
+function verifyOffset({ row, kitsuStart, cinemeta }) {
+  if (!cinemeta?.name) {
+    return { ...fail('imdb unknown to cinemeta'), unknown: true };
+  }
+  const videos = cinemeta.videos || [];
+  const start = new Date(kitsuStart);
+  const position = `S${row.fromSeason}E${row.fromEpisode}`;
+  const target = videos.find(video => video.season === row.fromSeason && video.episode === row.fromEpisode);
+  if (target && !target.released) {
+    return { ...fail(`imdb ${position} has no air date`), unknown: true };
+  }
+  if (target && airedNear(target, start)) {
+    return ok();
+  }
+  const suggestions = videos
+      .filter(video => (video.season === 0) === (row.fromSeason === 0) && airedNear(video, start))
+      .filter(video => startsRun(videos, video, start))
+      .map(video => ({ fromSeason: video.season, fromEpisode: video.episode }));
+  const reason = target
+      ? `${position} aired ${target.released.slice(0, 10)}, kitsu started ${kitsuStart}`
+      : `imdb has no ${position}`;
+  return { ...fail(reason), suggestions };
+}
+
+// The IMDb episode aired within the leeway of `date`.
+function airedNear(video, date) {
+  return !!video?.released && Math.abs(new Date(video.released) - new Date(date)) / DAY_MS <= CONTINUATION_DATE_LEEWAY_DAYS;
+}
+
+// The IMDb episode is the first of its season aired around `date`: the one before it did not (so for a streaming
+// drop with one date for every episode, only the first of the drop).
+function startsRun(videos = [], video, date) {
+  const previous = videos.find(other => other.season === video.season && other.episode === video.episode - 1);
+  return !airedNear(previous, date);
 }
 
 // "Guilty Crown: Lost Christmas" -> ['lost christmas']: the part after the franchise name, long enough to be telling.
@@ -329,6 +367,6 @@ function fail(reason) {
 }
 
 module.exports = {
-  seasonWindow, verifyCandidate, verifyFreshTitle, verifySpecial, nextSeason, continuationStart,
+  seasonWindow, verifyCandidate, verifyFreshTitle, verifySpecial, verifyOffset, nextSeason, continuationStart,
   CONTINUATION_DATE_LEEWAY_DAYS, SPECIAL_TYPES,
 };
