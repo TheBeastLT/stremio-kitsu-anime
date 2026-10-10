@@ -39,7 +39,7 @@ async function clearCache(ids, { remove = false } = {}) {
   }
   // The deploy passes the secret through a shell (docker run -e MONGODB_URI=...), which drops surrounding quotes.
   const uri = process.env.MONGODB_URI.trim().replace(/^(['"])(.*)\1$/, '$2');
-  const client = await MongoClient.connect(uri, { useUnifiedTopology: true });
+  const client = await MongoClient.connect(uri);
   try {
     const collection = client.db().collection('kitsu_collection');
     const filter = { key: { $regex: `:(${all.join('|')})$` } };
