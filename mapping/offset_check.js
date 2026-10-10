@@ -1,13 +1,14 @@
 // Re-checks the IMDb offsets of recently started sequels, continuation cours and specials against fresh Cinemeta data
-// (the rule is verifyOffset in mapping_verifier.js).
+// (the rule is verifyOffset in mapping_verifier.js), and that no season-0 row of those imdbs covers more IMDb specials
+// than its Kitsu entry has episodes (verifySpecialRun).
 // Cheap selection: one paged Kitsu season listing gives the start date of every recent entry, so Cinemeta is only
 // fetched for the imdb ids of recent rows that start past S1E1.
 const fs = require('fs');
 const { PAGE_SIZE, animeStartEntries } = require('../lib/kitsu_api');
 const { getFreshCinemetaMetadata } = require('../lib/cinemeta_api');
-const { seasonWindow, verifyOffset } = require('./mapping_verifier');
+const { seasonWindow, verifyOffset, verifySpecialRun } = require('./mapping_verifier');
 const { recentMalSeasons, kitsuSeasons } = require('./mal_seasons');
-const { mapWithConcurrency } = require('./mal_seasonal_import');
+const { mapWithConcurrency, siblingsOf } = require('./mal_seasonal_import');
 
 const CINEMETA_CONCURRENCY = 4;
 
@@ -41,7 +42,21 @@ async function checkRows(rows, kitsuEntries, from, now) {
     const { ok, unknown, reason, suggestions } = verifyOffset({ row, kitsuStart, cinemeta: cinemetas[row.imdb_id] });
     return { row, kitsuTitle, status: ok ? 'ok' : unknown ? 'unknown' : 'mismatch', reason, suggestions };
   });
-  return { from, now, results };
+  return { from, now, results: results.concat(await checkSpecialRuns(imdbIds, kitsuEntries, cinemetas)) };
+}
+
+// The season-0 rows of the checked imdbs, whose runs the Cinemeta metas fetched anyway can check. Rows that can't be
+// checked (no Kitsu episode count) are left out, as nothing about them changed.
+async function checkSpecialRuns(imdbIds, kitsuEntries, cinemetas) {
+  const siblingGroups = await mapWithConcurrency(imdbIds, CINEMETA_CONCURRENCY,
+      imdbId => siblingsOf(imdbId, true, { specials: true }));
+  return siblingGroups.flatMap((siblings, index) => siblings
+      .filter(row => row.fromSeason === 0)
+      .map(row => ({ row, ...verifySpecialRun({ row, siblings, cinemeta: cinemetas[imdbIds[index]] }) }))
+      .filter(({ unknown }) => !unknown)
+      .map(({ row, ok, reason }) => ({
+        row, kitsuTitle: kitsuEntries[row.kitsu_id]?.title, status: ok ? 'ok' : 'mismatch', reason,
+      })));
 }
 
 function chunks(items, size) {

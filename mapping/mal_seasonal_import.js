@@ -542,4 +542,5 @@ module.exports = {
   insertInKitsuOrder,
   insertMappingEntry,
   mapWithConcurrency,
+  siblingsOf,
 };
