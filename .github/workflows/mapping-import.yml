@@ -1,0 +1,76 @@
+name: Import MAL seasons
+
+# Weekly: runs the previous and the current MAL season through the importer, pushes the auto-approved (verified)
+# imdb mappings to master and deploys them. Entries that need a manual review are kept as a run artifact.
+on:
+  schedule:
+    - cron: '0 5 * * 1' # Mondays 05:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: imdb-mapping
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # Each season runs in its own process: the mapping is indexed once at load, and the current season's sequels
+      # must see the prequels the previous season just merged.
+      - name: Import previous and current MAL seasons
+        env:
+          FANART_APIKEY: ${{ secrets.FANART_APIKEY }}
+          TRAKT_CLIENT_ID: ${{ secrets.TRAKT_CLIENT_ID }}
+        run: |
+          mkdir -p review
+          for season in $(node mapping/mal_seasons.js 2); do
+            node mapping/mal_seasonal_import.js "$season" "review/${season/\//-}.json"
+          done
+
+      - name: Upload review queue
+        uses: actions/upload-artifact@v4
+        with:
+          name: review-queue
+          path: review/
+          retention-days: 14
+
+      - name: Push auto-approved mappings
+        id: push
+        run: |
+          if git diff --quiet -- static/data/imdb_mapping.json; then
+            echo "No new auto-approved mappings" | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'auto-merge mal season mappings' -- static/data/imdb_mapping.json
+          git pull --rebase origin master
+          git push origin HEAD:master
+          echo "before=$(git rev-parse HEAD~1)" >> "$GITHUB_OUTPUT"
+          echo '### Auto-merged mappings' >> "$GITHUB_STEP_SUMMARY"
+          node -e '
+            const { execFileSync } = require("child_process");
+            const at = ref => JSON.parse(execFileSync("git", ["show", `${ref}:static/data/imdb_mapping.json`], { maxBuffer: 1 << 26 }));
+            const before = new Set(at("HEAD~1").map(row => row.kitsu_id));
+            at("HEAD").filter(row => !before.has(row.kitsu_id)).forEach(row => console.log(`- kitsu ${row.kitsu_id} -> `
+                + `${row.imdb_id}${row.fromSeason === undefined ? "" : ` S${row.fromSeason}E${row.fromEpisode}`} ${row.title}`));
+          ' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Deploy
+        if: steps.push.outputs.before
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref master -f before=${{ steps.push.outputs.before }}
