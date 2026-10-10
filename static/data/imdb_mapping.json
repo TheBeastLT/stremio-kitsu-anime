@@ -27269,7 +27269,7 @@
     "kitsu_id": 50090,
     "imdb_id": "tt13077966",
     "title": "Iya na Kao sare nagara Opantsu Misete Moraitai",
-    "fromSeason": 4,
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   {
@@ -30705,11 +30705,32 @@
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 48055,
+    "kitsu_id": 45066,
     "imdb_id": "tt13695606",
     "title": "Yi Nian Yong Heng 2020",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 48054,
+    "imdb_id": "tt13695606",
+    "title": "Yi Nian Yong Heng 2020",
+    "fromSeason": 2,
+    "fromEpisode": 21
+  },
+  {
+    "kitsu_id": 48055,
+    "imdb_id": "tt13695606",
+    "title": "Yi Nian Yong Heng 2020",
+    "fromSeason": 2,
+    "fromEpisode": 37
+  },
+  {
+    "kitsu_id": 49859,
+    "imdb_id": "tt13695606",
+    "title": "Yi Nian Yong Heng 2020",
+    "fromSeason": 2,
+    "fromEpisode": 52
   },
   {
     "kitsu_id": 48056,
@@ -33734,8 +33755,8 @@
     "kitsu_id": 49945,
     "imdb_id": "tt27517921",
     "title": "Nitian Xie Shen (2023)",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 31
   },
   {
     "kitsu_id": 45694,
@@ -35946,8 +35967,8 @@
     "kitsu_id": 48610,
     "imdb_id": "tt27531662",
     "title": "Chibi Godzilla no Gyakushuu",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 14
   },
   {
     "kitsu_id": 47151,
@@ -35960,15 +35981,15 @@
     "kitsu_id": 49962,
     "imdb_id": "tt27531662",
     "title": "Chibi Godzilla no Gyakushuu",
-    "fromSeason": 3,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 66
   },
   {
     "kitsu_id": 50818,
     "imdb_id": "tt27531662",
     "title": "Chibi Godzilla no Gyakushuu",
-    "fromSeason": 4,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 105
   },
   {
     "kitsu_id": 47152,
@@ -36522,8 +36543,8 @@
     "kitsu_id": 48667,
     "imdb_id": "tt30643998",
     "title": "Himesama Goumon no Jikan desu",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   {
     "kitsu_id": 47658,
@@ -36548,15 +36569,15 @@
     "kitsu_id": 49036,
     "imdb_id": "tt27497430",
     "title": "Cang Yuan Tu",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 31
   },
   {
     "kitsu_id": 50671,
     "imdb_id": "tt27497430",
     "title": "Cang Yuan Tu",
-    "fromSeason": 3,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 70
   },
   {
     "kitsu_id": 47686,
@@ -37123,7 +37144,7 @@
     "imdb_id": "tt28618556",
     "title": "Guimi Zhi Zhu Tebie Pian: Liewu",
     "fromSeason": 0,
-    "fromEpisode": 1
+    "fromEpisode": 18
   },
   {
     "kitsu_id": 48237,
@@ -37599,7 +37620,7 @@
     "kitsu_id": 49335,
     "imdb_id": "tt32592756",
     "title": "Tensui no Sakuna-hime",
-    "fromSeason": 2,
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -39013,22 +39034,22 @@
     "kitsu_id": 50221,
     "imdb_id": "tt36295071",
     "title": "PetitCure ~Precure Fairies~",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 28
   },
   {
     "kitsu_id": 50611,
     "imdb_id": "tt36295071",
     "title": "PetitCure ~Precure Fairies~",
-    "fromSeason": 3,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 51
   },
   {
     "kitsu_id": 51123,
     "imdb_id": "tt36295071",
     "title": "PetitCure ~Precure Fairies~",
-    "fromSeason": 4,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 78
   },
   {
     "kitsu_id": 49704,
@@ -39172,7 +39193,7 @@
     "imdb_id": "tt36270045",
     "title": "Koupen-chan",
     "fromSeason": 0,
-    "fromEpisode": 2
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 49843,
@@ -40268,8 +40289,8 @@
     "kitsu_id": 50835,
     "imdb_id": "tt43685621",
     "title": "Guangyin Zhi Wai",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 27
   },
   {
     "kitsu_id": 50464,
