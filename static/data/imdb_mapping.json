@@ -34016,6 +34016,13 @@
     "fromEpisode": 13
   },
   {
+    "kitsu_id": 49134,
+    "imdb_id": "tt18311412",
+    "title": "NieR: Automata Ver 1.1a",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 45930,
     "imdb_id": "tt28534254",
     "title": "Spice and Wolf: Merchant Meets the Wise Wolf",
@@ -37142,7 +37149,7 @@
   {
     "kitsu_id": 50455,
     "imdb_id": "tt28618556",
-    "title": "Guimi Zhi Zhu Tebie Pian: Liewu",
+    "title": "Lord of Mysteries",
     "fromSeason": 0,
     "fromEpisode": 18
   },
