@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Mapping Pro v15</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .custom-scroll::-webkit-scrollbar { width: 4px; }
+        .custom-scroll::-webkit-scrollbar-track { background: #0f172a; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+        .suggestion-dropdown { max-height: 400px; overflow-y: auto; z-index: 50; }
+        iframe { border: none; background: white; }
+    </style>
+</head>
+<body class="bg-[#0b0e14] h-screen flex flex-col overflow-hidden text-slate-200">
+
+<header class="p-5 bg-[#111827] border-b border-slate-800 shadow-2xl z-20">
+    <div class="flex justify-between items-center mb-4">
+        <div class="flex items-center gap-4">
+            <h1 class="text-xl font-black text-white tracking-tighter uppercase italic">
+                <span class="text-indigo-500">Anime</span> Mapper <span class="text-[10px] text-slate-500 not-italic">V15 LIVE</span>
+            </h1>
+            <div class="flex items-center gap-2 bg-slate-800 rounded px-2 py-1 border border-slate-700">
+                <span class="text-[9px] font-bold text-slate-500 uppercase">Jump:</span>
+                <input type="text" id="jump-input" placeholder="Kitsu ID" class="bg-transparent text-xs w-20 outline-none text-indigo-400">
+                <button onclick="jumpToId()" class="text-[9px] bg-indigo-600 px-2 py-0.5 rounded text-white font-bold">GO</button>
+            </div>
+            <span id="conn-status" class="text-[9px] font-bold px-2 py-1 rounded border border-red-500/30 text-red-400">🔴 Not connected</span>
+            <button onclick="connectFolder()" class="text-[10px] bg-slate-700 hover:bg-slate-600 text-slate-200 px-3 py-1 rounded font-bold border border-slate-600">📁 Connect data folder</button>
+        </div>
+        <div class="flex gap-2">
+            <button onclick="saveAndNext()" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded font-bold shadow-lg text-sm active:scale-95 transition-all">Add &amp; Next</button>
+            <button onclick="skipEntry()" class="bg-slate-700 hover:bg-slate-600 text-slate-300 px-6 py-2 rounded font-bold text-sm transition-all">Skip</button>
+            <button onclick="exportBackup()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded font-bold text-sm shadow-lg">Export backup</button>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-12 gap-6 mb-4">
+        <div class="col-span-4 border-r border-slate-800 pr-4">
+            <label class="text-[10px] uppercase font-black text-indigo-500 block mb-1">Kitsu Title (Primary)</label>
+            <div class="flex items-start gap-2">
+                <p id="display-kitsu-title" class="text-lg font-bold text-white leading-tight break-words">-</p>
+                <button onclick="copyToMap('display-kitsu-title')" class="text-[9px] bg-slate-800 p-1 rounded hover:bg-slate-700">📋</button>
+                <a id="kitsu-link" href="#" target="_blank" class="text-[9px] font-black text-orange-400 hover:underline uppercase whitespace-nowrap pt-1">Kitsu ↗</a>
+            </div>
+            <p id="progress-text" class="text-[10px] text-slate-500 font-mono mt-1 italic"></p>
+            <div class="relative mt-2">
+                <div class="flex items-center gap-2">
+                    <span class="text-[9px] font-bold text-slate-500 uppercase whitespace-nowrap">Change Kitsu:</span>
+                    <input type="text" id="kitsu-search" oninput="searchKitsu(this.value)" onfocus="searchKitsu(this.value)" placeholder="Kitsu id, kitsu.app URL or title" class="flex-grow bg-slate-800 rounded px-2 py-1 text-xs text-white outline-none ring-1 ring-slate-700 focus:ring-orange-400">
+                </div>
+                <div id="kitsu-results" class="suggestion-dropdown absolute top-full left-0 w-full mt-1 bg-slate-900 border border-slate-700 rounded shadow-2xl hidden"></div>
+                <p id="kitsu-hint" class="text-[10px] mt-1"></p>
+            </div>
+        </div>
+        <div class="col-span-4 border-r border-slate-800 px-4">
+            <label class="text-[10px] uppercase font-black text-slate-400 block mb-1">MAL Title</label>
+            <div class="flex items-start gap-2">
+                <p id="display-mal-title" class="text-sm font-semibold text-slate-300 leading-tight break-words">-</p>
+                <button onclick="copyToMap('display-mal-title')" class="text-[9px] bg-slate-800 p-1 rounded hover:bg-slate-700">📋</button>
+                <a id="mal-link" href="#" target="_blank" class="text-[9px] font-black text-blue-400 hover:underline uppercase whitespace-nowrap pt-1">MAL ↗</a>
+            </div>
+            <p id="display-anime-type" class="text-[9px] text-indigo-400 font-bold mt-1 uppercase tracking-widest"></p>
+        </div>
+        <div class="col-span-4 pl-4">
+            <label class="text-[10px] uppercase font-black text-slate-500 block mb-1">Aliases</label>
+            <div id="meta-aliases" class="flex flex-wrap gap-1 max-h-12 overflow-y-auto custom-scroll"></div>
+        </div>
+    </div>
+
+    <div id="review-reason" class="hidden mb-4 px-4 py-2 rounded-lg border border-amber-500/30 bg-amber-500/5 flex flex-wrap items-center gap-x-3 gap-y-1">
+        <span class="text-[10px] uppercase font-black text-amber-500">Needs review</span>
+        <div id="review-reason-parts" class="flex flex-wrap items-center gap-2"></div>
+        <p id="review-reason-hint" class="w-full text-[10px] text-slate-400 italic"></p>
+    </div>
+
+    <div class="grid grid-cols-12 gap-4 items-end bg-[#0b0e14]/50 p-4 rounded-lg border border-slate-800 relative">
+        <div class="col-span-3 relative">
+            <label class="block text-[10px] uppercase font-black text-amber-500 mb-1">IMDb Suggestion Search</label>
+            <input type="text" id="imdb-search" oninput="searchIMDb(this.value)" placeholder="Search title..." class="w-full bg-slate-800 border-none ring-1 ring-amber-500/30 focus:ring-2 focus:ring-amber-500 rounded p-2 text-sm text-white">
+            <div id="search-results" class="suggestion-dropdown absolute top-full left-0 w-full mt-1 bg-slate-900 border border-slate-700 rounded shadow-2xl hidden"></div>
+        </div>
+        <div class="col-span-2">
+            <label class="block text-[10px] uppercase font-black text-indigo-400 mb-1">IMDb ID</label>
+            <input type="text" id="edit-imdb-id" oninput="handleIdInput(this.value)" class="w-full bg-slate-800 border-none ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 rounded p-2 text-sm text-white">
+        </div>
+        <div class="col-span-3">
+            <label class="block text-[10px] uppercase font-black text-indigo-400 mb-1">Map Title (Display)</label>
+            <input type="text" id="edit-title" class="w-full bg-slate-800 border-none ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 rounded p-2 text-sm text-white">
+        </div>
+        <div class="col-span-2 flex gap-2" id="season-episode-container">
+            <div class="w-1/2">
+                <label class="block text-[10px] uppercase font-black text-indigo-400 mb-1">Ssn</label>
+                <input type="number" id="edit-season" class="w-full bg-slate-800 border-none ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 rounded p-2 text-sm text-white">
+            </div>
+            <div class="w-1/2">
+                <label class="block text-[10px] uppercase font-black text-indigo-400 mb-1">Eps</label>
+                <input type="number" id="edit-episode" class="w-full bg-slate-800 border-none ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 rounded p-2 text-sm text-white">
+            </div>
+        </div>
+        <div class="col-span-2 flex items-center justify-end h-full pb-2 gap-3">
+            <a id="imdb-link" href="#" target="_blank" class="text-[9px] font-black text-yellow-500 hover:underline uppercase">IMDb ↗</a>
+            <a id="tvdb-link" href="#" target="_blank" class="text-[9px] font-black text-emerald-500 hover:underline uppercase">TVDB ↗</a>
+        </div>
+    </div>
+</header>
+
+<main class="flex-1 min-h-0 flex overflow-hidden">
+    <div class="w-1/3 border-r border-slate-800 bg-[#0b0e14] p-6 overflow-y-auto custom-scroll">
+        <div id="meta-card" class="hidden">
+            <img id="meta-poster" class="w-full h-64 object-contain bg-black rounded border border-slate-800 mb-4" src="">
+            <h2 id="meta-api-title" class="text-xl font-black text-white leading-tight mb-2"></h2>
+            <div class="flex flex-wrap gap-2 mb-4 text-[10px] font-bold">
+                <span id="meta-year" class="bg-slate-800 px-2 py-0.5 rounded text-indigo-400"></span>
+                <span id="meta-rating" class="bg-yellow-500/10 px-2 py-0.5 rounded text-yellow-500">⭐ -</span>
+            </div>
+            <p id="meta-description" class="text-xs text-slate-400 leading-relaxed italic mb-6"></p>
+        </div>
+        <div id="meta-placeholder" class="flex-grow h-full flex items-center justify-center text-center opacity-20 text-xs">READY</div>
+    </div>
+    <div class="w-2/3 flex flex-col bg-white">
+        <iframe id="tvdb-frame" class="w-full h-full" src="about:blank"></iframe>
+    </div>
+</main>
+
+<script>
+    // ---- state ----
+    let rawData = {};      // new_mappings.json  (object keyed by kitsuId)
+    let imdbData = [];     // imdb_mapping.json  (array)
+    let keys = [];
+    let currentIndex = 0;
+    let searchTimeout;
+    let dirHandle = null;      // granted read/write handle to static/data
+    let pendingHandle = null;  // remembered handle awaiting a permission re-grant
+
+    // ---- File System Access: persist the folder handle in IndexedDB ----
+    function idb(op, val) {
+        return new Promise((resolve) => {
+            const req = indexedDB.open('mapper-fs', 1);
+            req.onupgradeneeded = () => req.result.createObjectStore('handles');
+            req.onerror = () => resolve(null);
+            req.onsuccess = () => {
+                const store = req.result.transaction('handles', 'readwrite').objectStore('handles');
+                const r = op === 'get' ? store.get('dir') : store.put(val, 'dir');
+                r.onsuccess = () => resolve(r.result);
+                r.onerror = () => resolve(null);
+            };
+        });
+    }
+
+    function supportsFS() { return typeof window.showDirectoryPicker === 'function'; }
+
+    function updateConnStatus() {
+        const el = document.getElementById('conn-status');
+        if (dirHandle) {
+            el.textContent = `🟢 Live: ${dirHandle.name}/`;
+            el.className = 'text-[9px] font-bold px-2 py-1 rounded border border-emerald-500/40 text-emerald-400';
+        } else if (!supportsFS()) {
+            el.textContent = '🔴 Browser unsupported — use Chrome/Edge';
+            el.className = 'text-[9px] font-bold px-2 py-1 rounded border border-red-500/30 text-red-400';
+        } else {
+            el.textContent = pendingHandle ? '🟡 Reconnect to enable saving' : '🔴 Not connected — read only';
+            el.className = 'text-[9px] font-bold px-2 py-1 rounded border border-amber-500/30 text-amber-400';
+        }
+    }
+
+    async function connectFolder() {
+        if (!supportsFS()) {
+            alert('This browser cannot write local files. Open in Chrome, Edge or Brave.');
+            return;
+        }
+        try {
+            // `id` makes the browser remember and reopen at the last-picked folder (static/data),
+            // and `startIn` points at it directly when we already hold a handle awaiting re-grant.
+            const handle = pendingHandle || await window.showDirectoryPicker({
+                id: 'kitsu-mapping-data',
+                mode: 'readwrite',
+                startIn: pendingHandle || undefined,
+            });
+            if (await handle.requestPermission({ mode: 'readwrite' }) !== 'granted') {
+                alert('Write permission denied.');
+                return;
+            }
+            dirHandle = handle;
+            pendingHandle = null;
+            await idb('put', handle);
+            await loadFromDisk();
+            updateConnStatus();
+        } catch (e) {
+            if (e.name === 'NotFoundError') {
+                dirHandle = null;
+                await idb('put', null);
+                updateConnStatus();
+                alert('That folder has no imdb_mapping.json / new_mappings.json. Pick the repo\'s static/data folder.');
+            } else if (e.name !== 'AbortError') {
+                alert('Connect failed: ' + e.message);
+            }
+        }
+    }
+
+    async function readJson(name) {
+        const fh = await dirHandle.getFileHandle(name);
+        return JSON.parse(await (await fh.getFile()).text());
+    }
+
+    async function writeJson(name, obj) {
+        const fh = await dirHandle.getFileHandle(name, { create: true });
+        const w = await fh.createWritable();
+        await w.write(JSON.stringify(obj, null, 2));
+        await w.close();
+    }
+
+    function requireConnection() {
+        if (!dirHandle) {
+            alert('Connect the data folder first (📁 button) so changes can be saved to disk.');
+            return false;
+        }
+        return true;
+    }
+
+    // ---- load ----
+    async function init() {
+        // Try to silently restore a previously-granted folder handle.
+        const saved = supportsFS() ? await idb('get') : null;
+        if (saved) {
+            const perm = await saved.queryPermission({ mode: 'readwrite' });
+            if (perm === 'granted') { dirHandle = saved; }
+            else { pendingHandle = saved; }
+        }
+        if (dirHandle) await loadFromDisk();
+        else await loadReadOnly();
+        updateConnStatus();
+    }
+
+    async function loadFromDisk() {
+        rawData = await readJson('new_mappings.json');
+        imdbData = await readJson('imdb_mapping.json');
+        keys = Object.keys(rawData);
+        currentIndex = 0;
+        renderEntry();
+    }
+
+    // Fallback for viewing before a folder is connected (fetch works over file:// and http).
+    async function loadReadOnly() {
+        try {
+            rawData = await (await fetch('../static/data/new_mappings.json')).json();
+            imdbData = await (await fetch('../static/data/imdb_mapping.json')).json();
+            keys = Object.keys(rawData);
+            currentIndex = 0;
+            renderEntry();
+        } catch (e) { console.error('Read-only load failed', e); }
+    }
+
+    // ---- franchise-aware insertion (mirrors mapping/mal_seasonal_import.js insertMappingEntry) ----
+    // Keep an imdb's entries together, with season-0 specials trailing at the end of the group. A
+    // regular season goes after the last non-special sibling; a special goes after the very last one.
+    function insertMappingEntry(base, item) {
+        const siblings = base.filter(e => e.imdb_id === item.imdb_id);
+        if (!siblings.length) {
+            const idx = base.findIndex((e, i) =>
+                e.kitsu_id > item.kitsu_id && base.slice(i).every(x => x.kitsu_id > item.kitsu_id));
+            base.splice(idx === -1 ? base.length : idx, 0, item);
+            return;
+        }
+        const anchors = item.fromSeason === 0 ? siblings : siblings.filter(e => e.fromSeason !== 0);
+        if (anchors.length) {
+            base.splice(base.indexOf(anchors[anchors.length - 1]) + 1, 0, item);
+        } else {
+            base.splice(base.indexOf(siblings[0]), 0, item);
+        }
+    }
+
+    // ---- render ----
+    function renderEntry() {
+        if (currentIndex >= keys.length) {
+            document.getElementById('progress-text').innerText = 'Review list empty 🎉';
+            document.getElementById('display-kitsu-title').innerText = 'All done';
+            document.getElementById('display-mal-title').innerText = '-';
+            document.getElementById('tvdb-frame').src = 'about:blank';
+            return;
+        }
+        const kId = keys[currentIndex];
+        const item = rawData[kId];
+
+        document.getElementById('search-results').classList.add('hidden');
+        document.getElementById('imdb-search').value = ''; // reset the suggestion search on entry switch
+        const progress = document.getElementById('progress-text');
+        progress.innerText = `Remaining ${keys.length} • `;
+        const addonLink = document.createElement('a');
+        addonLink.href = `https://anime-kitsu.strem.fun/meta/series/kitsu:${kId}.json`; // meta handler ignores the type
+        addonLink.target = '_blank';
+        addonLink.title = 'Open the addon meta for this entry';
+        addonLink.className = 'text-indigo-400 hover:underline';
+        addonLink.innerText = `KId: ${kId} ↗`;
+        progress.appendChild(addonLink);
+        document.getElementById('display-kitsu-title').innerText = item.kitsuTitle || '-';
+        document.getElementById('display-mal-title').innerText = item.malTitle || 'N/A';
+        document.getElementById('display-anime-type').innerText = item.animeType || '';
+        document.getElementById('kitsu-link').href = `https://kitsu.app/anime/${kId}`;
+        document.getElementById('kitsu-results').classList.add('hidden');
+        document.getElementById('kitsu-search').value = '';
+        suggestKitsuFromMal(kId, item);
+        const malLink = document.getElementById('mal-link');
+        malLink.href = item.malId ? `https://myanimelist.net/anime/${item.malId}` : '#';
+        malLink.classList.toggle('hidden', !item.malId);
+
+        const aliasContainer = document.getElementById('meta-aliases');
+        aliasContainer.innerHTML = '';
+        (item.kitsuAliases || []).forEach(a => {
+            const span = document.createElement('span');
+            span.className = 'bg-slate-800 border border-slate-700 text-[8px] px-1.5 py-0.5 rounded text-slate-500 whitespace-nowrap';
+            span.innerText = a;
+            aliasContainer.appendChild(span);
+        });
+
+        const isMovie = item.animeType && item.animeType.toLowerCase() === 'movie';
+        document.getElementById('season-episode-container').style.opacity = isMovie ? '0.3' : '1';
+
+        document.getElementById('edit-imdb-id').value = (item.imdb_id && item.imdb_id !== "false") ? item.imdb_id : '';
+        document.getElementById('edit-title').value = item.title || item.kitsuTitle || '';
+        document.getElementById('edit-season').value = item.fromSeason ?? 1; // keep S0 specials
+        document.getElementById('edit-episode').value = item.fromEpisode ?? 1;
+        renderReviewReason(item);
+
+        const displayTitle = document.getElementById('edit-title').value;
+        const tvdbUrl = item.tvdb_id
+            ? `https://www.thetvdb.com/dereferrer/series/${item.tvdb_id}`
+            : `https://thetvdb.com/search?query=${encodeURIComponent(displayTitle)}`;
+        document.getElementById('tvdb-frame').src = tvdbUrl;
+        document.getElementById('tvdb-link').href = tvdbUrl;
+        const imdbVal = document.getElementById('edit-imdb-id').value;
+        document.getElementById('imdb-link').href = imdbVal.startsWith('tt')
+            ? `https://www.imdb.com/title/${imdbVal}/`
+            : `https://www.imdb.com/find?q=${encodeURIComponent(displayTitle)}`;
+
+        fetchCinemeta(imdbVal, isMovie ? 'movie' : 'series');
+    }
+
+    // ---- review reason (set by mapping/mal_seasonal_import.js verifiedOrReview) ----
+    // Shape: "<fresh-season check>; as continuation SxEy: <continuation check>". The continuation
+    // position is the importer's fallback guess, offered as a one-click fill for Ssn/Eps.
+    const REASON_HINTS = [
+        [/no imdb id found/, 'Importer found no IMDb candidate. Search manually.'],
+        [/link not confirmed by Fribb/, 'Compare the MAL and Kitsu titles first: the Kitsu match itself may be a different show.'],
+        [/different show|Fribb links/, 'The Kitsu match is another entry (often the previous season): use Change Kitsu, or skip until Kitsu adds this one.'],
+        [/not tagged Animation/, 'IMDb id may be a live-action adaptation of the same title.'],
+        [/unknown to cinemeta/, 'Id may be wrong, or too new for Cinemeta to know it yet.'],
+        [/not a tt imdb id/, 'Importer picked a person/company id (nm…/co…), not a title.'],
+        [/type mismatch|movie mapped onto a season/, 'Kitsu and IMDb disagree on movie vs series.'],
+        [/movie year .* far from/, 'IMDb release year is far off: probably a different movie.'],
+        [/outside season/, 'That IMDb season premiered outside this MAL season, so it is probably an earlier one.'],
+        [/imdb has no S\d+E\d+/, 'IMDb has not listed this season/episode yet: map as a continuation, or skip and wait.'],
+        [/not contiguous|split across kitsu entries/, 'Earlier seasons are split oddly across Kitsu entries: check the offsets by hand.'],
+        [/^as special|; as special/, 'May be one of the franchise\'s IMDb specials (season 0): compare the S0 episode dates and titles on IMDb.'],
+        [/standalone movie/, 'Feature-length special: IMDb may list it as its own movie as well as a franchise special.'],
+    ];
+
+    function renderReviewReason(item) {
+        const box = document.getElementById('review-reason');
+        const parts = document.getElementById('review-reason-parts');
+        const reason = item.reviewReason
+            || (!item.imdb_id || item.imdb_id === 'false' ? 'no imdb id found' : '');
+        parts.innerHTML = '';
+        box.classList.toggle('hidden', !reason);
+        if (!reason) return;
+
+        reason.split('; ').forEach(part => {
+            const chip = document.createElement('span');
+            chip.className = 'text-xs text-amber-200 bg-amber-500/10 px-2 py-0.5 rounded';
+            chip.innerText = part;
+            parts.appendChild(chip);
+            // "as continuation SxEy" (same imdb) or "as special ttX S0Ey" (the franchise imdb's specials)
+            const suggestion = part.match(/^as (?:continuation|special(?: (tt\d+))?) S(\d+)E(\d+)/);
+            if (suggestion) {
+                const [, imdbId, season, episode] = suggestion;
+                const btn = document.createElement('button');
+                btn.className = 'text-[9px] bg-amber-600 hover:bg-amber-500 text-white font-bold px-2 py-0.5 rounded';
+                btn.innerText = `Use ${imdbId ? `${imdbId} ` : ''}S${season}E${episode}`;
+                btn.onclick = () => {
+                    if (imdbId) {
+                        document.getElementById('edit-imdb-id').value = imdbId;
+                        handleIdInput(imdbId);
+                    }
+                    document.getElementById('edit-season').value = season;
+                    document.getElementById('edit-episode').value = episode;
+                };
+                parts.appendChild(btn);
+            }
+        });
+        const hints = REASON_HINTS.filter(([re]) => re.test(reason)).map(([, hint]) => hint);
+        document.getElementById('review-reason-hint').innerText = hints.join(' ');
+    }
+
+    // ---- change the kitsu entry (when the importer matched the MAL entry to the wrong kitsu id) ----
+    // Uses the addon's own endpoints: mal:{id} meta resolves the addon's MAL -> kitsu link, the
+    // kitsu-anime-list catalog searches by title, and kitsu:{id} meta gives titles/type/episodes.
+    const ADDON_URL = 'https://anime-kitsu.strem.fun';
+    let kitsuSearchTimeout;
+
+    async function addonMeta(id) {
+        const res = await fetch(`${ADDON_URL}/meta/series/${id}.json`);
+        if (!res.ok) return undefined;
+        return (await res.json()).meta;
+    }
+
+    function kitsuHint(html, color = 'text-slate-400') {
+        const hint = document.getElementById('kitsu-hint');
+        hint.className = `text-[10px] mt-1 ${color}`;
+        hint.innerHTML = html;
+    }
+
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.innerText = text ?? '';
+        return div.innerHTML;
+    }
+
+    // Shows what the addon itself links this MAL id to, with a one-click switch when it differs.
+    async function suggestKitsuFromMal(kId, item) {
+        kitsuHint('');
+        if (!item.malId) return;
+        const meta = await addonMeta(`mal:${item.malId}`).catch(() => undefined);
+        if (keys[currentIndex] !== kId) return; // moved on while loading
+        const linkedId = meta && String(meta.kitsu_id || meta.id.replace('kitsu:', ''));
+        if (!linkedId) {
+            kitsuHint(`Addon has no Kitsu link for MAL ${item.malId}.`, 'text-slate-500');
+        } else if (linkedId === kId) {
+            kitsuHint(`✓ Addon links MAL ${item.malId} to this Kitsu entry.`, 'text-emerald-400');
+        } else {
+            kitsuHint(`Addon links MAL ${item.malId} to <b>kitsu:${linkedId}</b> ${escapeHtml(meta.name)} (${escapeHtml(meta.animeType)}, ${escapeHtml(meta.releaseInfo)})
+                <button onclick="changeKitsu('${linkedId}')" class="ml-1 text-[9px] bg-orange-600 hover:bg-orange-500 text-white font-bold px-2 py-0.5 rounded">Use</button>`,
+                'text-orange-300');
+        }
+    }
+
+    function searchKitsu(query) {
+        clearTimeout(kitsuSearchTimeout);
+        const container = document.getElementById('kitsu-results');
+        const q = query.trim();
+        if (q.length < 2) { container.classList.add('hidden'); return; }
+        kitsuSearchTimeout = setTimeout(async () => {
+            const direct = q.match(/^(?:kitsu:)?(\d+)$/) || q.match(/kitsu\.(?:app|io)\/anime\/(\d+)/);
+            try {
+                let metas;
+                if (direct) {
+                    const meta = await addonMeta(`kitsu:${direct[1]}`);
+                    metas = meta ? [meta] : [];
+                } else {
+                    const res = await fetch(`${ADDON_URL}/catalog/anime/kitsu-anime-list/search=${encodeURIComponent(q)}.json`);
+                    metas = res.ok ? ((await res.json()).metas || []) : [];
+                }
+                container.innerHTML = metas.length ? metas.slice(0, 15).map(m => {
+                    const id = String(m.kitsu_id || m.id.replace('kitsu:', ''));
+                    const state = imdbData.some(e => String(e.kitsu_id) === id) ? '<span class="text-emerald-400">mapped</span>'
+                        : rawData[id] ? '<span class="text-amber-400">queued</span>' : '';
+                    return `<div onclick="changeKitsu('${id}')" class="flex gap-3 p-2 hover:bg-slate-800 cursor-pointer border-b border-slate-800">
+                            <img src="${m.poster || ''}" class="w-10 h-14 object-cover rounded bg-black">
+                            <div><p class="text-xs font-bold text-white">${escapeHtml(m.name)}</p>
+                            <p class="text-[10px] text-slate-400">kitsu:${id} • ${escapeHtml(m.animeType || '')} • ${escapeHtml(m.releaseInfo || '')} ${state}</p></div>
+                        </div>`;
+                }).join('') : '<p class="p-2 text-xs text-slate-500">No Kitsu results</p>';
+                container.classList.remove('hidden');
+            } catch (e) { console.error('Kitsu search failed', e); }
+        }, 300);
+    }
+
+    // Re-keys the current review entry onto another kitsu id, refreshing the kitsu-derived fields.
+    async function changeKitsu(newId) {
+        document.getElementById('kitsu-results').classList.add('hidden');
+        const oldId = keys[currentIndex];
+        if (!oldId || newId === oldId) return;
+        if (dirHandle) imdbData = await readJson('imdb_mapping.json'); // check against the live file
+        const mapped = imdbData.find(e => String(e.kitsu_id) === newId);
+        if (mapped && !confirm(`kitsu:${newId} is already mapped to ${mapped.imdb_id}`
+            + `${mapped.fromSeason !== undefined ? ` S${mapped.fromSeason}E${mapped.fromEpisode}` : ''}.`
+            + ` Adding this entry will replace that mapping. Continue?`)) return;
+        if (rawData[newId] && !confirm(`kitsu:${newId} is already queued (${rawData[newId].malTitle}).`
+            + ` Replace that queued entry with this one?`)) return;
+
+        const meta = await addonMeta(`kitsu:${newId}`).catch(() => undefined);
+        if (!meta) { alert(`Addon returned no meta for kitsu:${newId}`); return; }
+        const item = rawData[oldId];
+        const changed = {
+            ...item,
+            kitsuId: newId,
+            kitsuTitle: meta.name,
+            kitsuAliases: meta.aliases || [],
+            animeType: meta.animeType,
+            reviewReason: [item.reviewReason, `kitsu changed from ${oldId}`].filter(Boolean).join('; '),
+        };
+        if (meta.imdb_id && !mapped) changed.imdb_id = meta.imdb_id; // the addon already knows an imdb for it
+
+        if (dirHandle) {
+            try {
+                await updateQueue(live => {
+                    delete live[oldId];
+                    live[newId] = changed;
+                }, newId);
+            } catch (e) { alert('Write failed: ' + e.message); return; }
+        } else {
+            delete rawData[oldId];
+            rawData[newId] = changed;
+            syncKeys(newId);
+        }
+        document.getElementById('kitsu-search').value = '';
+        renderEntry();
+    }
+
+    // ---- actions: write straight to disk ----
+    // Both files may be edited by hand (or by the importer) while this page is open, so every action
+    // re-reads the live file, applies only its own change and writes that back. The in-memory copies
+    // are display caches and are never written out as-is.
+    async function updateLiveJson(name, mutate) {
+        const live = await readJson(name);
+        mutate(live);
+        await writeJson(name, live);
+        return live;
+    }
+
+    // Applies a change to the live review queue, then refreshes the local copy and the entry order.
+    // `focusId` is the entry to show next: the given id if it is still queued, else the next one after it.
+    async function updateQueue(mutate, focusId) {
+        rawData = await updateLiveJson('new_mappings.json', mutate);
+        syncKeys(focusId);
+    }
+
+    function syncKeys(focusId) {
+        keys = Object.keys(rawData);
+        const exact = keys.indexOf(String(focusId));
+        const next = keys.findIndex(k => Number(k) > Number(focusId));
+        currentIndex = exact !== -1 ? exact : next !== -1 ? next : keys.length;
+    }
+
+    async function saveAndNext() {
+        if (!requireConnection()) return;
+        const kId = keys[currentIndex];
+        const item = rawData[kId];
+        const imdbId = document.getElementById('edit-imdb-id').value.trim();
+        if (!/^tt\d+/.test(imdbId)) {
+            alert('Enter a valid IMDb id (tt…) before adding, or use Skip.');
+            return;
+        }
+        const isMovie = item.animeType && item.animeType.toLowerCase() === 'movie';
+        const newItem = { kitsu_id: parseInt(kId), imdb_id: imdbId, title: document.getElementById('edit-title').value };
+        if (!isMovie) {
+            newItem.fromSeason = parseInt(document.getElementById('edit-season').value);
+            newItem.fromEpisode = parseInt(document.getElementById('edit-episode').value);
+        }
+
+        try {
+            // Upsert into the live imdb_mapping: replace an existing kitsu entry, else insert at the correct spot.
+            imdbData = await updateLiveJson('imdb_mapping.json', live => {
+                const existingIdx = live.findIndex(e => e.kitsu_id === newItem.kitsu_id);
+                if (existingIdx >= 0) live[existingIdx] = newItem;
+                else insertMappingEntry(live, newItem);
+            });
+            await updateQueue(live => { delete live[kId]; }, kId);
+        } catch (e) {
+            alert('Write failed: ' + e.message);
+            return;
+        }
+        renderEntry();
+    }
+
+    async function skipEntry() {
+        if (!requireConnection()) return;
+        const kId = keys[currentIndex];
+        try {
+            await updateQueue(live => { delete live[kId]; }, kId);
+        } catch (e) {
+            alert('Write failed: ' + e.message);
+            return;
+        }
+        renderEntry();
+    }
+
+    // Manual safety-net download of the current in-memory imdb_mapping (does not need the folder).
+    function exportBackup() {
+        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(imdbData, null, 2));
+        const dl = document.createElement('a');
+        dl.setAttribute("href", dataStr);
+        dl.setAttribute("download", "imdb_mapping.json");
+        dl.click();
+    }
+
+    // ---- unchanged helpers ----
+    async function searchIMDb(query) {
+        clearTimeout(searchTimeout);
+        const container = document.getElementById('search-results');
+        if (query.length < 2) { container.classList.add('hidden'); return; }
+        searchTimeout = setTimeout(async () => {
+            const url = `https://v2.sg.media-imdb.com/suggestion/${query[0].toLowerCase()}/${encodeURIComponent(query)}.json`;
+            try {
+                const res = await fetch(url);
+                const data = await res.json();
+                if (!data.d) return;
+                container.innerHTML = data.d.map(item => `
+                        <div onclick="selectImdb('${item.id}', '${(item.l || '').replace(/'/g, "\\'")}')" class="flex gap-3 p-2 hover:bg-slate-800 cursor-pointer border-b border-slate-800">
+                            <img src="${item.i ? item.i.imageUrl : ''}" class="w-10 h-14 object-cover rounded bg-black">
+                            <div><p class="text-xs font-bold text-white">${item.l}</p><p class="text-[10px] text-slate-400">${item.q || ''} • ${item.y || ''}</p></div>
+                        </div>`).join('');
+                container.classList.remove('hidden');
+            } catch (e) { console.error("Search failed"); }
+        }, 300);
+    }
+
+    function selectImdb(id, title) {
+        const item = rawData[keys[currentIndex]];
+        item.imdb_id = id;
+        item.title = title;
+        renderEntry();
+    }
+
+    // Same source as the importer (lib/cinemeta_api.js getFreshCinemetaMetadata): v3-cinemeta with a cache-breaking
+    // query. For ids v3 doesn't serve it redirects to its fallback (cinemeta-live) without the query, and that
+    // fallback caches for up to two weeks, so a redirected response is fetched again with the query.
+    async function freshCinemeta(type, id) {
+        const cacheBreak = `?${Date.now()}`;
+        const res = await fetch(`https://v3-cinemeta.strem.io/meta/${type}/${id}.json${cacheBreak}`);
+        const target = res.url.split('?')[0];
+        if (!target.startsWith('https://v3-cinemeta.strem.io/')) {
+            return (await fetch(`${target}${cacheBreak}`)).json();
+        }
+        return res.json();
+    }
+
+    async function fetchCinemeta(id, type) {
+        const card = document.getElementById('meta-card');
+        const ph = document.getElementById('meta-placeholder');
+        if (!id || !id.startsWith('tt')) { card.classList.add('hidden'); ph.classList.remove('hidden'); return; }
+        try {
+            let data = await freshCinemeta(type, id);
+            if (!data.meta) {
+                data = await freshCinemeta(type === 'movie' ? 'series' : 'movie', id);
+            }
+            if (data.meta) {
+                const m = data.meta;
+                document.getElementById('meta-poster').src = m.poster || "";
+                document.getElementById('meta-api-title').innerText = m.name;
+                document.getElementById('meta-year').innerText = m.year || m.releaseInfo || "N/A";
+                document.getElementById('meta-rating').innerText = `⭐ ${m.imdbRating || '-'}`;
+                document.getElementById('meta-description').innerText = m.description || "";
+                card.classList.remove('hidden'); ph.classList.add('hidden');
+            }
+        } catch (e) { console.error("Meta failed"); }
+    }
+
+    function handleIdInput(val) {
+        const item = rawData[keys[currentIndex]];
+        if (!item) return;
+        const m = val.match(/tt\d+/);
+        const id = m ? m[0] : val.trim();
+        item.imdb_id = id;                       // update the model so it isn't reverted on re-render
+        const field = document.getElementById('edit-imdb-id');
+        if (m && field.value !== m[0]) field.value = m[0]; // normalise a pasted URL down to the tt id
+        const isMovie = item.animeType && item.animeType.toLowerCase() === 'movie';
+        const displayTitle = document.getElementById('edit-title').value;
+        document.getElementById('imdb-link').href = id.startsWith('tt')
+            ? `https://www.imdb.com/title/${id}/`
+            : `https://www.imdb.com/find?q=${encodeURIComponent(displayTitle)}`;
+        fetchCinemeta(id, isMovie ? 'movie' : 'series');
+    }
+    function copyToMap(id) { document.getElementById('edit-title').value = document.getElementById(id).innerText; renderEntry(); }
+    function jumpToId() { const idx = keys.indexOf(document.getElementById('jump-input').value.trim()); if (idx !== -1) { currentIndex = idx; renderEntry(); } else { alert("ID not found"); } }
+    init();
+</script>
+</body>
+</html>
