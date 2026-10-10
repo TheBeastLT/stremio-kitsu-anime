@@ -2,7 +2,8 @@
   "name": "stremio-kitsu-anime",
   "version": "0.0.6",
   "scripts": {
-    "start": "node ./index.js"
+    "start": "node ./index.js",
+    "test": "FANART_APIKEY=test node --test test/*.test.js"
   },
   "author": "TheBeastLT <pauliox@beyond.lt>",
   "license": "MIT",
