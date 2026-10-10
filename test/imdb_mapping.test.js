@@ -25,3 +25,24 @@ test('imdb_mapping rows have a numeric kitsu id, a tt imdb id and both start fie
       || (row.fromSeason === undefined) !== (row.fromEpisode === undefined));
   assert.deepStrictEqual(invalid, []);
 });
+
+const { addRows } = require('../mapping/add_rows');
+
+test('addRows inserts a special after its imdb siblings, taking their title', () => {
+  const base = [
+    { kitsu_id: 1, imdb_id: 'tt1', title: 'Show', fromSeason: 1, fromEpisode: 1 },
+    { kitsu_id: 9, imdb_id: 'tt9', title: 'Other' },
+  ];
+  addRows(base, [{ kitsu_id: 5, imdb_id: 'tt1', fromSeason: 0, fromEpisode: 2 }]);
+  assert.deepStrictEqual(base.map(row => row.kitsu_id), [1, 5, 9]);
+  assert.deepStrictEqual(base[1], { kitsu_id: 5, imdb_id: 'tt1', title: 'Show', fromSeason: 0, fromEpisode: 2 });
+});
+
+test('addRows adds nothing when a kitsu id already has a row', () => {
+  const base = [{ kitsu_id: 1, imdb_id: 'tt1', title: 'Show', fromSeason: 1, fromEpisode: 1 }];
+  assert.throws(() => addRows(base, [
+    { kitsu_id: 2, imdb_id: 'tt1', fromSeason: 2, fromEpisode: 1 },
+    { kitsu_id: 1, imdb_id: 'tt1', fromSeason: 0, fromEpisode: 1 },
+  ]), /1: kitsu id already has a row/);
+  assert.strictEqual(base.length, 1);
+});
