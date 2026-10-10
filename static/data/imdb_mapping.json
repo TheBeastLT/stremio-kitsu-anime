@@ -14947,6 +14947,20 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 42116,
+    "imdb_id": "tt2359704",
+    "title": "JoJo's Bizarre Adventure",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  {
+    "kitsu_id": 13306,
+    "imdb_id": "tt2359704",
+    "title": "JoJo's Bizarre Adventure",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
+  {
     "kitsu_id": 3136,
     "imdb_id": "tt6490990",
     "title": "JoJo's Bizarre Adventure: Phantom Blood"
@@ -24643,9 +24657,6 @@
     "kitsu_id": 13302,
     "imdb_id": "tt6813106",
     "title": "Sekai no Yami Zukan"
-  },
-  {
-    "kitsu_id": 13306
   },
   {
     "kitsu_id": 10988,
