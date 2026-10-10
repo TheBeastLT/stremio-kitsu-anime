@@ -37,7 +37,9 @@ async function clearCache(ids, { remove = false } = {}) {
   if (!all.length) {
     return { matched: 0, deleted: 0 };
   }
-  const client = await MongoClient.connect(process.env.MONGODB_URI, { useUnifiedTopology: true });
+  // The deploy passes the secret through a shell (docker run -e MONGODB_URI=...), which drops surrounding quotes.
+  const uri = process.env.MONGODB_URI.trim().replace(/^(['"])(.*)\1$/, '$2');
+  const client = await MongoClient.connect(uri, { useUnifiedTopology: true });
   try {
     const collection = client.db().collection('kitsu_collection');
     const filter = { key: { $regex: `:(${all.join('|')})$` } };
