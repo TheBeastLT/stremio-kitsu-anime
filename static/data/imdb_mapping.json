@@ -69,6 +69,90 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 45690,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 40
+  },
+  {
+    "kitsu_id": 46215,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 42
+  },
+  {
+    "kitsu_id": 46447,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 43
+  },
+  {
+    "kitsu_id": 46629,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 44
+  },
+  {
+    "kitsu_id": 47643,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 45
+  },
+  {
+    "kitsu_id": 48291,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 47
+  },
+  {
+    "kitsu_id": 47642,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 48
+  },
+  {
+    "kitsu_id": 49212,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 51
+  },
+  {
+    "kitsu_id": 48727,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 52
+  },
+  {
+    "kitsu_id": 48726,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 53
+  },
+  {
+    "kitsu_id": 48969,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 54
+  },
+  {
+    "kitsu_id": 49133,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 55
+  },
+  {
     "kitsu_id": 49229,
     "imdb_id": "tt0388629",
     "title": "One Piece",
@@ -81,6 +165,48 @@
     "title": "One Piece",
     "fromSeason": 0,
     "fromEpisode": 57
+  },
+  {
+    "kitsu_id": 49878,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 58
+  },
+  {
+    "kitsu_id": 49911,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 59
+  },
+  {
+    "kitsu_id": 50022,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 60
+  },
+  {
+    "kitsu_id": 50130,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 61
+  },
+  {
+    "kitsu_id": 50262,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 62
+  },
+  {
+    "kitsu_id": 50372,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 63
   },
   {
     "kitsu_id": 13,
@@ -2791,6 +2917,20 @@
     "title": "Agent Aika"
   },
   {
+    "kitsu_id": 3758,
+    "imdb_id": "tt0270758",
+    "title": "Agent Aika",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 4979,
+    "imdb_id": "tt0270758",
+    "title": "Agent Aika",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  {
     "kitsu_id": 334,
     "imdb_id": "tt0108689",
     "title": "Akazukin Chacha"
@@ -5294,6 +5434,13 @@
     "imdb_id": "tt0810705",
     "title": "Nana",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 1686,
+    "imdb_id": "tt0810705",
+    "title": "Nana",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -11902,6 +12049,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 5827,
+    "imdb_id": "tt1690400",
+    "title": "The Legend of the Legendary Heroes",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 5194,
     "imdb_id": "tt1794963",
     "title": "Fafner in the Azure: Heaven and Earth"
@@ -12828,6 +12982,13 @@
     "imdb_id": "tt1987179",
     "title": "Croisée in a Foreign Labyrinth -The Animation",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 6358,
+    "imdb_id": "tt1987179",
+    "title": "Croisée in a Foreign Labyrinth -The Animation",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -13989,6 +14150,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 8717,
+    "imdb_id": "tt2348803",
+    "title": "Kuroko's Basketball",
+    "fromSeason": 0,
+    "fromEpisode": 13
+  },
+  {
     "kitsu_id": 8261,
     "imdb_id": "tt2348803",
     "title": "Kuroko's Basketball",
@@ -14979,6 +15147,13 @@
     "imdb_id": "tt2552230",
     "title": "Maoyuu Maou Yuusha",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 7828,
+    "imdb_id": "tt2552230",
+    "title": "Maoyuu Maou Yuusha",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -16480,11 +16655,32 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 5044,
+    "imdb_id": "tt2716982",
+    "title": "Nura: Rise of the Yokai Clan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 7728,
     "imdb_id": "tt2716982",
     "title": "Nura: Rise of the Yokai Clan",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 6010,
+    "imdb_id": "tt2716982",
+    "title": "Nura: Rise of the Yokai Clan",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
+  {
+    "kitsu_id": 7347,
+    "imdb_id": "tt2716982",
+    "title": "Nura: Rise of the Yokai Clan",
+    "fromSeason": 0,
+    "fromEpisode": 6
   },
   {
     "kitsu_id": 7729,
@@ -17928,6 +18124,20 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 10019,
+    "imdb_id": "tt3981938",
+    "title": "Rage of Bahamut: Genesis",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 13013,
+    "imdb_id": "tt3981938",
+    "title": "Rage of Bahamut: Genesis",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  {
     "kitsu_id": 8199,
     "imdb_id": "tt3950066",
     "title": "In Search of the Lost Future",
@@ -18451,6 +18661,13 @@
     "imdb_id": "tt5025394",
     "title": "Gangsta.",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 11361,
+    "imdb_id": "tt5025394",
+    "title": "Gangsta.",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -19897,6 +20114,20 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 8122,
+    "imdb_id": "tt3114350",
+    "title": "Diabolik Lovers",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 9093,
+    "imdb_id": "tt3114350",
+    "title": "Diabolik Lovers",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  {
     "kitsu_id": 10464,
     "imdb_id": "tt5857720",
     "title": "ReLIFE",
@@ -21043,7 +21274,16 @@
   {
     "kitsu_id": 11337,
     "imdb_id": "tt5276152",
-    "title": "Norn9"
+    "title": "Norn9",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 11898,
+    "imdb_id": "tt5276152",
+    "title": "Norn9",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 11338,
@@ -21529,6 +21769,34 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 11164,
+    "imdb_id": "tt5023666",
+    "title": "Arslan Senki",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  {
+    "kitsu_id": 11054,
+    "imdb_id": "tt5023666",
+    "title": "Arslan Senki",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
+  {
+    "kitsu_id": 11666,
+    "imdb_id": "tt5023666",
+    "title": "Arslan Senki",
+    "fromSeason": 0,
+    "fromEpisode": 12
+  },
+  {
+    "kitsu_id": 41623,
+    "imdb_id": "tt5023666",
+    "title": "Arslan Senki",
+    "fromSeason": 0,
+    "fromEpisode": 18
+  },
+  {
     "kitsu_id": 11485,
     "imdb_id": "tt5618002",
     "title": "Super Lovers",
@@ -21569,6 +21837,20 @@
     "title": "KADO: The Right Answer",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 13523,
+    "imdb_id": "tt7001136",
+    "title": "KADO: The Right Answer",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  {
+    "kitsu_id": 41390,
+    "imdb_id": "tt7001136",
+    "title": "KADO: The Right Answer",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   {
     "kitsu_id": 11498,
@@ -21854,6 +22136,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 13540,
+    "imdb_id": "tt5847454",
+    "title": "Berserk",
+    "fromSeason": 0,
+    "fromEpisode": 5
+  },
+  {
     "kitsu_id": 11662,
     "imdb_id": "tt7120888",
     "title": "Clockwork Planet"
@@ -21939,6 +22228,20 @@
     "kitsu_id": 11770,
     "imdb_id": "tt5921946",
     "title": "Cheer Boys!!"
+  },
+  {
+    "kitsu_id": 12472,
+    "imdb_id": "tt5921946",
+    "title": "Cheer Boys!!",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 13216,
+    "imdb_id": "tt5921946",
+    "title": "Cheer Boys!!",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   {
     "kitsu_id": 11779,
@@ -23701,6 +24004,13 @@
     "title": "Record of Grancrest War"
   },
   {
+    "kitsu_id": 41108,
+    "imdb_id": "tt7897050",
+    "title": "Record of Grancrest War",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 12707,
     "imdb_id": "tt6562940",
     "title": "Kemono Friends",
@@ -24136,6 +24446,20 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 13522,
+    "imdb_id": "tt6472710",
+    "title": "As the Moon, So Beautiful",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 13948,
+    "imdb_id": "tt6472710",
+    "title": "As the Moon, So Beautiful",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  {
     "kitsu_id": 13245,
     "imdb_id": "tt8938030",
     "title": "Ani ni Tsukeru Kusuri wa Nai!",
@@ -24418,6 +24742,20 @@
     "title": "March Comes in Like a Lion",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 13074,
+    "imdb_id": "tt6074794",
+    "title": "March Comes in Like a Lion",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  {
+    "kitsu_id": 47785,
+    "imdb_id": "tt6074794",
+    "title": "March Comes in Like a Lion",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   {
     "kitsu_id": 13402,
@@ -24983,6 +25321,20 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 41281,
+    "imdb_id": "tt7742090",
+    "title": "Hakyu Hoshin Engi",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  {
+    "kitsu_id": 43245,
+    "imdb_id": "tt7742090",
+    "title": "Hakyu Hoshin Engi",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  {
     "kitsu_id": 13689,
     "imdb_id": "tt8225204",
     "title": "Golden Kamuy",
@@ -25111,6 +25463,20 @@
     "title": "Katana Maidens",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 41205,
+    "imdb_id": "tt7829656",
+    "title": "Katana Maidens",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 43592,
+    "imdb_id": "tt7829656",
+    "title": "Katana Maidens",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   {
     "kitsu_id": 13711
@@ -25971,6 +26337,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 42023,
+    "imdb_id": "tt8690728",
+    "title": "Goblin Slayer",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 40600,
     "imdb_id": "tt11418324",
     "title": "Plunderer"
@@ -26509,6 +26882,13 @@
     "title": "Vinland Saga",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 47444,
+    "imdb_id": "tt10233448",
+    "title": "Vinland Saga",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   {
     "kitsu_id": 41085,
@@ -27897,6 +28277,13 @@
     "title": "Cautious Hero: The Hero Is Overpowered but Overly Cautious"
   },
   {
+    "kitsu_id": 42889,
+    "imdb_id": "tt10974198",
+    "title": "Cautious Hero: The Hero Is Overpowered but Overly Cautious",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 42080,
     "imdb_id": "tt9679542",
     "fanartLogoId": "99616",
@@ -28532,6 +28919,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 46770,
+    "imdb_id": "tt11858104",
+    "title": "Dragon Quest: The Adventure of Dai",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 42242,
     "imdb_id": "tt12899130",
     "title": "Mobile Suit Gundam: The Origin - Advent of the Red Comet",
@@ -28638,6 +29032,20 @@
     "title": "Tokunana"
   },
   {
+    "kitsu_id": 42873,
+    "imdb_id": "tt10054654",
+    "title": "Tokunana",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 42963,
+    "imdb_id": "tt10054654",
+    "title": "Tokunana",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  {
     "kitsu_id": 42273,
     "imdb_id": "tt11418344",
     "title": "Drifting Dragons",
@@ -28676,6 +29084,13 @@
     "imdb_id": "tt10707854",
     "title": "Chidori RSC",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 42852,
+    "imdb_id": "tt10707854",
+    "title": "Chidori RSC",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -29038,6 +29453,41 @@
     "title": "Ling Cage",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 43617,
+    "imdb_id": "tt10827146",
+    "title": "Ling Cage",
+    "fromSeason": 1,
+    "fromEpisode": 7
+  },
+  {
+    "kitsu_id": 48310,
+    "imdb_id": "tt10827146",
+    "title": "Ling Cage",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 44571,
+    "imdb_id": "tt10827146",
+    "title": "Ling Cage",
+    "fromSeason": 0,
+    "fromEpisode": 3
+  },
+  {
+    "kitsu_id": 43616,
+    "imdb_id": "tt10827146",
+    "title": "Ling Cage",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
+  {
+    "kitsu_id": 43743,
+    "imdb_id": "tt10827146",
+    "title": "Ling Cage",
+    "fromSeason": 0,
+    "fromEpisode": 5
   },
   {
     "kitsu_id": 42434,
@@ -29791,6 +30241,13 @@
     "imdb_id": "tt12443322",
     "title": "Deca-Dence",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 43524,
+    "imdb_id": "tt12443322",
+    "title": "Deca-Dence",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -32220,6 +32677,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 46045,
+    "imdb_id": "tt14979604",
+    "title": "Bara Ou no Souretsu",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 44210,
     "imdb_id": "tt15533674",
     "title": "Akebi-chan no Sailor-fuku",
@@ -33390,6 +33854,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 46008,
+    "imdb_id": "tt15758108",
+    "title": "Tokyo 24-ku",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 45387,
     "imdb_id": "tt27391405",
     "title": "Isekai Shoukan wa Nidome desu",
@@ -33881,6 +34352,13 @@
     "imdb_id": "tt12105800",
     "title": "Hoshi no samidare",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 46548,
+    "imdb_id": "tt12105800",
+    "title": "Hoshi no samidare",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -34672,6 +35150,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 48572,
+    "imdb_id": "tt21209876",
+    "title": "Solo Leveling",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 46232,
     "imdb_id": "tt21210326",
     "title": "Tomo-chan Is a Girl!",
@@ -35318,6 +35803,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 47264,
+    "imdb_id": "tt22986710",
+    "title": "Buddy Daddies",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 46652,
     "imdb_id": "tt19047064",
     "title": "Rakudai Majo"
@@ -35729,6 +36221,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 48463,
+    "imdb_id": "tt29201691",
+    "title": "Megumi no Daigo: Kyuukoku no Orange",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 46923,
     "imdb_id": "tt31940035",
     "title": "The Many Sides of Voice Actor Radio",
@@ -36108,6 +36607,13 @@
     "imdb_id": "tt27187054",
     "title": "Nige Jouzu no Wakagimi 2nd Season",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 49192,
+    "imdb_id": "tt27187054",
+    "title": "Nige Jouzu no Wakagimi",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
