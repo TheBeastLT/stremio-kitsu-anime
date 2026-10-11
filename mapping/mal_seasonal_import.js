@@ -1,7 +1,6 @@
 const fs = require('fs');
 const axios = require('axios');
 const cheerio = require('cheerio');
-const googleSr = require('google-sr');
 const { queryIdMapping } = require('../lib/id_convert');
 const { getImdbMapping } = require('../lib/metadataEnrich');
 const { search, animeData, animeEpisodeCounts } = require('../lib/kitsu_api');
@@ -11,6 +10,7 @@ const {
 } = require('./fribb_mapping');
 const { getFreshCinemetaMetadata } = require('../lib/cinemeta_api');
 const { insertMappingEntry, insertInKitsuOrder } = require('./mapping_file');
+const { searchImdbIds, firstTrusted } = require('./imdb_search');
 const {
   seasonWindow, verifyCandidate, verifyFreshTitle, verifySpecial, nextSeason, continuationStart, SPECIAL_TYPES,
 } = require('./mapping_verifier');
@@ -102,22 +102,23 @@ async function createImdbMappingEntry(malEntry, window) {
 
   const singleEpisode = kitsuMetadata?.animeType !== 'TV' && kitsuMetadata?.videos?.length === 1;
   const type = kitsuMetadata?.animeType === 'movie' || singleEpisode ? 'movie' : 'series';
-  const foundImdbId = await searchImdbId(malEntry.title, type).catch((err) => undefined);
-  if (!foundImdbId) {
+  const foundImdbIds = await searchImdbIds(malEntry.title, type).catch((err) => []);
+  if (!foundImdbIds.length) {
     console.log(`No imdbId found for: ${JSON.stringify(malEntry)}`);
     return withSpecialSuggestion(reviewBase, special);
   }
-  const imdbMeta = await getImdbMeta(foundImdbId).catch((err) => undefined);
   const hasVideos = kitsuMetadata?.videos?.length > 1 || kitsuMetadata?.animeType === 'TV';
-  const tvdbId = await getTvdbId({ imdb_id: foundImdbId }).catch(() => false);
-  return withSpecialSuggestion(await verifiedOrReview(malEntry, kitsuId, kitsuMetadata, window, {
+  const entry = await firstTrusted(foundImdbIds, imdbId => verifiedOrReview(malEntry, kitsuId, kitsuMetadata, window, {
     ...reviewBase,
-    tvdb_id: tvdbId,
-    imdb_id: foundImdbId,
-    title: imdbMeta?.title,
+    imdb_id: imdbId,
     fromSeason: hasVideos ? 1 : undefined,
     fromEpisode: hasVideos ? 1 : undefined,
-  }), special);
+  }));
+  const [imdbMeta, tvdbId] = await Promise.all([
+    getImdbMeta(entry.imdb_id).catch((err) => undefined),
+    getTvdbId({ imdb_id: entry.imdb_id }).catch(() => false),
+  ]);
+  return withSpecialSuggestion({ ...entry, tvdb_id: tvdbId, title: imdbMeta?.title || entry.title }, special);
 }
 
 // The id mapping service / title search can land on another entry of the franchise (often the previous season). When
@@ -403,38 +404,6 @@ async function getMalSeasonalEntries(season) {
               };
             }).get();
       });
-}
-
-async function searchImdbId(title, type) {
-  const query = `${title} imdb`;
-  return googleSr.search({ query })
-      .then(response => response.length ? response : Promise.reject('No results'))
-      .then(results => results
-          .filter(result => result?.link?.match(/imdb.com\/.*title\//))
-          .map(result => result.link.match(/(tt\d+)/)[1])[0])
-      .catch((err) => getImdbIdFromImdbSuggestions(title))
-      .catch((err) => getImdbIdFromTrakt(title, type));
-}
-
-async function getImdbIdFromImdbSuggestions(title) {
-  const letter = title.slice(0,1).toLowerCase().normalize('NFKD');
-  const query = encodeURIComponent(title.trim());
-  return axios.get(`https://v2.sg.media-imdb.com/suggestion/${letter}/${query}.json`)
-      .then(response => response.data?.d?.[0]?.id)
-      .then(result => result ? result : Promise.reject("No imdb result"));
-}
-
-async function getImdbIdFromTrakt(title, type) {
-    const traktType = type === 'movie' ? 'movie' : 'show';
-    const query = encodeURIComponent(title.trim());
-    const headers = { 'trakt-api-key': process.env.TRAKT_CLIENT_ID }
-    return axios.get(`https://api.trakt.tv/search/${traktType}?query=${query}`, { headers })
-        .then(response => {
-            if (Array.isArray(response.data)) {
-                return response.data.map(result => result[traktType])[0]?.ids?.imdb;
-            }
-            return Promise.reject('No imdb match found in trakt');
-        });
 }
 
 async function getImdbMeta(imdbId) {

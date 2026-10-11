@@ -115,6 +115,38 @@ test('rejects when an earlier season is split across kitsu entries or counts dif
   assert.strictEqual(unknown.ok, false);
 });
 
+test('accepts the next season after a used-up season split across cours, airing with kitsu episode 1 (Re:Zero S4)', () => {
+  const candidate = { imdb_id: 'tt1', fromSeason: 4, fromEpisode: 1 };
+  const cinemeta = series({ 1: 25, 2: 25, 3: 16, 4: 12 },
+      { 1: '2016-04-04', 2: '2020-07-08', 3: '2024-10-02', 4: '2026-10-07' });
+  const siblings = [
+    { kitsu_id: 1, fromSeason: 1, fromEpisode: 1, episodeCount: 25 },
+    { kitsu_id: 2, fromSeason: 2, fromEpisode: 1, episodeCount: 13 },
+    { kitsu_id: 3, fromSeason: 2, fromEpisode: 14, episodeCount: 12 },
+    { kitsu_id: 4, fromSeason: 3, fromEpisode: 1, episodeCount: 8 },
+    { kitsu_id: 5, fromSeason: 3, fromEpisode: 9, episodeCount: 8 },
+  ];
+  assert.deepStrictEqual(verify({ candidate, cinemeta, siblings, kitsuFirstAired: '2026-10-08' }), { ok: true });
+  // Also when IMDb's S4E1 premiered before the MAL season's window, as long as it aired with kitsu episode 1.
+  const early = series({ 1: 25, 2: 25, 3: 16, 4: 12 }, { 1: '2016-04-04', 2: '2020-07-08', 3: '2024-10-02', 4: '2026-06-01' });
+  assert.deepStrictEqual(verify({ candidate, cinemeta: early, siblings, kitsuFirstAired: '2026-06-01' }), { ok: true });
+});
+
+test('rejects the next season when the last season is not used up or the dates disagree', () => {
+  const candidate = { imdb_id: 'tt1', fromSeason: 2, fromEpisode: 1 };
+  const siblings = [{ kitsu_id: 1, fromSeason: 1, fromEpisode: 1, episodeCount: 12 }, { kitsu_id: 2, fromSeason: 1, fromEpisode: 13, episodeCount: 6 }];
+  const cinemeta = series({ 1: 18, 2: 12 }, { 1: '2025-04-01', 2: '2026-10-01' });
+  assert.deepStrictEqual(verify({ candidate, cinemeta, siblings, kitsuFirstAired: '2026-10-02' }), { ok: true });
+  // IMDb's S1 runs past the Kitsu entries (a cour Kitsu has no entry for yet, or a short count).
+  const longer = series({ 1: 24, 2: 12 }, { 1: '2025-04-01', 2: '2026-10-01' });
+  assert.match(verify({ candidate, cinemeta: longer, siblings, kitsuFirstAired: '2026-10-02' }).reason, /split/);
+  assert.match(verify({ candidate, cinemeta, siblings, kitsuFirstAired: '2026-10-20' }).reason, /split/);
+  assert.match(verify({ candidate, cinemeta, siblings }).reason, /split/);
+  // An unknown episode count can't prove the season is used up.
+  const unknown = [{ kitsu_id: 1, fromSeason: 1, fromEpisode: 1, episodeCount: 12 }, { kitsu_id: 2, fromSeason: 1, fromEpisode: 13 }];
+  assert.strictEqual(verify({ candidate, cinemeta, siblings: unknown, kitsuFirstAired: '2026-10-02' }).ok, false);
+});
+
 test('rejects a sequel with a gap in the mapped seasons (Tomica Season 2 suggested as S1 while S1,S2 exist)', () => {
   const result = verify({
     candidate: { imdb_id: 'tt1', fromSeason: 3, fromEpisode: 1 },

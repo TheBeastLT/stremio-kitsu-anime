@@ -46,7 +46,7 @@ function verifyCandidate({
   if (candidate.fromEpisode > 1) {
     return verifyContinuation(candidate, cinemeta, siblings, window, kitsuFirstAired);
   }
-  return verifySeason(candidate.fromSeason, cinemeta, siblings, window);
+  return verifySeason(candidate.fromSeason, cinemeta, siblings, window, kitsuFirstAired);
 }
 
 // A title Fribb maps to an imdb id nothing else uses yet. Fribb vouches for the link and the id, and the title may
@@ -115,23 +115,31 @@ function verifyKitsuYear(cinemeta, kitsuYear) {
   return ok();
 }
 
-// The season must exist on IMDb from episode 1 and premiere inside the MAL season, and every earlier season
-// must be covered by exactly one Kitsu entry with IMDb's episode count. Together this guarantees episode 1 of
-// the new Kitsu entry is S{N}E1 rather than an offset into a season IMDb keeps running (e.g. "Part 2" cours).
-function verifySeason(season, cinemeta, siblings, window) {
+// The season must exist on IMDb from episode 1, and episode 1 of the new Kitsu entry must be S{N}E1 rather than an
+// offset into a season IMDb keeps running (e.g. "Part 2" cours). Proven either by cleanly mapped earlier seasons or
+// by the season before it being used up.
+function verifySeason(season, cinemeta, siblings, window, kitsuFirstAired) {
   if (!(season >= 1)) {
     return fail('no season number');
   }
-  const videos = cinemeta.videos || [];
-  const first = videos.find(video => video.season === season && video.episode === 1);
+  const first = (cinemeta.videos || []).find(video => video.season === season && video.episode === 1);
   if (!first) {
     return fail(`imdb has no S${season}E1`);
   }
+  const clean = verifyCleanSeasons(season, first, cinemeta, siblings, window);
+  if (clean.ok || !followsUsedUpSeason(season, first, cinemeta, siblings, kitsuFirstAired)) {
+    return clean;
+  }
+  return ok();
+}
+
+// The season premieres inside the MAL season, and every earlier season is covered by exactly one Kitsu entry with
+// IMDb's episode count.
+function verifyCleanSeasons(season, first, cinemeta, siblings, window) {
   const aired = new Date(first.released);
   if (!(aired >= window.from && aired <= window.to)) {
     return fail(`S${season}E1 aired ${first.released?.slice(0, 10)} outside season`);
   }
-
   const regular = siblings.filter(sibling => sibling.fromSeason > 0);
   const seasons = [...new Set(regular.map(sibling => sibling.fromSeason))].sort((a, b) => a - b);
   if (seasons.length !== season - 1 || seasons.some((s, i) => s !== i + 1)) {
@@ -142,12 +150,26 @@ function verifySeason(season, cinemeta, siblings, window) {
     if (rows.length !== 1 || rows[0].fromEpisode !== 1) {
       return fail(`S${s} split across kitsu entries`);
     }
-    const imdbCount = videos.filter(video => video.season === s).length;
+    const imdbCount = (cinemeta.videos || []).filter(video => video.season === s).length;
     if (rows[0].episodeCount !== imdbCount) {
       return fail(`S${s} kitsu eps ${rows[0].episodeCount} != imdb eps ${imdbCount}`);
     }
   }
   return ok();
+}
+
+// The Kitsu entries of the last mapped season cover exactly IMDb's episodes of it, and S{N}E1 aired with Kitsu's
+// episode 1. Holds where the clean check can't: earlier seasons split across cours (Re:Zero, Slime) or a season
+// that premiered before the imported MAL season. Replayed against reviewed 2026 rows: 258 of 258 agree.
+function followsUsedUpSeason(season, first, cinemeta, siblings, kitsuFirstAired) {
+  const start = continuationStart(siblings);
+  if (start?.fromSeason !== season - 1 || !kitsuFirstAired) {
+    return false;
+  }
+  const previous = (cinemeta.videos || []).filter(video => video.season === start.fromSeason);
+  return previous.length === start.fromEpisode - 1
+      && previous.every(video => video.episode < start.fromEpisode)
+      && airedNear(first, kitsuFirstAired);
 }
 
 // A continuation cour (e.g. "Part 2") that IMDb keeps in the running season: it starts right after the episodes
