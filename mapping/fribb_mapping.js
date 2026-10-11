@@ -111,31 +111,9 @@ async function loadList() {
   return data;
 }
 
-// imdb id straight from the entry, else derived from its tvdb/tmdb id via Trakt (lookup is injectable for tests).
-async function resolveImdbId(entry, lookup = lookupTraktImdb) {
-  const direct = (entry.imdb_id || []).find(id => /^tt\d+/.test(id));
-  if (direct) {
-    return direct;
-  }
-  const tmdb = entry.themoviedb_id || {};
-  const candidates = [
-    entry.tvdb_id != null && ['tvdb', entry.tvdb_id, entry.type === 'MOVIE' ? 'movie' : 'show'],
-    tmdb.movie != null && ['tmdb', [tmdb.movie].flat()[0], 'movie'],
-    tmdb.tv != null && ['tmdb', [tmdb.tv].flat()[0], 'show'],
-  ].filter(Boolean);
-  for (const [idType, id, type] of candidates) {
-    const imdb = await lookup(idType, id, type).catch(() => undefined);
-    if (imdb) {
-      return imdb;
-    }
-  }
-  return undefined;
-}
-
-async function lookupTraktImdb(idType, id, type) {
-  const headers = { 'trakt-api-key': process.env.TRAKT_CLIENT_ID, 'trakt-api-version': '2' };
-  const { data } = await axios.get(`https://api.trakt.tv/search/${idType}/${id}?type=${type}`, { headers, timeout: 30000 });
-  return Array.isArray(data) ? data[0]?.[type]?.ids?.imdb : undefined;
+// Fribb's own imdb id for the entry, if it lists one.
+function resolveImdbId(entry) {
+  return (entry.imdb_id || []).find(id => /^tt\d+/.test(id));
 }
 
 module.exports = {

@@ -33,7 +33,6 @@ jobs:
       - name: Import previous and current MAL seasons
         env:
           FANART_APIKEY: ${{ secrets.FANART_APIKEY }}
-          TRAKT_CLIENT_ID: ${{ secrets.TRAKT_CLIENT_ID }}
         run: |
           mkdir -p review
           for season in $(node mapping/mal_seasons.js 2); do

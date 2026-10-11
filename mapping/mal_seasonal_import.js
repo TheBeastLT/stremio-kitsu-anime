@@ -100,9 +100,7 @@ async function createImdbMappingEntry(malEntry, window) {
     }), special);
   }
 
-  const singleEpisode = kitsuMetadata?.animeType !== 'TV' && kitsuMetadata?.videos?.length === 1;
-  const type = kitsuMetadata?.animeType === 'movie' || singleEpisode ? 'movie' : 'series';
-  const foundImdbIds = await searchImdbIds(malEntry.title, type).catch((err) => []);
+  const foundImdbIds = await searchImdbIds(malEntry.title).catch((err) => []);
   if (!foundImdbIds.length) {
     console.log(`No imdbId found for: ${JSON.stringify(malEntry)}`);
     return withSpecialSuggestion(reviewBase, special);
@@ -201,7 +199,7 @@ function withSpecialSuggestion(entry, special) {
 }
 
 // Treat Fribb's list as ground truth: if it maps this MAL id to the same kitsu id we resolved and
-// yields an imdb id (directly, or derived from tvdb/tmdb via Trakt), skip review and auto-merge.
+// lists an imdb id, skip review and auto-merge.
 // Standalone/first-season entries map to season 1; later seasons of an already-mapped imdb are
 // auto-seasoned only when Cinemeta confirms the next season starts fresh this MAL season.
 async function trustedFribbMapping(malEntry, kitsuId, kitsuMetadata, window) {
@@ -213,7 +211,7 @@ async function trustedFribbMapping(malEntry, kitsuId, kitsuMetadata, window) {
   if (!fribbEntry || !linked) {
     return undefined;
   }
-  const imdbId = await resolveImdbId(fribbEntry).catch(() => undefined);
+  const imdbId = resolveImdbId(fribbEntry);
   if (!imdbId) {
     return undefined;
   }

@@ -7,33 +7,9 @@ const {
   insertMappingEntry,
 } = require('../mapping/mal_seasonal_import');
 
-test('resolveImdbId prefers the direct imdb id without calling Trakt', async () => {
-  let called = false;
-  const imdb = await resolveImdbId(
-    { imdb_id: ['tt1920940', 'tt0089206'], tvdb_id: 72025 },
-    async () => { called = true; return 'ttWRONG'; }
-  );
-  assert.strictEqual(imdb, 'tt1920940');
-  assert.strictEqual(called, false);
-});
-
-test('resolveImdbId derives from tvdb, then tmdb, normalizing both shapes', async () => {
-  const calls = [];
-  const lookup = async (idType, id, type) => {
-    calls.push([idType, id, type]);
-    return idType === 'tmdb' ? 'tt0119698' : undefined; // tvdb misses, tmdb hits
-  };
-  const imdb = await resolveImdbId(
-    { type: 'MOVIE', imdb_id: [], tvdb_id: 500, themoviedb_id: { movie: [128] } },
-    lookup
-  );
-  assert.strictEqual(imdb, 'tt0119698');
-  assert.deepStrictEqual(calls, [['tvdb', 500, 'movie'], ['tmdb', 128, 'movie']]);
-});
-
-test('resolveImdbId returns undefined when nothing resolves', async () => {
-  const imdb = await resolveImdbId({ type: 'TV', imdb_id: [], tvdb_id: 500 }, async () => undefined);
-  assert.strictEqual(imdb, undefined);
+test('resolveImdbId takes the first imdb id Fribb lists', () => {
+  assert.strictEqual(resolveImdbId({ imdb_id: ['tt1920940', 'tt0089206'], tvdb_id: 72025 }), 'tt1920940');
+  assert.strictEqual(resolveImdbId({ type: 'TV', imdb_id: [], tvdb_id: 500 }), undefined);
 });
 
 test('insertInKitsuOrder places an entry by kitsu id even in a non-monotonic list', () => {
