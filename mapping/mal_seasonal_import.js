@@ -253,12 +253,13 @@ async function trustedFribbMapping(malEntry, kitsuId, kitsuMetadata, window) {
     fromEpisode = candidate.fromEpisode;
   }
 
-  const imdbMeta = await getImdbMeta(imdbId).catch(() => undefined);
+  // Every row of an imdb carries the same title, so a sequel reuses its prequel's.
+  const imdbMeta = siblings.length ? undefined : await getImdbMeta(imdbId).catch(() => undefined);
   return {
     _trusted: true,
     kitsuId: String(kitsuId),
     imdb_id: imdbId,
-    title: imdbMeta?.title || kitsuMetadata?.name,
+    title: siblings[0]?.title || imdbMeta?.title || kitsuMetadata?.name,
     fromSeason,
     fromEpisode,
   };
