@@ -34170,6 +34170,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 47954,
+    "imdb_id": "tt28259824",
+    "title": "Blades of the Guardians",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 45605,
     "imdb_id": "tt19383782",
     "title": "Yu☆Gi☆Oh! Go Rush!!",
@@ -35726,8 +35733,8 @@
     "kitsu_id": 48328,
     "imdb_id": "tt22524872",
     "title": "Shy",
-    "fromSeason": 1,
-    "fromEpisode": 13
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 46600,
@@ -39920,8 +39927,8 @@
     "kitsu_id": 50573,
     "imdb_id": "tt39255171",
     "title": "Does it Count if You Lose Your Innocence to an Android?",
-    "fromSeason": 0,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 9
   },
   {
     "kitsu_id": 49924,
@@ -40340,8 +40347,8 @@
   },
   {
     "kitsu_id": 50171,
-    "imdb_id": "tt17351512",
-    "title": "Kami no Niwatsuki Kusunoki-tei",
+    "imdb_id": "tt39122739",
+    "title": "Kusunoki's Garden of Gods",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -41340,6 +41347,11 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 50763,
+    "imdb_id": "tt32602819",
+    "title": "Gill"
+  },
+  {
     "kitsu_id": 50764,
     "imdb_id": "tt41296544",
     "title": "Kyouran Reijou Nia Liston",
@@ -41491,6 +41503,11 @@
     "kitsu_id": 50879,
     "imdb_id": "tt35233952",
     "title": "Grotesqqque"
+  },
+  {
+    "kitsu_id": 50925,
+    "imdb_id": "tt45615017",
+    "title": "Demon Agent"
   },
   {
     "kitsu_id": 50932,
