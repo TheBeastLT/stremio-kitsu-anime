@@ -16852,6 +16852,18 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 2084,
+    "imdb_id": "tt12737150",
+    "title": "Mobile Suit SD Gundam Mk I"
+  },
+  {
+    "kitsu_id": 2085,
+    "imdb_id": "tt31443809",
+    "title": "Mobile Suit SD Gundam Mk II",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 7795,
     "imdb_id": "tt3411198",
     "title": "Future Card Buddyfight",
@@ -18766,6 +18778,30 @@
     "fromEpisode": 6
   },
   {
+    "kitsu_id": 9837,
+    "imdb_id": "tt3213642",
+    "fanartLogoId": "90789",
+    "title": "Gundam Build Fighters",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 10872,
+    "imdb_id": "tt3213642",
+    "fanartLogoId": "106666",
+    "title": "Gundam Build Fighters",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
+  {
+    "kitsu_id": 13756,
+    "imdb_id": "tt3213642",
+    "fanartLogoId": "90789",
+    "title": "Gundam Build Fighters",
+    "fromSeason": 0,
+    "fromEpisode": 5
+  },
+  {
     "kitsu_id": 8638,
     "imdb_id": "tt3981902",
     "title": "Yuki Yuna Is a Hero",
@@ -20496,9 +20532,6 @@
     "kitsu_id": 10869,
     "imdb_id": "tt4663760",
     "title": "Typhoon Noruda"
-  },
-  {
-    "kitsu_id": 10872
   },
   {
     "kitsu_id": 10878,
@@ -25607,9 +25640,6 @@
   },
   {
     "kitsu_id": 13755
-  },
-  {
-    "kitsu_id": 13756
   },
   {
     "kitsu_id": 13760,
