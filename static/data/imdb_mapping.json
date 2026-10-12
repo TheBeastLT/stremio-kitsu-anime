@@ -17111,6 +17111,7 @@
   {
     "kitsu_id": 7852,
     "imdb_id": "tt3213642",
+    "fanartLogoId": "90789",
     "title": "Gundam Build Fighters",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -18751,9 +18752,18 @@
   {
     "kitsu_id": 8637,
     "imdb_id": "tt3213642",
+    "fanartLogoId": "90790",
     "title": "Gundam Build Fighters",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 13711,
+    "imdb_id": "tt3213642",
+    "fanartLogoId": "91596",
+    "title": "Gundam Build Fighters",
+    "fromSeason": 0,
+    "fromEpisode": 6
   },
   {
     "kitsu_id": 8638,
@@ -25484,9 +25494,6 @@
     "fromEpisode": 2
   },
   {
-    "kitsu_id": 13711
-  },
-  {
     "kitsu_id": 13712,
     "imdb_id": "tt7899036",
     "title": "Slow Start"
@@ -26281,6 +26288,7 @@
   {
     "kitsu_id": 40565,
     "imdb_id": "tt8631370",
+    "fanartLogoId": "90373",
     "title": "Gundam Build Divers",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -26300,6 +26308,21 @@
     "title": "Gundam Build Divers",
     "fromSeason": 2,
     "fromEpisode": 14
+  },
+  {
+    "kitsu_id": 47903,
+    "imdb_id": "tt8631370",
+    "fanartLogoId": "129888",
+    "title": "Gundam Build Divers",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  {
+    "kitsu_id": 40564,
+    "imdb_id": "tt8631370",
+    "title": "Gundam Build Divers",
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 40568,
