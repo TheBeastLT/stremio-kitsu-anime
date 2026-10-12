@@ -223,7 +223,7 @@
   {
     "kitsu_id": 15,
     "imdb_id": "tt0878037",
-    "fanartLogoId": "43651",
+    "fanartLogoId": "2841",
     "title": "School Rumble",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -571,7 +571,7 @@
   {
     "kitsu_id": 11460,
     "imdb_id": "tt0328739",
-    "fanartLogoId": "87000",
+    "fanartLogoId": "102891",
     "title": "Full Metal Panic!",
     "fromSeason": 4,
     "fromEpisode": 1
@@ -2031,7 +2031,7 @@
   {
     "kitsu_id": 232,
     "imdb_id": "tt0486171",
-    "fanartLogoId": "48791",
+    "fanartLogoId": "96065",
     "title": "Ikki tosen: Dragon Destiny",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -2079,7 +2079,7 @@
   {
     "kitsu_id": 5365,
     "imdb_id": "tt0486171",
-    "fanartLogoId": "96247",
+    "fanartLogoId": "132925",
     "title": "Ikki tosen: Dragon Destiny",
     "fromSeason": 0,
     "fromEpisode": 13
@@ -2094,6 +2094,7 @@
   {
     "kitsu_id": 13220,
     "imdb_id": "tt0486171",
+    "fanartLogoId": "173986",
     "title": "Ikki tosen: Dragon Destiny",
     "fromSeason": 0,
     "fromEpisode": 20
@@ -2101,7 +2102,7 @@
   {
     "kitsu_id": 42005,
     "imdb_id": "tt0486171",
-    "fanartLogoId": "42005",
+    "fanartLogoId": "99047",
     "title": "Ikki tosen: Dragon Destiny",
     "fromSeason": 0,
     "fromEpisode": 22
@@ -2140,7 +2141,7 @@
   {
     "kitsu_id": 4016,
     "imdb_id": "tt0481256",
-    "fanartLogoId": "55113",
+    "fanartLogoId": "196808",
     "title": "Hajime no Ippo",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -2148,7 +2149,7 @@
   {
     "kitsu_id": 7855,
     "imdb_id": "tt0481256",
-    "fanartLogoId": "55114",
+    "fanartLogoId": "174596",
     "title": "Hajime no Ippo",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -2156,7 +2157,7 @@
   {
     "kitsu_id": 6660,
     "imdb_id": "tt0481256",
-    "fanartLogoId": "131847",
+    "fanartLogoId": "91116",
     "title": "Hajime no Ippo",
     "fromSeason": 0,
     "fromEpisode": 1
@@ -10606,6 +10607,7 @@
   {
     "kitsu_id": 47678,
     "imdb_id": "tt1352421",
+    "fanartLogoId": "200685",
     "title": "Natsume's Book of Friends",
     "fromSeason": 7,
     "fromEpisode": 1
@@ -12288,6 +12290,7 @@
   {
     "kitsu_id": 5497,
     "imdb_id": "tt1727444",
+    "fanartLogoId": "63431",
     "title": "Panty & Stocking with Garterbelt",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -12295,6 +12298,7 @@
   {
     "kitsu_id": 46227,
     "imdb_id": "tt1727444",
+    "fanartLogoId": "208369",
     "title": "Panty & Stocking with Garterbelt",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -13281,7 +13285,7 @@
   {
     "kitsu_id": 5588,
     "imdb_id": "tt2629754",
-    "fanartLogoId": "110959",
+    "fanartLogoId": "110889",
     "title": "Tamayura: Hitotose",
     "fromSeason": 0,
     "fromEpisode": 1
@@ -14091,6 +14095,7 @@
   {
     "kitsu_id": 13894,
     "imdb_id": "tt7978710",
+    "fanartLogoId": "84209",
     "title": "Sword Art Online: Alternative Gun Gale Online",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -14098,6 +14103,7 @@
   {
     "kitsu_id": 47748,
     "imdb_id": "tt7978710",
+    "fanartLogoId": "194590",
     "title": "Sword Art Online: Alternative Gun Gale Online",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -16391,6 +16397,7 @@
   {
     "kitsu_id": 7699,
     "imdb_id": "tt3105422",
+    "fanartLogoId": "89761",
     "title": "Ace of Diamond",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -16398,6 +16405,7 @@
   {
     "kitsu_id": 10741,
     "imdb_id": "tt3105422",
+    "fanartLogoId": "183053",
     "title": "Ace of Diamond",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -16405,6 +16413,7 @@
   {
     "kitsu_id": 42160,
     "imdb_id": "tt3105422",
+    "fanartLogoId": "131845",
     "title": "Ace of Diamond",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -16412,6 +16421,7 @@
   {
     "kitsu_id": 48878,
     "imdb_id": "tt3105422",
+    "fanartLogoId": "131845",
     "title": "Ace of Diamond",
     "fromSeason": 4,
     "fromEpisode": 1
@@ -16419,6 +16429,7 @@
   {
     "kitsu_id": 50822,
     "imdb_id": "tt3105422",
+    "fanartLogoId": "131845",
     "title": "Ace of Diamond",
     "fromSeason": 4,
     "fromEpisode": 14
@@ -16426,6 +16437,7 @@
   {
     "kitsu_id": 8792,
     "imdb_id": "tt3105422",
+    "fanartLogoId": "89761",
     "title": "Ace of Diamond",
     "fromSeason": 0,
     "fromEpisode": 1
@@ -16433,6 +16445,7 @@
   {
     "kitsu_id": 12725,
     "imdb_id": "tt3105422",
+    "fanartLogoId": "183053",
     "title": "Ace of Diamond",
     "fromSeason": 0,
     "fromEpisode": 4
@@ -19711,7 +19724,7 @@
   {
     "kitsu_id": 42372,
     "imdb_id": "tt4384306",
-    "fanartLogoId": "188528",
+    "fanartLogoId": "189746",
     "title": "Sound! Euphonium",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -19719,6 +19732,7 @@
   {
     "kitsu_id": 11137,
     "imdb_id": "tt4384306",
+    "fanartLogoId": "91799",
     "title": "Sound! Euphonium",
     "fromSeason": 0,
     "fromEpisode": 1
@@ -19726,6 +19740,7 @@
   {
     "kitsu_id": 11391,
     "imdb_id": "tt4384306",
+    "fanartLogoId": "91799",
     "title": "Sound! Euphonium",
     "fromSeason": 0,
     "fromEpisode": 8
@@ -19733,6 +19748,7 @@
   {
     "kitsu_id": 13212,
     "imdb_id": "tt4384306",
+    "fanartLogoId": "90934",
     "title": "Sound! Euphonium",
     "fromSeason": 0,
     "fromEpisode": 10
@@ -21739,6 +21755,7 @@
   {
     "kitsu_id": 49279,
     "imdb_id": "tt5626028",
+    "fanartLogoId": "207601",
     "title": "Boku No Hero Academia",
     "fromSeason": 8,
     "fromEpisode": 1
@@ -22216,7 +22233,7 @@
   {
     "kitsu_id": 11688,
     "imdb_id": "tt5296398",
-    "fanartLogoId": "106222",
+    "fanartLogoId": "197754",
     "title": "Maho Tsukai PreCure!",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -22224,7 +22241,7 @@
   {
     "kitsu_id": 47186,
     "imdb_id": "tt5296398",
-    "fanartLogoId": "197426",
+    "fanartLogoId": "197427",
     "title": "Maho Tsukai PreCure!! MIRAI DAYS",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -22430,6 +22447,7 @@
   {
     "kitsu_id": 11838,
     "imdb_id": "tt6765658",
+    "fanartLogoId": "207605",
     "title": "Thunderbolt Fantasy",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -22437,6 +22455,7 @@
   {
     "kitsu_id": 13609,
     "imdb_id": "tt6765658",
+    "fanartLogoId": "198823",
     "title": "Thunderbolt Fantasy",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -22444,6 +22463,7 @@
   {
     "kitsu_id": 43201,
     "imdb_id": "tt6765658",
+    "fanartLogoId": "198824",
     "title": "Thunderbolt Fantasy",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -22451,6 +22471,7 @@
   {
     "kitsu_id": 49089,
     "imdb_id": "tt6765658",
+    "fanartLogoId": "198825",
     "title": "Thunderbolt Fantasy",
     "fromSeason": 4,
     "fromEpisode": 1
@@ -24910,7 +24931,7 @@
   {
     "kitsu_id": 41976,
     "imdb_id": "tt7742120",
-    "fanartLogoId": "140327",
+    "fanartLogoId": "177276",
     "title": "Laid-Back Camp",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -24926,6 +24947,7 @@
   {
     "kitsu_id": 41068,
     "imdb_id": "tt7742120",
+    "fanartLogoId": "140329",
     "title": "Laid-Back Camp",
     "fromSeason": 0,
     "fromEpisode": 1
@@ -24933,6 +24955,7 @@
   {
     "kitsu_id": 44601,
     "imdb_id": "tt7742120",
+    "fanartLogoId": "177276",
     "title": "Laid-Back Camp",
     "fromSeason": 0,
     "fromEpisode": 18
@@ -25129,7 +25152,7 @@
   {
     "kitsu_id": 42530,
     "imdb_id": "tt9529546",
-    "fanartLogoId": "145608",
+    "fanartLogoId": "207863",
     "title": "The Rising of the Shield Hero",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -25145,6 +25168,7 @@
   {
     "kitsu_id": 48444,
     "imdb_id": "tt9529546",
+    "fanartLogoId": "206935",
     "title": "The Rising of the Shield Hero",
     "fromSeason": 4,
     "fromEpisode": 1
@@ -26003,6 +26027,7 @@
   {
     "kitsu_id": 14043,
     "imdb_id": "tt10431290",
+    "fanartLogoId": "146349",
     "title": "Arifureta: From Commonplace to World's Strongest",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -26010,6 +26035,7 @@
   {
     "kitsu_id": 42611,
     "imdb_id": "tt10431290",
+    "fanartLogoId": "193773",
     "title": "Arifureta: From Commonplace to World's Strongest",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -26017,6 +26043,7 @@
   {
     "kitsu_id": 46454,
     "imdb_id": "tt10431290",
+    "fanartLogoId": "193774",
     "title": "Arifureta: From Commonplace to World's Strongest",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -26024,6 +26051,7 @@
   {
     "kitsu_id": 42493,
     "imdb_id": "tt10431290",
+    "fanartLogoId": "146349",
     "title": "Arifureta: From Commonplace to World's Strongest",
     "fromSeason": 0,
     "fromEpisode": 1
@@ -26031,6 +26059,7 @@
   {
     "kitsu_id": 42446,
     "imdb_id": "tt10431290",
+    "fanartLogoId": "146349",
     "title": "Arifureta: From Commonplace to World's Strongest",
     "fromSeason": 0,
     "fromEpisode": 2
@@ -26241,6 +26270,7 @@
   {
     "kitsu_id": 14190,
     "imdb_id": "tt8086718",
+    "fanartLogoId": "214733",
     "title": "Grand Blue",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -26248,6 +26278,7 @@
   {
     "kitsu_id": 49247,
     "imdb_id": "tt8086718",
+    "fanartLogoId": "202205",
     "title": "Grand Blue",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -26833,6 +26864,7 @@
   {
     "kitsu_id": 41056,
     "imdb_id": "tt8993398",
+    "fanartLogoId": "91160",
     "title": "Rascal Does Not Dream of Bunny Girl Senpai",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -26840,6 +26872,7 @@
   {
     "kitsu_id": 48917,
     "imdb_id": "tt8993398",
+    "fanartLogoId": "207969",
     "title": "Rascal Does Not Dream of Bunny Girl Senpai",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -27167,7 +27200,7 @@
   {
     "kitsu_id": 41165,
     "imdb_id": "tt8400662",
-    "fanartLogoId": "87761",
+    "fanartLogoId": "90138",
     "title": "Dropkick on My Devil!!",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -27266,6 +27299,7 @@
   {
     "kitsu_id": 42065,
     "imdb_id": "tt11038886",
+    "fanartLogoId": "207636",
     "title": "Psychic Princess",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -27273,6 +27307,7 @@
   {
     "kitsu_id": 49521,
     "imdb_id": "tt11038886",
+    "fanartLogoId": "207637",
     "title": "Psychic Princess",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -27892,6 +27927,7 @@
   {
     "kitsu_id": 41950,
     "imdb_id": "tt10443362",
+    "fanartLogoId": "115594",
     "title": "Demon Lord, Retry!",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -27899,6 +27935,7 @@
   {
     "kitsu_id": 47881,
     "imdb_id": "tt10443362",
+    "fanartLogoId": "194598",
     "title": "Demon Lord, Retry!",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -28194,6 +28231,7 @@
   {
     "kitsu_id": 43114,
     "imdb_id": "tt9193770",
+    "fanartLogoId": "207104",
     "title": "Isekai Quartet",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -28948,6 +28986,7 @@
   {
     "kitsu_id": 48293,
     "imdb_id": "tt10885406",
+    "fanartLogoId": "214029",
     "title": "Ascendance of a Bookworm",
     "fromSeason": 1,
     "fromEpisode": 37
@@ -29552,6 +29591,7 @@
   {
     "kitsu_id": 48310,
     "imdb_id": "tt10827146",
+    "fanartLogoId": "208225",
     "title": "Ling Cage",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -29872,6 +29912,7 @@
   {
     "kitsu_id": 42628,
     "imdb_id": "tt13248062",
+    "fanartLogoId": "118180",
     "title": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -29879,6 +29920,7 @@
   {
     "kitsu_id": 45717,
     "imdb_id": "tt13248062",
+    "fanartLogoId": "200446",
     "title": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -30042,6 +30084,7 @@
   {
     "kitsu_id": 43004,
     "imdb_id": "tt12057106",
+    "fanartLogoId": "183841",
     "title": "Tower of God",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -30049,6 +30092,7 @@
   {
     "kitsu_id": 46312,
     "imdb_id": "tt12057106",
+    "fanartLogoId": "194675",
     "title": "Tower of God",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -30056,6 +30100,7 @@
   {
     "kitsu_id": 49244,
     "imdb_id": "tt12057106",
+    "fanartLogoId": "194675",
     "title": "Tower of God",
     "fromSeason": 2,
     "fromEpisode": 14
@@ -30735,6 +30780,7 @@
   {
     "kitsu_id": 43248,
     "imdb_id": "tt12590266",
+    "fanartLogoId": "115588",
     "title": "Cyberpunk: Edgerunners",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -30742,6 +30788,7 @@
   {
     "kitsu_id": 50016,
     "imdb_id": "tt12590266",
+    "fanartLogoId": "203709",
     "title": "Cyberpunk: Edgerunners",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -31209,7 +31256,7 @@
   {
     "kitsu_id": 45355,
     "imdb_id": "tt12635162",
-    "fanartLogoId": "156537",
+    "fanartLogoId": "168734",
     "title": "Don't Toy with Me, Miss Nagatoro",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -31883,8 +31930,8 @@
   },
   {
     "kitsu_id": 43739,
-    "imdb_id": "tt41842566",
-    "title": "Jueshi Wuhun",
+    "imdb_id": "tt20527766",
+    "title": "Peerless Martial Spirit",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -31992,7 +32039,7 @@
   {
     "kitsu_id": 43820,
     "imdb_id": "tt13362302",
-    "fanartLogoId": "143565",
+    "fanartLogoId": "131703",
     "title": "Shadows House",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -32000,7 +32047,7 @@
   {
     "kitsu_id": 45155,
     "imdb_id": "tt13362302",
-    "fanartLogoId": "142532",
+    "fanartLogoId": "201256",
     "title": "Shadows House",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -32293,6 +32340,7 @@
   {
     "kitsu_id": 44022,
     "imdb_id": "tt13884052",
+    "fanartLogoId": "131689",
     "title": "Tantei wa Mou, Shindeiru.",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -32300,6 +32348,7 @@
   {
     "kitsu_id": 46275,
     "imdb_id": "tt13884052",
+    "fanartLogoId": "202738",
     "title": "Tantei wa mou, Shindeiru. Season 2",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -32718,6 +32767,7 @@
   {
     "kitsu_id": 44207,
     "imdb_id": "tt13676344",
+    "fanartLogoId": "132978",
     "title": "Shuumatsu no Valkyrie",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -32725,6 +32775,7 @@
   {
     "kitsu_id": 44988,
     "imdb_id": "tt13676344",
+    "fanartLogoId": "214707",
     "title": "Shuumatsu no Valkyrie",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -32732,6 +32783,7 @@
   {
     "kitsu_id": 47495,
     "imdb_id": "tt13676344",
+    "fanartLogoId": "214707",
     "title": "Shuumatsu no Valkyrie",
     "fromSeason": 2,
     "fromEpisode": 11
@@ -32739,6 +32791,7 @@
   {
     "kitsu_id": 49669,
     "imdb_id": "tt13676344",
+    "fanartLogoId": "214708",
     "title": "Shuumatsu no Valkyrie",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -33100,6 +33153,7 @@
   {
     "kitsu_id": 44423,
     "imdb_id": "tt14476236",
+    "fanartLogoId": "138485",
     "title": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -33107,6 +33161,7 @@
   {
     "kitsu_id": 49410,
     "imdb_id": "tt14476236",
+    "fanartLogoId": "198700",
     "title": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu 2nd Season",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -33194,6 +33249,7 @@
   {
     "kitsu_id": 48133,
     "imdb_id": "tt14976292",
+    "fanartLogoId": "197167",
     "title": "Link Click",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -33506,6 +33562,7 @@
   {
     "kitsu_id": 44944,
     "imdb_id": "tt16341212",
+    "fanartLogoId": "201748",
     "title": "Aharen-san wa hakarenai",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -33513,6 +33570,7 @@
   {
     "kitsu_id": 49095,
     "imdb_id": "tt16341212",
+    "fanartLogoId": "201749",
     "title": "Aharen-san wa hakarenai",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -33760,6 +33818,7 @@
   {
     "kitsu_id": 45242,
     "imdb_id": "tt15483602",
+    "fanartLogoId": "202779",
     "title": "Tensei shitara ken deshita",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -33767,6 +33826,7 @@
   {
     "kitsu_id": 46917,
     "imdb_id": "tt15483602",
+    "fanartLogoId": "202739",
     "title": "Tensei Shitara Ken Deshita 2nd Season",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -33916,6 +33976,7 @@
   {
     "kitsu_id": 48796,
     "imdb_id": "tt22443832",
+    "fanartLogoId": "203566",
     "title": "Arknights: Prelude to Dawn",
     "fromSeason": 3,
     "fromEpisode": 1
@@ -34051,6 +34112,7 @@
   {
     "kitsu_id": 45483,
     "imdb_id": "tt15975122",
+    "fanartLogoId": "153181",
     "title": "Yofukashi no uta",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -34058,6 +34120,7 @@
   {
     "kitsu_id": 48611,
     "imdb_id": "tt15975122",
+    "fanartLogoId": "202203",
     "title": "Yofukashi no uta",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -34114,6 +34177,7 @@
   {
     "kitsu_id": 45529,
     "imdb_id": "tt16255458",
+    "fanartLogoId": "149900",
     "title": "Trapped in a Dating Sim: The World of Otome Games is Tough for Mobs",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -34121,6 +34185,7 @@
   {
     "kitsu_id": 46925,
     "imdb_id": "tt16255458",
+    "fanartLogoId": "214699",
     "title": "Otomege Sekai wa Mob ni Kibishii Sekai desu 2nd Season",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -34256,6 +34321,7 @@
   {
     "kitsu_id": 45616,
     "imdb_id": "tt22249034",
+    "fanartLogoId": "175724",
     "title": "Rurouni Kenshin: Meiji Kenkaku Romantan",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -34263,6 +34329,7 @@
   {
     "kitsu_id": 48393,
     "imdb_id": "tt22249034",
+    "fanartLogoId": "194659",
     "title": "Rurouni Kenshin: Meiji Kenkaku Romantan",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -34368,6 +34435,7 @@
   {
     "kitsu_id": 45715,
     "imdb_id": "tt19064770",
+    "fanartLogoId": "166742",
     "title": "Otonari no tenshi-sama ni itsu no ma ni ka dame-ningen ni sareteita ken",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -34382,6 +34450,7 @@
   {
     "kitsu_id": 48069,
     "imdb_id": "tt19064770",
+    "fanartLogoId": "214261",
     "title": "Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken 2nd Season",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -34750,6 +34819,7 @@
   {
     "kitsu_id": 46016,
     "imdb_id": "tt19223420",
+    "fanartLogoId": "163854",
     "title": "Isekai Nonbiri Nouka",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -34757,6 +34827,7 @@
   {
     "kitsu_id": 50117,
     "imdb_id": "tt19223420",
+    "fanartLogoId": "213573",
     "title": "Isekai Nonbiri Nouka 2",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -35254,6 +35325,7 @@
   {
     "kitsu_id": 46238,
     "imdb_id": "tt16183478",
+    "fanartLogoId": "194596",
     "title": "Yowai 5000-nen no Soushoku Dragon, Iwarenaki Jaryuu Nintei",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -35261,6 +35333,7 @@
   {
     "kitsu_id": 48191,
     "imdb_id": "tt16183478",
+    "fanartLogoId": "204434",
     "title": "Yowai 5000-nen no Soushoku Dragon, Iwarenaki Jaryuu Nintei",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -35408,6 +35481,7 @@
   {
     "kitsu_id": 46303,
     "imdb_id": "tt27524116",
+    "fanartLogoId": "186921",
     "title": "Sasaki to Pi-chan",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -35415,6 +35489,7 @@
   {
     "kitsu_id": 48651,
     "imdb_id": "tt27524116",
+    "fanartLogoId": "207034",
     "title": "Sasaki to Pii-chan 2nd Season",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -35443,6 +35518,7 @@
   {
     "kitsu_id": 46311,
     "imdb_id": "tt28100731",
+    "fanartLogoId": "157609",
     "title": "Jidou Hanbaiki ni Umarekawatta Ore wa Meikyuu wo Samayou",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -35450,6 +35526,7 @@
   {
     "kitsu_id": 47968,
     "imdb_id": "tt28100731",
+    "fanartLogoId": "202198",
     "title": "Jidou Hanbaiki ni Umarekawatta Ore wa Meikyuu wo Samayou",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -35698,6 +35775,7 @@
   {
     "kitsu_id": 46516,
     "imdb_id": "tt27442011",
+    "fanartLogoId": "189027",
     "title": "Long Zu",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -35705,6 +35783,7 @@
   {
     "kitsu_id": 49191,
     "imdb_id": "tt27442011",
+    "fanartLogoId": "204302",
     "title": "Long Zu",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -35912,7 +35991,7 @@
   {
     "kitsu_id": 46667,
     "imdb_id": "tt27617338",
-    "fanartLogoId": "178240",
+    "fanartLogoId": "193776",
     "title": "Hyakushô Kizoku",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -35935,7 +36014,7 @@
   {
     "kitsu_id": 48933,
     "imdb_id": "tt27617338",
-    "fanartLogoId": "190427",
+    "fanartLogoId": "193776",
     "title": "Hyakushô Kizoku",
     "fromSeason": 0,
     "fromEpisode": 1
@@ -36002,6 +36081,7 @@
   {
     "kitsu_id": 46689,
     "imdb_id": "tt23132598",
+    "fanartLogoId": "170904",
     "title": "Higeki no Genkyo to naru Saikyo Gedo Last Boss Joo wa Min no tame ni Tsukushimasu",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -36009,6 +36089,7 @@
   {
     "kitsu_id": 50073,
     "imdb_id": "tt23132598",
+    "fanartLogoId": "214322",
     "title": "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu. Season 2",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -36714,6 +36795,7 @@
   {
     "kitsu_id": 47222,
     "imdb_id": "tt31543920",
+    "fanartLogoId": "179550",
     "title": "The Idolm@ster: Shiny Colors",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -36721,6 +36803,7 @@
   {
     "kitsu_id": 48603,
     "imdb_id": "tt31543920",
+    "fanartLogoId": "194660",
     "title": "The Idolm@ster: Shiny Colors",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -36740,6 +36823,7 @@
   {
     "kitsu_id": 47227,
     "imdb_id": "tt29475583",
+    "fanartLogoId": "183368",
     "title": "Kamierabi",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -36747,6 +36831,7 @@
   {
     "kitsu_id": 48398,
     "imdb_id": "tt29475583",
+    "fanartLogoId": "194585",
     "title": "Kamierabi",
     "fromSeason": 1,
     "fromEpisode": 13
@@ -37921,6 +38006,7 @@
   {
     "kitsu_id": 48415,
     "imdb_id": "tt30844357",
+    "fanartLogoId": "192496",
     "title": "Shoshimin: How to Become Ordinary",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -37928,6 +38014,7 @@
   {
     "kitsu_id": 49201,
     "imdb_id": "tt30844357",
+    "fanartLogoId": "204436",
     "title": "Shoshimin: How to Become Ordinary",
     "fromSeason": 1,
     "fromEpisode": 11
@@ -38073,6 +38160,7 @@
   {
     "kitsu_id": 48534,
     "imdb_id": "tt31889371",
+    "fanartLogoId": "192381",
     "title": "Tsue to Tsurugi no Wistoria",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -38080,6 +38168,7 @@
   {
     "kitsu_id": 49241,
     "imdb_id": "tt31889371",
+    "fanartLogoId": "214262",
     "title": "Tsue to Tsurugi no Wistoria 2nd Season",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -38087,6 +38176,7 @@
   {
     "kitsu_id": 50650,
     "imdb_id": "tt31889371",
+    "fanartLogoId": "192381",
     "title": "Tsue to Tsurugi no Wistoria",
     "fromSeason": 0,
     "fromEpisode": 2
@@ -38669,6 +38759,7 @@
   {
     "kitsu_id": 49043,
     "imdb_id": "tt32903600",
+    "fanartLogoId": "192854",
     "title": "0-Saiji Start Dash Monogatari",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -38676,6 +38767,7 @@
   {
     "kitsu_id": 49405,
     "imdb_id": "tt32903600",
+    "fanartLogoId": "209266",
     "title": "0-Saiji Start Dash Monogatari",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -38725,6 +38817,7 @@
   {
     "kitsu_id": 49061,
     "imdb_id": "tt32991344",
+    "fanartLogoId": "197129",
     "title": "Kurebatesu -Majû no Ô to Akago to Kabane no Yûsha-",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -38732,6 +38825,7 @@
   {
     "kitsu_id": 50154,
     "imdb_id": "tt32991344",
+    "fanartLogoId": "206494",
     "title": "Clevatess II: Majuu no Ou to Itsuwari no Yuusha Denshou",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -38848,6 +38942,7 @@
   {
     "kitsu_id": 49119,
     "imdb_id": "tt35346717",
+    "fanartLogoId": "199815",
     "title": "Katainaka no Ossan, Kensei ni Naru",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -38855,6 +38950,7 @@
   {
     "kitsu_id": 49995,
     "imdb_id": "tt35346717",
+    "fanartLogoId": "212273",
     "title": "Katainaka no Ossan, Kensei ni Naru 2nd Season",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -39136,6 +39232,7 @@
   {
     "kitsu_id": 49294,
     "imdb_id": "tt34119820",
+    "fanartLogoId": "199850",
     "title": "Saikyô no Ôsama, Nidome no Jinsei wa Nani wo Suru?",
     "fromSeason": 1,
     "fromEpisode": 1
@@ -39143,6 +39240,7 @@
   {
     "kitsu_id": 49983,
     "imdb_id": "tt34119820",
+    "fanartLogoId": "204874",
     "title": "The Beginning After the End Season 2",
     "fromSeason": 2,
     "fromEpisode": 1
@@ -40859,13 +40957,6 @@
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 50445,
-    "imdb_id": "tt37483753",
-    "title": "Umayuru: Pretty Gray",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  {
     "kitsu_id": 50760,
     "imdb_id": "tt38646634",
     "title": "Hell Mode: Yarikomi-zuki no Gamer wa Haisettei no Isekai de Musou Suru 2nd Season",
@@ -41044,6 +41135,29 @@
     "imdb_id": "tt32894936",
     "title": "You Shou Yan 5th Season",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 46100,
+    "imdb_id": "tt27429868",
+    "fanartLogoId": "184655",
+    "title": "Umayuru",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 50445,
+    "imdb_id": "tt27429868",
+    "fanartLogoId": "208017",
+    "title": "Umayuru",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 51017,
+    "imdb_id": "tt27429868",
+    "title": "Umayuru",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   {
@@ -41717,13 +41831,6 @@
     "kitsu_id": 51015,
     "imdb_id": "tt44757191",
     "title": "Marronnier Oukoku no Shichinin no Kishi",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  {
-    "kitsu_id": 51017,
-    "imdb_id": "tt46066849",
-    "title": "Umayuru: Full Gate!",
     "fromSeason": 1,
     "fromEpisode": 1
   },
