@@ -6,3 +6,4 @@ static/data/fribb_anime_list.json
 static/data/new_mappings.json
 
 .now
+search_eval/cache/

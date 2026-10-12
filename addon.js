@@ -3,11 +3,13 @@ const genres = require('./static/data/genres');
 const { enrichKitsuMetadata, enrichImdbMetadata, hasImdbMapping } = require('./lib/metadataEnrich');
 const { cacheWrapMeta, cacheWrapCatalog, getCachedMetas } = require('./lib/cache');
 const { mapToKitsuId } = require('./lib/id_convert');
+const { toCatalogMeta } = require('./lib/metadata');
 const kitsu = require('./lib/kitsu_api');
 const cinemeta = require('./lib/cinemeta_api');
 const opensubtitles = require('./lib/opensubtitles_api')
 
 const CACHE_MAX_AGE = parseInt(process.env.CACHE_MAX_AGE) || 12 * 60 * 60; // 12 hours
+const LAST_VIDEOS_IDS_LIMIT = 20;
 
 const manifest = {
   id: 'community.anime.kitsu',
@@ -51,7 +53,7 @@ const manifest = {
       type: 'anime',
       extra: [
           { name: 'search', isRequired: true },
-          { name: 'lastVideosIds', isRequired: false, optionsLimit: 20 },
+          { name: 'lastVideosIds', isRequired: false, optionsLimit: LAST_VIDEOS_IDS_LIMIT },
           { name: 'skip' }
       ],
     },
@@ -61,7 +63,7 @@ const manifest = {
       id: 'kitsu-anime-last-videos',
       name: 'Last videos',
       type: 'series',
-      extra: [{ name: 'lastVideosIds', isRequired: true, optionsLimit: 20 }],
+      extra: [{ name: 'lastVideosIds', isRequired: true, optionsLimit: LAST_VIDEOS_IDS_LIMIT }],
     },
   ],
   idPrefixes: ['kitsu', 'mal', 'anilist', 'anidb']
@@ -85,26 +87,24 @@ builder.defineCatalogHandler((args) => {
     if (args.extra.search.match(/(?:https?|stremio):\/\//)) {
       return Promise.reject(`Invalid search term: ${args.extra.search}`)
     }
-    // no need to cache search results
-    return kitsu.search(args.extra.search)
-        .then((metas) => ({ metas: metas, cacheMaxAge: CACHE_MAX_AGE }));
+    // no need to cache search results; the found anime's cached metas are used, the rest come from Kitsu in one request
+    const ids = kitsu.searchIds(args.extra.search).map((kitsuId) => `kitsu:${kitsuId}`);
+    return getMetas(ids, (missing) => kitsu.animeCatalogMetas(missing.map((id) => id.replace('kitsu:', ''))))
+        .then((metas) => ({ metas: metas.filter((meta) => meta).map(toCatalogMeta), cacheMaxAge: CACHE_MAX_AGE }));
   }
   if (args.extra?.lastVideosIds) {
-    // Like Cinemeta's last-videos: the last videos of each library id, from the cached metas the meta handler serves
-    // (read in one query), so only cache misses are built from Kitsu and Cinemeta.
-    const ids = args.extra.lastVideosIds.split(',');
-    return Promise.all(ids.map((id) => mapToKitsuId(id).catch(() => undefined)))
-        .then((kitsuIds) => getCachedMetas(kitsuIds))
-        .then((cached) => Promise.all(ids.map((id, index) => (cached[index] ? Promise.resolve(cached[index]) : getKitsuIdMetadata(id))
-            .then(({ meta }) => ({
-              id,
-              type: meta.type,
-              name: meta.name,
-              videos: meta.videos?.slice(-20)
-                  .map(({ id, title, released, season, episode }) => ({ id, title, released, season, episode })),
-            }))
-            .catch(() => undefined))))
-        .then((metas) => ({ metasDetailed: metas.filter((meta) => meta), cacheMaxAge: CACHE_MAX_AGE }));
+    // Like Cinemeta's last-videos: the last videos of each library id
+    const ids = args.extra.lastVideosIds.split(',').slice(0, LAST_VIDEOS_IDS_LIMIT);
+    return getMetas(ids).then((metas) => ({
+      metasDetailed: metas.map((meta, index) => meta && {
+        id: ids[index],
+        type: meta.type,
+        name: meta.name,
+        videos: meta.videos?.slice(-20)
+            .map(({ id, title, released, season, episode }) => ({ id, title, released, season, episode })),
+      }).filter((meta) => meta),
+      cacheMaxAge: CACHE_MAX_AGE,
+    }));
   }
 
   const options = {
@@ -146,6 +146,18 @@ builder.defineSubtitlesHandler((args) => {
       .then((url) => ({ redirect: url }))
       .catch(() => ({ subtitles: [] }));
 });
+
+// Metas of library ids (kitsu:, mal:, ...) in their order: the meta handler's cached ones in one store query, the rest
+// from fetchMissing(ids), by default each built like the meta handler does (undefined when that fails).
+async function getMetas(ids, fetchMissing = (missing) => Promise.all(missing
+    .map((id) => getKitsuIdMetadata(id).then(({ meta }) => meta).catch(() => undefined)))) {
+  const kitsuIds = await Promise.all(ids.map((id) => mapToKitsuId(id).catch(() => undefined)));
+  const cached = await getCachedMetas(kitsuIds);
+  const missing = ids.filter((_, index) => !cached[index]);
+  const fetched = missing.length ? await fetchMissing(missing) : [];
+  let position = 0;
+  return ids.map((_, index) => cached[index] ? cached[index].meta : fetched[position++]);
+}
 
 async function getKitsuIdMetadata(id) {
   return mapToKitsuId(id)

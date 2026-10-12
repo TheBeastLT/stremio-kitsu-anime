@@ -4,3 +4,5 @@
 - Caches: in-memory LRU → Mongo (`kitsu_collection`) → Cloudflare (12h). Check the backend with `?<timestamp>` on the URL;
   keyv stays on 5 (cache-manager 7 can't read keyv 6 entries, see `test/cache.test.js`).
 - Mapping rows (`static/data/imdb_mapping.json`, `new_mappings.json`): read `mapping/README.md` before researching or adding any.
+- Search: `lib/title_search.js` ranks `static/data/search_titles.jsonl` (rebuilt weekly by `mapping/update_search_titles.js`);
+  below `MIN_CONFIDENCE` it returns nothing. Check ranking changes with `node search_eval/evaluate.js` (offline).

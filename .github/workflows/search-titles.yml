@@ -1,0 +1,58 @@
+name: Update search titles
+
+# Weekly: rebuilds static/data/search_titles.jsonl (every Kitsu anime's titles plus anime-offline-database synonyms) the
+# title search index is built from, pushes it to master and deploys it. The addon adds the entries Kitsu creates in
+# between by itself (lib/title_index.js).
+on:
+  schedule:
+    - cron: '0 7 * * 1' # Mondays 07:00 UTC, after the MAL season import
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: search-titles
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Rebuild search titles
+        env:
+          FANART_APIKEY: ${{ secrets.FANART_APIKEY }}
+        run: node mapping/update_search_titles.js
+
+      - name: Push search titles
+        id: push
+        run: |
+          if git diff --quiet -- static/data/search_titles.jsonl; then
+            echo "Search titles unchanged" | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          echo "$(git diff --numstat -- static/data/search_titles.jsonl | awk '{print $1" added / "$2" removed lines"}')" \
+            | tee -a "$GITHUB_STEP_SUMMARY"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'update search titles' -- static/data/search_titles.jsonl
+          git pull --rebase origin master
+          git push origin HEAD:master
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      # Pushes made with GITHUB_TOKEN don't trigger the deploy workflow's `push`, so it's dispatched.
+      - name: Deploy
+        if: steps.push.outputs.pushed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref master
