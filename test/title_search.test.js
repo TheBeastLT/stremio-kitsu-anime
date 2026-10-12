@@ -98,6 +98,10 @@ test('the title index finds the expected Kitsu entries', () => {
     'flcl': 202, // the OVA series is the first season of the TV sequels ("FLCL 2" synonyms)
     'puchimas petit petit idolmaster': 8405, // not the earlier one-off OVA
     'rerise 2nd season': 43144, // the title names the season; Re:RISE 1 is only mapped to TVDB season 2
+    'working\'!!': 6220, // the apostrophe marks the sequel, like "!!"
+    'gintama\'': 5971,
+    'baka to test to shoukanjuu matsuri': 5745, // its own title, not the special abbreviated "Matsuri Special"
+    'ms gundam igloo 1 - part 1 (thoyw)': 1727, // "the hidden one year war" as initials
     'kizumonogatari i - tekketsu': 5649,
     'kizumonogatari ii - nekketsu': 11406,
     'kizumonogatari iii - reiketsu': 11407,
