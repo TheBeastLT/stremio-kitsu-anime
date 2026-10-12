@@ -21770,12 +21770,6 @@
     "title": "The Reflection"
   },
   {
-    "kitsu_id": 11476
-  },
-  {
-    "kitsu_id": 12755
-  },
-  {
     "kitsu_id": 11477,
     "imdb_id": "tt5023666",
     "title": "Arslan Senki",
@@ -28737,6 +28731,20 @@
     "title": "Touhou Gensou Mangekyou: The Memories of Phantasm",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 11476,
+    "imdb_id": "tt13963530",
+    "title": "Mobile Suit Gundam Thunderbolt",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 12755,
+    "imdb_id": "tt13963530",
+    "title": "Mobile Suit Gundam Thunderbolt",
+    "fromSeason": 1,
+    "fromEpisode": 5
   },
   {
     "kitsu_id": 42199,
