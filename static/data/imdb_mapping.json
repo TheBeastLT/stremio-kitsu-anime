@@ -26286,6 +26286,20 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 42585,
+    "imdb_id": "tt8631370",
+    "title": "Gundam Build Divers",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 43144,
+    "imdb_id": "tt8631370",
+    "title": "Gundam Build Divers",
+    "fromSeason": 2,
+    "fromEpisode": 14
+  },
+  {
     "kitsu_id": 40568,
     "imdb_id": "tt5580664",
     "title": "Voltron",
@@ -29734,20 +29748,6 @@
     "kitsu_id": 42572,
     "imdb_id": "tt11802992",
     "title": "Given"
-  },
-  {
-    "kitsu_id": 42585,
-    "imdb_id": "tt11100658",
-    "title": "Gundam Build Divers Re: Rise",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  {
-    "kitsu_id": 43144,
-    "imdb_id": "tt11100658",
-    "title": "Gundam Build Divers Re: Rise",
-    "fromSeason": 2,
-    "fromEpisode": 1
   },
   {
     "kitsu_id": 41994,
