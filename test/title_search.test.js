@@ -103,6 +103,9 @@ test('the title index finds the expected Kitsu entries', () => {
     'baka to test to shoukanjuu matsuri': 5745, // its own title, not the special abbreviated "Matsuri Special"
     'ms gundam igloo 1 - part 1 (thoyw)': 1727, // "the hidden one year war" as initials
     'douluo dalu ii soul land 2': 42037, // "ii" is covered by the entry being season 2
+    'ranma 1 2 2024': 48981, // the 2 of "1/2" isn't a season
+    'yu gi oh duel monster 2000': 442, // "monster" is held by "Duel Monsters" too
+    'steven universe S1': 10735, // not Future, S1 of its own imdb but titled "Season 6"
     'kizumonogatari i - tekketsu': 5649,
     'kizumonogatari ii - nekketsu': 11406,
     'kizumonogatari iii - reiketsu': 11407,
