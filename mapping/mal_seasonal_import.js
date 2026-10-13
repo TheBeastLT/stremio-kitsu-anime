@@ -3,7 +3,8 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const { queryIdMapping } = require('../lib/id_convert');
 const { getImdbMapping } = require('../lib/metadataEnrich');
-const { search, animeData, animeEpisodeCounts } = require('../lib/kitsu_api');
+const { searchIds, animeData, animeEpisodeCounts } = require('../lib/kitsu_api');
+const { loadCurrentTitleIndex } = require('../lib/title_index');
 const { getTvdbId } = require("../lib/fanart");
 const {
   getFribbEntry, getFribbEntryByKitsu, isFribbLinked, malKitsuLink, kitsuIdFromLinks, resolveImdbId,
@@ -22,6 +23,7 @@ async function importMalSeason(season, { reviewPath = "./static/data/new_mapping
   const imdbMapping = require('../static/data/imdb_mapping')
       .reduce((map, entry) => (map[entry.kitsu_id] = entry, map), {});;
   const window = seasonWindow(season);
+  await loadCurrentTitleIndex().catch(error => console.log(`Title index refresh failed: ${error?.message || error}`));
   const malEntries = await getMalSeasonalEntries(season);
   const newMappingEntries = await mapWithConcurrency(malEntries, IMPORT_CONCURRENCY,
       malEntry => createImdbMappingEntry(malEntry, window));
@@ -49,9 +51,7 @@ async function importMalSeason(season, { reviewPath = "./static/data/new_mapping
 
 async function createImdbMappingEntry(malEntry, window) {
   const kitsuIdFromMal = await queryIdMapping(`mal`, malEntry.malId).catch((err) => undefined);
-  const kitsuIdFromSearch = !kitsuIdFromMal && await search(malEntry.title)
-      .then(metas => metas[0]?.kitsu_id)
-      .catch((err) => undefined);
+  const kitsuIdFromSearch = !kitsuIdFromMal && searchIds(malEntry.title)[0];
   const kitsuId = await confirmedKitsuId(malEntry.malId, kitsuIdFromMal || kitsuIdFromSearch);
   if (!kitsuId) {
     console.log(`No kitsuId found for: ${JSON.stringify(malEntry)}`);

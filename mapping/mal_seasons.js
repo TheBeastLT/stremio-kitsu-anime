@@ -14,11 +14,21 @@ function previousMalSeason(season) {
   return index === 0 ? `${parseInt(year) - 1}/fall` : `${year}/${MAL_SEASONS[index - 1]}`;
 }
 
-// The current MAL season and the `count - 1` before it, oldest first.
-function recentMalSeasons(count, date = new Date()) {
+function nextMalSeason(season) {
+  const [year, name] = season.split('/');
+  const index = MAL_SEASONS.indexOf(name);
+  return index === MAL_SEASONS.length - 1 ? `${parseInt(year) + 1}/winter` : `${year}/${MAL_SEASONS[index + 1]}`;
+}
+
+// The current MAL season and the `count - 1` before it, oldest first. With `upcoming`, in the current season's last
+// month (where seasonWindow's pre-season padding starts) the next season too, so its titles are mapped before they air.
+function recentMalSeasons(count, date = new Date(), { upcoming = false } = {}) {
   const seasons = [malSeason(date)];
   while (seasons.length < count) {
     seasons.unshift(previousMalSeason(seasons[0]));
+  }
+  if (upcoming && date.getUTCMonth() % 3 === 2) {
+    seasons.push(nextMalSeason(seasons[seasons.length - 1]));
   }
   return seasons;
 }
@@ -36,9 +46,10 @@ function kitsuSeasons(from, to) {
   return [...seasons.values()];
 }
 
-// usage: node mapping/mal_seasons.js [count]   -> prints the recent MAL seasons, oldest first
+// usage: node mapping/mal_seasons.js [count] [--upcoming]   -> prints the recent MAL seasons, oldest first
 if (require.main === module) {
-  console.log(recentMalSeasons(parseInt(process.argv[2]) || 2).join(' '));
+  const upcoming = process.argv.includes('--upcoming');
+  console.log(recentMalSeasons(parseInt(process.argv[2]) || 2, new Date(), { upcoming }).join(' '));
 }
 
-module.exports = { malSeason, previousMalSeason, recentMalSeasons, kitsuSeasons };
+module.exports = { malSeason, previousMalSeason, nextMalSeason, recentMalSeasons, kitsuSeasons };

@@ -16,6 +16,16 @@ test('malSeason and recentMalSeasons follow MAL quarters across the year boundar
   assert.deepStrictEqual(recentMalSeasons(2, new Date('2026-01-05')), ['2025/fall', '2026/winter']);
 });
 
+test('recentMalSeasons adds the upcoming season in the current season\'s last month', () => {
+  const upcoming = { upcoming: true };
+  assert.deepStrictEqual(recentMalSeasons(2, new Date('2026-08-31'), upcoming), ['2026/spring', '2026/summer']);
+  assert.deepStrictEqual(recentMalSeasons(2, new Date('2026-09-01'), upcoming),
+      ['2026/spring', '2026/summer', '2026/fall']);
+  assert.deepStrictEqual(recentMalSeasons(2, new Date('2026-12-07'), upcoming),
+      ['2026/summer', '2026/fall', '2027/winter']);
+  assert.deepStrictEqual(recentMalSeasons(2, new Date('2026-12-07')), ['2026/summer', '2026/fall']);
+});
+
 test('kitsuSeasons maps months onto Kitsu seasons, December being next year\'s winter', () => {
   assert.deepStrictEqual(kitsuSeasons(new Date('2026-06-01'), new Date('2026-10-10')),
       [{ season: 'summer', year: 2026 }, { season: 'fall', year: 2026 }]);

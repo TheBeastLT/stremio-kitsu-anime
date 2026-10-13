@@ -1,7 +1,8 @@
 name: Import MAL seasons
 
-# Weekly: runs the previous and the current MAL season through the importer, pushes the auto-approved (verified)
-# imdb mappings to master and deploys them. Entries that need a manual review are kept as a run artifact.
+# Weekly: runs the previous and the current MAL season through the importer (in the current season's last month the
+# next one too, so its titles are mapped before they air), pushes the auto-approved (verified) imdb mappings to master
+# and deploys them. Entries that need a manual review are kept as a run artifact.
 on:
   schedule:
     - cron: '0 5 * * 1' # Mondays 05:00 UTC
@@ -28,14 +29,14 @@ jobs:
 
       - run: npm ci
 
-      # Each season runs in its own process: the mapping is indexed once at load, and the current season's sequels
-      # must see the prequels the previous season just merged.
-      - name: Import previous and current MAL seasons
+      # Each season runs in its own process: the mapping is indexed once at load, and each season's sequels must see
+      # the prequels the season before just merged.
+      - name: Import previous, current and upcoming MAL seasons
         env:
           FANART_APIKEY: ${{ secrets.FANART_APIKEY }}
         run: |
           mkdir -p review
-          for season in $(node mapping/mal_seasons.js 2); do
+          for season in $(node mapping/mal_seasons.js 2 --upcoming); do
             node mapping/mal_seasonal_import.js "$season" "review/${season/\//-}.json"
           done
 
