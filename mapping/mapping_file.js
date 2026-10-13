@@ -15,9 +15,12 @@ function insertMappingEntry(base, item) {
   }
 }
 
+// never between two rows of one imdb (a franchise's group starts at its first season's kitsu id)
 function insertInKitsuOrder(base, item) {
-  const idx = base.findIndex((e, i) =>
-      e.kitsu_id > item.kitsu_id && base.slice(i).every(x => x.kitsu_id > item.kitsu_id));
+  const sameGroup = (a, b) => !!a.imdb_id && a.imdb_id === b.imdb_id;
+  const idx = base.findIndex((e, i) => e.kitsu_id > item.kitsu_id
+      && (i === 0 || !sameGroup(base[i - 1], e))
+      && base.slice(i).every(x => x.kitsu_id > item.kitsu_id || sameGroup(x, e)));
   base.splice(idx === -1 ? base.length : idx, 0, item);
 }
 

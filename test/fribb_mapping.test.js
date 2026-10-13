@@ -66,6 +66,18 @@ test('insertMappingEntry keeps first-season/standalone entries in kitsu-id order
   assert.deepStrictEqual(base.map(e => e.kitsu_id), [5, 20, 30]);
 });
 
+test('insertMappingEntry never puts a new imdb inside another imdb\'s group (Jewelpet / Battle Spirits case)', () => {
+  const base = [
+    { kitsu_id: 4349, imdb_id: 'ttA' },
+    { kitsu_id: 4383, imdb_id: 'ttJ', fromSeason: 1, fromEpisode: 1 },
+    { kitsu_id: 5249, imdb_id: 'ttJ', fromSeason: 2, fromEpisode: 1 },
+    { kitsu_id: 10597, imdb_id: 'ttJ', fromSeason: 7, fromEpisode: 1 },
+    { kitsu_id: 4817, imdb_id: 'ttC' },
+  ];
+  insertMappingEntry(base, { kitsu_id: 4779, imdb_id: 'ttB', fromSeason: 1, fromEpisode: 1 });
+  assert.deepStrictEqual(base.map(e => e.kitsu_id), [4349, 4383, 5249, 10597, 4779, 4817]);
+});
+
 test('linkFromFribb confirms a direct Fribb link from either side, and reports one pointing elsewhere', () => {
   assert.deepStrictEqual(linkFromFribb('5114', 3936, { kitsu_id: 3936 }, undefined), { linked: true });
   assert.deepStrictEqual(linkFromFribb('5114', 3936, undefined, { mal_id: 5114 }), { linked: true });
