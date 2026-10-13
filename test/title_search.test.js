@@ -102,6 +102,7 @@ test('the title index finds the expected Kitsu entries', () => {
     'gintama\'': 5971,
     'baka to test to shoukanjuu matsuri': 5745, // its own title, not the special abbreviated "Matsuri Special"
     'ms gundam igloo 1 - part 1 (thoyw)': 1727, // "the hidden one year war" as initials
+    'douluo dalu ii soul land 2': 42037, // "ii" is covered by the entry being season 2
     'kizumonogatari i - tekketsu': 5649,
     'kizumonogatari ii - nekketsu': 11406,
     'kizumonogatari iii - reiketsu': 11407,
@@ -176,7 +177,7 @@ test('the title index finds the expected Kitsu entries', () => {
 
 test('the title index returns nothing for titles that aren\'t anime on Kitsu', () => {
   const found = ['hello carbot 2018 S6', 'raba in maseu larva in mars 2024', 'jyulagi cops 4 jurassic cops 2026',
-    'american dad S19', 'hawaii five 0 2010 S7']
+    'american dad S19', 'hawaii five 0 2010 S7', 'lingwu continent', 'a good day to ascend', 'mk iv']
       .map(query => [query, searchTitles(query)[0]?.id])
       .filter(([, id]) => id !== undefined);
   assert.deepStrictEqual(found, []);
