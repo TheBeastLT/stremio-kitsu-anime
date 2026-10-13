@@ -19168,6 +19168,20 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 2822,
+    "imdb_id": "tt39310374",
+    "title": "GR -Giant Robo-",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 3014,
+    "imdb_id": "tt1304991",
+    "title": "The Ultraman",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 8734,
     "imdb_id": "tt3399762",
     "title": "Buddy Complex",
@@ -23093,6 +23107,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 3316,
+    "imdb_id": "tt0303492",
+    "title": "Maeterlinck's Blue Bird: Tyltyl and Mytyl's Adventurous Journey",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 12154,
     "imdb_id": "tt6356032",
     "title": "Chi's Sweet Home",
@@ -25901,6 +25922,67 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 4349,
+    "imdb_id": "tt11859118",
+    "title": "White Fang Story"
+  },
+  {
+    "kitsu_id": 4383,
+    "imdb_id": "tt1642495",
+    "title": "Jewelpet",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 5249,
+    "imdb_id": "tt1642495",
+    "title": "Jewelpet",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 6147,
+    "imdb_id": "tt1642495",
+    "title": "Jewelpet",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 6857,
+    "imdb_id": "tt1642495",
+    "title": "Jewelpet",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 7650,
+    "imdb_id": "tt1642495",
+    "title": "Jewelpet",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 8354,
+    "imdb_id": "tt1642495",
+    "title": "Jewelpet",
+    "fromSeason": 6,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 10597,
+    "imdb_id": "tt1642495",
+    "title": "Jewelpet",
+    "fromSeason": 7,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 4779,
+    "imdb_id": "tt27028526",
+    "title": "Battle Spirits: Shounen Gekiha Dan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 4817,
     "imdb_id": "tt1685415",
     "title": "Shukufuku no Campanella",
@@ -25908,9 +25990,79 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 5248,
+    "imdb_id": "tt7976226",
+    "title": "Aah! Harimanada",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 5387,
+    "imdb_id": "tt1527559",
+    "title": "Rescueman",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 5693,
+    "imdb_id": "tt34582240",
+    "title": "Battle Spirits: Brave",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 5829,
     "imdb_id": "tt1750905",
     "title": "Moshidora",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 7102,
+    "imdb_id": "tt2390022",
+    "title": "Busou Shinki: Armored War Goddess",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 7287,
+    "imdb_id": "tt2609072",
+    "title": "Puchimas!: Petit Idolm@ster",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 8405,
+    "imdb_id": "tt2609072",
+    "title": "Puchimas!: Petit Idolm@ster",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 8058,
+    "imdb_id": "tt3437760",
+    "title": "Minna Atsumare! Falcom Gakuen",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 8853,
+    "imdb_id": "tt3437760",
+    "title": "Minna Atsumare! Falcom Gakuen",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 8132,
+    "imdb_id": "tt39949828",
+    "title": "Sugar Soldier",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 8134,
+    "imdb_id": "tt3492720",
+    "title": "Romantica Clock",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -28854,6 +29006,13 @@
     "fromEpisode": 5
   },
   {
+    "kitsu_id": 12643,
+    "imdb_id": "tt42962627",
+    "title": "Escha Chron",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 42199,
     "imdb_id": "tt8963328",
     "title": "Hi Score Girl",
@@ -29082,6 +29241,27 @@
     "kitsu_id": 42268,
     "imdb_id": "tt10431310",
     "title": "To the Abandoned Sacred Beasts"
+  },
+  {
+    "kitsu_id": 13688,
+    "imdb_id": "tt20565622",
+    "title": "Tales of Demon and God",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 41742,
+    "imdb_id": "tt20565622",
+    "title": "Tales of Demon and God",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 42048,
+    "imdb_id": "tt20565622",
+    "title": "Tales of Demon and God",
+    "fromSeason": 3,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 42269,
@@ -30855,6 +31035,11 @@
     "title": "Assault Lily: Bouquet",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 42683,
+    "imdb_id": "tt9288776",
+    "title": "White Snake"
   },
   {
     "kitsu_id": 42865,
@@ -32636,6 +32821,11 @@
     "title": "Aria the Benedizione"
   },
   {
+    "kitsu_id": 44173,
+    "imdb_id": "tt15000314",
+    "title": "Green Snake"
+  },
+  {
     "kitsu_id": 44179,
     "imdb_id": "tt13409412",
     "title": "Cestvs: The Roman Fighter",
@@ -32854,6 +33044,13 @@
     "kitsu_id": 44221,
     "imdb_id": "tt13084262",
     "title": "Uchuu Nanchara Kotetsu-kun",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 44224,
+    "imdb_id": "tt14821350",
+    "title": "iii icecrin",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -33378,6 +33575,11 @@
     "title": "Aoashi",
     "fromSeason": 2,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 44631,
+    "imdb_id": "tt13269670",
+    "title": "New Gods: Nezha Reborn"
   },
   {
     "kitsu_id": 44632,
@@ -41189,6 +41391,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 47448,
+    "imdb_id": "tt28526428",
+    "title": "A World Worth Protecting",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 47712,
     "imdb_id": "tt32894936",
     "title": "You Shou Yan 5th Season",
@@ -41221,6 +41430,13 @@
     "imdb_id": "tt32894936",
     "title": "You Shou Yan 5th Season",
     "fromSeason": 6,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 48250,
+    "imdb_id": "tt28612257",
+    "title": "My Daemon",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   {
