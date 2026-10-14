@@ -36911,6 +36911,31 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 48183,
+    "imdb_id": "tt26743760",
+    "title": "Kusuriya no Hitorigoto",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 49494,
+    "imdb_id": "tt26743760",
+    "title": "Kusuriya no Hitorigoto",
+    "fromSeason": 0,
+    "fromEpisode": 25,
+    "nonImdbEpisodes": [
+      23,
+      24
+    ]
+  },
+  {
+    "kitsu_id": 50029,
+    "imdb_id": "tt26743760",
+    "title": "Kusuriya no Hitorigoto",
+    "fromSeason": 0,
+    "fromEpisode": 47
+  },
+  {
     "kitsu_id": 47106,
     "imdb_id": "tt27724196",
     "title": "Kuromi's Pretty Journey",
