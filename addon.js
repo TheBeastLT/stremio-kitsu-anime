@@ -97,11 +97,9 @@ builder.defineCatalogHandler((args) => {
     const ids = args.extra.lastVideosIds.split(',').slice(0, LAST_VIDEOS_IDS_LIMIT);
     return getMetas(ids).then((metas) => ({
       metasDetailed: metas.map((meta, index) => meta && {
+        ...toCatalogMeta(meta),
         id: ids[index],
-        type: meta.type,
-        name: meta.name,
-        videos: meta.videos?.slice(-20)
-            .map(({ id, title, released, season, episode }) => ({ id, title, released, season, episode })),
+        videos: meta.videos?.slice(-20),
       }).filter((meta) => meta),
       cacheMaxAge: CACHE_MAX_AGE,
     }));
