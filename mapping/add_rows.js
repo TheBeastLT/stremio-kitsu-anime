@@ -1,6 +1,7 @@
 // Adds reviewed rows to static/data/imdb_mapping.json where the review page and the importer would put them.
-// Rows are { kitsu_id, imdb_id, title?, fromSeason?, fromEpisode? }; a row without a title takes its imdb's existing
-// title. Nothing is written when any row is invalid or its kitsu id already has a row (the runtime keeps one per id).
+// Rows are { kitsu_id, imdb_id, title?, fromSeason?, fromEpisode?, nonImdbEpisodes? }; a row without a title takes its
+// imdb's existing title. Nothing is written when any row is invalid or its kitsu id already has a row (the runtime
+// keeps one per id).
 const fs = require('fs');
 const path = require('path');
 const { insertMappingEntry } = require('./mapping_file');
@@ -16,6 +17,9 @@ function addRows(base, rows) {
     if (row.fromSeason !== undefined || row.fromEpisode !== undefined) {
       item.fromSeason = row.fromSeason;
       item.fromEpisode = row.fromEpisode;
+    }
+    if (row.nonImdbEpisodes) {
+      item.nonImdbEpisodes = row.nonImdbEpisodes;
     }
     const problem = rowProblem(item, taken);
     if (problem) {

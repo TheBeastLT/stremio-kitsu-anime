@@ -74,6 +74,15 @@ test('an imdb meta skips kitsu episodes missing on imdb', async () => {
   assert.deepStrictEqual([video.kitsuEpisode, video.absoluteEpisode], [591, 591]);
 });
 
+test('an imdb meta gives no kitsu episode past a finished entry\'s last one', async () => {
+  // Mobile Suit Gundam SEED (tt0374407): kitsu 72 is the 50 episodes of S1, S2 has no row of its own
+  const videos = cinemetaVideos('tt0374407', [[1, 50], [2, 50]]);
+  const meta = await enrichImdbMetadata({ id: 'tt0374407', type: 'series', videos }, async () => assert.fail());
+  const episode = (season, number) => meta.videos.find((video) => video.season === season && video.episode === number);
+  assert.deepStrictEqual([episode(1, 50), episode(2, 1)].map((video) => [video.kitsu_id, video.kitsuEpisode,
+    video.absoluteEpisode]), [['72', 50, 50], [undefined, undefined, 51]]);
+});
+
 test('movies get no franchise-wide number', async () => {
   const movie = await enrichKitsuMetadata(kitsuMeta(99999999, 1, 'movie'), async () => assert.fail('no imdb lookup'));
   const toImdbMovie = await enrichKitsuMetadata(kitsuMeta(7442, 1), async () => ({ type: 'movie' }));

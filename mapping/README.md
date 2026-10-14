@@ -13,7 +13,8 @@ IMDb metas (`/meta/series/tt….json`) carry `kitsu_id` + `kitsuEpisode` on each
 - `title` is the IMDb series title, the same on every row of that imdb.
 - `fromSeason`/`fromEpisode`: the IMDb episode the entry's Kitsu episode 1 lands on. Omitted for movies (and read
   as S1E1 for series). Season 0 is IMDb's specials.
-- `nonImdbEpisodes`: Kitsu episode numbers IMDb doesn't list; rare.
+- `nonImdbEpisodes`: Kitsu episode numbers IMDb doesn't list in the row's run (also ones it lists after another
+  row's episodes, which one row can't reach); rare.
 - The row format is fixed: solve mapping problems with rows or code, not new fields.
 
 ## How the runtime assigns episodes
@@ -22,9 +23,10 @@ IMDb metas (`/meta/series/tt….json`) carry `kitsu_id` + `kitsuEpisode` on each
   only be mapped through Kitsu's own entry for it, never as an episode of an already mapped series entry.
 - **A row runs until the next row starts.** For each IMDb video, the last row (by season, then episode) with
   `fromSeason <= season && fromEpisode <= episode` wins, and that row's Kitsu episodes are handed out one after
-  another, with no cap at the entry's episode count. A season 0 row therefore also claims every later special up to
-  the next season 0 row. Stop it with a **stopper row**: a row for the next special's own Kitsu entry. When that
-  special has no unmapped Kitsu entry, the spill stays.
+  another, up to the episode count of an entry that finished airing (from `search_titles.jsonl`; an airing entry has
+  no cap). A season 0 row of an airing entry therefore also claims every later special up to the next season 0 row.
+  Stop it with a **stopper row**: a row for the next special's own Kitsu entry. When that special has no unmapped
+  Kitsu entry, the spill stays.
 - **`fromEpisode` is compared without its season.** A row at S1E7 also catches S2E7+ when S2 has no row of its own,
   so map every season.
 - Kitsu metas keep Kitsu numbering (`season: 1`, Kitsu episode) and add `imdbSeason`/`imdbEpisode` on each video.
