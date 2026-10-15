@@ -319,8 +319,8 @@ function verifyOffset({ row, kitsuStart, cinemeta }) {
   return { ...fail(reason), suggestions };
 }
 
-// A season-0 row hands out Kitsu episodes to every IMDb special from its start until the next S0 row, with no cap
-// (enrichImdbEpisodes), so a run longer than the Kitsu entry gives the extra specials episodes Kitsu doesn't have.
+// A season-0 row hands out Kitsu episodes to every IMDb special from its start until the next S0 row, capped only for a
+// finished entry (enrichImdbEpisodes), so a longer run gives the extra specials episodes Kitsu doesn't have.
 // row and siblings carry the Kitsu `episodeCount`.
 function verifySpecialRun({ row, siblings, cinemeta }) {
   if (!cinemeta?.name) {
