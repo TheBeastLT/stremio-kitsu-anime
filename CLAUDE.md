@@ -6,3 +6,4 @@
 - Mapping rows (`static/data/imdb_mapping.json`, `new_mappings.json`): read `mapping/README.md` before researching or adding any.
 - Search: `lib/title_search.js` ranks `static/data/search_titles.jsonl` (rebuilt weekly by `mapping/update_search_titles.js`);
   below `MIN_CONFIDENCE` it returns nothing. Check ranking changes with `node search_eval/evaluate.js` (offline).
+  Names search can't work out go in `static/data/search_aliases.json` (kitsu id → titles; user-approved only).

@@ -115,6 +115,7 @@ test('the title index finds the expected Kitsu entries', () => {
     'keroro gunsou': 475,
     'suikoden': 50988, // the series, not the 1993 OVA whose synonym "Suikoden" is the only exact match
     'fighting spirit 2000 S3': 7855, // Rising, by its imdb's English title "Fighting Spirit"; 2000 is the premiere year
+    'the prince of tennis ii S5': 51007, // a release group's franchise-wide season: by its alias
     'steven universe S1': 10735, // not Future, S1 of its own imdb but titled "Season 6"
     'kizumonogatari i - tekketsu': 5649,
     'kizumonogatari ii - nekketsu': 11406,
@@ -199,4 +200,14 @@ test('the title index returns nothing for titles that aren\'t anime on Kitsu', (
 test('a chance match on a word or two is below the cut-off', () => {
   // "Office Work" shares one of the two words
   assert.deepStrictEqual(searchTitles('office girls'), []);
+});
+
+test('every search alias names a Kitsu entry and finds it first', () => {
+  const { readRecords, ALIASES_PATH } = require('../lib/title_records');
+  const aliases = JSON.parse(require('fs').readFileSync(ALIASES_PATH, 'utf8'));
+  const ids = new Set(readRecords().map(record => `${record.id}`));
+  const wrong = Object.entries(aliases).flatMap(([id, titles]) => titles
+      .filter(title => !ids.has(id) || searchTitles(title, 1)[0]?.id !== +id)
+      .map(title => [id, title, searchTitles(title, 1)[0]?.id]));
+  assert.deepStrictEqual(wrong, []);
 });
