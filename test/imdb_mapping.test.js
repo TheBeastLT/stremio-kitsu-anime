@@ -26,6 +26,17 @@ test('imdb_mapping rows have a numeric kitsu id, a tt imdb id and both start fie
   assert.deepStrictEqual(invalid, []);
 });
 
+test('imdb_mapping has no two rows starting at the same imdb episode', () => {
+  // the imdb meta gives each episode to one of them, so the other's season links to nothing (Dog Days at S2E1 with
+  // Dog Days')
+  const starts = new Map();
+  rows.filter(row => row.imdb_id && row.fromSeason !== undefined).forEach(row => {
+    const start = `${row.imdb_id} S${row.fromSeason}E${row.fromEpisode}`;
+    starts.set(start, [...(starts.get(start) || []), row.kitsu_id]);
+  });
+  assert.deepStrictEqual([...starts].filter(([, kitsuIds]) => kitsuIds.length > 1), []);
+});
+
 const { addRows } = require('../mapping/add_rows');
 
 test('addRows inserts a special after its imdb siblings, taking their title', () => {

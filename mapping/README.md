@@ -44,7 +44,8 @@ IMDb metas (`/meta/series/tt….json`) carry `kitsu_id` + `kitsuEpisode` on each
 
 ## Checks
 
-- `npm test` (gates every deploy) checks one row per Kitsu id, the file format and the row shape.
+- `npm test` (gates every deploy) checks one row per Kitsu id, no two rows starting at the same IMDb episode, the file
+  format and the row shape.
 - `mapping/offset_check.js` (weekly CI, results in an issue) re-checks the start episodes of recent rows against
   Cinemeta, and flags season 0 rows of those imdbs whose run covers more specials than Kitsu has episodes (airing
   entries only: a finished one's run is capped).
