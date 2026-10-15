@@ -113,6 +113,7 @@ test('the title index finds the expected Kitsu entries', () => {
     'jojo`s bizarre adventure (jojo no kimyou na bouken) s6': 49847,
     'keroro gunsou☆': 50992, // a trailing ☆ marks the sequel, as "!!" does; plain "keroro gunsou" is the 2004 show
     'keroro gunsou': 475,
+    'suikoden': 50988, // the series, not the 1993 OVA whose synonym "Suikoden" is the only exact match
     'steven universe S1': 10735, // not Future, S1 of its own imdb but titled "Season 6"
     'kizumonogatari i - tekketsu': 5649,
     'kizumonogatari ii - nekketsu': 11406,
