@@ -899,6 +899,13 @@
     "title": "Akazukin Chacha"
   },
   {
+    "kitsu_id": 334,
+    "imdb_id": "tt0108689",
+    "title": "Akazukin Chacha",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 83,
     "imdb_id": "tt0261463",
     "title": "Ayashi no Ceres"
@@ -2415,6 +2422,13 @@
     "title": "Comic Party"
   },
   {
+    "kitsu_id": 640,
+    "imdb_id": "tt0447582",
+    "title": "Comic Party",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 265,
     "imdb_id": "tt0286390",
     "title": "Crest of the Stars"
@@ -2634,7 +2648,9 @@
   {
     "kitsu_id": 299,
     "imdb_id": "tt0330592",
-    "title": "Mahôjin guru guru"
+    "title": "Mahôjin guru guru",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 300,
@@ -2655,6 +2671,13 @@
     "kitsu_id": 303,
     "imdb_id": "tt1183586",
     "title": "Meine Liebe"
+  },
+  {
+    "kitsu_id": 692,
+    "imdb_id": "tt1183586",
+    "title": "Meine Liebe",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 304,
@@ -2930,11 +2953,6 @@
     "title": "Agent Aika",
     "fromSeason": 0,
     "fromEpisode": 3
-  },
-  {
-    "kitsu_id": 334,
-    "imdb_id": "tt0108689",
-    "title": "Akazukin Chacha"
   },
   {
     "kitsu_id": 335,
@@ -4978,18 +4996,6 @@
     "title": "Vampire Princess Miyu"
   },
   {
-    "kitsu_id": 640,
-    "imdb_id": "tt0447582",
-    "title": "Comic Party"
-  },
-  {
-    "kitsu_id": 637,
-    "imdb_id": "tt0105559",
-    "title": "Tenchi Muyo!",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  {
     "kitsu_id": 642,
     "imdb_id": "tt1576820",
     "title": "Patapata hikousen no bouken",
@@ -5077,11 +5083,6 @@
     "kitsu_id": 1566,
     "imdb_id": "tt0398617",
     "title": "Zoids Fuzors"
-  },
-  {
-    "kitsu_id": 692,
-    "imdb_id": "tt1183586",
-    "title": "Meine Liebe"
   },
   {
     "kitsu_id": 693,
@@ -7286,11 +7287,6 @@
     "title": "Brighter Than the Dawning Blue"
   },
   {
-    "kitsu_id": 1387,
-    "imdb_id": "tt0480493",
-    "title": "Negima!"
-  },
-  {
     "kitsu_id": 1389,
     "imdb_id": "tt0185110",
     "title": "Queen Millennia",
@@ -7629,11 +7625,6 @@
     "kitsu_id": 1486,
     "imdb_id": "tt0981247",
     "title": "Oroshitate Musical Nerima Daikon Brothers"
-  },
-  {
-    "kitsu_id": 1487,
-    "imdb_id": "tt2296348",
-    "title": "The Pet Girl of Sakurasou"
   },
   {
     "kitsu_id": 1488,
@@ -9357,7 +9348,9 @@
   {
     "kitsu_id": 2501,
     "imdb_id": "tt5009268",
-    "title": "Monkî tân"
+    "title": "Monkî tân",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 2504,
@@ -10243,7 +10236,7 @@
     "kitsu_id": 4259,
     "imdb_id": "tt1524993",
     "title": "Kodai Oja Kyoryu Kingu",
-    "fromSeason": 1,
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   {
@@ -11565,11 +11558,6 @@
     "title": "The Qwaser of Stigmata",
     "fromSeason": 2,
     "fromEpisode": 1
-  },
-  {
-    "kitsu_id": 4582,
-    "imdb_id": "tt0189254",
-    "title": "Cutey Honey Flash"
   },
   {
     "kitsu_id": 4597
@@ -13141,13 +13129,6 @@
     "title": "Magical Girl Lyrical Nanoha the Movie 2nd A's"
   },
   {
-    "kitsu_id": 6057,
-    "imdb_id": "tt2082624",
-    "title": "Dog Days",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  {
     "kitsu_id": 6598,
     "imdb_id": "tt2082624",
     "title": "Dog Days",
@@ -13159,6 +13140,13 @@
     "imdb_id": "tt2082624",
     "title": "Dog Days",
     "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 6057,
+    "imdb_id": "tt2082624",
+    "title": "Dog Days",
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   {
@@ -13313,6 +13301,27 @@
     "title": "Uta no prince-sama - maji love 1000%"
   },
   {
+    "kitsu_id": 6796,
+    "imdb_id": "tt2362887",
+    "title": "Uta no prince-sama - maji love 1000%",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 8143,
+    "imdb_id": "tt2362887",
+    "title": "Uta no prince-sama - maji love 1000%",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 11217,
+    "imdb_id": "tt2362887",
+    "title": "Uta no prince-sama - maji love 1000%",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 6146,
     "imdb_id": "tt2250092",
     "title": "Humanity Has Declined"
@@ -13371,6 +13380,13 @@
     "kitsu_id": 6191,
     "imdb_id": "tt7164706",
     "title": "Kimi to Boku"
+  },
+  {
+    "kitsu_id": 6581,
+    "imdb_id": "tt7164706",
+    "title": "Kimi to Boku",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 6193,
@@ -13909,13 +13925,6 @@
     "title": "Code: Breaker"
   },
   {
-    "kitsu_id": 6581,
-    "imdb_id": "tt7164706",
-    "title": "Kimi to Boku",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  {
     "kitsu_id": 6587,
     "imdb_id": "tt2230531",
     "title": "Senki Zessho Symphogear",
@@ -14439,11 +14448,6 @@
     "title": "Joshiraku",
     "fromSeason": 1,
     "fromEpisode": 1
-  },
-  {
-    "kitsu_id": 6796,
-    "imdb_id": "tt2362887",
-    "title": "Uta no prince-sama - maji love 1000%"
   },
   {
     "kitsu_id": 6803,
@@ -16837,6 +16841,20 @@
     "title": "No-Rin"
   },
   {
+    "kitsu_id": 1387,
+    "imdb_id": "tt1187349",
+    "title": "Negima!? Magister Negi Magi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 637,
+    "imdb_id": "tt30291774",
+    "title": "Tenchi Muyo! Tenchi Universe",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 7786,
     "imdb_id": "tt0115104",
     "title": "Sorcerer Hunters",
@@ -18060,11 +18078,6 @@
     "title": "Buddy Complex",
     "fromSeason": 1,
     "fromEpisode": 1
-  },
-  {
-    "kitsu_id": 8143,
-    "imdb_id": "tt2362887",
-    "title": "Uta no prince-sama - maji love 1000%"
   },
   {
     "kitsu_id": 8144,
@@ -21181,11 +21194,6 @@
     "kitsu_id": 11215
   },
   {
-    "kitsu_id": 11217,
-    "imdb_id": "tt2362887",
-    "title": "Uta no prince-sama - maji love 1000%"
-  },
-  {
     "kitsu_id": 11234,
     "imdb_id": "tt5238484",
     "title": "Comet Lucifer"
@@ -22010,6 +22018,13 @@
     "imdb_id": "tt5669064",
     "title": "Mahô shôjo nante môiidesukara",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 12467,
+    "imdb_id": "tt5669064",
+    "title": "Mahô shôjo nante môiidesukara",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   {
@@ -23596,13 +23611,6 @@
     "kitsu_id": 12465
   },
   {
-    "kitsu_id": 12467,
-    "imdb_id": "tt5669064",
-    "title": "Mahô shôjo nante môiidesukara",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  {
     "kitsu_id": 12473,
     "imdb_id": "tt2390066",
     "title": "Teekyû",
@@ -23862,11 +23870,6 @@
   },
   {
     "kitsu_id": 12567
-  },
-  {
-    "kitsu_id": 12593,
-    "imdb_id": "tt3104246",
-    "title": "Aoki Hagane no Arpeggio: Ars Nova"
   },
   {
     "kitsu_id": 12596
@@ -25245,13 +25248,6 @@
     "title": "Sora yori mo Tooi Basho"
   },
   {
-    "kitsu_id": 13616,
-    "imdb_id": "tt9089548",
-    "title": "Fox Spirit Matchmaker",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  {
     "kitsu_id": 13618,
     "imdb_id": "tt7089878",
     "title": "Liz and the Blue Bird"
@@ -25812,11 +25808,6 @@
     "title": "Kud Wafter"
   },
   {
-    "kitsu_id": 13892,
-    "imdb_id": "tt7058854",
-    "title": "Haikara-San: Here Comes Miss Modern"
-  },
-  {
     "kitsu_id": 13901
   },
   {
@@ -25974,6 +25965,11 @@
     "title": "Jewelpet",
     "fromSeason": 7,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 4582,
+    "imdb_id": "tt0422610",
+    "title": "Cutie Honey Flash: The Movie"
   },
   {
     "kitsu_id": 4779,
@@ -27900,18 +27896,18 @@
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 46942,
+    "kitsu_id": 50090,
     "imdb_id": "tt13077966",
     "title": "Iya na Kao sare nagara Opantsu Misete Moraitai",
     "fromSeason": 3,
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 50090,
+    "kitsu_id": 46942,
     "imdb_id": "tt13077966",
     "title": "Iya na Kao sare nagara Opantsu Misete Moraitai",
-    "fromSeason": 3,
-    "fromEpisode": 1
+    "fromSeason": 0,
+    "fromEpisode": 5
   },
   {
     "kitsu_id": 41440,
@@ -28114,6 +28110,13 @@
     "imdb_id": "tt9883676",
     "title": "We Never Learn: Bokuben",
     "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 42356,
+    "imdb_id": "tt9883676",
+    "title": "We Never Learn: Bokuben",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -28403,11 +28406,6 @@
     "fromEpisode": 13
   },
   {
-    "kitsu_id": 42042,
-    "imdb_id": "tt9567240",
-    "title": "How Clumsy You Are, Miss Ueno."
-  },
-  {
     "kitsu_id": 42043,
     "imdb_id": "tt11428630",
     "title": "Bofuri: I Don't Want to Get Hurt, So I'll Max Out My Defense",
@@ -28649,7 +28647,7 @@
     "kitsu_id": 45523,
     "imdb_id": "tt11764320",
     "title": "Yatogame-chan Kansatsu Nikki",
-    "fromSeason": 3,
+    "fromSeason": 4,
     "fromEpisode": 1
   },
   {
@@ -29006,6 +29004,11 @@
     "fromEpisode": 5
   },
   {
+    "kitsu_id": 12593,
+    "imdb_id": "tt32156033",
+    "title": "Hagane Orchestra"
+  },
+  {
     "kitsu_id": 12643,
     "imdb_id": "tt42962627",
     "title": "Escha Chron",
@@ -29304,6 +29307,18 @@
     "title": "Tales of Demon and God",
     "fromSeason": 9,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 13616,
+    "imdb_id": "tt28772637",
+    "title": "Fox Spirit Matchmaker",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 13892,
+    "imdb_id": "tt7058884",
+    "title": "Haikara-san: Here Comes Miss Modern Part 2"
   },
   {
     "kitsu_id": 42269,
@@ -30167,13 +30182,6 @@
     "title": "Shoujo Kageki Revue Starlight: Rondo Rondo Rondo"
   },
   {
-    "kitsu_id": 42356,
-    "imdb_id": "tt9883676",
-    "title": "We Never Learn: Bokuben",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  {
     "kitsu_id": 42653,
     "imdb_id": "tt10380814",
     "title": "Dino Girl Gauko",
@@ -30625,6 +30633,13 @@
     "kitsu_id": 42019,
     "imdb_id": "tt13620226",
     "title": "Star Twinkle PreCure",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 42042,
+    "imdb_id": "tt12887816",
+    "title": "Virtual-san Looking",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -33242,13 +33257,6 @@
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 44280,
-    "imdb_id": "tt33038878",
-    "title": "Fate/Grand Order: Fujimaru Ritsuka wa Wakaranai",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  {
     "kitsu_id": 46933,
     "imdb_id": "tt33038878",
     "title": "Fate/Grand Order: Fujimaru Ritsuka wa Wakaranai",
@@ -34251,8 +34259,8 @@
   },
   {
     "kitsu_id": 45328,
-    "imdb_id": "tt10915840",
-    "title": "Uchuu senkan Yamato 2205: Aratanaru tabidachi"
+    "imdb_id": "tt21038566",
+    "title": "Space Battleship Yamato 2205: A New Journey"
   },
   {
     "kitsu_id": 45333,
@@ -34452,6 +34460,13 @@
     "title": "Mononogatari",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 47269,
+    "imdb_id": "tt26140070",
+    "title": "Mononogatari",
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   {
     "kitsu_id": 45512,
@@ -37268,13 +37283,6 @@
     "kitsu_id": 47268,
     "imdb_id": "tt27250338",
     "title": "Yakitori: Soldiers of Misfortune",
-    "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  {
-    "kitsu_id": 47269,
-    "imdb_id": "tt26140070",
-    "title": "Mononogatari",
     "fromSeason": 1,
     "fromEpisode": 1
   },
