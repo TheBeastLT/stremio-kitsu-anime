@@ -1,7 +1,8 @@
 name: Check mapping offsets
 
 # Weekly: re-checks the IMDb offsets of sequels, continuation cours and specials that started in the last two MAL
-# seasons against fresh Cinemeta data. Mismatches are kept in one open issue, which is closed once all match again.
+# seasons against fresh Cinemeta data. Mismatches are kept in one open issue, as a checklist whose ticked rows stay
+# ticked while they fail at the same mapped episode; the issue is closed once all match again.
 on:
   schedule:
     - cron: '0 5 * * 4' # Thursdays 05:00 UTC
@@ -10,6 +11,9 @@ on:
 permissions:
   contents: read
   issues: write
+
+env:
+  ISSUE_TITLE: Mapping offsets no longer match Cinemeta
 
 jobs:
   check:
@@ -29,21 +33,26 @@ jobs:
         id: check
         env:
           FANART_APIKEY: ${{ secrets.FANART_APIKEY }}
+          GH_TOKEN: ${{ github.token }}
         run: |
-          node mapping/offset_check.js 2 report.md
+          # the open issue's body: the rows ticked in it stay acknowledged
+          number=$(gh issue list --state open --search "\"$ISSUE_TITLE\" in:title" --json number --jq '.[0].number')
+          echo "number=$number" >> "$GITHUB_OUTPUT"
+          if [ -n "$number" ]; then gh issue view "$number" --json body --jq .body > previous.md; fi
+          node mapping/offset_check.js 2 report.md previous.md
           cat report.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Update issue
         env:
           GH_TOKEN: ${{ github.token }}
           MISMATCHES: ${{ steps.check.outputs.mismatches }}
+          number: ${{ steps.check.outputs.number }}
         run: |
-          title='Mapping offsets no longer match Cinemeta'
-          number=$(gh issue list --state open --search "\"$title\" in:title" --json number --jq '.[0].number')
           if [ "$MISMATCHES" != "0" ]; then
             if [ -z "$number" ]; then
-              gh issue create --title "$title" --body-file report.md
-            elif [ "$(gh issue view "$number" --json body --jq .body)" != "$(cat report.md)" ]; then
+              gh issue create --title "$ISSUE_TITLE" --body-file report.md
+            # the first line holds the run date: only a change in the rows updates the issue
+            elif [ "$(tail -n +2 previous.md)" != "$(tail -n +2 report.md)" ]; then
               gh issue edit "$number" --body-file report.md
               gh issue comment "$number" --body "Updated: $MISMATCHES mismatching rows."
             fi

@@ -65,33 +65,41 @@ function chunks(items, size) {
   return Array.from({ length: Math.ceil(items.length / size) }, (_, i) => items.slice(i * size, (i + 1) * size));
 }
 
-function toMarkdown({ from, now, results }) {
+// The report, its mismatches a checklist: a row ticked in `previous` (the open issue's body) stays ticked, acknowledged,
+// while it keeps failing at the same mapped position.
+function toMarkdown({ from, now, results }, previous = '') {
   const mismatches = results.filter(result => result.status === 'mismatch');
   const unknown = results.filter(result => result.status === 'unknown');
+  const acked = new Set([...previous.matchAll(/^- \[[xX]\] <!-- (\S+) -->/gm)].map(match => match[1]));
   const lines = [
     `Checked ${results.length} sequel/cour/special rows of entries that started `
     + `${from.getTime() ? `${day(from)} – ${day(now)}` : `by ${day(now)}`}: `
     + `${mismatches.length} no longer match Cinemeta, ${unknown.length} could not be checked.`,
   ];
   if (mismatches.length) {
-    lines.push('', '| Kitsu | IMDb | Mapped | Problem | Starts on that day |', '| --- | --- | --- | --- | --- |');
-    mismatches.forEach(result => lines.push(`| ${tableRow(result)} | ${suggestionText(result.suggestions)} |`));
+    lines.push('', 'Tick a row to acknowledge it.', '');
+    mismatches.forEach(result => {
+      const key = `${result.row.kitsu_id}:S${result.row.fromSeason}E${result.row.fromEpisode}`;
+      const fix = suggestionText(result.suggestions);
+      lines.push(`- [${acked.has(key) ? 'x' : ' '}] <!-- ${key} --> ${cells(result).join(' · ')}`
+          + (fix === 'nothing' ? '' : ` · starts on that day: ${fix}`));
+    });
   }
   if (unknown.length) {
     lines.push('', '<details><summary>Could not check</summary>', '',
         '| Kitsu | IMDb | Mapped | Problem |', '| --- | --- | --- | --- |',
-        ...unknown.map(result => `| ${tableRow(result)} |`), '', '</details>');
+        ...unknown.map(result => `| ${cells(result).join(' | ')} |`), '', '</details>');
   }
   return lines.join('\n') + '\n';
 }
 
-function tableRow({ row, kitsuTitle, reason }) {
+function cells({ row, kitsuTitle, reason }) {
   return [
     `[${row.kitsu_id}](https://kitsu.app/anime/${row.kitsu_id}) ${escapeCell(kitsuTitle)}`,
     `[${row.imdb_id}](https://www.imdb.com/title/${row.imdb_id}/) ${escapeCell(row.title)}`,
     `S${row.fromSeason}E${row.fromEpisode}`,
     escapeCell(reason),
-  ].join(' | ');
+  ];
 }
 
 function suggestionText(suggestions = []) {
@@ -106,13 +114,14 @@ function day(date) {
   return date.toISOString().slice(0, 10);
 }
 
-// usage: node mapping/offset_check.js [seasons=2|all] [markdown report path]
+// usage: node mapping/offset_check.js [seasons=2|all] [markdown report path] [previous report path, for its ticks]
 // Under GitHub Actions also writes `mismatches=<count>` to $GITHUB_OUTPUT.
 if (require.main === module) {
-  const [seasons = '2', reportPath] = process.argv.slice(2);
+  const [seasons = '2', reportPath, previousPath] = process.argv.slice(2);
   checkRecentOffsets({ seasons: seasons === 'all' ? 'all' : parseInt(seasons) })
       .then(check => {
-        const report = toMarkdown(check);
+        const report = toMarkdown(check, previousPath && fs.existsSync(previousPath)
+            ? fs.readFileSync(previousPath, 'utf8') : '');
         console.log(report);
         if (reportPath) {
           fs.writeFileSync(reportPath, report);

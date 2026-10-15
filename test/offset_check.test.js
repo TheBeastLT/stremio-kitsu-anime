@@ -92,3 +92,20 @@ test('verifySpecialRun leaves a row with an unknown Kitsu episode count unchecke
   const row = { kitsu_id: 1, fromSeason: 0, fromEpisode: 1 };
   assert.strictEqual(verifySpecialRun({ row, siblings: [row], cinemeta: cinemeta([[0, 1], [0, 2]]) }).unknown, true);
 });
+
+test('toMarkdown lists mismatches as a checklist, keeping the ticks of the previous report', () => {
+  const { toMarkdown } = require('../mapping/offset_check');
+  const mismatch = (kitsuId, fromEpisode) => ({
+    row: { kitsu_id: kitsuId, imdb_id: 'tt1', title: 'Show', fromSeason: 0, fromEpisode }, kitsuTitle: 'Special',
+    status: 'mismatch', reason: 'imdb has no S0E1',
+  });
+  const check = { from: new Date('2026-06-01'), now: new Date('2026-10-15'), results: [mismatch(1, 1), mismatch(2, 4)] };
+  const first = toMarkdown(check);
+  assert.match(first, /^- \[ \] <!-- 1:S0E1 --> /m);
+  // ticked in the issue: kept on the next run, unless the row was remapped
+  const previous = first.replace('- [ ] <!-- 1:S0E1 -->', '- [x] <!-- 1:S0E1 -->').replace('<!-- 2:S0E4 -->', '<!-- 2:S0E3 -->')
+      .replace('- [ ] <!-- 2:S0E3 -->', '- [x] <!-- 2:S0E3 -->');
+  const next = toMarkdown(check, previous);
+  assert.match(next, /^- \[x\] <!-- 1:S0E1 --> /m);
+  assert.match(next, /^- \[ \] <!-- 2:S0E4 --> /m);
+});
