@@ -32297,6 +32297,51 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 43803,
+    "imdb_id": "tt17050076",
+    "title": "Swallowed Star",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 45077,
+    "imdb_id": "tt17050076",
+    "title": "Swallowed Star",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 48060,
+    "imdb_id": "tt17050076",
+    "title": "Swallowed Star",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 48061,
+    "imdb_id": "tt17050076",
+    "title": "Swallowed Star",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 49492,
+    "imdb_id": "tt17050076",
+    "title": "Swallowed Star",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 50285,
+    "imdb_id": "tt17050076",
+    "title": "Swallowed Star",
+    "fromSeason": 0,
+    "fromEpisode": 2,
+    "nonImdbEpisodes": [
+      2
+    ]
+  },
+  {
     "kitsu_id": 43806,
     "imdb_id": "tt13616990",
     "title": "Chainsaw Man",
@@ -38055,13 +38100,6 @@
     "imdb_id": "tt30643971",
     "title": "Saikyou Tank no Meikyuu Kouryaku: Tairyoku 9999 no Rare Skill-mochi Tank, Yuusha Party wo Tsuihou sareru",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  {
-    "kitsu_id": 48061,
-    "imdb_id": "tt17050076",
-    "title": "Tunshi Xingkong 4",
-    "fromSeason": 4,
     "fromEpisode": 1
   },
   {
