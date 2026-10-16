@@ -26797,70 +26797,128 @@
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
     "fromSeason": 1,
-    "fromEpisode": 209
+    "fromEpisode": 209,
+    "nonImdbEpisodes": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
   },
   {
     "kitsu_id": 46536,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
     "fromSeason": 1,
-    "fromEpisode": 222
+    "fromEpisode": 212
   },
   {
     "kitsu_id": 46535,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
     "fromSeason": 1,
-    "fromEpisode": 225
+    "fromEpisode": 215
   },
   {
     "kitsu_id": 46537,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
     "fromSeason": 1,
-    "fromEpisode": 228
+    "fromEpisode": 218
   },
   {
     "kitsu_id": 46538,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
     "fromSeason": 1,
-    "fromEpisode": 231
+    "fromEpisode": 221
   },
   {
     "kitsu_id": 46539,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
     "fromSeason": 1,
-    "fromEpisode": 234
+    "fromEpisode": 224
   },
   {
     "kitsu_id": 46557,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
     "fromSeason": 1,
-    "fromEpisode": 237
+    "fromEpisode": 227
   },
   {
     "kitsu_id": 46558,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
     "fromSeason": 1,
-    "fromEpisode": 241
+    "fromEpisode": 232,
+    "nonImdbEpisodes": [4]
   },
   {
     "kitsu_id": 46813,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
     "fromSeason": 1,
-    "fromEpisode": 245
+    "fromEpisode": 235
   },
   {
     "kitsu_id": 47595,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
     "fromSeason": 1,
-    "fromEpisode": 249
+    "fromEpisode": 239
+  },
+  {
+    "kitsu_id": 47596,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 242
+  },
+  {
+    "kitsu_id": 47597,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 245
+  },
+  {
+    "kitsu_id": 47598,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 248
+  },
+  {
+    "kitsu_id": 47599,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 251
+  },
+  {
+    "kitsu_id": 47600,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 254
+  },
+  {
+    "kitsu_id": 47601,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 257
+  },
+  {
+    "kitsu_id": 47602,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 260
+  },
+  {
+    "kitsu_id": 47603,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 262
   },
   {
     "kitsu_id": 41007,
