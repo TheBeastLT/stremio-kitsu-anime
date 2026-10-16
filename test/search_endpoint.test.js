@@ -38,3 +38,11 @@ test('/search/{query}.json rejects a malformed query', async () => {
   const { status } = await get('/search/%E0%A4%A.json');
   assert.strictEqual(status, 400);
 });
+
+test('/meta of an id with no anime behind it is a 404, not a handler error', async () => {
+  // no imdb mapping (Game of Thrones), no valid id: answered without Kitsu or Cinemeta
+  for (const path of ['/meta/series/tt0944947.json', '/meta/series/foo.json']) {
+    const { status } = await get(path);
+    assert.strictEqual(status, 404, path);
+  }
+});

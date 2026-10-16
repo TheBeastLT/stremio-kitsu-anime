@@ -117,20 +117,26 @@ builder.defineCatalogHandler((args) => {
       .then((metas) => ({ metas: metas, cacheMaxAge: CACHE_MAX_AGE })));
 });
 
+// An id with no anime behind it (no imdb mapping, unknown to Kitsu): the router's 404, so a caller can tell it from a
+// failure (500), the SDK's handler error for every other rejection.
+const notFound = (reason) => Promise.reject({ noHandler: true, reason });
+const isNotFound = (error) => error?.errors?.some((kitsuError) => `${kitsuError.status}` === '404')
+    || /^No kitsu id found for:/.test(error);
+
 builder.defineMetaHandler((args) => {
   if (args.id.match(/^(?:kitsu|mal|anilist|anidb):\d+$/)) {
-    return getKitsuIdMetadata(args.id);
+    return getKitsuIdMetadata(args.id).catch((error) => isNotFound(error) ? notFound(error) : Promise.reject(error));
   }
   if (args.id.match(/^tt\d+$/)) {
     const id = args.id;
 
     if (!hasImdbMapping(id)) {
-      return Promise.reject(`No imdb mapping for: ${id}`);
+      return notFound(`No imdb mapping for: ${id}`);
     }
 
     return getImdbIdMetadata(id);
   }
-  return Promise.reject(`Invalid id: ${args.id}`);
+  return notFound(`Invalid id: ${args.id}`);
 });
 
 builder.defineSubtitlesHandler((args) => {

@@ -32,6 +32,6 @@ module.exports = (req, res) => {
   req.url = req.url.split('?')[0];
   router(req, res, (error) => {
     res.statusCode = error?.status || 404;
-    res.end();
+    res.end(res.statusCode === 404 ? JSON.stringify({ err: 'not found' }) : undefined);
   });
 };
