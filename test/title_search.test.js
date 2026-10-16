@@ -116,6 +116,8 @@ test('the title index finds the expected Kitsu entries', () => {
     'suikoden': 50988, // the series, not the 1993 OVA whose synonym "Suikoden" is the only exact match
     'fighting spirit 2000 S3': 7855, // Rising, by its imdb's English title "Fighting Spirit"; 2000 is the premiere year
     'the prince of tennis ii S5': 51007, // a release group's franchise-wide season: by its alias
+    're zero shin henshuu ban': 42903, // the re-edit, below every entry titled just "Re:Zero"
+    're zero director\'s cut': 42903,
     'steven universe S1': 10735, // not Future, S1 of its own imdb but titled "Season 6"
     'kizumonogatari i - tekketsu': 5649,
     'kizumonogatari ii - nekketsu': 11406,
