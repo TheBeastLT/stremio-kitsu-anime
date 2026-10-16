@@ -118,8 +118,10 @@ test('the title index finds the expected Kitsu entries', () => {
     'the prince of tennis ii S5': 51007, // a release group's franchise-wide season: by its alias
     'bleach S17': 43078, // Thousand-Year Blood War, by its alias
     'bleach S1': 244, // still the 2004 series, though the alias gives TYBW an exact "Bleach" title
+    'bleach thousand-year blood war (cour 2) 2023 S17': 46903, // the cour beside S17 is the season's part 2
     're zero shin henshuu ban': 42903, // the re-edit, below every entry titled just "Re:Zero"
     're zero director\'s cut': 42903,
+    'shingeki no kyojin final S60': 42422, // "S60" is a season, not a trailing episode 60
     'steven universe S1': 10735, // not Future, S1 of its own imdb but titled "Season 6"
     'kizumonogatari i - tekketsu': 5649,
     'kizumonogatari ii - nekketsu': 11406,
