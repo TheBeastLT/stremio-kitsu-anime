@@ -17529,6 +17529,34 @@
     "fromEpisode": 26
   },
   {
+    "kitsu_id": 8707,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 0,
+    "fromEpisode": 18
+  },
+  {
+    "kitsu_id": 11439,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 0,
+    "fromEpisode": 22
+  },
+  {
+    "kitsu_id": 12669,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 0,
+    "fromEpisode": 28
+  },
+  {
+    "kitsu_id": 13649,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 0,
+    "fromEpisode": 36
+  },
+  {
     "kitsu_id": 7936,
     "imdb_id": "tt0417299",
     "title": "Avatar: The Last Airbender",
