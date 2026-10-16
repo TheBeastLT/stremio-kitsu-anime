@@ -386,8 +386,8 @@
     "imdb_id": "tt0872301",
     "fanartLogoId": "116243",
     "title": "Ah! My Goddess",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 25
   },
   {
     "kitsu_id": 7780,
@@ -3746,8 +3746,8 @@
     "kitsu_id": 7263,
     "imdb_id": "tt2363624",
     "title": "Yu-Gi-Oh! Zexal",
-    "fromSeason": 2,
-    "fromEpisode": 25
+    "fromSeason": 4,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 444,
@@ -4526,36 +4526,36 @@
     "kitsu_id": 499,
     "imdb_id": "tt0105559",
     "title": "Tenchi Muyo!",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 8
   },
   {
     "kitsu_id": 500,
     "imdb_id": "tt0105559",
     "title": "Tenchi Muyo!",
-    "fromSeason": 3,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 14
   },
   {
     "kitsu_id": 1028,
     "imdb_id": "tt0105559",
     "title": "Tenchi Muyo!",
-    "fromSeason": 3,
-    "fromEpisode": 7
+    "fromSeason": 1,
+    "fromEpisode": 20
   },
   {
     "kitsu_id": 11451,
     "imdb_id": "tt0105559",
     "title": "Tenchi Muyo!",
-    "fromSeason": 4,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 21
   },
   {
     "kitsu_id": 42491,
     "imdb_id": "tt0105559",
     "title": "Tenchi Muyo!",
-    "fromSeason": 5,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 25
   },
   {
     "kitsu_id": 2485,
@@ -5514,17 +5514,17 @@
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 1236,
+    "kitsu_id": 3600,
     "imdb_id": "tt0143007",
     "title": "King of the Braves GaoGaiGar",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 3600,
+    "kitsu_id": 1236,
     "imdb_id": "tt0143007",
     "title": "King of the Braves GaoGaiGar",
-    "fromSeason": 3,
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -6272,8 +6272,8 @@
     "kitsu_id": 989,
     "imdb_id": "tt1634548",
     "title": "Marriage of God & Soul Godannar!! ",
-    "fromSeason": 1,
-    "fromEpisode": 14
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 992,
@@ -6964,7 +6964,7 @@
     "kitsu_id": 1810,
     "imdb_id": "tt4164662",
     "title": "You're Under Arrest: Mini Specials",
-    "fromSeason": 3,
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   {
@@ -8847,7 +8847,7 @@
     "kitsu_id": 2182,
     "imdb_id": "tt0236924",
     "title": "Sazae-san",
-    "fromSeason": 1,
+    "fromSeason": 1969,
     "fromEpisode": 1
   },
   {
@@ -10821,8 +10821,8 @@
     "kitsu_id": 4455,
     "imdb_id": "tt1356884",
     "title": "White Album",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 14
   },
   {
     "kitsu_id": 7697,
@@ -12214,18 +12214,18 @@
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 5943,
-    "imdb_id": "tt1685397",
-    "title": "Amagami SS",
-    "fromSeason": 0,
-    "fromEpisode": 7
-  },
-  {
     "kitsu_id": 6785,
     "imdb_id": "tt1685397",
     "title": "Amagami SS",
     "fromSeason": 0,
     "fromEpisode": 8
+  },
+  {
+    "kitsu_id": 5943,
+    "imdb_id": "tt1685397",
+    "title": "Amagami SS",
+    "fromSeason": 0,
+    "fromEpisode": 18
   },
   {
     "kitsu_id": 5443,
@@ -12290,8 +12290,8 @@
     "imdb_id": "tt1727444",
     "fanartLogoId": "208369",
     "title": "Panty & Stocking with Garterbelt",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 14
   },
   {
     "kitsu_id": 6326,
@@ -14303,8 +14303,8 @@
     "kitsu_id": 7184,
     "imdb_id": "tt2245880",
     "title": "AKB0048",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 14
   },
   {
     "kitsu_id": 6686,
@@ -16028,24 +16028,24 @@
     "title": "Leviathan: The Last Defense"
   },
   {
-    "kitsu_id": 6064,
+    "kitsu_id": 7646,
     "imdb_id": "tt4563516",
     "title": "DD Fist of the North Star",
     "fromSeason": 1,
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 7646,
+    "kitsu_id": 11080,
     "imdb_id": "tt4563516",
     "title": "DD Fist of the North Star",
     "fromSeason": 2,
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 11080,
+    "kitsu_id": 6064,
     "imdb_id": "tt4563516",
     "title": "DD Fist of the North Star",
-    "fromSeason": 3,
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -16411,8 +16411,8 @@
     "kitsu_id": 7698,
     "imdb_id": "tt2632048",
     "title": "Kakumeiki Valvrave",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   {
     "kitsu_id": 7699,
@@ -17494,8 +17494,8 @@
     "kitsu_id": 12629,
     "imdb_id": "tt3066242",
     "title": "RWBY",
-    "fromSeason": 4,
-    "fromEpisode": 0
+    "fromSeason": 0,
+    "fromEpisode": 26
   },
   {
     "kitsu_id": 7936,
@@ -18182,8 +18182,8 @@
     "kitsu_id": 8194,
     "imdb_id": "tt4219290",
     "title": "Sengoku musou Special",
-    "fromSeason": 1,
-    "fromEpisode": 13
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 8195,
@@ -19364,8 +19364,8 @@
     "kitsu_id": 9136,
     "imdb_id": "tt3544556",
     "title": "Aldnoah.Zero",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   {
     "kitsu_id": 9137
@@ -20563,8 +20563,8 @@
     "kitsu_id": 11421,
     "imdb_id": "tt5095466",
     "title": "The Asterisk War: The Academy City on the Water",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   {
     "kitsu_id": 10858,
@@ -21005,8 +21005,8 @@
     "kitsu_id": 11179,
     "imdb_id": "tt4542568",
     "title": "Snow White with the Red Hair",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   {
     "kitsu_id": 11181,
@@ -22596,8 +22596,8 @@
     "kitsu_id": 12672,
     "imdb_id": "tt6114698",
     "title": "Nobunaga No Shinobi",
-    "fromSeason": 1,
-    "fromEpisode": 0
+    "fromSeason": 0,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 11880,
@@ -22904,8 +22904,8 @@
     "kitsu_id": 41396,
     "imdb_id": "tt7940468",
     "title": "Fate/Extra Last Encore",
-    "fromSeason": 1,
-    "fromEpisode": 11
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 12009,
@@ -22979,64 +22979,78 @@
     "kitsu_id": 12276,
     "imdb_id": "tt9089548",
     "title": "Fox Spirit Matchmaker",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 14
   },
   {
     "kitsu_id": 12277,
     "imdb_id": "tt9089548",
     "title": "Fox Spirit Matchmaker",
-    "fromSeason": 3,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 28
   },
   {
     "kitsu_id": 13246,
     "imdb_id": "tt9089548",
     "title": "Fox Spirit Matchmaker",
-    "fromSeason": 4,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 41
   },
   {
     "kitsu_id": 13644,
     "imdb_id": "tt9089548",
     "title": "Fox Spirit Matchmaker",
-    "fromSeason": 5,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 49
   },
   {
     "kitsu_id": 14238,
     "imdb_id": "tt9089548",
     "title": "Fox Spirit Matchmaker",
-    "fromSeason": 6,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 64
   },
   {
     "kitsu_id": 42411,
     "imdb_id": "tt9089548",
     "title": "Fox Spirit Matchmaker",
-    "fromSeason": 7,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 90
   },
   {
     "kitsu_id": 42926,
     "imdb_id": "tt9089548",
     "title": "Fox Spirit Matchmaker",
-    "fromSeason": 8,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 102
   },
   {
     "kitsu_id": 43350,
     "imdb_id": "tt9089548",
     "title": "Fox Spirit Matchmaker",
-    "fromSeason": 9,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 112
   },
   {
     "kitsu_id": 43885,
     "imdb_id": "tt9089548",
     "title": "Fox Spirit Matchmaker",
-    "fromSeason": 10,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 122
+  },
+  {
+    "kitsu_id": 48339,
+    "imdb_id": "tt9089548",
+    "title": "Fox Spirit Matchmaker",
+    "fromSeason": 1,
+    "fromEpisode": 134
+  },
+  {
+    "kitsu_id": 48341,
+    "imdb_id": "tt9089548",
+    "title": "Fox Spirit Matchmaker",
+    "fromSeason": 1,
+    "fromEpisode": 146
   },
   {
     "kitsu_id": 12088,
@@ -24757,13 +24771,6 @@
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 13343,
-    "imdb_id": "tt5603088",
-    "title": "Monster Strike",
-    "fromSeason": 2,
-    "fromEpisode": 0
-  },
-  {
     "kitsu_id": 13970,
     "imdb_id": "tt5603088",
     "title": "Monster Strike",
@@ -24776,6 +24783,13 @@
     "title": "Monster Strike",
     "fromSeason": 4,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 13343,
+    "imdb_id": "tt5603088",
+    "title": "Monster Strike",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   {
     "kitsu_id": 41499,
@@ -26674,148 +26688,148 @@
     "kitsu_id": 42037,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 27
   },
   {
     "kitsu_id": 44607,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 3,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 79
   },
   {
     "kitsu_id": 44609,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 4,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 92
   },
   {
     "kitsu_id": 44611,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 5,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 105
   },
   {
     "kitsu_id": 44616,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 6,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 118
   },
   {
     "kitsu_id": 44617,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 7,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 131
   },
   {
     "kitsu_id": 44624,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 8,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 144
   },
   {
     "kitsu_id": 44625,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 9,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 157
   },
   {
     "kitsu_id": 45032,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 10,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 170
   },
   {
     "kitsu_id": 45661,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 11,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 183
   },
   {
     "kitsu_id": 46149,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 12,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 196
   },
   {
     "kitsu_id": 46150,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 13,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 209
   },
   {
     "kitsu_id": 46536,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 14,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 222
   },
   {
     "kitsu_id": 46535,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 15,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 225
   },
   {
     "kitsu_id": 46537,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 16,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 228
   },
   {
     "kitsu_id": 46538,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 17,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 231
   },
   {
     "kitsu_id": 46539,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 18,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 234
   },
   {
     "kitsu_id": 46557,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 19,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 237
   },
   {
     "kitsu_id": 46558,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 20,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 241
   },
   {
     "kitsu_id": 46813,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 21,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 245
   },
   {
     "kitsu_id": 47595,
     "imdb_id": "tt8948436",
     "title": "Douluo Dalu",
-    "fromSeason": 22,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 249
   },
   {
     "kitsu_id": 41007,
@@ -27278,15 +27292,15 @@
     "kitsu_id": 42114,
     "imdb_id": "tt12209234",
     "title": "Kiratto Pri Chan",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 52
   },
   {
     "kitsu_id": 43369,
     "imdb_id": "tt12209234",
     "title": "Kiratto Pri Chan",
-    "fromSeason": 3,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 103
   },
   {
     "kitsu_id": 41142,
@@ -27599,8 +27613,8 @@
     "kitsu_id": 42039,
     "imdb_id": "tt8755254",
     "title": "Hangyakusei Million Arthur",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 11
   },
   {
     "kitsu_id": 41336,
@@ -28404,8 +28418,8 @@
     "kitsu_id": 43142,
     "imdb_id": "tt9466298",
     "title": "Ghost in the Shell SAC_2045",
-    "fromSeason": 1,
-    "fromEpisode": 13
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 42043,
@@ -29354,7 +29368,7 @@
     "kitsu_id": 40811,
     "imdb_id": "tt14209702",
     "title": "Oshiri Tantei",
-    "fromSeason": 10,
+    "fromSeason": 1,
     "fromEpisode": 1
   },
   {
@@ -30942,22 +30956,22 @@
     "kitsu_id": 43614,
     "imdb_id": "tt12809744",
     "title": "All Saints Street",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   {
     "kitsu_id": 44980,
     "imdb_id": "tt12809744",
     "title": "All Saints Street",
-    "fromSeason": 3,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 25
   },
   {
     "kitsu_id": 46867,
     "imdb_id": "tt12809744",
     "title": "All Saints Street",
-    "fromSeason": 4,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 37
   },
   {
     "kitsu_id": 43198,
@@ -31064,8 +31078,8 @@
     "imdb_id": "tt11328872",
     "fanartLogoId": "169319",
     "title": "In/Spectre",
-    "fromSeason": 1,
-    "fromEpisode": 13
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 42524,
@@ -31391,8 +31405,8 @@
     "kitsu_id": 44199,
     "imdb_id": "tt12287748",
     "title": "Yashahime: Princess Half-Demon",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 25
   },
   {
     "kitsu_id": 43212,
@@ -32084,8 +32098,8 @@
     "kitsu_id": 45252,
     "imdb_id": "tt13399402",
     "title": "How a Realist Hero Rebuilt the Kingdom",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 14
   },
   {
     "kitsu_id": 43620,
@@ -32483,8 +32497,8 @@
     "kitsu_id": 46532,
     "imdb_id": "tt13567394",
     "title": "Cute Executive Officer",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 14
   },
   {
     "kitsu_id": 43845,
@@ -33123,8 +33137,8 @@
     "kitsu_id": 45993,
     "imdb_id": "tt15170340",
     "title": "Orient",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   {
     "kitsu_id": 44206,
@@ -33677,8 +33691,8 @@
     "kitsu_id": 45641,
     "imdb_id": "tt14626352",
     "title": "Komi Can't Communicate",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   {
     "kitsu_id": 44574,
@@ -34256,8 +34270,8 @@
     "kitsu_id": 47231,
     "imdb_id": "tt15538376",
     "title": "Sugar Apple Fairy Tale",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 13
   },
   {
     "kitsu_id": 45271,
@@ -35373,15 +35387,15 @@
     "kitsu_id": 46974,
     "imdb_id": "tt21244528",
     "title": "Yoru wa Neko to Issho",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 31
   },
   {
     "kitsu_id": 48567,
     "imdb_id": "tt21244528",
     "title": "Yoru wa Neko to Issho",
-    "fromSeason": 3,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 61
   },
   {
     "kitsu_id": 46099,
@@ -37463,8 +37477,8 @@
     "kitsu_id": 49013,
     "imdb_id": "tt31957516",
     "title": "Oi! Tonbo",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 14
   },
   {
     "kitsu_id": 47454,
@@ -37885,8 +37899,8 @@
     "kitsu_id": 48212,
     "imdb_id": "tt29473209",
     "title": "After-school Hanako-kun",
-    "fromSeason": 2,
-    "fromEpisode": 1
+    "fromSeason": 1,
+    "fromEpisode": 5
   },
   {
     "kitsu_id": 47891,
