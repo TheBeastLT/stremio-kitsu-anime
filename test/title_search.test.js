@@ -127,6 +127,9 @@ test('the title index finds the expected Kitsu entries', () => {
     'white album S2': 4455,
     'ghost in the shell-sac S2': 715, // Stand Alone Complex's 2nd GIG, not SAC_2045 2nd Season: by its alias
     'prince of tennis - another story': 4264, // the first part, not the "OVA Another Story II" synonym's
+    'gate jieitai kanochi nite': 10085, // not Part 2, which has the bare name as an own title too
+    'oye tonbo!': 47427, // not the 2nd Season's Spanish title "¡Oye Tonbo!"
+    'oye tonbo! S2': 49013,
     'steven universe S1': 10735, // not Future, S1 of its own imdb but titled "Season 6"
     'kizumonogatari i - tekketsu': 5649,
     'kizumonogatari ii - nekketsu': 11406,
