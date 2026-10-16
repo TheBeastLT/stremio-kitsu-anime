@@ -125,6 +125,7 @@ test('the title index finds the expected Kitsu entries', () => {
     'shingeki no kyojin junior high': 11315, // romaji franchise, English subtitle: by its alias
     'white album S3': 7697, // White Album 2, the franchise's 3rd series to release groups: by its alias
     'white album S2': 4455,
+    'ghost in the shell-sac S2': 715, // Stand Alone Complex's 2nd GIG, not SAC_2045 2nd Season: by its alias
     'steven universe S1': 10735, // not Future, S1 of its own imdb but titled "Season 6"
     'kizumonogatari i - tekketsu': 5649,
     'kizumonogatari ii - nekketsu': 11406,
