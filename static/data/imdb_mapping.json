@@ -14697,6 +14697,34 @@
     "fromEpisode": 46
   },
   {
+    "kitsu_id": 12320,
+    "imdb_id": "tt2294076",
+    "title": "Girls und Panzer",
+    "fromSeason": 0,
+    "fromEpisode": 35
+  },
+  {
+    "kitsu_id": 12203,
+    "imdb_id": "tt2294076",
+    "title": "Girls und Panzer",
+    "fromSeason": 0,
+    "fromEpisode": 38
+  },
+  {
+    "kitsu_id": 42385,
+    "imdb_id": "tt2294076",
+    "title": "Girls und Panzer",
+    "fromSeason": 0,
+    "fromEpisode": 44
+  },
+  {
+    "kitsu_id": 45025,
+    "imdb_id": "tt2294076",
+    "title": "Girls und Panzer",
+    "fromSeason": 0,
+    "fromEpisode": 52
+  },
+  {
     "kitsu_id": 7090,
     "imdb_id": "tt2404237",
     "title": "Hanasaku Iroha: Home Sweet Home"
@@ -15818,14 +15846,16 @@
     "imdb_id": "tt2560140",
     "title": "Attack on Titan",
     "fromSeason": 0,
-    "fromEpisode": 15
+    "fromEpisode": 15,
+    "imdbEpisodes": [15, 17]
   },
   {
     "kitsu_id": 13718,
     "imdb_id": "tt2560140",
     "title": "Attack on Titan",
     "fromSeason": 0,
-    "fromEpisode": 20
+    "fromEpisode": 20,
+    "imdbEpisodes": [20, 22, 23]
   },
   {
     "kitsu_id": 7446,
@@ -17488,7 +17518,8 @@
     "imdb_id": "tt3066242",
     "title": "RWBY",
     "fromSeason": 0,
-    "fromEpisode": 1
+    "fromEpisode": 1,
+    "nonImdbEpisodes": [1, 2, 3, 4]
   },
   {
     "kitsu_id": 12629,
