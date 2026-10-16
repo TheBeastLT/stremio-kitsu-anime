@@ -6642,7 +6642,7 @@
     "imdb_id": "tt2152368",
     "title": "Saint Seiya: The Lost Canvas",
     "fromSeason": 1,
-    "fromEpisode": 13
+    "fromEpisode": 14
   },
   {
     "kitsu_id": 6850,
@@ -14859,13 +14859,6 @@
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 7143,
-    "imdb_id": "tt6163360",
-    "title": "Recorder to Randoseru",
-    "fromSeason": 2,
-    "fromEpisode": 13
-  },
-  {
     "kitsu_id": 7146,
     "imdb_id": "tt2338857",
     "title": "Hiiro no Kakera",
@@ -16383,6 +16376,20 @@
     "title": "Recorder to Randoseru",
     "fromSeason": 3,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 7143,
+    "imdb_id": "tt6163360",
+    "title": "Recorder to Randoseru",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 8569,
+    "imdb_id": "tt6163360",
+    "title": "Recorder to Randoseru Special",
+    "fromSeason": 0,
+    "fromEpisode": 3
   },
   {
     "kitsu_id": 7696,
@@ -18694,13 +18701,6 @@
     "kitsu_id": 8558,
     "imdb_id": "tt3717892",
     "title": "Nobunaga Concerto"
-  },
-  {
-    "kitsu_id": 8569,
-    "imdb_id": "tt6163360",
-    "title": "Recorder to Randoseru Special",
-    "fromSeason": 3,
-    "fromEpisode": 13
   },
   {
     "kitsu_id": 8575,
@@ -23162,13 +23162,6 @@
     "title": "Magic Kyun! Renaissance",
     "fromSeason": 1,
     "fromEpisode": 1
-  },
-  {
-    "kitsu_id": 12199,
-    "imdb_id": "tt2320220",
-    "title": "Kamisama Kiss",
-    "fromSeason": 0,
-    "fromEpisode": 6
   },
   {
     "kitsu_id": 12200,

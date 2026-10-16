@@ -37,6 +37,24 @@ test('imdb_mapping has no two rows starting at the same imdb episode', () => {
   assert.deepStrictEqual([...starts].filter(([, kitsuIds]) => kitsuIds.length > 1), []);
 });
 
+test('imdb_mapping has no finished entry running into the next row of its imdb season', () => {
+  // its last episodes would land on the next entry's (Lost Canvas 2 at S1E13, the first part's last episode); specials
+  // are left out: Kitsu and IMDb often group them differently
+  const { readRecords } = require('../lib/title_records');
+  const counts = new Map(readRecords().filter(record => record.status === 'finished' && record.episodeCount)
+      .map(record => [record.id, record.episodeCount]));
+  const seasons = new Map();
+  rows.filter(row => row.imdb_id && row.fromSeason > 0).forEach(row => {
+    const season = `${row.imdb_id} S${row.fromSeason}`;
+    seasons.set(season, [...(seasons.get(season) || []), row].sort((a, b) => a.fromEpisode - b.fromEpisode));
+  });
+  const overlaps = [...seasons].flatMap(([season, seasonRows]) => seasonRows.slice(0, -1)
+      .filter((row, i) => counts.has(row.kitsu_id) && row.fromEpisode
+          + counts.get(row.kitsu_id) - (row.nonImdbEpisodes || []).length > seasonRows[i + 1].fromEpisode)
+      .map(row => `${season}: ${row.kitsu_id}`));
+  assert.deepStrictEqual(overlaps, []);
+});
+
 const { addRows } = require('../mapping/add_rows');
 
 test('addRows inserts a special after its imdb siblings, taking their title', () => {
