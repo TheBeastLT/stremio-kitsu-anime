@@ -47,13 +47,13 @@ async function checkRows(rows, kitsuEntries, from, now) {
 }
 
 // The season-0 rows of the checked imdbs, whose runs the Cinemeta metas fetched anyway can check. Rows the runtime caps
-// at their episode count can't spill, and rows that can't be checked (no Kitsu episode count) are left out, as nothing
-// about them changed.
+// at their episode count, or listing their imdb episodes, can't spill, and rows that can't be checked (no Kitsu
+// episode count) are left out, as nothing about them changed.
 async function checkSpecialRuns(imdbIds, kitsuEntries, cinemetas) {
   const siblingGroups = await mapWithConcurrency(imdbIds, CINEMETA_CONCURRENCY,
       imdbId => siblingsOf(imdbId, true, { specials: true }));
   return siblingGroups.flatMap((siblings, index) => siblings
-      .filter(row => row.fromSeason === 0 && !episodeCap(row.kitsu_id))
+      .filter(row => row.fromSeason === 0 && !row.imdbEpisodes && !episodeCap(row.kitsu_id))
       .map(row => ({ row, ...verifySpecialRun({ row, siblings, cinemeta: cinemetas[imdbIds[index]] }) }))
       .filter(({ unknown }) => !unknown)
       .map(({ row, ok, reason }) => ({
@@ -65,8 +65,8 @@ function chunks(items, size) {
   return Array.from({ length: Math.ceil(items.length / size) }, (_, i) => items.slice(i * size, (i + 1) * size));
 }
 
-// The report, its mismatches a checklist: a row ticked in `previous` (the open issue's body) stays ticked, acknowledged,
-// while it keeps failing at the same mapped position.
+// The report, its mismatches a checklist: a row ticked in `previous` (the open issue's body) stays ticked,
+// acknowledged, while it keeps failing at the same mapped position.
 function toMarkdown({ from, now, results }, previous = '') {
   const mismatches = results.filter(result => result.status === 'mismatch');
   const unknown = results.filter(result => result.status === 'unknown');

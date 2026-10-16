@@ -89,3 +89,29 @@ test('movies get no franchise-wide number', async () => {
   assert.deepStrictEqual([movie.videos[0].absoluteEpisode, toImdbMovie.videos[0].absoluteEpisode],
       [undefined, undefined]);
 });
+
+// One Piece (tt0388629) specials: Barto's Secret Room (45690) is S0E40, 41, 49 and 50; 48291 is S0E47
+const ONE_PIECE_SPECIALS = cinemetaVideos('tt0388629', [[0, 60]]);
+
+test('a kitsu entry listing its imdb episodes takes them, out of sequence', async () => {
+  const meta = await enrichKitsuMetadata(kitsuMeta(45690, 4), async () => ({ videos: ONE_PIECE_SPECIALS }));
+  assert.deepStrictEqual(meta.videos.map((video) => video.imdbEpisode), [40, 41, 49, 50]);
+  // Stargazer (1092) is one IMDb special for its three Kitsu episodes
+  const stargazer = await enrichKitsuMetadata(kitsuMeta(1092, 3), async () => ({
+    videos: cinemetaVideos('tt0434694', [[0, 10]]),
+  }));
+  assert.deepStrictEqual(stargazer.videos.map((video) => video.imdbEpisode), [7, undefined, undefined]);
+});
+
+test('a kitsu entry\'s run steps over the episodes another row lists', async () => {
+  const meta = await enrichKitsuMetadata(kitsuMeta(48291, 3), async () => ({ videos: ONE_PIECE_SPECIALS }));
+  assert.deepStrictEqual(meta.videos.map((video) => video.imdbEpisode), [47, 48, 51]);
+});
+
+test('an imdb meta gives listed episodes to the row listing them, not to the run they fall in', async () => {
+  const meta = await enrichImdbMetadata({ id: 'tt0388629', type: 'series', videos: [...ONE_PIECE_SPECIALS] },
+      async () => assert.fail('no kitsu lookup'));
+  const special = (episode) => meta.videos.find((video) => video.season === 0 && video.episode === episode);
+  assert.deepStrictEqual([41, 42, 49, 50].map((episode) => [special(episode).kitsu_id, special(episode).kitsuEpisode]),
+      [['45690', 2], ['46215', 1], ['45690', 3], ['45690', 4]]);
+});

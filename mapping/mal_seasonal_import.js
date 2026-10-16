@@ -10,7 +10,7 @@ const {
   getFribbEntry, getFribbEntryByKitsu, isFribbLinked, malKitsuLink, kitsuIdFromLinks, resolveImdbId,
 } = require('./fribb_mapping');
 const { getFreshCinemetaMetadata } = require('../lib/cinemeta_api');
-const { insertMappingEntry, insertInKitsuOrder } = require('./mapping_file');
+const { insertMappingEntry, insertInKitsuOrder, formatJson } = require('./mapping_file');
 const { searchImdbIds, firstTrusted } = require('./imdb_search');
 const {
   seasonWindow, verifyCandidate, verifyFreshTitle, verifySpecial, nextSeason, continuationStart, SPECIAL_TYPES,
@@ -449,7 +449,7 @@ function writeImdbMappingToFile(imdbMappingEntries) {
 }
 
 function writeToFile(object, path) {
-  fs.writeFile(path, JSON.stringify(object, null, 2), 'utf8', function (err) {
+  fs.writeFile(path, formatJson(object), 'utf8', function (err) {
     if (err) {
       console.log("An error occurred while writing JSON Object to File:", err);
     }

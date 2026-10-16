@@ -204,10 +204,16 @@
         return JSON.parse(await (await fh.getFile()).text());
     }
 
+    // the mapping files' format (mirrors mapping/mapping_file.js formatJson): a list of numbers on one line
+    function formatJson(obj) {
+        return JSON.stringify(obj, null, 2).replace(/\[\s+((?:-?\d+|null)(?:,\s+(?:-?\d+|null))*)\s+\]/g,
+            (_, items) => `[${items.split(/,\s+/).join(', ')}]`);
+    }
+
     async function writeJson(name, obj) {
         const fh = await dirHandle.getFileHandle(name, { create: true });
         const w = await fh.createWritable();
-        await w.write(JSON.stringify(obj, null, 2));
+        await w.write(formatJson(obj));
         await w.close();
     }
 
@@ -580,7 +586,7 @@
 
     // Manual safety-net download of the current in-memory imdb_mapping (does not need the folder).
     function exportBackup() {
-        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(imdbData, null, 2));
+        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(formatJson(imdbData));
         const dl = document.createElement('a');
         dl.setAttribute("href", dataStr);
         dl.setAttribute("download", "imdb_mapping.json");

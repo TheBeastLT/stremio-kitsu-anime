@@ -6,6 +6,7 @@ const path = require('path');
 const MAPPING_PATH = path.join(__dirname, '../static/data/imdb_mapping.json');
 const source = fs.readFileSync(MAPPING_PATH, 'utf8');
 const rows = JSON.parse(source);
+const { formatJson } = require('../mapping/mapping_file');
 
 test('imdb_mapping has one row per kitsu id', () => {
   // the runtime keys rows by kitsu id, so a second row silently replaces the first
@@ -16,7 +17,7 @@ test('imdb_mapping has one row per kitsu id', () => {
 
 test('imdb_mapping keeps the 2-space JSON format the review page and importer write', () => {
   // the page and the importer write no trailing newline, editors add one: either is fine
-  assert.ok(source.trimEnd() === JSON.stringify(rows, null, 2), 'reformat with JSON.stringify(rows, null, 2)');
+  assert.ok(source.trimEnd() === formatJson(rows), 'reformat with formatJson (mapping/mapping_file.js)');
 });
 
 test('imdb_mapping rows have a numeric kitsu id, a tt imdb id and both start fields or neither', () => {
@@ -53,6 +54,23 @@ test('imdb_mapping has no finished entry running into the next row of its imdb s
           + counts.get(row.kitsu_id) - (row.nonImdbEpisodes || []).length > seasonRows[i + 1].fromEpisode)
       .map(row => `${season}: ${row.kitsu_id}`));
   assert.deepStrictEqual(overlaps, []);
+});
+
+test('imdb_mapping lists imdbEpisodes as season-0 episodes, each claimed by one row only', () => {
+  // the list replaces the row's run: kitsu episode i is S0E<imdbEpisodes[i - 1]>, null for none; fromEpisode is its
+  // first episode, and no other row starts at, or lists, one of them
+  const listing = rows.filter(row => row.imdbEpisodes);
+  const invalid = listing.filter(row => row.fromSeason !== 0 || row.nonImdbEpisodes || !Array.isArray(row.imdbEpisodes)
+      || !row.imdbEpisodes.every(episode => episode === null || Number.isInteger(episode) && episode > 0)
+      || row.fromEpisode !== row.imdbEpisodes.find(Number.isInteger));
+  assert.deepStrictEqual(invalid.map(row => row.kitsu_id), []);
+  const claims = new Map();
+  rows.filter(row => row.imdb_id && row.fromSeason === 0).forEach(row => (row.imdbEpisodes || [row.fromEpisode])
+      .filter(Number.isInteger).forEach(episode => {
+        const key = `${row.imdb_id} S0E${episode}`;
+        claims.set(key, [...(claims.get(key) || []), row.kitsu_id]);
+      }));
+  assert.deepStrictEqual([...claims].filter(([, kitsuIds]) => kitsuIds.length > 1), []);
 });
 
 const { addRows } = require('../mapping/add_rows');

@@ -24,4 +24,11 @@ function insertInKitsuOrder(base, item) {
   base.splice(idx === -1 ? base.length : idx, 0, item);
 }
 
-module.exports = { insertMappingEntry, insertInKitsuOrder };
+// The mapping files' format: 2-space JSON, a list of numbers on one line ("imdbEpisodes": [40, 41, 49, 50]).
+// mapping_index.html keeps a copy.
+function formatJson(object) {
+  return JSON.stringify(object, null, 2).replace(/\[\s+((?:-?\d+|null)(?:,\s+(?:-?\d+|null))*)\s+\]/g,
+      (_, items) => `[${items.split(/,\s+/).join(', ')}]`);
+}
+
+module.exports = { insertMappingEntry, insertInKitsuOrder, formatJson };

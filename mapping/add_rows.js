@@ -1,10 +1,10 @@
 // Adds reviewed rows to static/data/imdb_mapping.json where the review page and the importer would put them.
-// Rows are { kitsu_id, imdb_id, title?, fromSeason?, fromEpisode?, nonImdbEpisodes? }; a row without a title takes its
-// imdb's existing title. Nothing is written when any row is invalid or its kitsu id already has a row (the runtime
-// keeps one per id).
+// Rows are { kitsu_id, imdb_id, title?, fromSeason?, fromEpisode?, nonImdbEpisodes?, imdbEpisodes? }; a row without
+// a title takes its imdb's existing title. Nothing is written when any row is invalid or its kitsu id already has a
+// row (the runtime keeps one per id).
 const fs = require('fs');
 const path = require('path');
-const { insertMappingEntry } = require('./mapping_file');
+const { insertMappingEntry, formatJson } = require('./mapping_file');
 
 const MAPPING_PATH = path.join(__dirname, '../static/data/imdb_mapping.json');
 
@@ -20,6 +20,9 @@ function addRows(base, rows) {
     }
     if (row.nonImdbEpisodes) {
       item.nonImdbEpisodes = row.nonImdbEpisodes;
+    }
+    if (row.imdbEpisodes) {
+      item.imdbEpisodes = row.imdbEpisodes;
     }
     const problem = rowProblem(item, taken);
     if (problem) {
@@ -60,7 +63,7 @@ if (require.main === module) {
   const base = JSON.parse(source);
   try {
     const added = addRows(base, rows);
-    fs.writeFileSync(MAPPING_PATH, JSON.stringify(base, null, 2) + (source.endsWith('\n') ? '\n' : ''));
+    fs.writeFileSync(MAPPING_PATH, formatJson(base) + (source.endsWith('\n') ? '\n' : ''));
     added.forEach(item => console.log(`added ${item.kitsu_id} -> ${item.imdb_id}`
         + `${'fromSeason' in item ? ` S${item.fromSeason}E${item.fromEpisode}` : ''} (${item.title})`));
   } catch (error) {

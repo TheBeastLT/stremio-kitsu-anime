@@ -13,14 +13,18 @@ IMDb metas (`/meta/series/tt….json`) carry `kitsu_id` + `kitsuEpisode` on each
 - `title` is the IMDb series title, the same on every row of that imdb.
 - `fromSeason`/`fromEpisode`: the IMDb episode the entry's Kitsu episode 1 lands on. Omitted for movies (and read
   as S1E1 for series). Season 0 is IMDb's specials.
-- `nonImdbEpisodes`: Kitsu episode numbers IMDb doesn't list in the row's run (also ones it lists after another
-  row's episodes, which one row can't reach); rare.
-- The row format is fixed: solve mapping problems with rows or code, not new fields.
+- `nonImdbEpisodes`: Kitsu episode numbers IMDb doesn't list in the row's run; rare.
+- `imdbEpisodes` (season 0 only): the IMDb special of each Kitsu episode, in order, `null` for one IMDb doesn't list,
+  for specials IMDb lists out of sequence (`"imdbEpisodes": [40, 41, 49, 50]`: Barto's Secret Room 1-4 between other
+  One Piece specials). `fromEpisode` is its first one. Work it out from Kitsu's and IMDb's episode titles or air dates.
+- The row format is otherwise fixed: solve mapping problems with rows or code, not new fields. Lists of numbers stay
+  on one line (`formatJson` in `mapping_file.js`).
 
 ## How the runtime assigns episodes
 
 - **One row per Kitsu id.** Rows are keyed by `kitsu_id`; a second row silently replaces the first. A special can
   only be mapped through Kitsu's own entry for it, never as an episode of an already mapped series entry.
+- **A row listing `imdbEpisodes` takes exactly those.** The other rows' runs step over them, on both sides.
 - **A row runs until the next row starts.** For each IMDb video, the last row (by season, then episode) with
   `fromSeason <= season && fromEpisode <= episode` wins, and that row's Kitsu episodes are handed out one after
   another, up to the episode count of an entry that finished airing (from `search_titles.jsonl`; an airing entry has
