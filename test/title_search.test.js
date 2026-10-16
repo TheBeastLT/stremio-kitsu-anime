@@ -122,6 +122,7 @@ test('the title index finds the expected Kitsu entries', () => {
     're zero shin henshuu ban': 42903, // the re-edit, below every entry titled just "Re:Zero"
     're zero director\'s cut': 42903,
     'shingeki no kyojin final S60': 42422, // "S60" is a season, not a trailing episode 60
+    'shingeki no kyojin junior high': 11315, // romaji franchise, English subtitle: by its alias
     'steven universe S1': 10735, // not Future, S1 of its own imdb but titled "Season 6"
     'kizumonogatari i - tekketsu': 5649,
     'kizumonogatari ii - nekketsu': 11406,
@@ -201,6 +202,11 @@ test('the title index returns nothing for titles that aren\'t anime on Kitsu', (
       .map(query => [query, searchTitles(query)[0]?.id])
       .filter(([, id]) => id !== undefined);
   assert.deepStrictEqual(found, []);
+});
+
+test('a query that is only an extra word names no show', () => {
+  assert.deepStrictEqual(searchTitles('OVA', 5), []);
+  assert.deepStrictEqual(searchTitles('specials', 5), []);
 });
 
 test('a chance match on a word or two is below the cut-off', () => {
