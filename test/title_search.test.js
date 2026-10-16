@@ -123,6 +123,8 @@ test('the title index finds the expected Kitsu entries', () => {
     're zero director\'s cut': 42903,
     'shingeki no kyojin final S60': 42422, // "S60" is a season, not a trailing episode 60
     'shingeki no kyojin junior high': 11315, // romaji franchise, English subtitle: by its alias
+    'white album S3': 7697, // White Album 2, the franchise's 3rd series to release groups: by its alias
+    'white album S2': 4455,
     'steven universe S1': 10735, // not Future, S1 of its own imdb but titled "Season 6"
     'kizumonogatari i - tekketsu': 5649,
     'kizumonogatari ii - nekketsu': 11406,
