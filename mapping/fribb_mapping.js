@@ -85,8 +85,15 @@ async function kitsuIdFromLinks(malId, lookup = kitsuIdByMapping) {
   return found.length === 1 ? found[0] : undefined;
 }
 
-async function isFribbLinked(malId, kitsuId) {
-  return (await malKitsuLink(malId, kitsuId)).linked;
+// The MAL id of a kitsu entry: Fribb's (it picks up new Kitsu entries within days), else the one Kitsu itself links.
+// The lookups are injectable for tests.
+async function malIdByKitsu(kitsuId, { fribbEntry = getFribbEntryByKitsu, kitsuLinks = animeMappings } = {}) {
+  const fribbMalId = (await fribbEntry(kitsuId))?.mal_id;
+  if (fribbMalId != null) {
+    return String(fribbMalId);
+  }
+  const kitsuMappings = await kitsuLinks(kitsuId).catch(() => []);
+  return kitsuMappings.find(mapping => mapping.externalSite === ENTRY_ID_SITES[0].site)?.externalId;
 }
 
 async function getIndexes() {
@@ -117,6 +124,6 @@ function resolveImdbId(entry) {
 }
 
 module.exports = {
-  getFribbEntry, getFribbEntryByKitsu, isFribbLinked, malKitsuLink, linkFromFribb, linkFromKitsuMappings, kitsuIdFromLinks,
-  resolveImdbId,
+  getFribbEntry, getFribbEntryByKitsu, malKitsuLink, linkFromFribb, linkFromKitsuMappings, kitsuIdFromLinks,
+  malIdByKitsu, resolveImdbId,
 };

@@ -39,6 +39,11 @@ IMDb metas (`/meta/series/tt….json`) carry `kitsu_id` + `kitsuEpisode` on each
 
 - **Importer**: `mapping/mal_seasonal_import.js` (CI: "Import MAL seasons") auto-merges verified rows and queues the
   rest in `static/data/new_mappings.json`, keyed by Kitsu id.
+- **Late-added entries**: `mapping/kitsu_recent_import.js` (same CI job) runs the Kitsu entries created in the last 9
+  days through the same pipeline, each verified against the season it aired in; entries without a MAL id are matched
+  from the Kitsu side (their prequel's or franchise's rows, else an IMDb title search), and what is left is retried
+  while a pass merges rows. `--ids 1,2,3 --dry-run` checks given entries without writing.
+- Both importers send a verified row starting at another row's IMDb episode to review instead of merging it.
 - **Review page**: `mapping/mapping_index.html` works through that queue and writes both files on every action. It
   re-reads the live files first, but a write landing in between can still be lost, so ask whether it is open before
   writing either file.

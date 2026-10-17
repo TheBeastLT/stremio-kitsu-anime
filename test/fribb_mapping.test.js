@@ -1,11 +1,8 @@
 const test = require('node:test');
 const assert = require('node:assert');
 
-const { resolveImdbId, linkFromFribb, linkFromKitsuMappings } = require('../mapping/fribb_mapping');
-const {
-  insertInKitsuOrder,
-  insertMappingEntry,
-} = require('../mapping/mal_seasonal_import');
+const { resolveImdbId, linkFromFribb, linkFromKitsuMappings, malIdByKitsu } = require('../mapping/fribb_mapping');
+const { insertInKitsuOrder, insertMappingEntry, mergeVerifiedRows } = require('../mapping/mapping_file');
 
 test('resolveImdbId takes the first imdb id Fribb lists', () => {
   assert.strictEqual(resolveImdbId({ imdb_id: ['tt1920940', 'tt0089206'], tvdb_id: 72025 }), 'tt1920940');
@@ -106,4 +103,31 @@ test('linkFromKitsuMappings rejects when any per-entry id disagrees (previous se
   const season2 = [{ externalSite: 'myanimelist/anime', externalId: '58000' }, { externalSite: 'anilist/anime', externalId: '210000' }];
   assert.deepStrictEqual(linkFromKitsuMappings('65095', fribbMal, season2),
       { linked: false, reason: 'kitsu entry is a different show (MAL 58000 != 65095)' });
+});
+
+test('malIdByKitsu takes Fribb\'s MAL id, else the one Kitsu links', async () => {
+  const kitsuLinks = async () => [{ externalSite: 'anilist/anime', externalId: '7' },
+    { externalSite: 'myanimelist/anime', externalId: '65095' }];
+  assert.strictEqual(await malIdByKitsu('1', { fribbEntry: async () => ({ mal_id: 290 }), kitsuLinks }), '290');
+  assert.strictEqual(await malIdByKitsu('1', { fribbEntry: async () => ({ kitsu_id: 1 }), kitsuLinks }), '65095');
+  assert.strictEqual(await malIdByKitsu('1', { fribbEntry: async () => undefined, kitsuLinks: async () => [] }),
+      undefined);
+});
+
+test('mergeVerifiedRows sends an entry starting where another row starts to review', () => {
+  const base = [{ kitsu_id: 5, imdb_id: 'ttA', title: 'A', fromSeason: 1, fromEpisode: 1 }];
+  const { merged, clashing } = mergeVerifiedRows(base, [
+    { _trusted: true, kitsuId: '9', imdb_id: 'ttA', title: 'A', fromSeason: 1, fromEpisode: 1 }, // same start as 5
+    { _trusted: true, kitsuId: '10', imdb_id: 'ttB', title: 'B', fromSeason: 0, fromEpisode: 3 },
+    { _trusted: true, kitsuId: '11', imdb_id: 'ttB', title: 'B', fromSeason: 0, fromEpisode: 3 }, // same as 10's
+    { _trusted: true, kitsuId: '12', imdb_id: 'ttM', title: 'M' }, // movies have no start to clash on
+    { _trusted: true, kitsuId: '13', imdb_id: 'ttM', title: 'M' },
+    { _trusted: true, kitsuId: '5', imdb_id: 'ttA', title: 'A', fromSeason: 2, fromEpisode: 1 }, // has a row
+  ]);
+  assert.deepStrictEqual(merged.map(entry => entry.kitsuId), ['10', '12', '13']);
+  assert.deepStrictEqual(clashing.map(entry => [entry.kitsuId, entry.reviewReason, entry._trusted]), [
+    ['9', 'ttA S1E1 is already where kitsu 5 starts', undefined],
+    ['11', 'ttB S0E3 is already where kitsu 10 starts', undefined],
+  ]);
+  assert.deepStrictEqual(base.map(row => row.kitsu_id).sort((a, b) => a - b), [5, 10, 12, 13]);
 });

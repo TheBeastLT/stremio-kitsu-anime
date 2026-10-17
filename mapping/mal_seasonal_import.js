@@ -7,10 +7,10 @@ const { searchIds, animeData, animeEpisodeCounts } = require('../lib/kitsu_api')
 const { loadCurrentTitleIndex } = require('../lib/title_index');
 const { getTvdbId } = require("../lib/fanart");
 const {
-  getFribbEntry, getFribbEntryByKitsu, isFribbLinked, malKitsuLink, kitsuIdFromLinks, resolveImdbId,
+  getFribbEntry, getFribbEntryByKitsu, malKitsuLink, kitsuIdFromLinks, resolveImdbId,
 } = require('./fribb_mapping');
 const { getFreshCinemetaMetadata } = require('../lib/cinemeta_api');
-const { insertMappingEntry, insertInKitsuOrder, formatJson } = require('./mapping_file');
+const { mergeVerifiedRows, formatJson } = require('./mapping_file');
 const { searchImdbIds, firstTrusted } = require('./imdb_search');
 const {
   seasonWindow, verifyCandidate, verifyFreshTitle, verifySpecial, nextSeason, continuationStart, SPECIAL_TYPES,
@@ -20,33 +20,32 @@ const IMPORT_CONCURRENCY = 4;
 const MAL_HENTAI_GENRE = '12';
 
 async function importMalSeason(season, { reviewPath = "./static/data/new_mappings.json" } = {}) {
-  const imdbMapping = require('../static/data/imdb_mapping')
-      .reduce((map, entry) => (map[entry.kitsu_id] = entry, map), {});;
   const window = seasonWindow(season);
   await loadCurrentTitleIndex().catch(error => console.log(`Title index refresh failed: ${error?.message || error}`));
   const malEntries = await getMalSeasonalEntries(season);
   const newMappingEntries = await mapWithConcurrency(malEntries, IMPORT_CONCURRENCY,
       malEntry => createImdbMappingEntry(malEntry, window));
-
-  const resolvedEntries = newMappingEntries.filter(entry => entry && !imdbMapping[entry.kitsuId]);
-  const trustedEntries = resolvedEntries.filter(entry => entry._trusted);
-  const reviewEntries = resolvedEntries.filter(entry => !entry._trusted);
-
-  if (trustedEntries.length) {
-    mergeIntoImdbMapping(trustedEntries);
-    console.log(`Auto-merged ${trustedEntries.length} verified entries into imdb_mapping.json`);
-  }
-
-  // Exclude review entries whose kitsuId is already mapped (same-run trusted merges or prior manual
-  // UI additions) so we never re-surface something we already have.
-  const mapped = new Set(require('../static/data/imdb_mapping').map(e => e.kitsu_id));
-  const newMappings = reviewEntries
-      .filter(entry => !mapped.has(parseInt(entry.kitsuId)))
-      .reduce((map, entry) => (map[entry.kitsuId] = entry, map), {})
-  writeToFile(newMappings, reviewPath)
-  console.log("Ids to remove from cache:")
-  console.log(newMappingEntries.map(e => [e?.kitsuId, e?.imdb_id]).flat().filter(x => x).join('|'))
+  saveImportResults(newMappingEntries, { reviewPath });
   return season;
+}
+
+// Merges an import's verified entries into imdb_mapping.json and writes the rest to reviewPath (keyed by kitsu id),
+// leaving out entries that have a row (from before, or from this merge) so nothing mapped resurfaces. A verified entry
+// clashing with another row's start goes to review. dryRun: nothing is written. Returns { merged, review }.
+function saveImportResults(entries, { reviewPath, dryRun = false } = {}) {
+  const base = require('../static/data/imdb_mapping');
+  const { merged, clashing } = mergeVerifiedRows(base, entries.filter(entry => entry?._trusted));
+  if (merged.length && !dryRun) {
+    writeToFile(base, "./static/data/imdb_mapping.json");
+    console.log(`Auto-merged ${merged.length} verified entries into imdb_mapping.json`);
+  }
+  const mapped = new Set(base.map(row => row.kitsu_id));
+  const review = [...entries.filter(entry => entry && !entry._trusted), ...clashing]
+      .filter(entry => !mapped.has(parseInt(entry.kitsuId)));
+  if (reviewPath && !dryRun) {
+    writeToFile(Object.fromEntries(review.map(entry => [entry.kitsuId, entry])), reviewPath);
+  }
+  return { merged, review };
 }
 
 async function createImdbMappingEntry(malEntry, window) {
@@ -57,22 +56,33 @@ async function createImdbMappingEntry(malEntry, window) {
     console.log(`No kitsuId found for: ${JSON.stringify(malEntry)}`);
     return kitsuId;
   }
+  return createKitsuMappingEntry(kitsuId, { malId: malEntry.malId, malTitle: malEntry.title, searchTitle: malEntry.title },
+      window);
+}
+
+// The mapping entry of a resolved Kitsu entry, from source { malId, malTitle, searchTitle } (the IMDb search's title).
+// A Kitsu-first import may have no MAL id (many donghua aren't on MAL): the Kitsu id is then the source itself, so
+// there is no MAL link to confirm and no Fribb record to trust, and the search also tries Kitsu's English titles.
+async function createKitsuMappingEntry(kitsuId, { malId, malTitle, searchTitle }, window) {
   const existing = getImdbMapping(kitsuId);
   if (existing) {
-    // Already mapped: nothing to resolve, and importMalSeason filters it out of merges and review.
+    // Already mapped: nothing to resolve, and saveImportResults leaves it out of merges and review.
     return { _existing: true, kitsuId: String(kitsuId), imdb_id: existing.imdb_id };
   }
 
-  const kitsuMetadata = await animeData(kitsuId, { images: false, relations: true }).catch(() => undefined);
+  const [kitsuMetadata, link] = await Promise.all([
+    animeData(kitsuId, { images: false, relations: true }).catch(() => undefined),
+    malId ? malKitsuLink(malId, kitsuId).catch(() => ({ linked: false })) : { linked: true },
+  ]);
 
-  const trustedEntry = await trustedFribbMapping(malEntry, kitsuId, kitsuMetadata, window);
+  const trustedEntry = await trustedFribbMapping(malId, link, kitsuId, kitsuMetadata, window);
   if (trustedEntry) {
     return trustedEntry;
   }
 
   const reviewBase = {
-    malId: malEntry.malId,
-    malTitle: malEntry.title,
+    malId,
+    malTitle,
     kitsuId: kitsuId,
     kitsuTitle: kitsuMetadata?.name,
     kitsuAliases: kitsuMetadata?.aliases,
@@ -91,7 +101,7 @@ async function createImdbMappingEntry(malEntry, window) {
       .map(link => link.url.match(/kitsu:(\d+)$/)[1])[0];
   const prequelImdbMapping = prequelKitsuId && getImdbMapping(prequelKitsuId);
   if (prequelImdbMapping) {
-    return withSpecialSuggestion(await verifiedOrReview(malEntry, kitsuId, kitsuMetadata, window, {
+    return withSpecialSuggestion(await verifiedOrReview(link, kitsuMetadata, window, {
       ...reviewBase,
       imdb_id: prequelImdbMapping.imdb_id,
       title: prequelImdbMapping.title,
@@ -100,13 +110,14 @@ async function createImdbMappingEntry(malEntry, window) {
     }), special);
   }
 
-  const foundImdbIds = await searchImdbIds(malEntry.title).catch((err) => []);
+  const searchTitles = malId ? [searchTitle] : [...new Set([searchTitle, ...(kitsuMetadata?.aliases || [])])];
+  const foundImdbIds = await firstFound(searchTitles, title => searchImdbIds(title).catch((err) => []));
   if (!foundImdbIds.length) {
-    console.log(`No imdbId found for: ${JSON.stringify(malEntry)}`);
+    console.log(`No imdbId found for: ${JSON.stringify({ title: searchTitle, malId, kitsuId })}`);
     return withSpecialSuggestion(reviewBase, special);
   }
   const hasVideos = kitsuMetadata?.videos?.length > 1 || kitsuMetadata?.animeType === 'TV';
-  const entry = await firstTrusted(foundImdbIds, imdbId => verifiedOrReview(malEntry, kitsuId, kitsuMetadata, window, {
+  const entry = await firstTrusted(foundImdbIds, imdbId => verifiedOrReview(link, kitsuMetadata, window, {
     ...reviewBase,
     imdb_id: imdbId,
     fromSeason: hasVideos ? 1 : undefined,
@@ -198,17 +209,30 @@ function withSpecialSuggestion(entry, special) {
   return { ...entry, reviewReason: [entry.reviewReason, note].filter(Boolean).join('; ') };
 }
 
+// The first non-empty result of search over titles, in order.
+async function firstFound(titles, search) {
+  for (const title of titles.filter(Boolean)) {
+    const found = await search(title);
+    if (found.length) {
+      return found;
+    }
+  }
+  return [];
+}
+
 // Treat Fribb's list as ground truth: if it maps this MAL id to the same kitsu id we resolved and
 // lists an imdb id, skip review and auto-merge.
 // Standalone/first-season entries map to season 1; later seasons of an already-mapped imdb are
 // auto-seasoned only when Cinemeta confirms the next season starts fresh this MAL season.
-async function trustedFribbMapping(malEntry, kitsuId, kitsuMetadata, window) {
-  const fribbEntry = await getFribbEntry(malEntry.malId).catch(() => undefined);
+async function trustedFribbMapping(malId, link, kitsuId, kitsuMetadata, window) {
+  if (!malId) {
+    return undefined;
+  }
+  const fribbEntry = await getFribbEntry(malId).catch(() => undefined);
   // The mal <-> kitsu link must be confirmed (by Fribb, or by Kitsu's own MAL/AniList/AniDB ids): a Fribb entry
   // without a kitsu id would otherwise trust a title-search kitsu hit, which for new movies often lands on an older
   // namesake (1983 vs 2025 Doraemon film).
-  const linked = await isFribbLinked(malEntry.malId, kitsuId).catch(() => false);
-  if (!fribbEntry || !linked) {
+  if (!fribbEntry || !link.linked) {
     return undefined;
   }
   const imdbId = resolveImdbId(fribbEntry);
@@ -245,7 +269,7 @@ async function trustedFribbMapping(malEntry, kitsuId, kitsuMetadata, window) {
       return undefined;
     }
     const sequel = { imdb_id: imdbId, fromSeason: nextSeason(siblings), fromEpisode: 1 };
-    const { result, candidate } = await verifySequel(malEntry, kitsuId, kitsuMetadata, window, sequel);
+    const { result, candidate } = await verifySequel(link, kitsuMetadata, window, sequel);
     if (!result.ok) {
       return undefined;
     }
@@ -266,11 +290,11 @@ async function trustedFribbMapping(malEntry, kitsuId, kitsuMetadata, window) {
 }
 
 // Auto-merge a review candidate when it passes the mapping verifier; otherwise keep it for review with the reason.
-async function verifiedOrReview(malEntry, kitsuId, kitsuMetadata, window, entry) {
+async function verifiedOrReview(link, kitsuMetadata, window, entry) {
   const isSequel = entry.fromSeason > 0 && isSeasonableType(kitsuMetadata?.animeType);
   const { result, cinemeta, candidate } = isSequel
-      ? await verifySequel(malEntry, kitsuId, kitsuMetadata, window, entry)
-      : { ...await verifyMapping(malEntry, kitsuId, kitsuMetadata, window, entry), candidate: entry };
+      ? await verifySequel(link, kitsuMetadata, window, entry)
+      : { ...await verifyMapping(link, kitsuMetadata, window, entry), candidate: entry };
   if (result.ok) {
     return { ...entry, ...candidate, _trusted: true, title: entry.title || cinemeta.name };
   }
@@ -279,8 +303,8 @@ async function verifiedOrReview(malEntry, kitsuId, kitsuMetadata, window, entry)
 
 // A TV/ONA sequel is either the next IMDb season starting at episode 1, or a continuation cour that IMDb keeps in
 // the running season (needs an episode offset). Returns the verified candidate, or the fresh-season failure.
-async function verifySequel(malEntry, kitsuId, kitsuMetadata, window, candidate) {
-  const fresh = await verifyMapping(malEntry, kitsuId, kitsuMetadata, window, candidate);
+async function verifySequel(link, kitsuMetadata, window, candidate) {
+  const fresh = await verifyMapping(link, kitsuMetadata, window, candidate);
   if (fresh.result.ok) {
     return { ...fresh, candidate };
   }
@@ -289,7 +313,7 @@ async function verifySequel(malEntry, kitsuId, kitsuMetadata, window, candidate)
     return { ...fresh, candidate };
   }
   const continuation = { ...candidate, ...start };
-  const verified = await verifyMapping(malEntry, kitsuId, kitsuMetadata, window, continuation);
+  const verified = await verifyMapping(link, kitsuMetadata, window, continuation);
   if (verified.result.ok) {
     return { ...verified, candidate: continuation };
   }
@@ -297,12 +321,10 @@ async function verifySequel(malEntry, kitsuId, kitsuMetadata, window, candidate)
   return { ...fresh, candidate, result: { ok: false, reason } };
 }
 
-async function verifyMapping(malEntry, kitsuId, kitsuMetadata, window, candidate) {
+// link: { linked, reason } of the MAL <-> Kitsu link (malKitsuLink), linked when the import starts from the Kitsu id
+async function verifyMapping({ linked, reason: linkReason }, kitsuMetadata, window, candidate) {
   const validImdbId = /^tt\d+$/.test(candidate.imdb_id || '');
-  const [{ linked, reason: linkReason }, cinemeta] = await Promise.all([
-    malKitsuLink(malEntry.malId, kitsuId).catch(() => ({ linked: false })),
-    validImdbId ? cachedCinemeta(candidate.imdb_id) : undefined,
-  ]);
+  const cinemeta = validImdbId ? await cachedCinemeta(candidate.imdb_id) : undefined;
   // Episode counts are only needed to place a series season, so skip the Kitsu calls when it can't get that far.
   const needsCounts = linked && cinemeta?.type === 'series';
   const siblings = validImdbId ? await siblingsOf(candidate.imdb_id, needsCounts) : [];
@@ -367,25 +389,6 @@ function hasExactFribbKitsu(fribbEntry, kitsuId) {
   return fribbEntry.kitsu_id != null && String(fribbEntry.kitsu_id) === String(kitsuId);
 }
 
-function mergeIntoImdbMapping(trustedEntries) {
-  const base = require('../static/data/imdb_mapping');
-  const existing = new Set(base.map(e => e.kitsu_id));
-  for (const entry of trustedEntries) {
-    const kitsu_id = parseInt(entry.kitsuId);
-    if (existing.has(kitsu_id)) {
-      continue;
-    }
-    const item = { kitsu_id, imdb_id: entry.imdb_id, title: entry.title };
-    if (entry.fromSeason !== undefined) {
-      item.fromSeason = entry.fromSeason;
-      item.fromEpisode = entry.fromEpisode;
-    }
-    insertMappingEntry(base, item);
-    existing.add(kitsu_id);
-  }
-  writeToFile(base, "./static/data/imdb_mapping.json");
-}
-
 async function getMalSeasonalEntries(season) {
   const requestUrl = `https://myanimelist.net/anime/season/${season}`
   return axios.get(requestUrl)
@@ -424,36 +427,13 @@ async function getImdbMeta(imdbId) {
       })
 }
 
-function findMappingInsertIndex(imdbMappingEntries, mapping) {
-  const kitsuId = parseInt(mapping.kitsuId);
-  const imdbId = mapping.imdb_id;
-  let insertIndex = 0;
-  let franchiseIndex = 0;
-  for (let i = imdbMappingEntries.length - 1; i >= 0; i--) {
-    const imdbMappingEntry = imdbMappingEntries[i];
-    const imdbMapping = imdbMappingEntry[1];
-    if (imdbId === imdbMapping && imdbMapping.fromSeason !== 0) {
-      franchiseIndex = i + 1;
-      break;
-    }
-    if (!insertIndex && parseInt(imdbMappingEntry[0]) < kitsuId) {
-      insertIndex = i + 1;
-    }
-  }
-  return franchiseIndex || insertIndex;
-}
-
-function writeImdbMappingToFile(imdbMappingEntries) {
-  const imdbMappings = imdbMappingEntries.reduce((map, entry) => (map[entry[0]] = entry[1], map), {})
-  writeToFile(imdbMappings, "./static/data/imdb_mapping.json")
-}
-
+// Synchronous, so a process started next (the recent Kitsu import's retry pass) reads what was written.
 function writeToFile(object, path) {
-  fs.writeFile(path, formatJson(object), 'utf8', function (err) {
-    if (err) {
-      console.log("An error occurred while writing JSON Object to File:", err);
-    }
-  });
+  try {
+    fs.writeFileSync(path, formatJson(object), 'utf8');
+  } catch (err) {
+    console.log("An error occurred while writing JSON Object to File:", err);
+  }
 }
 
 // Like Promise.all(items.map(fn)) with at most `limit` in flight; a failing item yields undefined instead of
@@ -483,10 +463,11 @@ if (require.main === module) {
 module.exports = {
   importMalSeason,
   createImdbMappingEntry,
+  createKitsuMappingEntry,
+  saveImportResults,
+  IMPORT_CONCURRENCY,
   franchiseSpecial,
   getMalSeasonalEntries,
-  insertInKitsuOrder,
-  insertMappingEntry,
   mapWithConcurrency,
   siblingsOf,
 };

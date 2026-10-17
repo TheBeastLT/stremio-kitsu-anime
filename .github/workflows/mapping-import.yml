@@ -1,8 +1,8 @@
 name: Import MAL seasons
 
 # Weekly: runs the previous and the current MAL season through the importer (in the current season's last month the
-# next one too, so its titles are mapped before they air), pushes the auto-approved (verified) imdb mappings to master
-# and deploys them. Entries that need a manual review are kept as a run artifact.
+# next one too, so its titles are mapped before they air) and the anime Kitsu added that week, pushes the auto-approved
+# (verified) imdb mappings to master and deploys them. Entries that need a manual review are kept as a run artifact.
 on:
   schedule:
     - cron: '0 5 * * 1' # Mondays 05:00 UTC
@@ -40,6 +40,20 @@ jobs:
             node mapping/mal_seasonal_import.js "$season" "review/${season/\//-}.json"
           done
 
+      # Kitsu entries created in the last 9 days that the step above doesn't cover: ones that aired in earlier seasons
+      # (late-added older shows) or aren't on MAL (often donghua), each verified against the season it aired in. Its
+      # failure must not hold back the MAL season merges, which the steps below push.
+      - name: Import recently added Kitsu entries
+        id: recent
+        continue-on-error: true
+        env:
+          FANART_APIKEY: ${{ secrets.FANART_APIKEY }}
+        run: node mapping/kitsu_recent_import.js --review review/kitsu-recent.json
+
+      - name: Report a failed Kitsu import
+        if: steps.recent.outcome == 'failure'
+        run: echo '**Recent Kitsu import failed**, see its step log' | tee -a "$GITHUB_STEP_SUMMARY"
+
       - name: Upload review queue
         uses: actions/upload-artifact@v4
         with:
@@ -56,7 +70,7 @@ jobs:
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'auto-merge mal season mappings' -- static/data/imdb_mapping.json
+          git commit -m 'auto-merge imported mappings' -- static/data/imdb_mapping.json
           git pull --rebase origin master
           git push origin HEAD:master
           echo "before=$(git rev-parse HEAD~1)" >> "$GITHUB_OUTPUT"

@@ -24,6 +24,39 @@ function insertInKitsuOrder(base, item) {
   base.splice(idx === -1 ? base.length : idx, 0, item);
 }
 
+// Inserts the rows of verified import entries ({ kitsuId, imdb_id, title, fromSeason?, fromEpisode? }) into base,
+// skipping kitsu ids that have a row. Returns the merged entries, and as review entries the ones starting at an imdb
+// episode another row starts at (the imdb meta gives that episode to one of them, npm test rejects the pair).
+function mergeVerifiedRows(base, entries) {
+  const startOf = row => row.fromSeason !== undefined ? `${row.imdb_id} S${row.fromSeason}E${row.fromEpisode}` : undefined;
+  const mapped = new Set(base.map(row => row.kitsu_id));
+  const starts = new Map(base.filter(startOf).map(row => [startOf(row), row.kitsu_id]));
+  const merged = [];
+  const clashing = [];
+  for (const { _trusted, ...entry } of entries) {
+    const item = { kitsu_id: parseInt(entry.kitsuId), imdb_id: entry.imdb_id, title: entry.title };
+    if (entry.fromSeason !== undefined) {
+      item.fromSeason = entry.fromSeason;
+      item.fromEpisode = entry.fromEpisode;
+    }
+    if (mapped.has(item.kitsu_id)) {
+      continue;
+    }
+    const start = startOf(item);
+    if (starts.has(start)) {
+      clashing.push({ ...entry, reviewReason: `${start} is already where kitsu ${starts.get(start)} starts` });
+      continue;
+    }
+    insertMappingEntry(base, item);
+    mapped.add(item.kitsu_id);
+    if (start) {
+      starts.set(start, item.kitsu_id);
+    }
+    merged.push(entry);
+  }
+  return { merged, clashing };
+}
+
 // The mapping files' format: 2-space JSON, a list of numbers on one line ("imdbEpisodes": [40, 41, 49, 50]).
 // mapping_index.html keeps a copy.
 function formatJson(object) {
@@ -31,4 +64,4 @@ function formatJson(object) {
       (_, items) => `[${items.split(/,\s+/).join(', ')}]`);
 }
 
-module.exports = { insertMappingEntry, insertInKitsuOrder, formatJson };
+module.exports = { insertMappingEntry, insertInKitsuOrder, mergeVerifiedRows, formatJson };
