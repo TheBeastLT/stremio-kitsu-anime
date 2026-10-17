@@ -5720,7 +5720,7 @@
     "imdb_id": "tt0988818",
     "title": "Gintama",
     "fromSeason": 0,
-    "fromEpisode": 8
+    "fromEpisode": 12
   },
   {
     "kitsu_id": 43829,
@@ -10161,7 +10161,7 @@
     "fanartLogoId": "61773",
     "title": "Nogizaka Haruka no himitsu",
     "fromSeason": 0,
-    "fromEpisode": 1
+    "fromEpisode": 2
   },
   {
     "kitsu_id": 3033,
@@ -12275,7 +12275,7 @@
     "imdb_id": "tt1751305",
     "title": "Oreimo: My Little Sister Can't Be This Cute?",
     "fromSeason": 0,
-    "fromEpisode": 38
+    "fromEpisode": 21
   },
   {
     "kitsu_id": 5497,
@@ -13534,7 +13534,7 @@
     "imdb_id": "tt2645500",
     "title": "Haganai: I Don't Have Many Friends",
     "fromSeason": 0,
-    "fromEpisode": 2
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 6318,
@@ -13622,7 +13622,7 @@
     "imdb_id": "tt2266660",
     "title": "Koi to senkyo to chokoreto",
     "fromSeason": 0,
-    "fromEpisode": 1
+    "fromEpisode": 2
   },
   {
     "kitsu_id": 6442,
@@ -14634,7 +14634,7 @@
     "imdb_id": "tt1210339",
     "title": "Junjou Romantica",
     "fromSeason": 0,
-    "fromEpisode": 1
+    "fromEpisode": 3
   },
   {
     "kitsu_id": 7071,
@@ -15018,25 +15018,53 @@
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 7293,
+    "kitsu_id": 7556,
     "imdb_id": "tt2321542",
     "title": "Love, Chunibyo & Other Delusions",
     "fromSeason": 0,
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 9132,
+    "imdb_id": "tt2321542",
+    "title": "Love, Chunibyo & Other Delusions",
+    "fromSeason": 0,
+    "fromEpisode": 2
+  },
+  {
+    "kitsu_id": 7293,
+    "imdb_id": "tt2321542",
+    "title": "Love, Chunibyo & Other Delusions",
+    "fromSeason": 0,
+    "fromEpisode": 5
+  },
+  {
+    "kitsu_id": 8154,
+    "imdb_id": "tt2321542",
+    "title": "Love, Chunibyo & Other Delusions",
+    "fromSeason": 0,
+    "fromEpisode": 11
+  },
+  {
+    "kitsu_id": 42215,
+    "imdb_id": "tt2321542",
+    "title": "Love, Chunibyo & Other Delusions",
+    "fromSeason": 0,
+    "fromEpisode": 18
+  },
+  {
     "kitsu_id": 7330,
     "imdb_id": "tt2321542",
     "title": "Love, Chunibyo & Other Delusions",
     "fromSeason": 0,
-    "fromEpisode": 7
+    "fromEpisode": 21
   },
   {
-    "kitsu_id": 7556,
+    "kitsu_id": 8415,
     "imdb_id": "tt2321542",
     "title": "Love, Chunibyo & Other Delusions",
     "fromSeason": 0,
-    "fromEpisode": 14
+    "fromEpisode": 28
   },
   {
     "kitsu_id": 7162,
@@ -15265,7 +15293,7 @@
     "imdb_id": "tt2595486",
     "title": "Love Live!: School Idol Project",
     "fromSeason": 0,
-    "fromEpisode": 7
+    "fromEpisode": 13
   },
   {
     "kitsu_id": 7205,
@@ -16102,7 +16130,7 @@
     "imdb_id": "tt2250064",
     "title": "So, I Can't Play H!",
     "fromSeason": 0,
-    "fromEpisode": 1
+    "fromEpisode": 2
   },
   {
     "kitsu_id": 7657,
@@ -18500,7 +18528,7 @@
     "imdb_id": "tt1807824",
     "title": "Wakfu",
     "fromSeason": 0,
-    "fromEpisode": 14
+    "fromEpisode": 18
   },
   {
     "kitsu_id": 8306,
@@ -18557,7 +18585,7 @@
     "imdb_id": "tt3895144",
     "title": "Sora No Method",
     "fromSeason": 0,
-    "fromEpisode": 1
+    "fromEpisode": 2
   },
   {
     "kitsu_id": 8339,
@@ -19188,7 +19216,7 @@
     "fanartLogoId": "116951",
     "title": "The Seven Deadly Sins",
     "fromSeason": 0,
-    "fromEpisode": 8
+    "fromEpisode": 10
   },
   {
     "kitsu_id": 13647,
@@ -21106,6 +21134,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 50759,
+    "imdb_id": "tt5344382",
+    "title": "Kidou Senshi Gundam: Tekketsu no Orphans - Makuai no Kusabi",
+    "fromSeason": 0,
+    "fromEpisode": 23
+  },
+  {
     "kitsu_id": 11207,
     "imdb_id": "tt9731082",
     "title": "A Sister's All You Need",
@@ -22465,7 +22500,7 @@
     "imdb_id": "tt6455986",
     "title": "Saga of Tanya the Evil",
     "fromSeason": 0,
-    "fromEpisode": 1
+    "fromEpisode": 2
   },
   {
     "kitsu_id": 44779,
@@ -23834,6 +23869,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 50872,
+    "imdb_id": "tt23139038",
+    "title": "To Be Hero X Concept Movie",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 12538,
     "imdb_id": "tt6494518",
     "title": "Onihei",
@@ -24446,6 +24488,27 @@
     "imdb_id": "tt11317074",
     "title": "Full-Time Magister",
     "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 47049,
+    "imdb_id": "tt11317074",
+    "title": "Full-Time Magister",
+    "fromSeason": 6,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 50880,
+    "imdb_id": "tt11317074",
+    "title": "Full-Time Magister",
+    "fromSeason": 7,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 48052,
+    "imdb_id": "tt11317074",
+    "title": "Full-Time Magister",
+    "fromSeason": 0,
     "fromEpisode": 1
   },
   {
@@ -27514,7 +27577,7 @@
     "imdb_id": "tt8400662",
     "title": "Jashin-chan Dropkick",
     "fromSeason": 0,
-    "fromEpisode": 2
+    "fromEpisode": 3
   },
   {
     "kitsu_id": 48357,
@@ -30385,7 +30448,7 @@
     "imdb_id": "tt11405408",
     "title": "Asteroid in Love",
     "fromSeason": 0,
-    "fromEpisode": 1
+    "fromEpisode": 7
   },
   {
     "kitsu_id": 42391,
@@ -32756,6 +32819,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 51129,
+    "imdb_id": "tt14134550",
+    "title": "Oddtaxi",
+    "fromSeason": 0,
+    "fromEpisode": 14
+  },
+  {
     "kitsu_id": 43933,
     "imdb_id": "tt13851958",
     "title": "Vivy: Fluorite Eye's Song",
@@ -33767,6 +33837,13 @@
     "title": "Link Click",
     "fromSeason": 0,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 50691,
+    "imdb_id": "tt14976292",
+    "title": "Link Click",
+    "fromSeason": 0,
+    "fromEpisode": 21
   },
   {
     "kitsu_id": 45506,
@@ -35184,6 +35261,20 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 49161,
+    "imdb_id": "tt11247158",
+    "title": "The Legend of Vox Machina",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 50688,
+    "imdb_id": "tt11247158",
+    "title": "The Legend of Vox Machina",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 45942,
     "imdb_id": "tt15420852",
     "title": "Gekijouban Tsurune: Kazemai Koukou Kyuudou Bu"
@@ -35796,6 +35887,13 @@
     "title": "Mashle: Magic and Muscles",
     "fromSeason": 0,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 51113,
+    "imdb_id": "tt21209804",
+    "title": "Mashle: Magic and Muscles",
+    "fromSeason": 0,
+    "fromEpisode": 2
   },
   {
     "kitsu_id": 46231,
@@ -37786,6 +37884,13 @@
     "fromEpisode": 70
   },
   {
+    "kitsu_id": 50672,
+    "imdb_id": "tt27497430",
+    "title": "Cang Yuan Tu",
+    "fromSeason": 0,
+    "fromEpisode": 5
+  },
+  {
     "kitsu_id": 47686,
     "imdb_id": "tt30277745",
     "title": "Gundam: Requiem for Vengeance",
@@ -37839,6 +37944,20 @@
     "imdb_id": "tt14681924",
     "title": "My Adventures with Superman",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 48819,
+    "imdb_id": "tt14681924",
+    "title": "My Adventures with Superman",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 50695,
+    "imdb_id": "tt14681924",
+    "title": "My Adventures with Superman",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   {
@@ -41428,6 +41547,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 50803,
+    "imdb_id": "tt38983087",
+    "title": "Hokuto no Ken: Ken'o-gun Zako-tachi no Banka",
+    "fromSeason": 1,
+    "fromEpisode": 13
+  },
+  {
     "kitsu_id": 50431,
     "imdb_id": "tt32482998",
     "title": "Duel Masters LOST ~Crystal of Remembrance~",
@@ -41707,6 +41833,41 @@
     "title": "Jade Dynasty",
     "fromSeason": 4,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 47045,
+    "imdb_id": "tt27834263",
+    "title": "My Senior Brother is Too Steady",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 48712,
+    "imdb_id": "tt27834263",
+    "title": "My Senior Brother is Too Steady",
+    "fromSeason": 1,
+    "fromEpisode": 14
+  },
+  {
+    "kitsu_id": 49526,
+    "imdb_id": "tt27834263",
+    "title": "My Senior Brother is Too Steady",
+    "fromSeason": 1,
+    "fromEpisode": 40
+  },
+  {
+    "kitsu_id": 49977,
+    "imdb_id": "tt27834263",
+    "title": "My Senior Brother is Too Steady",
+    "fromSeason": 1,
+    "fromEpisode": 92
+  },
+  {
+    "kitsu_id": 50790,
+    "imdb_id": "tt27834263",
+    "title": "My Senior Brother is Too Steady",
+    "fromSeason": 1,
+    "fromEpisode": 144
   },
   {
     "kitsu_id": 47448,
@@ -41992,6 +42153,16 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 50704,
+    "imdb_id": "tt15738264",
+    "title": "A Star So Close and Distant"
+  },
+  {
+    "kitsu_id": 50705,
+    "imdb_id": "tt39746590",
+    "title": "Firstline"
+  },
+  {
     "kitsu_id": 50707,
     "imdb_id": "tt43587125",
     "title": "Kai Pai La! Guaishou Da Dianying",
@@ -42002,6 +42173,18 @@
     "kitsu_id": 50711,
     "imdb_id": "tt42487863",
     "title": "Vertex Force",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 50713,
+    "imdb_id": "tt0422766",
+    "title": "Mori no Yakyuudan"
+  },
+  {
+    "kitsu_id": 50716,
+    "imdb_id": "tt42584013",
+    "title": "Looney Tunes Gokko",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -42163,9 +42346,23 @@
     "title": "Chiikawa the Movie: The Secret of the Mermaid Island"
   },
   {
+    "kitsu_id": 50809,
+    "imdb_id": "tt32603995",
+    "title": "Adventure Time: Side Quests",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 50828,
     "imdb_id": "tt43609776",
     "title": "Crowned in a Hundred Days",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 50829,
+    "imdb_id": "tt21056976",
+    "title": "Dragon Striker",
     "fromSeason": 1,
     "fromEpisode": 1
   },
@@ -42216,6 +42413,16 @@
     "title": "Grotesqqque"
   },
   {
+    "kitsu_id": 50900,
+    "imdb_id": "tt43672502",
+    "title": "Loca!"
+  },
+  {
+    "kitsu_id": 50914,
+    "imdb_id": "tt10986246",
+    "title": "The Greedy Pig"
+  },
+  {
     "kitsu_id": 50925,
     "imdb_id": "tt45615017",
     "title": "Demon Agent"
@@ -42228,11 +42435,23 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 50949,
+    "imdb_id": "tt28518178",
+    "title": "The War of Cards",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 50954,
     "imdb_id": "tt42969298",
     "title": "Ushiro no Shoumen Kamui-san Mini Anime Gekijou",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 50960,
+    "imdb_id": "tt4429160",
+    "title": "Red Shoes and the Seven Dwarfs"
   },
   {
     "kitsu_id": 50963,
@@ -42383,9 +42602,26 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 51027,
+    "imdb_id": "tt37438451",
+    "title": "Pretty Pretty Please I Don't Want To Be A Magical Girl",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 51040,
     "imdb_id": "tt43649005",
     "title": "20001 an Earth Odyssey"
+  },
+  {
+    "kitsu_id": 51048,
+    "imdb_id": "tt36958590",
+    "title": "The Demon Hungers"
+  },
+  {
+    "kitsu_id": 51052,
+    "imdb_id": "tt0091123",
+    "title": "GoBots: Battle of the Rock Lords"
   },
   {
     "kitsu_id": 51056,
@@ -42395,10 +42631,27 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 51060,
+    "imdb_id": "tt32918701",
+    "title": "Sumikko Gurashi: Sorairo no Mainichi",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 51064,
     "imdb_id": "tt46653736",
     "title": "Aoki Denshou: Welsh & Shedar",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 51066,
+    "imdb_id": "tt13075174",
+    "title": "My Ghost Girlfriend"
+  },
+  {
+    "kitsu_id": 51067,
+    "imdb_id": "tt16152086",
+    "title": "An tu! An tu!"
   }
 ]
