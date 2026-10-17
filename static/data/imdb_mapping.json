@@ -1504,13 +1504,6 @@
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 167,
-    "imdb_id": "tt0279570",
-    "title": "Love Hina",
-    "fromSeason": 0,
-    "fromEpisode": 5
-  },
-  {
     "kitsu_id": 168,
     "imdb_id": "tt0279570",
     "title": "Love Hina Christmas Special: Silent Eve",
@@ -1523,6 +1516,13 @@
     "title": "Love Hina Spring Special",
     "fromSeason": 0,
     "fromEpisode": 2
+  },
+  {
+    "kitsu_id": 167,
+    "imdb_id": "tt0279570",
+    "title": "Love Hina",
+    "fromSeason": 0,
+    "fromEpisode": 5
   },
   {
     "kitsu_id": 170,
@@ -14690,13 +14690,6 @@
     "fromEpisode": 34
   },
   {
-    "kitsu_id": 42948,
-    "imdb_id": "tt2294076",
-    "title": "Girls und Panzer",
-    "fromSeason": 0,
-    "fromEpisode": 46
-  },
-  {
     "kitsu_id": 12320,
     "imdb_id": "tt2294076",
     "title": "Girls und Panzer",
@@ -14716,6 +14709,13 @@
     "title": "Girls und Panzer",
     "fromSeason": 0,
     "fromEpisode": 44
+  },
+  {
+    "kitsu_id": 42948,
+    "imdb_id": "tt2294076",
+    "title": "Girls und Panzer",
+    "fromSeason": 0,
+    "fromEpisode": 46
   },
   {
     "kitsu_id": 45025,
@@ -17550,13 +17550,6 @@
     "nonImdbEpisodes": [1, 2, 3, 4]
   },
   {
-    "kitsu_id": 12629,
-    "imdb_id": "tt3066242",
-    "title": "RWBY",
-    "fromSeason": 0,
-    "fromEpisode": 26
-  },
-  {
     "kitsu_id": 8707,
     "imdb_id": "tt3066242",
     "title": "RWBY",
@@ -17569,6 +17562,13 @@
     "title": "RWBY",
     "fromSeason": 0,
     "fromEpisode": 22
+  },
+  {
+    "kitsu_id": 12629,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 0,
+    "fromEpisode": 26
   },
   {
     "kitsu_id": 12669,
@@ -18892,14 +18892,6 @@
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 13711,
-    "imdb_id": "tt3213642",
-    "fanartLogoId": "91596",
-    "title": "Gundam Build Fighters",
-    "fromSeason": 0,
-    "fromEpisode": 6
-  },
-  {
     "kitsu_id": 9837,
     "imdb_id": "tt3213642",
     "fanartLogoId": "90789",
@@ -18922,6 +18914,14 @@
     "title": "Gundam Build Fighters",
     "fromSeason": 0,
     "fromEpisode": 5
+  },
+  {
+    "kitsu_id": 13711,
+    "imdb_id": "tt3213642",
+    "fanartLogoId": "91596",
+    "title": "Gundam Build Fighters",
+    "fromSeason": 0,
+    "fromEpisode": 6
   },
   {
     "kitsu_id": 8638,
@@ -21607,6 +21607,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 12115,
+    "imdb_id": "tt5537534",
+    "title": "Ajin",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 11369,
     "imdb_id": "tt5513012",
     "title": "JK meshi!",
@@ -21708,6 +21715,13 @@
     "imdb_id": "tt5683292",
     "title": "Rewrite",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 12861,
+    "imdb_id": "tt5683292",
+    "title": "Rewrite",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   {
@@ -23044,6 +23058,27 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 13304,
+    "imdb_id": "tt5824736",
+    "title": "Shônen Ashibe GO! GO! Goma-chan",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 41138,
+    "imdb_id": "tt5824736",
+    "title": "Shônen Ashibe GO! GO! Goma-chan",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 42239,
+    "imdb_id": "tt5824736",
+    "title": "Shônen Ashibe GO! GO! Goma-chan",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 12063,
     "imdb_id": "tt5731132",
     "title": "Napping Princess"
@@ -24025,6 +24060,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 45074,
+    "imdb_id": "tt6859260",
+    "title": "The King's Avatar",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 41158,
     "imdb_id": "tt6859260",
     "title": "The King's Avatar",
@@ -24719,6 +24761,13 @@
     "imdb_id": "tt8938030",
     "title": "Ani ni Tsukeru Kusuri wa Nai!",
     "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 45538,
+    "imdb_id": "tt8938030",
+    "title": "Ani ni Tsukeru Kusuri wa Nai!",
+    "fromSeason": 5,
     "fromEpisode": 1
   },
   {
@@ -26265,10 +26314,24 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 42672,
+    "imdb_id": "tt7945066",
+    "title": "Gen: Lock",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 13999,
     "imdb_id": "tt6296094",
     "title": "Lastman",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 46719,
+    "imdb_id": "tt6296094",
+    "title": "Lastman",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   {
@@ -26422,6 +26485,27 @@
     "title": "Dou Po Cangqiong: Nian Fan",
     "fromSeason": 5,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 48062,
+    "imdb_id": "tt12409194",
+    "title": "Dou Po Cangqiong: Nian Fan",
+    "fromSeason": 5,
+    "fromEpisode": 53
+  },
+  {
+    "kitsu_id": 48063,
+    "imdb_id": "tt12409194",
+    "title": "Dou Po Cangqiong: Nian Fan",
+    "fromSeason": 5,
+    "fromEpisode": 105
+  },
+  {
+    "kitsu_id": 50105,
+    "imdb_id": "tt12409194",
+    "title": "Dou Po Cangqiong: Nian Fan",
+    "fromSeason": 5,
+    "fromEpisode": 157
   },
   {
     "kitsu_id": 40595,
@@ -26657,19 +26741,19 @@
     "fromEpisode": 14
   },
   {
+    "kitsu_id": 40564,
+    "imdb_id": "tt8631370",
+    "title": "Gundam Build Divers",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 47903,
     "imdb_id": "tt8631370",
     "fanartLogoId": "129888",
     "title": "Gundam Build Divers",
     "fromSeason": 0,
     "fromEpisode": 2
-  },
-  {
-    "kitsu_id": 40564,
-    "imdb_id": "tt8631370",
-    "title": "Gundam Build Divers",
-    "fromSeason": 0,
-    "fromEpisode": 1
   },
   {
     "kitsu_id": 40568,
@@ -27830,6 +27914,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 45557,
+    "imdb_id": "tt12953630",
+    "title": "Fog Hill of Five Elements",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 41363,
     "imdb_id": "tt12923874",
     "title": "The Wonderland of Ten Thousands",
@@ -27855,6 +27946,13 @@
     "imdb_id": "tt12923874",
     "title": "The Wonderland of Ten Thousands",
     "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 45036,
+    "imdb_id": "tt12923874",
+    "title": "The Wonderland of Ten Thousands",
+    "fromSeason": 5,
     "fromEpisode": 1
   },
   {
@@ -28178,6 +28276,13 @@
     "imdb_id": "tt5580664",
     "title": "Voltron",
     "fromSeason": 7,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 41492,
+    "imdb_id": "tt5580664",
+    "title": "Voltron",
+    "fromSeason": 8,
     "fromEpisode": 1
   },
   {
@@ -28908,13 +29013,6 @@
     "title": "Stars Align"
   },
   {
-    "kitsu_id": 42097,
-    "imdb_id": "tt8688814",
-    "title": "The Dragon Prince",
-    "fromSeason": 2,
-    "fromEpisode": 1
-  },
-  {
     "kitsu_id": 42101,
     "imdb_id": "tt9886006",
     "title": "Kono Oto Tomare!",
@@ -29311,13 +29409,6 @@
     "imdb_id": "tt10696020",
     "title": "Over Drive Girl 1/6 - Amazing Stranger",
     "fromSeason": 1,
-    "fromEpisode": 1
-  },
-  {
-    "kitsu_id": 42232,
-    "imdb_id": "tt8688814",
-    "title": "The Dragon Prince",
-    "fromSeason": 3,
     "fromEpisode": 1
   },
   {
@@ -30840,6 +30931,55 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 42096,
+    "imdb_id": "tt8688814",
+    "title": "The Dragon Prince",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 42097,
+    "imdb_id": "tt8688814",
+    "title": "The Dragon Prince",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 42232,
+    "imdb_id": "tt8688814",
+    "title": "The Dragon Prince",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 46169,
+    "imdb_id": "tt8688814",
+    "title": "The Dragon Prince",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 47629,
+    "imdb_id": "tt8688814",
+    "title": "The Dragon Prince",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 48220,
+    "imdb_id": "tt8688814",
+    "title": "The Dragon Prince",
+    "fromSeason": 6,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 49369,
+    "imdb_id": "tt8688814",
+    "title": "The Dragon Prince",
+    "fromSeason": 7,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 42650,
     "imdb_id": "tt11708996",
     "title": "Healin' Good PreCure",
@@ -31391,6 +31531,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 46485,
+    "imdb_id": "tt8050756",
+    "title": "The Owl House",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 43019,
     "imdb_id": "tt12885610",
     "title": "Noblesse",
@@ -31523,6 +31670,13 @@
     "imdb_id": "tt12516564",
     "title": "Da Li Si Ri Zhi",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 45489,
+    "imdb_id": "tt12516564",
+    "title": "Da Li Si Ri Zhi",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   {
@@ -32300,6 +32454,20 @@
     "imdb_id": "tt10009170",
     "title": "Blood of Zeus",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 44416,
+    "imdb_id": "tt10009170",
+    "title": "Blood of Zeus",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 49422,
+    "imdb_id": "tt10009170",
+    "title": "Blood of Zeus",
+    "fromSeason": 3,
     "fromEpisode": 1
   },
   {
@@ -33695,6 +33863,41 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 46566,
+    "imdb_id": "tt14986786",
+    "title": "Wanmei Shijie",
+    "fromSeason": 1,
+    "fromEpisode": 27
+  },
+  {
+    "kitsu_id": 46567,
+    "imdb_id": "tt14986786",
+    "title": "Wanmei Shijie",
+    "fromSeason": 1,
+    "fromEpisode": 79
+  },
+  {
+    "kitsu_id": 48051,
+    "imdb_id": "tt14986786",
+    "title": "Wanmei Shijie",
+    "fromSeason": 1,
+    "fromEpisode": 131
+  },
+  {
+    "kitsu_id": 49271,
+    "imdb_id": "tt14986786",
+    "title": "Wanmei Shijie",
+    "fromSeason": 1,
+    "fromEpisode": 183
+  },
+  {
+    "kitsu_id": 50231,
+    "imdb_id": "tt14986786",
+    "title": "Wanmei Shijie",
+    "fromSeason": 1,
+    "fromEpisode": 235
+  },
+  {
     "kitsu_id": 44419,
     "imdb_id": "tt15391190",
     "title": "Dance Dance Danseur",
@@ -34965,6 +35168,13 @@
     "title": "Nitian Xie Shen (2023)",
     "fromSeason": 1,
     "fromEpisode": 31
+  },
+  {
+    "kitsu_id": 45676,
+    "imdb_id": "tt27517921",
+    "title": "Nitian Xie Shen 2",
+    "fromSeason": 2,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 45694,
@@ -36472,6 +36682,13 @@
     "imdb_id": "tt11680642",
     "title": "Pantheon",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 48124,
+    "imdb_id": "tt11680642",
+    "title": "Pantheon",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   {
@@ -38563,6 +38780,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 48299,
+    "imdb_id": "tt31381913",
+    "title": "Jiaonang Jihua",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 48312,
     "imdb_id": "tt32332831",
     "title": "Makeine: Too Many Losing Heroines!",
@@ -38998,6 +39222,13 @@
     "imdb_id": "tt30400535",
     "title": "Raijingu Inpakuto",
     "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 49149,
+    "imdb_id": "tt30400535",
+    "title": "Raijingu Inpakuto",
+    "fromSeason": 2,
     "fromEpisode": 1
   },
   {
@@ -41251,13 +41482,6 @@
     "fromEpisode": 1
   },
   {
-    "kitsu_id": 50238,
-    "imdb_id": "tt31530980",
-    "title": "Tomb of Fallen Gods",
-    "fromSeason": 3,
-    "fromEpisode": 1
-  },
-  {
     "kitsu_id": 50244,
     "imdb_id": "tt36290385",
     "title": "Kore Kaite Shine",
@@ -41870,6 +42094,27 @@
     "fromEpisode": 144
   },
   {
+    "kitsu_id": 47172,
+    "imdb_id": "tt31530980",
+    "title": "Tomb of Fallen Gods",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 49096,
+    "imdb_id": "tt31530980",
+    "title": "Tomb of Fallen Gods",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 50238,
+    "imdb_id": "tt31530980",
+    "title": "Tomb of Fallen Gods",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 47448,
     "imdb_id": "tt28526428",
     "title": "A World Worth Protecting",
@@ -41917,6 +42162,11 @@
     "title": "My Daemon",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 50457,
+    "imdb_id": "tt39966151",
+    "title": "The Outcast Special"
   },
   {
     "kitsu_id": 50567,
