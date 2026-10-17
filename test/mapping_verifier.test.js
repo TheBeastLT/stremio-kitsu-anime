@@ -396,3 +396,86 @@ test('rejects when an unmapped regular episode aired on the same dates (Kamichu!
     kitsuAirDates: ['2006-03-24T00:00:00.000Z'],
   }), { ok: true, fromEpisode: 1 });
 });
+
+const dated = (episodes, names = {}) => episodes.map(([day, episode]) =>
+    ({ season: 0, episode, released: `${day}T00:00:00.000Z`, name: names[episode] }));
+
+test('matches shorts Kitsu dates on one release day to the S0 run IMDb dates weekly from it (Link Click mini theatre)', () => {
+  const linkClick = {
+    type: 'series', name: 'Link Click', genres: ['Animation'],
+    videos: dated([['2023-03-10', 20], ['2026-04-04', 21], ['2026-04-11', 22], ['2026-04-18', 23], ['2026-04-25', 24]]),
+  };
+  const result = special({
+    animeType: 'ONA', cinemeta: linkClick, siblings: [], window: seasonWindow('2026/spring'),
+    kitsuAirDates: Array(4).fill('2026-04-04T00:00:00.000Z'), kitsuEpisodeLength: 4,
+  });
+  assert.deepStrictEqual(result, { ok: true, fromEpisode: 21 });
+  // the run must exist and follow the first episode: one episode short of four is no match
+  assert.strictEqual(special({
+    animeType: 'ONA', cinemeta: linkClick, siblings: [], window: seasonWindow('2026/spring'),
+    kitsuAirDates: Array(5).fill('2026-04-04T00:00:00.000Z'), kitsuEpisodeLength: 4,
+  }).ok, false);
+});
+
+test('takes the run titled after the special of several on its dates (Odd Taxi Picture Drama is S0E14)', () => {
+  const oddTaxi = {
+    type: 'series', name: 'Oddtaxi', genres: ['Animation'],
+    videos: dated([['2022-03-29', 14], ['2022-03-31', 15]],
+        { 14: 'Flauntingly (Picture Drama)', 15: 'Odd Taxi: In the Woods' }),
+  };
+  const oddTaxiSpecial = kitsuTitles => special({
+    cinemeta: oddTaxi, siblings: [], window: seasonWindow('2022/winter'),
+    kitsuAirDates: ['2022-03-30T00:00:00.000Z'], kitsuEpisodeLength: 9, kitsuTitles,
+  });
+  assert.deepStrictEqual(oddTaxiSpecial(['Odd Taxi Picture Drama']), { ok: true, fromEpisode: 14 });
+  assert.match(oddTaxiSpecial(['Odd Taxi Special']).reason, /2 S0 runs match/);
+});
+
+test('takes the only free S0 episode titled after the special when none matches its date (To Be Hero X Concept Movie)', () => {
+  const toBeHero = {
+    type: 'series', name: 'To Be Hero X', genres: ['Animation'],
+    videos: dated([['2022-11-03', 1], ['2025-04-06', 2]], { 1: '[TO BE HERO X] Concept Movie (Long ver.)', 2: 'Recap' }),
+  };
+  const conceptMovie = (kitsuAirDates, kitsuTitles = ['TO BE HERO X Concept Movie']) => special({
+    animeType: 'ONA', cinemeta: toBeHero, siblings: [], window: seasonWindow('2022/fall'),
+    kitsuAirDates, kitsuEpisodeLength: 6, kitsuTitles,
+  });
+  assert.deepStrictEqual(conceptMovie(['2022-10-29T00:00:00.000Z']), { ok: true, fromEpisode: 1 });
+  // a title doesn't carry a date further off than TITLED_DATE_LEEWAY_DAYS, and no title means no match
+  assert.match(conceptMovie(['2022-09-01T00:00:00.000Z']).reason, /no unused S0 episodes/);
+  assert.match(conceptMovie(['2022-10-29T00:00:00.000Z'], ['To Be Hero X Special']).reason, /no unused S0 episodes/);
+});
+
+test('keeps the dated run when IMDb also dates a batch on one day (Free!: Take Your Marks is S0E12)', () => {
+  const free = {
+    type: 'series', name: 'Free!', genres: ['Animation'],
+    videos: dated([['2017-07-01', 11], ['2017-10-28', 12], ['2017-10-28', 13], ['2017-10-28', 14], ['2017-10-28', 15],
+      ['2019-07-05', 16]]),
+  };
+  assert.deepStrictEqual(special({
+    cinemeta: free, siblings: [], window: seasonWindow('2017/fall'),
+    kitsuAirDates: Array(4).fill('2017-10-28T00:00:00.000Z'), kitsuTitles: ['Free!: Take Your Marks'],
+  }), { ok: true, fromEpisode: 12 });
+});
+
+test('does not stretch a one-day batch over IMDb episodes years apart (Yuru Camp 2 OVA)', () => {
+  const yuruCamp = {
+    type: 'series', name: 'Laid-Back Camp', genres: ['Animation'],
+    videos: dated([['2021-07-28', 18], ['2021-05-26', 19], ['2024-06-26', 20]]),
+  };
+  assert.strictEqual(special({
+    animeType: 'OVA', cinemeta: yuruCamp, siblings: [], window: seasonWindow('2021/spring'),
+    kitsuAirDates: Array(2).fill('2021-05-26T00:00:00.000Z'),
+  }).ok, false);
+});
+
+test('a one-word title after the franchise name is no evidence (One Piece Special vs "One Piece: Stampede Special")', () => {
+  const onePiece = {
+    type: 'series', name: 'One Piece', genres: ['Animation'],
+    videos: dated([['2019-08-09', 38], ['2024-04-14', 53]], { 38: 'One Piece: Stampede Special', 53: 'Log of Rivalry!' }),
+  };
+  assert.deepStrictEqual(special({
+    cinemeta: onePiece, siblings: [], window: seasonWindow('2024/spring'),
+    kitsuAirDates: ['2024-04-14T00:00:00.000Z'], kitsuTitles: ['One Piece: Innen no Log!', 'One Piece Special'],
+  }), { ok: true, fromEpisode: 53 });
+});

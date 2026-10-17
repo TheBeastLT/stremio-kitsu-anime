@@ -4,6 +4,10 @@
 const SEASON_START_MONTH = { winter: 0, spring: 3, summer: 6, fall: 9 };
 const DAY_MS = 24 * 60 * 60 * 1000;
 const CONTINUATION_DATE_LEEWAY_DAYS = 3;
+// how far an S0 episode titled after a special may be dated from it
+const TITLED_DATE_LEEWAY_DAYS = 14;
+// the longest IMDb gap between two shorts Kitsu dates on one release day (monthly releases)
+const BATCH_EPISODE_GAP_DAYS = 35;
 const SPECIAL_TYPES = ['OVA', 'ONA', 'special'];
 const FEATURE_LENGTH_MINUTES = 45;
 
@@ -246,8 +250,36 @@ function verifySpecial({ animeType, kitsuAirDates, kitsuEpisodeLength, kitsuTitl
     return fail('imdb has no S0');
   }
   const byEpisode = new Map(specials.map(video => [video.episode, video]));
-  const starts = specials.map(video => video.episode).filter(start => kitsuAirDates.every((date, i) =>
-      airedNear(byEpisode.get(start + i), date) && !used.has(start + i)));
+  const subtitles = specialSubtitles(kitsuTitles, cinemeta.name);
+  const titled = video => subtitles.some(subtitle => normalizeTitle(video?.name || video?.title).includes(subtitle));
+  const free = start => kitsuAirDates.every((_, i) => byEpisode.has(start + i) && !used.has(start + i));
+  let starts = specials.map(video => video.episode)
+      .filter(start => free(start) && kitsuAirDates.every((date, i) => airedNear(byEpisode.get(start + i), date)));
+  // Kitsu dates shorts released together all on the release day, IMDb as they air (Link Click's mini theatre: Kitsu
+  // 8x 04-04, IMDb weekly from 04-04): with no run on the dates, the first is matched on its date and each next one
+  // must follow within BATCH_EPISODE_GAP_DAYS.
+  const batch = kitsuAirDates.length > 1
+      && new Set(kitsuAirDates.map(date => new Date(date).toISOString().slice(0, 10))).size === 1;
+  const follows = (start, i) => {
+    const released = episode => new Date(byEpisode.get(episode).released);
+    const gap = (released(start + i) - released(start + i - 1)) / DAY_MS;
+    return gap >= 0 && gap <= BATCH_EPISODE_GAP_DAYS;
+  };
+  if (!starts.length && batch) {
+    starts = specials.map(video => video.episode).filter(start => free(start)
+        && airedNear(byEpisode.get(start), kitsuAirDates[0])
+        && kitsuAirDates.slice(1).every((_, i) => follows(start, i + 1)));
+  }
+  // A title settles what the dates can't: of several runs on the dates the one titled after the special (Odd Taxi's
+  // Picture Drama: S0E14 "Flauntingly (Picture Drama)", E15 aired two days later), or with none on the dates the only
+  // free run titled after it within TITLED_DATE_LEEWAY_DAYS (To Be Hero X's Concept Movie, listed 5 days later).
+  const titledStarts = (starts.length ? starts : specials.map(video => video.episode).filter(start => free(start)
+      && airedWithin(byEpisode.get(start), kitsuAirDates[0], TITLED_DATE_LEEWAY_DAYS)))
+      .filter(start => titled(byEpisode.get(start)));
+  const byTitle = starts.length !== 1 && titledStarts.length === 1;
+  if (byTitle) {
+    starts = titledStarts;
+  }
   if (starts.length !== 1) {
     return fail(starts.length
         ? `${starts.length} S0 runs match the kitsu air dates (${starts.map(start => `S0E${start}`).join(', ')})`
@@ -259,16 +291,14 @@ function verifySpecial({ animeType, kitsuAirDates, kitsuEpisodeLength, kitsuTitl
   const spanFrom = Math.min(...kitsuTimes) - CONTINUATION_DATE_LEEWAY_DAYS * DAY_MS;
   const spanTo = Math.max(...kitsuTimes) + CONTINUATION_DATE_LEEWAY_DAYS * DAY_MS;
   const run = new Set(kitsuAirDates.map((_, i) => starts[0] + i));
-  const rivals = specials.filter(video => !run.has(video.episode) && !used.has(video.episode) && video.released
-      && new Date(video.released) >= spanFrom && new Date(video.released) <= spanTo);
+  const rivals = byTitle ? [] : specials.filter(video => !run.has(video.episode) && !used.has(video.episode)
+      && video.released && new Date(video.released) >= spanFrom && new Date(video.released) <= spanTo);
   if (rivals.length) {
     return fail(`S0E${starts[0]} fits, but ${rivals.map(video => `S0E${video.episode}`).join(', ')} aired on the same dates`);
   }
   // Release dates can coincide by chance (a Blu-ray extra dated like another short): when another free S0 episode is
   // titled after this special and the matched run is not, IMDb most likely lists it there (Guilty Crown: Lost
   // Christmas is S0E2, not the 4-panel short S0E9 aired the same week).
-  const subtitles = specialSubtitles(kitsuTitles);
-  const titled = video => subtitles.some(subtitle => normalizeTitle(video.name || video.title).includes(subtitle));
   const titleRival = specials.find(video => !run.has(video.episode) && !used.has(video.episode) && titled(video));
   if (titleRival && ![...run].some(episode => titled(byEpisode.get(episode)))) {
     return fail(`S0E${starts[0]} fits the dates, but S0E${titleRival.episode} is titled "${titleRival.name || titleRival.title}"`);
@@ -345,7 +375,11 @@ function verifySpecialRun({ row, siblings, cinemeta }) {
 
 // The IMDb episode aired within the leeway of `date`.
 function airedNear(video, date) {
-  return !!video?.released && Math.abs(new Date(video.released) - new Date(date)) / DAY_MS <= CONTINUATION_DATE_LEEWAY_DAYS;
+  return airedWithin(video, date, CONTINUATION_DATE_LEEWAY_DAYS);
+}
+
+function airedWithin(video, date, days) {
+  return !!video?.released && Math.abs(new Date(video.released) - new Date(date)) / DAY_MS <= days;
 }
 
 // The IMDb episode is the first of its season aired around `date`: the one before it did not (so for a streaming
@@ -356,11 +390,28 @@ function startsRun(videos = [], video, date) {
 }
 
 // "Guilty Crown: Lost Christmas" -> ['lost christmas']: the part after the franchise name, long enough to be telling.
-function specialSubtitles(titles) {
+// What a special's titles add to its franchise's: the part after a separator ("Guilty Crown: Lost Christmas"), or
+// two or more words after the franchise's own name, however it is spaced ("Odd Taxi Picture Drama" of "Oddtaxi"; a
+// single word is generic: "One Piece Special").
+function specialSubtitles(titles, franchiseName) {
+  const franchise = normalizeTitle(franchiseName).replace(/ /g, '');
   return [...new Set(titles
-      .map(title => (title || '').split(/:| - | ~/).slice(1).join(' '))
-      .map(normalizeTitle)
+      .flatMap(title => [normalizeTitle((title || '').split(/:| - | ~/).slice(1).join(' ')),
+        [afterName(normalizeTitle(title), franchise)].find(rest => rest.includes(' ')) || ''])
       .filter(subtitle => subtitle.length >= 6))];
+}
+
+// The words of a normalized title after its leading `name` (spaces removed), or '' when it doesn't start with it.
+function afterName(title, name) {
+  const words = title.split(' ');
+  let joined = '';
+  for (let i = 0; name && i < words.length && name.startsWith(joined + words[i]); i++) {
+    joined += words[i];
+    if (joined === name) {
+      return words.slice(i + 1).join(' ');
+    }
+  }
+  return '';
 }
 
 function normalizeTitle(title) {

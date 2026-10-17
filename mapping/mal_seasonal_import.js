@@ -11,7 +11,7 @@ const {
 } = require('./fribb_mapping');
 const { getFreshCinemetaMetadata } = require('../lib/cinemeta_api');
 const { mergeVerifiedRows, formatJson } = require('./mapping_file');
-const { searchImdbIds, firstTrusted } = require('./imdb_search');
+const { searchImdbIds, searchImdbIdsByYear, firstTrusted } = require('./imdb_search');
 const {
   seasonWindow, verifyCandidate, verifyFreshTitle, verifySpecial, nextSeason, continuationStart, SPECIAL_TYPES,
 } = require('./mapping_verifier');
@@ -112,17 +112,25 @@ async function createKitsuMappingEntry(kitsuId, { malId, malTitle, searchTitle }
 
   const searchTitles = malId ? [searchTitle] : [...new Set([searchTitle, ...(kitsuMetadata?.aliases || [])])];
   const foundImdbIds = await firstFound(searchTitles, title => searchImdbIds(title).catch((err) => []));
-  if (!foundImdbIds.length) {
-    console.log(`No imdbId found for: ${JSON.stringify({ title: searchTitle, malId, kitsuId })}`);
-    return withSpecialSuggestion(reviewBase, special);
-  }
   const hasVideos = kitsuMetadata?.videos?.length > 1 || kitsuMetadata?.animeType === 'TV';
-  const entry = await firstTrusted(foundImdbIds, imdbId => verifiedOrReview(link, kitsuMetadata, window, {
+  const verify = imdbId => verifiedOrReview(link, kitsuMetadata, window, {
     ...reviewBase,
     imdb_id: imdbId,
     fromSeason: hasVideos ? 1 : undefined,
     fromEpisode: hasVideos ? 1 : undefined,
-  }));
+  });
+  let entry = foundImdbIds.length ? await firstTrusted(foundImdbIds, verify) : undefined;
+  // A movie or one-episode extra the title search can't verify may be a short or small film of the same name, listed
+  // below other years' namesakes: then its exactly named title of that year is the candidate.
+  if (!entry?._trusted && !hasVideos && parseInt(kitsuMetadata?.year)) {
+    const titles = [...new Set([searchTitle, kitsuMetadata.name, ...(kitsuMetadata.aliases || [])].filter(Boolean))];
+    const namedImdbIds = await searchImdbIdsByYear(titles, parseInt(kitsuMetadata.year));
+    entry = namedImdbIds.length ? await firstTrusted(namedImdbIds, verify) : entry;
+  }
+  if (!entry) {
+    console.log(`No imdbId found for: ${JSON.stringify({ title: searchTitle, malId, kitsuId })}`);
+    return withSpecialSuggestion(reviewBase, special);
+  }
   const [imdbMeta, tvdbId] = await Promise.all([
     getImdbMeta(entry.imdb_id).catch((err) => undefined),
     getTvdbId({ imdb_id: entry.imdb_id }).catch(() => false),
