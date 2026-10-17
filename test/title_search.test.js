@@ -130,6 +130,8 @@ test('the title index finds the expected Kitsu entries', () => {
     'gate jieitai kanochi nite': 10085, // not Part 2, which has the bare name as an own title too
     'oye tonbo!': 47427, // not the 2nd Season's Spanish title "¡Oye Tonbo!"
     'oye tonbo! S2': 49013,
+    'mini link click': 45503, // the 2021 shorts, not the 2026 ones Kitsu titles so: by its alias
+    'mini link click S2': 50691,
     'steven universe S1': 10735, // not Future, S1 of its own imdb but titled "Season 6"
     'kizumonogatari i - tekketsu': 5649,
     'kizumonogatari ii - nekketsu': 11406,
