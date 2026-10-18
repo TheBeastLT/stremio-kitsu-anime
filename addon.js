@@ -141,7 +141,7 @@ builder.defineMetaHandler((args) => {
 
 builder.defineSubtitlesHandler((args) => {
   if (!args.id.match(/^(?:kitsu|mal|anilist|anidb):\d+(?::\d+)?$/)) {
-    return Promise.reject(`Invalid id: ${args.id}`);
+    return notFound(`Invalid id: ${args.id}`);
   }
 
   return getKitsuIdMetadata(args.id)
