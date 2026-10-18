@@ -160,6 +160,8 @@ test('the title index finds the expected Kitsu entries', () => {
     'doupo cangqiong  dou po cang qiong  fights break sphere  battle through the heavens': 14116,
     'ojisan wa kawaii mono ga osuki uncle\'s obsession with cute things 2026': 51021,
     'kuroko\'s basketball 2 (kuroko no baske)': 7545,
+    'Shingeki no Kyojin OVAs (Attack on Titan)': 7694, // the extra before the bracket goes to its title too
+    'Shingeki no Kyojin (Attack on Titan)': 7442,
     'sword art online S2': 8174, // not "Alicization - War of Underworld 2nd Season", matched by the franchise name
     'jormungand S2': 6940, // filed by TVDB under season 1
     'jojo\'s bizarre adventure 2018 S5': 41410,
