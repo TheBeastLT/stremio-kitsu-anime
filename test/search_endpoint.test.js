@@ -46,3 +46,20 @@ test('/meta of an id with no anime behind it is a 404, not a handler error', asy
     assert.strictEqual(status, 404, path);
   }
 });
+
+test('/search/{imdb id}.json returns its mapped franchise, seasons before specials', async () => {
+  const { body } = await get('/search/tt0388629.json'); // One Piece: the series, then its season-0 movies and specials
+  assert.strictEqual(body.ids[0], '12');
+  assert.strictEqual(body.ids.length, 20);
+  assert.ok(body.ids.includes('45690'));
+});
+
+test('/search/{imdb id}.json matches the id case-insensitively with surrounding spaces', async () => {
+  const { body } = await get(`/search/${encodeURIComponent(' TT0213338 ')}.json`);
+  assert.strictEqual(body.ids[0], '1'); // Cowboy Bebop
+});
+
+test('/search/{imdb id}.json is empty for an unmapped id rather than fuzzy title matches', async () => {
+  const { body } = await get('/search/tt0000001.json');
+  assert.deepStrictEqual(body, { ids: [] });
+});
