@@ -1,27 +1,39 @@
-// Keep an imdb's entries together, with season-0 specials trailing at the end of the group. A regular
-// season goes after the last non-special sibling; a special goes after the very last sibling. A
-// brand-new imdb slots into kitsu-id order.
+// Rows are kept in groups, an imdb's rows together, ordered by their first row's kitsu id. A row of a mapped imdb goes
+// among its rows by season and episode, specials (season 0) after every season; a new imdb starts a group of its own.
 function insertMappingEntry(base, item) {
-  const siblings = base.filter(e => e.imdb_id === item.imdb_id);
+  const siblings = item.imdb_id ? base.filter(row => row.imdb_id === item.imdb_id) : [];
   if (!siblings.length) {
     insertInKitsuOrder(base, item);
     return;
   }
-  const anchors = item.fromSeason === 0 ? siblings : siblings.filter(e => e.fromSeason !== 0);
-  if (anchors.length) {
-    base.splice(base.indexOf(anchors[anchors.length - 1]) + 1, 0, item);
-  } else {
-    base.splice(base.indexOf(siblings[0]), 0, item); // only specials exist -> put this before them
-  }
+  const next = siblings.find(row => compareRuns(row, item) > 0);
+  base.splice(next ? base.indexOf(next) : base.indexOf(siblings[siblings.length - 1]) + 1, 0, item);
 }
 
-// never between two rows of one imdb (a franchise's group starts at its first season's kitsu id)
+// A new group goes where its kitsu id falls between two groups' first ids; as the file isn't fully sorted there can be
+// several such places, and it takes the one after the group starting closest below it.
 function insertInKitsuOrder(base, item) {
-  const sameGroup = (a, b) => !!a.imdb_id && a.imdb_id === b.imdb_id;
-  const idx = base.findIndex((e, i) => e.kitsu_id > item.kitsu_id
-      && (i === 0 || !sameGroup(base[i - 1], e))
-      && base.slice(i).every(x => x.kitsu_id > item.kitsu_id || sameGroup(x, e)));
-  base.splice(idx === -1 ? base.length : idx, 0, item);
+  const starts = base.map((row, i) => i).filter(i => i === 0 || !sameGroup(base[i - 1], base[i]));
+  const firstIds = starts.map(i => base[i].kitsu_id);
+  // before group g (or at the end, g = firstIds.length) when it falls between their first ids: of those places the
+  // one after the group starting closest below it
+  let group;
+  for (let g = 0; g <= firstIds.length; g++) {
+    const below = g ? firstIds[g - 1] : -Infinity;
+    const above = g < firstIds.length ? firstIds[g] : Infinity;
+    if (below < item.kitsu_id && item.kitsu_id < above && (group === undefined || below > firstIds[group - 1])) {
+      group = g;
+    }
+  }
+  base.splice(group === undefined || group === firstIds.length ? base.length : starts[group], 0, item);
+}
+
+const sameGroup = (a, b) => !!a.imdb_id && a.imdb_id === b.imdb_id;
+
+// season, then episode, with specials (season 0) after every season
+function compareRuns(a, b) {
+  const season = row => row.fromSeason === 0 ? Infinity : row.fromSeason ?? 1;
+  return (season(a) - season(b)) || ((a.fromEpisode ?? 1) - (b.fromEpisode ?? 1));
 }
 
 // Inserts the rows of verified import entries ({ kitsuId, imdb_id, title, fromSeason?, fromEpisode? }) into base,

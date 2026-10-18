@@ -11,13 +11,13 @@ test('resolveImdbId takes the first imdb id Fribb lists', () => {
 
 test('insertInKitsuOrder places an entry by kitsu id even in a non-monotonic list', () => {
   const base = [
-    { kitsu_id: 5 },
-    { kitsu_id: 1007 }, // franchise sequel breaks strict ordering
-    { kitsu_id: 6 },
-    { kitsu_id: 30 },
+    { kitsu_id: 5, imdb_id: 'ttA' },
+    { kitsu_id: 1007, imdb_id: 'ttA' }, // franchise sequel breaks strict ordering
+    { kitsu_id: 6, imdb_id: 'ttB' },
+    { kitsu_id: 30, imdb_id: 'ttC' },
   ];
-  insertInKitsuOrder(base, { kitsu_id: 20 });
-  // Must land before 30 (the first id greater-than with all following also greater), not before 1007.
+  insertInKitsuOrder(base, { kitsu_id: 20, imdb_id: 'ttD' });
+  // groups are ordered by their first id: between ttB (6) and ttC (30), never inside ttA's group.
   assert.deepStrictEqual(base.map(e => e.kitsu_id), [5, 1007, 6, 20, 30]);
 });
 
@@ -61,6 +61,29 @@ test('insertMappingEntry keeps first-season/standalone entries in kitsu-id order
   ];
   insertMappingEntry(base, { kitsu_id: 20, imdb_id: 'ttB', fromSeason: 1, fromEpisode: 1 });
   assert.deepStrictEqual(base.map(e => e.kitsu_id), [5, 20, 30]);
+});
+
+test('insertInKitsuOrder places a new group between the first ids around it, past a misplaced group further down', () => {
+  const base = [
+    { kitsu_id: 637, imdb_id: 'ttA' }, { kitsu_id: 7786, imdb_id: 'ttB' }, { kitsu_id: 455, imdb_id: 'ttC' }, // misplaced
+    { kitsu_id: 12755, imdb_id: 'ttD' }, { kitsu_id: 12593, imdb_id: 'ttE' },
+  ];
+  insertInKitsuOrder(base, { kitsu_id: 500, imdb_id: 'ttN' });
+  insertInKitsuOrder(base, { kitsu_id: 12000, imdb_id: 'ttM' });
+  assert.deepStrictEqual(base.map(e => e.kitsu_id), [500, 637, 7786, 455, 12000, 12755, 12593]);
+});
+
+test('insertMappingEntry orders an imdb\'s rows by season and episode, specials last (Tomb of Fallen Gods S1 before S3)', () => {
+  const base = [
+    { kitsu_id: 50238, imdb_id: 'ttT', fromSeason: 3, fromEpisode: 1 },
+    { kitsu_id: 51000, imdb_id: 'ttT', fromSeason: 0, fromEpisode: 1 },
+    { kitsu_id: 51001, imdb_id: 'ttT', fromSeason: 0, fromEpisode: 5 },
+    { kitsu_id: 60000, imdb_id: 'ttZ' },
+  ];
+  insertMappingEntry(base, { kitsu_id: 47172, imdb_id: 'ttT', fromSeason: 1, fromEpisode: 1 });
+  insertMappingEntry(base, { kitsu_id: 49096, imdb_id: 'ttT', fromSeason: 2, fromEpisode: 1 });
+  insertMappingEntry(base, { kitsu_id: 51002, imdb_id: 'ttT', fromSeason: 0, fromEpisode: 2 });
+  assert.deepStrictEqual(base.map(e => e.kitsu_id), [47172, 49096, 50238, 51000, 51002, 51001, 60000]);
 });
 
 test('insertMappingEntry never puts a new imdb inside another imdb\'s group (Jewelpet / Battle Spirits case)', () => {
