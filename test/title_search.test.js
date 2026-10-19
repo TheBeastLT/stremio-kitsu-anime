@@ -162,6 +162,8 @@ test('the title index finds the expected Kitsu entries', () => {
     'kuroko\'s basketball 2 (kuroko no baske)': 7545,
     'Shingeki no Kyojin OVAs (Attack on Titan)': 7694, // the extra before the bracket goes to its title too
     'Shingeki no Kyojin (Attack on Titan)': 7442,
+    'Koufu Collector': 50994, // an uploader's typo for Kyoufu: one letter off, the fallback below the cut-off
+    'Shingeki no Kyojn': 7442,
     'sword art online S2': 8174, // not "Alicization - War of Underworld 2nd Season", matched by the franchise name
     'jormungand S2': 6940, // filed by TVDB under season 1
     'jojo\'s bizarre adventure 2018 S5': 41410,
@@ -223,6 +225,8 @@ test('a query that is only an extra word names no show', () => {
 test('a chance match on a word or two is below the cut-off', () => {
   // "Office Work" shares one of the two words
   assert.deepStrictEqual(searchTitles('office girls'), []);
+  // the typo fallback takes one letter off, not two ("kyoto" for "kyofu")
+  assert.deepStrictEqual(searchTitles('Kyoto Collector'), []);
 });
 
 test('every search alias names a Kitsu entry and finds it first', () => {
