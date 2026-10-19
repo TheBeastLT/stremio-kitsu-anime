@@ -131,6 +131,7 @@ test('the title index finds the expected Kitsu entries', () => {
     'ghost in the shell-sac S2': 715, // Stand Alone Complex's 2nd GIG, not SAC_2045 2nd Season: by its alias
     'prince of tennis - another story': 4264, // the first part, not the "OVA Another Story II" synonym's
     'gate jieitai kanochi nite': 10085, // not Part 2, which has the bare name as an own title too
+    'gate jieitai kanochi nite S2': 11376, // the alias restoring 10085's dropped synonym leaves the season to Part 2
     'oye tonbo!': 47427, // not the 2nd Season's Spanish title "¡Oye Tonbo!"
     'oye tonbo! S2': 49013,
     'mini link click': 45503, // the 2021 shorts, not the 2026 ones Kitsu titles so: by its alias
