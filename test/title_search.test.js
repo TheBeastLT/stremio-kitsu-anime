@@ -108,6 +108,9 @@ test('the title index finds the expected Kitsu entries', () => {
     'higurashi when they cry': 831, // the 2006 series' synonym whole, over "Higurashi: When They Cry - Gou"
     'feng ling yu xiu 2': 45638, // its synonym is the whole query, the special's "... 2: Special" isn't
     'a record of a mortal s journey to immortality remastered': 47063, // "Remastered Edition": the marker takes "edition" too
+    'Cardfight!! Vanguard 15th Anniversary Remastered': 5781, // an anniversary before a remaster is release noise
+    'Akira 25th Anniversary Edition 1988': 29, // ... and before an edition
+    'Ojamajo Carnival 25th Anniversary Version': 48678, // not before a version: Kitsu's own titles end in it
     'diamond no ace actii  second season ': 48878, // the whole query is its title glued, not "Diamond no Ace: Act II"
     // both halves name Steel Ball Run (imdb season 6), not the OVA holding both names
     'jojo`s bizarre adventure (jojo no kimyou na bouken) s6': 49847,
