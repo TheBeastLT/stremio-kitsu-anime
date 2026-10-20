@@ -167,6 +167,8 @@ test('the title index finds the expected Kitsu entries', () => {
     'Shingeki no Kyojin OVAs (Attack on Titan)': 7694, // the extra before the bracket goes to its title too
     'Shingeki no Kyojin (Attack on Titan)': 7442,
     'Koufu Collector': 50994, // an uploader's typo for Kyoufu: one letter off, the fallback below the cut-off
+    'Hosizora Kiseki': 1097, // the misspelt word scores low: the query spelt as the title is ranked anew
+    'blue excorcist': 5940, // ... a word no title holds; not a real word one letter off another ("song", "kiss")
     'Shingeki no Kyojn': 7442,
     'sword art online S2': 8174, // not "Alicization - War of Underworld 2nd Season", matched by the franchise name
     'jormungand S2': 6940, // filed by TVDB under season 1
