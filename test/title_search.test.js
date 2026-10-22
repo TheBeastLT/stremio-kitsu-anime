@@ -128,6 +128,14 @@ test('the title index finds the expected Kitsu entries', () => {
     'shingeki no kyojin junior high': 11315, // romaji franchise, English subtitle: by its alias
     'white album S3': 7697, // White Album 2, the franchise's 3rd series to release groups: by its alias
     'white album S2': 4455,
+    'sengoku basara S3': 8272, // no entry is season 3: the franchise's 3rd series, Judge End (not the 2nd, "Two")
+    'horimiya S2': 47234, // its own imdb series: the 2nd series of the name
+    'horimiya the missing pieces S2': 47234,
+    'cardcaptor sakura S2': 12237,
+    'hunter x hunter 2011 S4': 6448, // 3 imdb seasons: no season 4, and the OVA mapped at the 1999 series' S4 is no season
+    'dragon ball z S3': 720, // Kai (2014) is a remake, not the next series
+    'samurai jack S2': 7939,
+    'uchuu senkan yamato 2205': 44694, // a 4-digit number that is a title's word is the name, not an episode
     'ghost in the shell-sac S2': 715, // Stand Alone Complex's 2nd GIG, not SAC_2045 2nd Season: by its alias
     'prince of tennis - another story': 4264, // the first part, not the "OVA Another Story II" synonym's
     'gate jieitai kanochi nite': 10085, // not Part 2, which has the bare name as an own title too
