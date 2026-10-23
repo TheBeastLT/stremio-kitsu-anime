@@ -135,6 +135,11 @@ test('the title index finds the expected Kitsu entries', () => {
     'hunter x hunter 2011 S4': 6448, // 3 imdb seasons: no season 4, and the OVA mapped at the 1999 series' S4 is no season
     'dragon ball z S3': 720, // Kai (2014) is a remake, not the next series
     'samurai jack S2': 7939,
+    'baki S3': 42206, // imdb season 2 after a 26-episode season: release groups count two cours as two seasons
+    'baki S2': 42206,
+    'baki S1': 13140,
+    'baki': 13140,
+    'hanma baki S1': 43599,
     'uchuu senkan yamato 2205': 44694, // a 4-digit number that is a title's word is the name, not an episode
     'ghost in the shell-sac S2': 715, // Stand Alone Complex's 2nd GIG, not SAC_2045 2nd Season: by its alias
     'prince of tennis - another story': 4264, // the first part, not the "OVA Another Story II" synonym's
