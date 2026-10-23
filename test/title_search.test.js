@@ -140,6 +140,15 @@ test('the title index finds the expected Kitsu entries', () => {
     'baki S1': 13140,
     'baki': 13140,
     'hanma baki S1': 43599,
+    'uchuu senkan yamato space battleship yamato 2202': 12017, // no one title holds the whole name: half of it is enough
+    'one piece 1001': 12, // "1001 Nights" holds the number but none of the name
+    'inuyasha S2': 224, // its Kanketsu-hen is season 8 of the same imdb series: S2 lies inside the first entry
+    'kyo kara maoh S2': 226,
+    'black clover S3': 13209,
+    'fairy tail S3': 4676, // an earlier series of 175 episodes spans several seasons: S3 lies inside it
+    'dragon ball super S3': 10879,
+    'dragon ball S5': 199, // five series share the name: their count says nothing about the season
+    'steven universe S6': 42605, // "Season 5" names its own season: no shift to 6
     'uchuu senkan yamato 2205': 44694, // a 4-digit number that is a title's word is the name, not an episode
     'ghost in the shell-sac S2': 715, // Stand Alone Complex's 2nd GIG, not SAC_2045 2nd Season: by its alias
     'prince of tennis - another story': 4264, // the first part, not the "OVA Another Story II" synonym's
