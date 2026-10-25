@@ -77,6 +77,6 @@ describe('app', () => {
     await request(port, '/manifest.json');
     const response = await request(port, '/metrics', { authorization: AUTH });
     assert.strictEqual(response.status, 200);
-    assert.match(response.raw.toString(), /http_requests_total\{route="manifest",status="200"\} \d+/);
+    assert.match(response.raw.toString(), /kitsu_http_requests_total\{route="manifest",status="200"\} \d+/);
   });
 });

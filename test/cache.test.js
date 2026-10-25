@@ -33,7 +33,7 @@ test('cacheWrapMeta counts a miss when the loader runs and a hit afterwards', as
   const { cacheWrapMeta } = require('../lib/cache');
   const { register } = require('../lib/metrics');
   const count = async (result) => {
-    const metric = (await register.getMetricsAsJSON()).find((m) => m.name === 'cache_requests_total');
+    const metric = (await register.getMetricsAsJSON()).find((m) => m.name === 'kitsu_cache_requests_total');
     const entry = metric.values.find((v) => v.labels.kind === 'meta' && v.labels.result === result);
     return entry ? entry.value : 0;
   };
@@ -56,7 +56,7 @@ test('persistent store operations are timed by op', async () => {
   await store.set('timed:1', 'v');
   await store.get('timed:1');
   await store.getMany(['timed:1', 'timed:2']);
-  const metric = (await register.getMetricsAsJSON()).find((m) => m.name === 'cache_store_operation_duration_seconds');
+  const metric = (await register.getMetricsAsJSON()).find((m) => m.name === 'kitsu_cache_store_operation_duration_seconds');
   const ops = new Set(metric.values.filter((v) => v.metricName.endsWith('_count')).map((v) => v.labels.op));
   assert.ok(ops.has('set'));
   assert.ok(ops.has('get'));
