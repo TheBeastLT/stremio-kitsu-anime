@@ -13,6 +13,7 @@
     "cache-manager": "^7.2.9",
     "cacheable": "^2.5.0",
     "cheerio": "^1.0.0-rc.12",
+    "compression": "^1.8.2",
     "express": "^4.21.2",
     "fanart.tv-api": "^2.0.1",
     "jaro-winkler": "^0.2.8",
