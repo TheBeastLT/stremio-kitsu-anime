@@ -202,13 +202,18 @@ test('timedUpstream wrapping a stub marks the kitsu upstream ok', async () => {
 });
 
 test('search route counts found and empty results', async () => {
-  const body = await withApp(async (get) => {
-    await get(`/search/${encodeURIComponent('overlord S3')}.json`);
-    await get(`/search/${encodeURIComponent('hello carbot 2018 S6')}.json`);
-    return scrape(get);
+  const read = (body, result) => Number(body.match(new RegExp(`search_requests_total\\{result="${result}"\\} (\\d+)`))?.[1] || 0);
+  const { found, empty } = await withApp(async (get) => {
+    const counts = async (query) => {
+      const before = await scrape(get);
+      await get(`/search/${encodeURIComponent(query)}.json`);
+      const after = await scrape(get);
+      return { found: read(after, 'found') - read(before, 'found'), empty: read(after, 'empty') - read(before, 'empty') };
+    };
+    return { found: await counts('overlord S3'), empty: await counts('hello carbot 2018 S6') };
   });
-  assert.match(body, /search_requests_total\{result="found"\} [1-9]/);
-  assert.match(body, /search_requests_total\{result="empty"\} [1-9]/);
+  assert.deepStrictEqual(found, { found: 1, empty: 0 });
+  assert.deepStrictEqual(empty, { found: 0, empty: 1 });
 });
 
 test('search route counts nothing for a malformed query', async () => {

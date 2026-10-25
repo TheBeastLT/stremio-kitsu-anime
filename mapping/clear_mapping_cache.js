@@ -1,8 +1,6 @@
 // Clears the addon's Mongo cache entries (meta, images, ...) of every kitsu and imdb id whose imdb_mapping.json row
 // was added, changed or removed between two git refs, so the deployed addon serves the new mapping right away.
 // Counts the matching keys unless --delete is given. Needs MONGODB_URI.
-// The 3.x driver's url.parse() deprecation warning prints the resolved connection string, password included, which
-// GitHub can't mask (it only knows the mongodb+srv:// secret).
 process.noDeprecation = true;
 const { execFileSync } = require('child_process');
 const { MongoClient } = require('mongodb');
@@ -37,7 +35,6 @@ async function clearCache(ids, { remove = false } = {}) {
   if (!all.length) {
     return { matched: 0, deleted: 0 };
   }
-  // The deploy passes the secret through a shell (docker run -e MONGODB_URI=...), which drops surrounding quotes.
   const uri = process.env.MONGODB_URI.trim().replace(/^(['"])(.*)\1$/, '$2');
   const client = await MongoClient.connect(uri);
   try {
