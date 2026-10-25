@@ -2,6 +2,7 @@ const { getRouter } = require('stremio-addon-sdk');
 const landingTemplate = require('stremio-addon-sdk/src/landingTemplate');
 const addonInterface = require('./addon');
 const { searchIds } = require('./lib/kitsu_api');
+const { counters } = require('./lib/metrics');
 const router = getRouter(addonInterface);
 
 const CACHE_MAX_AGE = parseInt(process.env.CACHE_MAX_AGE) || 12 * 60 * 60; // 12 hours
@@ -21,6 +22,7 @@ router.get(/^\/search\/(.+)\.json$/, (req, res) => {
     res.statusCode = 500;
     return res.end();
   }
+  counters.search.inc({ result: ids.length ? 'found' : 'empty' });
   res.setHeader('content-type', 'application/json; charset=utf-8');
   res.setHeader('access-control-allow-origin', '*');
   res.setHeader('cache-control', `max-age=${CACHE_MAX_AGE}, public`);

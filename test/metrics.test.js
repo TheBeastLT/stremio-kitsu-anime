@@ -200,3 +200,39 @@ test('timedUpstream wrapping a stub marks the kitsu upstream ok', async () => {
   const body = await withApp(scrape);
   assert.match(body, /upstream_request_duration_seconds_count\{[^}]*upstream="kitsu"[^}]*outcome="ok"[^}]*\} [1-9]/);
 });
+
+test('search route counts found and empty results', async () => {
+  const body = await withApp(async (get) => {
+    await get(`/search/${encodeURIComponent('overlord S3')}.json`);
+    await get(`/search/${encodeURIComponent('hello carbot 2018 S6')}.json`);
+    return scrape(get);
+  });
+  assert.match(body, /search_requests_total\{result="found"\} [1-9]/);
+  assert.match(body, /search_requests_total\{result="empty"\} [1-9]/);
+});
+
+test('search route counts nothing for a malformed query', async () => {
+  const read = (body, result) => Number(body.match(new RegExp(`search_requests_total\\{result="${result}"\\} (\\d+)`))?.[1] || 0);
+  const { before, after, status } = await withApp(async (get) => {
+    const before = await scrape(get);
+    const { status } = await get('/search/%E0%A4%A.json');
+    return { before, after: await scrape(get), status };
+  });
+  assert.strictEqual(status, 400);
+  assert.strictEqual(read(after, 'found'), read(before, 'found'));
+  assert.strictEqual(read(after, 'empty'), read(before, 'empty'));
+});
+
+test('unknown catalog ids are labelled unknown', async () => {
+  mock.method(kitsuApi, 'animeEntries', async () => []);
+  try {
+    const body = await withApp(async (get) => {
+      await get('/catalog/anime/not-a-real-catalog.json');
+      return scrape(get);
+    });
+    assert.match(body, /catalog_requests_total\{[^}]*catalog="unknown"[^}]*\} [1-9]/);
+    assert.doesNotMatch(body, /catalog="not-a-real-catalog"/);
+  } finally {
+    mock.restoreAll();
+  }
+});

@@ -70,6 +70,7 @@ const manifest = {
   idPrefixes: ['kitsu', 'mal', 'anilist', 'anidb']
 };
 const builder = new addonBuilder(manifest);
+const catalogLabel = (id) => manifest.catalogs.some((catalog) => catalog.id === id) ? id : 'unknown';
 const sortValue = {
   'kitsu-anime-list': 'createdAt',
   'kitsu-anime-rating': '-average_rating',
@@ -85,7 +86,7 @@ builder.defineCatalogHandler((args) => {
   const id = `${args.id}|${args.extra && args.extra.genre || 'All'}|${skip}`;
 
   if (args.extra?.search) {
-    counters.catalog.inc({ catalog: args.id, kind: 'search' });
+    counters.catalog.inc({ catalog: catalogLabel(args.id), kind: 'search' });
     if (args.extra.search.match(/(?:https?|stremio):\/\//)) {
       return Promise.reject(`Invalid search term: ${args.extra.search}`)
     }
@@ -96,7 +97,7 @@ builder.defineCatalogHandler((args) => {
         .then((metas) => ({ metas: metas.filter((meta) => meta).map(toCatalogMeta), cacheMaxAge: CACHE_MAX_AGE }));
   }
   if (args.extra?.lastVideosIds) {
-    counters.catalog.inc({ catalog: args.id, kind: 'last_videos' });
+    counters.catalog.inc({ catalog: catalogLabel(args.id), kind: 'last_videos' });
     // Like Cinemeta's last-videos: the last videos of each library id
     const ids = args.extra.lastVideosIds.split(',').slice(0, LAST_VIDEOS_IDS_LIMIT);
     return getMetas(ids).then((metas) => ({
@@ -109,7 +110,7 @@ builder.defineCatalogHandler((args) => {
     }));
   }
 
-  counters.catalog.inc({ catalog: args.id, kind: 'browse' });
+  counters.catalog.inc({ catalog: catalogLabel(args.id), kind: 'browse' });
   const options = {
     offset: skip,
     genre: args.extra?.genre,
