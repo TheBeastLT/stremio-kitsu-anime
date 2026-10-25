@@ -1,0 +1,13 @@
+{
+  "url": "https://kitsu.io/api/edge/anime/99999999?include=genres%2Cepisodes%2CmediaRelationships.destination",
+  "rejection": {
+    "errors": [
+      {
+        "title": "Record not found",
+        "detail": "The record identified by 99999999 could not be found.",
+        "code": "404",
+        "status": "404"
+      }
+    ]
+  }
+}

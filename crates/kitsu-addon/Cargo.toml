@@ -13,5 +13,27 @@ name = "kitsu_addon"
 name = "kitsu-addon"
 path = "src/main.rs"
 
+[dependencies]
+anyhow = "1"
+async-trait = "0.1"
+moka = { version = "0.12", features = ["future"] }
+mongodb = { version = "3", features = ["zstd-compression"] }
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "gzip"] }
+roxmltree = "0.21"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+singleflight-async = "0.2"
+thiserror = "2"
+tokio = { version = "1", features = ["full"] }
+tokio-util = { version = "0.7", features = ["rt"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["json", "env-filter"] }
+zstd = "0.13"
+
+[dev-dependencies]
+base64 = "0.22"
+tokio = { version = "1", features = ["full", "test-util"] }
+wiremock = "0.6"
+
 [lints]
 workspace = true

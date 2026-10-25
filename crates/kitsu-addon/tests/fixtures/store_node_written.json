@@ -1,0 +1,47 @@
+{
+  "recordedAt": 1792953870180,
+  "cases": [
+    {
+      "key": "stremio-kitsu|meta:1",
+      "ttl": 86400000,
+      "expired": false,
+      "bson": "kAQAAAdfaWQAAAAAAAAAAAAAAAABAmtleQAVAAAAc3RyZW1pby1raXRzdXxtZXRhOjEAA3ZhbHVlAEIEAAADdmFsdWUAJQQAAANtZXRhAAkEAAACaWQACAAAAGtpdHN1OjEAAmtpdHN1X2lkAAIAAAAxAAJ0eXBlAAcAAABzZXJpZXMAAmFuaW1lVHlwZQADAAAAVFYAAm5hbWUADQAAAENvd2JveSBCZWJvcAAEYWxpYXNlcwA8AAAAAjAADQAAAENvd2JveSBCZWJvcAACMQAcAAAA44Kr44Km44Oc44O844Kk44OT44OQ44OD44OXAAAEZ2VucmVzACAAAAACMAAHAAAAQWN0aW9uAAIxAAYAAABTcGFjZQAACnBvc3RlcgACZGVzY3JpcHRpb24AGQAAAEJvdW50eSBodW50ZXJzIGluIHNwYWNlLgACcmVsZWFzZUluZm8ACgAAADE5OTgtMTk5OQACaW1kYlJhdGluZwAEAAAAOC43ABB1c2VyQ291bnQA8EkCAAFhdmVyYWdlUmF0aW5nAAAAAAAAkFRAEHBvcHVsYXJpdHkAAwAAAAFmYXZvcml0ZXMAAAAAIF+g8kEBZnJhY3Rpb24ANDMzMzMz0z8EdHJhaWxlcnMANwAAAAMwAC8AAAACc291cmNlAAwAAABxaWc0S09LMlIyZwACdHlwZQAIAAAAVHJhaWxlcgAAAARncmlkAEoAAAAEMAATAAAAEDAAAQAAABAxAAIAAAAABDEAJAAAAAEwAAAAAAAAAAxABDEAEQAAAAowAAIxAAIAAAB4AAAABDIABQAAAAAABHZpZGVvcwByAQAAAzAAqQAAAAJpZAAKAAAAa2l0c3U6MToxAAJ0aXRsZQAPAAAAQXN0ZXJvaWQgQmx1ZXMACXJlbGVhc2VkAAC0x6/TAAAAEHNlYXNvbgABAAAAEGVwaXNvZGUAAQAAAAp0aHVtYm5haWwACm92ZXJ2aWV3AAJpbWRiX2lkAAoAAAB0dDAyMTMzMzgAEGltZGJTZWFzb24AAQAAABBpbWRiRXBpc29kZQABAAAAAAMxAF0AAAACaWQACgAAAGtpdHN1OjE6MgACdGl0bGUAEAAAAFN0cmF5IERvZyBTdHJ1dAAJcmVsZWFzZWQAAwyj1tMAAAAQc2Vhc29uAAEAAAAQZXBpc29kZQACAAAAAAMyAF4AAAACaWQACgAAAGtpdHN1OjE6MwACdGl0bGUAEQAAAEJlZm9yZSB0aGUgZXBvY2gACXJlbGVhc2VkAP9vAZXM////EHNlYXNvbgABAAAAEGVwaXNvZGUAAwAAAAAABGxpbmtzAFgAAAADMABQAAAAAm5hbWUABAAAADguNwACY2F0ZWdvcnkABQAAAGltZGIAAnVybAAhAAAAaHR0cHM6Ly9pbWRiLmNvbS90aXRsZS90dDAyMTMzMzgAAAACaW1kYl9pZAAKAAAAdHQwMjEzMzM4AAAQY2FjaGVNYXhBZ2UAwKgAAAABZXhwaXJlcwAA0DV0mBd6QgAJZXhwaXJlc0F0AF1Dh3mhAQAAAA==",
+      "served": "{\"meta\":{\"id\":\"kitsu:1\",\"kitsu_id\":\"1\",\"type\":\"series\",\"animeType\":\"TV\",\"name\":\"Cowboy Bebop\",\"aliases\":[\"Cowboy Bebop\",\"カウボーイビバップ\"],\"genres\":[\"Action\",\"Space\"],\"poster\":null,\"description\":\"Bounty hunters in space.\",\"releaseInfo\":\"1998-1999\",\"imdbRating\":\"8.7\",\"userCount\":150000,\"averageRating\":82.25,\"popularity\":3,\"favorites\":5000000000,\"fraction\":0.30000000000000004,\"trailers\":[{\"source\":\"qig4KOK2R2g\",\"type\":\"Trailer\"}],\"grid\":[[1,2],[3.5,[null,\"x\"]],[]],\"videos\":[{\"id\":\"kitsu:1:1\",\"title\":\"Asteroid Blues\",\"released\":\"1998-10-24T00:00:00.000Z\",\"season\":1,\"episode\":1,\"thumbnail\":null,\"overview\":null,\"imdb_id\":\"tt0213338\",\"imdbSeason\":1,\"imdbEpisode\":1},{\"id\":\"kitsu:1:2\",\"title\":\"Stray Dog Strut\",\"released\":\"1998-10-31T13:05:09.123Z\",\"season\":1,\"episode\":2},{\"id\":\"kitsu:1:3\",\"title\":\"Before the epoch\",\"released\":\"1963-01-01T23:59:59.999Z\",\"season\":1,\"episode\":3}],\"links\":[{\"name\":\"8.7\",\"category\":\"imdb\",\"url\":\"https://imdb.com/title/tt0213338\"}],\"imdb_id\":\"tt0213338\"},\"cacheMaxAge\":43200}"
+    },
+    {
+      "key": "stremio-kitsu|meta:tt0213338",
+      "ttl": 86400000,
+      "expired": false,
+      "bson": "IwIAAAdfaWQAAAAAAAAAAAAAAAACAmtleQAdAAAAc3RyZW1pby1raXRzdXxtZXRhOnR0MDIxMzMzOAADdmFsdWUAzQEAAAN2YWx1ZQCwAQAAA21ldGEAlAEAAAJpZAAKAAAAdHQwMjEzMzM4AAJ0eXBlAAcAAABzZXJpZXMAAm5hbWUADQAAAENvd2JveSBCZWJvcAACcmVsZWFzZWQAGQAAADE5OTgtMDQtMDNUMDA6MDA6MDAuMDAwWgACaW1kYl9pZAAKAAAAdHQwMjEzMzM4AARraXRzdV9pZAATAAAAEDAAAQAAABAxAAIAAAAABHZpZGVvcwDyAAAAAzAAewAAAAJpZAAOAAAAdHQwMjEzMzM4OjE6MQAQc2Vhc29uAAEAAAAQZXBpc29kZQABAAAAAnJlbGVhc2VkABkAAAAxOTk4LTEwLTI0VDAwOjAwOjAwLjAwMFoAEGtpdHN1X2lkAAEAAAAQa2l0c3VFcGlzb2RlAAEAAAAAAzEAbAAAAAJpZAAOAAAAdHQwMjEzMzM4OjE6MgAQc2Vhc29uAAEAAAAQZXBpc29kZQACAAAAAnJlbGVhc2VkABkAAAAxOTk4LTEwLTMxVDAwOjAwOjAwLjAwMFoACmFic29sdXRlRXBpc29kZQAAAAAQY2FjaGVNYXhBZ2UAwKgAAAABZXhwaXJlcwAA0DV0mBd6QgAJZXhwaXJlc0F0AF1Dh3mhAQAAAA==",
+      "served": "{\"meta\":{\"id\":\"tt0213338\",\"type\":\"series\",\"name\":\"Cowboy Bebop\",\"released\":\"1998-04-03T00:00:00.000Z\",\"imdb_id\":\"tt0213338\",\"kitsu_id\":[1,2],\"videos\":[{\"id\":\"tt0213338:1:1\",\"season\":1,\"episode\":1,\"released\":\"1998-10-24T00:00:00.000Z\",\"kitsu_id\":1,\"kitsuEpisode\":1},{\"id\":\"tt0213338:1:2\",\"season\":1,\"episode\":2,\"released\":\"1998-10-31T00:00:00.000Z\",\"absoluteEpisode\":null}]},\"cacheMaxAge\":43200}"
+    },
+    {
+      "key": "stremio-kitsu|catalog:kitsu-anime-list|All|0",
+      "ttl": 86400000,
+      "expired": false,
+      "bson": "ewEAAAdfaWQAAAAAAAAAAAAAAAADAmtleQAtAAAAc3RyZW1pby1raXRzdXxjYXRhbG9nOmtpdHN1LWFuaW1lLWxpc3R8QWxsfDAAA3ZhbHVlABUBAAADdmFsdWUA+AAAAARtZXRhcwDbAAAAAzAAdAAAAAJpZAAIAAAAa2l0c3U6MQACdHlwZQAHAAAAc2VyaWVzAAJuYW1lAA0AAABDb3dib3kgQmVib3AAAnBvc3RlcgAeAAAAaHR0cHM6Ly9tZWRpYS5raXRzdS5hcHAvMS5qcGcABGdlbnJlcwAFAAAAAAADMQBcAAAAAmlkAAgAAABraXRzdToyAAJ0eXBlAAYAAABtb3ZpZQACbmFtZQASAAAAVGVuZ29rdSBubyBUb2JpcmEACmltZGJSYXRpbmcABHRyYWlsZXJzAAUAAAAAAAAQY2FjaGVNYXhBZ2UAwKgAAAABZXhwaXJlcwAA0DV0mBd6QgAJZXhwaXJlc0F0AF1Dh3mhAQAAAA==",
+      "served": "{\"metas\":[{\"id\":\"kitsu:1\",\"type\":\"series\",\"name\":\"Cowboy Bebop\",\"poster\":\"https://media.kitsu.app/1.jpg\",\"genres\":[]},{\"id\":\"kitsu:2\",\"type\":\"movie\",\"name\":\"Tengoku no Tobira\",\"imdbRating\":null,\"trailers\":[]}],\"cacheMaxAge\":43200}"
+    },
+    {
+      "key": "stremio-kitsu|images:1",
+      "ttl": 1209600000,
+      "expired": false,
+      "bson": "rAAAAAdfaWQAAAAAAAAAAAAAAAAEAmtleQAXAAAAc3RyZW1pby1raXRzdXxpbWFnZXM6MQADdmFsdWUAXAAAAAN2YWx1ZQA/AAAAAmxvZ28AEwAAAGh0dHBzOi8veC9sb2dvLnBuZwACbG9nb0xhbmcAAwAAAGVuAApiYWNrZ3JvdW5kAAABZXhwaXJlcwAA0PWexxt6QgAJZXhwaXJlc0F0AF3vebyhAQAAAA==",
+      "served": "{\"logo\":\"https://x/logo.png\",\"logoLang\":\"en\",\"background\":null}"
+    },
+    {
+      "key": "stremio-kitsu|id_mapping:mal:1",
+      "ttl": 1209600000,
+      "expired": false,
+      "bson": "eQAAAAdfaWQAAAAAAAAAAAAAAAAFAmtleQAfAAAAc3RyZW1pby1raXRzdXxpZF9tYXBwaW5nOm1hbDoxAAN2YWx1ZQAhAAAAEHZhbHVlAAEAAAABZXhwaXJlcwAA4PWexxt6QgAJZXhwaXJlc0F0AF7vebyhAQAAAA==",
+      "served": "1"
+    },
+    {
+      "key": "stremio-kitsu|meta:2",
+      "ttl": 1,
+      "expired": true,
+      "bson": "nAAAAAdfaWQAAAAAAAAAAAAAAAAGAmtleQAVAAAAc3RyZW1pby1raXRzdXxtZXRhOjIAA3ZhbHVlAE4AAAADdmFsdWUAMQAAAANtZXRhABUAAAACaWQACAAAAGtpdHN1OjIAABBjYWNoZU1heEFnZQDAqAAAAAFleHBpcmVzAADwdQ5GF3pCAAlleHBpcmVzQXQAX+dgdKEBAAAA",
+      "served": null
+    }
+  ]
+}

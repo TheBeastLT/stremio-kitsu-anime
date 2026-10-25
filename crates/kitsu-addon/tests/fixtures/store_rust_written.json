@@ -1,0 +1,35 @@
+{
+  "expires": 4102444800000,
+  "cases": [
+    {
+      "key": "stremio-kitsu|meta:1",
+      "bson": "fwQAAAJrZXkAFQAAAHN0cmVtaW8ta2l0c3V8bWV0YToxAAN2YWx1ZQBCBAAAA3ZhbHVlACUEAAADbWV0YQAJBAAAAmlkAAgAAABraXRzdToxAAJraXRzdV9pZAACAAAAMQACdHlwZQAHAAAAc2VyaWVzAAJhbmltZVR5cGUAAwAAAFRWAAJuYW1lAA0AAABDb3dib3kgQmVib3AABGFsaWFzZXMAPAAAAAIwAA0AAABDb3dib3kgQmVib3AAAjEAHAAAAOOCq+OCpuODnOODvOOCpOODk+ODkOODg+ODlwAABGdlbnJlcwAgAAAAAjAABwAAAEFjdGlvbgACMQAGAAAAU3BhY2UAAApwb3N0ZXIAAmRlc2NyaXB0aW9uABkAAABCb3VudHkgaHVudGVycyBpbiBzcGFjZS4AAnJlbGVhc2VJbmZvAAoAAAAxOTk4LTE5OTkAAmltZGJSYXRpbmcABAAAADguNwAQdXNlckNvdW50APBJAgABYXZlcmFnZVJhdGluZwAAAAAAAJBUQBBwb3B1bGFyaXR5AAMAAAABZmF2b3JpdGVzAAAAACBfoPJBAWZyYWN0aW9uADQzMzMzM9M/BHRyYWlsZXJzADcAAAADMAAvAAAAAnNvdXJjZQAMAAAAcWlnNEtPSzJSMmcAAnR5cGUACAAAAFRyYWlsZXIAAAAEZ3JpZABKAAAABDAAEwAAABAwAAEAAAAQMQACAAAAAAQxACQAAAABMAAAAAAAAAAMQAQxABEAAAAKMAACMQACAAAAeAAAAAQyAAUAAAAAAAR2aWRlb3MAcgEAAAMwAKkAAAACaWQACgAAAGtpdHN1OjE6MQACdGl0bGUADwAAAEFzdGVyb2lkIEJsdWVzAAlyZWxlYXNlZAAAtMev0wAAABBzZWFzb24AAQAAABBlcGlzb2RlAAEAAAAKdGh1bWJuYWlsAApvdmVydmlldwACaW1kYl9pZAAKAAAAdHQwMjEzMzM4ABBpbWRiU2Vhc29uAAEAAAAQaW1kYkVwaXNvZGUAAQAAAAADMQBdAAAAAmlkAAoAAABraXRzdToxOjIAAnRpdGxlABAAAABTdHJheSBEb2cgU3RydXQACXJlbGVhc2VkAAMMo9bTAAAAEHNlYXNvbgABAAAAEGVwaXNvZGUAAgAAAAADMgBeAAAAAmlkAAoAAABraXRzdToxOjMAAnRpdGxlABEAAABCZWZvcmUgdGhlIGVwb2NoAAlyZWxlYXNlZAD/bwGVzP///xBzZWFzb24AAQAAABBlcGlzb2RlAAMAAAAAAARsaW5rcwBYAAAAAzAAUAAAAAJuYW1lAAQAAAA4LjcAAmNhdGVnb3J5AAUAAABpbWRiAAJ1cmwAIQAAAGh0dHBzOi8vaW1kYi5jb20vdGl0bGUvdHQwMjEzMzM4AAAAAmltZGJfaWQACgAAAHR0MDIxMzMzOAAAEGNhY2hlTWF4QWdlAMCoAAAAAWV4cGlyZXMAAADAHmbZjUIACWV4cGlyZXNBdAAA2MMsuwMAAAA=",
+      "served": "{\"meta\":{\"id\":\"kitsu:1\",\"kitsu_id\":\"1\",\"type\":\"series\",\"animeType\":\"TV\",\"name\":\"Cowboy Bebop\",\"aliases\":[\"Cowboy Bebop\",\"カウボーイビバップ\"],\"genres\":[\"Action\",\"Space\"],\"poster\":null,\"description\":\"Bounty hunters in space.\",\"releaseInfo\":\"1998-1999\",\"imdbRating\":\"8.7\",\"userCount\":150000,\"averageRating\":82.25,\"popularity\":3,\"favorites\":5000000000,\"fraction\":0.30000000000000004,\"trailers\":[{\"source\":\"qig4KOK2R2g\",\"type\":\"Trailer\"}],\"grid\":[[1,2],[3.5,[null,\"x\"]],[]],\"videos\":[{\"id\":\"kitsu:1:1\",\"title\":\"Asteroid Blues\",\"released\":\"1998-10-24T00:00:00.000Z\",\"season\":1,\"episode\":1,\"thumbnail\":null,\"overview\":null,\"imdb_id\":\"tt0213338\",\"imdbSeason\":1,\"imdbEpisode\":1},{\"id\":\"kitsu:1:2\",\"title\":\"Stray Dog Strut\",\"released\":\"1998-10-31T13:05:09.123Z\",\"season\":1,\"episode\":2},{\"id\":\"kitsu:1:3\",\"title\":\"Before the epoch\",\"released\":\"1963-01-01T23:59:59.999Z\",\"season\":1,\"episode\":3}],\"links\":[{\"name\":\"8.7\",\"category\":\"imdb\",\"url\":\"https://imdb.com/title/tt0213338\"}],\"imdb_id\":\"tt0213338\"},\"cacheMaxAge\":43200}"
+    },
+    {
+      "key": "stremio-kitsu|meta:tt0213338",
+      "bson": "EgIAAAJrZXkAHQAAAHN0cmVtaW8ta2l0c3V8bWV0YTp0dDAyMTMzMzgAA3ZhbHVlAM0BAAADdmFsdWUAsAEAAANtZXRhAJQBAAACaWQACgAAAHR0MDIxMzMzOAACdHlwZQAHAAAAc2VyaWVzAAJuYW1lAA0AAABDb3dib3kgQmVib3AAAnJlbGVhc2VkABkAAAAxOTk4LTA0LTAzVDAwOjAwOjAwLjAwMFoAAmltZGJfaWQACgAAAHR0MDIxMzMzOAAEa2l0c3VfaWQAEwAAABAwAAEAAAAQMQACAAAAAAR2aWRlb3MA8gAAAAMwAHsAAAACaWQADgAAAHR0MDIxMzMzODoxOjEAEHNlYXNvbgABAAAAEGVwaXNvZGUAAQAAAAJyZWxlYXNlZAAZAAAAMTk5OC0xMC0yNFQwMDowMDowMC4wMDBaABBraXRzdV9pZAABAAAAEGtpdHN1RXBpc29kZQABAAAAAAMxAGwAAAACaWQADgAAAHR0MDIxMzMzODoxOjIAEHNlYXNvbgABAAAAEGVwaXNvZGUAAgAAAAJyZWxlYXNlZAAZAAAAMTk5OC0xMC0zMVQwMDowMDowMC4wMDBaAAphYnNvbHV0ZUVwaXNvZGUAAAAAEGNhY2hlTWF4QWdlAMCoAAAAAWV4cGlyZXMAAADAHmbZjUIACWV4cGlyZXNBdAAA2MMsuwMAAAA=",
+      "served": "{\"meta\":{\"id\":\"tt0213338\",\"type\":\"series\",\"name\":\"Cowboy Bebop\",\"released\":\"1998-04-03T00:00:00.000Z\",\"imdb_id\":\"tt0213338\",\"kitsu_id\":[1,2],\"videos\":[{\"id\":\"tt0213338:1:1\",\"season\":1,\"episode\":1,\"released\":\"1998-10-24T00:00:00.000Z\",\"kitsu_id\":1,\"kitsuEpisode\":1},{\"id\":\"tt0213338:1:2\",\"season\":1,\"episode\":2,\"released\":\"1998-10-31T00:00:00.000Z\",\"absoluteEpisode\":null}]},\"cacheMaxAge\":43200}"
+    },
+    {
+      "key": "stremio-kitsu|catalog:kitsu-anime-list|All|0",
+      "bson": "agEAAAJrZXkALQAAAHN0cmVtaW8ta2l0c3V8Y2F0YWxvZzpraXRzdS1hbmltZS1saXN0fEFsbHwwAAN2YWx1ZQAVAQAAA3ZhbHVlAPgAAAAEbWV0YXMA2wAAAAMwAHQAAAACaWQACAAAAGtpdHN1OjEAAnR5cGUABwAAAHNlcmllcwACbmFtZQANAAAAQ293Ym95IEJlYm9wAAJwb3N0ZXIAHgAAAGh0dHBzOi8vbWVkaWEua2l0c3UuYXBwLzEuanBnAARnZW5yZXMABQAAAAAAAzEAXAAAAAJpZAAIAAAAa2l0c3U6MgACdHlwZQAGAAAAbW92aWUAAm5hbWUAEgAAAFRlbmdva3Ugbm8gVG9iaXJhAAppbWRiUmF0aW5nAAR0cmFpbGVycwAFAAAAAAAAEGNhY2hlTWF4QWdlAMCoAAAAAWV4cGlyZXMAAADAHmbZjUIACWV4cGlyZXNBdAAA2MMsuwMAAAA=",
+      "served": "{\"metas\":[{\"id\":\"kitsu:1\",\"type\":\"series\",\"name\":\"Cowboy Bebop\",\"poster\":\"https://media.kitsu.app/1.jpg\",\"genres\":[]},{\"id\":\"kitsu:2\",\"type\":\"movie\",\"name\":\"Tengoku no Tobira\",\"imdbRating\":null,\"trailers\":[]}],\"cacheMaxAge\":43200}"
+    },
+    {
+      "key": "stremio-kitsu|images:1",
+      "bson": "mwAAAAJrZXkAFwAAAHN0cmVtaW8ta2l0c3V8aW1hZ2VzOjEAA3ZhbHVlAFwAAAADdmFsdWUAPwAAAAJsb2dvABMAAABodHRwczovL3gvbG9nby5wbmcAAmxvZ29MYW5nAAMAAABlbgAKYmFja2dyb3VuZAAAAWV4cGlyZXMAAADAHmbZjUIACWV4cGlyZXNBdAAA2MMsuwMAAAA=",
+      "served": "{\"logo\":\"https://x/logo.png\",\"logoLang\":\"en\",\"background\":null}"
+    },
+    {
+      "key": "stremio-kitsu|id_mapping:mal:1",
+      "bson": "aAAAAAJrZXkAHwAAAHN0cmVtaW8ta2l0c3V8aWRfbWFwcGluZzptYWw6MQADdmFsdWUAIQAAABB2YWx1ZQABAAAAAWV4cGlyZXMAAADAHmbZjUIACWV4cGlyZXNBdAAA2MMsuwMAAAA=",
+      "served": "1"
+    },
+    {
+      "key": "stremio-kitsu|meta:3",
+      "bson": "xgEAAAJrZXkAFQAAAHN0cmVtaW8ta2l0c3V8bWV0YTozAAN2YWx1ZQCJAQAAA3ZhbHVlAGwBAAADbWV0YQBQAQAAAmlkAAgAAABraXRzdTozABBraXRzdV9pZAADAAAAAnR5cGUABwAAAHNlcmllcwACbmFtZQAHAAAAVHJpZ3VuAARhbGlhc2VzABMAAAACMAAHAAAAVHJpZ3VuAAAEZ2VucmVzABMAAAACMAAHAAAAQWN0aW9uAAAQdXNlckNvdW50AJBfAQAEdHJhaWxlcnMABQAAAAAEdmlkZW9zAKIAAAADMABSAAAAAmlkAAoAAABraXRzdTozOjEAAnRpdGxlAAUAAABKdWx5AAlyZWxlYXNlZAC6HT2OzwAAABBzZWFzb24AAQAAABBlcGlzb2RlAAEAAAAAAzEARQAAAAJpZAAKAAAAa2l0c3U6MzoyAAJ0aXRsZQAKAAAARXBpc29kZSAyABBzZWFzb24AAQAAABBlcGlzb2RlAAIAAAAAAARsaW5rcwAFAAAAAAAQY2FjaGVNYXhBZ2UAwKgAAAABZXhwaXJlcwAAAMAeZtmNQgAJZXhwaXJlc0F0AADYwyy7AwAAAA==",
+      "served": "{\"meta\":{\"id\":\"kitsu:3\",\"kitsu_id\":3,\"type\":\"series\",\"name\":\"Trigun\",\"aliases\":[\"Trigun\"],\"genres\":[\"Action\"],\"userCount\":90000,\"trailers\":[],\"videos\":[{\"id\":\"kitsu:3:1\",\"title\":\"July\",\"released\":\"1998-04-01T15:30:00.250Z\",\"season\":1,\"episode\":1},{\"id\":\"kitsu:3:2\",\"title\":\"Episode 2\",\"season\":1,\"episode\":2}],\"links\":[]},\"cacheMaxAge\":43200}"
+    }
+  ]
+}

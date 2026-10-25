@@ -20,7 +20,7 @@
 | R4 | Search rules are frozen on Node from T0.2 until cutover; a rule change in the window is made in Node and the goldens are re-recorded. | Parity is only provable against a fixed target. | Tuning is blocked for the window (about 2 weeks). |
 | R5 | Node search is kept after cutover until the importer calls Rust `/search` (T5.3), then deleted. | The importer uses `searchIds`; results must not drift. | One more cutover step. |
 | R6 | Node-only runtime metrics (`kitsu_nodejs_*`) become `kitsu_runtime_*`; every other metric keeps its name, labels and buckets. | The dashboard and keep-list change only in the tiles that read them (T5.2). | Five panels edited. |
-| R8 | A memory layer in front of Mongo, as in the torrentio addon: moka holding zstd-compressed JSON bytes, capacity 50,000 entries (Node's was 2,000), per-kind TTLs as in `lib/cache.js`. | Mongo is slow for big metas; compressed bytes keep the resident size small. | RSS grows with the fill: measure it in the shadow before setting the stack's memory limit (T2.2b). |
+| R8 | A memory layer in front of Mongo, as in the torrentio addon: moka holding zstd-compressed JSON bytes, sized only by a byte budget like torrentio's stream cache (`MEMORY_CACHE_MB`, default 384, weigher key + compressed bytes, LRU eviction; Node's was 2,000 entries), per-kind TTLs as in `lib/cache.js`. | Mongo is slow for big metas; compressed bytes keep the resident size small, and a byte budget bounds RSS whatever the meta sizes. | The entry count depends on the meta mix: check in the shadow that 384 MB holds the hot set (T2.2b, T4.1). |
 | R7 | The landing page is a static page with the install link, not the SDK template. | The SDK template needs Node. | A cosmetic difference. |
 
 ## Global Constraints
@@ -182,10 +182,10 @@ Each task ends with its parity gate against the golden files; a gate failure is 
 
 **Interfaces — Produces:** `Cache::{wrap_meta, wrap_catalog, wrap_images, wrap_id_mapping, cached_metas(&[id])}` with the Node semantics: memory hit → Mongo hit (promoted to memory) → load, concurrent callers for one key share one load; `kitsu_cache_requests_total{kind,result}` counted as in `lib/cache.js` (a hit includes callers that waited on a load); `NO_CACHE` bypasses both.
 
-- [ ] A moka cache of zstd-compressed JSON bytes (level as in the torrentio addon's `cache.rs`, reuse its packing helper pattern), `max_capacity` 50,000 entries (`MEMORY_CACHE_SIZE`), with a per-entry expiry from the kind's TTL (meta and catalog 24 h by `META_TTL` / `CATALOG_TTL`, images 14 d / 4 d non-English logo / 2 d none, id mapping 14 d).
+- [ ] A moka cache of zstd-compressed JSON bytes (level as in the torrentio addon's `cache.rs`, reuse its packing helper pattern), `max_capacity` a byte budget from `MEMORY_CACHE_MB` (default 384) with the weigher key length + compressed bytes, as torrentio's stream cache (no entry-count limit), LRU eviction, the configured MB logged once at startup, with a per-entry expiry from the kind's TTL (meta and catalog 24 h by `META_TTL` / `CATALOG_TTL`, images 14 d / 4 d non-English logo / 2 d none, id mapping 14 d).
 - [ ] `cached_metas` serves memory hits first and fetches only the rest with one Mongo `$in`.
 - [ ] Tests: promotion from Mongo to memory, expiry per kind, two concurrent callers produce one load and count as one miss and one hit, a failing Mongo only skips the cache, a corrupt entry is treated as a miss.
-- [ ] Record resident memory at 10k, 25k and 50k entries in the shadow (T4.1) and set the stack's memory limit from it.
+- [ ] Record resident memory and the entry count once the budget fills in the shadow (T4.1) and set the stack's memory limit from `MEMORY_CACHE_MB` (about 1.1 x budget + base + search index).
 
 ### Task 2.3: Kitsu client
 
@@ -321,6 +321,6 @@ Made in Rust only, one task each, each checked against `evaluate` and the corpus
 ## Decisions taken by the owner (2026-10-25)
 
 - **R4 (freeze), R3 (keyv-compatible store) and R6 (`kitsu_runtime_*`) are accepted.**
-- **R8 (memory layer, 50,000 entries of zstd bytes) is added.**
+- **R8 (memory layer of zstd bytes, sized by a 384 MB byte budget like torrentio's stream cache) is added.**
 - **Milestone 6 follows cutover.**
 - Execution: subagent-driven, one implementer per task, a reviewer after each milestone.

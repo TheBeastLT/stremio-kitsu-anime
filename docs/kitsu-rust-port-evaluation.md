@@ -352,24 +352,37 @@ absolute-episode offsets, `imdbEpisodes` lists, run hand-out stepping over liste
 `episodeCap`. These rules are documented in `mapping/README.md`. They are about as intricate as search but change less:
 22 commits across all runtime files since 2026-10-01.
 
-**Mongo cache compatibility.** Read from `@keyv/mongo` 3.1.0 `dist/index.cjs` 120-215, `keyv` 5.6.0 `set`/`getMany`,
-and `lib/cache.js`.
+**Mongo cache compatibility.** Read from `@keyv/mongo` 3.1.0 `dist/index.cjs` 60-250, `keyv` 5.6.0 `get`/`getMany`/`set`,
+`cache-manager` 7.2.9 `wrap`/`mget`/`set`, `mongodb` 7.7.0 (bson 7.3.3) and `lib/cache.js`; verified in T2.2 with the
+real keyv/@keyv/mongo/cache-manager code over an in-memory collection (`crates/kitsu-addon/tests/fixtures/record_store.js`).
 - Collection: `kitsu_collection`, in the URI's default database.
-- Document: `{ _id, key: "stremio-kitsu|meta:<id>" | "|catalog:<catalogId>|<genre>|<skip>" | "|images:<id>" | "|id_mapping:<type>:<id>", value: { value: <payload>, expires: <epoch ms> }, expiresAt: ISODate }`.
+- Document: `{ _id, key, value: { value: <payload>, expires: <epoch ms as BSON double> }, expiresAt: Date }`. `expires`
+  is a JS number above the int32 range, so the driver writes a double. `expiresAt` comes from a second `Date.now()` in
+  `@keyv/mongo`, so it can be a few ms after `expires`. A non-number TTL (for example `META_TTL` set in the env, which
+  stays a string) writes `null` for both, and the document never expires.
+- Keys: `stremio-kitsu|meta:<kitsuId>` (the bare number, not `kitsu:<id>`) or `|meta:tt<id>`,
+  `|catalog:<catalogId>|<genre or All>|<skip or 0>`, `|images:<kitsuId or imdbId>`, `|id_mapping:<type>:<id>` (the full
+  id, for example `mal:1`).
+- Payloads: meta `{ meta, cacheMaxAge }`, catalog `{ metas, cacheMaxAge }`, images an object, id_mapping the kitsu id.
 - `useKeyPrefix: false` and `serialize: undefined`: payloads are stored as raw BSON, not JSON strings, and keyv wraps
-  them in `{value, expires}`.
-- Indexes: unique `key`, and TTL on `expiresAt`.
-- keyv also checks `value.expires` on read and deletes expired keys.
+  them in `{value, expires}`. A string `value` (an old keyv JSON string) reads as a miss.
+- Indexes: unique `key`, and TTL on `expiresAt`. `@keyv/mongo` creates both on every connect, so they are not
+  hand-made; the Rust store doesn't create them.
+- keyv checks `value.expires` on read (`Date.now() > expires`) and deletes the expired keys it reads. The Rust store only
+  treats them as misses; the TTL index removes them.
 
 **What a Rust store must replicate** (catalogs' `store.rs` is the template, plus the inner wrapper):
 - Read `value.value` and honour `value.expires`.
-- Write the same 3 fields, upserted on `key`.
-- **Dates:** Node stores `Date` objects in meta videos (`released`) as BSON Date. Node serves them as
-  `toISOString()` (`YYYY-MM-DDTHH:mm:ss.sssZ`, always with milliseconds), so Rust must render BSON dates the same way.
+- Write the same 3 fields, upserted on `key`, with `expires` as a double.
+- **Dates:** only the kitsu metas' `videos[].released` are `Date` objects, stored as BSON Date; Cinemeta-built `tt`
+  metas keep `released` strings. Node serves dates as `toISOString()` (`YYYY-MM-DDTHH:mm:ss.sssZ`, always with
+  milliseconds), so Rust must render BSON dates the same way, and write `released` as a Date for kitsu meta keys only.
 - **Nulls:** the Node driver's default `ignoreUndefined=false` stores `undefined` fields as `null` (checked). Cached hits
-  therefore carry `null`s where fresh responses omit fields. Either replicate this or normalise `null` vs absent in the
-  shadow diff.
-- **Numbers:** the int32/double encoding is already handled in catalogs.
+  therefore carry `null`s where fresh responses omit fields. The Rust store keeps them, and a cached value is served as
+  read.
+- **Numbers:** the driver writes a JS number as int32 when it is a safe integer in the int32 range and not `-0`, and as
+  a double otherwise (never int64). Catalogs' rule differs at `i32::MIN` written as a float and at `-0`. On read, Node
+  prints whole doubles without a fraction (`5000000000`, not `5000000000.0`).
 - `mget` uses `{key: {$in}}`.
 
 With this, there is no cold cache at cutover. Accepting a cold cache instead is also reasonable: production Mongo hits
