@@ -7,6 +7,7 @@ const { toCatalogMeta } = require('./lib/metadata');
 const kitsu = require('./lib/kitsu_api');
 const cinemeta = require('./lib/cinemeta_api');
 const opensubtitles = require('./lib/opensubtitles_api')
+const { counters } = require('./lib/metrics');
 
 const CACHE_MAX_AGE = parseInt(process.env.CACHE_MAX_AGE) || 12 * 60 * 60; // 12 hours
 const LAST_VIDEOS_IDS_LIMIT = 20;
@@ -84,15 +85,18 @@ builder.defineCatalogHandler((args) => {
   const id = `${args.id}|${args.extra && args.extra.genre || 'All'}|${skip}`;
 
   if (args.extra?.search) {
+    counters.catalog.inc({ catalog: args.id, kind: 'search' });
     if (args.extra.search.match(/(?:https?|stremio):\/\//)) {
       return Promise.reject(`Invalid search term: ${args.extra.search}`)
     }
     // no need to cache search results; the found anime's cached metas are used, the rest come from Kitsu in one request
     const ids = kitsu.searchIds(args.extra.search).map((kitsuId) => `kitsu:${kitsuId}`);
+    counters.search.inc({ result: ids.length ? 'found' : 'empty' });
     return getMetas(ids, (missing) => kitsu.animeCatalogMetas(missing.map((id) => id.replace('kitsu:', ''))))
         .then((metas) => ({ metas: metas.filter((meta) => meta).map(toCatalogMeta), cacheMaxAge: CACHE_MAX_AGE }));
   }
   if (args.extra?.lastVideosIds) {
+    counters.catalog.inc({ catalog: args.id, kind: 'last_videos' });
     // Like Cinemeta's last-videos: the last videos of each library id
     const ids = args.extra.lastVideosIds.split(',').slice(0, LAST_VIDEOS_IDS_LIMIT);
     return getMetas(ids).then((metas) => ({
@@ -105,6 +109,7 @@ builder.defineCatalogHandler((args) => {
     }));
   }
 
+  counters.catalog.inc({ catalog: args.id, kind: 'browse' });
   const options = {
     offset: skip,
     genre: args.extra?.genre,
@@ -123,18 +128,27 @@ const notFound = (reason) => Promise.reject({ noHandler: true, reason });
 const isNotFound = (error) => error?.errors?.some((kitsuError) => `${kitsuError.status}` === '404')
     || /^No kitsu id found for:/.test(error);
 
+const observeMeta = (idType, promise) => promise.then((result) => {
+  counters.meta.inc({ id_type: idType, outcome: 'ok' });
+  return result;
+}, (error) => {
+  counters.meta.inc({ id_type: idType, outcome: error?.noHandler || isNotFound(error) ? 'not_found' : 'error' });
+  return Promise.reject(error);
+});
+
 builder.defineMetaHandler((args) => {
   if (args.id.match(/^(?:kitsu|mal|anilist|anidb):\d+$/)) {
-    return getKitsuIdMetadata(args.id).catch((error) => isNotFound(error) ? notFound(error) : Promise.reject(error));
+    return observeMeta('kitsu', getKitsuIdMetadata(args.id)
+        .catch((error) => isNotFound(error) ? notFound(error) : Promise.reject(error)));
   }
   if (args.id.match(/^tt\d+$/)) {
     const id = args.id;
 
     if (!hasImdbMapping(id)) {
-      return notFound(`No imdb mapping for: ${id}`);
+      return observeMeta('imdb', notFound(`No imdb mapping for: ${id}`));
     }
 
-    return getImdbIdMetadata(id);
+    return observeMeta('imdb', getImdbIdMetadata(id));
   }
   return notFound(`Invalid id: ${args.id}`);
 });

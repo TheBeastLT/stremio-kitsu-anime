@@ -118,3 +118,85 @@ test('httpMetrics does not throw for an asterisk url', () => {
   metrics.httpMetrics({ originalUrl: '*' }, res, () => {});
   assert.doesNotThrow(() => res.emit('finish'));
 });
+
+const { mock } = require('node:test');
+const { createApp } = require('../app');
+const kitsuApi = require('../lib/kitsu_api');
+
+async function withApp(run) {
+  process.env.METRICS_USER = 'user';
+  process.env.METRICS_PASSWORD = 'secret';
+  const server = createApp().listen(0);
+  await new Promise((resolve) => server.once('listening', resolve));
+  const port = server.address().port;
+  const get = (path, headers = {}) => new Promise((resolve, reject) => {
+    http.get({ port, path, headers }, (res) => {
+      let body = '';
+      res.on('data', (chunk) => { body += chunk; });
+      res.on('end', () => resolve({ status: res.statusCode, body }));
+    }).on('error', reject);
+  });
+  try {
+    return await run(get);
+  } finally {
+    await new Promise((resolve) => server.close(resolve));
+  }
+}
+
+const scrape = (get) => get('/metrics', { authorization: basic('user', 'secret') }).then(({ body }) => body);
+
+test('catalog search counts the catalog, search kind and a found result', async () => {
+  mock.method(kitsuApi, 'animeCatalogMetas', async () => []);
+  try {
+    const body = await withApp(async (get) => {
+      await get('/catalog/anime/kitsu-anime-list/search=overlord%20S3.json');
+      return scrape(get);
+    });
+    assert.match(body, /catalog_requests_total\{[^}]*catalog="kitsu-anime-list"[^}]*kind="search"[^}]*\} [1-9]/);
+    assert.match(body, /search_requests_total\{result="found"\} [1-9]/);
+  } finally {
+    mock.restoreAll();
+  }
+});
+
+test('catalog search without a match counts an empty result', async () => {
+  mock.method(kitsuApi, 'animeCatalogMetas', async () => []);
+  try {
+    const body = await withApp(async (get) => {
+      await get('/catalog/anime/kitsu-anime-list/search=hello%20carbot%202018%20S6.json');
+      return scrape(get);
+    });
+    assert.match(body, /search_requests_total\{result="empty"\} [1-9]/);
+  } finally {
+    mock.restoreAll();
+  }
+});
+
+test('catalog browse counts the browse kind', async () => {
+  mock.method(kitsuApi, 'animeEntries', async () => []);
+  try {
+    const body = await withApp(async (get) => {
+      await get('/catalog/anime/kitsu-anime-popular.json');
+      return scrape(get);
+    });
+    assert.match(body, /catalog_requests_total\{[^}]*catalog="kitsu-anime-popular"[^}]*kind="browse"[^}]*\} [1-9]/);
+  } finally {
+    mock.restoreAll();
+  }
+});
+
+test('meta for an unmapped imdb id counts imdb not_found and stays a 404', async () => {
+  const { status, body } = await withApp(async (get) => {
+    const response = await get('/meta/anime/tt0000000.json');
+    return { status: response.status, body: await scrape(get) };
+  });
+  assert.strictEqual(status, 404);
+  assert.match(body, /meta_requests_total\{[^}]*id_type="imdb"[^}]*outcome="not_found"[^}]*\} [1-9]/);
+});
+
+test('timedUpstream wrapping a stub marks the kitsu upstream ok', async () => {
+  const stub = async () => ({ data: [] });
+  assert.deepStrictEqual(await metrics.timedUpstream('kitsu', stub), { data: [] });
+  const body = await withApp(scrape);
+  assert.match(body, /upstream_request_duration_seconds_count\{[^}]*upstream="kitsu"[^}]*outcome="ok"[^}]*\} [1-9]/);
+});
