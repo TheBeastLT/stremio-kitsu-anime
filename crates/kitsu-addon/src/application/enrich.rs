@@ -10,6 +10,9 @@ use super::{
     metadata::GenreUrl,
 };
 
+const JS_ARRAY_INDEX_LIMIT: f64 = 4_294_967_295.0;
+const MAX_SEASON_INDEX: f64 = 10_000.0;
+
 static EPISODE_TITLE: LazyLock<Regex> = LazyLock::new(|| Regex::new(r"Episode \d+", "").expect("valid regex"));
 
 pub async fn enrich_kitsu<F, Fut>(
@@ -255,6 +258,13 @@ fn season_counts(kitsu_id: &JsValue, row: &MappingRow, mapping: &Mapping, imdb_v
         }
         let index = season.to_number() - start_season;
         if index.fract() != 0.0 || index < 0.0 {
+            continue;
+        }
+        if index >= JS_ARRAY_INDEX_LIMIT {
+            continue;
+        }
+        if index > MAX_SEASON_INDEX {
+            tracing::warn!("Ignored imdb season {} of {imdb_id}: beyond {MAX_SEASON_INDEX} seasons", season.text());
             continue;
         }
         let index = index as usize;

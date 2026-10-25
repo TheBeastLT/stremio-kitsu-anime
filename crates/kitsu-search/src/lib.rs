@@ -1,5 +1,6 @@
 pub mod index;
 pub mod jaro_winkler;
+mod kitsu_record;
 pub mod math;
 pub mod norm;
 pub mod query;

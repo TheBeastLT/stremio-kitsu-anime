@@ -72,12 +72,6 @@ pub struct Manifest {
     pub id_prefixes: [&'static str; 4],
 }
 
-impl Manifest {
-    pub fn has_catalog(&self, id: &str) -> bool {
-        self.catalogs.iter().any(|catalog| catalog.id == id)
-    }
-}
-
 pub fn manifest() -> &'static Manifest {
     static MANIFEST: LazyLock<Manifest> = LazyLock::new(|| Manifest {
         id: "community.anime.kitsu",
@@ -138,11 +132,5 @@ mod tests {
     fn serialises_to_the_node_manifest_value() {
         let expected: serde_json::Value = serde_json::from_str(NODE_MANIFEST).unwrap();
         assert_eq!(serde_json::to_value(manifest()).unwrap(), expected);
-    }
-
-    #[test]
-    fn knows_its_catalogs() {
-        assert!(manifest().has_catalog("kitsu-anime-last-videos"));
-        assert!(!manifest().has_catalog("kitsu-anime-unknown"));
     }
 }

@@ -8,4 +8,8 @@ for name in mongodb_uri metrics_user metrics_password fanart_apikey; do
   fi
 done
 
-exec node index.js
+if [ "$#" -eq 0 ]; then
+  set -- node index.js
+fi
+
+exec "$@"

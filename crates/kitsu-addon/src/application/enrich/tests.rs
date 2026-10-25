@@ -313,3 +313,44 @@ async fn imdb_released_dates_never_go_back_across_a_run() {
         [[json!("2020-01-01T00:00:00.000Z")], [json!("2020-01-01T00:00:00.000Z")], [Value::Null]]
     );
 }
+
+fn single_row_mapping() -> (Mapping, MappingRow) {
+    let row = MappingRow {
+        kitsu_id: 1,
+        imdb_id: Some("tt1".to_owned()),
+        title: None,
+        from_season: Some(1),
+        from_episode: Some(1),
+        non_imdb_episodes: None,
+        imdb_episodes: None,
+        tmdb_id: None,
+        tvdb_id: None,
+        fanart_logo_id: None,
+    };
+    (Mapping::new(vec![row.clone()], &[]), row)
+}
+
+fn season_videos(seasons: &[f64]) -> Vec<JsValue> {
+    seasons.iter().map(|season| JsValue::from(&json!({ "season": season, "episode": 1 }))).collect()
+}
+
+#[test]
+fn a_season_beyond_the_js_array_index_range_is_ignored_like_a_js_property() {
+    let (mapping, row) = single_row_mapping();
+    let counts = season_counts(&JsValue::from("1"), &row, &mapping, &season_videos(&[1.0, 2.0, 1e10]));
+    assert_eq!(counts, vec![Some(1), Some(1)]);
+}
+
+#[test]
+fn a_season_beyond_the_season_cap_is_ignored_instead_of_allocating() {
+    let (mapping, row) = single_row_mapping();
+    let counts = season_counts(&JsValue::from("1"), &row, &mapping, &season_videos(&[1.0, 4e9]));
+    assert_eq!(counts, vec![Some(1)]);
+}
+
+#[test]
+fn seasons_up_to_the_cap_keep_their_sparse_positions() {
+    let (mapping, row) = single_row_mapping();
+    let counts = season_counts(&JsValue::from("1"), &row, &mapping, &season_videos(&[1.0, 4.0]));
+    assert_eq!(counts, vec![Some(1), None, None, Some(1)]);
+}

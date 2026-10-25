@@ -44,6 +44,48 @@ pub fn to_number(text: &str) -> f64 {
     }
 }
 
+fn hex_byte(pair: &[u8]) -> Option<u8> {
+    match pair {
+        [high, low] if high.is_ascii_hexdigit() && low.is_ascii_hexdigit() => {
+            u8::from_str_radix(std::str::from_utf8(pair).ok()?, 16).ok()
+        }
+        _ => None,
+    }
+}
+
+pub fn decode_uri_component(text: &str) -> Option<String> {
+    let bytes = text.as_bytes();
+    let mut decoded = Vec::with_capacity(bytes.len());
+    let mut index = 0;
+    while index < bytes.len() {
+        if bytes[index] == b'%' {
+            decoded.push(hex_byte(bytes.get(index + 1..index + 3)?)?);
+            index += 3;
+        } else {
+            decoded.push(bytes[index]);
+            index += 1;
+        }
+    }
+    String::from_utf8(decoded).ok()
+}
+
+pub fn unescape_buffer(text: &str) -> String {
+    let bytes = text.as_bytes();
+    let mut decoded = Vec::with_capacity(bytes.len());
+    let mut index = 0;
+    while index < bytes.len() {
+        let escaped = (bytes[index] == b'%').then(|| bytes.get(index + 1..index + 3).and_then(hex_byte)).flatten();
+        if let Some(byte) = escaped {
+            decoded.push(byte);
+            index += 3;
+        } else {
+            decoded.push(if bytes[index] == b'+' { b' ' } else { bytes[index] });
+            index += 1;
+        }
+    }
+    String::from_utf8_lossy(&decoded).into_owned()
+}
+
 const MAX_TIME: f64 = 8.64e15;
 const MILLIS_PER_DAY: f64 = 86_400_000.0;
 
@@ -156,6 +198,23 @@ impl Cursor<'_> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn decode_uri_component_decodes_utf8_escapes() {
+        assert_eq!(decode_uri_component("a%20b%2F%C3%A9").as_deref(), Some("a b/é"));
+    }
+
+    #[test]
+    fn decode_uri_component_rejects_what_javascript_rejects() {
+        for text in ["%", "%2", "%zz", "%+1", "%E0%A4%A", "%FF", "%ED%A0%80", "%C0%AF"] {
+            assert_eq!(decode_uri_component(text), None, "{text}");
+        }
+    }
+
+    #[test]
+    fn unescape_buffer_keeps_invalid_escapes_and_replaces_broken_utf8() {
+        assert_eq!(unescape_buffer("%E0%A4%A+x%zz"), "\u{FFFD}%A x%zz");
+    }
 
     #[test]
     fn date_parse_reads_the_iso_formats_as_v8() {

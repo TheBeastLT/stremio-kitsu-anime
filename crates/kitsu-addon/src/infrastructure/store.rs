@@ -1,6 +1,6 @@
 mod codec;
 
-use std::{collections::HashMap, sync::Arc, sync::Mutex, time::Duration};
+use std::{sync::Arc, time::Duration};
 
 use async_trait::async_trait;
 use mongodb::{
@@ -151,43 +151,9 @@ impl DocumentStore for MongoDocuments {
     }
 }
 
-#[derive(Default)]
-pub struct MemoryDocuments {
-    documents: Mutex<HashMap<String, Document>>,
-}
-
-impl MemoryDocuments {
-    pub fn insert(&self, document: Document) {
-        let key = document.get_str("key").expect("a stored document has a key").to_owned();
-        self.documents.lock().unwrap().insert(key, document);
-    }
-
-    pub fn document(&self, key: &str) -> Option<Document> {
-        self.documents.lock().unwrap().get(key).cloned()
-    }
-}
-
-#[async_trait]
-impl DocumentStore for MemoryDocuments {
-    async fn find_one(&self, key: &str) -> Result<Option<Document>, StoreError> {
-        Ok(self.document(key))
-    }
-
-    async fn find_many(&self, keys: &[String]) -> Result<Vec<Document>, StoreError> {
-        let documents = self.documents.lock().unwrap();
-        Ok(documents.iter().filter(|(key, _)| keys.contains(key)).map(|(_, document)| document.clone()).collect())
-    }
-
-    async fn upsert(&self, key: &str, document: Document) -> Result<(), StoreError> {
-        let mut documents = self.documents.lock().unwrap();
-        let stored = documents.entry(key.to_owned()).or_insert_with(|| doc! { "key": key });
-        stored.extend(document);
-        Ok(())
-    }
-}
-
 #[cfg(test)]
 mod tests {
+    use crate::infrastructure::testing::MemoryDocuments;
     use mongodb::bson::Bson;
     use serde_json::json;
 

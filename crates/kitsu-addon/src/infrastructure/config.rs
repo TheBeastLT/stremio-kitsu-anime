@@ -1,4 +1,6 @@
-use std::str::FromStr;
+use std::{fmt, str::FromStr};
+
+use super::kitsu::KITSU_URL;
 
 pub const DEFAULT_PORT: u16 = 7000;
 pub const DEFAULT_CACHE_MAX_AGE: u64 = 12 * 60 * 60;
@@ -7,8 +9,11 @@ pub const DEFAULT_MEMORY_CACHE_MB: u64 = 384;
 pub const DEFAULT_STORE_TIMEOUT_MS: u64 = 30_000;
 pub const DEFAULT_KITSU_COLLECTION: &str = "kitsu_collection";
 pub const DEFAULT_ADDON_URL: &str = "https://anime-kitsu.strem.fun";
+pub const DEFAULT_DATA_DIR: &str = "static/data";
+pub const DEFAULT_SEARCH_CONCURRENCY: usize = 2;
+pub const DEFAULT_SEARCH_QUEUE: usize = 32;
 
-#[derive(Debug, Clone, PartialEq, Eq)]
+#[derive(Clone, PartialEq, Eq)]
 pub struct Config {
     pub port: u16,
     pub mongodb_uri: Option<String>,
@@ -22,6 +27,10 @@ pub struct Config {
     pub store_timeout_ms: u64,
     pub kitsu_collection: String,
     pub addon_url: String,
+    pub kitsu_url: String,
+    pub data_dir: String,
+    pub search_concurrency: usize,
+    pub search_queue: usize,
 }
 
 impl Config {
@@ -32,6 +41,7 @@ impl Config {
     pub fn from_lookup(lookup: impl Fn(&str) -> Option<String>) -> Self {
         let text = |name: &str| lookup(name).filter(|value| !value.is_empty());
         let number = |name: &str| -> Option<u64> { text(name).and_then(|value| parsed(&value)).filter(|n| *n > 0) };
+        let count = |name: &str| -> Option<usize> { number(name).and_then(|n| usize::try_from(n).ok()) };
         Self {
             port: text("PORT").and_then(|value| parsed(&value)).unwrap_or(DEFAULT_PORT),
             mongodb_uri: text("MONGODB_URI"),
@@ -45,7 +55,38 @@ impl Config {
             store_timeout_ms: number("STORE_TIMEOUT_MS").unwrap_or(DEFAULT_STORE_TIMEOUT_MS),
             kitsu_collection: text("KITSU_COLLECTION").unwrap_or_else(|| DEFAULT_KITSU_COLLECTION.to_owned()),
             addon_url: text("ADDON_URL").unwrap_or_else(|| DEFAULT_ADDON_URL.to_owned()),
+            kitsu_url: text("KITSU_URL").unwrap_or_else(|| KITSU_URL.to_owned()),
+            data_dir: text("DATA_DIR").unwrap_or_else(|| DEFAULT_DATA_DIR.to_owned()),
+            search_concurrency: count("SEARCH_CONCURRENCY").unwrap_or(DEFAULT_SEARCH_CONCURRENCY),
+            search_queue: count("SEARCH_QUEUE").unwrap_or(DEFAULT_SEARCH_QUEUE),
         }
+    }
+}
+
+const REDACTED: &str = "<redacted>";
+
+impl fmt::Debug for Config {
+    fn fmt(&self, formatter: &mut fmt::Formatter<'_>) -> fmt::Result {
+        let redacted = |value: Option<&String>| value.map(|_| REDACTED);
+        formatter
+            .debug_struct("Config")
+            .field("port", &self.port)
+            .field("mongodb_uri", &redacted(self.mongodb_uri.as_ref()))
+            .field("metrics_credentials", &self.metrics_credentials.as_ref().map(|(user, _)| (user, REDACTED)))
+            .field("fanart_apikey", &redacted(self.fanart_apikey.as_ref()))
+            .field("cache_max_age", &self.cache_max_age)
+            .field("no_cache", &self.no_cache)
+            .field("meta_ttl_ms", &self.meta_ttl_ms)
+            .field("catalog_ttl_ms", &self.catalog_ttl_ms)
+            .field("memory_cache_mb", &self.memory_cache_mb)
+            .field("store_timeout_ms", &self.store_timeout_ms)
+            .field("kitsu_collection", &self.kitsu_collection)
+            .field("addon_url", &self.addon_url)
+            .field("kitsu_url", &self.kitsu_url)
+            .field("data_dir", &self.data_dir)
+            .field("search_concurrency", &self.search_concurrency)
+            .field("search_queue", &self.search_queue)
+            .finish()
     }
 }
 
@@ -76,6 +117,9 @@ mod tests {
         assert_eq!(config.kitsu_collection, "kitsu_collection");
         assert_eq!(config.addon_url, "https://anime-kitsu.strem.fun");
         assert!(!config.no_cache);
+        assert_eq!(config.kitsu_url, "https://kitsu.io/api/edge");
+        assert_eq!(config.data_dir, "static/data");
+        assert_eq!((config.search_concurrency, config.search_queue), (2, 32));
         assert_eq!(config.mongodb_uri, None);
         assert_eq!(config.metrics_credentials, None);
     }
@@ -96,6 +140,10 @@ mod tests {
             ("STORE_TIMEOUT_MS", "500"),
             ("KITSU_COLLECTION", "kitsu_collection_rs"),
             ("ADDON_URL", "https://example.test"),
+            ("KITSU_URL", "http://127.0.0.1:1"),
+            ("DATA_DIR", "/data"),
+            ("SEARCH_CONCURRENCY", "4"),
+            ("SEARCH_QUEUE", "8"),
         ]);
         assert_eq!(config.port, 8080);
         assert_eq!(config.mongodb_uri.as_deref(), Some("mongodb://db"));
@@ -108,6 +156,9 @@ mod tests {
         assert_eq!(config.store_timeout_ms, 500);
         assert_eq!(config.kitsu_collection, "kitsu_collection_rs");
         assert_eq!(config.addon_url, "https://example.test");
+        assert_eq!(config.kitsu_url, "http://127.0.0.1:1");
+        assert_eq!(config.data_dir, "/data");
+        assert_eq!((config.search_concurrency, config.search_queue), (4, 8));
     }
 
     #[test]
@@ -117,6 +168,21 @@ mod tests {
         assert_eq!(config.cache_max_age, 43_200);
         assert_eq!(config.meta_ttl_ms, 86_400_000);
         assert_eq!(config.memory_cache_mb, 384);
+    }
+
+    #[test]
+    fn debug_output_redacts_the_secrets() {
+        let config = config(&[
+            ("MONGODB_URI", "mongodb://user:dbsecret@db/kitsu"),
+            ("METRICS_USER", "prom"),
+            ("METRICS_PASSWORD", "metricssecret"),
+            ("FANART_APIKEY", "fanartsecret"),
+        ]);
+        let debug = format!("{config:?}");
+        for secret in ["dbsecret", "mongodb://", "metricssecret", "fanartsecret"] {
+            assert!(!debug.contains(secret), "{debug}");
+        }
+        assert!(debug.contains("prom"));
     }
 
     #[test]

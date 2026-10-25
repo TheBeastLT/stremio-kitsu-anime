@@ -8,7 +8,10 @@ use mongodb::bson::Document;
 use serde_json::json;
 
 use super::*;
-use crate::infrastructure::store::{DocumentStore, MemoryDocuments, encode_document, now_ms};
+use crate::infrastructure::{
+    store::{DocumentStore, encode_document, now_ms},
+    testing::MemoryDocuments,
+};
 
 const HOUR: Duration = Duration::from_secs(60 * 60);
 const SECOND: Duration = Duration::from_secs(1);
@@ -511,4 +514,71 @@ async fn the_weight_is_the_key_and_compressed_bytes() {
     cache.run_pending_tasks().await;
     let packed = Packed::encode(&value).unwrap().0.len() as u64;
     assert_eq!(cache.memory_weight(), "stremio-kitsu|meta:1".len() as u64 + packed);
+}
+
+#[tokio::test(flavor = "multi_thread")]
+async fn a_waiter_gets_a_value_when_the_leader_is_cancelled() {
+    let (cache, _) = memory_only();
+    let cache = Arc::new(cache);
+    let started = Arc::new(tokio::sync::Notify::new());
+    let leader = tokio::spawn({
+        let (cache, started) = (Arc::clone(&cache), Arc::clone(&started));
+        async move {
+            cache
+                .wrap_meta("1", || async move {
+                    started.notify_one();
+                    std::future::pending::<Result<Value, String>>().await
+                })
+                .await
+        }
+    });
+    started.notified().await;
+    let waiter = tokio::spawn({
+        let cache = Arc::clone(&cache);
+        async move { cache.wrap_meta("1", || async { Ok(json!("waiter")) }).await }
+    });
+    tokio::time::sleep(Duration::from_millis(20)).await;
+    leader.abort();
+    let value = tokio::time::timeout(Duration::from_secs(5), waiter).await.unwrap().unwrap().unwrap();
+    assert_eq!(*value, json!("waiter"));
+}
+
+#[tokio::test(flavor = "multi_thread")]
+async fn a_waiter_gets_a_value_when_the_leader_panics() {
+    let (cache, _) = memory_only();
+    let cache = Arc::new(cache);
+    let release = Arc::new(tokio::sync::Notify::new());
+    let started = Arc::new(tokio::sync::Notify::new());
+    let leader = tokio::spawn({
+        let (cache, release, started) = (Arc::clone(&cache), Arc::clone(&release), Arc::clone(&started));
+        async move {
+            cache
+                .wrap_meta("1", || async move {
+                    started.notify_one();
+                    release.notified().await;
+                    panic!("loader broken")
+                })
+                .await
+        }
+    });
+    started.notified().await;
+    let waiter = tokio::spawn({
+        let cache = Arc::clone(&cache);
+        async move { cache.wrap_meta("1", || async { Ok(json!("waiter")) }).await }
+    });
+    tokio::time::sleep(Duration::from_millis(20)).await;
+    release.notify_one();
+    assert!(leader.await.unwrap_err().is_panic());
+    let value = tokio::time::timeout(Duration::from_secs(5), waiter).await.unwrap().unwrap().unwrap();
+    assert_eq!(*value, json!("waiter"));
+}
+
+#[tokio::test(start_paused = true)]
+async fn drain_gives_up_on_a_hanging_write_after_ten_seconds() {
+    let fixture = with_store(Mode::HangingWrites);
+    let loader = Loader::new();
+    fixture.cache.wrap_meta("1", || loader.ok(json!("loaded"))).await.unwrap();
+    let started = tokio::time::Instant::now();
+    fixture.cache.drain().await;
+    assert_eq!(started.elapsed(), DRAIN_TIMEOUT);
 }

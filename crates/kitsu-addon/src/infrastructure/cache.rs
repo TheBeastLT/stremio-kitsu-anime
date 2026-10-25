@@ -15,6 +15,7 @@ use tokio_util::task::TaskTracker;
 
 use super::{
     Config,
+    kitsu::jsonapi,
     store::{self, Store, StoreError, Stored},
 };
 
@@ -125,7 +126,9 @@ impl Expiry<String, Entry> for PerEntryTtl {
 }
 
 fn memory(settings: &CacheSettings) -> Moka<String, Entry> {
-    tracing::info!(memory_mb = settings.budget_bytes / 1024 / 1024, "Cache sizes");
+    if settings.enabled {
+        tracing::info!(memory_mb = settings.budget_bytes / 1024 / 1024, "Cache sizes");
+    }
     Moka::builder()
         .max_capacity(settings.budget_bytes)
         .weigher(|key: &String, entry: &Entry| u32::try_from(key.len() + entry.packed.0.len()).unwrap_or(u32::MAX))
@@ -366,20 +369,10 @@ pub fn images_ttl(images: &Value) -> Duration {
     let logo_lang = images.get("logoLang");
     if logo_lang.and_then(Value::as_str) == Some("en") {
         IMAGES_TTL
-    } else if logo_lang.is_some_and(truthy) || images.get("logo").is_some_and(truthy) {
+    } else if jsonapi::truthy(logo_lang) || jsonapi::truthy(images.get("logo")) {
         IMAGES_NON_EN_TTL
     } else {
         IMAGES_NULL_TTL
-    }
-}
-
-fn truthy(value: &Value) -> bool {
-    match value {
-        Value::Null => false,
-        Value::Bool(flag) => *flag,
-        Value::Number(number) => number.as_f64().is_some_and(|number| number != 0.0 && !number.is_nan()),
-        Value::String(text) => !text.is_empty(),
-        Value::Array(_) | Value::Object(_) => true,
     }
 }
 

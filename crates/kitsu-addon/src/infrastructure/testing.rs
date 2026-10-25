@@ -5,10 +5,12 @@ use std::{
 };
 
 use async_trait::async_trait;
+use mongodb::bson::{Document, doc};
 
 use super::{
     cache::{Cache, CacheSettings, NoStats},
     http::{HttpRequest, HttpResponse, HttpTransport, TransportError, Verb},
+    store::{DocumentStore, StoreError},
     upstream::{Outcome, UpstreamObserver},
 };
 
@@ -85,4 +87,39 @@ pub fn memory_cache<E: Clone>() -> Arc<Cache<E>> {
         catalog_ttl: Duration::from_secs(60),
     };
     Arc::new(Cache::new(settings, None, Arc::new(NoStats)))
+}
+
+#[derive(Default)]
+pub struct MemoryDocuments {
+    documents: Mutex<HashMap<String, Document>>,
+}
+
+impl MemoryDocuments {
+    pub fn insert(&self, document: Document) {
+        let key = document.get_str("key").expect("a stored document has a key").to_owned();
+        self.documents.lock().unwrap().insert(key, document);
+    }
+
+    pub fn document(&self, key: &str) -> Option<Document> {
+        self.documents.lock().unwrap().get(key).cloned()
+    }
+}
+
+#[async_trait]
+impl DocumentStore for MemoryDocuments {
+    async fn find_one(&self, key: &str) -> Result<Option<Document>, StoreError> {
+        Ok(self.document(key))
+    }
+
+    async fn find_many(&self, keys: &[String]) -> Result<Vec<Document>, StoreError> {
+        let documents = self.documents.lock().unwrap();
+        Ok(documents.iter().filter(|(key, _)| keys.contains(key)).map(|(_, document)| document.clone()).collect())
+    }
+
+    async fn upsert(&self, key: &str, document: Document) -> Result<(), StoreError> {
+        let mut documents = self.documents.lock().unwrap();
+        let stored = documents.entry(key.to_owned()).or_insert_with(|| doc! { "key": key });
+        stored.extend(document);
+        Ok(())
+    }
 }

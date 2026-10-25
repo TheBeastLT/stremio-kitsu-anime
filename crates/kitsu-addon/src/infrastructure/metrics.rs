@@ -15,6 +15,7 @@ use subtle::ConstantTimeEq;
 
 use super::{
     cache::{CacheStats, Kind, StoreOp},
+    js,
     upstream::{Outcome, UpstreamObserver},
 };
 use crate::domain::manifest::manifest;
@@ -56,7 +57,7 @@ impl Route {
 
 pub fn route_of(url: &str) -> Route {
     let raw = url.split('?').next().unwrap_or_default();
-    let Some(path) = percent_decode(raw) else {
+    let Some(path) = js::decode_uri_component(raw) else {
         return Route::Other;
     };
     if path == "/" || path == "/configure" {
@@ -75,24 +76,6 @@ pub fn route_of(url: &str) -> Route {
         "metrics" => Route::Metrics,
         _ => Route::Other,
     }
-}
-
-fn percent_decode(input: &str) -> Option<String> {
-    let bytes = input.as_bytes();
-    let mut decoded = Vec::with_capacity(bytes.len());
-    let mut index = 0;
-    while index < bytes.len() {
-        if bytes[index] == b'%' {
-            let pair = bytes.get(index + 1..index + 3)?;
-            let value = u8::from_str_radix(std::str::from_utf8(pair).ok()?, 16).ok()?;
-            decoded.push(value);
-            index += 3;
-        } else {
-            decoded.push(bytes[index]);
-            index += 1;
-        }
-    }
-    String::from_utf8(decoded).ok()
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
