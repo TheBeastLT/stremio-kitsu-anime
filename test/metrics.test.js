@@ -105,3 +105,16 @@ test('counters expose cache, catalog, search and meta', () => {
     assert.strictEqual(typeof metrics.counters[name].inc, 'function');
   }
 });
+
+test('routeOf classifies urls without a leading slash as other', () => {
+  assert.strictEqual(metrics.routeOf('*'), 'other');
+  assert.strictEqual(metrics.routeOf(''), 'other');
+});
+
+test('httpMetrics does not throw for an asterisk url', () => {
+  const { EventEmitter } = require('node:events');
+  const res = new EventEmitter();
+  res.statusCode = 200;
+  metrics.httpMetrics({ originalUrl: '*' }, res, () => {});
+  assert.doesNotThrow(() => res.emit('finish'));
+});
