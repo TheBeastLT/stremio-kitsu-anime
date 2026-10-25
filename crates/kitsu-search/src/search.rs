@@ -1,0 +1,157 @@
+use std::sync::LazyLock;
+
+use fastjs_regex::{Regex, byte_index, utf16_len};
+
+use crate::index::Index;
+use crate::norm::{js_trim, norm};
+use crate::query::{parse_query, split_titles};
+use crate::rank::{MIN_CONFIDENCE, Ranker, Run, confidence};
+use crate::score::{EXACT_SYNONYM, Query};
+
+pub const MAX_QUERY_LENGTH: usize = 250;
+pub const LIMIT: usize = 20;
+
+fn rx(source: &str) -> Regex {
+    Regex::new(source, "").unwrap_or_else(|error| panic!("invalid pattern {source}: {error}"))
+}
+
+static TRAILING_WORD: LazyLock<Regex> = LazyLock::new(|| rx(r"\s+\S*$"));
+static SPACES: LazyLock<Regex> = LazyLock::new(|| rx(r"(\s+)"));
+
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct Hit {
+    pub id: u32,
+    pub score: f64,
+}
+
+#[derive(Clone, Debug, PartialEq)]
+pub struct Ranking {
+    pub hits: Vec<Hit>,
+    pub confidence: Option<f64>,
+}
+
+pub struct Searcher {
+    index: Index,
+}
+
+pub fn trim_query(query: &str) -> std::borrow::Cow<'_, str> {
+    if utf16_len(query) <= MAX_QUERY_LENGTH {
+        return query.into();
+    }
+    let mut cut = query[..byte_index(query, MAX_QUERY_LENGTH)].to_owned();
+    if utf16_len(&cut) < MAX_QUERY_LENGTH {
+        cut.push('\u{FFFD}');
+    }
+    TRAILING_WORD.replace(&cut, "").into_owned().into()
+}
+
+impl Searcher {
+    pub fn new(index: Index) -> Self {
+        Self { index }
+    }
+
+    pub fn index(&self) -> &Index {
+        &self.index
+    }
+
+    pub fn search(&self, query: &str) -> Vec<Hit> {
+        self.search_with(query, LIMIT, MIN_CONFIDENCE).hits
+    }
+
+    fn rank(&self, query: &str, limit: usize) -> Option<Run> {
+        let parsed = parse_query(query);
+        if parsed.base.is_empty() {
+            return None;
+        }
+        let query = Query::new(&self.index, &parsed);
+        Ranker::new(&self.index, &query).rank(limit)
+    }
+
+    fn split_rerun(&self, trimmed: &str, limit: usize, results: Option<Run>) -> Option<Run> {
+        let weak = !results.as_ref().is_some_and(|run| run.confidence >= MIN_CONFIDENCE);
+        let parts = match &results {
+            Some(run) if !weak && run.top().candidate.title.score >= EXACT_SYNONYM => return results,
+            _ => split_titles(trimmed),
+        };
+        if parts.len() <= 1 {
+            return results;
+        }
+        let mut runs: Vec<Run> = parts.iter().filter_map(|part| self.rank(part, limit)).collect();
+        let entry_of = |run: &Run| run.top().candidate.title.entry;
+        let agreeing = |entry: u32| {
+            runs.iter()
+                .filter(|run| {
+                    entry_of(run) == entry && run.top().candidate.title.score >= confidence::SPLIT_AGREEMENT_SCORE
+                })
+                .count() as f64
+        };
+        let support: Vec<f64> =
+            runs.iter().map(|run| run.confidence + confidence::SPLIT_AGREEMENT * agreeing(entry_of(run))).collect();
+        let mut best: Option<usize> = None;
+        for (i, value) in support.iter().enumerate() {
+            if best.is_none_or(|best| *value > support[best]) {
+                best = Some(i);
+            }
+        }
+        let Some(best) = best else { return results };
+        let unanimous = runs.len() == parts.len() && runs.iter().all(|run| entry_of(run) == entry_of(&runs[best]));
+        let chosen = &runs[best];
+        let replaces = match &results {
+            _ if weak => chosen.confidence > results.as_ref().map_or(0.0, |run| run.confidence),
+            Some(run) => {
+                unanimous && chosen.confidence >= MIN_CONFIDENCE && chosen.top().final_score > run.top().final_score
+            }
+            None => false,
+        };
+        if replaces { Some(runs.swap_remove(best)) } else { results }
+    }
+
+    fn typo_rerun(&self, trimmed: &str, limit: usize, results: Option<Run>) -> Option<Run> {
+        let Some(corrections) = results.as_ref().and_then(|run| run.typo_corrections.as_ref()) else {
+            return results;
+        };
+        if corrections.is_empty() {
+            return results;
+        }
+        let corrected: String = SPACES
+            .split(trimmed)
+            .into_iter()
+            .map(|token| {
+                let token = token.unwrap_or_default();
+                corrections.get(js_trim(&norm(token))).map_or(token, String::as_str)
+            })
+            .collect();
+        match self.rank(&corrected, limit) {
+            Some(rerun) if rerun.confidence >= MIN_CONFIDENCE => Some(rerun),
+            _ => results,
+        }
+    }
+
+    pub fn search_with(&self, query: &str, limit: usize, min_confidence: f64) -> Ranking {
+        let trimmed = trim_query(query);
+        let ranked_limit = limit.max(1);
+        let results = self.rank(&trimmed, ranked_limit);
+        let results = self.split_rerun(&trimmed, ranked_limit, results);
+        let Some(mut run) = self.typo_rerun(&trimmed, ranked_limit, results) else {
+            return Ranking { hits: Vec::new(), confidence: None };
+        };
+        if let Some(typo) = run.typo_confidence
+            && typo > run.confidence
+        {
+            run.confidence = typo;
+        }
+        let hits = if run.confidence >= min_confidence {
+            run.results
+                .iter()
+                .take(limit)
+                .map(|result| Hit {
+                    id: self.index.entries()[result.candidate.title.entry as usize].id as u32,
+                    score: result.final_score,
+                })
+                .collect()
+        } else {
+            Vec::new()
+        };
+        Ranking { hits, confidence: Some(run.confidence) }
+    }
+}

@@ -7,3 +7,11 @@ static/data/new_mappings.json
 
 .now
 search_eval/cache/
+
+target/
+
+search_eval/golden/*
+!search_eval/golden/dump.js
+!search_eval/golden/kernel_sweep.js
+!search_eval/golden/README.md
+!search_eval/golden/smoke.jsonl

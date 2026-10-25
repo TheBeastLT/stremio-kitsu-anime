@@ -1,0 +1,17 @@
+[package]
+name = "kitsu-addon"
+description = "Kitsu anime Stremio addon server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lib]
+name = "kitsu_addon"
+
+[[bin]]
+name = "kitsu-addon"
+path = "src/main.rs"
+
+[lints]
+workspace = true
