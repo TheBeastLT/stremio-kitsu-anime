@@ -17,6 +17,7 @@ use super::{
 pub const FANART_URL: &str = "https://webservice.fanart.tv/v3/";
 pub const TVDB_URL: &str = "https://thetvdb.com/api/GetSeriesByRemoteID.php";
 pub const METAHUB_URL: &str = "https://images.metahub.space";
+pub const SAFETY_TIMEOUT: Duration = Duration::from_secs(30);
 const UPSTREAM: &str = "fanart";
 const GOT_USER_AGENT: &str = "got/7.1.0 (https://github.com/sindresorhus/got)";
 const GOT_RETRIES: u32 = 2;
@@ -95,7 +96,7 @@ impl<E: Clone> Fanart<E> {
             url: format!("{TVDB_URL}?imdbid={}", text(mapping.imdb_id.as_ref())),
             accept: Some("application/xml"),
             user_agent: Some(AXIOS_USER_AGENT),
-            timeout: None,
+            timeout: Some(SAFETY_TIMEOUT),
         };
         let started = Instant::now();
         let response = match self.http.send(&request).await {
@@ -168,7 +169,7 @@ impl<E: Clone> Fanart<E> {
             url: format!("{FANART_URL}{endpoint}?api_key={}", jsonapi::encode_uri_component(&self.api_key)),
             accept: Some("application/json"),
             user_agent: Some(GOT_USER_AGENT),
-            timeout: None,
+            timeout: Some(SAFETY_TIMEOUT),
         };
         let started = Instant::now();
         let result = self.got(&request).await.and_then(|response| got_body(&response));
@@ -192,7 +193,8 @@ impl<E: Clone> Fanart<E> {
     }
 
     async fn exists(&self, url: String) -> Option<String> {
-        let request = HttpRequest { verb: Verb::Head, url, accept: None, user_agent: None, timeout: None };
+        let request =
+            HttpRequest { verb: Verb::Head, url, accept: None, user_agent: None, timeout: Some(SAFETY_TIMEOUT) };
         match self.http.send(&request).await {
             Ok(response) if !(400..500).contains(&response.status) => Some(request.url),
             _ => None,

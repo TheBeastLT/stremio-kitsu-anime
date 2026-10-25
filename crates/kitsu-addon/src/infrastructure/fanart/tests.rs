@@ -100,7 +100,7 @@ async fn show_request_is_a_got_json_request() {
     let request = &http.requests()[0];
     assert_eq!(request.accept, Some("application/json"));
     assert_eq!(request.user_agent, Some("got/7.1.0 (https://github.com/sindresorhus/got)"));
-    assert_eq!(request.timeout, None);
+    assert_eq!(request.timeout, Some(SAFETY_TIMEOUT));
 }
 
 #[tokio::test]
@@ -336,6 +336,16 @@ async fn metahub_fills_every_image_when_fanart_has_none() {
         ]
     );
     assert_eq!(observed.outcomes(), vec![("fanart", Outcome::Error), ("fanart", Outcome::Error)]);
+}
+
+#[tokio::test]
+async fn every_images_request_has_the_safety_timeout() {
+    let (fanart, http, _) = fanart();
+    http.reply(Verb::Get, TVDB_LOOKUP, 200, &tvdb_xml(&["81797"]));
+    fanart.images("12", Some(&imdb("tt0388629"))).await;
+    let requests = http.requests();
+    assert_eq!(requests.len(), 6);
+    assert!(requests.iter().all(|request| request.timeout == Some(SAFETY_TIMEOUT)));
 }
 
 #[tokio::test]

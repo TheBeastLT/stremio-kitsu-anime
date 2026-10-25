@@ -11,7 +11,8 @@ use mongodb::{
 use serde_json::Value;
 
 pub use codec::{
-    Stored, bson_to_json, decode_payload, decode_stored, encode_document, iso_string, json_to_bson, parse_iso,
+    Stored, bson_to_json, days_from_civil, decode_payload, decode_stored, encode_document, iso_string, json_to_bson,
+    parse_iso,
 };
 
 pub const GLOBAL_KEY_PREFIX: &str = "stremio-kitsu";

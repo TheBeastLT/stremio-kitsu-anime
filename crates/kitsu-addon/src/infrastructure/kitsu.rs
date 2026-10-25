@@ -89,7 +89,7 @@ impl KitsuTransport for ReqwestTransport {
 
 #[derive(Debug, Clone, Default, PartialEq, Eq)]
 pub struct EntriesOptions {
-    pub offset: Option<u64>,
+    pub offset: Option<String>,
     pub genre: Option<String>,
     pub status: Option<String>,
     pub sort: Option<String>,
@@ -132,7 +132,7 @@ impl KitsuApi {
         }
         let mut filter = Map::new();
         let mut page = Map::new();
-        if let Some(offset) = options.offset.filter(|offset| *offset > 0) {
+        if let Some(offset) = non_empty(options.offset.as_ref()) {
             page.insert("offset".to_owned(), offset.into());
         }
         if let Some(genre) = non_empty(options.genre.as_ref()) {

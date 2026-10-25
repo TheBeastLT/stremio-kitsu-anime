@@ -1,0 +1,818 @@
+[
+  {
+    "kitsu_id": 1,
+    "imdb_id": "tt0213338",
+    "title": "Cowboy Bebop"
+  },
+  {
+    "kitsu_id": 2,
+    "imdb_id": "tt0275277",
+    "title": "Cowboy Bebop: The Movie"
+  },
+  {
+    "kitsu_id": 11,
+    "imdb_id": "tt0409591",
+    "title": "Naruto"
+  },
+  {
+    "kitsu_id": 12,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "nonImdbEpisodes": [
+      590
+    ],
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 45690,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 40,
+    "imdbEpisodes": [
+      40,
+      41,
+      49,
+      50
+    ]
+  },
+  {
+    "kitsu_id": 46215,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 42
+  },
+  {
+    "kitsu_id": 46447,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 43
+  },
+  {
+    "kitsu_id": 46629,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 44
+  },
+  {
+    "kitsu_id": 47643,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 45
+  },
+  {
+    "kitsu_id": 48291,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 47
+  },
+  {
+    "kitsu_id": 47642,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 48
+  },
+  {
+    "kitsu_id": 49212,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 51
+  },
+  {
+    "kitsu_id": 48727,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 52
+  },
+  {
+    "kitsu_id": 48726,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 53
+  },
+  {
+    "kitsu_id": 48969,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 54
+  },
+  {
+    "kitsu_id": 49133,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 55
+  },
+  {
+    "kitsu_id": 49229,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 56
+  },
+  {
+    "kitsu_id": 49259,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 57
+  },
+  {
+    "kitsu_id": 49878,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 58
+  },
+  {
+    "kitsu_id": 49911,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 59
+  },
+  {
+    "kitsu_id": 50022,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 60
+  },
+  {
+    "kitsu_id": 50130,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 61
+  },
+  {
+    "kitsu_id": 50262,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 62
+  },
+  {
+    "kitsu_id": 50372,
+    "imdb_id": "tt0388629",
+    "title": "One Piece",
+    "fromSeason": 0,
+    "fromEpisode": 63
+  },
+  {
+    "kitsu_id": 25,
+    "imdb_id": "tt0113568",
+    "title": "Ghost in the Shell"
+  },
+  {
+    "kitsu_id": 72,
+    "imdb_id": "tt0374407",
+    "title": "Mobile Suit Gundam Seed",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 2057,
+    "imdb_id": "tt0374407",
+    "title": "Mobile Suit Gundam Seed",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 2080,
+    "imdb_id": "tt0374407",
+    "title": "Mobile Suit Gundam Seed",
+    "fromSeason": 0,
+    "fromEpisode": 4
+  },
+  {
+    "kitsu_id": 765,
+    "imdb_id": "tt0374407",
+    "title": "Mobile Suit Gundam Seed",
+    "fromSeason": 0,
+    "fromEpisode": 5
+  },
+  {
+    "kitsu_id": 73,
+    "imdb_id": "tt0434694",
+    "title": "Mobile Suit Gundam Seed Destiny",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 2079,
+    "imdb_id": "tt0434694",
+    "title": "Mobile Suit Gundam Seed Destiny",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 1092,
+    "imdb_id": "tt0434694",
+    "title": "Mobile Suit Gundam Seed Destiny",
+    "fromSeason": 0,
+    "fromEpisode": 7,
+    "imdbEpisodes": [
+      7,
+      null,
+      null
+    ]
+  },
+  {
+    "kitsu_id": 1117,
+    "imdb_id": "tt0434694",
+    "title": "Mobile Suit Gundam Seed Destiny",
+    "fromSeason": 0,
+    "fromEpisode": 8
+  },
+  {
+    "kitsu_id": 11491,
+    "tmdb_id": "372757",
+    "title": "Last Exile: Fam, the Silver Wing - Over the Wishes"
+  },
+  {
+    "kitsu_id": 43078,
+    "imdb_id": "tt14986406",
+    "tvdb_id": "74796",
+    "fanartLogoId": "157743",
+    "title": "Bleach: Thousand Year Blood War",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 46903,
+    "imdb_id": "tt14986406",
+    "tvdb_id": "74796",
+    "fanartLogoId": "157743",
+    "title": "Bleach: Thousand Year Blood War",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 48015,
+    "imdb_id": "tt14986406",
+    "tvdb_id": "74796",
+    "fanartLogoId": "157743",
+    "title": "Bleach: Thousand Year Blood War",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 49444,
+    "imdb_id": "tt14986406",
+    "tvdb_id": "74796",
+    "fanartLogoId": "157743",
+    "title": "Bleach: Thousand Year Blood War",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 1621,
+    "imdb_id": "tt0109633",
+    "title": "Dirty Pair Flash",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 6708,
+    "imdb_id": "tt0109633",
+    "title": "Dirty Pair Flash",
+    "fromSeason": 1,
+    "fromEpisode": 7
+  },
+  {
+    "kitsu_id": 6709,
+    "imdb_id": "tt0109633",
+    "title": "Dirty Pair Flash",
+    "fromSeason": 1,
+    "fromEpisode": 12
+  },
+  {
+    "kitsu_id": 43098,
+    "imdb_id": "tt12299696",
+    "title": "Tokyo Mew Mew New",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 46521,
+    "imdb_id": "tt12299696",
+    "title": "Tokyo Mew Mew New",
+    "fromSeason": 1,
+    "fromEpisode": 13
+  },
+  {
+    "kitsu_id": 1191,
+    "imdb_id": "tt0143353",
+    "fanartLogoId": "98829",
+    "title": "The Guyver: Bio-Booster Armor",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 8124,
+    "imdb_id": "tt0143353",
+    "fanartLogoId": "98973",
+    "title": "The Guyver: Bio-Booster Armor",
+    "fromSeason": 1,
+    "fromEpisode": 7
+  },
+  {
+    "kitsu_id": 1555,
+    "imdb_id": "tt0988824",
+    "title": "Naruto: Shippûden",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 7975,
+    "imdb_id": "tt0988824",
+    "title": "Naruto: Shippûden",
+    "fromSeason": 0,
+    "fromEpisode": 11
+  },
+  {
+    "kitsu_id": 7442,
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 8671,
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 13569,
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 41982,
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 3,
+    "fromEpisode": 13
+  },
+  {
+    "kitsu_id": 42422,
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 44240,
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 4,
+    "fromEpisode": 17
+  },
+  {
+    "kitsu_id": 46038,
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 4,
+    "fromEpisode": 29
+  },
+  {
+    "kitsu_id": 47132,
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 4,
+    "fromEpisode": 30
+  },
+  {
+    "kitsu_id": 7838,
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 7889,
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 0,
+    "fromEpisode": 2,
+    "imdbEpisodes": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  {
+    "kitsu_id": 7694,
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 0,
+    "fromEpisode": 7,
+    "imdbEpisodes": [
+      7,
+      12,
+      13
+    ]
+  },
+  {
+    "kitsu_id": 8674,
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 0,
+    "fromEpisode": 15,
+    "imdbEpisodes": [
+      15,
+      17
+    ]
+  },
+  {
+    "kitsu_id": 13718,
+    "imdb_id": "tt2560140",
+    "title": "Attack on Titan",
+    "fromSeason": 0,
+    "fromEpisode": 20,
+    "imdbEpisodes": [
+      20,
+      22,
+      23
+    ]
+  },
+  {
+    "kitsu_id": 7929,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 8278,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 11117,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 12279,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 4,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 13247,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 41937,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 6,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 42425,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 7,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 42599,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 8,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 42600,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 9,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 11013,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 0,
+    "fromEpisode": 1,
+    "nonImdbEpisodes": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "kitsu_id": 8707,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 0,
+    "fromEpisode": 18
+  },
+  {
+    "kitsu_id": 11439,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 0,
+    "fromEpisode": 22
+  },
+  {
+    "kitsu_id": 12629,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 0,
+    "fromEpisode": 26
+  },
+  {
+    "kitsu_id": 12669,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 0,
+    "fromEpisode": 28
+  },
+  {
+    "kitsu_id": 13649,
+    "imdb_id": "tt3066242",
+    "title": "RWBY",
+    "fromSeason": 0,
+    "fromEpisode": 36
+  },
+  {
+    "kitsu_id": 41004,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 42037,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 27
+  },
+  {
+    "kitsu_id": 44607,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 79
+  },
+  {
+    "kitsu_id": 44609,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 92
+  },
+  {
+    "kitsu_id": 44611,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 105
+  },
+  {
+    "kitsu_id": 44616,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 118
+  },
+  {
+    "kitsu_id": 44617,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 131
+  },
+  {
+    "kitsu_id": 44624,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 144
+  },
+  {
+    "kitsu_id": 44625,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 157
+  },
+  {
+    "kitsu_id": 45032,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 170
+  },
+  {
+    "kitsu_id": 45661,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 183
+  },
+  {
+    "kitsu_id": 46149,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 196
+  },
+  {
+    "kitsu_id": 46150,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 209,
+    "nonImdbEpisodes": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  {
+    "kitsu_id": 46536,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 212
+  },
+  {
+    "kitsu_id": 46535,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 215
+  },
+  {
+    "kitsu_id": 46537,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 218
+  },
+  {
+    "kitsu_id": 46538,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 221
+  },
+  {
+    "kitsu_id": 46539,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 224
+  },
+  {
+    "kitsu_id": 46557,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 227
+  },
+  {
+    "kitsu_id": 46558,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 232,
+    "nonImdbEpisodes": [
+      4
+    ]
+  },
+  {
+    "kitsu_id": 46813,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 235
+  },
+  {
+    "kitsu_id": 47595,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 239
+  },
+  {
+    "kitsu_id": 47596,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 242
+  },
+  {
+    "kitsu_id": 47597,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 245
+  },
+  {
+    "kitsu_id": 47598,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 248
+  },
+  {
+    "kitsu_id": 47599,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 251
+  },
+  {
+    "kitsu_id": 47600,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 254
+  },
+  {
+    "kitsu_id": 47601,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 257
+  },
+  {
+    "kitsu_id": 47602,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 260
+  },
+  {
+    "kitsu_id": 47603,
+    "imdb_id": "tt8948436",
+    "title": "Douluo Dalu",
+    "fromSeason": 1,
+    "fromEpisode": 262
+  },
+  {
+    "kitsu_id": 46474,
+    "imdb_id": "tt22248376",
+    "title": "Sousou no Frieren",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 49240,
+    "imdb_id": "tt22248376",
+    "title": "Sousou no Frieren",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 48105,
+    "imdb_id": "tt22248376",
+    "title": "Sousou no Frieren",
+    "fromSeason": 0,
+    "fromEpisode": 1
+  }
+]

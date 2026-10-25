@@ -44,9 +44,154 @@ pub fn to_number(text: &str) -> f64 {
     }
 }
 
+const MAX_TIME: f64 = 8.64e15;
+const MILLIS_PER_DAY: f64 = 86_400_000.0;
+
+pub fn time_clip(time: f64) -> f64 {
+    if !time.is_finite() || time.abs() > MAX_TIME { f64::NAN } else { time.trunc() + 0.0 }
+}
+
+pub fn date_parse(text: &str) -> f64 {
+    iso_date_time(text.as_bytes()).map_or(f64::NAN, time_clip)
+}
+
+fn iso_date_time(bytes: &[u8]) -> Option<f64> {
+    let mut cursor = Cursor { bytes, position: 0 };
+    let year = match cursor.peek() {
+        Some(sign @ (b'+' | b'-')) => {
+            cursor.position += 1;
+            let year = cursor.digits(6)?;
+            if sign == b'-' && year == 0 {
+                return None;
+            }
+            if sign == b'-' { -year } else { year }
+        }
+        _ => cursor.digits(4)?,
+    };
+    let (month, day) = if cursor.eat(b'-') {
+        let month = cursor.digits(2)?;
+        (month, if cursor.eat(b'-') { cursor.digits(2)? } else { 1 })
+    } else {
+        (1, 1)
+    };
+    if !(1..=12).contains(&month) || !(1..=31).contains(&day) {
+        return None;
+    }
+    let mut time = 0;
+    if cursor.eat(b'T') {
+        let hours = cursor.digits(2)?;
+        cursor.expect(b':')?;
+        let minutes = cursor.digits(2)?;
+        let seconds = if cursor.eat(b':') { cursor.digits(2)? } else { 0 };
+        let mut millis = 0;
+        if cursor.eat(b'.') {
+            let start = cursor.position;
+            while cursor.peek().is_some_and(|byte| byte.is_ascii_digit()) {
+                cursor.position += 1;
+            }
+            let fraction = &bytes[start..cursor.position];
+            if fraction.is_empty() {
+                return None;
+            }
+            millis = fraction.iter().chain(b"00").take(3).fold(0, |value, digit| value * 10 + i64::from(digit - b'0'));
+        }
+        if hours > 24 || minutes > 59 || seconds > 59 || (hours == 24 && (minutes, seconds, millis) != (0, 0, 0)) {
+            return None;
+        }
+        time = ((hours * 60 + minutes) * 60 + seconds) * 1000 + millis;
+        match cursor.peek() {
+            Some(b'Z' | b'z') => cursor.position += 1,
+            Some(sign @ (b'+' | b'-')) => {
+                cursor.position += 1;
+                let offset_hours = cursor.digits(2)?;
+                cursor.expect(b':')?;
+                let offset_minutes = cursor.digits(2)?;
+                if offset_hours > 23 || offset_minutes > 59 {
+                    return None;
+                }
+                let offset = (offset_hours * 60 + offset_minutes) * 60_000;
+                time += if sign == b'+' { -offset } else { offset };
+            }
+            _ => {}
+        }
+    }
+    if cursor.position != bytes.len() {
+        return None;
+    }
+    Some(super::store::days_from_civil(year, month, day) as f64 * MILLIS_PER_DAY + time as f64)
+}
+
+struct Cursor<'a> {
+    bytes: &'a [u8],
+    position: usize,
+}
+
+impl Cursor<'_> {
+    fn peek(&self) -> Option<u8> {
+        self.bytes.get(self.position).copied()
+    }
+
+    fn eat(&mut self, byte: u8) -> bool {
+        let found = self.peek() == Some(byte);
+        if found {
+            self.position += 1;
+        }
+        found
+    }
+
+    fn expect(&mut self, byte: u8) -> Option<()> {
+        self.eat(byte).then_some(())
+    }
+
+    fn digits(&mut self, count: usize) -> Option<i64> {
+        let digits = self.bytes.get(self.position..self.position + count)?;
+        if !digits.iter().all(u8::is_ascii_digit) {
+            return None;
+        }
+        self.position += count;
+        Some(digits.iter().fold(0, |value, digit| value * 10 + i64::from(digit - b'0')))
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn date_parse_reads_the_iso_formats_as_v8() {
+        let cases = [
+            ("2019-02-30", 1_551_484_800_000.0),
+            ("2019-02-31", 1_551_571_200_000.0),
+            ("2019", 1_546_300_800_000.0),
+            ("2019-01", 1_546_300_800_000.0),
+            ("2019-01-08T10:00", 1_546_941_600_000.0),
+            ("2019-01-08T10:00:00.5Z", 1_546_941_600_500.0),
+            ("2019-01-08T10:00:00.123456Z", 1_546_941_600_123.0),
+            ("2019-01-08T24:00:00Z", 1_546_992_000_000.0),
+            ("+002019-01-08", 1_546_905_600_000.0),
+            ("2019-01-08T10:00:00+01:00", 1_546_938_000_000.0),
+            ("2019-01-08T10:00:00.000z", 1_546_941_600_000.0),
+            ("2020-01-01T00:00:00.000Z", 1_577_836_800_000.0),
+        ];
+        for (text, expected) in cases {
+            assert!((date_parse(text) - expected).abs() < f64::EPSILON, "{text}");
+        }
+    }
+
+    #[test]
+    fn date_parse_rejects_what_v8_rejects() {
+        for text in ["2019-13-01", "2019-00-10", "2019-01-32", "", "-000000-01-01", "2019-01-08T25:00Z", "2019-01-08T"]
+        {
+            assert!(date_parse(text).is_nan(), "{text}");
+        }
+    }
+
+    #[test]
+    fn time_clip_drops_out_of_range_and_fractional_times() {
+        assert!(time_clip(8.64e15 + 1.0).is_nan());
+        assert!((time_clip(1.7) - 1.0).abs() < f64::EPSILON);
+        assert!(time_clip(f64::NAN).is_nan());
+    }
 
     #[test]
     fn parse_int_reads_the_leading_integer() {

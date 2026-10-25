@@ -136,7 +136,7 @@ async fn catalog_metas_without_ids_skip_the_request() {
 async fn browse_entries_request_like_node() {
     let harness = Harness::recorded("entries_browse");
     let options = EntriesOptions {
-        offset: Some(20),
+        offset: Some("20".to_owned()),
         genre: Some("Action".to_owned()),
         status: Some("current".to_owned()),
         sort: Some("-average_rating".to_owned()),
@@ -160,7 +160,11 @@ async fn trending_entries_request_like_node() {
 #[tokio::test]
 async fn default_browse_fills_status_and_limit() {
     let harness = Harness::new(200, br#"{"data":[]}"#.to_vec());
-    harness.api.anime_entries(&EntriesOptions { offset: Some(0), ..EntriesOptions::default() }).await.unwrap();
+    harness
+        .api
+        .anime_entries(&EntriesOptions { offset: Some(String::new()), ..EntriesOptions::default() })
+        .await
+        .unwrap();
     assert_eq!(
         harness.urls(),
         vec![

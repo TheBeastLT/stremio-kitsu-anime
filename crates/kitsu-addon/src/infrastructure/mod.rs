@@ -7,6 +7,7 @@ pub mod ids;
 pub mod js;
 pub mod kitsu;
 pub mod logging;
+pub mod metrics;
 pub mod opensubtitles;
 pub mod store;
 #[cfg(test)]
@@ -20,5 +21,6 @@ pub use fanart::{Fanart, Images, MappingInfo};
 pub use http::{HttpRequest, HttpResponse, HttpTransport, ReqwestHttp, Verb};
 pub use ids::Ids;
 pub use kitsu::{EntriesOptions, KitsuApi, KitsuTransport, ReqwestTransport, TitlePage, TitlePageResult};
+pub use metrics::Metrics;
 pub use store::{DocumentStore, MemoryDocuments, MongoDocuments, Store, StoreError};
 pub use upstream::{NoUpstreamStats, Outcome, UpstreamObserver};
