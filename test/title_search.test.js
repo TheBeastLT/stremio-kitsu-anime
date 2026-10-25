@@ -127,6 +127,8 @@ test('the title index finds the expected Kitsu entries', () => {
     'shingeki no kyojin final S60': 42422, // "S60" is a season, not a trailing episode 60
     'shingeki no kyojin junior high': 11315, // romaji franchise, English subtitle: by its alias
     'white album S3': 7697, // White Album 2, the franchise's 3rd series to release groups: by its alias
+    'mahou no shimai rurutto riryi': 49677, // a release group's transliteration of Lulutto Lilly: by its alias
+    'mahou no shimai rurutto riryi part 2': 50996, // its Part 2: by its alias
     'white album S2': 4455,
     'sengoku basara S3': 8272, // no entry is season 3: the franchise's 3rd series, Judge End (not the 2nd, "Two")
     'horimiya S2': 47234, // its own imdb series: the 2nd series of the name
