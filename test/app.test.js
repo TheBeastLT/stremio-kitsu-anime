@@ -56,8 +56,16 @@ describe('app', () => {
   it('serves a small 404 body correctly', async () => {
     const response = await request(port, '/nothing/here.json', { 'accept-encoding': 'gzip' });
     assert.strictEqual(response.status, 404);
-    const body = response.headers['content-encoding'] === 'gzip' ? gunzip(response) : response.raw.toString();
+    assert.strictEqual(response.headers['content-encoding'], undefined);
+    const body = response.raw.toString();
     assert.deepStrictEqual(JSON.parse(body), { err: 'not found' });
+  });
+
+  it('serves an empty-body error response intact', async () => {
+    const response = await request(port, '/search/%E0%A4%A.json', { 'accept-encoding': 'gzip' });
+    assert.strictEqual(response.status, 400);
+    assert.strictEqual(response.headers['content-encoding'], undefined);
+    assert.strictEqual(response.raw.length, 0);
   });
 
   it('rejects metrics without credentials', async () => {
