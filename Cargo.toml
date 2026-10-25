@@ -27,6 +27,9 @@ cast_possible_wrap = "allow"
 [profile.dev]
 debug = "line-tables-only"
 
+[profile.dev.package.kitsu-search]
+opt-level = 3
+
 [profile.release]
 lto = "thin"
 codegen-units = 1

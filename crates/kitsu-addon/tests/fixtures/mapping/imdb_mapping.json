@@ -1,0 +1,143 @@
+[
+ {
+  "kitsu_id": 1,
+  "imdb_id": "tt0213338",
+  "title": "Cowboy Bebop"
+ },
+ {
+  "kitsu_id": 12,
+  "imdb_id": "tt0388629",
+  "title": "One Piece",
+  "nonImdbEpisodes": [
+   590
+  ],
+  "fromSeason": 1,
+  "fromEpisode": 1
+ },
+ {
+  "kitsu_id": 72,
+  "imdb_id": "tt0374407",
+  "title": "Mobile Suit Gundam Seed",
+  "fromSeason": 1,
+  "fromEpisode": 1
+ },
+ {
+  "kitsu_id": 156
+ },
+ {
+  "kitsu_id": 7442,
+  "imdb_id": "tt2560140",
+  "title": "Attack on Titan",
+  "fromSeason": 1,
+  "fromEpisode": 1
+ },
+ {
+  "kitsu_id": 8671,
+  "imdb_id": "tt2560140",
+  "title": "Attack on Titan",
+  "fromSeason": 2,
+  "fromEpisode": 1
+ },
+ {
+  "kitsu_id": 13569,
+  "imdb_id": "tt2560140",
+  "title": "Attack on Titan",
+  "fromSeason": 3,
+  "fromEpisode": 1
+ },
+ {
+  "kitsu_id": 41982,
+  "imdb_id": "tt2560140",
+  "title": "Attack on Titan",
+  "fromSeason": 3,
+  "fromEpisode": 13
+ },
+ {
+  "kitsu_id": 42422,
+  "imdb_id": "tt2560140",
+  "title": "Attack on Titan",
+  "fromSeason": 4,
+  "fromEpisode": 1
+ },
+ {
+  "kitsu_id": 44240,
+  "imdb_id": "tt2560140",
+  "title": "Attack on Titan",
+  "fromSeason": 4,
+  "fromEpisode": 17
+ },
+ {
+  "kitsu_id": 46038,
+  "imdb_id": "tt2560140",
+  "title": "Attack on Titan",
+  "fromSeason": 4,
+  "fromEpisode": 29
+ },
+ {
+  "kitsu_id": 47132,
+  "imdb_id": "tt2560140",
+  "title": "Attack on Titan",
+  "fromSeason": 4,
+  "fromEpisode": 30
+ },
+ {
+  "kitsu_id": 7838,
+  "imdb_id": "tt2560140",
+  "title": "Attack on Titan",
+  "fromSeason": 0,
+  "fromEpisode": 1
+ },
+ {
+  "kitsu_id": 7889,
+  "imdb_id": "tt2560140",
+  "title": "Attack on Titan",
+  "fromSeason": 0,
+  "fromEpisode": 2,
+  "imdbEpisodes": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   8,
+   9,
+   10,
+   11
+  ]
+ },
+ {
+  "kitsu_id": 7694,
+  "imdb_id": "tt2560140",
+  "title": "Attack on Titan",
+  "fromSeason": 0,
+  "fromEpisode": 7,
+  "imdbEpisodes": [
+   7,
+   12,
+   13
+  ]
+ },
+ {
+  "kitsu_id": 8674,
+  "imdb_id": "tt2560140",
+  "title": "Attack on Titan",
+  "fromSeason": 0,
+  "fromEpisode": 15,
+  "imdbEpisodes": [
+   15,
+   17
+  ]
+ },
+ {
+  "kitsu_id": 13718,
+  "imdb_id": "tt2560140",
+  "title": "Attack on Titan",
+  "fromSeason": 0,
+  "fromEpisode": 20,
+  "imdbEpisodes": [
+   20,
+   22,
+   23
+  ]
+ }
+]

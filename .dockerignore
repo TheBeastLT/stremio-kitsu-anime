@@ -2,3 +2,14 @@ node_modules
 npm-debug.log
 **/.env
 target
+crates
+docs
+.superpowers
+.git
+.github
+Dockerfile.rust*
+search_eval/golden
+Cargo.toml
+Cargo.lock
+rust-toolchain.toml
+rustfmt.toml

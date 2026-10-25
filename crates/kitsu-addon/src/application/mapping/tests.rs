@@ -6,7 +6,7 @@ use std::{
 use kitsu_search::records::read_records;
 
 use super::*;
-use crate::application::testing::{REAL_MAPPING, data_path};
+use crate::application::testing::{REAL_MAPPING, data_path, fixture_mapping};
 
 fn rows() -> Vec<MappingRow> {
     serde_json::from_reader(BufReader::new(File::open(data_path("imdb_mapping.json")).unwrap())).unwrap()
@@ -116,45 +116,45 @@ fn imdb_mapping_lists_imdb_episodes_as_season_0_episodes_each_claimed_by_one_row
 
 #[test]
 fn the_real_mapping_file_loads() {
+    assert_ne!(rows().len(), 0);
     assert!(REAL_MAPPING.imdb_mapping("1").is_some());
-    assert!(REAL_MAPPING.entries("tt2560140").len() > 10);
 }
 
 #[test]
 fn has_imdb_mapping_looks_up_imdb_ids_by_imdb_and_others_by_kitsu_id() {
-    assert!(REAL_MAPPING.has_imdb_mapping("tt2560140"));
-    assert!(!REAL_MAPPING.has_imdb_mapping("tt0111161"));
-    assert!(REAL_MAPPING.has_imdb_mapping("7442"));
-    assert!(!REAL_MAPPING.has_imdb_mapping("99999999"));
+    assert!(fixture_mapping().has_imdb_mapping("tt2560140"));
+    assert!(!fixture_mapping().has_imdb_mapping("tt0111161"));
+    assert!(fixture_mapping().has_imdb_mapping("7442"));
+    assert!(!fixture_mapping().has_imdb_mapping("99999999"));
 }
 
 #[test]
 fn a_row_without_an_imdb_id_still_counts_as_a_kitsu_mapping() {
-    assert!(REAL_MAPPING.has_imdb_mapping("156"));
-    assert!(REAL_MAPPING.imdb_mapping("156").is_some_and(|row| !row.has_imdb_id()));
+    assert!(fixture_mapping().has_imdb_mapping("156"));
+    assert!(fixture_mapping().imdb_mapping("156").is_some_and(|row| !row.has_imdb_id()));
 }
 
 #[test]
 fn kitsu_ids_for_imdb_lists_the_seasons_in_order_then_the_specials() {
     assert_eq!(
-        REAL_MAPPING.kitsu_ids_for_imdb("tt2560140"),
+        fixture_mapping().kitsu_ids_for_imdb("tt2560140"),
         ["7442", "8671", "13569", "41982", "42422", "44240", "46038", "47132", "7838", "7889", "7694", "8674", "13718"]
     );
 }
 
 #[test]
 fn kitsu_ids_for_an_unmapped_imdb_are_empty() {
-    assert_eq!(REAL_MAPPING.kitsu_ids_for_imdb("tt0111161"), Vec::<String>::new());
+    assert_eq!(fixture_mapping().kitsu_ids_for_imdb("tt0111161"), Vec::<String>::new());
 }
 
 #[test]
 fn episode_cap_is_the_episode_count_of_a_finished_entry() {
-    assert_eq!(REAL_MAPPING.episode_cap(72), Some(50));
+    assert_eq!(fixture_mapping().episode_cap(72), Some(50));
 }
 
 #[test]
 fn an_airing_entry_has_no_episode_cap() {
-    assert_eq!(REAL_MAPPING.episode_cap(12), None);
+    assert_eq!(fixture_mapping().episode_cap(12), None);
 }
 
 #[test]

@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans. Steps use checkbox (`- [ ]`) syntax.
 
-**Goal:** Replace the Node kitsu addon runtime (search included) with a Rust service that returns the same search results and the same responses, on the existing swarm service, keeping the Node helper scripts.
+**Goal:** Replace the Node kitsu addon runtime (search included) with a Rust service that returns the same search results and the same responses, on the existing service, keeping the Node helper scripts.
 
 **Architecture:** A Cargo workspace at the root of the kitsu-anime repo: `crates/kitsu-search` (the ranking engine, no I/O) and `crates/kitsu-addon` (axum runtime, domain / application / infrastructure / http like catalogs). The Node files stay in place for the scripts. Parity is proven offline against golden files recorded from Node at a pinned commit, then online by a shadow service replaying real URLs.
 
@@ -258,12 +258,12 @@ Each task ends with its parity gate against the golden files; a gate failure is 
 
 ### Task 4.1: Shadow service and compare
 
-**Files (stremio-torrentio repo):** `kitsu-shadow-stack.yml`, `docs/ops.md` section; **(kitsu-anime repo)** `shadow/compare.mjs`.
+**Files:** a shadow stack file and an ops section in the infrastructure repo; **(kitsu-anime repo)** `shadow/compare.mjs`.
 
-- [ ] A swarm service `kitsu_addon_ab`: loopback `:7004`, pinned to the kitsu node, `MONGODB` collection `kitsu_collection_rs`, no nginx routing, capped CPU and memory.
-- [ ] `compare.mjs` replays a sampled day of URLs against `:7003` and `:7004`: `/search` and catalog-search ids exactly; meta and catalog JSON with `null` normalised to absent and dates compared as instants.
+- [ ] A shadow service on loopback, pinned to the production host, `MONGODB` collection `kitsu_collection_rs`, no nginx routing, capped CPU and memory.
+- [ ] `compare.mjs` replays a sampled day of URLs against the production service and the shadow service: `/search` and catalog-search ids exactly; meta and catalog JSON with `null` normalised to absent and dates compared as instants.
 - [ ] Gate: zero search differences; only cache-age differences elsewhere; shadow `kitsu_*` series in Grafana for CPU and RSS.
-- [ ] Remove the shadow service the same day the comparison finishes (the addon1 lesson).
+- [ ] Remove the shadow service the same day the comparison finishes (a one-off left running blocks deploys).
 
 ---
 

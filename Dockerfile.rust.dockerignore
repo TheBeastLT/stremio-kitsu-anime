@@ -1,0 +1,14 @@
+**/target
+**/node_modules
+.git
+.github
+.superpowers
+docs
+lib
+mapping
+test
+search_eval
+crates/*/tests
+static/data/fribb_anime_list.json
+static/data/new_mappings.json
+**/.env

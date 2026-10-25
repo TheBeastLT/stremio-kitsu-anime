@@ -1,0 +1,60 @@
+name: Check
+
+on:
+  workflow_call:
+
+jobs:
+  check:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - run: sudo apt-get update && sudo apt-get install -y musl-tools
+
+      - uses: dtolnay/rust-toolchain@1.99.1
+        with:
+          components: rustfmt, clippy
+          targets: x86_64-unknown-linux-musl
+
+      - uses: Swatinem/rust-cache@v2
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - uses: actions/cache@v4
+        id: golden
+        with:
+          path: |
+            search_eval/golden/norm.jsonl
+            search_eval/golden/parse_query.jsonl
+            search_eval/golden/search.jsonl
+            search_eval/golden/candidates.jsonl
+            search_eval/golden/jw.jsonl
+            search_eval/golden/log.jsonl
+            search_eval/golden/index.json
+            search_eval/golden/entries.jsonl
+            search_eval/golden/trigrams.json
+            search_eval/golden/SHA256SUMS
+          key: golden-${{ runner.os }}-${{ hashFiles('lib/**', 'static/data/**', 'search_eval/**', 'package-lock.json') }}
+
+      - if: steps.golden.outputs.cache-hit != 'true'
+        run: node search_eval/golden/dump.js
+        env:
+          FANART_APIKEY: test
+          NO_CACHE: "true"
+
+      - run: node search_eval/golden/kernel_sweep.js > search_eval/golden/kernel_sweep.json
+
+      - run: cargo fmt --all --check
+
+      - run: cargo clippy --workspace --all-targets -- -D warnings
+
+      - run: cargo test --workspace
+
+      - run: cargo test --workspace --release --target x86_64-unknown-linux-musl

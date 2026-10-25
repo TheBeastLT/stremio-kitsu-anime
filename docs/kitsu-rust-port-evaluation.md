@@ -12,11 +12,11 @@ benchmarks ran offline from a scratch copy, with upstreams stubbed: 3 live fixtu
   21%). At today's rate of 1.2-2.3 searches/s, that is most of the 0.05-0.09 cores the process uses.
 - **A Rust search is about 3-4x cheaper,** measured with a prototype of the hot loop: 14.1 → 3.7 ms per query, and it
   produced the same top-5 ids and scores to 12 decimals on all 3,143 queries. That saves an estimated 0.03-0.05 cores
-  and, with a Rust runtime, about 150-200 MB of RSS on the shared kitsu host. The absolute gain is small.
+  and, with a Rust runtime, about 150-200 MB of RSS on the shared production host. The absolute gain is small.
 - **The cost is parity and a moving target.** The search changed in 20 commits over 12 days (1,356 lines added). A port
   either freezes that tuning or makes every rule change twice. The helper scripts import `lib/`, so they would keep a
   second implementation alive.
-- **Go when** the rule churn drops to under about 1 commit a week for a month, or when kitsu host CPU or RAM becomes the
+- **Go when** the rule churn drops to under about 1 commit a week for a month, or when the production host's CPU or RAM becomes the
   binding constraint. Then port in the order of section 8, with a byte-level parity gate on search.
 
 ## 2. How Torrentio and catalogs were ported, and what carries over
@@ -34,9 +34,8 @@ benchmarks ran offline from a scratch copy, with upstreams stubbed: 3 live fixtu
 - It took about 2 calendar days of AI-assisted work. The logic being ported was stable and mostly I/O.
 
 **How parity was verified.**
-- A shadow swarm service (`addon-rs/deploy/shadow-stack.yml`, removed in `852ecd6`) ran next to the Node addon on one
-  node. It listened on loopback only, used a separate Mongo database (`MONGODB_DATABASE`), had no nginx routing and capped
-  resources.
+- A shadow service (removed in `852ecd6`) ran next to the Node addon. It listened on loopback only, used a separate
+  Mongo database (`MONGODB_DATABASE`), had no public routing and capped resources.
 - `addon-rs/shadow/compare.mjs` diffed the stream lists and resolved the same cached streams on both, then compared the
   chosen file.
 - Expected differences were whitelisted: Node's 3-day-old cache, ties at the row limit, and the newer title parser.
@@ -53,9 +52,9 @@ benchmarks ran offline from a scratch copy, with upstreams stubbed: 3 live fixtu
 
 Costs:
 - A restart empties the in-memory cache, and CPU runs about 10% high for 1-2 hours.
-- Some deliberate 404-vs-500 behaviour changes (the `rust-addon-port` memory note).
-- A CPU A/B test on addon1 was abandoned unfinished. Its pinned one-off service blocked that node's deploys until it was
-  removed.
+- Some deliberate 404-vs-500 behaviour changes .
+- A CPU A/B test on another service was abandoned unfinished. Its pinned one-off service blocked that host's deploys
+  until it was removed.
 
 **Metrics.**
 - The addon kept the Node metric names "for everything that still applies".
@@ -71,15 +70,14 @@ Costs:
 
 **What carries over to kitsu.**
 - The catalogs skeleton: axum, tower-http gzip and CORS, an entrypoint that exports secrets, a musl Dockerfile with
-  cargo-chef and zigbuild, `deploy_catalogs.yml` (fmt, clippy and test, then `docker service update --image`), and a
-  single-replica stack with stop-first updates on host networking. `kitsu-stack.yml` is already shaped like
-  `catalogs-stack.yml`.
+  cargo-chef and zigbuild, a deploy workflow (fmt, clippy and test, then `docker service update --image`), and a
+  single-replica stack with stop-first updates. The addon's stack is already shaped like it.
 - The shadow-service-plus-compare approach.
 - The keyv-compatible store code.
 
 **What does not carry over.** Nothing in the precedent ported a hand-tuned ranking engine whose exact output feeds
-stored data. The scraper stores the kitsu ids that search returns (see the `kitsu-search-drift-on-reprocess` memory
-note).
+stored data. The scraper stores the kitsu ids that search returns (a reprocess after a rule change can
+return different ids than at ingestion).
 
 ## 3. Search algorithm
 
@@ -149,8 +147,8 @@ Production RSS is 260-280 MB, which matches.
 - Queries over 20 ms account for 70% of all search time.
 - Raw names are 5x slower, so callers must keep cleaning queries.
 
-**Production** (Grafana `grafanacloud-prom`; only about 1.5 hours of `job="torrentio-kitsu"` data exist since the swarm
-move, so this is a short window):
+**Production** (Grafana `grafanacloud-prom`; only about 1.5 hours of `job="torrentio-kitsu"` data exist since the move to
+the current deployment, so this is a short window):
 
 | Measurement | Value |
 |---|---|
@@ -191,7 +189,7 @@ queries.
 the production vCPU, against 25-30 ms in Node today.
 
 **What that means in production.**
-- At 1.2-2.3 searches/s, Rust saves about 0.03-0.05 cores, roughly 3-5% of the 1-core kitsu host.
+- At 1.2-2.3 searches/s, Rust saves about 0.03-0.05 cores, roughly 3-5% of the 1-core production host.
 - Event-loop blocking from search (p99 about 110 ms locally, about 190 ms estimated in production) disappears on a
   multi-threaded runtime.
 - Micro-optimising the JS hot loop gains only 5-6%. The JS cost is spread over Sets, splits and allocations, not one
@@ -403,16 +401,16 @@ not CPU.
 
 **Container, stack and CI.**
 - Copy the catalogs Dockerfile, entrypoint (secrets `mongodb_uri`, `metrics_user`, `metrics_password`, `fanart_apikey`)
-  and `deploy_catalogs.yml` pattern.
-- `kitsu-stack.yml` would only change its image and limits: 768 MB → about 256 MB, matching catalogs.
+  and deploy workflow pattern.
+- The addon's stack file would only change its image and limits: 768 MB → about 256 MB, matching catalogs.
 - Data files: either baked into the image (as Node does now, where weekly data commits trigger deploys) or mounted. Keep
   baking: the workflows already redeploy on data commits.
 
 **Rollout.**
-- Precedent: a shadow service `kitsu_addon_ab` on loopback `:7004`, pinned to the kitsu node, with a separate Mongo
+- Precedent: a shadow service on loopback, pinned to the production host, with a separate Mongo
   collection (for example `kitsu_collection_rs`) so the two caches don't cross-contaminate.
 - A compare script replays URLs against both.
-- **Lesson from the abandoned addon1 A/B test:** remove the pinned one-off right after measuring.
+- **Lesson from an abandoned A/B test:** remove the pinned one-off right after measuring.
 
 ## 7. Options
 
@@ -458,7 +456,7 @@ parity cost of search while leaving the runtime in Node. Not 4.
      in Rust and diff the JSON.
    - The keyv-compatible store (Date and null rules above) and the `kitsu_` metrics.
 4. **Shadow.**
-   - Run `kitsu_addon_ab` on loopback with its own collection.
+   - Run a shadow service on loopback with its own collection.
    - A compare script replays a day of URLs (from a sampled access log) against both. Diff `/search` exactly. Diff
      meta/catalog JSON with `null` and absent normalised and dates compared as instants.
    - Expect differences only from cache age.
@@ -477,7 +475,7 @@ parity cost of search while leaving the runtime in Node. Not 4.
 
 **What would change the recommendation:**
 - Search traffic growing about 10x (for example, the scraper switching to uncached `/search` for reprocess runs).
-- Kitsu host CPU steal or RAM pressure becoming an incident cause.
+- Production host CPU steal or RAM pressure becoming an incident cause.
 - Search rules reaching a stable state.
 - The production search tail (p99 about 190 ms estimated) causing user-visible timeouts.
 

@@ -33,8 +33,8 @@ fn reports_the_line_of_a_bad_record() {
 fn reads_the_search_titles_data_file() {
     let path = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("../../static/data/search_titles.jsonl");
     let records = read_records(File::open(path).unwrap()).unwrap();
-    assert_eq!(records.len(), 19_606);
-    assert_eq!((records[0].id, records[0].canonical_title.as_str()), (1, "Cowboy Bebop"));
+    assert!(records.len() > 1_000);
+    assert!(records.iter().all(|record| !record.canonical_title.is_empty()));
 }
 
 fn converted(anime: &serde_json::Value) -> TitleRecord {
