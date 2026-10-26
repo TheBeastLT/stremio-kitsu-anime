@@ -11542,6 +11542,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 4541,
+    "imdb_id": "tt1802896",
+    "title": "Chargeman Ken!",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 4572,
     "imdb_id": "tt1636815",
     "title": "Detective Conan: The Lost Ship in the Sky"
@@ -12871,6 +12878,13 @@
     "kitsu_id": 5937,
     "imdb_id": "tt1836435",
     "title": "Wish Upon the Pleiades"
+  },
+  {
+    "kitsu_id": 5938,
+    "imdb_id": "tt4058350",
+    "title": "Samurai Giants",
+    "fromSeason": 1,
+    "fromEpisode": 1
   },
   {
     "kitsu_id": 5940,

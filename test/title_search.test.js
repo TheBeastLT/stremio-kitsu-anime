@@ -129,6 +129,8 @@ test('the title index finds the expected Kitsu entries', () => {
     'white album S3': 7697, // White Album 2, the franchise's 3rd series to release groups: by its alias
     'mahou no shimai rurutto riryi': 49677, // a release group's transliteration of Lulutto Lilly: by its alias
     'mahou no shimai rurutto riryi part 2': 50996, // its Part 2: by its alias
+    'battle through the heavens nf': 50105, // FSP's "NF" numbers the airing Nian Fan (4) from NF1 ep 1: by its alias
+    'battle through the heavens': 14116, // the bare name keeps the 2017 series
     'white album S2': 4455,
     'sengoku basara S3': 8272, // no entry is season 3: the franchise's 3rd series, Judge End (not the 2nd, "Two")
     'horimiya S2': 47234, // its own imdb series: the 2nd series of the name
