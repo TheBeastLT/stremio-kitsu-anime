@@ -217,7 +217,7 @@ async fn an_imdb_meta_gives_listed_episodes_to_the_row_listing_them_not_to_the_r
 }
 
 #[tokio::test]
-async fn a_row_at_s1e7_catches_s2e7_onwards() {
+async fn a_later_season_belongs_to_the_last_row_starting_before_it() {
     let uncapped = Mapping::new(REAL_MAPPING.entries("tt0109633").to_vec(), &[]);
     let videos = cinemeta_videos("tt0109633", &[(1, 16), (2, 16)]);
     let meta = enrich_imdb(json!({ "id": "tt0109633", "type": "series", "videos": videos }), &uncapped, |_| async {
@@ -226,7 +226,7 @@ async fn a_row_at_s1e7_catches_s2e7_onwards() {
     .await
     .unwrap();
     let kitsu_id = |season, episode| find(&meta, season, episode)["kitsu_id"].clone();
-    assert_eq!([kitsu_id(2, 6), kitsu_id(2, 7), kitsu_id(2, 12)], [json!("1621"), json!("6708"), json!("6709")]);
+    assert_eq!([kitsu_id(1, 11), kitsu_id(1, 12), kitsu_id(2, 1)], [json!("6708"), json!("6709"), json!("6709")]);
 }
 
 #[tokio::test]
@@ -235,15 +235,6 @@ async fn finished_entries_stop_a_row_catching_a_season_without_rows() {
     let meta = imdb(json!({ "id": "tt0109633", "type": "series", "videos": videos })).await;
     assert!(find(&meta, 2, 7).get("kitsu_id").is_none());
     assert_eq!(find(&meta, 1, 16)["kitsu_id"], "6709");
-}
-
-#[tokio::test]
-async fn a_numeric_kitsu_id_does_not_exclude_its_own_row_from_the_next_row_lookup() {
-    let imdb_meta = json!({ "videos": cinemeta_videos("tt0143353", &[(1, 12), (2, 12)]) });
-    let string_id = kitsu(kitsu_meta(JsValue::from("8124"), 8, "series"), Some(imdb_meta.clone())).await;
-    let number_id = kitsu(kitsu_meta(numeric(8124), 8, "series"), Some(imdb_meta)).await;
-    assert_eq!(fields(&string_id, &["imdbSeason", "imdbEpisode"])[6], [json!(2), json!(7)]);
-    assert_eq!(fields(&number_id, &["imdbSeason", "imdbEpisode"])[6], [json!(1), json!(13)]);
 }
 
 #[tokio::test]
@@ -337,20 +328,109 @@ fn season_videos(seasons: &[f64]) -> Vec<JsValue> {
 #[test]
 fn a_season_beyond_the_js_array_index_range_is_ignored_like_a_js_property() {
     let (mapping, row) = single_row_mapping();
-    let counts = season_counts(&JsValue::from("1"), &row, &mapping, &season_videos(&[1.0, 2.0, 1e10]));
+    let counts = season_counts(&row, &mapping, &season_videos(&[1.0, 2.0, 1e10]));
     assert_eq!(counts, vec![Some(1), Some(1)]);
 }
 
 #[test]
 fn a_season_beyond_the_season_cap_is_ignored_instead_of_allocating() {
     let (mapping, row) = single_row_mapping();
-    let counts = season_counts(&JsValue::from("1"), &row, &mapping, &season_videos(&[1.0, 4e9]));
+    let counts = season_counts(&row, &mapping, &season_videos(&[1.0, 4e9]));
     assert_eq!(counts, vec![Some(1)]);
 }
 
 #[test]
 fn seasons_up_to_the_cap_keep_their_sparse_positions() {
     let (mapping, row) = single_row_mapping();
-    let counts = season_counts(&JsValue::from("1"), &row, &mapping, &season_videos(&[1.0, 4.0]));
+    let counts = season_counts(&row, &mapping, &season_videos(&[1.0, 4.0]));
     assert_eq!(counts, vec![Some(1), None, None, Some(1)]);
+}
+
+fn run_row(kitsu_id: u64, season: i64, episode: i64) -> MappingRow {
+    MappingRow { kitsu_id, from_season: Some(season), from_episode: Some(episode), ..single_row_mapping().1 }
+}
+
+async fn kitsu_with(mapping: &Mapping, meta: JsObject, seasons: &[(u32, u32)]) -> Value {
+    let imdb = json!({ "videos": cinemeta_videos("tt1", seasons) });
+    enrich_kitsu(meta, mapping, &GenreUrl::new(DEFAULT_ADDON_URL), |_| async move { Some(imdb) }).await
+}
+
+async fn imdb_with(mapping: &Mapping, seasons: &[(u32, u32)]) -> Value {
+    let meta = json!({ "id": "tt1", "type": "series", "videos": cinemeta_videos("tt1", seasons) });
+    enrich_imdb(meta, mapping, |_| async { panic!("no kitsu lookup") as Result<JsObject, Infallible> }).await.unwrap()
+}
+
+fn imdb_episodes(meta: &Value) -> Vec<(i64, i64)> {
+    fields(meta, &["imdbSeason", "imdbEpisode"])
+        .iter()
+        .map(|pair| (pair[0].as_i64().unwrap(), pair[1].as_i64().unwrap()))
+        .collect()
+}
+
+#[tokio::test]
+async fn a_run_from_s1e7_continues_at_the_start_of_season_2() {
+    let mapping = Mapping::new(vec![run_row(1, 1, 1), run_row(2, 1, 7)], &[]);
+    let meta = kitsu_with(&mapping, kitsu_meta(JsValue::from("2"), 12, "series"), &[(1, 12), (2, 12)]).await;
+    let expected: Vec<(i64, i64)> =
+        (7..=12).map(|episode| (1, episode)).chain((1..=6).map(|episode| (2, episode))).collect();
+    assert_eq!(imdb_episodes(&meta), expected);
+}
+
+#[tokio::test]
+async fn a_run_counts_the_season_its_next_row_starts_in_up_to_that_row() {
+    let mapping = Mapping::new(vec![run_row(1, 1, 1), run_row(2, 2, 7)], &[]);
+    let meta = kitsu_with(&mapping, kitsu_meta(JsValue::from("1"), 18, "series"), &[(1, 12), (2, 12)]).await;
+    let expected: Vec<(i64, i64)> =
+        (1..=12).map(|episode| (1, episode)).chain((1..=6).map(|episode| (2, episode))).collect();
+    assert_eq!(imdb_episodes(&meta), expected);
+}
+
+#[tokio::test]
+async fn a_string_and_a_numeric_kitsu_id_map_alike() {
+    let mapping = Mapping::new(vec![run_row(1, 1, 1), run_row(2, 1, 7)], &[]);
+    let string_id = kitsu_with(&mapping, kitsu_meta(JsValue::from("2"), 12, "series"), &[(1, 12), (2, 12)]).await;
+    let number_id = kitsu_with(&mapping, kitsu_meta(numeric(2), 12, "series"), &[(1, 12), (2, 12)]).await;
+    assert_eq!(imdb_episodes(&string_id), imdb_episodes(&number_id));
+}
+
+#[tokio::test]
+async fn an_imdb_season_after_a_mid_season_row_start_belongs_to_that_row() {
+    let mapping = Mapping::new(vec![run_row(1, 1, 1), run_row(2, 1, 7)], &[]);
+    let meta = imdb_with(&mapping, &[(1, 12), (2, 12)]).await;
+    let kitsu = |season, episode| {
+        let video = find(&meta, season, episode);
+        (video["kitsu_id"].as_str().unwrap().to_owned(), video["kitsuEpisode"].as_i64().unwrap())
+    };
+    assert_eq!(
+        [kitsu(1, 6), kitsu(1, 7), kitsu(2, 1), kitsu(2, 12)],
+        [("1".to_owned(), 6), ("2".to_owned(), 1), ("2".to_owned(), 7), ("2".to_owned(), 18)]
+    );
+}
+
+fn listed_row(kitsu_id: u64, season: i64, episode: i64, imdb_episodes: &[i64]) -> MappingRow {
+    MappingRow {
+        imdb_episodes: Some(imdb_episodes.iter().copied().map(Some).collect()),
+        ..run_row(kitsu_id, season, episode)
+    }
+}
+
+#[tokio::test]
+async fn a_run_steps_over_a_listed_row_starting_where_it_starts() {
+    let mapping = Mapping::new(vec![run_row(1, 1, 7), listed_row(2, 1, 7, &[9])], &[]);
+    let meta = kitsu_with(&mapping, kitsu_meta(JsValue::from("1"), 8, "series"), &[(1, 12), (2, 12)]).await;
+    assert_eq!(imdb_episodes(&meta), [(1, 7), (1, 8), (1, 10), (1, 11), (1, 12), (2, 1), (2, 2), (2, 3)]);
+}
+
+#[tokio::test]
+async fn a_later_season_run_steps_over_a_listed_row_starting_where_it_starts() {
+    let mapping = Mapping::new(vec![run_row(1, 1, 1), run_row(2, 2, 1), listed_row(4, 2, 1, &[3])], &[]);
+    let meta = kitsu_with(&mapping, kitsu_meta(JsValue::from("2"), 4, "series"), &[(1, 12), (2, 12)]).await;
+    assert_eq!(imdb_episodes(&meta), [(2, 1), (2, 2), (2, 4), (2, 5)]);
+}
+
+#[tokio::test]
+async fn a_run_ignores_a_listed_row_later_in_its_season_when_spilling_over() {
+    let mapping = Mapping::new(vec![run_row(1, 2, 1), listed_row(2, 2, 3, &[3]), run_row(3, 4, 1)], &[]);
+    let meta = kitsu_with(&mapping, kitsu_meta(JsValue::from("1"), 12, "series"), &[(2, 10), (3, 3), (4, 5)]).await;
+    assert_eq!(imdb_episodes(&meta)[8..], [(2, 10), (3, 1), (3, 2), (3, 3)]);
 }

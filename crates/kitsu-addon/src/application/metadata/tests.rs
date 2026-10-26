@@ -205,3 +205,86 @@ fn the_catalog_meta_keeps_nulls_of_a_cached_meta() {
         json!({ "id": "kitsu:1", "kitsu_id": "99999999", "poster": null })
     );
 }
+
+fn quadratic_fill(id: &str, videos: &mut Vec<JsValue>, limit: f64, released: f64) {
+    let mut episode = 1.0;
+    while episode <= limit {
+        let number = JsValue::Number(episode);
+        if !videos.iter().any(|video| video.get("episode").same_value_zero(&number)) {
+            videos.push(object([
+                ("id", JsValue::String(format!("kitsu:{id}:{}", number.text()))),
+                ("title", JsValue::String(format!("Episode {}", number.text()))),
+                ("released", JsValue::Date(released)),
+                ("season", JsValue::Number(1.0)),
+                ("episode", number),
+            ]));
+        }
+        episode += 1.0;
+    }
+}
+
+fn listed(episodes: &[JsValue]) -> Vec<JsValue> {
+    episodes.iter().map(|episode| object([("episode", episode.clone())])).collect()
+}
+
+#[test]
+fn filling_missing_episodes_matches_the_scan_over_the_list() {
+    let n = JsValue::Number;
+    let text = |value: &str| JsValue::String(value.to_owned());
+    let cases: [(Vec<JsValue>, f64); 8] = [
+        (vec![], 0.0),
+        (vec![], 5.0),
+        (vec![n(1.0), n(2.0), n(3.0)], 3.0),
+        (vec![n(2.0), n(2.0), n(5.0)], 6.0),
+        (vec![n(1.5), n(3.0), n(-0.0), n(f64::NAN)], 4.0),
+        (vec![text("2"), n(3.0), JsValue::Null, JsValue::Undefined], 4.0),
+        (vec![n(9.0), n(1.0)], 3.5),
+        (vec![n(1.0)], f64::NAN),
+    ];
+    for (episodes, limit) in cases {
+        let mut expected = listed(&episodes);
+        quadratic_fill("1", &mut expected, limit, 86_400_000.0);
+        let mut actual = listed(&episodes);
+        fill_missing_episodes("1", &mut actual, limit, 86_400_000.0);
+        assert_eq!(JsValue::Array(actual).to_json(), JsValue::Array(expected).to_json(), "{episodes:?} up to {limit}");
+    }
+}
+
+#[test]
+fn a_long_episode_count_fills_in_linear_time() {
+    let fastest = |count: u32| {
+        let anime = anime(count, &[1]);
+        (0..3)
+            .map(|_| {
+                let started = std::time::Instant::now();
+                assert_eq!(videos(&build(&anime).unwrap()).len(), count as usize);
+                started.elapsed()
+            })
+            .min()
+            .unwrap()
+    };
+    let (short, long) = (fastest(600), fastest(6_000));
+    assert!(long < short * 40, "600 episodes took {short:?}, 6,000 took {long:?}");
+}
+
+struct HangingImages;
+
+#[async_trait]
+impl ImageLookup for HangingImages {
+    async fn images(&self, _kitsu_id: &str) -> Images {
+        std::future::pending().await
+    }
+}
+
+#[tokio::test(start_paused = true)]
+async fn images_still_missing_at_the_meta_deadline_are_left_out() {
+    let metadata =
+        Metadata::new(Arc::new(Mapping::default()), Arc::new(HangingImages), GenreUrl::new(DEFAULT_ADDON_URL));
+    let started = Instant::now();
+    let options = EntryOptions::within(started + std::time::Duration::from_secs(20));
+    let meta = metadata.to_entry_meta(&anime(2, &[1, 2]), options).await.unwrap();
+    assert_eq!(started.elapsed(), std::time::Duration::from_secs(20));
+    let meta = JsValue::Object(meta).to_json();
+    assert_eq!(meta["name"], "Gintama.: Shirogane no Tamashii-hen");
+    assert_eq!(["logo", "poster", "background"].map(|field| meta.get(field)), [None, None, None]);
+}

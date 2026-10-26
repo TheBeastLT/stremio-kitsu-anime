@@ -24,6 +24,8 @@ fn zstd_json(name: &str) -> Value {
 
 static RESPONSES: LazyLock<Value> = LazyLock::new(|| zstd_json("responses.json.zst"));
 static GOLDENS: LazyLock<Value> = LazyLock::new(|| zstd_json("goldens.json.zst"));
+static DEVIATIONS: LazyLock<Value> =
+    LazyLock::new(|| serde_json::from_reader(File::open(fixture("rust_deviations.json")).unwrap()).unwrap());
 static MAPPING: LazyLock<Arc<Mapping>> = LazyLock::new(|| {
     let records = read_records(File::open(fixture("records.jsonl")).unwrap()).unwrap();
     Arc::new(Mapping::load(&fixture("mapping_rows.json"), &records).unwrap())
@@ -94,7 +96,7 @@ async fn entry_metas_equal_node() {
 #[tokio::test]
 async fn entry_metas_with_relations_and_no_images_equal_node() {
     let metadata = metadata();
-    let options = EntryOptions { images: false, relations: true };
+    let options = EntryOptions { images: false, relations: true, ..EntryOptions::default() };
     let cases: Vec<_> = kitsu_cases().into_iter().filter(|(_, golden)| golden.get("relations").is_some()).collect();
     assert_eq!(cases.len(), 3);
     for (kitsu_id, golden) in cases {
@@ -193,16 +195,26 @@ async fn synthetic_enrichments_equal_node() {
     let cases = GOLDENS["synthetic"].as_object().unwrap();
     assert_eq!(cases.len(), 8);
     for (name, case) in cases {
+        let expected = |field: &str| DEVIATIONS[name].get(field).unwrap_or(&case[field]);
         let imdb = case["imdb"].clone();
         let actual =
             enrich_kitsu(with_dates(&case["kitsu"]), &MAPPING, metadata.genre_url(), |_| async move { Some(imdb) })
                 .await;
-        assert_json_eq(&format!("{name} kitsu"), &actual, &case["enrichedKitsu"]);
+        assert_json_eq(&format!("{name} kitsu"), &actual, expected("enrichedKitsu"));
         let actual = enrich_imdb(case["imdb"].clone(), &MAPPING, |kitsu_id| async move {
             metadata.to_entry_meta(&anime(&kitsu_id), EntryOptions::default()).await
         })
         .await
         .unwrap();
-        assert_json_eq(&format!("{name} imdb"), &actual, &case["enrichedImdb"]);
+        assert_json_eq(&format!("{name} imdb"), &actual, expected("enrichedImdb"));
+    }
+}
+
+#[test]
+fn rust_deviations_differ_from_the_node_goldens() {
+    for (name, fields) in DEVIATIONS.as_object().unwrap() {
+        for (field, expected) in fields.as_object().unwrap() {
+            assert_ne!(expected, &GOLDENS["synthetic"][name][field], "{name} {field} equals Node's");
+        }
     }
 }

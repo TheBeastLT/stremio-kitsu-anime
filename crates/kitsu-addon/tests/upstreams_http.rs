@@ -17,6 +17,10 @@ use wiremock::{
     matchers::{header, method, path, query_param},
 };
 
+fn far() -> tokio::time::Instant {
+    tokio::time::Instant::now() + Duration::from_secs(3600)
+}
+
 const HOSTS: [&str; 5] = [
     "https://v3-cinemeta.strem.io",
     "https://relations.yuna.moe",
@@ -60,6 +64,7 @@ fn cache<E: Clone>() -> Arc<Cache<E>> {
         budget_bytes: 1024 * 1024,
         meta_ttl: Duration::from_secs(60),
         catalog_ttl: Duration::from_secs(60),
+        cache_max_age: 43_200,
     };
     Arc::new(Cache::new(settings, None, Arc::new(NoStats)))
 }
@@ -83,19 +88,19 @@ async fn cinemeta_retries_series_four_times_then_takes_the_movie() {
         .mount(&server)
         .await;
     let observed = Arc::new(Observed::default());
-    let meta = Cinemeta::new(http(&server), observed.clone()).get("tt0275277").await;
+    let meta = Cinemeta::new(http(&server), observed.clone()).get("tt0275277", far()).await.meta;
     assert_eq!(meta, json!({ "imdb_id": "tt0275277", "type": "movie" }));
     assert_eq!(observed.0.lock().unwrap().len(), 5);
 }
 
 #[tokio::test]
-async fn cinemeta_not_found_resolves_the_bare_imdb_meta_after_eight_attempts() {
+async fn cinemeta_not_found_resolves_the_bare_imdb_meta_after_one_attempt_per_type() {
     let server = MockServer::start().await;
-    Mock::given(method("GET")).respond_with(ResponseTemplate::new(404)).expect(8).mount(&server).await;
+    Mock::given(method("GET")).respond_with(ResponseTemplate::new(404)).expect(2).mount(&server).await;
     let observed = Arc::new(Observed::default());
-    let meta = Cinemeta::new(http(&server), observed.clone()).get("tt0000001").await;
+    let meta = Cinemeta::new(http(&server), observed.clone()).get("tt0000001", far()).await.meta;
     assert_eq!(meta, json!({ "id": "tt0000001", "imdb_id": "tt0000001" }));
-    assert_eq!(*observed.0.lock().unwrap(), vec![("cinemeta", Outcome::Error); 8]);
+    assert_eq!(*observed.0.lock().unwrap(), vec![("cinemeta", Outcome::Error); 2]);
 }
 
 #[tokio::test]

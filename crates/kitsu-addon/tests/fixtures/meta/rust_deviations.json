@@ -1,0 +1,610 @@
+{
+ "s1e7_catches_s2e7": {
+  "enrichedKitsu": {
+   "kitsu_id": "8124",
+   "type": "series",
+   "genres": [
+    "Action"
+   ],
+   "links": [],
+   "videos": [
+    {
+     "id": "kitsu:8124:1",
+     "title": "Episode 1",
+     "season": 1,
+     "episode": 1,
+     "released": "2020-01-01T00:00:00.000Z",
+     "imdb_id": "tt0143353",
+     "imdbSeason": 1,
+     "imdbEpisode": 7,
+     "absoluteEpisode": 7
+    },
+    {
+     "id": "kitsu:8124:2",
+     "title": "Episode 2",
+     "season": 1,
+     "episode": 2,
+     "released": "2020-01-01T00:00:00.000Z",
+     "imdb_id": "tt0143353",
+     "imdbSeason": 1,
+     "imdbEpisode": 8,
+     "absoluteEpisode": 8
+    },
+    {
+     "id": "kitsu:8124:3",
+     "title": "Episode 3",
+     "season": 1,
+     "episode": 3,
+     "released": "2020-01-01T00:00:00.000Z",
+     "imdb_id": "tt0143353",
+     "imdbSeason": 1,
+     "imdbEpisode": 9,
+     "absoluteEpisode": 9
+    },
+    {
+     "id": "kitsu:8124:4",
+     "title": "Episode 4",
+     "season": 1,
+     "episode": 4,
+     "released": "2020-01-01T00:00:00.000Z",
+     "imdb_id": "tt0143353",
+     "imdbSeason": 1,
+     "imdbEpisode": 10,
+     "absoluteEpisode": 10
+    },
+    {
+     "id": "kitsu:8124:5",
+     "title": "Episode 5",
+     "season": 1,
+     "episode": 5,
+     "released": "2020-01-01T00:00:00.000Z",
+     "imdb_id": "tt0143353",
+     "imdbSeason": 1,
+     "imdbEpisode": 11,
+     "absoluteEpisode": 11
+    },
+    {
+     "id": "kitsu:8124:6",
+     "title": "Episode 6",
+     "season": 1,
+     "episode": 6,
+     "released": "2020-01-01T00:00:00.000Z",
+     "imdb_id": "tt0143353",
+     "imdbSeason": 1,
+     "imdbEpisode": 12,
+     "absoluteEpisode": 12
+    },
+    {
+     "id": "kitsu:8124:7",
+     "title": "Episode 7",
+     "season": 1,
+     "episode": 7,
+     "released": "2020-01-01T00:00:00.000Z",
+     "imdb_id": "tt0143353",
+     "imdbSeason": 2,
+     "imdbEpisode": 1,
+     "absoluteEpisode": 13
+    },
+    {
+     "id": "kitsu:8124:8",
+     "title": "Episode 8",
+     "season": 1,
+     "episode": 8,
+     "released": "2020-01-01T00:00:00.000Z",
+     "imdb_id": "tt0143353",
+     "imdbSeason": 2,
+     "imdbEpisode": 2,
+     "absoluteEpisode": 14
+    }
+   ],
+   "imdb_id": "tt0143353"
+  },
+  "enrichedImdb": {
+   "id": "tt0143353",
+   "type": "series",
+   "videos": [
+    {
+     "id": "tt0143353:1:1",
+     "season": 1,
+     "episode": 1,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "1191",
+     "kitsuEpisode": 1,
+     "absoluteEpisode": 1
+    },
+    {
+     "id": "tt0143353:1:2",
+     "season": 1,
+     "episode": 2,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "1191",
+     "kitsuEpisode": 2,
+     "absoluteEpisode": 2
+    },
+    {
+     "id": "tt0143353:1:3",
+     "season": 1,
+     "episode": 3,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "1191",
+     "kitsuEpisode": 3,
+     "absoluteEpisode": 3
+    },
+    {
+     "id": "tt0143353:1:4",
+     "season": 1,
+     "episode": 4,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "1191",
+     "kitsuEpisode": 4,
+     "absoluteEpisode": 4
+    },
+    {
+     "id": "tt0143353:1:5",
+     "season": 1,
+     "episode": 5,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "1191",
+     "kitsuEpisode": 5,
+     "absoluteEpisode": 5
+    },
+    {
+     "id": "tt0143353:1:6",
+     "season": 1,
+     "episode": 6,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "1191",
+     "kitsuEpisode": 6,
+     "absoluteEpisode": 6
+    },
+    {
+     "id": "tt0143353:1:7",
+     "season": 1,
+     "episode": 7,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "8124",
+     "kitsuEpisode": 1,
+     "absoluteEpisode": 7
+    },
+    {
+     "id": "tt0143353:1:8",
+     "season": 1,
+     "episode": 8,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "8124",
+     "kitsuEpisode": 2,
+     "absoluteEpisode": 8
+    },
+    {
+     "id": "tt0143353:1:9",
+     "season": 1,
+     "episode": 9,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "8124",
+     "kitsuEpisode": 3,
+     "absoluteEpisode": 9
+    },
+    {
+     "id": "tt0143353:1:10",
+     "season": 1,
+     "episode": 10,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "8124",
+     "kitsuEpisode": 4,
+     "absoluteEpisode": 10
+    },
+    {
+     "id": "tt0143353:1:11",
+     "season": 1,
+     "episode": 11,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "8124",
+     "kitsuEpisode": 5,
+     "absoluteEpisode": 11
+    },
+    {
+     "id": "tt0143353:1:12",
+     "season": 1,
+     "episode": 12,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "8124",
+     "kitsuEpisode": 6,
+     "absoluteEpisode": 12
+    },
+    {
+     "id": "tt0143353:2:1",
+     "season": 2,
+     "episode": 1,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 13
+    },
+    {
+     "id": "tt0143353:2:2",
+     "season": 2,
+     "episode": 2,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 14
+    },
+    {
+     "id": "tt0143353:2:3",
+     "season": 2,
+     "episode": 3,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 15
+    },
+    {
+     "id": "tt0143353:2:4",
+     "season": 2,
+     "episode": 4,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 16
+    },
+    {
+     "id": "tt0143353:2:5",
+     "season": 2,
+     "episode": 5,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 17
+    },
+    {
+     "id": "tt0143353:2:6",
+     "season": 2,
+     "episode": 6,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 18
+    },
+    {
+     "id": "tt0143353:2:7",
+     "season": 2,
+     "episode": 7,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 19
+    },
+    {
+     "id": "tt0143353:2:8",
+     "season": 2,
+     "episode": 8,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 20
+    },
+    {
+     "id": "tt0143353:2:9",
+     "season": 2,
+     "episode": 9,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 21
+    },
+    {
+     "id": "tt0143353:2:10",
+     "season": 2,
+     "episode": 10,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 22
+    },
+    {
+     "id": "tt0143353:2:11",
+     "season": 2,
+     "episode": 11,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 23
+    },
+    {
+     "id": "tt0143353:2:12",
+     "season": 2,
+     "episode": 12,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 24
+    }
+   ],
+   "imdb_id": "tt0143353",
+   "kitsu_id": [
+    "1191",
+    "8124"
+   ]
+  }
+ },
+ "numeric_kitsu_id": {
+  "enrichedKitsu": {
+   "kitsu_id": 8124,
+   "type": "series",
+   "genres": [
+    "Action"
+   ],
+   "links": [],
+   "videos": [
+    {
+     "id": "kitsu:8124:1",
+     "title": "Episode 1",
+     "season": 1,
+     "episode": 1,
+     "released": "2020-01-01T00:00:00.000Z",
+     "imdb_id": "tt0143353",
+     "imdbSeason": 1,
+     "imdbEpisode": 7,
+     "absoluteEpisode": 7
+    },
+    {
+     "id": "kitsu:8124:2",
+     "title": "Episode 2",
+     "season": 1,
+     "episode": 2,
+     "released": "2020-01-01T00:00:00.000Z",
+     "imdb_id": "tt0143353",
+     "imdbSeason": 1,
+     "imdbEpisode": 8,
+     "absoluteEpisode": 8
+    },
+    {
+     "id": "kitsu:8124:3",
+     "title": "Episode 3",
+     "season": 1,
+     "episode": 3,
+     "released": "2020-01-01T00:00:00.000Z",
+     "imdb_id": "tt0143353",
+     "imdbSeason": 1,
+     "imdbEpisode": 9,
+     "absoluteEpisode": 9
+    },
+    {
+     "id": "kitsu:8124:4",
+     "title": "Episode 4",
+     "season": 1,
+     "episode": 4,
+     "released": "2020-01-01T00:00:00.000Z",
+     "imdb_id": "tt0143353",
+     "imdbSeason": 1,
+     "imdbEpisode": 10,
+     "absoluteEpisode": 10
+    },
+    {
+     "id": "kitsu:8124:5",
+     "title": "Episode 5",
+     "season": 1,
+     "episode": 5,
+     "released": "2020-01-01T00:00:00.000Z",
+     "imdb_id": "tt0143353",
+     "imdbSeason": 1,
+     "imdbEpisode": 11,
+     "absoluteEpisode": 11
+    },
+    {
+     "id": "kitsu:8124:6",
+     "title": "Episode 6",
+     "season": 1,
+     "episode": 6,
+     "released": "2020-01-01T00:00:00.000Z",
+     "imdb_id": "tt0143353",
+     "imdbSeason": 1,
+     "imdbEpisode": 12,
+     "absoluteEpisode": 12
+    },
+    {
+     "id": "kitsu:8124:7",
+     "title": "Episode 7",
+     "season": 1,
+     "episode": 7,
+     "released": "2020-01-01T00:00:00.000Z",
+     "imdb_id": "tt0143353",
+     "imdbSeason": 2,
+     "imdbEpisode": 1,
+     "absoluteEpisode": 13
+    },
+    {
+     "id": "kitsu:8124:8",
+     "title": "Episode 8",
+     "season": 1,
+     "episode": 8,
+     "released": "2020-01-01T00:00:00.000Z",
+     "imdb_id": "tt0143353",
+     "imdbSeason": 2,
+     "imdbEpisode": 2,
+     "absoluteEpisode": 14
+    }
+   ],
+   "imdb_id": "tt0143353"
+  },
+  "enrichedImdb": {
+   "id": "tt0143353",
+   "type": "series",
+   "videos": [
+    {
+     "id": "tt0143353:1:1",
+     "season": 1,
+     "episode": 1,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "1191",
+     "kitsuEpisode": 1,
+     "absoluteEpisode": 1
+    },
+    {
+     "id": "tt0143353:1:2",
+     "season": 1,
+     "episode": 2,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "1191",
+     "kitsuEpisode": 2,
+     "absoluteEpisode": 2
+    },
+    {
+     "id": "tt0143353:1:3",
+     "season": 1,
+     "episode": 3,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "1191",
+     "kitsuEpisode": 3,
+     "absoluteEpisode": 3
+    },
+    {
+     "id": "tt0143353:1:4",
+     "season": 1,
+     "episode": 4,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "1191",
+     "kitsuEpisode": 4,
+     "absoluteEpisode": 4
+    },
+    {
+     "id": "tt0143353:1:5",
+     "season": 1,
+     "episode": 5,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "1191",
+     "kitsuEpisode": 5,
+     "absoluteEpisode": 5
+    },
+    {
+     "id": "tt0143353:1:6",
+     "season": 1,
+     "episode": 6,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "1191",
+     "kitsuEpisode": 6,
+     "absoluteEpisode": 6
+    },
+    {
+     "id": "tt0143353:1:7",
+     "season": 1,
+     "episode": 7,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "8124",
+     "kitsuEpisode": 1,
+     "absoluteEpisode": 7
+    },
+    {
+     "id": "tt0143353:1:8",
+     "season": 1,
+     "episode": 8,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "8124",
+     "kitsuEpisode": 2,
+     "absoluteEpisode": 8
+    },
+    {
+     "id": "tt0143353:1:9",
+     "season": 1,
+     "episode": 9,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "8124",
+     "kitsuEpisode": 3,
+     "absoluteEpisode": 9
+    },
+    {
+     "id": "tt0143353:1:10",
+     "season": 1,
+     "episode": 10,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "8124",
+     "kitsuEpisode": 4,
+     "absoluteEpisode": 10
+    },
+    {
+     "id": "tt0143353:1:11",
+     "season": 1,
+     "episode": 11,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "8124",
+     "kitsuEpisode": 5,
+     "absoluteEpisode": 11
+    },
+    {
+     "id": "tt0143353:1:12",
+     "season": 1,
+     "episode": 12,
+     "released": "2020-01-01T00:00:00.000Z",
+     "kitsu_id": "8124",
+     "kitsuEpisode": 6,
+     "absoluteEpisode": 12
+    },
+    {
+     "id": "tt0143353:2:1",
+     "season": 2,
+     "episode": 1,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 13
+    },
+    {
+     "id": "tt0143353:2:2",
+     "season": 2,
+     "episode": 2,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 14
+    },
+    {
+     "id": "tt0143353:2:3",
+     "season": 2,
+     "episode": 3,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 15
+    },
+    {
+     "id": "tt0143353:2:4",
+     "season": 2,
+     "episode": 4,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 16
+    },
+    {
+     "id": "tt0143353:2:5",
+     "season": 2,
+     "episode": 5,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 17
+    },
+    {
+     "id": "tt0143353:2:6",
+     "season": 2,
+     "episode": 6,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 18
+    },
+    {
+     "id": "tt0143353:2:7",
+     "season": 2,
+     "episode": 7,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 19
+    },
+    {
+     "id": "tt0143353:2:8",
+     "season": 2,
+     "episode": 8,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 20
+    },
+    {
+     "id": "tt0143353:2:9",
+     "season": 2,
+     "episode": 9,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 21
+    },
+    {
+     "id": "tt0143353:2:10",
+     "season": 2,
+     "episode": 10,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 22
+    },
+    {
+     "id": "tt0143353:2:11",
+     "season": 2,
+     "episode": 11,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 23
+    },
+    {
+     "id": "tt0143353:2:12",
+     "season": 2,
+     "episode": 12,
+     "released": "2020-01-01T00:00:00.000Z",
+     "absoluteEpisode": 24
+    }
+   ],
+   "imdb_id": "tt0143353",
+   "kitsu_id": [
+    "1191",
+    "8124"
+   ]
+  }
+ }
+}

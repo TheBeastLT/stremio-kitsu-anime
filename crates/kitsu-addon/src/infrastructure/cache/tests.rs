@@ -116,7 +116,13 @@ impl CacheStats for Recorder {
 }
 
 fn settings() -> CacheSettings {
-    CacheSettings { enabled: true, budget_bytes: 64 * 1024 * 1024, meta_ttl: DAY, catalog_ttl: HOUR * 2 }
+    CacheSettings {
+        enabled: true,
+        budget_bytes: 64 * 1024 * 1024,
+        meta_ttl: DAY,
+        catalog_ttl: HOUR * 2,
+        cache_max_age: 43_200,
+    }
 }
 
 struct Fixture {
@@ -449,6 +455,7 @@ fn settings_follow_the_config() {
         budget_bytes: 7 * 1024 * 1024,
         meta_ttl: Duration::from_secs(1),
         catalog_ttl: Duration::from_secs(2),
+        cache_max_age: 43_200,
     };
     assert_eq!(CacheSettings::from_config(&config), expected);
 }
@@ -581,4 +588,13 @@ async fn drain_gives_up_on_a_hanging_write_after_ten_seconds() {
     let started = tokio::time::Instant::now();
     fixture.cache.drain().await;
     assert_eq!(started.elapsed(), DRAIN_TIMEOUT);
+}
+
+#[test]
+fn a_meta_with_a_short_cache_max_age_is_kept_only_that_long() {
+    let short = json!({ "meta": {}, "cacheMaxAge": 600 });
+    let full = json!({ "meta": {}, "cacheMaxAge": 43_200 });
+    assert_eq!(meta_ttl(&short, DAY, 43_200), Duration::from_secs(600));
+    assert_eq!(meta_ttl(&full, DAY, 43_200), DAY);
+    assert_eq!(meta_ttl(&json!({ "meta": {} }), DAY, 43_200), DAY);
 }

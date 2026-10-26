@@ -1,11 +1,13 @@
 use std::{
     fs,
+    io::{BufRead, BufReader},
     net::Ipv4Addr,
     path::{Path, PathBuf},
-    process::{Child, Command, ExitStatus, Stdio},
+    process::{Child, ChildStdout, Command, ExitStatus, Stdio},
     sync::{
         Arc,
         atomic::{AtomicUsize, Ordering},
+        mpsc,
     },
     time::{Duration, Instant},
 };
@@ -73,8 +75,19 @@ async fn slow_kitsu(delay: Duration) -> SlowKitsu {
     SlowKitsu { port, requests }
 }
 
-fn free_port() -> u16 {
-    std::net::TcpListener::bind((Ipv4Addr::LOCALHOST, 0)).unwrap().local_addr().unwrap().port()
+const STARTED: &str = "Started addon at: http://localhost:";
+const NO_KITSU: &str = "http://127.0.0.1:9";
+
+fn announced_port(stdout: ChildStdout) -> mpsc::Receiver<u16> {
+    let (sender, receiver) = mpsc::channel();
+    std::thread::spawn(move || {
+        for line in BufReader::new(stdout).lines().map_while(Result::ok) {
+            if let Some(port) = line.split(STARTED).nth(1).and_then(|rest| rest.split('"').next()?.parse().ok()) {
+                let _ = sender.send(port);
+            }
+        }
+    });
+    receiver
 }
 
 struct Addon {
@@ -84,28 +97,26 @@ struct Addon {
 
 impl Addon {
     async fn start(data: &DataDir, kitsu_port: Option<u16>) -> Self {
-        let port = free_port();
-        let mut command = Command::new(env!("CARGO_BIN_EXE_kitsu-addon"));
-        command
+        let kitsu_url = kitsu_port.map_or_else(|| NO_KITSU.to_owned(), |port| format!("http://127.0.0.1:{port}"));
+        let child = Command::new(env!("CARGO_BIN_EXE_kitsu-addon"))
             .env_clear()
-            .env("PORT", port.to_string())
+            .env("PORT", "0")
             .env("NO_CACHE", "true")
             .env("FANART_APIKEY", "test")
             .env("DATA_DIR", &data.0)
-            .stdout(Stdio::null())
-            .stderr(Stdio::inherit());
-        command.env("KITSU_URL", format!("http://127.0.0.1:{}", kitsu_port.unwrap_or_else(free_port)));
-        let mut addon = Self { child: command.spawn().unwrap(), port };
-        addon.wait_until_serving().await;
-        addon
-    }
-
-    async fn wait_until_serving(&mut self) {
+            .env("KITSU_URL", kitsu_url)
+            .stdout(Stdio::piped())
+            .stderr(Stdio::inherit())
+            .spawn()
+            .unwrap();
+        let mut addon = Self { child, port: 0 };
+        let ports = announced_port(addon.child.stdout.take().unwrap());
         let deadline = Instant::now() + Duration::from_secs(30);
         while Instant::now() < deadline {
-            assert!(self.child.try_wait().unwrap().is_none(), "the addon exited while starting");
-            if TcpStream::connect((Ipv4Addr::LOCALHOST, self.port)).await.is_ok() {
-                return;
+            assert!(addon.child.try_wait().unwrap().is_none(), "the addon exited while starting");
+            if let Ok(port) = ports.try_recv() {
+                addon.port = port;
+                return addon;
             }
             tokio::time::sleep(Duration::from_millis(25)).await;
         }
@@ -166,7 +177,7 @@ async fn the_binary_fails_to_start_without_the_data_files() {
     fs::remove_file(data.0.join("search_titles.jsonl")).unwrap();
     let mut child = Command::new(env!("CARGO_BIN_EXE_kitsu-addon"))
         .env_clear()
-        .env("PORT", free_port().to_string())
+        .env("PORT", "0")
         .env("NO_CACHE", "true")
         .env("DATA_DIR", &data.0)
         .stdout(Stdio::null())

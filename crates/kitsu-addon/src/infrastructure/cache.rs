@@ -84,6 +84,7 @@ pub struct CacheSettings {
     pub budget_bytes: u64,
     pub meta_ttl: Duration,
     pub catalog_ttl: Duration,
+    pub cache_max_age: u64,
 }
 
 impl CacheSettings {
@@ -93,6 +94,7 @@ impl CacheSettings {
             budget_bytes: config.memory_cache_mb * 1024 * 1024,
             meta_ttl: Duration::from_millis(config.meta_ttl_ms),
             catalog_ttl: Duration::from_millis(config.catalog_ttl_ms),
+            cache_max_age: config.cache_max_age,
         }
     }
 }
@@ -357,11 +359,18 @@ impl<E: Clone> Cache<E> {
 
     fn ttl(&self, kind: Kind, value: &Value) -> Duration {
         match kind {
-            Kind::Meta => self.settings.meta_ttl,
+            Kind::Meta => meta_ttl(value, self.settings.meta_ttl, self.settings.cache_max_age),
             Kind::Catalog => self.settings.catalog_ttl,
             Kind::Images => images_ttl(value),
             Kind::IdMapping => ID_MAPPING_TTL,
         }
+    }
+}
+
+pub fn meta_ttl(response: &Value, ttl: Duration, cache_max_age: u64) -> Duration {
+    match response.get("cacheMaxAge").and_then(Value::as_u64) {
+        Some(max_age) if max_age < cache_max_age => ttl.min(Duration::from_secs(max_age)),
+        _ => ttl,
     }
 }
 

@@ -184,7 +184,7 @@ fn enrich_kitsu_episodes(meta: &JsValue, row: &MappingRow, mapping: &Mapping, im
     } else {
         None
     };
-    match imdb_videos.as_ref().map(|imdb_videos| season_counts(meta.get("kitsu_id"), row, mapping, imdb_videos)) {
+    match imdb_videos.as_ref().map(|imdb_videos| season_counts(row, mapping, imdb_videos)) {
         Some(counts) if !counts.is_empty() => {
             run_videos(videos, row, mapping, &counts, imdb_videos.as_deref().unwrap_or_default())
         }
@@ -237,22 +237,25 @@ fn with_episode_of(video: &JsValue) -> JsValue {
     video
 }
 
-fn season_counts(kitsu_id: &JsValue, row: &MappingRow, mapping: &Mapping, imdb_videos: &[JsValue]) -> Vec<Option<u64>> {
+fn starts_by(entry: &MappingRow, season: f64, episode: f64) -> bool {
+    (entry.start_season() as f64, entry.start_episode() as f64) <= (season, episode)
+}
+
+fn season_counts(row: &MappingRow, mapping: &Mapping, imdb_videos: &[JsValue]) -> Vec<Option<u64>> {
     let imdb_id = row.imdb_id.as_deref().unwrap_or_default();
     let start_season = row.start_season() as f64;
     let start_episode = row.start_episode() as f64;
     let next_entry = mapping.entries(imdb_id).iter().find(|entry| {
-        !JsValue::String(entry.kitsu_id.to_string()).strict_equals(kitsu_id)
-            && entry.start_season() >= row.start_season()
-            && entry.start_episode() >= row.start_episode()
+        entry.imdb_episodes.is_none()
+            && (entry.start_season(), entry.start_episode()) > (row.start_season(), row.start_episode())
     });
     let mut counts: Vec<Option<u64>> = Vec::new();
     for video in imdb_videos.iter().filter(|video| video.get("episode").truthy()) {
         let season = video.get("season");
         let episode = video.get("episode");
-        let in_run = (season.strict_equals(&JsValue::Number(start_season)) && episode.to_number() >= start_episode)
-            || (season.to_number() > start_season
-                && next_entry.is_none_or(|next| next.start_season() as f64 > season.to_number()));
+        let in_run = ((season.strict_equals(&JsValue::Number(start_season)) && episode.to_number() >= start_episode)
+            || season.to_number() > start_season)
+            && next_entry.is_none_or(|next| !starts_by(next, season.to_number(), episode.to_number()));
         if !in_run || mapping.listed(imdb_id, &season.text(), &episode.text()).is_some() {
             continue;
         }
@@ -304,9 +307,10 @@ fn run_videos(
                     .map_or(counts.len(), |index| index + 1)
                     - 1;
                 let season = (row.start_season() + season_index as i64) as f64;
+                let first_episode = if season_index == 0 { start_episode } else { 1.0 };
                 let mut episode =
-                    start_episode - 1.0 + kitsu_episode.to_number() - skipped - total(&counts[..season_index]);
-                let mut next = if season_index == 0 { start_episode } else { 1.0 };
+                    first_episode - 1.0 + kitsu_episode.to_number() - skipped - total(&counts[..season_index]);
+                let mut next = first_episode;
                 while next <= episode {
                     if mapping.listed(imdb_id, &number_text(season), &number_text(next)).is_some() {
                         episode += 1.0;
@@ -424,10 +428,9 @@ where
                     video.insert("kitsuEpisode".to_owned(), JsValue::Number(listed.kitsu_episode as f64));
                     return JsValue::Object(video);
                 }
-                let Some(entry) = run_entries.iter().rev().find(|entry| {
-                    entry.start_season() as f64 <= season.to_number()
-                        && entry.start_episode() as f64 <= episode.to_number()
-                }) else {
+                let Some(entry) =
+                    run_entries.iter().rev().find(|entry| starts_by(entry, season.to_number(), episode.to_number()))
+                else {
                     return video.clone();
                 };
                 let counter = counters.get_mut(&entry.kitsu_id).expect("a counter per entry");

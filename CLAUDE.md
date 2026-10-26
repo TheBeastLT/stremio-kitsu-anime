@@ -21,5 +21,5 @@
 - Offline evaluation: `cargo run --release -p kitsu-search --bin evaluate` (counterpart of `node search_eval/evaluate.js`).
 - Image: `Dockerfile.rust` (musl, data baked in `/home/app/static/data`), built with `Dockerfile.rust.dockerignore`.
 - Rust-only env vars: `PORT`, `DATA_DIR` (default `static/data`), `KITSU_COLLECTION` (default `kitsu_collection`), `MEMORY_CACHE_MB` (384),
-  `STORE_TIMEOUT_MS` (30000), `SEARCH_CONCURRENCY` (2), `SEARCH_QUEUE` (32), `KITSU_URL`, `TOKIO_MAX_BLOCKING_THREADS`, `ADDON_URL`;
+  `STORE_TIMEOUT_MS` (30000), `SEARCH_CONCURRENCY` (2), `SEARCH_QUEUE` (32), `META_DEADLINE_MS` (20000), `PARTIAL_CACHE_MAX_AGE` (600 s, cache life of a partial meta), `KITSU_URL`, `TOKIO_MAX_BLOCKING_THREADS`, `ADDON_URL`;
   shared with Node: `MONGODB_URI`, `METRICS_USER`, `METRICS_PASSWORD`, `FANART_APIKEY`, `CACHE_MAX_AGE`, `META_TTL`, `CATALOG_TTL`, `NO_CACHE`.

@@ -12,6 +12,8 @@ pub const DEFAULT_ADDON_URL: &str = "https://anime-kitsu.strem.fun";
 pub const DEFAULT_DATA_DIR: &str = "static/data";
 pub const DEFAULT_SEARCH_CONCURRENCY: usize = 2;
 pub const DEFAULT_SEARCH_QUEUE: usize = 32;
+pub const DEFAULT_META_DEADLINE_MS: u64 = 20_000;
+pub const DEFAULT_PARTIAL_CACHE_MAX_AGE: u64 = 600;
 
 #[derive(Clone, PartialEq, Eq)]
 pub struct Config {
@@ -31,6 +33,8 @@ pub struct Config {
     pub data_dir: String,
     pub search_concurrency: usize,
     pub search_queue: usize,
+    pub meta_deadline_ms: u64,
+    pub partial_cache_max_age: u64,
 }
 
 impl Config {
@@ -59,6 +63,8 @@ impl Config {
             data_dir: text("DATA_DIR").unwrap_or_else(|| DEFAULT_DATA_DIR.to_owned()),
             search_concurrency: count("SEARCH_CONCURRENCY").unwrap_or(DEFAULT_SEARCH_CONCURRENCY),
             search_queue: count("SEARCH_QUEUE").unwrap_or(DEFAULT_SEARCH_QUEUE),
+            meta_deadline_ms: number("META_DEADLINE_MS").unwrap_or(DEFAULT_META_DEADLINE_MS),
+            partial_cache_max_age: number("PARTIAL_CACHE_MAX_AGE").unwrap_or(DEFAULT_PARTIAL_CACHE_MAX_AGE),
         }
     }
 }
@@ -86,6 +92,8 @@ impl fmt::Debug for Config {
             .field("data_dir", &self.data_dir)
             .field("search_concurrency", &self.search_concurrency)
             .field("search_queue", &self.search_queue)
+            .field("meta_deadline_ms", &self.meta_deadline_ms)
+            .field("partial_cache_max_age", &self.partial_cache_max_age)
             .finish()
     }
 }
@@ -120,6 +128,8 @@ mod tests {
         assert_eq!(config.kitsu_url, "https://kitsu.io/api/edge");
         assert_eq!(config.data_dir, "static/data");
         assert_eq!((config.search_concurrency, config.search_queue), (2, 32));
+        assert_eq!(config.meta_deadline_ms, 20_000);
+        assert_eq!(config.partial_cache_max_age, 600);
         assert_eq!(config.mongodb_uri, None);
         assert_eq!(config.metrics_credentials, None);
     }
@@ -144,6 +154,8 @@ mod tests {
             ("DATA_DIR", "/data"),
             ("SEARCH_CONCURRENCY", "4"),
             ("SEARCH_QUEUE", "8"),
+            ("META_DEADLINE_MS", "5000"),
+            ("PARTIAL_CACHE_MAX_AGE", "30"),
         ]);
         assert_eq!(config.port, 8080);
         assert_eq!(config.mongodb_uri.as_deref(), Some("mongodb://db"));
@@ -159,6 +171,8 @@ mod tests {
         assert_eq!(config.kitsu_url, "http://127.0.0.1:1");
         assert_eq!(config.data_dir, "/data");
         assert_eq!((config.search_concurrency, config.search_queue), (4, 8));
+        assert_eq!(config.meta_deadline_ms, 5000);
+        assert_eq!(config.partial_cache_max_age, 30);
     }
 
     #[test]

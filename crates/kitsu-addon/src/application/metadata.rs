@@ -1,11 +1,13 @@
 use std::{
     cmp::Ordering,
+    collections::HashSet,
     sync::{Arc, LazyLock},
 };
 
 use async_trait::async_trait;
 use fastjs_regex::Regex;
 use serde_json::{Map, Value};
+use tokio::time::Instant;
 
 use super::{
     jsvalue::{JsObject, JsValue, TypeError, date},
@@ -61,11 +63,18 @@ impl ImageLookup for NoImages {
 pub struct EntryOptions {
     pub images: bool,
     pub relations: bool,
+    pub deadline: Option<Instant>,
+}
+
+impl EntryOptions {
+    pub fn within(deadline: Instant) -> Self {
+        Self { deadline: Some(deadline), ..Self::default() }
+    }
 }
 
 impl Default for EntryOptions {
     fn default() -> Self {
-        Self { images: true, relations: false }
+        Self { images: true, relations: false, deadline: None }
     }
 }
 
@@ -106,7 +115,17 @@ impl Metadata {
 
     pub async fn to_entry_meta(&self, anime: &Value, options: EntryOptions) -> Result<JsObject, TypeError> {
         let anime = JsValue::from(anime);
-        let images = if options.images { self.images.images(&anime.get("id").text()).await } else { Images::default() };
+        let id = anime.get("id").text();
+        let images = match (options.images, options.deadline) {
+            (false, _) => Images::default(),
+            (true, None) => self.images.images(&id).await,
+            (true, Some(deadline)) => {
+                tokio::time::timeout_at(deadline, self.images.images(&id)).await.unwrap_or_else(|_| {
+                    tracing::warn!("Skipped the images of {id} at the meta deadline");
+                    Images::default()
+                })
+            }
+        };
         stremio_meta(&anime, &images, options.relations, &self.genre_url)
     }
 
@@ -343,26 +362,36 @@ fn listed_videos(
             ),
         ]));
     }
-    let limit = episode_count.or(&JsValue::Number(0.0)).to_number();
-    let mut episode = 1.0;
+    fill_missing_episodes(id, &mut videos, episode_count.or(&JsValue::Number(0.0)).to_number(), last_release);
+    videos.sort_by(|left, right| {
+        let difference = left.get("episode").to_number() - right.get("episode").to_number();
+        difference.partial_cmp(&0.0).unwrap_or(Ordering::Equal)
+    });
+    Ok(videos)
+}
+
+fn fill_missing_episodes(id: &str, videos: &mut Vec<JsValue>, limit: f64, released: f64) {
+    let listed: HashSet<u64> = videos
+        .iter()
+        .filter_map(|video| match video.get("episode") {
+            JsValue::Number(number) => Some(number.to_bits()),
+            _ => None,
+        })
+        .collect();
+    let mut episode = 1.0_f64;
     while episode <= limit {
-        let number = JsValue::Number(episode);
-        if !videos.iter().any(|video| video.get("episode").same_value_zero(&number)) {
+        if !listed.contains(&episode.to_bits()) {
+            let number = JsValue::Number(episode);
             videos.push(object([
                 ("id", JsValue::String(format!("kitsu:{id}:{}", number.text()))),
                 ("title", JsValue::String(format!("Episode {}", number.text()))),
-                ("released", JsValue::Date(last_release)),
+                ("released", JsValue::Date(released)),
                 ("season", JsValue::Number(1.0)),
                 ("episode", number),
             ]));
         }
         episode += 1.0;
     }
-    videos.sort_by(|left, right| {
-        let difference = left.get("episode").to_number() - right.get("episode").to_number();
-        difference.partial_cmp(&0.0).unwrap_or(Ordering::Equal)
-    });
-    Ok(videos)
 }
 
 fn episode_released(episode: &JsValue, next: Option<&JsValue>, last_release: &mut f64) -> f64 {

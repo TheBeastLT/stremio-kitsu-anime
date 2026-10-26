@@ -85,6 +85,7 @@ pub fn memory_cache<E: Clone>() -> Arc<Cache<E>> {
         budget_bytes: 1024 * 1024,
         meta_ttl: Duration::from_secs(60),
         catalog_ttl: Duration::from_secs(60),
+        cache_max_age: 43_200,
     };
     Arc::new(Cache::new(settings, None, Arc::new(NoStats)))
 }

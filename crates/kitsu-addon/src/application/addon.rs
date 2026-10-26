@@ -1,10 +1,14 @@
-use std::sync::{Arc, LazyLock};
+use std::sync::{
+    Arc, LazyLock,
+    atomic::{AtomicBool, Ordering},
+};
 
 use async_trait::async_trait;
 use fastjs_regex::Regex;
 use futures::future::{join_all, try_join_all};
 use kitsu_search::SharedIndex;
 use serde_json::{Map, Value, json};
+use tokio::time::{Duration, Instant};
 
 use super::{
     EntryOptions, Error, ExtraValue, Extras, GenreUrl, ImageLookup, Mapping, Metadata, SearchGate, enrich_imdb,
@@ -64,6 +68,8 @@ pub struct Parts {
     pub gate: SearchGate,
     pub metrics: Metrics,
     pub cache_max_age: u64,
+    pub meta_deadline: Duration,
+    pub partial_cache_max_age: u64,
 }
 
 pub struct Upstreams {
@@ -82,6 +88,8 @@ pub struct Addon {
     gate: Arc<SearchGate>,
     metrics: Metrics,
     cache_max_age: u64,
+    meta_deadline: Duration,
+    partial_cache_max_age: u64,
 }
 
 struct FanartImages {
@@ -109,6 +117,8 @@ impl Addon {
             gate: Arc::new(parts.gate),
             metrics: parts.metrics,
             cache_max_age: parts.cache_max_age,
+            meta_deadline: parts.meta_deadline,
+            partial_cache_max_age: parts.partial_cache_max_age,
         }
     }
 
@@ -136,6 +146,8 @@ impl Addon {
             gate: SearchGate::new(config.search_concurrency, config.search_queue),
             metrics,
             cache_max_age: config.cache_max_age,
+            meta_deadline: Duration::from_millis(config.meta_deadline_ms),
+            partial_cache_max_age: config.partial_cache_max_age,
         })
     }
 
@@ -310,13 +322,19 @@ impl Addon {
         let kitsu_id = self.ids.to_kitsu(id).await?;
         self.cache
             .wrap_meta(&kitsu_id, || async {
+                let deadline = Instant::now() + self.meta_deadline;
                 let anime = self.kitsu.anime_data(&kitsu_id).await?;
-                let entry = self.metadata.to_entry_meta(&anime, EntryOptions::default()).await.map_err(Error::from)?;
+                let entry =
+                    self.metadata.to_entry_meta(&anime, EntryOptions::within(deadline)).await.map_err(Error::from)?;
+                let complete = AtomicBool::new(true);
+                let complete = &complete;
                 let meta = enrich_kitsu(entry, &self.mapping, self.metadata.genre_url(), |imdb_id| async move {
-                    Some(self.cinemeta.get(&imdb_id).await)
+                    let fetched = self.cinemeta.get(&imdb_id, deadline).await;
+                    complete.store(fetched.complete, Ordering::Relaxed);
+                    Some(fetched.meta)
                 })
                 .await;
-                Ok(json!({ "meta": meta, "cacheMaxAge": self.cache_max_age }))
+                Ok(self.meta_response(meta, complete.load(Ordering::Relaxed), deadline))
             })
             .await
     }
@@ -324,15 +342,28 @@ impl Addon {
     async fn imdb_meta(&self, id: &str) -> Result<Arc<Value>, Error> {
         self.cache
             .wrap_meta(id, || async {
-                let cinemeta = self.cinemeta.get(id).await;
-                let meta = enrich_imdb(cinemeta, &self.mapping, |kitsu_id| async move {
+                let deadline = Instant::now() + self.meta_deadline;
+                let cinemeta = self.cinemeta.get(id, deadline).await;
+                let meta = enrich_imdb(cinemeta.meta, &self.mapping, |kitsu_id| async move {
                     let anime = self.kitsu.anime_data(&kitsu_id).await?;
-                    self.metadata.to_entry_meta(&anime, EntryOptions::default()).await.map_err(Error::from)
+                    self.metadata.to_entry_meta(&anime, EntryOptions::within(deadline)).await.map_err(Error::from)
                 })
                 .await?;
-                Ok(json!({ "meta": meta, "cacheMaxAge": self.cache_max_age }))
+                Ok(self.meta_response(meta, cinemeta.complete, deadline))
             })
             .await
+    }
+
+    fn meta_response(&self, meta: Value, complete: bool, deadline: Instant) -> Value {
+        let cache_max_age = if complete && Instant::now() < deadline {
+            self.cache_max_age
+        } else {
+            self.partial_cache_max_age.min(self.cache_max_age)
+        };
+        Value::Object(Map::from_iter([
+            ("meta".to_owned(), meta),
+            ("cacheMaxAge".to_owned(), Value::from(cache_max_age)),
+        ]))
     }
 
     async fn catalog_metas(&self, entries: &[Value]) -> Result<Vec<Value>, Error> {

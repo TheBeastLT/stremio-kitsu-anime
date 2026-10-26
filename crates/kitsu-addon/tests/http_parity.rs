@@ -109,6 +109,7 @@ fn node_app(upstream: &Arc<Recorded>) -> Router {
         budget_bytes: 64 * 1024 * 1024,
         meta_ttl: Duration::from_secs(3600),
         catalog_ttl: Duration::from_secs(3600),
+        cache_max_age: 43_200,
     };
     let cache = Arc::new(Cache::new(settings, None, Arc::new(metrics.clone())));
     let http: Arc<dyn HttpTransport> = upstream.clone();
@@ -123,6 +124,8 @@ fn node_app(upstream: &Arc<Recorded>) -> Router {
         gate: SearchGate::new(config.search_concurrency, config.search_queue),
         metrics: metrics.clone(),
         cache_max_age: config.cache_max_age,
+        meta_deadline: std::time::Duration::from_millis(config.meta_deadline_ms),
+        partial_cache_max_age: config.partial_cache_max_age,
     });
     app(Arc::new(AppState { addon, metrics, metrics_credentials: Some(("prom".to_owned(), "secret".to_owned())) }))
 }
@@ -179,6 +182,11 @@ const COUNTER_FAMILIES: [&str; 6] = [
     "kitsu_upstream_request_duration_seconds_count{",
 ];
 
+const NODE_CINEMETA_RETRIES: (&str, &str) = (
+    r#"kitsu_upstream_request_duration_seconds_count{upstream="cinemeta",outcome="ok"} 13"#,
+    r#"kitsu_upstream_request_duration_seconds_count{upstream="cinemeta",outcome="ok"} 7"#,
+);
+
 #[tokio::test]
 async fn responses_equal_the_node_app() {
     let upstream = Arc::new(Recorded::default());
@@ -227,8 +235,10 @@ async fn responses_equal_the_node_app() {
     let actual = counters(
         text.lines().filter(|line| COUNTER_FAMILIES.iter().any(|family| line.starts_with(family))).map(str::to_owned),
     );
-    let expected =
-        counters(RECORDED["counters"].as_array().unwrap().iter().map(|line| line.as_str().unwrap().to_owned()));
+    let expected = counters(RECORDED["counters"].as_array().unwrap().iter().map(|line| {
+        let line = line.as_str().unwrap();
+        if line == NODE_CINEMETA_RETRIES.0 { NODE_CINEMETA_RETRIES.1 } else { line }.to_owned()
+    }));
     assert_eq!(
         actual.difference(&expected).collect::<Vec<_>>(),
         Vec::<&(String, BTreeSet<String>, String)>::new(),

@@ -4,9 +4,9 @@ use std::{sync::Arc, time::Duration};
 
 use async_trait::async_trait;
 use mongodb::{
-    Client, Collection,
+    Client, Collection, IndexModel,
     bson::{DateTime, Document, doc},
-    options::{ClientOptions, Compressor},
+    options::{ClientOptions, Compressor, IndexOptions},
 };
 use serde_json::Value;
 
@@ -111,6 +111,46 @@ impl MongoDocuments {
         let database = client.default_database().unwrap_or_else(|| client.database("test"));
         Self { collection: database.collection(name) }
     }
+
+    pub async fn ensure_indexes(&self) -> bool {
+        let mut created = true;
+        for index in cache_indexes() {
+            let keys = index.keys.clone();
+            if let Err(error) = self.collection.create_index(index).await {
+                tracing::warn!("Creating the cache index {keys} failed: {error}");
+                created = false;
+            }
+        }
+        created
+    }
+}
+
+pub const INDEX_RETRY_DELAYS: [Duration; 5] = [
+    Duration::from_secs(10),
+    Duration::from_secs(60),
+    Duration::from_secs(300),
+    Duration::from_secs(1800),
+    Duration::from_secs(3600),
+];
+
+pub async fn until_done<F: Future<Output = bool>>(delays: &[Duration], mut attempt: impl FnMut() -> F) -> bool {
+    for delay in delays {
+        if attempt().await {
+            return true;
+        }
+        tokio::time::sleep(*delay).await;
+    }
+    attempt().await
+}
+
+pub fn cache_indexes() -> [IndexModel; 2] {
+    [
+        IndexModel::builder().keys(doc! { "key": 1 }).options(IndexOptions::builder().unique(true).build()).build(),
+        IndexModel::builder()
+            .keys(doc! { "expiresAt": 1 })
+            .options(IndexOptions::builder().expire_after(Duration::ZERO).build())
+            .build(),
+    ]
 }
 
 async fn mongo<T>(operation: impl IntoFuture<Output = Result<T, mongodb::error::Error>>) -> Result<T, StoreError> {
@@ -187,6 +227,46 @@ mod tests {
         async fn upsert(&self, _key: &str, _document: Document) -> Result<(), StoreError> {
             std::future::pending().await
         }
+    }
+
+    #[tokio::test(start_paused = true)]
+    async fn index_creation_is_retried_on_the_schedule_until_it_succeeds() {
+        let started = tokio::time::Instant::now();
+        let mut attempts = 0;
+        let done = until_done(&INDEX_RETRY_DELAYS, || {
+            attempts += 1;
+            std::future::ready(attempts == 3)
+        })
+        .await;
+        assert!(done);
+        assert_eq!(attempts, 3);
+        assert_eq!(started.elapsed(), Duration::from_secs(70));
+    }
+
+    #[tokio::test(start_paused = true)]
+    async fn index_creation_gives_up_after_the_schedule() {
+        let mut attempts = 0;
+        let done = until_done(&INDEX_RETRY_DELAYS, || {
+            attempts += 1;
+            std::future::ready(false)
+        })
+        .await;
+        assert!(!done);
+        assert_eq!(attempts, INDEX_RETRY_DELAYS.len() + 1);
+    }
+
+    #[test]
+    fn cache_indexes_match_keyv_mongo() {
+        let [key, expires] = cache_indexes();
+        assert_eq!(key.keys, doc! { "key": 1 });
+        assert_eq!(key.options.as_ref().and_then(|options| options.unique), Some(true));
+        assert_eq!(key.options.as_ref().and_then(|options| options.expire_after), None);
+        assert_eq!(expires.keys, doc! { "expiresAt": 1 });
+        assert_eq!(expires.options.as_ref().and_then(|options| options.expire_after), Some(Duration::ZERO));
+        assert_eq!(expires.options.as_ref().and_then(|options| options.unique), None);
+        assert!(
+            [&key, &expires].iter().all(|index| index.options.as_ref().is_some_and(|options| options.name.is_none()))
+        );
     }
 
     #[test]

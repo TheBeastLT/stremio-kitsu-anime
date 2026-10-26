@@ -54,6 +54,10 @@ async fn open_store(config: &Config) -> anyhow::Result<Option<Store>> {
     };
     let client = store::connect(uri).await.context("connecting to the cache database")?;
     let documents = Arc::new(MongoDocuments::new(&client, &config.kitsu_collection));
+    tokio::spawn({
+        let documents = Arc::clone(&documents);
+        async move { store::until_done(&store::INDEX_RETRY_DELAYS, || documents.ensure_indexes()).await }
+    });
     Ok(Some(Store::new(documents, Duration::from_millis(config.store_timeout_ms))))
 }
 

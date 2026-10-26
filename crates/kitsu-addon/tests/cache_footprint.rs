@@ -252,6 +252,7 @@ async fn resident_size_by_entries() {
         budget_bytes: std::env::var("MEMORY_CACHE_MB").ok().and_then(|mb| mb.parse().ok()).unwrap_or(384) * 1024 * 1024,
         meta_ttl: Duration::from_secs(86_400),
         catalog_ttl: Duration::from_secs(86_400),
+        cache_max_age: 43_200,
     };
     let cache: Cache<Infallible> = Cache::new(settings, None, Arc::new(NoStats));
     let templates: Vec<Value> = (0..64).map(|seed| meta(1_000 + seed, 100_000)).collect();
