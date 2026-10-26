@@ -100,7 +100,7 @@ fn vulgar_fraction_one_half() {
 }
 
 #[test]
-fn js_whitespace_is_trimmed() {
+fn unicode_whitespace_is_trimmed() {
     check("\u{2003} a\u{a0}b\u{3000}", "a b");
 }
 
@@ -120,77 +120,31 @@ fn cyrillic_small_letter_rounded_ve_is_kept() {
 }
 
 #[test]
-fn letter_added_after_regress_tables_u088f_is_kept() {
+fn letter_added_in_unicode_17_u088f_is_kept() {
     check("a\u{88f}b", "a\u{88f}b");
 }
 
 #[test]
-fn letter_added_after_regress_tables_ends_a_digit_run() {
+fn letter_added_in_unicode_17_ends_a_digit_run() {
     check("1\u{a7cf}", "1 \u{a7cf}");
 }
 
 #[test]
-fn letter_added_after_regress_tables_follows_a_digit_split() {
+fn letter_added_in_unicode_17_follows_a_digit_split() {
     check("\u{10940}1", "\u{10940} 1");
 }
 
 #[test]
-fn number_added_after_regress_tables_u11de0_is_kept() {
+fn number_added_in_unicode_17_u11de0_is_kept() {
     check("a\u{11de0}", "a\u{11de0}");
 }
 
 #[test]
-fn unassigned_armenian_u0558_is_not_decomposed() {
-    check("1\u{558}a", "1 a");
-}
-
-#[test]
-fn unassigned_armenian_u058b_is_not_decomposed() {
-    check("a\u{58b}", "a");
-}
-
-#[test]
-fn unassigned_mathematical_u1dfcd_is_not_decomposed() {
-    check("a\u{1dfcd}", "a");
-}
-
-#[test]
-fn unassigned_run_does_not_reorder_neighbouring_marks() {
-    check("e\u{301}\u{558}\u{301}e", "e e");
-}
-
-#[test]
-fn regress_tables_do_not_know_the_added_letters_yet() {
-    let rx = fastjs_regex::Regex::new(r"^[\p{L}\p{N}]$", "u").unwrap();
-    for &(start, end) in kitsu_search::unicode::NODE_ONLY_LETTERS.iter().chain(kitsu_search::unicode::NODE_ONLY_NUMBERS)
-    {
-        for c in (start..=end).filter_map(char::from_u32) {
-            assert!(!rx.is_match(&c.to_string()), "{c:?} is known to regress now: shrink the table");
-        }
-    }
-}
-
-#[test]
-fn number_added_after_regress_tables_is_not_a_letter_for_splitting() {
+fn number_added_in_unicode_17_is_not_a_letter_for_splitting() {
     check("a\u{11de0}1", "a\u{11de0}1");
 }
 
 #[test]
-fn nfkd_table_is_checked_against_the_unicode_version_of_the_crate() {
-    assert_eq!(
-        unicode_normalization::UNICODE_VERSION,
-        (18, 0, 0),
-        "unicode-normalization changed its Unicode data: re-derive NFKD_UNASSIGNED_IN_NODE against Node"
-    );
-}
-
-#[test]
-fn nfkd_table_lists_only_code_points_the_crate_decomposes() {
-    use unicode_normalization::UnicodeNormalization;
-    for &(start, end) in kitsu_search::unicode::NFKD_UNASSIGNED_IN_NODE {
-        for c in (start..=end).filter_map(char::from_u32) {
-            let decomposed: String = std::iter::once(c).nfkd().collect();
-            assert_ne!(decomposed, c.to_string(), "{c:?} is no longer decomposed by the crate: shrink the table");
-        }
-    }
+fn armenian_u0558_is_decomposed_although_node_kept_it_unassigned() {
+    check("1\u{558}a", "1 \u{567}a");
 }

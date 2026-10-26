@@ -2,53 +2,45 @@ use std::borrow::Cow;
 use std::collections::{HashMap, HashSet};
 use std::sync::{LazyLock, OnceLock};
 
-use fastjs_regex::{Regex, utf16_len};
+use fastjs_regex::Regex;
 use indexmap::{IndexMap, IndexSet};
 
-use crate::math::ln;
 use crate::norm::norm;
 use crate::query::{
-    Marker, MovieIndex, Season, compact, extra_number_of, has_ending_extra_word, markers_of, movie_prefix_of,
+    Marker, SEQUEL_MARKS, Season, compact, extra_number_of, has_ending_extra_word, markers_of, movie_prefix_of,
     punct_key, season_of, seasonless_title, title_base_of, title_movie_index_of, title_year_of, without_movie_words,
 };
 use crate::records::{Aliases, ImdbMapping, ImdbMappings, TitleRecord};
-use crate::unicode::{NODE_ONLY_LETTERS, class_members};
+use crate::rx;
 
 const SEARCHED_STATUSES: [&str; 3] = ["finished", "current", "upcoming"];
 const SPLIT_SEASON_EPISODES: std::ops::RangeInclusive<u32> = 24..=28;
 const UNKNOWN_SEASON: Season = 99;
 
-fn rx(source: &str, flags: &str) -> Regex {
-    Regex::new(source, flags).unwrap_or_else(|error| panic!("invalid pattern {source}: {error}"))
-}
-
-static DOTTED: LazyLock<Regex> = LazyLock::new(|| {
-    let letter = format!(r"[\p{{L}}{}]", class_members(NODE_ONLY_LETTERS));
-    rx(&format!(r"\b(?:{letter}\.){{2,}}(?:{letter}\b)?"), "gu")
-});
+static DOTTED: LazyLock<Regex> = LazyLock::new(|| rx(r"\b(?:\p{L}\.){2,}(?:\p{L}\b)?", "gu"));
 static DOT: LazyLock<Regex> = LazyLock::new(|| rx(r"\.", "g"));
+// synonyms numbered by other sites ("Episode 576.5", "Recap 7", "Film 14"): dropped
 static NUMBERED_SYNONYM: LazyLock<Regex> =
     LazyLock::new(|| rx(r"\b(?:episode|ep|recap|movie|film|pelicula|filme|part|vol|volume) \d", ""));
 static PARENTHESISED: LazyLock<Regex> = LazyLock::new(|| rx(r"\([^)]*\)", "g"));
-static SEQUEL_PUNCTUATION: LazyLock<Regex> = LazyLock::new(|| rx("[!+◎☆★']$", ""));
 static PART: LazyLock<Regex> = LazyLock::new(|| rx(r"\b(?:part|cou?r) (\d)\b", ""));
 static PLAIN_BASE: LazyLock<Regex> = LazyLock::new(|| rx("^[a-z0-9 ]+$", ""));
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Hash)]
 pub enum Subtype {
     Tv,
-    Ova,
     Ona,
+    Ova,
     Movie,
     Special,
 }
 
 impl Subtype {
-    fn searched(subtype: &str) -> Option<Self> {
-        match subtype {
+    fn searched(name: &str) -> Option<Self> {
+        match name {
             "TV" => Some(Self::Tv),
-            "OVA" => Some(Self::Ova),
             "ONA" => Some(Self::Ona),
+            "OVA" => Some(Self::Ova),
             "movie" => Some(Self::Movie),
             "special" => Some(Self::Special),
             _ => None,
@@ -58,10 +50,20 @@ impl Subtype {
     pub fn as_str(self) -> &'static str {
         match self {
             Self::Tv => "TV",
-            Self::Ova => "OVA",
             Self::Ona => "ONA",
+            Self::Ova => "OVA",
             Self::Movie => "movie",
             Self::Special => "special",
+        }
+    }
+
+    pub fn rank(self) -> f64 {
+        match self {
+            Self::Tv => 0.0,
+            Self::Ona => 1.0,
+            Self::Ova => 2.0,
+            Self::Movie => 3.0,
+            Self::Special => 4.0,
         }
     }
 
@@ -94,37 +96,33 @@ pub struct Variant {
     pub movie: Option<u32>,
     pub season: Option<Season>,
     pub markers: Vec<Marker>,
-    pub extra_number: Option<String>,
+    pub extra_number: Option<u32>,
     pub source: VariantSource,
 }
 
 impl Variant {
     fn new(title: String, subtype: Subtype, source: VariantSource) -> Self {
-        let movie = title_movie_index_of(&title, Some(subtype.as_str())).map(|index| match index {
-            MovieIndex::Number(number) => number,
-            MovieIndex::Text(digits) => digits.parse().unwrap_or_else(|error| panic!("movie {digits}: {error}")),
-        });
-        let base = title_base_of(&title, Some(subtype.as_str()));
+        let is_movie = subtype == Subtype::Movie;
+        let base = title_base_of(&title, is_movie);
         let movie_base = Some(without_movie_words(&base)).filter(|movie_base| *movie_base != base);
-        let mut variant = Self {
-            title_year: title_year_of(&title),
-            movie,
+        let title_year = title_year_of(&title);
+        if let VariantSource::Synonym { .. } = source {
+            let source = VariantSource::Synonym { stripped_season: season_of(&title) };
+            let (season, movie, extra_number, markers) = (None, None, None, Vec::new());
+            return Self { title, base, movie_base, title_year, movie, season, markers, extra_number, source };
+        }
+        let movie = title_movie_index_of(&title, is_movie);
+        Self {
             season: if movie.is_none() { season_of(&title) } else { None },
             markers: markers_of(&title),
-            extra_number: extra_number_of(&title).map(str::to_owned),
+            extra_number: extra_number_of(&title),
+            movie,
+            title_year,
             base,
             movie_base,
             title,
             source,
-        };
-        if let VariantSource::Synonym { .. } = source {
-            variant.source = VariantSource::Synonym { stripped_season: season_of(&variant.title) };
-            variant.season = None;
-            variant.movie = None;
-            variant.extra_number = None;
-            variant.markers = Vec::new();
         }
-        variant
     }
 
     pub fn from_synonym(&self) -> bool {
@@ -148,15 +146,9 @@ impl Variant {
 }
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum AbsoluteEnd {
-    Episode(u32),
-    Open,
-}
-
-#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub struct AbsoluteEpisodes {
     pub from: u32,
-    pub to: AbsoluteEnd,
+    pub count: Option<u32>,
 }
 
 #[derive(Clone, Debug, PartialEq, Eq)]
@@ -196,13 +188,12 @@ impl Entry {
     }
 }
 
-pub type Trigram = [u16; 3];
+pub type Trigram = [char; 3];
 
 pub struct Index {
     entries: Vec<Entry>,
     season_groups: IndexMap<String, Vec<u32>>,
-    words: IndexSet<String>,
-    postings: Vec<Vec<u32>>,
+    postings: IndexMap<String, Vec<u32>>,
     idf: Vec<f64>,
     unseen_idf: f64,
     trigrams: OnceLock<HashMap<Trigram, Vec<u32>>>,
@@ -212,6 +203,8 @@ fn truthy(text: Option<&str>) -> Option<&str> {
     text.filter(|text| !text.is_empty())
 }
 
+// the romaji franchise name of a later season: the Kitsu titles of the entry starting its imdb series ("JoJo no Kimyou
+// na Bouken (TV)" for Steel Ball Run, imdb season 6)
 fn later_season(mapping: &ImdbMapping) -> bool {
     let season = mapping.from_season.unwrap_or(1);
     truthy(mapping.imdb_id.as_deref()).is_some() && season >= 1 && (season > 1 || mapping.from_episode.unwrap_or(1) > 1)
@@ -243,6 +236,7 @@ fn with_aliases<'r>(record: &'r TitleRecord, aliases: &Aliases) -> Cow<'r, Index
     Cow::Owned(titles)
 }
 
+// a dotted abbreviation also written whole ("S.A.C." as "sac"; the scraper's own dots-to-spaces form stays too)
 fn undotted(title: &str) -> String {
     DOTTED.replace_with(title, |m| DOT.replace(&title[m.range()], "").into_owned()).into_owned()
 }
@@ -274,6 +268,7 @@ fn to_entry(
             Variant::new(title.clone(), subtype, VariantSource::Own { abbreviated: !main_set.contains(title) })
         })
         .collect();
+    // synonyms add title words only, never season / movie / extra numbers
     let synonyms: IndexSet<String> =
         record.synonyms.iter().map(|title| norm(title)).filter(|title| !title.is_empty()).collect();
     variants.extend(
@@ -282,6 +277,7 @@ fn to_entry(
             .filter(|title| !own.contains(title) && !NUMBERED_SYNONYM.is_match(title))
             .map(|title| Variant::new(title, subtype, VariantSource::Synonym { stripped_season: None })),
     );
+    // the imdb mapping's English title, for TV/ONA only (it names every OVA and sequel after the franchise)
     if let Some(row) = mapping
         && let Some(title) = truthy(row.title.as_deref())
         && truthy(row.imdb_id.as_deref()).is_some()
@@ -318,8 +314,10 @@ fn to_entry(
         sequel_keys: main_titles
             .iter()
             .map(|title| punct_key(&PARENTHESISED.replace(title, " ")))
-            .filter(|key| SEQUEL_PUNCTUATION.is_match(key) && utf16_len(key) > 4)
+            .filter(|key| key.ends_with(SEQUEL_MARKS) && key.chars().count() > 4)
             .collect(),
+        // an extra word ending a main title marks an extra ("... Lungmen Special"); inside one it is a name
+        // ("Fate/Extra")
         has_extra_word: extra_word_titles
             .into_iter()
             .filter_map(truthy)
@@ -347,6 +345,7 @@ fn to_entry(
     }
 }
 
+// movies of a franchise without numbers in their titles, numbered by release ("pokemon movie 20")
 fn number_unnumbered_movies(entries: &mut [Entry]) {
     let mut groups: IndexMap<String, Vec<usize>> = IndexMap::new();
     for (i, entry) in entries.iter().enumerate().filter(|(_, entry)| entry.subtype == Subtype::Movie) {
@@ -365,6 +364,7 @@ fn number_unnumbered_movies(entries: &mut [Entry]) {
     }
 }
 
+// TV/ONA seasons sharing a canonical title apart from season markers (imdb franchises are too broad: all of Pokemon)
 fn group_seasons(entries: &mut [Entry]) -> IndexMap<String, Vec<u32>> {
     let mut groups: IndexMap<String, Vec<u32>> = IndexMap::new();
     for (i, entry) in entries.iter_mut().enumerate() {
@@ -390,6 +390,7 @@ fn franchises(entries: &[Entry], member: impl Fn(&Entry) -> bool) -> IndexMap<&s
     groups
 }
 
+// absolute episode numbers: a franchise's TV entries (by imdb mapping) laid end to end by episode count
 fn lay_out_episodes(entries: &mut [Entry]) {
     let groups: Vec<Vec<usize>> =
         franchises(entries, |entry| truthy(entry.start_date.as_deref()).is_some()).into_values().collect();
@@ -404,17 +405,17 @@ fn lay_out_episodes(entries: &mut [Entry]) {
         let mut from = 1;
         for i in list {
             let entry = &mut entries[i];
-            let Some(count) = entry.episode_count.filter(|count| *count != 0) else {
-                entry.absolute = Some(AbsoluteEpisodes { from, to: AbsoluteEnd::Open });
-                break;
-            };
-            let to = from + count - 1;
-            entry.absolute = Some(AbsoluteEpisodes { from, to: AbsoluteEnd::Episode(to) });
-            from = to + 1;
+            let count = entry.episode_count.filter(|count| *count != 0);
+            entry.absolute = Some(AbsoluteEpisodes { from, count });
+            let Some(count) = count else { break };
+            from += count;
         }
     }
 }
 
+// Release groups number a 24-28 episode imdb season (two cours) as two seasons, so the next imdb season is one later
+// ("Baki" 2018, 26 episodes, is Netflix's S1 and S2: "Baki: Dai Raitaisai-hen", imdb season 2, is S3). split_season:
+// that number, for the first episode of an imdb season whose previous season is a single such entry.
 fn mark_split_seasons(entries: &mut [Entry]) {
     let mut split = Vec::new();
     for list in franchises(entries, |entry| entry.imdb_season.is_some_and(|season| season > 0)).into_values() {
@@ -438,8 +439,8 @@ fn mark_split_seasons(entries: &mut [Entry]) {
 }
 
 pub fn trigrams_of(key: &str) -> IndexSet<Trigram> {
-    let units: Vec<u16> = key.encode_utf16().collect();
-    units.windows(3).map(|gram| [gram[0], gram[1], gram[2]]).collect()
+    let chars: Vec<char> = key.chars().collect();
+    chars.windows(3).map(|gram| [gram[0], gram[1], gram[2]]).collect()
 }
 
 impl Index {
@@ -463,26 +464,17 @@ impl Index {
         lay_out_episodes(&mut entries);
         mark_split_seasons(&mut entries);
 
-        let mut words = IndexSet::new();
-        let mut postings: Vec<Vec<u32>> = Vec::new();
+        let mut postings: IndexMap<String, Vec<u32>> = IndexMap::new();
         for (i, entry) in entries.iter().enumerate() {
-            let entry_words: IndexSet<&str> =
-                entry.titles.iter().flat_map(|variant| variant.title.split(' ')).collect();
-            for word in entry_words {
-                let (id, added) = match words.get_index_of(word) {
-                    Some(id) => (id, false),
-                    None => (words.insert_full(word.to_owned()).0, true),
-                };
-                if added {
-                    postings.push(Vec::new());
-                }
-                postings[id].push(i as u32);
+            let words: IndexSet<&str> = entry.titles.iter().flat_map(|variant| variant.title.split(' ')).collect();
+            for word in words {
+                postings.entry(word.to_owned()).or_default().push(i as u32);
             }
         }
-        let idf_of = |count: usize| ln(entries.len() as f64 / (1 + count) as f64);
-        let idf = postings.iter().map(|posting| idf_of(posting.len())).collect();
+        let idf_of = |count: usize| (entries.len() as f64 / (1 + count) as f64).ln();
+        let idf = postings.values().map(|posting| idf_of(posting.len())).collect();
         let unseen_idf = idf_of(0);
-        Self { entries, season_groups, words, postings, idf, unseen_idf, trigrams: OnceLock::new() }
+        Self { entries, season_groups, postings, idf, unseen_idf, trigrams: OnceLock::new() }
     }
 
     pub fn entries(&self) -> &[Entry] {
@@ -501,24 +493,16 @@ impl Index {
         &self.season_groups
     }
 
-    pub fn word_count(&self) -> usize {
-        self.words.len()
+    pub fn postings(&self) -> &IndexMap<String, Vec<u32>> {
+        &self.postings
     }
 
-    pub fn word_id(&self, word: &str) -> Option<u32> {
-        self.words.get_index_of(word).map(|id| id as u32)
-    }
-
-    pub fn word(&self, id: u32) -> &str {
-        &self.words[id as usize]
-    }
-
-    pub fn posting(&self, id: u32) -> &[u32] {
-        &self.postings[id as usize]
+    pub fn knows(&self, word: &str) -> bool {
+        self.postings.contains_key(word)
     }
 
     pub fn entries_with(&self, word: &str) -> &[u32] {
-        self.word_id(word).map_or(&[], |id| self.posting(id))
+        self.postings.get(word).map_or(&[], Vec::as_slice)
     }
 
     pub fn entry_count(&self, word: &str) -> usize {
@@ -526,7 +510,7 @@ impl Index {
     }
 
     pub fn idf(&self, word: &str) -> f64 {
-        self.word_id(word).map_or(self.unseen_idf, |id| self.idf[id as usize])
+        self.postings.get_index_of(word).map_or(self.unseen_idf, |id| self.idf[id])
     }
 
     pub fn trigrams_built(&self) -> bool {

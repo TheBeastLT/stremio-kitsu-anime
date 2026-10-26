@@ -1,6 +1,6 @@
 use kitsu_search::query::{
-    MovieIndex, Numeral, compact, extra_family, extra_number_of, glue, movie_prefix_of, numerals_of, parse_query,
-    punct_key, roman_numeral, season_of, seasonless_title, split_titles, title_base_of, title_movie_index_of,
+    compact, extra_family, extra_number_of, glue, movie_prefix_of, numerals_of, parse_query, punct_key, roman_numeral,
+    season_of, seasonless_title, split_titles, title_base_of, title_movie_index_of,
 };
 use serde_json::Value;
 
@@ -16,11 +16,8 @@ fn check_glue(title: &[&str], query: &[&str], initials_ok: bool, words: &[&str],
 }
 
 #[test]
-fn numerals_of_reads_object_prototype_keys_as_numerals() {
-    assert_eq!(
-        numerals_of("constructor ii 12 abc 12345"),
-        [Numeral::ObjectPrototypeMember, Numeral::Value(2), Numeral::Value(12)]
-    );
+fn numerals_of_reads_roman_and_short_numbers() {
+    assert_eq!(numerals_of("constructor ii 12 abc 12345"), [2, 12]);
 }
 
 #[test]
@@ -29,36 +26,36 @@ fn roman_numeral_out_of_range() {
 }
 
 #[test]
-fn title_movie_index_of_numbered_movie_is_text() {
-    assert_eq!(title_movie_index_of("show 2 the movie", None), Some(MovieIndex::Text("2".into())));
+fn title_movie_index_of_numbered_movie() {
+    assert_eq!(title_movie_index_of("show 2 the movie", false), Some(2));
 }
 
 #[test]
 fn title_movie_index_of_chapter_only_for_movies() {
     assert_eq!(
-        (title_movie_index_of("show chapter 3", Some("movie")), title_movie_index_of("show chapter 3", None)),
-        (Some(MovieIndex::Text("3".into())), None)
+        (title_movie_index_of("show chapter 3", true), title_movie_index_of("show chapter 3", false)),
+        (Some(3), None)
     );
 }
 
 #[test]
 fn title_movie_index_of_movie_number() {
-    assert_eq!(title_movie_index_of("show movie 3", None), Some(MovieIndex::Number(3)));
+    assert_eq!(title_movie_index_of("show movie 3", false), Some(3));
 }
 
 #[test]
 fn title_base_of_strips_season_year_extra_and_markers() {
-    assert_eq!(title_base_of("show 2nd season 2019 ova recap", None), "show");
+    assert_eq!(title_base_of("show 2nd season 2019 ova recap", false), "show");
 }
 
 #[test]
 fn title_base_of_empty() {
-    assert_eq!(title_base_of("", None), "");
+    assert_eq!(title_base_of("", false), "");
 }
 
 #[test]
-fn extra_number_of_keeps_the_digits() {
-    assert_eq!(extra_number_of("show ova 03"), Some("03"));
+fn extra_number_of_reads_the_number() {
+    assert_eq!(extra_number_of("show ova 03"), Some(3));
 }
 
 #[test]
@@ -771,11 +768,6 @@ fn glue_initials_need_a_lowercase_ascii_start() {
 }
 
 #[test]
-fn glue_empty_word_adds_undefined() {
-    check_glue(&["kaguya", "", "ultra"], &["kundefined"], true, &["kundefined", "ultra"], &["kundefined"]);
-}
-
-#[test]
-fn glue_astral_initial_is_half_a_character() {
-    check_glue(&["best", "𝔸wishes", "x"], &["b𝔸"], true, &["best", "𝔸wishes", "x"], &[]);
+fn glue_astral_initial_is_a_whole_character() {
+    check_glue(&["best", "𝔸wishes", "x"], &["b𝔸"], true, &["b𝔸", "x"], &["b𝔸"]);
 }

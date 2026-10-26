@@ -4,33 +4,18 @@ use fastjs_regex::Regex;
 use indexmap::IndexSet;
 use serde::Serialize;
 
-use crate::norm::{js_trim, nfkd, norm};
-use crate::unicode::{NODE_ONLY_LETTERS, class_members};
+use crate::norm::{norm, squash, without_marks};
+use crate::rx;
 
 pub type Season = u32;
 
 pub const FINAL_SEASON: Season = 99;
+pub const SEQUEL_MARKS: [char; 6] = ['!', '+', '◎', '☆', '★', '\''];
 
+#[rustfmt::skip]
 const ORDINAL_WORDS: [&str; 20] = [
-    "first",
-    "second",
-    "third",
-    "fourth",
-    "fifth",
-    "sixth",
-    "seventh",
-    "eighth",
-    "ninth",
-    "tenth",
-    "eleventh",
-    "twelfth",
-    "thirteenth",
-    "fourteenth",
-    "fifteenth",
-    "sixteenth",
-    "seventeenth",
-    "eighteenth",
-    "nineteenth",
+    "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh",
+    "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth", "eighteenth", "nineteenth",
     "twentieth",
 ];
 const ROMAN_WORDS: [&str; 20] = [
@@ -39,24 +24,6 @@ const ROMAN_WORDS: [&str; 20] = [
 ];
 const EXTRA: &str = "(?:ovas?|oads?|oavs?|specials?|sp|extras?|recaps?|picture dramas?|omake|bonus)";
 const INITIALS_FILLER: [&str; 5] = ["and", "the", "no", "of", "to"];
-const OBJECT_PROTOTYPE_KEYS: [&str; 12] = [
-    "constructor",
-    "__proto__",
-    "__defineGetter__",
-    "__defineSetter__",
-    "__lookupGetter__",
-    "__lookupSetter__",
-    "hasOwnProperty",
-    "isPrototypeOf",
-    "propertyIsEnumerable",
-    "toLocaleString",
-    "toString",
-    "valueOf",
-];
-
-fn rx(source: &str, flags: &str) -> Regex {
-    Regex::new(source, flags).unwrap_or_else(|error| panic!("invalid pattern {source}: {error}"))
-}
 
 fn longest_first(words: impl IntoIterator<Item = &'static str>) -> String {
     let mut words: Vec<&str> = words.into_iter().collect();
@@ -74,16 +41,13 @@ fn roman(word: &str) -> Option<Season> {
 
 static ORDINAL_PATTERN: LazyLock<String> = LazyLock::new(|| ORDINAL_WORDS.join("|"));
 static ROMAN_PATTERN: LazyLock<String> = LazyLock::new(|| longest_first(ROMAN_WORDS));
+// i, v and x alone are too often plain words or names ("Rockman X") to read as a season ending a title
 static MULTI_LETTER_ROMAN_PATTERN: LazyLock<String> =
     LazyLock::new(|| longest_first(ROMAN_WORDS.into_iter().filter(|word| word.len() > 1)));
-static LETTER: LazyLock<String> = LazyLock::new(|| format!(r"[\p{{L}}{}]", class_members(NODE_ONLY_LETTERS)));
 
 static SEASON_BEFORE_ALTERNATIVE_TITLE: LazyLock<Regex> = LazyLock::new(|| {
     rx(
-        &format!(
-            r"(?<!\b(?:part|parte|season|cou?r|vol|volume|episode|ep|movie|film|ova|special|sp))\s(\d{{1,2}})\s*(\([^()]*{}{{4}}[^()]*\))\s*$",
-            *LETTER
-        ),
+        r"(?<!\b(?:part|parte|season|cou?r|vol|volume|episode|ep|movie|film|ova|special|sp))\s(\d{1,2})\s*(\([^()]*\p{L}{4}[^()]*\))\s*$",
         "iu",
     )
 });
@@ -105,6 +69,7 @@ static PACK_WORDS: LazyLock<Regex> = LazyLock::new(|| {
         "g",
     )
 });
+// "hyouka + ova", "baccano (and specials)", "complete ... ova": the series with its extras, not the extra
 static PACK_RX: LazyLock<Regex> = LazyLock::new(|| {
     rx(
         &format!(
@@ -117,6 +82,11 @@ pub static EXTRA_RX: LazyLock<Regex> = LazyLock::new(|| rx(&format!(r"\b({EXTRA}
 static ENDING_EXTRA_RX: LazyLock<Regex> = LazyLock::new(|| rx(&format!(r"\b({EXTRA})(?: \d{{1,2}})?$"), ""));
 static STRIP_EXTRA: LazyLock<Regex> = LazyLock::new(|| rx(&format!(r"\b{EXTRA}\b"), "g"));
 static ENDING_RAW_EXTRA_RX: LazyLock<Regex> = LazyLock::new(|| rx(&format!(r"\s({EXTRA}(?:\s\d{{1,2}})?)\s*$"), "i"));
+// Recap and re-edit markers, with the Japanese terms Kitsu's romanised titles use for them, spelled as norm() leaves
+// them (long vowels folded: "soushuuhen" -> "soshuhen"): soushuuhen 総集編 recap / compilation, tokubetsu-hen 特別編
+// special edition, (shin) henshuu-ban (新)編集版 (newly) edited version, kanzenban 完全版 complete version; gekijouban
+// 劇場版 (THEATER) is the theatrical version. An anniversary only before a remaster or edition: alone it names many
+// entries ("Baki 25th Anniversary").
 static RECAP: LazyLock<Regex> = LazyLock::new(|| {
     rx(r"\b(?:recaps?|recapitulation|soshu ?hen|digest|summary|highlights?|compilations?|tokubetsu ?hen)\b", "g")
 });
@@ -137,12 +107,7 @@ static ROMAN_SEASON_RX: LazyLock<Regex> =
 static ENDING_ROMAN_RX: LazyLock<Regex> =
     LazyLock::new(|| rx(&format!(r"^\S+ \S+.* ({})$", *MULTI_LETTER_ROMAN_PATTERN), ""));
 
-static PUNCT_PLUS: LazyLock<Regex> = LazyLock::new(|| rx("[＋]", "g"));
-static PUNCT_APOSTROPHE: LazyLock<Regex> = LazyLock::new(|| rx("[’′]", "g"));
 static PUNCT_INNER_APOSTROPHE: LazyLock<Regex> = LazyLock::new(|| rx("'(?=[a-z0-9])", "g"));
-static PUNCT_OTHER: LazyLock<Regex> = LazyLock::new(|| rx("[^a-z0-9!+◎☆★']", "g"));
-static COMBINING: LazyLock<Regex> = LazyLock::new(|| rx("[\u{300}-\u{36f}]", "g"));
-static WHITESPACE: LazyLock<Regex> = LazyLock::new(|| rx(r"\s+", "g"));
 static NUMBER_WORD: LazyLock<Regex> = LazyLock::new(|| rx(r"^\d{1,4}$", ""));
 static OVA_PREFIX: LazyLock<Regex> = LazyLock::new(|| rx("^(ova|oad|oav)", ""));
 static SPECIAL_PREFIX: LazyLock<Regex> = LazyLock::new(|| rx("^(special|sp$|extra|omake|bonus)", ""));
@@ -150,7 +115,6 @@ static NUMBERED_MOVIE: LazyLock<Regex> = LazyLock::new(|| rx(r"\b(\d{1,2}) the m
 static STRIP_NUMBERED_MOVIE: LazyLock<Regex> = LazyLock::new(|| rx(r"\b\d{1,2} the movie\b", ""));
 static CHAPTER: LazyLock<Regex> = LazyLock::new(|| rx(r"\bchapter (\d{1,2})\b", ""));
 static STRIP_CHAPTER: LazyLock<Regex> = LazyLock::new(|| rx(r"\bchapter \d{1,2}\b", ""));
-static NEVER: LazyLock<Regex> = LazyLock::new(|| rx("$^", ""));
 static TRAILING_DIGIT: LazyLock<Regex> = LazyLock::new(|| rx(r" \d$", ""));
 static TV_WORD: LazyLock<Regex> = LazyLock::new(|| rx(r"\btv\b", "g"));
 static MOVIE_WORDS: LazyLock<Regex> = LazyLock::new(|| rx(r"\b(?:the )?(?:movie|film)\b", "g"));
@@ -190,10 +154,9 @@ static EXTRA_FORM: LazyLock<Regex> = LazyLock::new(|| rx(r"\b(movie|film|pilot)\
 
 static TITLE_SEPARATOR: LazyLock<Regex> = LazyLock::new(|| rx(r"\s+(?:\/|\||aka|a\.k\.a\.)\s+", "i"));
 static BRACKETED: LazyLock<Regex> = LazyLock::new(|| rx(r"^(.*?)\s*\(([^()]+)\)\s*(.*)$", ""));
-static FOUR_LETTERS: LazyLock<Regex> = LazyLock::new(|| rx(&format!("{}{{4}}", *LETTER), "u"));
+static FOUR_LETTERS: LazyLock<Regex> = LazyLock::new(|| rx(r"\p{L}{4}", "u"));
 static KIND_ONLY: LazyLock<Regex> = LazyLock::new(|| rx("^(?:tv|ova|oad|movie|special|uncut|dub|sub)$", "i"));
 static DOUBLE_SPACE: LazyLock<Regex> = LazyLock::new(|| rx(r"\s{2,}", ""));
-static LOWERCASE_START: LazyLock<Regex> = LazyLock::new(|| rx("^[a-z]", ""));
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Hash, Serialize)]
 #[serde(rename_all = "lowercase")]
@@ -208,19 +171,6 @@ pub enum ExtraKind {
     Ova,
     #[serde(rename = "special")]
     Special,
-}
-
-#[derive(Clone, Debug, PartialEq, Eq, Serialize)]
-#[serde(untagged)]
-pub enum MovieIndex {
-    Number(u32),
-    Text(String),
-}
-
-#[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Numeral {
-    Value(u32),
-    ObjectPrototypeMember,
 }
 
 #[derive(Clone, Debug, PartialEq, Eq, Serialize)]
@@ -273,29 +223,21 @@ fn first_number(rx: &Regex, text: &str) -> Option<u32> {
     rx.find(text).and_then(|m| group(text, &m, 1)).map(number)
 }
 
+// lowercase title keeping only the sequel punctuation ("hatarakusaibou!!", "okusamagaseitokaichou!+!", "gintama'",
+// "working'!!", "kerorogunsou☆"; not the apostrophe of "kuroko's")
 pub fn punct_key(text: &str) -> String {
-    let decomposed = nfkd(text);
-    let lowered = COMBINING.replace(&decomposed, "").to_lowercase();
-    let plain = PUNCT_PLUS.replace(&lowered, "+");
-    let plain = PUNCT_APOSTROPHE.replace(&plain, "'");
+    let plain = without_marks(text).replace('＋', "+").replace(['’', '′'], "'");
     let plain = PUNCT_INNER_APOSTROPHE.replace(&plain, "");
-    PUNCT_OTHER.replace(&plain, "").into_owned()
-}
-
-pub fn squash(text: &str) -> String {
-    js_trim(&WHITESPACE.replace(text, " ")).to_owned()
+    plain.chars().filter(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || SEQUEL_MARKS.contains(c)).collect()
 }
 
 pub fn compact(text: &str) -> String {
     text.replace(' ', "")
 }
 
-pub fn numerals_of(text: &str) -> Vec<Numeral> {
+pub fn numerals_of(text: &str) -> Vec<u32> {
     text.split(' ')
-        .filter_map(|word| match word {
-            _ if OBJECT_PROTOTYPE_KEYS.contains(&word) => Some(Numeral::ObjectPrototypeMember),
-            _ => roman(word).or_else(|| NUMBER_WORD.is_match(word).then(|| number(word))).map(Numeral::Value),
-        })
+        .filter_map(|word| roman(word).or_else(|| NUMBER_WORD.is_match(word).then(|| number(word))))
         .collect()
 }
 
@@ -325,8 +267,8 @@ pub fn has_ending_extra_word(title: &str) -> bool {
     ENDING_EXTRA_RX.is_match(title)
 }
 
-pub fn extra_number_of(title: &str) -> Option<&str> {
-    EXTRA_RX.find(title).and_then(|m| group(title, &m, 2))
+pub fn extra_number_of(title: &str) -> Option<u32> {
+    EXTRA_RX.find(title).and_then(|m| group(title, &m, 2)).map(number)
 }
 
 pub fn markers_of(text: &str) -> Vec<Marker> {
@@ -347,19 +289,21 @@ fn movie_index_of(text: &str) -> Option<u32> {
     first_number(&MOVIE_RX, text)
 }
 
-pub fn title_movie_index_of(title: &str, subtype: Option<&str>) -> Option<MovieIndex> {
-    if let Some(index) = movie_index_of(title) {
-        return Some(MovieIndex::Number(index));
-    }
-    let numbered = NUMBERED_MOVIE.find(title).or_else(|| (subtype == Some("movie")).then(|| CHAPTER.find(title))?);
-    numbered.and_then(|m| group(title, &m, 1)).map(|digits| MovieIndex::Text(digits.to_owned()))
+pub fn title_movie_index_of(title: &str, is_movie: bool) -> Option<u32> {
+    movie_index_of(title).or_else(|| {
+        let numbered = NUMBERED_MOVIE.find(title).or_else(|| is_movie.then(|| CHAPTER.find(title))?);
+        numbered.and_then(|m| group(title, &m, 1)).map(number)
+    })
 }
 
 pub fn title_year_of(title: &str) -> Option<u32> {
     first_number(&YEAR_RX, title).filter(|year| *year != 0)
 }
 
+// season marker of a normalised title: number, FINAL_SEASON for "final season", or none
 pub fn season_of(text: &str) -> Option<Season> {
+    // a bare ordinal in the torrent's own title ("... 4th 2026 S2") beats the S<n> the scraper adds; "lupin the 3rd" is
+    // a name
     if let Some(ordinal) = first_number(&BARE_ORDINAL, text)
         && S_NUMBER.is_match(text)
     {
@@ -371,6 +315,7 @@ pub fn season_of(text: &str) -> Option<Season> {
     if let Some(season) = first_number(&NTH_SEASON, text) {
         return Some(season);
     }
+    // a season before its part ("shingeki no kyojin 3 part 2"), not a name ("86 part 2")
     if let Some(season) = first_number(&SEASON_BEFORE_PART, text)
         && season as usize <= ORDINAL_WORDS.len()
     {
@@ -388,6 +333,7 @@ pub fn season_of(text: &str) -> Option<Season> {
     if let Some(m) = ROMAN_SEASON_RX.find(text) {
         return group(text, &m, 1).and_then(roman);
     }
+    // a roman numeral ending a title of three or more words ("... gakkou e kayou ii"), not "lupin iii" or "mk iv"
     if let Some(m) = ENDING_ROMAN_RX.find(text) {
         return group(text, &m, 1).and_then(roman);
     }
@@ -397,22 +343,24 @@ pub fn season_of(text: &str) -> Option<Season> {
     if FINAL_RX.is_match(text) {
         return Some(FINAL_SEASON);
     }
+    // not the 2 of "ranma 1 2" (Ranma ½): a number right after another one
     first_number(&ENDING_DIGIT, text)
 }
 
-pub fn title_base_of(title: &str, subtype: Option<&str>) -> String {
+// what a Kitsu title is matched by: the normalised title without its season, year, movie number, extra and recap words
+pub fn title_base_of(title: &str, is_movie: bool) -> String {
     let base = strip_markers(title);
     let base = STRIP_YEAR.replace(&base, " ");
     let base = STRIP_MOVIE.replace(&base, " ");
     let base = STRIP_NUMBERED_MOVIE.replace(&base, " ");
-    let chapter: &Regex = if subtype == Some("movie") { &STRIP_CHAPTER } else { &NEVER };
-    let base = chapter.replace(&base, " ");
+    let base = if is_movie { STRIP_CHAPTER.replace(&base, " ").into_owned() } else { base.into_owned() };
     let base = STRIP_SEASON.replace(&base, " ");
     let base = TRAILING_DIGIT.replace(&base, "");
     let base = STRIP_EXTRA.replace(&base, " ");
     squash(&TV_WORD.replace(&base, " "))
 }
 
+// for movie queries the words "movie" / "film" come off too ("Kakushigoto Movie")
 pub fn without_movie_words(base: &str) -> String {
     squash(&MOVIE_WORDS.replace(base, " "))
 }
@@ -424,6 +372,7 @@ pub fn seasonless_title(title: &str) -> String {
     squash(&CENTURY_YEAR.replace(&stripped, " "))
 }
 
+// a movie franchise's prefix, for numbering its movies by release ("pokemon movie 20")
 pub fn movie_prefix_of(title: &str) -> String {
     let prefix = PREFIX_SEPARATOR.split(title).into_iter().next().flatten().unwrap_or_default();
     let normalised = norm(prefix);
@@ -435,6 +384,8 @@ fn not_a_year(digits: &str) -> Option<u32> {
     (!YEAR_WORD.is_match(digits)).then(|| number(digits))
 }
 
+// an episode range ("15-18") or a trailing absolute number ("boku no hero academia 138"), never a year; "dr stone - new
+// world 16 v2", not the season of "S17" (normalised to "s 17")
 fn episode_number_of(query: &str) -> Option<u32> {
     if let Some(m) = EPISODE_RANGE.find(query)
         && let Some(episode) = group(query, &m, 1).and_then(not_a_year)
@@ -445,7 +396,10 @@ fn episode_number_of(query: &str) -> Option<u32> {
     TRAILING_EPISODE.find(&normalised).and_then(|m| group(&normalised, &m, 1)).and_then(not_a_year)
 }
 
+// A search query: `base` is what titles are matched by, the rest is what the query asks for besides the name.
 pub fn parse_query(query: &str) -> ParsedQuery {
+    // a season before a bracketed alternative title ("kuroko's basketball 2 (kuroko no baske)") goes after it, unless a
+    // word ties the number to the name ("exogenesis symphony part 3 (redemption)")
     let query = SEASON_BEFORE_ALTERNATIVE_TITLE.replace(query, " $2 $1");
     let query = REVISION.replace(&query, "$1").into_owned();
     let is_pack = PACK_RX.is_match(&query);
@@ -464,6 +418,7 @@ pub fn parse_query(query: &str) -> ParsedQuery {
     let markers = markers_of(&text);
     let theater = THEATER.search(&text).is_some();
     text = squash(&strip_markers(&text));
+    // the extra word and its number ("ova 1", "special 01", "(p1)") come off before seasons are read
     let extra = if is_pack {
         None
     } else {
@@ -475,7 +430,12 @@ pub fn parse_query(query: &str) -> ParsedQuery {
     if extra.is_some() {
         text = squash(&P_NUMBER.replace(&EXTRA_RX.replace(&text, " "), " "));
     }
+    // a release revision ("v2", "v1.5") isn't a season, but stays in the text: titles hold such numbers ("Duel Masters
+    // Victory V3")
     let season = if movie.is_some() { None } else { season_of(&squash(&RELEASE_REVISION.replace(&text, " "))) };
+    // the part asked for: "shingeki no kyojin 3 part 2", or a part alone ("mushoku tensei cour 2"; the 86 of "86 part
+    // 2" isn't a season); a cour beside the scraper's S<n> is the season's part ("bleach thousand-year blood war (cour
+    // 2) 2023 S17")
     let season_part = SEASON_PART
         .find(&text)
         .map(|m| (group(&text, &m, 1).map(number), group(&text, &m, 2).map(number).unwrap_or_default()));
@@ -518,27 +478,32 @@ pub fn parse_query(query: &str) -> ParsedQuery {
     }
 }
 
+// several alternative titles in one name ("Doupo Cangqiong / Dou Po Cang Qiong / Battle Through The Heavens"); cleaned
+// queries have lost the "/" and keep a double space, which "&" removal also leaves ("cloak  dagger"), so a double-space
+// split needs two words in every part
 pub fn split_titles(query: &str) -> Vec<String> {
     let separated: Vec<String> = TITLE_SEPARATOR
         .split(query)
         .into_iter()
         .flatten()
-        .map(js_trim)
+        .map(str::trim)
         .filter(|part| !part.is_empty())
         .map(str::to_owned)
         .collect();
     if separated.len() > 1 {
         return separated;
     }
+    // "Wu Ni (Martial Inverse)": a bracketed alternative title ("(TV)" and "(2019)" stay); an extra word ending the
+    // name before the bracket asks for the bracketed title's extra too ("shingeki no kyojin ovas (attack on titan)")
     if let Some(m) = BRACKETED.find(query) {
         let [name, bracketed, rest] = [1, 2, 3].map(|index| group(query, &m, index).unwrap_or_default());
-        if FOUR_LETTERS.is_match(bracketed) && !KIND_ONLY.is_match(js_trim(bracketed)) && !js_trim(name).is_empty() {
+        if FOUR_LETTERS.is_match(bracketed) && !KIND_ONLY.is_match(bracketed.trim()) && !name.trim().is_empty() {
             let extra = ENDING_RAW_EXTRA_RX.find(name).and_then(|m| group(name, &m, 1)).unwrap_or_default();
-            return vec![js_trim(&format!("{name} {rest}")).to_owned(), squash(&format!("{bracketed} {extra} {rest}"))];
+            return vec![format!("{name} {rest}").trim().to_owned(), squash(&format!("{bracketed} {extra} {rest}"))];
         }
     }
     let spaced: Vec<&str> =
-        DOUBLE_SPACE.split(query).into_iter().flatten().map(js_trim).filter(|part| !part.is_empty()).collect();
+        DOUBLE_SPACE.split(query).into_iter().flatten().map(str::trim).filter(|part| !part.is_empty()).collect();
     if spaced.len() > 1 && spaced.iter().all(|part| part.split(' ').count() >= 2) {
         spaced.into_iter().map(str::to_owned).collect()
     } else {
@@ -546,13 +511,8 @@ pub fn split_titles(query: &str) -> Vec<String> {
     }
 }
 
-fn push_first_unit(initials: &mut Vec<u16>, word: &str) {
-    match word.encode_utf16().next() {
-        Some(unit) => initials.push(unit),
-        None => initials.extend("undefined".encode_utf16()),
-    }
-}
-
+// merge adjacent title words a query writes glued together ("shadow side" for "shadowside"), or as initials ("bw" for
+// "best wishes" / "black and white"; Kitsu's own titles only: synonyms like "Clown Arc" make chance initials like "ca")
 pub fn glue<S: AsRef<str>, Q: AsRef<str>>(title_words: &[S], query_words: &[Q], initials_ok: bool) -> Glued {
     let query: IndexSet<&str> = query_words.iter().map(AsRef::as_ref).collect();
     let title: Vec<&str> = title_words.iter().map(AsRef::as_ref).collect();
@@ -569,9 +529,10 @@ pub fn glue<S: AsRef<str>, Q: AsRef<str>>(title_words: &[S], query_words: &[Q], 
                 continue;
             }
         }
-        if initials_ok && !query.contains(word) && LOWERCASE_START.is_match(word) {
+        if initials_ok && !query.contains(word) && word.starts_with(|c: char| c.is_ascii_lowercase()) {
+            // a leading "the" only in longer initials ("thoyw" for "the hidden one year war"), up to one word more
             let (min_words, max_words) = if filler(word) { (4, 5) } else { (2, 4) };
-            let mut initials = Vec::new();
+            let mut initials = String::new();
             let mut used = 0;
             let mut j = i;
             while j < title.len() && used < max_words {
@@ -579,13 +540,9 @@ pub fn glue<S: AsRef<str>, Q: AsRef<str>>(title_words: &[S], query_words: &[Q], 
                     j += 1;
                     continue;
                 }
-                push_first_unit(&mut initials, title[j]);
+                initials.extend(title[j].chars().next());
                 used += 1;
-                if used >= min_words
-                    && let Ok(initials) = String::from_utf16(&initials)
-                    && query.contains(initials.as_str())
-                    && !query.contains(title[j])
-                {
+                if used >= min_words && query.contains(initials.as_str()) && !query.contains(title[j]) {
                     out.words.push(initials.clone());
                     out.initials.insert(initials);
                     i = j + 1;

@@ -1,13 +1,11 @@
-use kitsu_search::index::{AbsoluteEnd, Entry, Index};
+use kitsu_search::index::{Entry, Index};
 use kitsu_search::query::{ParsedQuery, parse_query};
 use kitsu_search::rank::{
     Coverage, confidence_of, has_ordinal_episodes, one_edit_apart, truthy_episode, truthy_part, truthy_season,
     truthy_year, within_ordinal_span,
 };
 use kitsu_search::records::{Aliases, ImdbMappings, TitleRecord};
-use kitsu_search::rules::{
-    EpisodeSpan, age_tie_break, bonus, earliest_of, episode_in_range, extra_number_is, gt, same_year, year_near,
-};
+use kitsu_search::rules::{age_tie_break, bonus, earliest_of, episode_in_range, gt, same_year, year_near};
 use kitsu_search::search::trim_query;
 use serde_json::{Value, json};
 
@@ -30,7 +28,7 @@ fn entries(rows: &[Value]) -> Vec<Entry> {
 }
 
 #[test]
-fn gt_treats_a_missing_value_as_js_undefined() {
+fn gt_is_false_for_a_missing_value() {
     let table = [(None, 1, false), (Some(1), 1, false), (Some(2), 1, true), (Some(0), 0, false), (None, 0, false)];
     for (value, than, expected) in table {
         assert_eq!(gt(value, than), expected, "{value:?} > {than}");
@@ -76,40 +74,19 @@ fn year_near_puts_a_null_start_year_far_from_any_year() {
 }
 
 #[test]
-fn extra_number_is_compares_the_digits_as_a_number() {
-    let table = [(None, 0, false), (Some("07"), 7, true), (Some("0"), 0, true), (Some("2"), 3, false)];
-    for (digits, number, expected) in table {
-        assert_eq!(extra_number_is(digits, number), expected, "+{digits:?} === {number}");
-    }
-}
-
-#[test]
-fn episode_span_is_unbounded_for_a_falsy_count_or_an_open_end() {
-    let table = [
-        (EpisodeSpan::of_count(None), EpisodeSpan::Unbounded),
-        (EpisodeSpan::of_count(Some(0)), EpisodeSpan::Unbounded),
-        (EpisodeSpan::of_count(Some(12)), EpisodeSpan::Count(12)),
-        (EpisodeSpan::of_absolute(1, AbsoluteEnd::Open), EpisodeSpan::Unbounded),
-        (EpisodeSpan::of_absolute(13, AbsoluteEnd::Episode(24)), EpisodeSpan::Count(12)),
-    ];
-    for (got, expected) in table {
-        assert_eq!(got, expected);
-    }
-}
-
-#[test]
 fn episode_in_range_needs_a_start_past_the_first_episode() {
     let table = [
-        (5, None, EpisodeSpan::Unbounded, false),
-        (5, Some(1), EpisodeSpan::Unbounded, false),
-        (11, Some(12), EpisodeSpan::Unbounded, false),
-        (500, Some(12), EpisodeSpan::Unbounded, true),
-        (13, Some(12), EpisodeSpan::Count(11), true),
-        (22, Some(12), EpisodeSpan::Count(11), true),
-        (23, Some(12), EpisodeSpan::Count(11), false),
+        (5, None, None, false),
+        (5, Some(1), None, false),
+        (11, Some(12), None, false),
+        (500, Some(12), None, true),
+        (500, Some(12), Some(0), true),
+        (13, Some(12), Some(11), true),
+        (22, Some(12), Some(11), true),
+        (23, Some(12), Some(11), false),
     ];
-    for (episode, from, span, expected) in table {
-        assert_eq!(episode_in_range(episode, from, span), expected, "{episode} in {from:?} {span:?}");
+    for (episode, from, count, expected) in table {
+        assert_eq!(episode_in_range(episode, from, count), expected, "{episode} in {from:?} {count:?}");
     }
 }
 
@@ -161,7 +138,7 @@ fn age_tie_break_is_zero_without_a_start_year() {
 }
 
 #[test]
-fn one_edit_apart_reads_past_the_end_as_js_undefined() {
+fn one_edit_apart_finds_one_insertion_deletion_replacement_or_swap() {
     let table = [
         ("koufu", "kyoufu", true),
         ("abc", "abc", false),
@@ -196,7 +173,7 @@ fn confidence_takes_the_better_of_partial_and_glued_coverage() {
 }
 
 #[test]
-fn trim_query_cuts_at_250_utf16_units_and_drops_the_last_partial_word() {
+fn trim_query_cuts_at_250_chars_and_drops_the_last_partial_word() {
     let long = format!("{}tail", "word ".repeat(52));
     let pair_cut = format!("{}😀x", "ab ".repeat(83));
     let lone_word = format!("{}😀 rest", "a".repeat(249));
@@ -204,7 +181,7 @@ fn trim_query_cuts_at_250_utf16_units_and_drops_the_last_partial_word() {
         ("short query".to_owned(), "short query".to_owned()),
         (long, "word ".repeat(50).trim_end().to_owned()),
         (pair_cut, "ab ".repeat(83).trim_end().to_owned()),
-        (lone_word, format!("{}\u{FFFD}", "a".repeat(249))),
+        (lone_word, format!("{}😀", "a".repeat(249))),
     ];
     for (query, expected) in table {
         assert_eq!(trim_query(&query), expected, "{query:?}");
@@ -212,7 +189,8 @@ fn trim_query_cuts_at_250_utf16_units_and_drops_the_last_partial_word() {
 }
 
 #[test]
-fn trim_query_keeps_the_episode_of_a_cut_inside_a_surrogate_pair() {
-    let query = format!("{}(01-03😀", "a".repeat(243));
-    assert_eq!(parse_query(&trim_query(&query)).episode, Some(3));
+fn trim_query_counts_an_astral_char_once() {
+    let exact = format!("{}😀", "a".repeat(249));
+    let over = format!("{} x😀y", "a".repeat(247));
+    assert_eq!((trim_query(&exact), trim_query(&over)), (exact.as_str(), "a".repeat(247).as_str()));
 }

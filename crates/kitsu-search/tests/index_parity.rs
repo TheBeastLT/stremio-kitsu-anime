@@ -4,7 +4,7 @@ use std::io::{BufRead, BufReader};
 use std::path::PathBuf;
 use std::sync::LazyLock;
 
-use kitsu_search::index::{AbsoluteEnd, Entry, Index, Trigram, Variant, VariantSource};
+use kitsu_search::index::{Entry, Index, Trigram, Variant, VariantSource};
 use kitsu_search::records::Sources;
 use serde::Deserialize;
 use serde_json::{Map, Value, json};
@@ -65,15 +65,16 @@ fn joined(list: &[u32]) -> String {
     list.iter().map(u32::to_string).collect::<Vec<_>>().join(",")
 }
 
-fn sorted_words(index: &Index) -> Vec<u32> {
-    let mut ids: Vec<u32> = (0..index.word_count() as u32).collect();
-    ids.sort_by(|&a, &b| index.word(a).encode_utf16().cmp(index.word(b).encode_utf16()));
-    ids
+fn sorted_words(index: &Index) -> Vec<(&str, &[u32])> {
+    let mut words: Vec<(&str, &[u32])> =
+        index.postings().iter().map(|(word, posting)| (word.as_str(), posting.as_slice())).collect();
+    words.sort_by(|a, b| a.0.encode_utf16().cmp(b.0.encode_utf16()));
+    words
 }
 
 fn code_units(gram: Trigram) -> String {
-    gram.iter().fold(String::new(), |mut out, unit| {
-        write!(out, "{unit:04x}").unwrap();
+    gram.iter().fold(String::new(), |mut out, &c| {
+        write!(out, "{:04x}", u32::from(c)).unwrap();
         out
     })
 }
@@ -88,7 +89,7 @@ fn sorted_grams(index: &Index) -> Vec<Trigram> {
 fn counts_match_the_golden() {
     let Some(golden) = read_json::<IndexGolden>("index.json") else { return };
     assert_eq!(
-        (INDEX.entries().len(), INDEX.variants(), INDEX.word_count()),
+        (INDEX.entries().len(), INDEX.variants(), INDEX.postings().len()),
         (golden.entries, golden.variants, golden.words)
     );
 }
@@ -97,8 +98,8 @@ fn counts_match_the_golden() {
 fn every_posting_list_matches_the_golden_hash() {
     let Some(golden) = read_json::<IndexGolden>("index.json") else { return };
     let mut hash = Sha256::new();
-    for id in sorted_words(&INDEX) {
-        hash.update(format!("{}\t{}\n", INDEX.word(id), joined(INDEX.posting(id))));
+    for (word, posting) in sorted_words(&INDEX) {
+        hash.update(format!("{word}\t{}\n", joined(posting)));
     }
     assert_eq!(format!("{:x}", hash.finalize()), golden.postings_sha256);
 }
@@ -109,19 +110,16 @@ fn first_and_last_posting_lists_match_the_golden() {
     let words = sorted_words(&INDEX);
     let sampled = words[..5].iter().chain(&words[words.len() - 5..]);
     let expected = golden.first.iter().chain(&golden.last);
-    for (&id, posting) in sampled.zip(expected) {
-        let ids: Vec<u64> = INDEX.posting(id).iter().map(|&i| INDEX.entries()[i as usize].id).collect();
-        assert_eq!(
-            (INDEX.word(id), INDEX.posting(id), ids),
-            (posting.word.as_str(), &posting.entries[..], posting.ids.clone())
-        );
+    for (&(word, entries), posting) in sampled.zip(expected) {
+        let ids: Vec<u64> = entries.iter().map(|&i| INDEX.entries()[i as usize].id).collect();
+        assert_eq!((word, entries, ids), (posting.word.as_str(), &posting.entries[..], posting.ids.clone()));
     }
 }
 
 #[test]
 fn the_first_word_is_the_empty_word_with_a_posting_list() {
     let words = sorted_words(&INDEX);
-    assert_eq!(INDEX.word(words[0]), "");
+    assert_eq!(words[0].0, "");
     let entries: Vec<u64> = INDEX.entries_with("").iter().map(|&i| INDEX.entries()[i as usize].id).collect();
     assert_ne!(entries.len(), 0);
 }
@@ -156,7 +154,7 @@ fn variant_json(variant: &Variant) -> Value {
     insert(&mut object, "movie", variant.movie);
     insert(&mut object, "season", variant.season);
     object.insert("markers".into(), json!(variant.markers));
-    insert(&mut object, "extraNumber", variant.extra_number.clone());
+    insert(&mut object, "extraNumber", variant.extra_number);
     match variant.source {
         VariantSource::Own { abbreviated } => {
             object.insert("abbreviated".into(), json!(abbreviated));
@@ -198,10 +196,7 @@ fn entry_json(entry: &Entry) -> Value {
     insert(&mut object, "groupKey", entry.group_key.clone());
     if let Some(absolute) = entry.absolute {
         object.insert("absFrom".into(), json!(absolute.from));
-        let to = match absolute.to {
-            AbsoluteEnd::Episode(episode) => json!(episode),
-            AbsoluteEnd::Open => json!("Infinity"),
-        };
+        let to = absolute.count.map_or_else(|| json!("Infinity"), |count| json!(absolute.from + count - 1));
         object.insert("absTo".into(), to);
     }
     insert(&mut object, "splitSeason", entry.split_season);
@@ -214,7 +209,12 @@ fn every_entry_matches_the_golden() {
     let mut total = 0;
     let mut differences = Vec::new();
     for (line, entry) in BufReader::new(File::open(path).unwrap()).lines().zip(INDEX.entries()) {
-        let expected: Value = serde_json::from_str(&line.unwrap()).unwrap();
+        let mut expected: Value = serde_json::from_str(&line.unwrap()).unwrap();
+        for variant in expected["titles"].as_array_mut().unwrap() {
+            if let Some(digits) = variant.get("extraNumber").and_then(Value::as_str) {
+                variant["extraNumber"] = json!(digits.parse::<u32>().unwrap());
+            }
+        }
         let got = entry_json(entry);
         total += 1;
         if got != expected {

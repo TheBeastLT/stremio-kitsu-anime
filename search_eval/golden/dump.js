@@ -6,13 +6,11 @@ const { norm, parseQuery } = require('../../lib/title_query');
 const { readRecords, withAliases } = require('../../lib/title_records');
 const { getImdbMapping } = require('../../lib/metadataEnrich');
 
-const { distance, MAX_QUERY_LENGTH } = _internals;
+const { MAX_QUERY_LENGTH } = _internals;
 const OUT = __dirname;
 const DECIMALS = 12;
 const CANDIDATE_QUERIES = 200;
 const CANDIDATE_STEP = 15;
-const JW_PAIRS = 5000;
-const LOG_VALUES = 200;
 const SMOKE_PER_KIND = 20;
 const TOP = 20;
 
@@ -24,17 +22,6 @@ const replacer = (key, value) => {
   return Number.isInteger(value) ? value : fixed(value);
 };
 const line = value => JSON.stringify(value, replacer);
-
-function random(seed) {
-  let state = seed >>> 0;
-  return () => {
-    state = (state + 0x6D2B79F5) >>> 0;
-    let t = state;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
 
 const unique = list => [...new Set(list)];
 const writeLines = (name, lines) => fs.writeFileSync(path.join(OUT, name), lines.map(item => `${item}\n`).join(''));
@@ -90,67 +77,6 @@ function trigramsDump(index) {
   };
 }
 
-function mutate(word, rand) {
-  const chars = [...word];
-  if (chars.length < 2) return `${word}${word}`;
-  const at = Math.floor(rand() * (chars.length - 1));
-  const kind = Math.floor(rand() * 4);
-  if (kind === 0) [chars[at], chars[at + 1]] = [chars[at + 1], chars[at]];
-  else if (kind === 1) chars.splice(at, 1);
-  else if (kind === 2) chars.splice(at, 0, chars[at]);
-  else chars[at] = 'x';
-  return chars.join('');
-}
-
-function jwPairs(index, queries, titles) {
-  const rand = random(20261025);
-  const pick = list => list[Math.floor(rand() * list.length)];
-  const normed = unique(titles.flatMap(title => norm(title).split(' ')).filter(Boolean));
-  const queryWords = unique(queries.slice(0, 3000).flatMap(query => norm(query).split(' ')).filter(Boolean));
-  const raw = unique(titles.flatMap(title => title.split(/\s+/)).filter(Boolean));
-  const nonAscii = unique([...normed, ...raw]).filter(word => /[^\x00-\x7f]/.test(word) && !/[\u{10000}-\u{10ffff}]/u.test(word));
-  const astral = unique([...normed, ...raw]).filter(word => /[\u{10000}-\u{10ffff}]/u.test(word));
-  const synthetic = ['😀', '😀😁', 'a😀b', '𠮷野家', '𠮷', 'ab𝒳yz', '😀😀😀😀', '𝒳𝒴𝒵'];
-  const astralPool = [...astral, ...synthetic];
-  const byLead = new Map();
-  normed.forEach(word => (byLead.get(word.slice(0, 2)) || byLead.set(word.slice(0, 2), []).get(word.slice(0, 2))).push(word));
-  const leads = [...byLead.values()].filter(list => list.length > 1);
-  const pairs = [
-    ['', ''], ['', 'a'], ['a', ''], ['a', 'a'], ['a', 'b'], ['ab', 'ba'], ['abc', 'abd'], ['martha', 'marhta'],
-    ['dixon', 'dicksonx'], ['jellyfish', 'smellyfish'], ['Naruto', 'naruto'], ['naruto', 'narutoo'],
-    ['naruto shippuden', 'naruto shippuuden'], ['one piece', 'one piece film z'], ['x', 'xyz'], ['😀', '😀'],
-    ['😀', '😁'], ['𠮷野家', '吉野家'],
-  ];
-  const add = (count, make) => { for (let i = 0; i < count; i++) pairs.push(make()); };
-  add(1400, () => [pick(normed), pick(normed)]);
-  add(300, () => [pick(queryWords), pick(normed)]);
-  add(900, () => { const list = pick(leads); return [pick(list), pick(list)]; });
-  add(500, () => { const word = pick(normed); return [word, mutate(word, rand)]; });
-  add(500, () => [pick(nonAscii), pick(nonAscii)]);
-  add(200, () => { const word = pick(nonAscii); return [word, mutate(word, rand)]; });
-  add(150, () => [pick(astralPool), pick(astralPool)]);
-  add(100, () => { const word = pick(astralPool); return [word, mutate(word, rand)]; });
-  add(50, () => [pick(astralPool), pick(raw)]);
-  add(300, () => [norm(pick(queries)), norm(pick(titles))]);
-  add(300, () => {
-    const base = parseQuery(pick(queries)).base || 'x';
-    const { entries, candidatesFor } = index._internals;
-    const candidate = entries[pick(candidatesFor(parseQuery(base), base.split(' ')).concat([0]))];
-    return [base, pick(candidate.titles).base];
-  });
-  while (pairs.length < JW_PAIRS) pairs.push([pick(raw), pick(raw)]);
-  return pairs.slice(0, JW_PAIRS).map(([a, b]) => ({ a, b, distance: distance(a, b) }));
-}
-
-function logValues(index) {
-  const { entries, entriesWithWord } = index._internals;
-  const counts = unique([...entriesWithWord.values()].map(list => list.length)).sort((a, b) => a - b);
-  const wanted = LOG_VALUES - 1;
-  const picked = unique(Array.from({ length: wanted }, (_, i) => counts[Math.round(i * (counts.length - 1) / (wanted - 1))]));
-  return [0, ...picked].map(count => entries.length / (1 + count))
-      .map(x => `{"x":${x.toPrecision(17)},"ln":${Math.log(x).toPrecision(17)}}`);
-}
-
 function searchDump(index, queries) {
   return queries.map(query => {
     const results = index.search(query, { limit: TOP, minConfidence: 0 });
@@ -177,19 +103,10 @@ function candidatesDump(index, sampleQueries) {
   });
 }
 
-const NON_ASCII_ROWS = 5;
-const ASTRAL_ROWS = 2;
-const isAstral = text => /[\u{10000}-\u{10ffff}]/u.test(JSON.parse(text).a + JSON.parse(text).b);
-const isNonAscii = text => !isAstral(text) && /[^\x00-\x7f]/.test(JSON.parse(text).a + JSON.parse(text).b);
-
 function smokeDump(files) {
   return Object.entries(files).flatMap(([kind, lines]) => {
     const step = Math.max(1, Math.floor(lines.length / SMOKE_PER_KIND));
-    const chosen = kind === 'jw'
-        ? [...lines.filter(isAstral).slice(0, ASTRAL_ROWS), ...lines.filter(isNonAscii).slice(0, NON_ASCII_ROWS)]
-        : [];
-    const rest = lines.filter((text, i) => i % step === 0 && !chosen.includes(text));
-    return [...chosen, ...rest].slice(0, SMOKE_PER_KIND).map(text => `{"kind":${JSON.stringify(kind)},"row":${text}}`);
+    return lines.filter((_, i) => i % step === 0).slice(0, SMOKE_PER_KIND).map(text => `{"kind":${JSON.stringify(kind)},"row":${text}}`);
   });
 }
 
@@ -204,8 +121,6 @@ function main() {
     parse_query: queries.map(query => line({ query, parsed: parseQuery(query) })),
     search: searchDump(index, queries),
     candidates: candidatesDump(index, sampleQueries),
-    jw: jwPairs(index, queries, titles).map(pair => line(pair)),
-    log: logValues(index),
   };
   Object.entries(files).forEach(([kind, lines]) => writeLines(`${kind}.jsonl`, lines));
   fs.writeFileSync(path.join(OUT, 'index.json'), `${JSON.stringify(indexDump(index), null, 1)}\n`);

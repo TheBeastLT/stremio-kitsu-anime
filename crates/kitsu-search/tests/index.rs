@@ -1,6 +1,6 @@
 use std::sync::LazyLock;
 
-use kitsu_search::index::{AbsoluteEnd, AbsoluteEpisodes, Entry, Index, VariantSource};
+use kitsu_search::index::{AbsoluteEpisodes, Entry, Index, VariantSource};
 use kitsu_search::records::{TitleRecord, read_aliases, read_imdb_mapping};
 use serde_json::{Value, json};
 
@@ -104,12 +104,12 @@ fn ignores_a_season_zero_mapping() {
 
 #[test]
 fn lays_out_absolute_episodes_by_imdb_season() {
-    assert_eq!(entry(2).absolute, Some(AbsoluteEpisodes { from: 1, to: AbsoluteEnd::Episode(26) }));
+    assert_eq!(entry(2).absolute, Some(AbsoluteEpisodes { from: 1, count: Some(26) }));
 }
 
 #[test]
 fn leaves_an_entry_without_episode_count_open() {
-    assert_eq!(entry(3).absolute, Some(AbsoluteEpisodes { from: 27, to: AbsoluteEnd::Open }));
+    assert_eq!(entry(3).absolute, Some(AbsoluteEpisodes { from: 27, count: None }));
 }
 
 #[test]
@@ -121,10 +121,7 @@ fn stops_the_layout_after_an_open_entry() {
 fn sorts_season_zero_first_in_the_layout() {
     assert_eq!(
         (entry(10).absolute, entry(9).absolute),
-        (
-            Some(AbsoluteEpisodes { from: 1, to: AbsoluteEnd::Episode(12) }),
-            Some(AbsoluteEpisodes { from: 13, to: AbsoluteEnd::Episode(24) })
-        )
+        (Some(AbsoluteEpisodes { from: 1, count: Some(12) }), Some(AbsoluteEpisodes { from: 13, count: Some(12) }))
     );
 }
 
@@ -169,8 +166,9 @@ fn groups_seasons_by_seasonless_canonical_title() {
 }
 
 #[test]
-fn interns_words_in_first_seen_order() {
-    let words: Vec<(&str, &[u32])> = (0..12).map(|id| (INDEX.word(id), INDEX.posting(id))).collect();
+fn indexes_words_in_first_seen_order() {
+    let words: Vec<(&str, &[u32])> =
+        INDEX.postings().iter().take(12).map(|(word, posting)| (word.as_str(), posting.as_slice())).collect();
     assert_eq!(
         words,
         [
@@ -191,7 +189,7 @@ fn interns_words_in_first_seen_order() {
 }
 
 #[test]
-fn builds_trigrams_over_utf16_units() {
-    let grams: Vec<[u16; 3]> = kitsu_search::index::trigrams_of("a😀b").into_iter().collect();
-    assert_eq!(grams, [[0x61, 0xd83d, 0xde00], [0xd83d, 0xde00, 0x62]]);
+fn builds_trigrams_over_chars() {
+    let grams: Vec<[char; 3]> = kitsu_search::index::trigrams_of("a😀bc").into_iter().collect();
+    assert_eq!(grams, [['a', '😀', 'b'], ['😀', 'b', 'c']]);
 }

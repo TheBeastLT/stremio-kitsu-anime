@@ -5,15 +5,10 @@ use fastjs_regex::Regex;
 use indexmap::IndexMap;
 use serde_json::Value;
 
-use crate::norm::js_trim;
 use crate::records::TitleRecord;
+use crate::rx;
 
-static LOWERCASE_START: LazyLock<Regex> = LazyLock::new(|| rx(r"^\p{Ll}", "u"));
 static NUMBERS_ONLY: LazyLock<Regex> = LazyLock::new(|| rx(r"^[\d\s.,&+-]+(?:and[\d\s.,-]+)?$", "i"));
-
-fn rx(source: &str, flags: &str) -> Regex {
-    Regex::new(source, flags).unwrap_or_else(|error| panic!("invalid pattern {source}: {error}"))
-}
 
 fn ascii_alnum_count(title: &str) -> usize {
     title.chars().filter(char::is_ascii_alphanumeric).count()
@@ -24,9 +19,9 @@ fn has_ascii_alnum(title: &str) -> bool {
 }
 
 fn is_title_fragment(title: &str, pieces: &HashSet<&str>) -> bool {
-    let trimmed = js_trim(title);
+    let trimmed = title.trim();
     pieces.contains(trimmed)
-        && (LOWERCASE_START.is_match(trimmed) || ascii_alnum_count(title) <= 3 || NUMBERS_ONLY.is_match(trimmed))
+        && (trimmed.starts_with(char::is_lowercase) || ascii_alnum_count(title) <= 3 || NUMBERS_ONLY.is_match(trimmed))
 }
 
 fn strings(value: Option<&Value>) -> Vec<&str> {
@@ -61,7 +56,7 @@ impl TitleRecord {
             .chain(titles.values().map(String::as_str))
             .chain(abbreviated.iter().copied())
             .filter(|title| !title.is_empty())
-            .flat_map(|title| title.split(',').skip(1).map(js_trim))
+            .flat_map(|title| title.split(',').skip(1).map(str::trim))
             .collect();
         let abbreviated_titles = abbreviated
             .into_iter()

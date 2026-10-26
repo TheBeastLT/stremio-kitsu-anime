@@ -1,22 +1,19 @@
 use std::sync::LazyLock;
 
-use fastjs_regex::{Regex, byte_index, utf16_len};
+use fastjs_regex::Regex;
 
 use crate::index::Index;
-use crate::norm::{js_trim, norm};
+use crate::norm::norm;
 use crate::query::{parse_query, split_titles};
 use crate::rank::{MIN_CONFIDENCE, Ranker, Run, confidence};
+use crate::rx;
 use crate::score::{EXACT_SYNONYM, Query};
 
+// Torrent titles stay well under this (the longest of 51k real queries is 188); longer ones only cost scoring time.
 pub const MAX_QUERY_LENGTH: usize = 250;
 pub const LIMIT: usize = 20;
 
-fn rx(source: &str) -> Regex {
-    Regex::new(source, "").unwrap_or_else(|error| panic!("invalid pattern {source}: {error}"))
-}
-
-static TRAILING_WORD: LazyLock<Regex> = LazyLock::new(|| rx(r"\s+\S*$"));
-static SPACES: LazyLock<Regex> = LazyLock::new(|| rx(r"(\s+)"));
+static SPACES: LazyLock<Regex> = LazyLock::new(|| rx(r"(\s+)", ""));
 
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub struct Hit {
@@ -34,15 +31,10 @@ pub struct Searcher {
     index: Index,
 }
 
-pub fn trim_query(query: &str) -> std::borrow::Cow<'_, str> {
-    if utf16_len(query) <= MAX_QUERY_LENGTH {
-        return query.into();
-    }
-    let mut cut = query[..byte_index(query, MAX_QUERY_LENGTH)].to_owned();
-    if utf16_len(&cut) < MAX_QUERY_LENGTH {
-        cut.push('\u{FFFD}');
-    }
-    TRAILING_WORD.replace(&cut, "").into_owned().into()
+pub fn trim_query(query: &str) -> &str {
+    let Some((cut, _)) = query.char_indices().nth(MAX_QUERY_LENGTH) else { return query };
+    let cut = &query[..cut];
+    cut.rfind(char::is_whitespace).map_or(cut, |at| cut[..at].trim_end())
 }
 
 impl Searcher {
@@ -68,6 +60,9 @@ impl Searcher {
     }
 
     fn split_rerun(&self, trimmed: &str, limit: usize, results: Option<Run>) -> Option<Run> {
+        // the whole name matched weakly, or confidently while no title equals it (its titles glued: "tensei shitara
+        // slime datta ken (that time i got reincarnated as a slime)"): it may hold several alternative titles; a part
+        // only wins by matching better, against a confident whole name only with every part naming that entry
         let weak = !results.as_ref().is_some_and(|run| run.confidence >= MIN_CONFIDENCE);
         let parts = match &results {
             Some(run) if !weak && run.top().candidate.title.score >= EXACT_SYNONYM => return results,
@@ -106,6 +101,9 @@ impl Searcher {
         if replaces { Some(runs.swap_remove(best)) } else { results }
     }
 
+    // the last fallbacks, for query words one letter off a word of the top entry's titles (an uploader's "Koufu
+    // Collector"): the query with those words spelt as the title does, ranked anew when that is confident (a misspelt
+    // word scores low: "hosizora kiseki"); else the top entry counting them as found
     fn typo_rerun(&self, trimmed: &str, limit: usize, results: Option<Run>) -> Option<Run> {
         let Some(corrections) = results.as_ref().and_then(|run| run.typo_corrections.as_ref()) else {
             return results;
@@ -118,7 +116,7 @@ impl Searcher {
             .into_iter()
             .map(|token| {
                 let token = token.unwrap_or_default();
-                corrections.get(js_trim(&norm(token))).map_or(token, String::as_str)
+                corrections.get(&norm(token)).map_or(token, String::as_str)
             })
             .collect();
         match self.rank(&corrected, limit) {
@@ -130,9 +128,9 @@ impl Searcher {
     pub fn search_with(&self, query: &str, limit: usize, min_confidence: f64) -> Ranking {
         let trimmed = trim_query(query);
         let ranked_limit = limit.max(1);
-        let results = self.rank(&trimmed, ranked_limit);
-        let results = self.split_rerun(&trimmed, ranked_limit, results);
-        let Some(mut run) = self.typo_rerun(&trimmed, ranked_limit, results) else {
+        let results = self.rank(trimmed, ranked_limit);
+        let results = self.split_rerun(trimmed, ranked_limit, results);
+        let Some(mut run) = self.typo_rerun(trimmed, ranked_limit, results) else {
             return Ranking { hits: Vec::new(), confidence: None };
         };
         if let Some(typo) = run.typo_confidence

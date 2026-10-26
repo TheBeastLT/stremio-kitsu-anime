@@ -3,7 +3,7 @@ use std::sync::{Arc, LazyLock};
 use async_trait::async_trait;
 use fastjs_regex::Regex;
 use futures::future::{join_all, try_join_all};
-use kitsu_search::{SharedIndex, norm::js_trim};
+use kitsu_search::SharedIndex;
 use serde_json::{Map, Value, json};
 
 use super::{
@@ -351,7 +351,7 @@ impl Addon {
 }
 
 fn search_ids(index: &SharedIndex, mapping: &Mapping, query: &str) -> Vec<String> {
-    let trimmed = js_trim(query);
+    let trimmed = query.trim();
     if SEARCH_IMDB_ID.is_match(trimmed) {
         let imdb_id = trimmed.to_ascii_lowercase();
         return mapping.kitsu_ids_for_imdb(&imdb_id).into_iter().take(PAGE_SIZE as usize).collect();

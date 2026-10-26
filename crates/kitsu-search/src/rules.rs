@@ -1,81 +1,81 @@
 use std::sync::LazyLock;
 
-use fastjs_regex::{Regex, utf16_len};
+use fastjs_regex::Regex;
 
-use crate::index::{AbsoluteEnd, Entry, Index, Subtype};
+use crate::index::{Entry, Index, Subtype};
 use crate::norm::norm;
 use crate::query::{
-    FINAL_SEASON, Marker, ParsedQuery, Season, compact, ending_extra_word, extra_family, punct_key, roman_numeral,
-    season_of,
+    FINAL_SEASON, Marker, ParsedQuery, SEQUEL_MARKS, Season, compact, ending_extra_word, extra_family, punct_key,
+    roman_numeral, season_of,
 };
 use crate::rank::{Candidate, is_extra_entry, truthy_episode, truthy_part, truthy_season, truthy_year};
+use crate::rx;
 
+// How far below the best title score a candidate still counts for a rule.
 pub mod band {
-    pub const TIE: f64 = 0.06;
-    pub const REACH: f64 = 0.1;
+    pub const TIE: f64 = 0.06; // about as good as the best: type, season and age tie-breaks
+    pub const REACH: f64 = 0.1; // season, numeral and episode rules
     pub const YEAR: f64 = 0.15;
     pub const EARLIER_PART: f64 = 0.2;
-    pub const ORDINAL_FAMILY: usize = 3;
-    pub const ORDINAL_SPAN: u32 = 100;
-    pub const ORDINAL_EPISODES: u32 = 10;
-    pub const ORDINAL: f64 = 0.2;
-    pub const DISTINCTIVE: f64 = 0.2;
-    pub const SIBLING: f64 = 0.01;
+    pub const ORDINAL_FAMILY: usize = 3; // more series sharing the name are a long franchise: its count says nothing
+    pub const ORDINAL_SPAN: u32 = 100; // episodes of an earlier series that count as one season
+    pub const ORDINAL_EPISODES: u32 = 10; // episodes of a series counted as a season
+    pub const ORDINAL: f64 = 0.2; // a series entry counted as the queried season, below the best title match
+    pub const DISTINCTIVE: f64 = 0.2; // a candidate holding the query's distinctive words
+    pub const SIBLING: f64 = 0.01; // an earlier season matching as well
+    // an extra / movie of the requested kind holding the franchise name lands this far below the best, and up to
+    // REQUESTED_KIND_SPREAD higher the closer its title is
     pub const REQUESTED_KIND: f64 = 0.04;
     pub const REQUESTED_KIND_SPREAD: f64 = 0.03;
 }
 
 pub mod bonus {
     pub const SEASON_MATCH: f64 = 0.08;
-    pub const SEASON_MISMATCH: f64 = -0.06;
-    pub const SPLIT_SEASON: f64 = 0.03;
-    pub const SEASON_WORD: f64 = 0.03;
-    pub const LATER_SEASON_EXTRA: f64 = -0.03;
+    pub const SEASON_MISMATCH: f64 = -0.06; // a known season other than the queried one, when another candidate has it
+    pub const SPLIT_SEASON: f64 = 0.03; // the split-numbered season, when no entry has the queried season itself
+    pub const SEASON_WORD: f64 = 0.03; // "S2" for a title saying "season 2" (not "part 2")
+    pub const LATER_SEASON_EXTRA: f64 = -0.03; // "2nd Season Special" for an extra request without a season
     pub const PUNCTUATED_SEQUEL: f64 = 0.08;
-    pub const WHOLE_QUERY_TITLE: f64 = 0.03;
-    pub const DISTINCTIVE_WORDS: f64 = 0.2;
+    pub const WHOLE_QUERY_TITLE: f64 = 0.03; // the whole query, extra words included, is a title
+    pub const DISTINCTIVE_WORDS: f64 = 0.2; // band::DISTINCTIVE
+    // per share of the telling query words a near-equal match lacks, against the best covering one
     pub const MISSING_WORDS: f64 = -0.3;
     pub const EPISODE_IN_RANGE: f64 = 0.12;
+    // the query's trailing number is a word of a title: its name, not an episode ("yamato 2205")
     pub const EPISODE_IN_TITLE: f64 = 0.1;
-    pub const EPISODE_OVERFLOW: f64 = -0.05;
-    pub const MARKER_MATCH: f64 = 0.2;
-    pub const MARKER_UNASKED: f64 = -0.04;
-    pub const MOVIE_LEAN: f64 = 0.07;
-    pub const SUBTYPE_STEP: f64 = -0.02;
-    pub const EXTRA_WORD_UNASKED: f64 = -0.04;
-    pub const EXTRA: f64 = 0.06;
-    pub const EXTRA_WORD_FAMILY: f64 = 0.02;
-    pub const EXTRA_WORD_FORM: f64 = 0.002;
-    pub const EXTRA_FRANCHISE_NAME: f64 = 0.02;
-    pub const EXTRA_NUMBER: f64 = 0.04;
+    pub const EPISODE_OVERFLOW: f64 = -0.05; // an episode number past the entry's episode count
+    pub const MARKER_MATCH: f64 = 0.2; // a recap / re-edit request and title
+    pub const MARKER_UNASKED: f64 = -0.04; // a recap / re-edit title for a plain query
+    pub const MOVIE_LEAN: f64 = 0.07; // a movie / compilation / theatrical request leans to movies
+    pub const SUBTYPE_STEP: f64 = -0.02; // per Subtype::rank step below TV, among equal matches
+    pub const EXTRA_WORD_UNASKED: f64 = -0.04; // a title ending in an extra word for a query not asking for one
+    pub const EXTRA: f64 = 0.06; // an OVA / special for an extra request
+    pub const EXTRA_WORD_FAMILY: f64 = 0.02; // the title ends in the queried extra word's kind ("... Specials")
+    pub const EXTRA_WORD_FORM: f64 = 0.002; // and in its exact form ("special" vs "specials")
+    pub const EXTRA_FRANCHISE_NAME: f64 = 0.02; // an extra titled exactly the franchise name ("Mazinkaiser", an OVA)
+    pub const EXTRA_NUMBER: f64 = 0.04; // "ova 2" for "OVA 2" (another number: the same against)
     pub const MOVIE_FOR_EXTRA: f64 = -0.04;
-    pub const MOVIE_SUBTYPE: f64 = 0.04;
-    pub const MOVIE_NUMBER: f64 = 0.15;
+    pub const MOVIE_SUBTYPE: f64 = 0.04; // a movie for "movie N"
+    pub const MOVIE_NUMBER: f64 = 0.15; // "movie N" for the N-th movie (another number: the same against)
     pub const YEAR: f64 = 0.12;
-    pub const YEAR_CONFIRMED: f64 = 0.15;
-    pub const YEAR_NEAR: f64 = 0.03;
+    pub const YEAR_CONFIRMED: f64 = 0.15; // when a candidate close by started that year
+    pub const YEAR_NEAR: f64 = 0.03; // a year off by one
+    // next to a season the year is usually the series premiere ("Show 2018 S03")
     pub const YEAR_WITH_SEASON: f64 = 0.03;
     pub const YEAR_NEAR_WITH_SEASON: f64 = 0.01;
-    pub const FIRST_SEASON: f64 = 0.02;
-    pub const EARLIER_SIBLING: f64 = -0.03;
-    pub const PER_YEAR: f64 = -0.0002;
+    pub const FIRST_SEASON: f64 = 0.02; // the leading franchise's first season (imdb mapping), for a plain query
+    pub const EARLIER_SIBLING: f64 = -0.03; // a later season when an earlier one matches as well
+    pub const PER_YEAR: f64 = -0.0002; // per year since TIE_BREAK_YEAR: the earlier entry among equals
     pub const PER_YEAR_EXTRA: f64 = -0.0003;
 }
 
 const TIE_BREAK_YEAR: f64 = 1950.0;
 const MARKER_ORDER: [Marker; 2] = [Marker::Recap, Marker::Reedit];
 
-fn rx(source: &str) -> Regex {
-    Regex::new(source, "").unwrap_or_else(|error| panic!("invalid pattern {source}: {error}"))
-}
-
 static LATER_SEASON_TITLE: LazyLock<Regex> =
-    LazyLock::new(|| rx(r"\b(?:\d{1,2}(?:st|nd|rd|th) season|season \d{1,2})\b"));
-static NAMES_SEASON: LazyLock<Regex> = LazyLock::new(|| rx(r"\b(?:season \d|\d(?:st|nd|rd|th) season)\b"));
-static NTH_SEASON: LazyLock<Regex> = LazyLock::new(|| rx(r"\b\d{1,2}(?:st|nd|rd|th) season\b"));
-static FINAL: LazyLock<Regex> = LazyLock::new(|| rx("final"));
-static SEQUEL_TAIL: LazyLock<Regex> = LazyLock::new(|| rx("[!+◎☆★']+$"));
-static SEQUEL_PUNCTUATION_ONLY: LazyLock<Regex> = LazyLock::new(|| rx("^[!+◎☆★']*$"));
+    LazyLock::new(|| rx(r"\b(?:\d{1,2}(?:st|nd|rd|th) season|season \d{1,2})\b", ""));
+static NAMES_SEASON: LazyLock<Regex> = LazyLock::new(|| rx(r"\b(?:season \d|\d(?:st|nd|rd|th) season)\b", ""));
+static NTH_SEASON: LazyLock<Regex> = LazyLock::new(|| rx(r"\b\d{1,2}(?:st|nd|rd|th) season\b", ""));
 
 #[derive(Clone, Debug)]
 pub struct Ranked {
@@ -124,20 +124,6 @@ pub fn year_near(entry_year: Option<u32>, year: u32) -> bool {
     entry_year.unwrap_or(0).abs_diff(year) <= 1
 }
 
-pub fn extra_number_is(digits: Option<&str>, number: u32) -> bool {
-    digits.and_then(|digits| digits.parse::<u32>().ok()) == Some(number)
-}
-
-pub fn subtype_rank(subtype: Subtype) -> f64 {
-    match subtype {
-        Subtype::Tv => 0.0,
-        Subtype::Ona => 1.0,
-        Subtype::Ova => 2.0,
-        Subtype::Movie => 3.0,
-        Subtype::Special => 4.0,
-    }
-}
-
 pub fn age_tie_break(entry: &Entry, per_year: f64) -> f64 {
     match entry.year.filter(|year| *year != 0) {
         Some(year) => (f64::from(year) - TIE_BREAK_YEAR) * per_year,
@@ -146,22 +132,18 @@ pub fn age_tie_break(entry: &Entry, per_year: f64) -> f64 {
 }
 
 pub fn earliest_of<'e, T>(entries: impl IntoIterator<Item = (T, &'e Entry)>) -> Option<T> {
-    fn order(entry: &Entry) -> (Season, &str) {
+    let order = |entry: &'e Entry| {
         (entry.title_season.or(entry.imdb_season).unwrap_or(1), entry.start_date.as_deref().unwrap_or("9999"))
-    }
-    let mut best: Option<(T, &Entry)> = None;
-    for (key, entry) in entries {
-        if best.as_ref().is_none_or(|(_, best)| order(entry) < order(best)) {
-            best = Some((key, entry));
-        }
-    }
-    best.map(|(key, _)| key)
+    };
+    entries.into_iter().min_by_key(|(_, entry)| order(entry)).map(|(key, _)| key)
 }
 
 fn entry_of<'i>(index: &'i Index, candidate: &Candidate) -> &'i Entry {
     &index.entries()[candidate.title.entry as usize]
 }
 
+// A later part of the queried season, titled after the season's own entry ("BLEACH: Sennen Kessen-hen -
+// Ketsubetsu-tan", part 2 of season 17's "BLEACH: Sennen Kessen-hen", for "(cour 2) S17")
 fn is_part_of_matched_season(entry: &Entry, parsed: &ParsedQuery, context: &Context<'_>) -> bool {
     gt(parsed.part, 1)
         && entry.part_number == parsed.part
@@ -175,6 +157,9 @@ fn is_part_of_matched_season(entry: &Entry, parsed: &ParsedQuery, context: &Cont
         })
 }
 
+// The split-numbered season counts only against a series that names the season in its own title yet is another imdb
+// series' first season ("Hanma Baki: Son of Ogre", titled "Baki 3"): where the title-numbered season is a movie or the
+// franchise's own ("Initial D Third Stage"), the imdb seasons are what they say.
 fn split_season_around(index: &Index, scored: &[Candidate], near: &[usize], season: Option<Season>) -> bool {
     let entry = |i: &usize| entry_of(index, &scored[*i]);
     if near.iter().any(|i| entry(i).imdb_season == season) {
@@ -191,10 +176,19 @@ fn split_season_around(index: &Index, scored: &[Candidate], near: &[usize], seas
     })
 }
 
+// The scraper writes any season as S<n>, whether the torrent said "2nd Season" (Kitsu's numbering) or S02 (TVDB's), so
+// either counts; an S<n> / "season n" wants a series, not "Naruto Movie 2" for "naruto s2" (a bare number can be a
+// movie's: "stand by me doraemon 2"). Matched by the mapping's franchise name next to an entry that is that TVDB
+// season, an entry's own season counts only when a title naming it matches about as well or the queried year is its
+// own ("sword art online s2" isn't "Alicization - War of Underworld 2nd Season"; "jojo's bizarre adventure 2018 s5" is
+// Golden Wind).
 fn is_season_match(candidate: &Candidate, entry: &Entry, parsed: &ParsedQuery, context: &Context<'_>) -> bool {
     if entry.subtype == Subtype::Movie && parsed.tvdb_season {
         return false;
     }
+    // an OVA / special is a season of a series only by its own title ("Tenchi Muyou! Ryououki 5th Season"), not by an
+    // imdb mapping that happens to sit at one while the queried year names another show ("hunter x hunter 2011 s4":
+    // "Greed Island Final", mapped at the 1999 series' season 4)
     if entry.subtype.is_extra()
         && parsed.tvdb_season
         && parsed.extra_kind.is_none()
@@ -224,6 +218,7 @@ fn season_bonus(rule: &Rule<'_>) -> f64 {
     let Rule { entry, parsed, context, in_reach, season_match, .. } = *rule;
     let mut bonus = 0.0;
     let season = truthy_season(parsed);
+    // an extra request without a season wants the first season's extra, not "2nd Season Special"
     if parsed.extra_kind.is_some()
         && season.is_none()
         && in_reach
@@ -232,6 +227,7 @@ fn season_bonus(rule: &Rule<'_>) -> f64 {
     {
         bonus += bonus::LATER_SEASON_EXTRA;
     }
+    // "spice and wolf ii specials": the season picks which extra
     if parsed.extra_kind.is_some() && season.is_some() && in_reach {
         let season = season.unwrap_or_default();
         let named = |word: &str| word == season.to_string() || roman_numeral(season) == Some(word);
@@ -243,7 +239,7 @@ fn season_bonus(rule: &Rule<'_>) -> f64 {
     } else if let Some(season) = season
         && in_reach
     {
-        let final_match = season == FINAL_SEASON && entry.own_titles().any(|title| FINAL.is_match(title));
+        let final_match = season == FINAL_SEASON && entry.own_titles().any(|title| title.contains("final"));
         if season_match || final_match {
             bonus += bonus::SEASON_MATCH;
         } else if context.season_around && (entry.title_season.is_some() || entry.imdb_season.is_some()) {
@@ -252,6 +248,9 @@ fn season_bonus(rule: &Rule<'_>) -> f64 {
         if season_match && context.split_around && entry.split_season == parsed.season {
             bonus += bonus::SPLIT_SEASON;
         }
+        // a season named with a word ("S2", "2nd season"): the entry whose own title names it, not one only mapped
+        // there that season, or its part as TVDB counts split cours ("War of Underworld Part 2" for "S2"); not another
+        // season ("Steven Universe Season 6", mapped as its own imdb's S1)
         let names_season = |title: &str| {
             NAMES_SEASON.is_match(title) && (season_of(title) == parsed.season || entry.part_number == parsed.season)
         };
@@ -261,6 +260,7 @@ fn season_bonus(rule: &Rule<'_>) -> f64 {
         {
             bonus += bonus::SEASON_WORD;
         }
+        // the season's part, from the entry's own titles (no part number: the first)
         if let Some(part) = truthy_part(parsed)
             && season_match
             && entry.part_number.unwrap_or(1) == part
@@ -277,39 +277,17 @@ fn title_form_bonus(rule: &Rule<'_>) -> f64 {
         + (if rule.candidate.title.whole_query_is_title { bonus::WHOLE_QUERY_TITLE } else { 0.0 })
 }
 
-#[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum EpisodeSpan {
-    Unbounded,
-    Count(u32),
-}
-
-impl EpisodeSpan {
-    pub fn of_count(count: Option<u32>) -> Self {
-        match count {
-            Some(count) if count != 0 => Self::Count(count),
-            _ => Self::Unbounded,
-        }
-    }
-
-    pub fn of_absolute(from: u32, to: AbsoluteEnd) -> Self {
-        match to {
-            AbsoluteEnd::Open => Self::Unbounded,
-            AbsoluteEnd::Episode(to) => Self::of_count(Some(to - from + 1)),
-        }
-    }
-}
-
-pub fn episode_in_range(episode: u32, from: Option<u32>, span: EpisodeSpan) -> bool {
+pub fn episode_in_range(episode: u32, from: Option<u32>, count: Option<u32>) -> bool {
     from.is_some_and(|from| {
         from > 1
             && episode >= from
-            && match span {
-                EpisodeSpan::Unbounded => true,
-                EpisodeSpan::Count(count) => u64::from(episode) < u64::from(from) + u64::from(count),
-            }
+            && count
+                .filter(|count| *count != 0)
+                .is_none_or(|count| u64::from(episode) < u64::from(from) + u64::from(count))
     })
 }
 
+// absolute episode numbers: the franchise's TV entries laid end to end; an episode past an entry's count rules it out
 fn episode_bonus(rule: &Rule<'_>) -> f64 {
     let Rule { entry, parsed, context, in_reach, .. } = *rule;
     let Some(episode) = truthy_episode(parsed) else { return 0.0 };
@@ -317,15 +295,18 @@ fn episode_bonus(rule: &Rule<'_>) -> f64 {
         return 0.0;
     }
     let mut bonus = 0.0;
+    // a later cour numbered on within its season ("dr stone new world 16": Part 2, 12-22), when no close match holds
+    // the episode from its own start (not "shingeki no kyojin 21": the first season has 25)
     let later_cour = !context.episode_from_start
         && gt(entry.imdb_season, 0)
-        && episode_in_range(episode, entry.imdb_from_episode, EpisodeSpan::of_count(entry.episode_count));
-    let in_absolute = entry.absolute.is_some_and(|absolute| {
-        episode_in_range(episode, Some(absolute.from), EpisodeSpan::of_absolute(absolute.from, absolute.to))
-    });
+        && episode_in_range(episode, entry.imdb_from_episode, entry.episode_count);
+    let in_absolute =
+        entry.absolute.is_some_and(|absolute| episode_in_range(episode, Some(absolute.from), absolute.count));
     if truthy_season(parsed).is_none() && (in_absolute || later_cour) {
         bonus += bonus::EPISODE_IN_RANGE;
     }
+    // a title with the number is its name, not an episode; with at least half of the rest of the name too ("one piece
+    // 1001" is no "1001 Nights"), it also leads
     let number = episode.to_string();
     let name_words: Vec<&str> = parsed.base.split(' ').filter(|word| *word != number).collect();
     let mut with_number =
@@ -361,6 +342,7 @@ fn marker_bonus(rule: &Rule<'_>) -> f64 {
             bonus += bonus::MARKER_UNASKED;
         }
     }
+    // compilation movies rarely say so: with no recap entry around, a recap request leans to movies
     let recap_request = parsed.markers.contains(&Marker::Recap) && !context.recap_around;
     if (recap_request || parsed.theater || parsed.bare_movie) && parsed.extra_kind.is_none() {
         bonus += if entry.subtype == Subtype::Movie { bonus::MOVIE_LEAN } else { 0.0 };
@@ -368,6 +350,8 @@ fn marker_bonus(rule: &Rule<'_>) -> f64 {
     bonus
 }
 
+// among near-equal matches, the query words telling them apart weigh more than the type and age tie-breaks ("mobile
+// suit sd gundam gaiden": the OVA SD Gundam Gaiden, not the series Gundam SEED Destiny)
 fn coverage_bonus(rule: &Rule<'_>) -> f64 {
     match rule.candidate.coverage {
         Some(coverage) if rule.in_band => bonus::MISSING_WORDS * (rule.context.best_coverage - coverage),
@@ -375,19 +359,22 @@ fn coverage_bonus(rule: &Rule<'_>) -> f64 {
     }
 }
 
+// the words naming the show ("igloo" in "mobile suit gundam igloo") over a closer title without them; the same for
+// every candidate holding them, so their own order stays
 fn distinctive_word_bonus(rule: &Rule<'_>) -> f64 {
     if rule.candidate.holds_distinctive_words { bonus::DISTINCTIVE_WORDS } else { 0.0 }
 }
 
+// a season query wants the series itself: TV over other types, not a title ending in an extra word
 fn season_query_type_bonus(rule: &Rule<'_>) -> f64 {
     let Rule { entry, parsed, context, in_band, .. } = *rule;
     if !in_band || !context.tied || truthy_season(parsed).is_none() || parsed.wants_extra {
         return 0.0;
     }
-    bonus::SUBTYPE_STEP * subtype_rank(entry.subtype)
-        + if entry.has_extra_word { bonus::EXTRA_WORD_UNASKED } else { 0.0 }
+    bonus::SUBTYPE_STEP * entry.subtype.rank() + if entry.has_extra_word { bonus::EXTRA_WORD_UNASKED } else { 0.0 }
 }
 
+// the title's own extra word decides between extras; Kitsu's OVA/special subtype is too inconsistent for it
 fn extra_bonus(rule: &Rule<'_>) -> f64 {
     let Rule { entry, parsed, in_band, .. } = *rule;
     if parsed.extra_kind.is_none() || !in_band {
@@ -415,7 +402,7 @@ fn extra_bonus(rule: &Rule<'_>) -> f64 {
     if let Some(number) = parsed.extra_number
         && entry.titles.iter().any(|variant| variant.extra_number.is_some())
     {
-        let same_number = entry.titles.iter().any(|variant| extra_number_is(variant.extra_number.as_deref(), number));
+        let same_number = entry.titles.iter().any(|variant| variant.extra_number == Some(number));
         bonus += if same_number { bonus::EXTRA_NUMBER } else { -bonus::EXTRA_NUMBER };
     }
     if entry.subtype == Subtype::Movie {
@@ -424,6 +411,7 @@ fn extra_bonus(rule: &Rule<'_>) -> f64 {
     bonus
 }
 
+// franchise-wide numbering ("Pokemon Movie 14") only counts against an entry when it is its best title match
 fn movie_bonus(rule: &Rule<'_>) -> f64 {
     let Rule { candidate, entry, parsed, context, .. } = *rule;
     let Some(movie) = parsed.movie else { return 0.0 };
@@ -462,6 +450,7 @@ fn year_bonus(rule: &Rule<'_>) -> f64 {
     }
 }
 
+// a plain title: the first season, TV over other types, the earlier entry among equals
 fn plain_query_bonus(rule: &Rule<'_>, index: &Index) -> f64 {
     let Rule { at, candidate, entry, parsed, context, in_band, .. } = *rule;
     if !in_band || !context.tied || truthy_season(parsed).is_some() || parsed.wants_extra {
@@ -472,6 +461,7 @@ fn plain_query_bonus(rule: &Rule<'_>, index: &Index) -> f64 {
     } else {
         0.0
     };
+    // an OVA series counts when it came first ("FLCL" before "FLCL Progressive"), not a one-off or a later side story
     let earlier_sibling = gt(entry.season, 1)
         && context.scored.iter().enumerate().any(|(j, other)| {
             let other_entry = entry_of(index, other);
@@ -484,14 +474,15 @@ fn plain_query_bonus(rule: &Rule<'_>, index: &Index) -> f64 {
                         && other_entry.start_date.as_deref().unwrap_or("9999")
                             < entry.start_date.as_deref().unwrap_or(""))
         });
-    bonus += (if earlier_sibling { bonus::EARLIER_SIBLING } else { 0.0 })
-        + bonus::SUBTYPE_STEP * subtype_rank(entry.subtype);
+    bonus += (if earlier_sibling { bonus::EARLIER_SIBLING } else { 0.0 }) + bonus::SUBTYPE_STEP * entry.subtype.rank();
     if parsed.extra_kind.is_none() && candidate.title.matched_as_extra {
         bonus += bonus::EXTRA_WORD_UNASKED;
     }
     bonus + age_tie_break(entry, bonus::PER_YEAR)
 }
 
+// a sequel marked only by punctuation ("Hataraku Saibou!!" next to "Hataraku Saibou", "Gintama'" next to "Gintama"):
+// the longest one in the query
 fn punctuated_sequel(index: &Index, scored: &[Candidate], near: &[usize], parsed: &ParsedQuery) -> Option<usize> {
     if parsed.wants_extra {
         return None;
@@ -500,15 +491,15 @@ fn punctuated_sequel(index: &Index, scored: &[Candidate], near: &[usize], parsed
     let mut length = 0;
     for &at in near {
         for key in &entry_of(index, &scored[at]).sequel_keys {
-            let key_length = utf16_len(key);
+            let key_length = key.chars().count();
             if !parsed.punct_key.contains(key.as_str()) || key_length <= length {
                 continue;
             }
-            let bare = SEQUEL_TAIL.replace(key, "");
+            let bare = key.trim_end_matches(SEQUEL_MARKS);
             let less_punctuated = |other: &str| {
-                utf16_len(other) < key_length
-                    && other.starts_with(bare.as_ref())
-                    && SEQUEL_PUNCTUATION_ONLY.is_match(&other[bare.len()..])
+                other.chars().count() < key_length
+                    && other.starts_with(bare)
+                    && other[bare.len()..].chars().all(|c| SEQUEL_MARKS.contains(&c))
             };
             let sibling = near.iter().any(|&other| {
                 other != at
@@ -526,6 +517,7 @@ fn punctuated_sequel(index: &Index, scored: &[Candidate], near: &[usize], parsed
     winner
 }
 
+// The ranking rules: preferences on top of the title score, for the candidates close to the best match.
 pub fn apply_rules(index: &Index, scored: &[Candidate], parsed: &ParsedQuery) -> Vec<Ranked> {
     let top = scored[0].title.score;
     let entry = |candidate: &Candidate| entry_of(index, candidate);
@@ -542,6 +534,7 @@ pub fn apply_rules(index: &Index, scored: &[Candidate], parsed: &ParsedQuery) ->
         split_around: parsed.tvdb_season && split_season_around(index, scored, &near, parsed.season),
         sequel_by_punctuation: punctuated_sequel(index, scored, &near, parsed),
         best_coverage: scored.iter().map(|candidate| candidate.coverage.unwrap_or(0.0)).fold(0.0, f64::max),
+        // a tie-break needs a tie: alone in the band, the best match keeps its lead ("mobile suit sd gundam mk i")
         tied: scored.iter().filter(|candidate| candidate.title.score >= top - band::TIE).count() > 1,
         year_around: year.is_some_and(|year| {
             season.is_none()
@@ -550,6 +543,7 @@ pub fn apply_rules(index: &Index, scored: &[Candidate], parsed: &ParsedQuery) ->
                         && (entry(candidate).year == Some(year) || entry(candidate).title_years.contains(&year))
                 })
         }),
+        // the episode fits an entry close to the best match counted from its own first episode
         episode_from_start: truthy_episode(parsed).is_some_and(|episode| {
             scored.iter().any(|candidate| {
                 let e = entry(candidate);
@@ -564,6 +558,7 @@ pub fn apply_rules(index: &Index, scored: &[Candidate], parsed: &ParsedQuery) ->
         }),
         season_names: Vec::new(),
     };
+    // the franchise names of the season matches, for a later part asked beside the season
     if gt(parsed.part, 1) {
         context.season_names = near
             .iter()

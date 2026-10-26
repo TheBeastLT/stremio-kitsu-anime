@@ -11,7 +11,7 @@ workspace = true
 
 [dependencies]
 arc-swap = "1.9.3"
-fastjs-regex = "0.1"
+fastjs-regex = "0.1.1"
 indexmap = { version = "2.14.2", features = ["serde"] }
 serde = { version = "1.0.229", features = ["derive"] }
 serde_json = { version = "1.0.154", features = ["preserve_order"] }

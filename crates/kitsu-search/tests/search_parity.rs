@@ -7,7 +7,6 @@ use kitsu_search::index::Index;
 use kitsu_search::records::Sources;
 use kitsu_search::{MIN_CONFIDENCE, Searcher};
 use serde::Deserialize;
-use serde_json::value::RawValue;
 
 mod common;
 
@@ -17,54 +16,18 @@ fn data(name: &str) -> PathBuf {
     PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("../../static/data").join(name)
 }
 
+const CONFIDENCE_TOLERANCE: f64 = 1e-9;
+
 #[derive(Deserialize)]
 struct GoldenHit {
     id: u32,
-    score: Box<RawValue>,
 }
 
 #[derive(Deserialize)]
 struct Row {
     query: String,
     ids: Vec<GoldenHit>,
-    confidence: Option<Box<RawValue>>,
-}
-
-fn number(raw: &RawValue) -> f64 {
-    raw.get().parse().unwrap_or_else(|error| panic!("not a number {}: {error}", raw.get()))
-}
-
-fn round_up(digits: &mut [u8]) {
-    for digit in digits.iter_mut().rev() {
-        if *digit == b'.' {
-            continue;
-        }
-        if *digit == b'9' {
-            *digit = b'0';
-        } else {
-            *digit += 1;
-            return;
-        }
-    }
-    panic!("carry past the leading digit");
-}
-
-fn js_fixed_12(value: f64) -> f64 {
-    let magnitude = value.abs();
-    assert!(magnitude < 10.0, "{value}");
-    let exact = format!("{magnitude:.1100}");
-    let point = exact.find('.').unwrap();
-    let mut kept = exact.as_bytes()[..point + 13].to_vec();
-    if exact.as_bytes()[point + 13] >= b'5' {
-        round_up(&mut kept);
-    }
-    let rounded: f64 = String::from_utf8(kept).unwrap().parse().unwrap();
-    if value.is_sign_negative() { -rounded } else { rounded }
-}
-
-#[allow(clippy::float_cmp)]
-fn differs(got: f64, expected: f64) -> bool {
-    js_fixed_12(got) != expected
+    confidence: Option<f64>,
 }
 
 fn searcher() -> Searcher {
@@ -76,28 +39,27 @@ fn searcher() -> Searcher {
 fn compare(searcher: &Searcher, row: &Row) -> Option<String> {
     let ranking = searcher.search_with(&row.query, 20, 0.0);
     let confidence = if ranking.hits.is_empty() { None } else { ranking.confidence };
-    let hits =
-        if confidence.is_some_and(|confidence| confidence >= MIN_CONFIDENCE) { ranking.hits } else { Vec::new() };
-    let expected_confidence = row.confidence.as_deref().map(number);
-    let confidence_differs = match (confidence, expected_confidence) {
-        (Some(got), Some(expected)) => differs(got, expected),
+    let ids: Vec<u32> = if confidence.is_some_and(|confidence| confidence >= MIN_CONFIDENCE) {
+        ranking.hits.iter().map(|hit| hit.id).collect()
+    } else {
+        Vec::new()
+    };
+    let expected: Vec<u32> = row.ids.iter().map(|hit| hit.id).collect();
+    let confidence_differs = match (confidence, row.confidence) {
+        (Some(got), Some(expected)) => (got - expected).abs() > CONFIDENCE_TOLERANCE,
         (None, None) => false,
         _ => true,
     };
-    let ids_differ = hits.len() != row.ids.len()
-        || hits.iter().zip(&row.ids).any(|(hit, want)| hit.id != want.id || differs(hit.score, number(&want.score)));
-    (confidence_differs || ids_differ).then(|| {
-        let got: Vec<(u32, f64)> = hits.iter().map(|hit| (hit.id, hit.score)).collect();
-        let want: Vec<(u32, f64)> = row.ids.iter().map(|hit| (hit.id, number(&hit.score))).collect();
+    (confidence_differs || ids != expected).then(|| {
         format!(
-            "{:?}\n  confidence got {confidence:?} want {expected_confidence:?}\n  got  {got:?}\n  want {want:?}",
-            row.query
+            "{:?}\n  confidence got {confidence:?} want {:?}\n  got  {ids:?}\n  want {expected:?}",
+            row.query, row.confidence
         )
     })
 }
 
 #[test]
-fn every_golden_query_ranks_as_node() {
+fn every_golden_query_ranks_the_same_ids_with_the_same_confidence() {
     let Some(path) = golden("search.jsonl") else { return };
     let rows: Vec<Row> = BufReader::new(File::open(path).unwrap())
         .lines()

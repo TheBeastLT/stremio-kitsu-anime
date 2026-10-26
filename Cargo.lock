@@ -669,9 +669,9 @@ dependencies = [
 
 [[package]]
 name = "fastjs-regex"
-version = "0.1.0"
+version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3c6cd0242330c1d0d16d1a2fc30925256f0b4a0830ee2d5e15e2b2c18ce31d66"
+checksum = "d1b4c4b59fcd632762f77b326d281d91a8a29330e5606d7d3c0d3089b3ac645d"
 dependencies = [
  "regex",
  "regex-syntax",

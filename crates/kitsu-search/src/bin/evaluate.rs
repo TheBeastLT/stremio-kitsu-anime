@@ -52,15 +52,7 @@ fn read_jsonl<T: for<'de> Deserialize<'de>>(path: &Path) -> Result<Vec<T>, Strin
 }
 
 fn pct(count: u32, n: u32) -> String {
-    format!("{:>7}", format!("{}%", fixed_1(100.0 * f64::from(count) / f64::from(n))))
-}
-
-fn fixed_1(value: f64) -> String {
-    let exact = format!("{value:.1100}");
-    let point = exact.find('.').unwrap_or(exact.len());
-    let rest = &exact[point + 2..];
-    let tie = rest.starts_with('5') && rest[1..].bytes().all(|digit| digit == b'0');
-    if tie { format!("{:.1}", value + 0.05) } else { format!("{value:.1}") }
+    format!("{:>7}", format!("{:.1}%", 100.0 * f64::from(count) / f64::from(n)))
 }
 
 fn row(name: &str, b: &Bucket) -> String {
@@ -186,19 +178,8 @@ mod tests {
     use super::pct;
 
     #[test]
-    fn rounds_by_the_exact_value_below_a_tie() {
-        assert_eq!(pct(3, 2000), "   0.1%");
-    }
-
-    #[test]
-    fn rounds_down_by_the_exact_value_near_a_tie() {
+    fn rounds_to_one_decimal() {
         assert_eq!(pct(249, 2000), "  12.4%");
-    }
-
-    #[test]
-    fn rounds_an_exact_tie_up() {
-        assert_eq!(pct(1, 16), "   6.3%");
-        assert_eq!(pct(1, 400), "   0.3%");
     }
 
     #[test]

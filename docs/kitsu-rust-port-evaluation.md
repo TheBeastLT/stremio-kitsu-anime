@@ -230,8 +230,8 @@ The server crate holds the index in an `ArcSwap<Index>`, so the hourly refresh s
    `İ`. Diff all 127k titles through both `norm`s as part of the gate.
 4. **Floating point and ordering.**
    - Sums follow Set and Map insertion order.
-   - `Math.log` is V8's fdlibm. A musl build uses musl `log`. They were identical on macOS here, but this is untested on
-     musl and must be gated.
+   - `Math.log` is V8's fdlibm. A musl build uses musl `log`. They were identical on macOS here; CI runs the release
+     tests on the musl target (production's libm), gating ids, order and confidence.
    - Ties decide outcomes: `score === best`, `keepExactAhead`'s `-0.001`, and the stable sorts (`sortByScore` has no
      tie-break and relies on V8 TimSort over insertion order).
 5. **JS `undefined` semantics.** Logic such as `!(entry.episodeCount <= BAND.ordinalSpan)`, `undefined > 1` and the
@@ -446,7 +446,7 @@ parity cost of search while leaving the runtime in Node. Not 4.
 2. **`kitsu-search` crate.**
    - Port `title_query` and `title_search` behind a `norm` parity test over all 127k titles plus the corpus.
    - Gate: identical id lists and scores to 1e-12 on the whole corpus, built and run **on the musl target** (to check
-     `Math.log` against musl `log`).
+     `Math.log` against musl `log`). Since 2026-10-26: identical ids, order and confidence, still on the musl target.
    - Port `evaluate.js` and get identical bucket numbers.
    - From then on, rule changes land in Rust first, and Node is frozen.
 3. **Runtime.**
@@ -528,3 +528,5 @@ Measured on an M-series Mac, release build, single thread, after the `kitsu-sear
 - Index build: 1.05 s and 114 MB peak RSS for the whole process (records, index and trigrams). The trigram index is built once per index; a swapped-in index builds it before it is published.
 - Worst case: one fuzzed query took 472 ms (reruns for the split parts and the typo correction, dominated by jaro-winkler).
 - Determinism: ten fresh index builds, each searching the whole corpus, produced identical output.
+- Since the simplification pass (2026-10-26) the gate is the same ranked ids, order and confidence; scores are no longer
+  compared to 12 decimals, and the fdlibm `ln` port, the UTF-16 handling and the `toFixed` rounding are gone.

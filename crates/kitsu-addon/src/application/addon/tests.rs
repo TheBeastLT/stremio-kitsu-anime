@@ -35,6 +35,11 @@ fn an_imdb_id_is_matched_trimmed_and_case_insensitively() {
 }
 
 #[test]
+fn a_byte_order_mark_is_not_trimmed_from_an_imdb_id() {
+    assert_eq!(search("\u{feff}tt0213338"), Vec::<String>::new());
+}
+
+#[test]
 fn an_unmapped_imdb_id_finds_nothing() {
     assert_eq!(search("tt0000001"), Vec::<String>::new());
 }
