@@ -228,6 +228,11 @@ test('the title index finds the expected Kitsu entries', () => {
     'mobile suit sd gundam mk ii': 2085,
     '86 - eighty six (part 2)': 44398, // "86 Part 2" is the second part, not season 86
     '86 - eighty six': 43066,
+    '86': 43066, // a name without letters still finds the entry titled so
+    '86 S2': 44398,
+    '22/7': 42456,
+    '663114': 7064,
+    '009-1': 1423,
     'shingeki no kyojin 3 part 2': 41982, // the season's part, from the entry's own title
     'shingeki no kyojin season 3 part 1': 13569,
     'mahou tsukai no yome season 2 cour 2': 47649, // "cour" (folded to "cor" with the long vowels) is a part too
@@ -259,6 +264,10 @@ test('a chance match on a word or two is below the cut-off', () => {
   assert.deepStrictEqual(searchTitles('office girls'), []);
   // the typo fallback takes one letter off, not two ("kyoto" for "kyofu")
   assert.deepStrictEqual(searchTitles('Kyoto Collector'), []);
+  // a name without letters ("乱马 1/2 2024年版" with its CJK stripped) only names an entry titled so, not "2 koi"
+  assert.deepStrictEqual(searchTitles('2 2024'), []);
+  assert.deepStrictEqual(searchTitles('2'), []);
+  assert.deepStrictEqual(searchTitles('12'), []);
 });
 
 test('every search alias names a Kitsu entry and finds it first', () => {
