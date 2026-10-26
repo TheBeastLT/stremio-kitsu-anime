@@ -138,7 +138,12 @@ impl Searcher {
         {
             run.confidence = typo;
         }
-        let hits = if run.confidence >= min_confidence {
+        // a name without letters ("2", all a scraper keeps of "乱马 1/2") names only an entry titled so ("86", "22/7"): a
+        // partial match on its numbers is chance ("2 koi")
+        let letterless = || !parse_query(trimmed).base.chars().any(char::is_alphabetic);
+        let hits = if run.confidence >= min_confidence
+            && (run.top().candidate.title.score >= EXACT_SYNONYM || !letterless())
+        {
             run.results
                 .iter()
                 .take(limit)

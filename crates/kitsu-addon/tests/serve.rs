@@ -57,8 +57,10 @@ async fn slow_kitsu(delay: Duration) -> SlowKitsu {
             let seen = Arc::clone(&seen);
             tokio::spawn(async move {
                 let mut buffer = [0_u8; 4096];
-                let _ = stream.read(&mut buffer).await;
-                seen.fetch_add(1, Ordering::SeqCst);
+                let read = stream.read(&mut buffer).await.unwrap_or(0);
+                if String::from_utf8_lossy(&buffer[..read]).contains("/anime/") {
+                    seen.fetch_add(1, Ordering::SeqCst);
+                }
                 tokio::time::sleep(delay).await;
                 let reply = format!(
                     "HTTP/1.1 404 Not Found\r\ncontent-type: application/vnd.api+json\r\ncontent-length: {}\r\nconnection: close\r\n\r\n{KITSU_NOT_FOUND}",
@@ -92,9 +94,7 @@ impl Addon {
             .env("DATA_DIR", &data.0)
             .stdout(Stdio::null())
             .stderr(Stdio::inherit());
-        if let Some(kitsu_port) = kitsu_port {
-            command.env("KITSU_URL", format!("http://127.0.0.1:{kitsu_port}"));
-        }
+        command.env("KITSU_URL", format!("http://127.0.0.1:{}", kitsu_port.unwrap_or_else(free_port)));
         let mut addon = Self { child: command.spawn().unwrap(), port };
         addon.wait_until_serving().await;
         addon

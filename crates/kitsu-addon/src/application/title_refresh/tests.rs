@@ -198,21 +198,34 @@ async fn a_later_page_failing_adds_nothing() {
     assert_eq!(entries(&harness.search), 3);
 }
 
+#[tokio::test]
+async fn a_restart_searches_entries_created_since_the_title_file_without_waiting_an_interval() {
+    let harness = harness(|_| Ok(vec![entry(100, "Zyxwvut Freshly Created")]));
+    let task = harness.refresh.spawn(REFRESH_INTERVAL);
+    let deadline = tokio::time::Instant::now() + Duration::from_secs(10);
+    while top(&harness.search, "zyxwvut freshly created").is_none() && tokio::time::Instant::now() < deadline {
+        tokio::time::sleep(Duration::from_millis(10)).await;
+    }
+    assert_eq!(top(&harness.search, "zyxwvut freshly created"), Some(100));
+    task.abort();
+}
+
 #[tokio::test(start_paused = true)]
-async fn the_loop_first_runs_one_interval_after_start_and_survives_errors() {
+async fn the_loop_runs_at_start_then_every_interval_and_survives_errors() {
     let harness = harness(|_| Err("down".to_owned()));
     let kitsu = Arc::clone(&harness.kitsu);
     let task = harness.refresh.spawn(REFRESH_INTERVAL);
     tokio::task::yield_now().await;
+    assert_eq!(kitsu.offsets().len(), 1);
     tokio::time::advance(REFRESH_INTERVAL.checked_sub(Duration::from_secs(1)).unwrap()).await;
     tokio::task::yield_now().await;
-    assert_eq!(kitsu.offsets().len(), 0);
+    assert_eq!(kitsu.offsets().len(), 1);
     tokio::time::advance(Duration::from_secs(2)).await;
     tokio::task::yield_now().await;
-    assert_eq!(kitsu.offsets().len(), 1);
+    assert_eq!(kitsu.offsets().len(), 2);
     tokio::time::advance(REFRESH_INTERVAL).await;
     tokio::task::yield_now().await;
-    assert_eq!(kitsu.offsets().len(), 2);
+    assert_eq!(kitsu.offsets().len(), 3);
     assert!(!task.is_finished());
     task.abort();
 }

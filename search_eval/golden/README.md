@@ -6,12 +6,12 @@ confidence (confidence and candidate title scores to a 1e-9 tolerance); a rule c
 ## Oracle
 
 - Base commit (HEAD before the dump existed): `5cb9df9e55843c50844a0ef76cb03ba47effe152`. The last commit that changed
-  search code is `703ed24`; the only search-code changes since are the `_internals` exports in `lib/title_search.js`
-  (`trigramIndex` forces the lazy trigram build), which do not change behaviour.
+  search code is `020b1bd` (a name without letters only matches an entry titled exactly so), re-dumped at merge
+  `a0f2c44`.
 - Node `v26.4.0`.
 - Inputs: `static/data/search_titles.jsonl` sha256 `1efeedd2faffc38ca62961d3ba760fa0db1b2ad5026a2029656f665a0710ab3f`,
-  `static/data/search_aliases.json` sha256 `daa2cc0beb670ec51eb55be375da69c0ac304433143f9e81a21702face1b5ead`,
-  `static/data/imdb_mapping.json` sha256 `deb1e45ef0a4cc92761c1d09c1652811e19002a3323e1cfdfcfda6f7ce133f2a`,
+  `static/data/search_aliases.json` sha256 `81b98ecb4e57d2f19807bdb2580ebb28ddf23ad0cc82e03bc8064c025622f705`,
+  `static/data/imdb_mapping.json` sha256 `7209cc4ac78f660ad4d96c839cedeed55a2fcb039eb1e87dc70e3bbd9ff07dc3`,
   `search_eval/sample.jsonl` sha256 `45acc1e99cbf75aa1ea9990cbc1ed941a7082f57a4f47c572ab9d89f1f87c762`.
 
 ## Regenerate
@@ -58,12 +58,12 @@ Queries are every `sample.jsonl` query then every raw `examples` name, de-duplic
 
 | file | lines | sha256 |
 |---|---|---|
-| `norm.jsonl` | 159671 | `b2c0a488499bc8fc6c60abf6f56bb03a8be57a00a2079b5ca12f5247da5b2e7e` |
+| `norm.jsonl` | 159672 | `f1b53758e6f386f90588270c8d9ec5248aa54e6de59ef7f592b8bba057982241` |
 | `parse_query.jsonl` | 8496 | `8a1f675db8af43edf3f37033dada00867bed50c8dc3339a1ff8bd3eda4a19f71` |
-| `search.jsonl` | 8496 | `f9c32945ee5d6422a94ce1fcd962fa7bccaccc4656edea87de762d6e4b4855cb` |
+| `search.jsonl` | 8496 | `6737f5577ff72e33c1c3d662159dec02f1c017f98942c296b81208c4a2342387` |
 | `candidates.jsonl` | 200 | `33ea65ccad3d4aff1a1bc2921ca29a4222125d74ca422e11d430589a159f5894` |
-| `index.json` | 582 | `3d78624c544c7fa1bf6ddff332ab0f2d6ebff8a9d2e14ceb0160c4f2624fe685` |
-| `entries.jsonl` | 19160 | `a07147964f413033c0a6b3549eb1305bf3a05f10ccda61f23041fe6223a87884` |
-| `trigrams.json` | 143 | `64fadf9806ac77a72472577bfdd0fda35e9d461aecdcca270eaf7a92382de349` |
-| `smoke.jsonl` | 81 | `fb0480e270f4f31e05370d08564118aea38a258f8a592f0960147d2d8a15efad` |
+| `index.json` | 582 | `fa7a068e38ade4ae661c361b7ab72210e5c14a19395b828b5cdf69599f8c3375` |
+| `entries.jsonl` | 19160 | `029bb090bad5d51f68274c9cb2a60f8c5530f400c44cd2471f54ab9328a1f10e` |
+| `trigrams.json` | 143 | `a2be2e8015332e2ac88fe0abcc8004cf6cf8eb1b152190e4a56df0c9b24c9ebc` |
+| `smoke.jsonl` | 81 | `4b4af032d48b9e28fd1eb7187826c4aec42a928d1d8e17368d90da22914cded3` |
 | `dump.js` | 140 | `b9a7c17e0db669bed7d602527745ce6638d1ce47d3859417961ba4d50b6cd922` |

@@ -106,7 +106,9 @@ impl TitleRefresh {
 
     pub fn spawn(mut self, interval: Duration) -> JoinHandle<()> {
         tokio::spawn(async move {
-            let mut ticks = tokio::time::interval_at(tokio::time::Instant::now() + interval, interval);
+            // at startup too: a restart would otherwise search without the entries created since the file's rebuild
+            // for an interval
+            let mut ticks = tokio::time::interval(interval);
             ticks.set_missed_tick_behavior(tokio::time::MissedTickBehavior::Delay);
             loop {
                 ticks.tick().await;
