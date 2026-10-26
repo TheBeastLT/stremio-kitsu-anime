@@ -35058,6 +35058,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 51152,
+    "imdb_id": "tt16409202",
+    "title": "Spare Me, Great Lord!",
+    "fromSeason": 3,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 45564,
     "imdb_id": "tt16369708",
     "title": "The Imaginary"
@@ -42943,5 +42950,12 @@
     "kitsu_id": 51067,
     "imdb_id": "tt16152086",
     "title": "An tu! An tu!"
+  },
+  {
+    "kitsu_id": 51133,
+    "imdb_id": "tt49410334",
+    "title": "Dreamland",
+    "fromSeason": 1,
+    "fromEpisode": 1
   }
 ]
