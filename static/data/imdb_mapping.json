@@ -42957,5 +42957,24 @@
     "title": "Dreamland",
     "fromSeason": 1,
     "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 51144,
+    "imdb_id": "tt33022149",
+    "title": "One Way or Another",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 51147,
+    "imdb_id": "tt44687828",
+    "title": "GuAn",
+    "fromSeason": 1,
+    "fromEpisode": 1
+  },
+  {
+    "kitsu_id": 51151,
+    "imdb_id": "tt41830798",
+    "title": "We Are Aliens"
   }
 ]
