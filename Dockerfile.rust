@@ -27,7 +27,7 @@ RUN cargo zigbuild --release --locked --target "$(cat /rust-target)" -p kitsu-ad
 FROM alpine:3
 RUN apk add --no-cache ca-certificates
 WORKDIR /home/app
-ENV DATA_DIR=/home/app/static/data
+ENV DATA_DIR=/home/app/static/data MIMALLOC_ALLOW_THP=0
 COPY static/data/search_titles.jsonl static/data/search_aliases.json static/data/imdb_mapping.json static/data/
 COPY --from=build /kitsu-addon /usr/local/bin/kitsu-addon
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
