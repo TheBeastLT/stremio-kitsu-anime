@@ -1,4 +1,5 @@
 use std::{
+    collections::HashSet,
     net::{Ipv4Addr, Ipv6Addr, SocketAddr},
     path::Path,
     sync::Arc,
@@ -6,7 +7,11 @@ use std::{
 };
 
 use anyhow::Context as _;
-use kitsu_search::{SharedIndex, index::Index, records::Sources};
+use kitsu_search::{
+    SharedIndex,
+    index::Index,
+    records::{self, Sources},
+};
 use tokio::net::TcpListener;
 
 use crate::{
@@ -31,13 +36,16 @@ pub struct Service {
 struct Titles {
     search: Arc<SharedIndex>,
     mapping: Arc<Mapping>,
-    sources: Sources,
+    known: HashSet<u64>,
+}
+
+fn read_sources(dir: &Path) -> Result<Sources, records::Error> {
+    Sources::read(&dir.join(TITLES_FILE), &dir.join(ALIASES_FILE), &dir.join(IMDB_MAPPING_FILE))
 }
 
 fn load_titles(dir: &Path) -> anyhow::Result<Titles> {
     let started = Instant::now();
-    let sources = Sources::read(&dir.join(TITLES_FILE), &dir.join(ALIASES_FILE), &dir.join(IMDB_MAPPING_FILE))
-        .context("reading the title search data")?;
+    let sources = read_sources(dir).context("reading the title search data")?;
     let mapping = Mapping::load(&dir.join(IMDB_MAPPING_FILE), &sources.records).context("reading the imdb mapping")?;
     let search = Arc::new(SharedIndex::new(Index::build(&sources.records, &sources.mapping, &sources.aliases)));
     tracing::info!(
@@ -45,7 +53,8 @@ fn load_titles(dir: &Path) -> anyhow::Result<Titles> {
         elapsed_ms = u64::try_from(started.elapsed().as_millis()).unwrap_or(u64::MAX),
         "Title index built"
     );
-    Ok(Titles { search, mapping: Arc::new(mapping), sources })
+    let known = sources.records.iter().map(|record| record.id).collect();
+    Ok(Titles { search, mapping: Arc::new(mapping), known })
 }
 
 async fn open_store(config: &Config) -> anyhow::Result<Option<Store>> {
@@ -69,8 +78,10 @@ pub async fn build(config: &Config) -> anyhow::Result<Service> {
     let titles = tokio::task::spawn_blocking(move || load_titles(Path::new(&dir))).await??;
     let kitsu = Arc::new(ReqwestTransport::new(&config.kitsu_url, KITSU_TIMEOUT)?);
     let upstreams = Upstreams { kitsu: kitsu.clone(), http: Arc::new(ReqwestHttp::new()?) };
-    let refresh =
-        TitleRefresh::new(KitsuApi::new(kitsu, Arc::new(metrics.clone())), Arc::clone(&titles.search), titles.sources);
+    let api = KitsuApi::new(kitsu, Arc::new(metrics.clone()));
+    let dir = config.data_dir.clone();
+    let load = Arc::new(move || read_sources(Path::new(&dir)));
+    let refresh = TitleRefresh::new(api, Arc::clone(&titles.search), titles.known, load);
     let addon = Addon::build(config, upstreams, store, titles.mapping, titles.search, metrics.clone());
     let state = Arc::new(AppState { addon, metrics, metrics_credentials: config.metrics_credentials.clone() });
     Ok(Service { state, refresh })

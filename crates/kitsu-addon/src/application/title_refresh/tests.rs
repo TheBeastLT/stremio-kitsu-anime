@@ -87,7 +87,8 @@ fn harness(pages: impl Fn(u64) -> Page + Send + Sync + 'static) -> Harness {
     let sources = known();
     let search = Arc::new(SharedIndex::new(Index::build(&sources.records, &sources.mapping, &sources.aliases)));
     let api = KitsuApi::new(kitsu.clone(), Arc::new(NoUpstreamStats));
-    Harness { refresh: TitleRefresh::new(api, Arc::clone(&search), sources), search, kitsu }
+    let ids = sources.records.iter().map(|record| record.id).collect();
+    Harness { refresh: TitleRefresh::new(api, Arc::clone(&search), ids, Arc::new(|| Ok(known()))), search, kitsu }
 }
 
 fn entries(search: &SharedIndex) -> usize {
@@ -161,6 +162,30 @@ async fn known_ids_are_not_added_again_by_the_next_refresh() {
     assert_eq!(harness.refresh.refresh().await.unwrap(), 1);
     assert_eq!(harness.refresh.refresh().await.unwrap(), 0);
     assert_eq!(entries(&harness.search), 4);
+}
+
+#[tokio::test]
+async fn entries_added_by_an_earlier_refresh_stay_after_the_next_rebuild() {
+    let calls = Arc::new(std::sync::atomic::AtomicU64::new(0));
+    let count = Arc::clone(&calls);
+    let mut harness = harness(move |_| {
+        let id = 100 + count.fetch_add(1, std::sync::atomic::Ordering::SeqCst);
+        Ok(vec![entry(id, &format!("Zyxwvut {}", word(id)))])
+    });
+    assert_eq!(harness.refresh.refresh().await.unwrap(), 1);
+    assert_eq!(harness.refresh.refresh().await.unwrap(), 1);
+    assert_eq!(entries(&harness.search), 5);
+    assert_eq!(top(&harness.search, &format!("Zyxwvut {}", word(100))), Some(100));
+    assert_eq!(top(&harness.search, &format!("Zyxwvut {}", word(101))), Some(101));
+}
+
+#[tokio::test]
+async fn an_unreadable_title_file_keeps_the_old_index() {
+    let mut harness = harness(|_| Ok(vec![entry(100, "Frieren Beyond Journeys End")]));
+    harness.refresh.load = Arc::new(|| Err(std::io::Error::other("gone").into()));
+    let error = harness.refresh.refresh().await.unwrap_err();
+    assert_eq!(error.to_string(), "index rebuild failed: reading the title data: reading records: gone");
+    assert_eq!(entries(&harness.search), 3);
 }
 
 #[tokio::test]
@@ -276,7 +301,7 @@ async fn a_rebuild_panicking_after_the_merge_drops_the_merged_records() {
     let mut harness = harness(|_| Ok(vec![entry(100, "Frieren Beyond Journeys End")]));
     harness.refresh.rebuild = half_done_rebuild;
     assert!(harness.refresh.refresh().await.is_err());
-    assert_eq!(locked(&harness.refresh.sources).records.len(), 3);
+    assert_eq!(locked(&harness.refresh.added).records, []);
     harness.refresh.rebuild = refresh_index;
     assert_eq!(harness.refresh.refresh().await.unwrap(), 1);
     assert_eq!(top(&harness.search, "Frieren Beyond Journeys End"), Some(100));
