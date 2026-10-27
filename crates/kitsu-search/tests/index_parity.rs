@@ -66,8 +66,7 @@ fn joined(list: &[u32]) -> String {
 }
 
 fn sorted_words(index: &Index) -> Vec<(&str, &[u32])> {
-    let mut words: Vec<(&str, &[u32])> =
-        index.postings().iter().map(|(word, posting)| (word.as_str(), posting.as_slice())).collect();
+    let mut words: Vec<(&str, &[u32])> = index.postings().iter().map(|(word, posting)| (&**word, &**posting)).collect();
     words.sort_by(|a, b| a.0.encode_utf16().cmp(b.0.encode_utf16()));
     words
 }
@@ -148,8 +147,8 @@ fn insert<T: Into<Value>>(object: &mut Map<String, Value>, key: &str, value: Opt
 fn variant_json(variant: &Variant) -> Value {
     let mut object = Map::new();
     object.insert("title".into(), json!(variant.title));
-    object.insert("base".into(), json!(variant.base));
-    insert(&mut object, "movieBase", variant.movie_base.clone());
+    object.insert("base".into(), json!(variant.base()));
+    insert(&mut object, "movieBase", variant.movie_base.as_deref());
     insert(&mut object, "titleYear", variant.title_year);
     insert(&mut object, "movie", variant.movie);
     insert(&mut object, "season", variant.season);
@@ -234,9 +233,9 @@ fn every_entry_matches_the_golden() {
 fn season_groups_list_their_entries_in_index_order() {
     for (key, list) in INDEX.season_groups() {
         assert!(list.windows(2).all(|pair| pair[0] < pair[1]), "{key}");
-        assert!(list.iter().all(|&i| INDEX.entries()[i as usize].group_key.as_deref() == Some(key.as_str())));
+        assert!(list.iter().all(|&i| INDEX.entries()[i as usize].group_key.as_deref() == Some(&**key)));
     }
-    let grouped: usize = INDEX.season_groups().values().map(Vec::len).sum();
+    let grouped: usize = INDEX.season_groups().values().map(|list| list.len()).sum();
     assert_eq!(grouped, INDEX.entries().iter().filter(|entry| entry.group_key.is_some()).count());
 }
 

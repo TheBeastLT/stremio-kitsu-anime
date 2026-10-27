@@ -228,7 +228,7 @@ pub struct TitleScore {
 pub fn base_for<'v>(variant: &'v Variant, parsed: &ParsedQuery) -> &'v str {
     match &variant.movie_base {
         Some(movie_base) if parsed.bare_movie || parsed.theater => movie_base,
-        _ => &variant.base,
+        _ => variant.base(),
     }
 }
 
@@ -239,8 +239,8 @@ fn compact_eq(text: &str, compacted: &str) -> bool {
 fn is_exact(variant: &Variant, base: &str, query: &Query<'_>) -> bool {
     let parsed = query.parsed;
     base == parsed.base
-        || variant.title == parsed.base
-        || variant.title == parsed.text
+        || *variant.title == parsed.base
+        || *variant.title == parsed.text
         || compact_eq(base, &query.compact_base)
         // the whole query equal to a title with spaces ignored ("x1999" for "X/1999"), before a year / season is taken
         // out
@@ -302,8 +302,8 @@ pub fn title_score(index: &Index, entry: u32, query: &Query<'_>) -> TitleScore {
             out.matched_by_mapping = variant.from_mapping();
             out.part_of_best = variant.stripped_season().or(variant.season);
             out.matched_without_number = exact
-                && variant.title != parsed.base
-                && variant.title != parsed.text
+                && *variant.title != parsed.base
+                && *variant.title != parsed.text
                 && out.part_of_best.is_some_and(|part| part > 1);
         }
     }

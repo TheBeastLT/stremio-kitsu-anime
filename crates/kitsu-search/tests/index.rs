@@ -50,7 +50,7 @@ fn entry(id: u64) -> &'static Entry {
 }
 
 fn titles(id: u64) -> Vec<(&'static str, VariantSource)> {
-    entry(id).titles.iter().map(|variant| (variant.title.as_str(), variant.source)).collect()
+    entry(id).titles.iter().map(|variant| (&*variant.title, variant.source)).collect()
 }
 
 const OWN: VariantSource = VariantSource::Own { abbreviated: false };
@@ -139,7 +139,7 @@ fn numbers_unnumbered_movies_by_date_keeping_ties_in_order() {
 #[test]
 fn numbers_a_movie_chapter() {
     let variant = &entry(8).titles[0];
-    assert_eq!((variant.movie, variant.base.as_str(), entry(8).movie), (Some(3), "hero", Some(3)));
+    assert_eq!((variant.movie, variant.base(), entry(8).movie), (Some(3), "hero", Some(3)));
 }
 
 #[test]
@@ -168,7 +168,7 @@ fn groups_seasons_by_seasonless_canonical_title() {
 #[test]
 fn indexes_words_in_first_seen_order() {
     let words: Vec<(&str, &[u32])> =
-        INDEX.postings().iter().take(12).map(|(word, posting)| (word.as_str(), posting.as_slice())).collect();
+        INDEX.postings().iter().take(12).map(|(word, posting)| (&**word, &**posting)).collect();
     assert_eq!(
         words,
         [

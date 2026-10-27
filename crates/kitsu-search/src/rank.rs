@@ -284,7 +284,7 @@ impl<'a> Ranker<'a> {
                 .titles
                 .iter()
                 .filter_map(|variant| {
-                    let base: Vec<&str> = variant.base.split(' ').collect();
+                    let base: Vec<&str> = variant.base().split(' ').collect();
                     let glued = glue(&base, words, true).words;
                     words
                         .iter()
@@ -504,12 +504,12 @@ impl<'a> Ranker<'a> {
             !entry.subtype.is_extra()
                 && !entry.has_extra_word
                 && entry.titles.iter().any(|variant| {
-                    let title = variant.title.as_str();
+                    let title = &*variant.title;
                     !variant.from_mapping()
                         && !variant.from_synonym()
                         && !ending.is_match(title)
                         && (numbered.as_ref().is_some_and(|numbered| numbered.is_match(title))
-                            || names(title, &variant.base))
+                            || names(title, variant.base()))
                 })
         })
     }

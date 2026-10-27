@@ -89,13 +89,13 @@ pub enum VariantSource {
 
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Variant {
-    pub title: String,
-    pub base: String,
-    pub movie_base: Option<String>,
+    pub title: Box<str>,
+    base: Option<Box<str>>,
+    pub movie_base: Option<Box<str>>,
     pub title_year: Option<u32>,
     pub movie: Option<u32>,
     pub season: Option<Season>,
-    pub markers: Vec<Marker>,
+    pub markers: Box<[Marker]>,
     pub extra_number: Option<u32>,
     pub source: VariantSource,
 }
@@ -104,25 +104,30 @@ impl Variant {
     fn new(title: String, subtype: Subtype, source: VariantSource) -> Self {
         let is_movie = subtype == Subtype::Movie;
         let base = title_base_of(&title, is_movie);
-        let movie_base = Some(without_movie_words(&base)).filter(|movie_base| *movie_base != base);
+        let movie_base = Some(without_movie_words(&base)).filter(|movie_base| *movie_base != base).map(Box::from);
         let title_year = title_year_of(&title);
-        if let VariantSource::Synonym { .. } = source {
-            let source = VariantSource::Synonym { stripped_season: season_of(&title) };
-            let (season, movie, extra_number, markers) = (None, None, None, Vec::new());
-            return Self { title, base, movie_base, title_year, movie, season, markers, extra_number, source };
-        }
-        let movie = title_movie_index_of(&title, is_movie);
+        let (season, movie, extra_number, markers, source) = if let VariantSource::Synonym { .. } = source {
+            (None, None, None, Box::default(), VariantSource::Synonym { stripped_season: season_of(&title) })
+        } else {
+            let movie = title_movie_index_of(&title, is_movie);
+            let season = if movie.is_none() { season_of(&title) } else { None };
+            (season, movie, extra_number_of(&title), markers_of(&title).into(), source)
+        };
         Self {
-            season: if movie.is_none() { season_of(&title) } else { None },
-            markers: markers_of(&title),
-            extra_number: extra_number_of(&title),
-            movie,
-            title_year,
-            base,
+            base: (base != title).then(|| base.into()),
+            title: title.into(),
             movie_base,
-            title,
+            title_year,
+            movie,
+            season,
+            markers,
+            extra_number,
             source,
         }
+    }
+
+    pub fn base(&self) -> &str {
+        self.base.as_deref().unwrap_or(&self.title)
     }
 
     pub fn from_synonym(&self) -> bool {
@@ -160,7 +165,7 @@ pub struct Entry {
     pub start_date: Option<String>,
     pub year: Option<u32>,
     pub episode_count: Option<u32>,
-    pub titles: Vec<Variant>,
+    pub titles: Box<[Variant]>,
     pub sequel_keys: Vec<String>,
     pub has_extra_word: bool,
     pub title_season: Option<Season>,
@@ -180,7 +185,7 @@ pub struct Entry {
 
 impl Entry {
     pub fn own_titles(&self) -> impl Iterator<Item = &str> {
-        self.titles.iter().filter(|variant| !variant.from_synonym()).map(|variant| variant.title.as_str())
+        self.titles.iter().filter(|variant| !variant.from_synonym()).map(|variant| &*variant.title)
     }
 
     pub fn franchise(&self) -> Option<&str> {
@@ -190,13 +195,19 @@ impl Entry {
 
 pub type Trigram = [char; 3];
 
+pub type Postings = IndexMap<Box<str>, Box<[u32]>>;
+
 pub struct Index {
-    entries: Vec<Entry>,
-    season_groups: IndexMap<String, Vec<u32>>,
-    postings: IndexMap<String, Vec<u32>>,
-    idf: Vec<f64>,
+    entries: Box<[Entry]>,
+    season_groups: Postings,
+    postings: Postings,
+    idf: Box<[f64]>,
     unseen_idf: f64,
-    trigrams: OnceLock<HashMap<Trigram, Vec<u32>>>,
+    trigrams: OnceLock<HashMap<Trigram, Box<[u32]>>>,
+}
+
+fn compacted<K: Into<Box<str>>>(lists: IndexMap<K, Vec<u32>>) -> Postings {
+    lists.into_iter().map(|(key, list)| (key.into(), list.into())).collect()
 }
 
 fn truthy(text: Option<&str>) -> Option<&str> {
@@ -341,7 +352,7 @@ fn to_entry(
         absolute: None,
         split_season: None,
         main_titles,
-        titles: variants,
+        titles: variants.into(),
     }
 }
 
@@ -365,7 +376,7 @@ fn number_unnumbered_movies(entries: &mut [Entry]) {
 }
 
 // TV/ONA seasons sharing a canonical title apart from season markers (imdb franchises are too broad: all of Pokemon)
-fn group_seasons(entries: &mut [Entry]) -> IndexMap<String, Vec<u32>> {
+fn group_seasons(entries: &mut [Entry]) -> Postings {
     let mut groups: IndexMap<String, Vec<u32>> = IndexMap::new();
     for (i, entry) in entries.iter_mut().enumerate() {
         if entry.subtype.is_series() && !entry.canonical_title.is_empty() {
@@ -374,7 +385,7 @@ fn group_seasons(entries: &mut [Entry]) -> IndexMap<String, Vec<u32>> {
             entry.group_key = Some(key);
         }
     }
-    groups
+    compacted(groups)
 }
 
 fn franchises(entries: &[Entry], member: impl Fn(&Entry) -> bool) -> IndexMap<&str, Vec<usize>> {
@@ -464,17 +475,18 @@ impl Index {
         lay_out_episodes(&mut entries);
         mark_split_seasons(&mut entries);
 
-        let mut postings: IndexMap<String, Vec<u32>> = IndexMap::new();
+        let mut postings: IndexMap<&str, Vec<u32>> = IndexMap::new();
         for (i, entry) in entries.iter().enumerate() {
             let words: IndexSet<&str> = entry.titles.iter().flat_map(|variant| variant.title.split(' ')).collect();
             for word in words {
-                postings.entry(word.to_owned()).or_default().push(i as u32);
+                postings.entry(word).or_default().push(i as u32);
             }
         }
+        let postings = compacted(postings);
         let idf_of = |count: usize| (entries.len() as f64 / (1 + count) as f64).ln();
         let idf = postings.values().map(|posting| idf_of(posting.len())).collect();
         let unseen_idf = idf_of(0);
-        Self { entries, season_groups, postings, idf, unseen_idf, trigrams: OnceLock::new() }
+        Self { entries: entries.into(), season_groups, postings, idf, unseen_idf, trigrams: OnceLock::new() }
     }
 
     pub fn entries(&self) -> &[Entry] {
@@ -486,14 +498,14 @@ impl Index {
     }
 
     pub fn season_group(&self, key: &str) -> &[u32] {
-        self.season_groups.get(key).map_or(&[], Vec::as_slice)
+        self.season_groups.get(key).map_or(&[], |list| list)
     }
 
-    pub fn season_groups(&self) -> &IndexMap<String, Vec<u32>> {
+    pub fn season_groups(&self) -> &Postings {
         &self.season_groups
     }
 
-    pub fn postings(&self) -> &IndexMap<String, Vec<u32>> {
+    pub fn postings(&self) -> &Postings {
         &self.postings
     }
 
@@ -502,7 +514,7 @@ impl Index {
     }
 
     pub fn entries_with(&self, word: &str) -> &[u32] {
-        self.postings.get(word).map_or(&[], Vec::as_slice)
+        self.postings.get(word).map_or(&[], |list| list)
     }
 
     pub fn entry_count(&self, word: &str) -> usize {
@@ -517,25 +529,25 @@ impl Index {
         self.trigrams.get().is_some()
     }
 
-    pub fn trigrams(&self) -> &HashMap<Trigram, Vec<u32>> {
+    pub fn trigrams(&self) -> &HashMap<Trigram, Box<[u32]>> {
         self.trigrams.get_or_init(|| {
             let mut trigrams: HashMap<Trigram, Vec<u32>> = HashMap::new();
             for (i, entry) in self.entries.iter().enumerate() {
                 let grams: IndexSet<Trigram> = entry
                     .titles
                     .iter()
-                    .filter(|variant| !variant.from_synonym() || PLAIN_BASE.is_match(&variant.base))
-                    .flat_map(|variant| trigrams_of(&compact(&variant.base)))
+                    .filter(|variant| !variant.from_synonym() || PLAIN_BASE.is_match(variant.base()))
+                    .flat_map(|variant| trigrams_of(&compact(variant.base())))
                     .collect();
                 for gram in grams {
                     trigrams.entry(gram).or_default().push(i as u32);
                 }
             }
-            trigrams
+            trigrams.into_iter().map(|(gram, list)| (gram, list.into())).collect()
         })
     }
 
     pub fn entries_with_trigram(&self, gram: Trigram) -> &[u32] {
-        self.trigrams().get(&gram).map_or(&[], Vec::as_slice)
+        self.trigrams().get(&gram).map_or(&[], |list| list)
     }
 }
