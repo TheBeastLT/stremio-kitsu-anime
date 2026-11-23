@@ -23620,6 +23620,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 51213,
+    "imdb_id": "tt11605032",
+    "title": "Zhen Hun Jie",
+    "fromSeason": 5,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 12292,
     "imdb_id": "tt6475250",
     "title": "Assassination Classroom: 365 Days"
@@ -34749,6 +34756,13 @@
     "fromEpisode": 1
   },
   {
+    "kitsu_id": 51206,
+    "imdb_id": "tt28306749",
+    "title": "Disney Twisted-Wonderland: The Animation",
+    "fromSeason": 2,
+    "fromEpisode": 1
+  },
+  {
     "kitsu_id": 45328,
     "imdb_id": "tt21038566",
     "title": "Space Battleship Yamato 2205: A New Journey"
@@ -42981,5 +42995,22 @@
     "kitsu_id": 51153,
     "imdb_id": "tt29615160",
     "title": "The Storm"
+  },
+  {
+    "kitsu_id": 51189,
+    "imdb_id": "tt27830613",
+    "title": "The Lovers"
+  },
+  {
+    "kitsu_id": 51190,
+    "imdb_id": "tt29355505",
+    "title": "Toy Story 5"
+  },
+  {
+    "kitsu_id": 51200,
+    "imdb_id": "tt33406999",
+    "title": "Get Jiro!",
+    "fromSeason": 1,
+    "fromEpisode": 1
   }
 ]
