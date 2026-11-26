@@ -247,6 +247,7 @@ test('the title index finds the expected Kitsu entries', () => {
     'keroro 2026': 50992, // alias "Keroro (2026)": the queried year, not the 2014 "Keroro" title
     'keroro': 8129,
     'hidamari sketch x': 4856, // "x ☆☆☆" keeps its x on both sides
+    'a good day to ascend': 51148, // Zeri Feisheng, on Kitsu since the 2026-11 title refresh
   };
   const wrong = Object.entries(expected)
       .map(([query, id]) => [query, id, searchTitles(query)[0]?.id])
@@ -256,7 +257,7 @@ test('the title index finds the expected Kitsu entries', () => {
 
 test('the title index returns nothing for titles that aren\'t anime on Kitsu', () => {
   const found = ['hello carbot 2018 S6', 'raba in maseu larva in mars 2024', 'jyulagi cops 4 jurassic cops 2026',
-    'american dad S19', 'hawaii five 0 2010 S7', 'lingwu continent', 'a good day to ascend', 'mk iv']
+    'american dad S19', 'hawaii five 0 2010 S7', 'lingwu continent', 'mk iv']
       .map(query => [query, searchTitles(query)[0]?.id])
       .filter(([, id]) => id !== undefined);
   assert.deepStrictEqual(found, []);
