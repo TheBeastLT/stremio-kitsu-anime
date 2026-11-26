@@ -239,6 +239,14 @@ test('the title index finds the expected Kitsu entries', () => {
     'dr. stone - new world cour 2': 47246,
     'bleach thousand year blood war cour 3': 48015,
     'spy x family cour 2': 45619,
+    'beyblade x': 47546, // a final x is part of the name, not a separator dropped to "beyblade"
+    'beyblade': 263,
+    'gundam x': 71,
+    'sonic x S2': 1633, // an x before a season / part marker ends the name, it doesn't separate words
+    'tales of zestiria the x part 1': 11023,
+    'keroro 2026': 50992, // alias "Keroro (2026)": the queried year, not the 2014 "Keroro" title
+    'keroro': 8129,
+    'hidamari sketch x': 4856, // "x ☆☆☆" keeps its x on both sides
   };
   const wrong = Object.entries(expected)
       .map(([query, id]) => [query, id, searchTitles(query)[0]?.id])
